@@ -22,7 +22,7 @@
   {% if art.data.section == "articles" %}
   <li>
     <a href="{{ art.url }}">
-      <span class="toc-title">{{ art.data.title.long | mdInline | safe }}</span>
+      <span class="toc-title">{{ art.data.title | mdInline | safe if art.data.title is string else art.data.title.long | mdInline | safe }}</span>
     </a><br>
     <span class="byline">{% set author = art.data.author %}{% include "author-loop.njk" %}</span>
     {% if art.data.pdf != false %}
@@ -54,7 +54,7 @@
   {% if art.data.section == "projects" %}
   <li>
     <a href="{{ art.url }}">
-      <span class="toc-title">{{ art.data.title.long | mdInline | safe }}</span>
+      <span class="toc-title">{{ art.data.title | mdInline | safe if art.data.title is string else art.data.title.long | mdInline | safe }}</span>
     </a><br>
     <span class="byline">{% set author = art.data.author %}{% include "author-loop.njk" %}</span><br>
     {% if art.data.layout == "project" %}
@@ -75,7 +75,7 @@
   {% if art.data.section == "reviews" %}
   <li>
     <a href="{{ art.url }}">
-      <span class="toc-title">{{ art.data.title.long | mdInline | safe }}</span>
+      <span class="toc-title">{{ art.data.title | mdInline | safe if art.data.title is string else art.data.title.long | mdInline | safe }}</span>
     </a><br>
     <span class="byline">{% set author = art.data.author %}{% include "author-loop.njk" %}</span>
     <p><a class="alt-link" href="/assets{{ art.url | replace('.html', '.pdf') }}" target="_blank">PDF</a></p>

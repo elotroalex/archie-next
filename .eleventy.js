@@ -25,6 +25,11 @@ module.exports = function (eleventyConfig) {
       ...collectionApi.getFilteredByTag("issue01"),
       ...collectionApi.getFilteredByTag("issue02"),
       ...collectionApi.getFilteredByTag("issue03"),
+      ...collectionApi.getFilteredByTag("issue04"),
+      ...collectionApi.getFilteredByTag("issue05"),
+      ...collectionApi.getFilteredByTag("issue06"),
+      ...collectionApi.getFilteredByTag("issue07"),
+      ...collectionApi.getFilteredByTag("issue08"),
     ];
   });
 
