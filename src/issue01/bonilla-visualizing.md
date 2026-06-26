@@ -43,10 +43,10 @@ faced by one Caribbean society but also the larger question of what
 exactly sovereignty has meant for the region as a whole and how one
 might seek to visually represent it.
 
-{% include image.html
-            img="issue01/yarimar-map.jpg"
-            title="Map of the Caribbean"
-            caption="Figure 1. Map of the Caribbean created by Yarimar Bonilla in 2010." %}
+<figure>
+<img src="/images/issue01/yarimar-map.jpg" alt="Map of the Caribbean" loading="lazy">
+<figcaption>Figure 1. Map of the Caribbean created by Yarimar Bonilla in 2010.</figcaption>
+</figure>
 
 
 In the years that followed, this initial cartographic impulse has led to
@@ -289,11 +289,12 @@ able to reveal a spatial logic to slave resistance that was obscured in
 colonial accounts, suggesting a greater degree of strategic organization
 among insurgents than previously imagined.[^19]
 
-{% include image.html
-            img="issue01/brown-revolt.jpg"
-            url="http://revolt.axismaps.com/map/"
-            title="Slave Revolt in Jamaica, 1760--1761: A Cartographic Narrative"
-            caption="Figure 3. Slave Revolt in Jamaica, 1760--1761: A Cartographic Narrative" %}
+<figure>
+<a href="http://revolt.axismaps.com/map/" target="_blank">
+<img src="/images/issue01/brown-revolt.jpg" alt="Slave Revolt in Jamaica, 1760--1761: A Cartographic Narrative" loading="lazy">
+</a>
+<figcaption>Figure 3. Slave Revolt in Jamaica, 1760--1761: A Cartographic Narrative</figcaption>
+</figure>
 
 
 Brown argues that if we are to take seriously the opportunities afforded
@@ -330,8 +331,10 @@ goal was to visually depict the large number of Caribbean societies
 (listed in table 1) that were not independent nation-states and to use
 color to portray the diversity of political forms in the region.
 
-{% include image.html
-    img="issue01/landon-map.jpg" title="Map created by Landon Yarrington in 2011." caption="Figure 4. Map created by Landon Yarrington in 2011." %}
+<figure>
+<img src="/images/issue01/landon-map.jpg" alt="Map created by Landon Yarrington in 2011." loading="lazy">
+<figcaption>Figure 4. Map created by Landon Yarrington in 2011.</figcaption>
+</figure>
 
 
 The creation of this map quickly revealed some of the challenges of
@@ -358,10 +361,10 @@ those South American societies most commonly imagined as part of the
 Caribbean (Belize, Guyana, Suriname, and Guiana). Once again, we used
 color to visually demarcate political jurisdictions.
 
-{% include image.html
-    img="issue01/blossom-map.jpg" 
-    title="Map created by Jeff Blossom and Yarimar Bonilla in 2015."
-    caption="Figure 5. Map created by Jeff Blossom and Yarimar Bonilla in 2015." %}
+<figure>
+<img src="/images/issue01/blossom-map.jpg" alt="Map created by Jeff Blossom and Yarimar Bonilla in 2015." loading="lazy">
+<figcaption>Figure 5. Map created by Jeff Blossom and Yarimar Bonilla in 2015.</figcaption>
+</figure>
 
 
 Although we played with size and scale, the map retains a sense of
@@ -392,8 +395,10 @@ away from a colonial status---either by becoming independent or by
 entering into a "postcolonial" arrangement with their colonial
 centers.[^24]
 
-{% include image.html
-    img="issue01/temporal-map.jpg" title="Temporal map of the postcolonial Caribbean created by Jeff Blossom and Yarimar Bonilla in 2015." caption="Figure 6. Temporal map of the postcolonial Caribbean created by Jeff Blossom and Yarimar Bonilla in 2015." %}
+<figure>
+<img src="/images/issue01/temporal-map.jpg" alt="Temporal map of the postcolonial Caribbean created by Jeff Blossom and Yarimar Bonilla in 2015." loading="lazy">
+<figcaption>Figure 6. Temporal map of the postcolonial Caribbean created by Jeff Blossom and Yarimar Bonilla in 2015.</figcaption>
+</figure>
 
 
 Organizationally, the temporal map poses several alternatives to a

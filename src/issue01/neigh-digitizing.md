@@ -94,12 +94,12 @@ praxes, the 2 Cents Movement realizes Brathwaite's theory of nation
 language and his argument that sound reproduction technologies can be
 used to reinvigorate Afro-centric oral traditions.[^7]
 
-{% include image.html
-            img="issue01/poet-performing-2.jpg"
-            title="2 Cents Movement poet Idrees Saleem
-performing at the University of the West Indies, St. Augustine Campus, Trinidad and Tobago. Posted on 24 November 2014."
-            caption="Figure 1. 2 Cents Movement poet Idrees Saleem
-performing at the University of the West Indies, St. Augustine Campus, Trinidad and Tobago. Posted on 24 November 2014." %}
+<figure>
+<img src="/images/issue01/poet-performing-2.jpg" alt="2 Cents Movement poet Idrees Saleem
+performing at the University of the West Indies, St. Augustine Campus, Trinidad and Tobago. Posted on 24 November 2014." loading="lazy">
+<figcaption>Figure 1. 2 Cents Movement poet Idrees Saleem
+performing at the University of the West Indies, St. Augustine Campus, Trinidad and Tobago. Posted on 24 November 2014.</figcaption>
+</figure>
 
 
 Brathwaite identifies how nation-language poets challenge the way paper
@@ -234,12 +234,12 @@ building an online presence for Caribbean poetry. In addition to
 reaching youth in Trinidad and Tobago, the artists have gained an
 international following by circulating their poetry on social media.
 
-{% include image.html
-            img="issue01/audience-interaction-1.jpg"
-            title="Marshall Davis Jones performing at El
-Dorado East Secondary School, Trinidad and Tobago Courts Bocas Speak Out Tour 2015."
-            caption="Figure 2. Marshall Davis Jones performing at El
-Dorado East Secondary School, Trinidad and Tobago Courts Bocas Speak Out Tour 2015." %}
+<figure>
+<img src="/images/issue01/audience-interaction-1.jpg" alt="Marshall Davis Jones performing at El
+Dorado East Secondary School, Trinidad and Tobago Courts Bocas Speak Out Tour 2015." loading="lazy">
+<figcaption>Figure 2. Marshall Davis Jones performing at El
+Dorado East Secondary School, Trinidad and Tobago Courts Bocas Speak Out Tour 2015.</figcaption>
+</figure>
 
 
 
@@ -255,19 +255,19 @@ the audience actively participating rather than on the poet performing.
 In these shots, the camera points at the audience, often catching only
 the performer's back or the corner of her shoulder.[^26]
 
-{% include image.html
-            img="issue01/audience-interaction-2.jpg"
-            title="UWE Speak Event, University of the West Indies, St. Augustine Campus, Trinidad and Tobago, Courts Bocas Speak Out Tour 2015."
-            caption="Figure 3. UWE Speak Event, University of the West Indies, St. Augustine Campus, Trinidad and Tobago, Courts Bocas Speak Out Tour 2015." %} 
+<figure>
+<img src="/images/issue01/audience-interaction-2.jpg" alt="UWE Speak Event, University of the West Indies, St. Augustine Campus, Trinidad and Tobago, Courts Bocas Speak Out Tour 2015." loading="lazy">
+<figcaption>Figure 3. UWE Speak Event, University of the West Indies, St. Augustine Campus, Trinidad and Tobago, Courts Bocas Speak Out Tour 2015.</figcaption>
+</figure> 
 
  
 
-{% include image.html
-            img="issue01/poet-performing-1.jpg"
-            title="Marshall Davis Jones performing at El
-Dorado East Secondary School, Trinidad and Tobago, Courts Bocas Speak Out Tour 2015."
-            caption="Figure 4. Marshall Davis Jones performing at El
-Dorado East Secondary School, Trinidad and Tobago, Courts Bocas Speak Out Tour 2015." %} 
+<figure>
+<img src="/images/issue01/poet-performing-1.jpg" alt="Marshall Davis Jones performing at El
+Dorado East Secondary School, Trinidad and Tobago, Courts Bocas Speak Out Tour 2015." loading="lazy">
+<figcaption>Figure 4. Marshall Davis Jones performing at El
+Dorado East Secondary School, Trinidad and Tobago, Courts Bocas Speak Out Tour 2015.</figcaption>
+</figure> 
 
 
 
@@ -287,10 +287,10 @@ student-focused collectivity. The 2 Cents Movement uses Twitter and
 Facebook to create "a constancy of presence" to link together different
 high school communities in Trinidad and Tobago.[^27]
 
-{% include image.html
-            img="issue01/audience-interaction-3.jpg"
-            title="Bishops Anstey Secondary School, Trinidad and Tobago, Courts Bocas Speak Out Tour 2015."
-            caption="Figure 5. Bishops Anstey Secondary School, Trinidad and Tobago, Courts Bocas Speak Out Tour 2015." %} 
+<figure>
+<img src="/images/issue01/audience-interaction-3.jpg" alt="Bishops Anstey Secondary School, Trinidad and Tobago, Courts Bocas Speak Out Tour 2015." loading="lazy">
+<figcaption>Figure 5. Bishops Anstey Secondary School, Trinidad and Tobago, Courts Bocas Speak Out Tour 2015.</figcaption>
+</figure> 
 
 
 

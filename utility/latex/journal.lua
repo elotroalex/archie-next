@@ -1,6 +1,7 @@
 -- archipelagos journal Pandoc Lua filter
 -- Handles journal-specific elements: epigraphs, iframes (omitted), figure captions
 -- Replaces the old contextStyles.py + ssed pipeline
+-- luacheck: globals pandoc PANDOC_DOCUMENT PANDOC_VERSION
 
 -- Normalize title: if front matter has title.long / title.short (nested dict),
 -- flatten it so $title$ renders correctly in the template.
@@ -12,23 +13,28 @@ function Meta(meta)
   return meta
 end
 
--- Strip iframe embeds from PDF output (they're HTML-only)
+-- Strip iframe/audio embeds from PDF output (they're HTML-only); let everything else through.
 function RawBlock(el)
   if el.format == "html" then
     if el.text:match("<iframe") or el.text:match("<audio") then
       return pandoc.Para({
         pandoc.RawInline("latex",
-          "\\begin{quoting}[leftmargin=0pt]\\textit{[Interactive content available in the online version.]}\\end{quoting}")
+          "\\textit{[Interactive content available in the online version.]}")
       })
+    end
+    -- Strip any remaining Jekyll Liquid tags silently
+    if el.text:match("{%%") or el.text:match("{%-") then
+      return {}
     end
   end
 end
 
--- Handle Jekyll-style liquid include tags left in markdown
--- e.g. {% include image.html ... %} → strip silently
+-- Strip inline HTML that Pandoc can't use in LaTeX (Liquid tags, etc.)
 function RawInline(el)
   if el.format == "html" then
-    return {}
+    if el.text:match("{%%") or el.text:match("{%-") then
+      return {}
+    end
   end
 end
 
@@ -41,12 +47,9 @@ end
 -- Convert divs with class "epigraph" to LaTeX epigraph
 function Div(el)
   if el.classes:includes("epigraph") then
-    local source = ""
     local content = {}
     for _, block in ipairs(el.content) do
       if block.t == "Para" then
-        local text = pandoc.utils.stringify(block)
-        -- Last Para is typically the attribution
         content[#content + 1] = block
       end
     end

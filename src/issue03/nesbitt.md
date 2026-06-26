@@ -361,11 +361,12 @@ commodities."[^32] The bookkeeping practices of the plantation system
 make this eminently clear (see fig. 1).
 
 
-{% include image.html
-    img="issue03/nesbitt-1.jpg"
-    title='&quot;Tableau des Finances et du Commerce de la partie Françoise de St. Domingue,&quot; 1792 (detail). Copy in the John Carter Brown Library, Brown University.'
-    caption='Figure 1. &quot;Tableau des Finances et du Commerce de la partie Françoise de St. Domingue,&quot; 1792 (detail). Copy in the John Carter Brown Library, Brown University.'
-    url="https://archive.org/details/tableaudesfinanc00slsn" %}
+<figure>
+<a href="https://archive.org/details/tableaudesfinanc00slsn" target="_blank">
+<img src="/images/issue03/nesbitt-1.jpg" alt="&quot;Tableau des Finances et du Commerce de la partie Françoise de St. Domingue,&quot; 1792 (detail). Copy in the John Carter Brown Library, Brown University." loading="lazy">
+</a>
+<figcaption>Figure 1. &quot;Tableau des Finances et du Commerce de la partie Françoise de St. Domingue,&quot; 1792 (detail). Copy in the John Carter Brown Library, Brown University.</figcaption>
+</figure>
 
 Marx's assertion of the structural equivalency of slaves, machines, and
 animals in the plantation mode of production is strikingly confirmed in
@@ -445,10 +446,10 @@ Domingue remained entirely distinct from early Atlantic capitalism,
 barbarically premodern, a social form and mode of production in which
 humans constituted legal, machinic property (see fig. 2).
 
-{% include image.html
-    img="issue03/nesbitt-2.jpg"
-    title="&quot;Sucrerie,&quot; from Denis Diderot et al., *Encyclopédie, ou, Dictionnaire raisonné des sciences,des arts et des métiers.../ par Diderot \[et\] d'Alembert* (1751--71) (Parma: F. M. Ricci, 1970--79), vol. 1, plates."
-    caption="Figure 2. &quot;Sucrerie,&quot; from Denis Diderot et al., *Encyclopédie, ou, Dictionnaire raisonné des sciences,des arts et des métiers.../ par Diderot \[et\] d'Alembert* (1751--71) (Parma: F. M. Ricci, 1970--79), vol. 1, plates." %}
+<figure>
+<img src="/images/issue03/nesbitt-2.jpg" alt="&quot;Sucrerie,&quot; from Denis Diderot et al., *Encyclopédie, ou, Dictionnaire raisonné des sciences,des arts et des métiers.../ par Diderot \[et\] d" loading="lazy">
+<figcaption>Figure 2. &quot;Sucrerie,&quot; from Denis Diderot et al., *Encyclopédie, ou, Dictionnaire raisonné des sciences,des arts et des métiers.../ par Diderot \[et\] d</figcaption>
+</figure>
 
 The complex, overdetermined historical process of the transition from
 plantation slavery to the industrial production of sugar in Guadeloupe
@@ -550,10 +551,10 @@ industrial production require a complex division of labor that
 distinguishes them together from traditional handicraft (see fig.
 3).[^49]
 
-{% include image.html
-    img="issue03/nesbitt-3.jpg"
-    title='&quot;Aiguillier,&quot; from Diderot et al., *Encyclopédie*, vol. 1, plates.'
-    caption='Figure 3. &quot;Aiguillier,&quot; from Diderot et al., *Encyclopédie*, vol. 1, plates.' %}
+<figure>
+<img src="/images/issue03/nesbitt-3.jpg" alt="&quot;Aiguillier,&quot; from Diderot et al., *Encyclopédie*, vol. 1, plates." loading="lazy">
+<figcaption>Figure 3. &quot;Aiguillier,&quot; from Diderot et al., *Encyclopédie*, vol. 1, plates.</figcaption>
+</figure>
 
 Instead, the crucial analytical distinction (and this will prove key as
 well, I will argue below, to distinguish the often highly developed
@@ -567,13 +568,12 @@ manual manipulation of tools constitutes, therefore, the element
 founding their common distinction from the capitalist (industrial) mode
 of production (fig. 4).
 
-{% include image.html
-    img="issue03/nesbitt-4.jpg"
-    title='&quot;Aiguillier (detail),&quot; from Diderot et al.,
-    *Encyclopédie*, vol. 1, plates.'
-    caption='Figure 4. &quot;Aiguillier (detail),&quot; from Diderot et al.,
-    *Encyclopédie*, vol. 1, plates.'
-%}
+<figure>
+<img src="/images/issue03/nesbitt-4.jpg" alt="&quot;Aiguillier (detail),&quot; from Diderot et al.,
+    *Encyclopédie*, vol. 1, plates." loading="lazy">
+<figcaption>Figure 4. &quot;Aiguillier (detail),&quot; from Diderot et al.,
+    *Encyclopédie*, vol. 1, plates.</figcaption>
+</figure>
 
 In other words, handicraft and manufacture (including plantation
 slavery), distinguished only by their various *degrees* of division of
@@ -581,10 +581,10 @@ labor, nonetheless consist in a more basic unity as modes of production
 in which living labor directly manipulates tools in the production
 process (see fig. 5).
 
-{% include image.html
-    img="issue03/nesbitt-5.jpg"
-    title="&quot;Récolte de l'indigo,&quot; from José Mariano da Conceição Velloso, *O fazendeiro do Brazil, cultivador* (Lisbon, 1806), vol. 2, plate 1, foldout following 341. Copy in the John Carter Brown Library, Brown University."
-    caption="Figure 5. &quot;Récolte de l'indigo,&quot; from José Mariano da Conceição Velloso, *O fazendeiro do Brazil, cultivador* (Lisbon, 1806), vol. 2, plate 1, foldout following 341. Copy in the John Carter Brown Library, Brown University." %}
+<figure>
+<img src="/images/issue03/nesbitt-5.jpg" alt="&quot;Récolte de l" loading="lazy">
+<figcaption>Figure 5. &quot;Récolte de l</figcaption>
+</figure>
 
 The gradual, cumulative increases in productivity observable in the
 transition from handicraft to manufacture derive from the
@@ -609,10 +609,10 @@ manufacture to fully capitalist industrial production is the suppression
 of the anthropological function of living labor as "tool-bearer" (see
 fig. 6).
 
-{% include image.html
-    img="issue03/nesbitt-6.png"
-    title="&quot;Intérieur de la Sucrerie de betteraves de Château Freyes, près de Villeneuve-St.-Georges,&quot; *L'Ilustration Journal Universel*, 13 May 1843.'
-    caption='Figure 6. &quot;Intérieur de la Sucrerie de betteraves de Château Freyes, près de Villeneuve-St.-Georges,&quot; *L'Ilustration Journal Universel*, 13 May 1843." %}
+<figure>
+<img src="/images/issue03/nesbitt-6.png" alt="&quot;Intérieur de la Sucrerie de betteraves de Château Freyes, près de Villeneuve-St.-Georges,&quot; *L" loading="lazy">
+<figcaption>Figure 6. &quot;Intérieur de la Sucrerie de betteraves de Château Freyes, près de Villeneuve-St.-Georges,&quot; *L</figcaption>
+</figure>
 
 The introduction of machinery and mechanized production suppresses the
 direct contact of labor with the object of labor (the commodity), and an

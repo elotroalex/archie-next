@@ -115,14 +115,32 @@ thumb: images/issue04/project-thumb.jpg
 
 ### 5. Add images
 
-Place article images in `src/images/issue04/`. They are served from `/images/issue04/` and referenced in Markdown as:
+Place article images in `src/images/issue04/`. They are served from `/images/issue04/`.
 
-```markdown
-{% include image.html
-   img="images/issue04/filename.jpg"
-   title="Caption"
-   caption="Caption text." %}
+Use a native HTML `<figure>` element directly in the Markdown body. This format renders correctly in both the HTML site and the generated PDF without any special tooling:
+
+```html
+<figure>
+<img src="/images/issue04/filename.jpg" alt="Short description" loading="lazy">
+<figcaption>Figure 1. Full caption text, which may include markdown.</figcaption>
+</figure>
 ```
+
+To wrap the image in a link:
+
+```html
+<figure>
+<a href="https://external-site.com" target="_blank">
+<img src="/images/issue04/filename.jpg" alt="Short description" loading="lazy">
+</a>
+<figcaption>Figure 1. Caption with link to the source.</figcaption>
+</figure>
+```
+
+**Rules:**
+- Always use a root-relative path starting with `/images/` — relative paths break on language-variant pages (`/es/`, `/fr/`).
+- Always include `alt` (used as the PDF caption fallback) and `loading="lazy"`.
+- Do not use the old Jekyll `{% include image.html %}` syntax — it is not processed by Eleventy.
 
 ### 6. Add pure-HTML interactives (optional)
 

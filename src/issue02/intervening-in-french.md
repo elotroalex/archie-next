@@ -42,17 +42,17 @@ Given this environment, it was imperative for us, the authors of [_A Colony in C
 
 The University of Maryland (UMD) Libraries’ Special Collections holds nearly ten thousand French pamphlets, dating from the seventeenth through the twentieth centuries. Many of the French pamphlets were stored in boxes according to subject; perhaps they arrived in College Park in said boxes, or perhaps this system was implemented during earlier attempts to catalogue this collection. Regardless, while the pamphlets focusing on mainland France were organized thematically in uniform boxes, those focusing on the French colonies had been preserved in separate boxes, distinct from the rest of the collection.
 
-{% include image.html
-  img="issue02/colonial-boxes.jpg"
-  title="French Pamphlet Storage Boxes"
-  caption="Photo of colonial pamphlet storage boxes in UMD Special Collections" %}
+<figure>
+<img src="/images/issue02/colonial-boxes.jpg" alt="French Pamphlet Storage Boxes" loading="lazy">
+<figcaption>Photo of colonial pamphlet storage boxes in UMD Special Collections</figcaption>
+</figure>
 
 The colonial materials were not included in a finding aid developed with the help of the UMD French Department in the 1990s, whereas the items from France were broken down into very specific subjects (Series).
 
-{% include image.html
-  img="issue02/finding-aid.jpg"
-  title="French Pamphlet Finding Aid"
-  caption="Scanned copy of early French pamphlet finding aid; excludes colonial pamphlets" %}
+<figure>
+<img src="/images/issue02/finding-aid.jpg" alt="French Pamphlet Finding Aid" loading="lazy">
+<figcaption>Scanned copy of early French pamphlet finding aid; excludes colonial pamphlets</figcaption>
+</figure>
 
 Despite these earlier efforts to improve access to the collection, awareness was still low around campus, especially when it came to the colonial materials. Cataloguing and digitization can increase awareness of such materials by making them accessible to search engines and browsing from remote locations. With that in mind, a team of library staff led by the French subject specialist librarian, Kelsey Corlett-Rivera, began to plan out a project to facilitate online access. The team, along with French faculty members, obtained funding from UMD’s College of Arts and Humanities to hire French graduate and undergraduate students to inventory the pamphlets, which would allow them to be fully cataloged and digitized through existing workflows, overcoming a lack of French-speaking library staff. The student workers were able to inventory more than four thousand pamphlets, leading to the digitization of nearly one thousand through the [_Revealing la Révolution_ ](http://bit.ly/2lsDToP)initiative.[^12] While one of the project’s original goals was to encourage archival research by the UMD undergraduate community, improved access alone did not notably increase online usage.[^13] The team employed various strategies to increase awareness, such as press releases, and also published regular blog posts written by team members and students, several of which featured particularly interesting pamphlets.[^14] Unfortunately, those publicity efforts designed to spark interest did not address two of the underlying causes for low uptake by students: many UMD undergraduates studying Revolutionary France did not speak French, and so while they had improved access, were still not well-served by an online version of an original French pamphlet; and many of those students with the necessary French-language skills were perhaps not as familiar with the historical context behind these pamphlets that frequently focused on very specific issues (such as customs regulations at the port of Marseille).[^15]
 
@@ -72,17 +72,17 @@ The digital humanities can serve as a vast canvas for French-language students t
 
 In the past decade, historians have benefitted greatly from using comparative methods for teaching the Haitian and French Revolutions in the US-history classroom, providing students with a wider scope of history as well as encouraging nuanced discussions about race in the Americas. As John Garrigus argues in his article "White Jacobins/Black Jacobins: Bringing the Haitian and French Revolutions Together in the Classroom," "The case of Saint-Domingue/Haiti raises a topic of great importance for U.S. students—the interaction of racial and national identities." By teaching the Haitian Revolution alongside the French Revolution, Garrigus contends that we are allowed to ask "at what point were events no longer defined in Paris but in the Caribbean?"[^26] This decentering of the metropole in favor of the colonial periphery shifts explorations of identity, authoring, and influence away from traditionally French roots and towards a greater understanding of how the Haitian Revolution shaped the early history of the Americas. In the anglophone history classroom, these questions can be addressed in a number of ways. First, document readers such as _The Haitian Revolution: A Documentary History_; _Slave Revolution in the Caribbean, 1789–1804: A Brief History with Documents_; or _Race and the Enlightenment: A Reader_ help draw students to historical realities through a layer of curation—specific historical context allowing readers to enter into an isolated and excerpted document—giving nonspecialist readers the tools to reconstruct events. Second, the development and persistence of the fields of Haitian revolutionary studies and Atlantic history have allowed scholars to identify the connections between Haiti and the broader Atlantic world in the Age of Revolutions and beyond.[^27] By introducing these approaches into a French-language context, the need to focus on the francophone world beyond France becomes even more apparent.
 
-{% include image.html
-  img="issue02/intro.jpg"
-  title="Historical Introduction"
-  caption="Screenshot showing historical introduction on *A Colony in Crisis* translation page." %}
+<figure>
+<img src="/images/issue02/intro.jpg" alt="Historical Introduction" loading="lazy">
+<figcaption>Screenshot showing historical introduction on *A Colony in Crisis* translation page.</figcaption>
+</figure>
 
 The historical context for each document on the site is currently available only in English. However, each translation is juxtaposed with images of its French-language original, allowing teachers of French to control the implementation of the sources by making use of the contextual précis and bibliographical notes embedded in each translation page.
 
-{% include image.html
-  img="issue02/originalandtranslation.jpg"
-  title="French Original and Translated Excerpt"
-  caption="Screenshot showing a French original juxtaposed with its translated excerpt on *Colony in Crisis* translation page." %}
+<figure>
+<img src="/images/issue02/originalandtranslation.jpg" alt="French Original and Translated Excerpt" loading="lazy">
+<figcaption>Screenshot showing a French original juxtaposed with its translated excerpt on *Colony in Crisis* translation page.</figcaption>
+</figure>
 
 Teachers of French can also easily trace the original pamphlets back to important digital collections of French-language pamphlets in the John Carter Brown Library’s [Haiti Collection](http://bit.ly/2lDN1GX) and the University of Maryland, College Park’s [French Pamphlet Collection](http://bit.ly/2mjtbO7), in the Internet Archive, and at the [Bibliothèque Numérique Caraïbe Amazonie Plateau des Guyanes](http://bit.ly/2l3z2JF) in order to guide their students in conducting original archival research in French.[^28] By providing links to the archived originals, _A Colony in Crisis_ invites students, teachers, and scholars to replicate the type of document curation featured on the site so that other episodes such as the so-called "Saint-Domingue grain shortage" can be recovered from the archive of the early Caribbean. Replicating the curatorial aspect of _A Colony in Crisis_ would implement a number of skills taught in the foreign-language classroom, such as translation, citation styles, and secondary-source reading, while also adding to the wealth of digital history projects on the web. For undergraduate students as well as graduate students and junior scholars, digital projects also often serve as crucial publications that prove useful when pursuing further professional opportunities or employment. For teachers, implementing these aspects of humanistic inquiry and digital literacy into the classroom provides students with critical thinking and the creativity to work within the digital space.
 

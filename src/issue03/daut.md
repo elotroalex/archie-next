@@ -85,11 +85,10 @@ then Haitian president Jean-Pierre Boyer signed a treaty agreeing to pay
 an indemnity to France's King Charles X, to the US occupation of the
 country in 1915.
 
-{% include image.html
-    img="issue03/daut-a.jpg"
-    title="Close up of museum timeline showing the gap."
-    caption="Figure 1. Photo courtesy of Tabitha McIntosh"
-%}
+<figure>
+<img src="/images/issue03/daut-a.jpg" alt="Close up of museum timeline showing the gap." loading="lazy">
+<figcaption>Figure 1. Photo courtesy of Tabitha McIntosh</figcaption>
+</figure>
 
 This kind of elision, and indeed suppression, has the effect of framing
 Haitian history almost entirely around its relationship to Europe and
@@ -103,11 +102,10 @@ the timeline narrates Haiti as a place of authoritarianism and military
 dictatorship that was simultaneously dominated by the Western powers
 (see fig. 2).
 
-{% include image.html
-    img="issue03/daut-b.jpg"
-    title="Long view of the timeline."
-    caption="Figure 2. Photo courtesy of Tabitha McIntosh"
-%}
+<figure>
+<img src="/images/issue03/daut-b.jpg" alt="Long view of the timeline." loading="lazy">
+<figcaption>Figure 2. Photo courtesy of Tabitha McIntosh</figcaption>
+</figure>
 
 The problem with forgetting Haiti's long nineteenth century is that this
 time period was, in many respects, the last time Haiti saw generally
@@ -245,11 +243,10 @@ historians' conceptions of what I have elsewhere referred to as "[the
 Haitian
 Atlantic](https://s3.amazonaws.com/uploads.knightlab.com/storymapjs/ba15390b4fd1e7d29a79c367f2799f1f/transnational-african-american-text-network/draft.html)."[^18]
 
-{% include image.html
-    img="issue03/daut-c.jpg"
-    title="Vèvè of Papa Legba"
-    caption="Figure 3. *Vèvè of Papa Legba*"
-%}
+<figure>
+<img src="/images/issue03/daut-c.jpg" alt="Vèvè of Papa Legba" loading="lazy">
+<figcaption>Figure 3. *Vèvè of Papa Legba*</figcaption>
+</figure>
 
 If Legba opens the gates so that the living can have access to the dead,
 this is not solely for the purposes of remembrance, and it is certainly
@@ -566,32 +563,30 @@ librarians help to scan the Nemours Collection on their own, using what
 we might refer to as historian archivists, a more finely honed
 variation, perhaps, of the "citizen historian" model?
 
-{% include image.html
-    img="issue03/daut-d.jpg"
-    title="Letter from General Donatien Rochambeau to General
-Jean-Jacques Dessalines."
-    caption="Figure 4. Letter from General Donatien Rochambeau to General
+<figure>
+<img src="/images/issue03/daut-d.jpg" alt="Letter from General Donatien Rochambeau to General
+Jean-Jacques Dessalines." loading="lazy">
+<figcaption>Figure 4. Letter from General Donatien Rochambeau to General
 Jean-Jacques Dessalines. Josefina del Toro Fulladosa Collection, Alfred
-Nemours Collection, University of Puerto Rico, Río Piedras Campus."
-%}
+Nemours Collection, University of Puerto Rico, Río Piedras Campus.</figcaption>
+</figure>
 
-{% include image.html
-    img="issue03/daut-e.jpg"
-    title="Engraving by Barincou of Boyer in full dress uniform
-for a royal reception, 17 April 1825."
-    caption="Figure 5. Engraving by Barincou of Boyer in full dress uniform
+<figure>
+<img src="/images/issue03/daut-e.jpg" alt="Engraving by Barincou of Boyer in full dress uniform
+for a royal reception, 17 April 1825." loading="lazy">
+<figcaption>Figure 5. Engraving by Barincou of Boyer in full dress uniform
 for a royal reception, 17 April 1825. Josefina del Toro Fulladosa
 Collection, Alfred Nemours Collection, University of Puerto Rico, Río
-Piedras Campus."
-%}
+Piedras Campus.</figcaption>
+</figure>
 
-{% include image.html
-    img="issue03/daut-f.jpg"
-    title="Proclamation from 4 June 1812 signed by Alexandre
-Pétion."
-    caption="Figure 6. Proclamation from 4 June 1812 signed by Alexandre
+<figure>
+<img src="/images/issue03/daut-f.jpg" alt="Proclamation from 4 June 1812 signed by Alexandre
+Pétion." loading="lazy">
+<figcaption>Figure 6. Proclamation from 4 June 1812 signed by Alexandre
 Pétion. Josefina del Toro Fulladosa Collection, Alfred Nemours
-Collection, University of Puerto Rico, Río Piedras Campus." %}
+Collection, University of Puerto Rico, Río Piedras Campus.</figcaption>
+</figure>
 
 The "citizen historian" model of digital history projects has been
 criticized for what some see in the end as having resulted in little

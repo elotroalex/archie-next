@@ -273,11 +273,12 @@ interacts with the main event: the grainy texture of the vinyl screen or
 paper sheet onto which the tweets were projected roughened up the
 smoothness of the phone or computer screen.
 
-{% include image.html
-            img="issue01/douenislands.jpg"
-            url="https://www.instagram.com/douenislands/"
-            title="Screen capture of the Douen Islands Instagram account"
-            caption="Figure 1. Screen capture of the Douen Islands Instagram account, taken 28 November 2014." %}
+<figure>
+<a href="https://www.instagram.com/douenislands/" target="_blank">
+<img src="/images/issue01/douenislands.jpg" alt="Screen capture of the Douen Islands Instagram account" loading="lazy">
+</a>
+<figcaption>Figure 1. Screen capture of the Douen Islands Instagram account, taken 28 November 2014.</figcaption>
+</figure>
 
 
 
@@ -327,10 +328,10 @@ first twelve tweets assert self-definitions and ask questions that also
 identify the douen's properties, as in Warner's first tweet of the
 evening as @douenislands, for example:
 
-{% include image.html
-            img="issue01/douenislands-twitter.jpg"
-            title="Screencapture of @douenislands Twitter feed."
-            caption="Figure 2. Screencapture of @douenislands Twitter feed." %}
+<figure>
+<img src="/images/issue01/douenislands-twitter.jpg" alt="Screencapture of @douenislands Twitter feed." loading="lazy">
+<figcaption>Figure 2. Screencapture of @douenislands Twitter feed.</figcaption>
+</figure>
 
 
 
@@ -524,10 +525,10 @@ image on the inside of the cover of *Tomorrow Please God*, where the
 project statement goals are printed. Below the image on Tumblr was an
 invitation to discover the text by clicking the download link.
 
-{% include image.html
-            img="issue01/douenislands-tumblr.jpg"
-            title="Screencapture of douenislands.tumblr.com, taken 27 July 2015."
-            caption="Figure 3. Screencapture of douenislands.tumblr.com, taken 27 July 2015." %}
+<figure>
+<img src="/images/issue01/douenislands-tumblr.jpg" alt="Screencapture of douenislands.tumblr.com, taken 27 July 2015." loading="lazy">
+<figcaption>Figure 3. Screencapture of douenislands.tumblr.com, taken 27 July 2015.</figcaption>
+</figure>
 
 
 
@@ -537,10 +538,10 @@ invitations and videos advertising "In Forest and Wild Skies"; the
 [videos](https://vimeo.com/78231839) were then used as part of Bagoo's
 poetry reading:[^34]
 
-{% include image.html
-            img="issue01/douenislands-invitation.jpg"
-            title="Screencapture of \'In Forest and Wild Skies\' invitation posted on douenislands.tumblr.com, taken 19 May 2014."
-            caption="Figure 4. Screencapture of \'In Forest and Wild Skies\' invitation posted on douenislands.tumblr.com, taken 19 May 2014." %}
+<figure>
+<img src="/images/issue01/douenislands-invitation.jpg" alt="Screencapture of \" loading="lazy">
+<figcaption>Figure 4. Screencapture of \</figcaption>
+</figure>
 
 
 
@@ -551,10 +552,10 @@ post with the link to the e-book. After a year and a half, that was
 replaced with new materials looking forward to an 9 April 2016
 BocasLitFest event.
 
-{% include image.html
-            img="issue01/kis-ka-dee.jpg"
-            title="Screencapture of Kis-Ka-Dee announcement posted on douenislands.tumblr.com, taken 29 February 2016."
-            caption="Figure 5. Screencapture of Kis-Ka-Dee announcement posted on douenislands.tumblr.com, taken 29 February 2016." %}
+<figure>
+<img src="/images/issue01/kis-ka-dee.jpg" alt="Screencapture of Kis-Ka-Dee announcement posted on douenislands.tumblr.com, taken 29 February 2016." loading="lazy">
+<figcaption>Figure 5. Screencapture of Kis-Ka-Dee announcement posted on douenislands.tumblr.com, taken 29 February 2016.</figcaption>
+</figure>
 
 
 
@@ -626,10 +627,10 @@ example, places a diagram demonstrating how a child's back straightens
 out over the course of two years next to the drawing of the skeleton of
 a foot:
 
-{% include image.html
-            img="issue01/tomorrow-please-god.jpg"
-            title="Tomorrow Please God, 22--23."
-            caption="Figure 6. Tomorrow Please God, 22--23." %}
+<figure>
+<img src="/images/issue01/tomorrow-please-god.jpg" alt="Tomorrow Please God, 22--23." loading="lazy">
+<figcaption>Figure 6. Tomorrow Please God, 22--23.</figcaption>
+</figure>
 
 
 
@@ -653,10 +654,10 @@ backward? Which foot will choose the direction for the douen's path? And
 how might a tracker read the traces that this set of half-straight,
 half-backward pair of feet will leave behind?
 
-{% include image.html
-            img="issue01/tomorrow-please-god-2.jpg"
-            title="Tomorrow Please God, 12--13."
-            caption="Figure 7. Tomorrow Please God, 12--13." %}
+<figure>
+<img src="/images/issue01/tomorrow-please-god-2.jpg" alt="Tomorrow Please God, 12--13." loading="lazy">
+<figcaption>Figure 7. Tomorrow Please God, 12--13.</figcaption>
+</figure>
 
 
 The two shadowboxes, with the brain on the left side and the
@@ -709,10 +710,10 @@ retweets or favorites, thereby lifting the tweets out of the context of
 the stream that originally constituted the tweets' citational ecosystem
 by not expanding them, then copying each three times:
 
-{% include image.html
-            img="issue01/tomorrow-please-god-3.jpg"
-            title="Tomorrow Please God, 20--21."
-            caption="Figure 6. Tomorrow Please God, 20--21." %}
+<figure>
+<img src="/images/issue01/tomorrow-please-god-3.jpg" alt="Tomorrow Please God, 20--21." loading="lazy">
+<figcaption>Figure 6. Tomorrow Please God, 20--21.</figcaption>
+</figure>
 
 
 

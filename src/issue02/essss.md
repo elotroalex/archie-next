@@ -31,10 +31,10 @@ The church forbids the destruction of these recorded sacraments, so many still e
 In the early 2000s, several scholars independently working in these types of ecclesiastical records to recover the histories of Afro-Latinos applied for outside funding to help make some of these most vital records available. In 2003, the National Endowment for the Humanities recognized the valuable transinstitutional partnership between professors Jane Landers of Vanderbilt University, Mariza Soares de Carvalho of Brazil’s Universidade Federal Fluminense, and Paul Lovejoy of the Harriet Tubman Institute for Research on Africa and Its Diaspora at York University in Canada, presenting the team with a grant for \$150,000 to preserve the data in the churches that served Brazil and Cuba’s African populations, namely, in Havana, Matanzas, and Niteroi, a suburb of outside of Rio de Janeiro.
 
 
-{% include image.html
-	img="issue02/JanePaulMariza.jpg"
-	title="Jane Landers, Paul Lovejoy, and Mariza Soares de Carvalho"
-	caption="The International ESSSS Team at the completion of their first digitization project in Matanzas, Cuba, 2005." %}
+<figure>
+<img src="/images/issue02/JanePaulMariza.jpg" alt="Jane Landers, Paul Lovejoy, and Mariza Soares de Carvalho" loading="lazy">
+<figcaption>The International ESSSS Team at the completion of their first digitization project in Matanzas, Cuba, 2005.</figcaption>
+</figure>
 
 At that time, digital preservation projects were still in their infancies, and there were few precedents for this team to draw on. All three professors leaned on their training as historians as well as on whatever time library and IT staff from their institutions could donate to help them figure out a simple system to digitize, store, and curate the images, mainly for personal use. The team built graduate training into their mission from the beginning, taking with them graduate students from all three universities. When they arrived, they found many more volumes than expected, and they trained and hired local graduate students in Cuba and Brazil to help speed the digitization process. Together they photographed each page of the volumes and kept close track of serial numbers and order. The team members returned home with full hard drives; now they were faced with the challenge of how to best manage the data. With no further guidance, the librarians at the time built a database using a locally developed Perl-based framework for presenting the actual images. The ESSSS metadata was stored in a MySQL database and used a Dublin Core-based structure.
 
@@ -42,27 +42,26 @@ At the completion of the project in 2005, more than 120,000 images of rich, unde
 
 The success of this project has allowed this group of scholars, and the scholars they have trained, to win further grants from the British Library’s Endangered Archives Programme to digitize valuable endangered collections of historic documents throughout Latin America and the Caribbean. In the past fifteen years, these rapidly expanding teams have digitally preserved further key documents from Cuba and Brazil, as well as those in Colombia, Florida (the documents come from the Spanish colonial period), and Cape Verde. In doing so, they have captured an estimated 3 million records concerning more than 7 million enslaved Africans and their descendants as well as 2.5 million non-enslaved persons, many of them free blacks. Also captured in the images is documentation of the Asians, indigenous populations, and Europeans, and their descendants, who worked and lived alongside them through the past four hundred years of history. The project has since expanded beyond the ecclesiastical sources to include notarial material and slave registers. Now the teams, working together with the digital archive of Ecclesiastical and Secular Sources for Slave Societies, have preserved and curated the largest and oldest collection of digitized documents pertaining to Africans and their descendants in the Atlantic world. This information is secure on multiple servers and has backups in multiple versions; it is safe no matter what happens to the hard copies in their original locations.
 
-{% include image.html
-	img="issue02/Basilica.jpg"
-	title="Cathedral Basilica of St. Augustine, St. Augustine, Florida"
-	caption="The Cathedral Basicila of St. Augustine, Florida, where the ESSSS team digitized hundreds of records of free and enslaved Africans from Florida’s Spanish period. Photo by Jane Landers"
-%}
+<figure>
+<img src="/images/issue02/Basilica.jpg" alt="Cathedral Basilica of St. Augustine, St. Augustine, Florida" loading="lazy">
+<figcaption>The Cathedral Basicila of St. Augustine, Florida, where the ESSSS team digitized hundreds of records of free and enslaved Africans from Florida’s Spanish period. Photo by Jane Landers</figcaption>
+</figure>
 
 ## Issues of Expansion
 
 As the ESSSS digital archive expanded, it outgrew the initial infrastructure used to manage it. The ESSSS team had in the past, out of necessity, privileged locating and saving endangered information over digital curation. This is because of the specialized and difficult, and often dangerous, nature of rescuing these older documents, which become permanently inaccessible on a regular basis. For example, in the Chocόe region of Colombia, the ESSSS preservation team worked in an area known for being a refuge of the Revolutionary Armed Forces of Columbia. In Cuba, they often labored without consistent access to electricity and running water. One of the collections the ESSSS team digitized went missing from the church where it had been stored, so now the ESSSS photographs are all that remains of the historic record of Africans in the region. Some of the churches, which served plantations in the early modern era, are in locations that are difficult to access or in places vulnerable to climate change: some document collections have been damaged from insect swarms and flooding, for example. Each day these records disappear from churches, and it is a race against time to collect and preserve these early and rare primary sources for African history in the Caribbean and wider Atlantic world.
 
-{% include image.html
-	img="issue02/Insects.jpg"
-	title="Insect-Damaged Manuscript"
-	caption="Insects have taken their toll on the pages of this manuscript. Photo by David LaFevor" %}
+<figure>
+<img src="/images/issue02/Insects.jpg" alt="Insect-Damaged Manuscript" loading="lazy">
+<figcaption>Insects have taken their toll on the pages of this manuscript. Photo by David LaFevor</figcaption>
+</figure>
 
 The rapid and necessary focus on the preservation mission meant that the images were being kept on an increasingly outdated digital platform that, over time, became unsustainable and difficult to maneuver. The repository grew faster than Vanderbilt’s library staff were able to curate it, which resulted in fewer and fewer global researchers able to successfully access or navigate it. This ran contrary to the original mission of ESSSS, which the team shared with the Endangered Archives Programme of the British Library: full and complete open global access to these documents. In particular, the ESSSS team wanted researchers in and of Latin America and the Caribbean to have increased access to their own histories.
 
-{% include image.html
-	img="issue02/FatherBendito.jpg"
-	title="Father Bendito with Part of the Archive"
-	caption="Father Bendito, parish priest of the Santísima Trinidad church, next to part of one of our Cuban collections. Photo by David LaFevor" %}
+<figure>
+<img src="/images/issue02/FatherBendito.jpg" alt="Father Bendito with Part of the Archive" loading="lazy">
+<figcaption>Father Bendito, parish priest of the Santísima Trinidad church, next to part of one of our Cuban collections. Photo by David LaFevor</figcaption>
+</figure>
 
 With recent generous assistance from the American Council of Learned Societies, the Andrew W. Mellon Foundation, the National Endowment for the Humanities, and Vanderbilt University, the ESSSS team is currently in the process of updating the archive’s platform to the Sobek Content Management system in order to increase functionality, sustainability, and accessibility. The new archive will be interoperable with the latest digital preservation and dissemination projects, allowing for novel uses of the data.
 
@@ -82,10 +81,10 @@ Ideally, once each of these conditions has been met, the ESSSS team can proceed 
 
 It is important to note that this digitization process is not an extraction. All physical documents are left where they were found, though if the project is funded by an EAP grant, ESSSS team members will use the boxes and acid-free paper supplied by the British Library to organize and repackage the documents and other materials, if needed. And because we are aware of the issues that scholars, particularly those from developing nations, have encountered using our outdated site to read the digital images, we always leave behind hard drives full of the digital copies with local archivists, librarians, priests, and students who have indicated interest in receiving these materials. The goal of our project has always primarily been to widen access to the past for everyone.
 
-{% include image.html
-	img="issue02/BrazilStudents2015.jpg"
-	title="Digitization Training"
-	caption="Josilene Pereira Pacheco and Francisco Sávio da Silva digitize a notarial record from the nineteenth century at the Arquivo Judicial da Comarca de João Pessoa in the city of João Pessoa, July 2015. Photo by David LaFevor" %}
+<figure>
+<img src="/images/issue02/BrazilStudents2015.jpg" alt="Digitization Training" loading="lazy">
+<figcaption>Josilene Pereira Pacheco and Francisco Sávio da Silva digitize a notarial record from the nineteenth century at the Arquivo Judicial da Comarca de João Pessoa in the city of João Pessoa, July 2015. Photo by David LaFevor</figcaption>
+</figure>
 
 As each team digitizes, the members collect basic metadata using the Endangered Archives Programme spreadsheet, the program’s collection method of choice. These spreadsheets include detailed information related to the organization and curation of the original items as well as their new digital formats.[^3] In the past, the team made the decision to rename the files on the camera to reflect the row number in the EAP database table. Team members did this to eliminate overwriting files with the same name from different volumes and projects and to allow the librarians at Vanderbilt to match each image with its metadata. An unforeseeable consequence of this was that as the system grew this naming convention made it difficult to determine the appropriate order of pages in each volume of documents, since some volumes were split into different parts and imported at different times. Fortunately, the ESSSS teams also retained the original file names in the database; in the future these can be catalogued both ways while preserving each image’s metadata.
 
@@ -93,10 +92,10 @@ As each team digitizes, the members collect basic metadata using the Endangered 
 
 Following the conference \"Digital Humanities and the History of Slavery," at Vanderbilt University in 2015, the ESSSS teams moved forward with the plan to switch to a more standardized platform to enable better preservation and dissemination of the unique records and information within.[^4] In the past year, we have worked to transfer the two existing frameworks into a single Microsoft SQL system utilizing SobekCM, an open-source software developed by librarians at the University of Florida, who, along with a larger community of users, support ongoing development and updates. The most well-known collections that use SobekCM are digital libraries such as the University of Florida Digital Collections (UFDC) and the Digital Library of the Caribbean (dLOC). Many other important projects for Caribbean history, including the Historic St. Augustine Project, the Archive of Haitian Religion and Culture, and the Florida and Puerto Rico Digital Newspaper Project, also use this software. It utilizes C\# programming language to process metadata stored as METS ([www.loc.gov/standards/mets](http://web.archive.org/web/20170904034615/http://www.loc.gov/standards/mets/)).
 
-{% include image.html
-	img="issue02/Conference.jpg"
-	title="Digital Humanities and the History of Slavery"
-	caption="\"Digital Humanities and the History of Slavery: A Conference to Enhance Research, Collaboration, and Graduate Training.\" Photo by Monte Holman of the Fortlander Agency" %}
+<figure>
+<img src="/images/issue02/Conference.jpg" alt="Digital Humanities and the History of Slavery" loading="lazy">
+<figcaption>\</figcaption>
+</figure>
 
 SobekCM organizes the files and treats the volumes as a cohesive unit instead of individual pages. Since the volumes are treated as the base object, exporting the records into MARC XML provides an easy method for the materials to be imported into the library catalogue, where they can be retrieved by WorldCat. It also provides a crosswalk to the Text Encoding Initiative (TEI), the current standard for many new digital humanities projects, particularly in the fields of history and slavery studies. This allows for a wide range of future possibilities when it comes to interoperability of our data with that of larger databases, which scholars have programmed to mine the information in ESSSS and make it more easily searchable. Lastly, files and metadata are stored in directories for each volume and collection. This provides a simple way to share volumes or to do additional analysis of the information within.
 

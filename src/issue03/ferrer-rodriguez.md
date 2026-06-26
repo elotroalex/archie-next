@@ -244,10 +244,10 @@ curating our [*Digital Aponte*](http://aponte.hosting.nyu.edu/) project
 (see fig. 1), transforming Aponte's descriptions into a site of action
 meant first making that archival record as accessible as possible.[^8]
 
-{% include image.html
-    img="issue03/ferrer-1.png"
-    title="Screenshot of *Digital Aponte*."
-    caption="Figure 1. *Digital Aponte*." %}
+<figure>
+<img src="/images/issue03/ferrer-1.png" alt="Screenshot of *Digital Aponte*." loading="lazy">
+<figcaption>Figure 1. *Digital Aponte*.</figcaption>
+</figure>
 
 *Digital Aponte* aspires to foreground Aponte's words, through the
 archival document, as they have arrived to us. Our effort may be
@@ -577,10 +577,10 @@ contains elements from perhaps a dozen láminas (see fig. 2). Marielle
 Plaisir came up with more than fifty pieces, and Renée Stout with some
 nine (plus a gun).
 
-{% include image.html
-    img="issue03/ferrer-2.jpg"
-    title="José Bedia, *Júbilo de Aponte*, 2017; mixed media on mixed papers, 106 x 143 in. (courtesy of the artist)."
-    caption="Figure 2. José Bedia, *Júbilo de Aponte*, 2017; mixed media on mixed papers, 106 x 143 in. (courtesy of the artist)." %}
+<figure>
+<img src="/images/issue03/ferrer-2.jpg" alt="José Bedia, *Júbilo de Aponte*, 2017; mixed media on mixed papers, 106 x 143 in. (courtesy of the artist)." loading="lazy">
+<figcaption>Figure 2. José Bedia, *Júbilo de Aponte*, 2017; mixed media on mixed papers, 106 x 143 in. (courtesy of the artist).</figcaption>
+</figure>
 
 In many cases, the production of the art was preceded by sustained
 engagement with *Digital Aponte* or with the site's creators. Here it
@@ -597,10 +597,10 @@ from her reading *as an artist* the words of Aponte *the artist* (see
 fig. 3). We might even say it derives from a synergy between her own
 artistic and political practice and Aponte's.
 
-{% include image.html
-    img="issue03/ferrer-3.jpg"
-    title="Teresita Fernández, *Aponte*, 2017; pyrite, oil, and graphite on wood panel, 21.5 x 36 x 2 in. overall (courtesy of the artist and Lehmann Maupin, New York; photograph by Yolanda Navas)."
-    caption="Figure 3. Teresita Fernández, *Aponte*, 2017; pyrite, oil, and graphite on wood panel, 21.5 x 36 x 2 in. overall (courtesy of the artist and Lehmann Maupin, New York; photograph by Yolanda Navas)." %}
+<figure>
+<img src="/images/issue03/ferrer-3.jpg" alt="Teresita Fernández, *Aponte*, 2017; pyrite, oil, and graphite on wood panel, 21.5 x 36 x 2 in. overall (courtesy of the artist and Lehmann Maupin, New York; photograph by Yolanda Navas)." loading="lazy">
+<figcaption>Figure 3. Teresita Fernández, *Aponte*, 2017; pyrite, oil, and graphite on wood panel, 21.5 x 36 x 2 in. overall (courtesy of the artist and Lehmann Maupin, New York; photograph by Yolanda Navas).</figcaption>
+</figure>
 
 Another such conversation occurred with Renée Stout, who was
 particularly interested in what Aponte might have tried to hide or

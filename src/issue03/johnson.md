@@ -32,14 +32,14 @@ was taken at 2:00 a.m. on 25 September 2017. Although only months apart,
 the contrast between the two is stark. The second image was taken five
 days after Hurricane María made landfall in Puerto Rico.
 
-{% include image.html
-    img="issue03/johnson-a.png"
-    title="Suomi Puerto Rico 24 September 2017"
-    caption="Suomi satellite images of Puerto Rico on 24 July 2017 and
+<figure>
+<a href="https://twitter.com/NOAASatellitePA/status/912368981784309760" target="_blank">
+<img src="/images/issue03/johnson-a.png" alt="Suomi Puerto Rico 24 September 2017" loading="lazy">
+</a>
+<figcaption>Suomi satellite images of Puerto Rico on 24 July 2017 and
     24 September 2017. Image credit\: NOAA National Environmental
-    Satellite, Data, and Information Service (NESDIS)."
-    url="https://twitter.com/NOAASatellitePA/status/912368981784309760" 
-%}
+    Satellite, Data, and Information Service (NESDIS).</figcaption>
+</figure>
 
 Pictured here, Puerto Rico is a dark mass, spots of light like stars
 plotting colonial and indigenous space and time. Ghostly white dots
@@ -160,15 +160,15 @@ Comprehensive Ocean-Atmosphere Data Set in 2002. Schmidt's image tracks
 all the voyages in black, plotted on a white background of vacated of
 land masses.
 
-{% include image.html
-    img="issue03/johnson-b.png"
-    title="Schmidt ICOADS US Maury"
-    caption="All voyages from the ICOADS US Maury collection. Ships tracks
+<figure>
+<a href="http://sappingattention.blogspot.com/2012/11/reading-digital-sources-case-study-in.html" target="_blank">
+<img src="/images/issue03/johnson-b.png" alt="Schmidt ICOADS US Maury" loading="lazy">
+</a>
+<figcaption>All voyages from the ICOADS US Maury collection. Ships tracks
     in black, plotted on a white background, show the outlines of the
     continents and the predominant tracks on the trade winds. Created by Ben
-    Schmidt, 2012."
-    url="http://sappingattention.blogspot.com/2012/11/reading-digital-sources-case-study-in.html"
-%}
+    Schmidt, 2012.</figcaption>
+</figure>
 
 Schmidt sought to visualize the wind currents that swept caravans of
 wood and flesh back and forth across the ocean. Struck by this image,
@@ -178,13 +178,13 @@ because we seldom connect breeze to wind to storm, until we must
 remember what happens when it fuels itself: gales, hurricanes, typhoons,
 tornadoes."[^10]
 
-{% include image.html
-    img="issue03/johnson-c.png"
-    title="Johnson NOAA 20sep17\_maria\_geocolor hurricane"
-    caption="NOAA GOES-16 satellite image of the eye of Hurricane María
-    over Puerto Rico, 20 September 2017."
-    url="https://www.youtube.com/watch?v=ezQxonSFCaU" 
-%}
+<figure>
+<a href="https://www.youtube.com/watch?v=ezQxonSFCaU" target="_blank">
+<img src="/images/issue03/johnson-c.png" alt="Johnson NOAA 20sep17\_maria\_geocolor hurricane" loading="lazy">
+</a>
+<figcaption>NOAA GOES-16 satellite image of the eye of Hurricane María
+    over Puerto Rico, 20 September 2017.</figcaption>
+</figure>
 
 In both the image of a darkened Puerto Rico and that of dark lines of
 ships crossing the ocean in the nineteenth century, the viewer faces a
@@ -463,11 +463,12 @@ of hauntings left behind.
 
 ## Part 3. *screams*
 
-{% include image.html
-    img="issue03/johnson-audio-a.png"
-    url="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/12068585&auto_play=false&show_user=true&visual=true"
-    title="Light a candle. Drink a glass of water. Press Play. Listen for two minutes."
-    caption="Light a candle. Drink a glass of water. Press Play. Listen for two minutes." %}
+<figure>
+<a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/12068585&auto_play=false&show_user=true&visual=true" target="_blank">
+<img src="/images/issue03/johnson-audio-a.png" alt="Light a candle. Drink a glass of water. Press Play. Listen for two minutes." loading="lazy">
+</a>
+<figcaption>Light a candle. Drink a glass of water. Press Play. Listen for two minutes.</figcaption>
+</figure>
 
 The second track of Matana Roberts's *Coin Coin Chapter One: Gens de
 couleur libres* is titled "Pov Piti." *Pov Piti* means "poor little one"
@@ -621,11 +622,10 @@ physical album included graphic notation Roberts created while making
 the album; that blog no longer exists. The album remains available on
 SoundCloud for free.
 
-{% include image.html
-    img="issue03/johnson-d.jpeg"
-    title="Matana Roberts Notation"
-    caption="Roberts's graphic notation for Coin Coin." 
-%}
+<figure>
+<img src="/images/issue03/johnson-d.jpeg" alt="Matana Roberts Notation" loading="lazy">
+<figcaption>Roberts</figcaption>
+</figure>
 
 In the process of composing *Mississippi Moonchile* and *River Run
 Thee*, *Coin Coin* chapters 2 and 3, Roberts began using her Instagram
@@ -681,11 +681,12 @@ is visual proof ("There will never be any pictures of me"), and in
 Roberts's creation, she time-travels from the past into a new present to
 live again.
 
-{% include image.html
-    img="issue03/johnson-vid-a.png"
-    url="https://player.vimeo.com/video/23003301?autoplay=1&loop=1&color=ffffff"
-    title='Matana Roberts, &quot;Mississippi Moonchile,&quot; *Coin Coin*. Directed by Radwan Moumneh.'
-    caption='Matana Roberts, &quot;Mississippi Moonchile,&quot; *Coin Coin*. Directed by Radwan Moumneh.' %}
+<figure>
+<a href="https://player.vimeo.com/video/23003301?autoplay=1&loop=1&color=ffffff" target="_blank">
+<img src="/images/issue03/johnson-vid-a.png" alt="Matana Roberts, &quot;Mississippi Moonchile,&quot; *Coin Coin*. Directed by Radwan Moumneh." loading="lazy">
+</a>
+<figcaption>Matana Roberts, &quot;Mississippi Moonchile,&quot; *Coin Coin*. Directed by Radwan Moumneh.</figcaption>
+</figure>
 
 Fluid and fugitive, Matana Roberts and Coin Coin do not occupy a single
 digital project space or site. Coin Coin, through Roberts, does what she
@@ -737,13 +738,12 @@ rapacious and ravenous consumption only colonialism could beget. A
 xroads praxis exceeds this binary. It recognizes that the absence is
 there and then attends to it.
 
-{% include image.html
-    img="issue03/johnson-e.png"
-    title="Parham's Inverted Maury Map"
-    caption="In \"Black Haunts in the Anthropocene,\" Marisa Parham
-    inverts the white and black space in Schmdit's data visualization."
-    url="http://blackhaunts.mp285.com/" 
-%}
+<figure>
+<a href="http://blackhaunts.mp285.com/" target="_blank">
+<img src="/images/issue03/johnson-e.png" alt="Parham" loading="lazy">
+</a>
+<figcaption>In \</figcaption>
+</figure>
 
 To return to the spiderweb of Maury voyages, in "Black Haunts in the
 Anthropocene" Parham writes:
@@ -769,11 +769,12 @@ xroads praxis, the destination is less important than our survival, our
 machines are less important than the humans inside them, and we never
 forget that even in the dark we keep the light.
 
-{% include image.html
-    img="issue03/johnson-vid-b.png"
-    url="https://www.youtube.com/embed/mO-PAYLa0Y0"
-    title='Lighter Thieves. &quot;We Keep the Light.&quot;'
-    caption='Lighter Thieves. "We Keep the Light."' %}
+<figure>
+<a href="https://www.youtube.com/embed/mO-PAYLa0Y0" target="_blank">
+<img src="/images/issue03/johnson-vid-b.png" alt="Lighter Thieves. &quot;We Keep the Light.&quot;" loading="lazy">
+</a>
+<figcaption>Lighter Thieves. </figcaption>
+</figure>
 
 
 ## Acknowledgments
