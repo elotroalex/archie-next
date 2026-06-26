@@ -1,6 +1,31 @@
 ---
 title: home
-layout: article
+layout: default
+lang: en
 permalink: index.html
 ---
-<p>archipelagos — stub home page</p>
+
+<h1 class="journal-title">{{ site.title }}</h1>
+<h2 class="tagline">{{ site.description }}</h2>
+
+<hr>
+
+<h2>{{ i18n[lang].issues.issue03 }}</h2>
+{% set issueTag = "issue03" %}
+{% include "toc.njk" %}
+
+<hr>
+
+<h2>{{ i18n[lang].issues.issue02 }}</h2>
+{% set issueTag = "issue02" %}
+{% include "toc.njk" %}
+
+<hr>
+
+<h2>{{ i18n[lang].issues.issue01 }}</h2>
+{% set issueTag = "issue01" %}
+{% include "toc.njk" %}
+
+<hr>
+
+<h3><a href="/about.html">{{ i18n[lang].global.editorial }}</a></h3>

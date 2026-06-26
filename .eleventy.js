@@ -17,6 +17,17 @@ module.exports = function (eleventyConfig) {
   // _i18n content fragments are data files used by templates, not standalone pages
   eleventyConfig.ignores.add("src/_i18n/**");
 
+  // --- Collections ---
+
+  // All issue articles combined — used by the i18n language variant generators
+  eleventyConfig.addCollection("allIssueArticles", (collectionApi) => {
+    return [
+      ...collectionApi.getFilteredByTag("issue01"),
+      ...collectionApi.getFilteredByTag("issue02"),
+      ...collectionApi.getFilteredByTag("issue03"),
+    ];
+  });
+
   // --- Markdown configuration ---
   const md = markdownIt({
     html: true,
