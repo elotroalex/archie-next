@@ -2,3 +2,4 @@ node_modules/
 _site/
 .eleventy-cache/
 .cache/
+.DS_Store
