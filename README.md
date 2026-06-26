@@ -1,6 +1,6 @@
 # archipelagos | a journal of Caribbean digital praxis
 
-*archipelagos* is a born-digital, peer-reviewed publication devoted to creative exploration, debate, and critical thinking about and through digital practices in contemporary scholarly and artistic work in and on the Caribbean. Given the wide implications of the "digital turn" for our very conceptions of knowledge, our mission is to discern the ways in which the digital may enhance and transform our comprehension of the regional and diasporic Caribbean. *archipelagos* responds to this challenge with three distinct dimensions of critical production: scholarly essays; digital scholarship projects; and digital project reviews.
+_archipelagos_ is a born-digital, peer-reviewed publication devoted to creative exploration, debate, and critical thinking about and through digital practices in contemporary scholarly and artistic work in and on the Caribbean. Given the wide implications of the "digital turn" for our very conceptions of knowledge, our mission is to discern the ways in which the digital may enhance and transform our comprehension of the regional and diasporic Caribbean. _archipelagos_ responds to this challenge with three distinct dimensions of critical production: scholarly essays; digital scholarship projects; and digital project reviews.
 
 The journal is trilingual (English, Spanish, French), published by Columbia University Libraries, and committed to access in low-bandwidth environments. ISSN: 2689-842X.
 
@@ -11,6 +11,7 @@ Live site: [archipelagosjournal.org](http://archipelagosjournal.org)
 ## Quick guide: create a new issue
 
 1. **Scaffold the folder structure**
+
    ```bash
    bash utility/intake/new-issue.sh issue09
    ```
@@ -18,27 +19,32 @@ Live site: [archipelagosjournal.org](http://archipelagosjournal.org)
 2. **Register the issue** in `src/_data/issues.js` (see [Adding a new issue](#adding-a-new-issue) for the full entry format). The homepage updates automatically — no other config change needed.
 
 3. **Add labels** in `src/_i18n/en.yml`, `es.yml`, and `fr.yml` under the `issues:` key:
+
    ```yaml
    issue09: "Issue (9) | Theme | Month YYYY"
    ```
 
 4. **Convert Word files to Markdown** — drop `.docx` files in `src/issue09/incoming/`, then for each one:
+
    ```bash
    bash utility/intake/convert-docx.sh src/issue09/incoming/author-title.docx
    ```
 
 5. **Fill in front matter** — edit each generated `.md` file and replace every `# TODO` placeholder with real values. The `section` field must be one of: `introduction`, `articles`, `projects`, `reviews`.
 
-6. **Build and verify**
-   ```bash
-   npm run serve
-   ```
-   Open `http://localhost:8080` and check the homepage TOC.
+6. **Generate PDFs**
 
-7. **Generate PDFs**
    ```bash
    bash utility/latex/makeIssues.sh issue09
    ```
+
+7. **Build and verify**
+
+   ```bash
+   npm run serve
+   ```
+
+   Open `http://localhost:8080` and check the homepage TOC.
 
 8. **Commit and push** — GitHub Actions builds and deploys automatically.
 
@@ -108,26 +114,25 @@ Place each article as a Markdown file in `src/issue09/`. Use `utility/intake/con
 
 ```yaml
 ---
-layout: article          # article | project | page
-section: articles        # introduction | articles | projects | reviews
+layout: article # article | project | page
+section: articles # introduction | articles | projects | reviews
 title:
   long: "Full Article Title"
-  short: "Short Title"   # used in running headers of PDF
+  short: "Short Title" # used in running headers of PDF
 doi: "10.7916/..."
 author:
   - name: Author Name
-    shortname: Last      # used in PDF running header
+    shortname: Last # used in PDF running header
     bio: >
       Author bio in markdown.
-pubDate: April 2025      # human-readable; do NOT use the key "date"
+pubDate: April 2025 # human-readable; do NOT use the key "date"
 issue: 9
-order: 1                 # controls position within section in TOC
+order: 1 # controls position within section in TOC
 abstract: >
   Article abstract.
 language: en
 # pdf: false             # add this line to suppress the PDF link
 ---
-
 Article body in Markdown.
 ```
 
@@ -147,8 +152,8 @@ Reference images in article markdown using a root-relative path:
 
 ```html
 <figure>
-<img src="/issue09/images/filename.jpg" alt="Short description" loading="lazy">
-<figcaption>Figure 1. Full caption text.</figcaption>
+  <img src="/issue09/images/filename.jpg" alt="Short description" loading="lazy" />
+  <figcaption>Figure 1. Full caption text.</figcaption>
 </figure>
 ```
 
@@ -156,14 +161,15 @@ To wrap the image in a link:
 
 ```html
 <figure>
-<a href="https://external-site.com" target="_blank">
-<img src="/issue09/images/filename.jpg" alt="Short description" loading="lazy">
-</a>
-<figcaption>Figure 1. Caption with link to the source.</figcaption>
+  <a href="https://external-site.com" target="_blank">
+    <img src="/issue09/images/filename.jpg" alt="Short description" loading="lazy" />
+  </a>
+  <figcaption>Figure 1. Caption with link to the source.</figcaption>
 </figure>
 ```
 
 **Rules:**
+
 - Always use a root-relative path starting with `/issue09/images/` — relative paths break on language-variant pages (`/es/`, `/fr/`).
 - Always include `alt` (used as the PDF caption fallback) and `loading="lazy"`.
 - Do not use the old Jekyll `{% include image.html %}` syntax — it is not processed by Eleventy.
@@ -201,6 +207,7 @@ bash utility/intake/new-issue.sh issue09
 ```
 
 Creates:
+
 - `src/issue09/incoming/` — drop `.docx` files here
 - `src/issue09/images/` — extracted images will land here
 - `src/issue09/issue09.11tydata.js` — Eleventy directory data file
@@ -212,6 +219,7 @@ bash utility/intake/convert-docx.sh src/issue09/incoming/author-title.docx
 ```
 
 This uses Pandoc 3 (already required by the PDF pipeline) to:
+
 - Convert the `.docx` to `src/issue09/author-title.md`
 - Extract embedded images to `src/issue09/images/media/`
 - Rewrite image paths to absolute `/issue09/images/media/…` (required for language-variant pages)

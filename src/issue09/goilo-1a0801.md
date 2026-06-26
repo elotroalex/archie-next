@@ -56,7 +56,7 @@ Two Facebook pages about Papiamentu, [[Literatura na Papiamentu]{.underline}](ht
 
 The banner art of \'Dicho i Palabranan di Antes\' tells a deeper, more critical story. Figure 1 captures the Facebook banners of the pages. On the left, a man steps out of a kunuku home to feed his chickens. Kunuku---from the Arawak word for \"farm\" or \"countryside\"---evokes the land once worked by enslaved people, their humble homes outposts of survival. On the right, two chapi (hoes) rest in the dirt. Once wielded by the enslaved, agricultural tools now echo through Tambú music as percussive instruments of resistance. The caption reads: \"Where the hoe falls from your hand, pick it up and continue to work the thick soil, plant, care, harvest the joyful and wild tongue of my mother.\"
 
-![No photo description available.](/issue09/images/media/image1.jpeg){width="3.326777121609799in" height="2.089899387576553in"} ![image3.jpg](/issue09/images/media/image2.jpeg){width="3.1496948818897637in" height="2.099459755030621in"}
+![No photo description available.](/issue09/images/goilo-1a0801-image1.jpeg){width="3.326777121609799in" height="2.089899387576553in"} ![image3.jpg](/issue09/images/goilo-1a0801-image2.jpeg){width="3.1496948818897637in" height="2.099459755030621in"}
 
 _Figure 1: Facebook banners of \'Dicho i Palabranan di Antes\' (left: Sayings and Words of the Past) and \'Literatura na Papiamentu\' (right: Literature in Papiamentu)_
 
@@ -66,7 +66,7 @@ Beneath this celebration and exposure, however, lies a more troubling reality. T
 
 Take, for example, the word dushi. It is one of the first words that generally comes to mind when people think of Papiamentu. Derived from the Spanish word \'dulce,\' meaning \'sweet,\' the word carries many other connotations, including \'tasty,\' \'darling,\' and \'lovely.\' Its meaning, how it rolls off your tongue, and how it excites the tourist and their exoticized gaze of locals reinforce its use and popularity. Many such explanations are available on YouTube. The following explanation was developed by one of the Curaçaoan literary artists active on the FLI-platform, Sheedia Jansen. Her short video, one of the oldest I could find on YouTube explaining the word, walks the fine line between visibility and erasure, where belonging is both affirmed and contested, where the exoticization is exploited but also flipped into a sense of pride and love for Papiamentu.[^28]
 
-![image7.png](/issue09/images/media/image1.png){width="5.789133858267716in" height="3.2031266404199474in"}
+![image7.png](/issue09/images/goilo-1a0801-image1.png){width="5.789133858267716in" height="3.2031266404199474in"}
 
 _Figure 2: Youtube video explaining the Papiamentu word \'Dushi\'_
 
@@ -92,7 +92,7 @@ _He_. Third person. Gerald Lijde talks about Nok Blok like a former roommate, so
 
 Nok Blok built his reputation on verses that shifted perspective mid-bar, that played with bubbling\'s conventions while dismantling them. In one video (see image below) --- Immorales member Pimpi Stinki\'s \"Selfie\"--- Nok Blok roasted the whole selfie culture in verse while clearly enjoying being filmed himself. He was also the only member wearing street clothes in one scene and a buttoned-up shirt in another scene. The contradiction seems to be the point. He critiques and participates simultaneously, never letting you pin him down.
 
-![image8.png](/issue09/images/media/image2.png){width="6.5in" height="3.7in"}
+![image8.png](/issue09/images/goilo-1a0801-image2.png){width="6.5in" height="3.7in"}
 
 _Figure 3: Nok Blok\'s verse featured in the video clip of Immorales member Pimpi Stinki\'s song \'Selfie.\'_
 
@@ -106,7 +106,7 @@ Figure 4 shows three of Lijde\'s tiles he pinned to his Instagram profile in 202
 
 Papiamentu moves through his posts not as a cultural preservation project but as a daily practice, the day-to-day medium through which transformation happens. When he code-switches between languages, personas, silence and speech, social media presence and absence, he is not contradicting himself but rather showing how identity actually works in the transnational Caribbean---fluid, strategic, multiple, alive.
 
-![image1.png](/issue09/images/media/image3.png){width="1.8137937445319334in" height="1.8137937445319334in"} ![image2.png](/issue09/images/media/image4.png){width="1.8336679790026247in" height="1.8336679790026247in"} ![image6.png](/issue09/images/media/image5.png){width="1.8221227034120735in" height="1.8221227034120735in"}
+![image1.png](/issue09/images/goilo-1a0801-image3.png){width="1.8137937445319334in" height="1.8137937445319334in"} ![image2.png](/issue09/images/goilo-1a0801-image4.png){width="1.8336679790026247in" height="1.8336679790026247in"} ![image6.png](/issue09/images/goilo-1a0801-image5.png){width="1.8221227034120735in" height="1.8221227034120735in"}
 
 _Figure 4: The three pinned tiles on Lijde\'s Instagram account page, last accessed on June 26, 2023. Translation from left to right: \"You are super beautiful. Do not let yourself forget that\'; \"Delete the old version of me in your mind. He no longer exists. You have to update your software. The new version has been here for a while now.\"; \"Physical connection is much better than mental connection. I want to be on your mind before being in you.\"_
 
@@ -118,7 +118,7 @@ _Figure 4: The three pinned tiles on Lijde\'s Instagram account page, last acces
 
 _Our language._ Not _the_ language. The possessive does work here---it claims something, provides a network for belonging that geography apparently can\'t quite capture. I think about his Instagram tiles ---the one about past mistakes being like a first paintbrush---imperfect but necessary (see Figure 5). He writes these in Papiamentu, in colloquial, everyday language, as if there is a method to being in the everyday.
 
-![image4.png](/issue09/images/media/image6.png){width="2.0910870516185476in" height="2.6176563867016625in"}
+![image4.png](/issue09/images/goilo-1a0801-image6.png){width="2.0910870516185476in" height="2.6176563867016625in"}
 
 _Figure 5: A tile from Lijde\'s Instagram page, last accessed on June 26, 2023. Translation: Do not feel ashamed of your past mistakes. They were all necessary to grow into who you are today. Remember that the first paintbrush is never perfect, but is the foundation for the next brush to remain in its beauty._
 

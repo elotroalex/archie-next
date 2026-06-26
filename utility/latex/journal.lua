@@ -152,10 +152,27 @@ function RawInline(el)
   end
 end
 
+-- Strip {.mark} highlighted spans — Word copy-editing artifacts that produce
+-- \hl{} in LaTeX, which requires the soul package (not in the template).
+function Span(el)
+  if el.classes:includes("mark") then
+    return el.content
+  end
+end
+
 -- Ensure native Pandoc Image elements don't overflow the text width,
 -- and strip leading slash so lualatex resolves relative to resource-path.
 function Image(el)
   el.attributes["width"] = nil
   el.src = el.src:gsub("^/", "")
   return el
+end
+
+-- Convert raw HTML tables (produced by the intake tables-to-html.lua filter)
+-- back to Pandoc Table elements so lualatex renders them as proper LaTeX tables.
+function RawBlock(el)
+  if el.format == "html" and el.text:match("<table") then
+    local doc = pandoc.read(el.text, "html")
+    return doc.blocks
+  end
 end

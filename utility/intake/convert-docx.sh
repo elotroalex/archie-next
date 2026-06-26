@@ -4,7 +4,7 @@
 #
 # Requires: pandoc >= 3.0
 # Output:   src/issueXX/author-title.md
-# Images:   src/issueXX/images/media/imageN.ext
+# Images:   src/issueXX/images/slug-imageN.ext
 
 set -euo pipefail
 
@@ -15,6 +15,7 @@ fi
 
 DOCX="$(realpath "$1")"
 ROOT="$(git -C "$(dirname "$DOCX")" rev-parse --show-toplevel)"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Derive issue slug from path: src/issueXX/incoming/file.docx → issueXX
 ISSUE_DIR="$(dirname "$(dirname "$DOCX")")"
@@ -37,26 +38,51 @@ echo "▶ Converting: $DOCX"
 
 # Use a temp file and clean it up even if the script aborts.
 TMP="$ISSUE_DIR/_tmp_$SLUG.md"
-trap "rm -f '$TMP'" EXIT
+EXTRACT_TMP="$ISSUE_DIR/_extract_tmp"
+trap "rm -f '$TMP'; rm -rf '$EXTRACT_TMP'" EXIT
 
-# Run Pandoc from the issue directory so --extract-media resolves relative to it.
-# No --standalone: author Word files rarely have document properties set, and
-# --standalone's YAML block only appears when they do, making parsing unreliable.
-# We generate the full front matter stub ourselves below.
+# Run Pandoc from the issue directory so paths resolve relative to it.
+# --extract-media places images into _extract_tmp/media/; we move them up
+# to images/ afterwards so there is no media/ subdirectory in the final paths.
+# tables-to-html.lua converts grid tables (unsupported by markdown-it) to
+# raw HTML tables, which pass through on the HTML side and are read back as
+# Pandoc Table elements by journal.lua during PDF generation.
 cd "$ISSUE_DIR"
 pandoc "$DOCX" \
-  --extract-media=images \
+  --lua-filter "$SCRIPT_DIR/tables-to-html.lua" \
+  --extract-media=_extract_tmp \
   --wrap=none \
   -f docx \
   -t markdown \
   -o "$TMP"
 
+# Move images from _extract_tmp/media/ directly into images/ (no media/ subdir).
+if [ -d "_extract_tmp/media" ]; then
+  cp -r _extract_tmp/media/. images/
+fi
+rm -rf _extract_tmp
+
+# Fix paths in the markdown: _extract_tmp/media/ → images/
+sed -i '' "s|_extract_tmp/media/|images/|g" "$TMP"
+
+# Rename extracted images from imageN.ext → slug-imageN.ext so filenames
+# are unique and traceable to their source article, then update references.
+for img in images/image*; do
+  [ -f "$img" ] || continue
+  filename="$(basename "$img")"
+  newname="${SLUG}-${filename}"
+  mv "$img" "images/$newname"
+  sed -i '' "s|images/${filename}|images/${newname}|g" "$TMP"
+done
+
 # Rewrite image paths to absolute /issueXX/images/... so they work on
 # language-variant pages (/es/, /fr/) which are served from a different depth.
-# Also strip [x]{dir="rtl"} spans that Pandoc emits for typographic quotes
-# (curly " and ' characters) — they are not RTL text, just Word smart quotes.
+# Also strip Word copy-editing artifacts that Pandoc preserves:
+#   {.mark}     — highlighted text (→ \hl{} in LaTeX, requires soul package)
+#   {dir="rtl"} — curly/smart quotes tagged as RTL by Unicode bidi algorithm
 BODY=$(sed \
   -e "s|](images/|](/$ISSUE_SLUG/images/|g" \
+  -e 's/\[\([^]]*\)\]{\.mark}/\1/g' \
   -e 's/\["\]{dir="rtl"}/"/g' \
   -e "s/\['\]{dir=\"rtl\"}/'/g" \
   -e 's/\["'"'"'\]{dir="rtl"}/"\x27/g' \
@@ -89,10 +115,8 @@ language: en
 $BODY
 FRONTMATTER
 
+IMG_COUNT=$(find "images" -maxdepth 1 -name "${SLUG}-*" | wc -l | tr -d ' ')
 echo "  ✓ Markdown: $OUT_MD"
-if [ -d "images/media" ]; then
-  IMG_COUNT=$(find "images/media" -type f | wc -l | tr -d ' ')
-  echo "  ✓ Images:   $IMAGES_DIR/media/ ($IMG_COUNT file(s))"
-fi
+echo "  ✓ Images:   $IMAGES_DIR/ ($IMG_COUNT file(s))"
 echo ""
 echo "Edit $OUT_MD and fill in all '# TODO' fields before building."
