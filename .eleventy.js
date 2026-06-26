@@ -19,18 +19,14 @@ module.exports = function (eleventyConfig) {
 
   // --- Collections ---
 
-  // All issue articles combined — used by the i18n language variant generators
+  // All issue articles combined — used by the i18n language variant generators.
+  // Derived from the keys in src/_data/issues.js so no manual update is needed
+  // when a new issue is added.
+  const issues = require("./src/_data/issues.js");
   eleventyConfig.addCollection("allIssueArticles", (collectionApi) => {
-    return [
-      ...collectionApi.getFilteredByTag("issue01"),
-      ...collectionApi.getFilteredByTag("issue02"),
-      ...collectionApi.getFilteredByTag("issue03"),
-      ...collectionApi.getFilteredByTag("issue04"),
-      ...collectionApi.getFilteredByTag("issue05"),
-      ...collectionApi.getFilteredByTag("issue06"),
-      ...collectionApi.getFilteredByTag("issue07"),
-      ...collectionApi.getFilteredByTag("issue08"),
-    ];
+    return Object.keys(issues).flatMap((tag) =>
+      collectionApi.getFilteredByTag(tag)
+    );
   });
 
   // --- Markdown configuration ---
