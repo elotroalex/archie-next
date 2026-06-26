@@ -9,7 +9,7 @@ module.exports = {
   description: "a journal of Caribbean digital praxis",
   url: "http://archipelagosjournal.org",
   baseurl: "",
-  githuburl: "https://github.com/elotroalex/archie",
+  githuburl: "https://github.com/archipelagosjournal/",
   old_issn: "2473-2206",
   issn: "2689-842X",
   current: currentKey,
