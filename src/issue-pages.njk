@@ -1,0 +1,23 @@
+---
+layout: default
+lang: en
+pagination:
+  data: issues
+  size: 1
+  alias: issueKey
+  resolve: keys
+  addAllPagesToCollections: false
+eleventyComputed:
+  title: "{{ i18n[lang].issues[issueKey] }}"
+  permalink: "{{ issueKey }}.html"
+---
+
+<h1 class="journal-title">{{ site.title }}</h1>
+<h2>{{ i18n[lang].issues[issueKey] }}</h2>
+
+{% set issueTag = issueKey %}
+{% include "toc.njk" %}
+
+<hr>
+
+<p><a href="/">← {{ i18n[lang].global.past_issues }}</a></p>

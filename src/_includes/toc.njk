@@ -44,7 +44,7 @@
     <span class="byline">{% set author = art.data.author %}{% include "author-loop.njk" %}</span><br>
     {% if art.data.layout == "project" %}
       <a class="alt-link" href="{{ art.url }}">{{ i18n[lang].global["read-exchange"] }}</a><span class="alt-link"> | </span><a class="alt-link" href="{{ art.data.link }}" target="_blank">{{ i18n[lang].global["visit-project"] }}</a>
-      <a class="alt-link" href="{{ art.data.link }}" target="_blank"><img class="project-image-toc" alt="thumbnail for {{ art.data.title.long }}" src="{{ art.data.thumb }}" width="33%" /></a>
+      <a class="alt-link" href="{{ art.data.link }}" target="_blank"><img class="project-image-toc" alt="thumbnail for {{ art.data.title.long }}" src="/{{ art.data.thumb }}" width="33%" /></a>
     {% endif %}
     {% if art.data.layout == "article" %}
       <a class="alt-link" href="/assets{{ art.url | replace('.html', '.pdf') }}" target="_blank">PDF</a>
@@ -68,5 +68,20 @@
   {% endif %}
 {% endfor %}
 </ul>
+
+{% set issueInteractives = issues[issueTag].interactives %}
+{% if issueInteractives and issueInteractives.length %}
+<h3>{{ i18n[lang].global.interactives }}</h3>
+<ul>
+{% for piece in issueInteractives %}
+  <li>
+    <a href="{{ piece.url }}">
+      <span class="toc-title">{{ piece.title | mdInline | safe }}</span>
+    </a><br>
+    <span class="byline">{% for name in piece.author %}{{ name }}{% if not loop.last %}, {% endif %}{% endfor %}</span>
+  </li>
+{% endfor %}
+</ul>
+{% endif %}
 
 </div>

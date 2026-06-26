@@ -29,5 +29,19 @@ module.exports = {
     title: "Issue (3)",
     editors: ["Kaiama Glover", "Alex Gil", "Jessica Marie Johnson"],
     production: ["Alex Gil", "Brian Ballsun-Stanton", "Kelly S. Martin"],
+    interactives: [
+      {
+        title: ".break .dance",
+        author: ["Marisa Parham"],
+        url: "/issue03/parham/parham.html",
+        pdf: false,
+      },
+      {
+        title: "Breaking, Dancing, Making in the Machine: Notes on \".break .dance\"",
+        author: ["Marisa Parham"],
+        url: "/issue03/parham-process/parham-process.html",
+        pdf: false,
+      },
+    ],
   },
 };

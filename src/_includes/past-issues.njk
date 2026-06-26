@@ -1,0 +1,11 @@
+{% set langPrefix = "" if lang == "en" else lang + "/" %}
+<nav class="past-issues">
+  <h3>{{ i18n[lang].global.past_issues }}</h3>
+  <ul>
+  {% for key, iss in issues %}
+    {% if key != site.current %}
+    <li><a href="/{{ langPrefix }}{{ key }}.html">{{ i18n[lang].issues[key] }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</nav>
