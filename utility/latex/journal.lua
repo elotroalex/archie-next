@@ -2,6 +2,16 @@
 -- Handles journal-specific elements: epigraphs, iframes (omitted), figure captions
 -- Replaces the old contextStyles.py + ssed pipeline
 
+-- Normalize title: if front matter has title.long / title.short (nested dict),
+-- flatten it so $title$ renders correctly in the template.
+-- In Pandoc 3.x Lua, MetaMap is a plain table with direct key access.
+function Meta(meta)
+  if type(meta.title) == "table" then
+    meta.title = meta.title["long"] or meta.title["short"] or meta.title
+  end
+  return meta
+end
+
 -- Strip iframe embeds from PDF output (they're HTML-only)
 function RawBlock(el)
   if el.format == "html" then
