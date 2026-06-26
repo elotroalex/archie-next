@@ -83,12 +83,18 @@ function Pandoc(doc)
       if img_src ~= "" then
         -- Strip leading slash — lualatex resolves relative to resource-path
         local path = img_src:gsub("^/", "")
+        -- Strip any leaked HTML tags and trim whitespace from caption
+        local function clean(s)
+          return s:gsub("<[^>]+>", ""):gsub("^%s+", ""):gsub("%s+$", "")
+        end
+        local cap_text = clean(caption ~= "" and caption or img_alt)
+        -- Use a plain styled paragraph for the caption rather than \caption{}:
+        -- the journal already includes "Figure N." in its caption text, so
+        -- LaTeX's auto-numbering ("Figure N:") would double-count.
         local latex = "\\begin{figure}[htbp]\n\\centering\n"
         latex = latex .. "\\includegraphics[width=\\linewidth]{" .. path .. "}\n"
-        if caption ~= "" then
-          latex = latex .. "\\caption{" .. caption:gsub("{", "\\{"):gsub("}", "\\}") .. "}\n"
-        elseif img_alt ~= "" then
-          latex = latex .. "\\caption{" .. img_alt:gsub("{", "\\{"):gsub("}", "\\}") .. "}\n"
+        if cap_text ~= "" then
+          latex = latex .. "\\par\\vspace{0.4em}{\\small\\color{gray!80}" .. cap_text .. "}\n"
         end
         latex = latex .. "\\end{figure}"
         out[#out + 1] = pandoc.RawBlock("latex", latex)
