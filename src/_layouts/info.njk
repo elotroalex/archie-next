@@ -1,8 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><title>{{ title.long if title.long else title }}</title></head>
-<body>
-<h1>{{ title.long if title.long else title }}</h1>
-{{ content | safe }}
-</body>
-</html>
+---
+layout: default
+---
+
+<div class="page">
+  {{ content | safe }}
+</div>

@@ -1,0 +1,1 @@
+{% for a in author %}{% if loop.last and not loop.first %} {{ i18n[lang].global.and }} {% elif not loop.first %}, {% endif %}{{ a.name }}{% endfor %}

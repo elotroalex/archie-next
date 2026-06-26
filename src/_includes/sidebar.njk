@@ -1,0 +1,35 @@
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" />
+
+<div class="sidebar" id="sidebar">
+  {% include "language.njk" %}
+  <div class="sidebar-item">
+    {% if layout != "article" %}
+    <p><em>archipelagos</em>—{{ i18n[lang].global.subtitle }}.</p>
+    {% else %}
+    <h1 class="article-title">
+      {{ title.long | mdInline | safe if title.long else title }}
+    </h1>
+    <p>{% include "author-loop.njk" %}</p>
+    <p>Issue ({{ issue }}) | {{ pubDate }}<br />DOI: {{ doi }}</p>
+    {% endif %}
+  </div>
+  <nav class="main-nav">
+    <a class="sidebar-nav-item" href="/index.html">{{ i18n[lang].titles.home }}</a>
+    <a class="sidebar-nav-item" href="/about.html">{{ i18n[lang].titles.about }}</a>
+    <a class="sidebar-nav-item" href="/credits.html">{{ i18n[lang].titles.credits }}</a>
+    <a class="sidebar-nav-item" href="/authors.html">{{ i18n[lang].titles.authors }}</a>
+    <a class="sidebar-nav-item" href="/reviewers.html">{{ i18n[lang].titles.reviewers }}</a>
+    <a class="sidebar-nav-item" href="/workflow.html">{{ i18n[lang].titles.workflow }}</a>
+    <a class="sidebar-nav-item" href="/valences.html">Valences</a>
+  </nav>
+
+  <div class="sidebar-footer">
+    {% if layout != "article" %}
+    <p>&copy; 2025. Archipelagos.</p>
+    {% else %}
+    <p>&copy; 2025. {% include "author-loop.njk" %}.</p>
+    {% endif %}
+    <p>{{ i18n[lang].components.ccby | safe }} <a href="{{ site.githuburl }}">{{ i18n[lang].components.repository }}</a>.</p>
+    <p>ISSN: {{ site.issn }}</p>
+  </div>
+</div>

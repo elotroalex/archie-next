@@ -14,6 +14,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.ignores.add("src/issue03/parham/**");
   eleventyConfig.ignores.add("src/issue03/parham-process/**");
 
+  // _i18n content fragments are data files used by templates, not standalone pages
+  eleventyConfig.ignores.add("src/_i18n/**");
+
   // --- Markdown configuration ---
   const md = markdownIt({
     html: true,
@@ -26,6 +29,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("md", md);
 
   // --- Custom filters ---
+
+  // Render markdown block (with <p> tags) — for author bios
+  eleventyConfig.addFilter("markdown", function (str) {
+    if (!str) return "";
+    return md.render(String(str));
+  });
 
   // Render markdown inline (no wrapping <p> tag) — replaces Jekyll's markdownify + remove
   eleventyConfig.addFilter("mdInline", function (str) {

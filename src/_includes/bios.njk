@@ -1,0 +1,9 @@
+<br><hr>
+<div class="bios">
+  {% for a in author %}
+  <h3>{{ a.name }}</h3>
+  {% if a.bio %}
+  {{ a.bio | markdown | safe }}
+  {% endif %}
+  {% endfor %}
+</div>

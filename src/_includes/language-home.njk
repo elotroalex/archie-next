@@ -1,0 +1,6 @@
+{% set basePath = page.url | replace("/es/", "/") | replace("/fr/", "/") %}
+<p>
+  <a href="{{ basePath }}"{% if lang == "en" %} class="active"{% endif %}>{{ i18n[lang].global.english }}</a> |
+  <a href="/es{{ basePath }}"{% if lang == "es" %} class="active"{% endif %}>{{ i18n[lang].global.spanish }}</a> |
+  <a href="/fr{{ basePath }}"{% if lang == "fr" %} class="active"{% endif %}>{{ i18n[lang].global.french }}</a>
+</p>

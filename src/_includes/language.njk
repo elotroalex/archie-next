@@ -1,0 +1,6 @@
+{% set basePath = page.url | replace("/es/", "/") | replace("/fr/", "/") %}
+<div class="language">
+  <a href="{{ basePath }}"{% if lang == "en" %} class="active"{% endif %}>en</a> |
+  <a href="/es{{ basePath }}"{% if lang == "es" %} class="active"{% endif %}>es</a> |
+  <a href="/fr{{ basePath }}"{% if lang == "fr" %} class="active"{% endif %}>fr</a>
+</div>

@@ -1,8 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><title>{{ title.long if title.long else title }}</title></head>
-<body>
-<h1>{{ title.long if title.long else title }}</h1>
-{{ content | safe }}
-</body>
-</html>
+---
+layout: default
+---
+
+<div class="article">
+  <h1 class="page-title">{{ title.long | mdInline | safe if title.long else title }}</h1>
+  <p class="byline">{% include "author-loop.njk" %}</p>
+  <br>
+
+  {% if abstract %}
+    {% if lang == "en" and abstract_en %}
+      <h4>Abstract (in translation)</h4>
+      <p class="abstract">{{ abstract_en | mdInline | safe }}</p>
+      <br><hr>
+    {% elif lang == "en" %}
+      <h4>Abstract</h4>
+      <p class="abstract">{{ abstract | mdInline | safe }}</p>
+      <br><hr>
+    {% elif lang == "fr" and abstract_fr %}
+      <h4>Résumé (en traduction)</h4>
+      <p class="abstract">{{ abstract_fr | mdInline | safe }}</p>
+      <br><hr><br>
+    {% elif lang == "fr" %}
+      <h4>Abstract</h4>
+      <p class="abstract">{{ abstract | mdInline | safe }}</p>
+      <br><hr><br>
+    {% elif lang == "es" and abstract_es %}
+      <h4>Resumen (en traducción)</h4>
+      <p class="abstract">{{ abstract_es | mdInline | safe }}</p>
+      <br><hr><br>
+    {% elif lang == "es" %}
+      <h4>Abstract</h4>
+      <p class="abstract">{{ abstract | mdInline | safe }}</p>
+      <br><hr><br>
+    {% endif %}
+  {% endif %}
+
+  {{ content | safe }}
+</div>
+
+{% include "bios.njk" %}
+
+<hr>
+<div class="footer">
+  <ul id="footer-nav">
+    <li><a href="#">{{ i18n[lang].global["return-to-top"] }}</a></li>
+    {% if site["current-number"] == issue %}
+    <li> | </li>
+    <a href="/">{{ i18n[lang].global.toc }}</a>
+    {% endif %}
+  </ul>
+</div>

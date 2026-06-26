@@ -1,8 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><title>{{ title.long if title.long else title }}</title></head>
-<body>
-<h1>{{ title.long if title.long else title }}</h1>
-{{ content | safe }}
-</body>
-</html>
+---
+layout: default
+---
+
+<div class="project">
+  <h1 class="page-title">{{ title.long if title.long else title }}</h1>
+  <a href="{{ link }}">
+    <img class="project-image" alt="project image" src="/{{ image }}"/>
+  </a>
+  {{ content | safe }}
+  {% include "bios.njk" %}
+</div>
+
+<div class="footer">
+  <ul id="footer-nav">
+    <li><a href="#">Return to top</a></li>
+    {% if site["current-number"] == issue %}
+    <li> | </li>
+    <a href="/">Return to Table of Contents</a>
+    {% endif %}
+  </ul>
+</div>

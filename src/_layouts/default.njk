@@ -1,8 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head><title>{{ title.long if title.long else title }}</title></head>
-<body>
-<h1>{{ title.long if title.long else title }}</h1>
-{{ content | safe }}
+<html lang="{{ language if language else 'en' }}">
+
+{% include "head.njk" %}
+
+<body class="layout-reverse">
+
+  {% include "sidebar.njk" %}
+
+  <div class="wrap">
+    <div class="masthead">
+      <a id="logo" href="/index.html"><img src="/public/logo.png" height="64px" width="72px" alt="archipelagos logo"/></a>
+      {% if title != "home" and (title is not string or "Issue" not in title) %}
+      <span class="running-title"><a href="/index.html">archipelagos</a></span>
+      {% endif %}
+    </div>
+
+    <div class="container content">
+      {{ content | safe }}
+    </div>
+  </div>
+
+  {% include "footer.njk" %}
+
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  <script type="text/javascript" src="/public/js/main.js"></script>
+
+  {% if script %}
+  <script src="/public/js/special/{{ script }}"></script>
+  {% endif %}
+
+  <script type="text/javascript">
+  (function() {
+    var links = document.links;
+    for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+      if (links[i].hostname != window.location.hostname) {
+        links[i].target = '_blank';
+        links[i].className += ' externalLink';
+      }
+    }
+  })();
+  </script>
+
 </body>
 </html>
