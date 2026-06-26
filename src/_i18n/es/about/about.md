@@ -33,11 +33,11 @@ Proporcionamos DOIs para todos los artículos. La información de citas y los DO
 - Open Graph (para distribución en redes sociales)
 - Highwire Press (para Google Scholar)
 
-La base tecnológica utilizada para *archipelagos* se ofrece con una licencia MIT. Todos nuestros datos están abiertos en nuestro <a href="{{site.githuburl}}">repositorio de Github</a>.
+La base tecnológica utilizada para *archipelagos* se ofrece con una licencia MIT. Todos nuestros datos están abiertos en nuestro <a href="https://github.com/archipelagosjournal/">repositorio de Github</a>.
 
 ## Acuerdo con el autor
 
-Lea nuestro [Acuerdo con el autor]({{site.baseurl}}/public/author-agreement.pdf). Este Acuerdo refleja la posición de que los/las autores/ras conservan los derechos de autor del Artículo y tienen derechos explícitos para usar el Artículo en futuros proyectos de investigación, enseñanza y otros. Los derechos de autor se definen de la siguiente manera:
+Lea nuestro [Acuerdo con el autor](https://archipelagosjournal.org/public/author-agreement.pdf). Este Acuerdo refleja la posición de que los/las autores/ras conservan los derechos de autor del Artículo y tienen derechos explícitos para usar el Artículo en futuros proyectos de investigación, enseñanza y otros. Los derechos de autor se definen de la siguiente manera:
 
 - Los/las autores/ras mantienen los derechos de autor sin restricciones;
 - Los/las autores/ras otorgan a *archipelagos* la autoridad para publicar su trabajo en la revista con una licencia internacional [Creative Commons Attribution 4.0](http://creativecommons.org/licenses/by/4.0/);

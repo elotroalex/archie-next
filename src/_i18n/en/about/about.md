@@ -23,7 +23,7 @@ We do not charge article processing nor article submission charges to authors. A
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 
-The technological stack used for *archipelagos* is offered with an MIT license. All of our data is open on our <a href="{{site.githuburl}}">Github repository</a>.
+The technological stack used for *archipelagos* is offered with an MIT license. All of our data is open on our <a href="https://github.com/archipelagosjournal/">Github repository</a>.
 
 ### Academic Standards
 
@@ -41,7 +41,7 @@ Copies of articles will be archived on Columbia University's repository [Academi
 
 ## Author Agreement
 
-Read the [Author Agreement]({{site.baseurl}}/public/author-agreement.pdf). This Agreement reflects the position that the Author(s) should retain the copyright to the Article and should have explicit rights to use the Article in future research, teaching, and other projects. Author rights can be summarized as follows:
+Read the [Author Agreement](https://archipelagosjournal.org/public/author-agreement.pdf). This Agreement reflects the position that the Author(s) should retain the copyright to the Article and should have explicit rights to use the Article in future research, teaching, and other projects. Author rights can be summarized as follows:
 
 - Authors maintain copyright without restriction;
 - authors grant *archipelagos* the authority to publish their work in the journal with a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/);

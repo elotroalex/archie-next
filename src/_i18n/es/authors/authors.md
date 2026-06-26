@@ -28,7 +28,7 @@ Contact: archipelagosjournal@gmail.com
 
 2. Las presentaciones de artículos deben incluir una biografía (o biografías para varios autores) y un resumen. Por favor colóquelos al final de su documento. Todo el contenido multimedia debe acompañar el envío inicial del artículo en un archivo zip o equivalente.
 
-6. Somos una revista de acceso abierto. Si es aceptado para su publicación, recibirá una copia de nuestro [Acuerdo con el autor]({{site.baseurl}}/public/author-agreement.pdf).
+6. Somos una revista de acceso abierto. Si es aceptado para su publicación, recibirá una copia de nuestro [Acuerdo con el autor](https://archipelagosjournal.org/public/author-agreement.pdf).
 
 3. Los artículos son revisados a doble ciego por nuestro equipo de revisores externos. Las reseñas son revisadas por los editores de *archipelagos*. Los contribuyentes reciben una notificación por escrito de los editores (aceptada, aceptada con revisiones menores, revisiones sustantivas requeridas o rechazadas) dentro de los dos meses posteriores a la presentación.
 
@@ -110,7 +110,7 @@ A lo largo del proceso de revisión y publicación, nuestro equipo editorial tra
 
 Además de revisar proyectos directamente, apoyamos "narrativas de proyectos" de modo ensayo que describen el proceso, la infraestructura o ofertas principales y originales de un proyecto digital dado. Estos ensayos pasan por el mismo método de revision anónima de una vía que los proyectos, y se publicarán en la misma sección que los proyectos. Si tiene alguna pregunta sobre cuál es la opción más adecuada para usted, no dude en contactarnos.
 
-Estamos particularmente interesados en apoyar proyectos que hagan una importante contribución académica al estudio del Caribe; que son conscientes del proceso de diseño y las infraestructuras subyacentes de la tecnología digital; que reconocen la contribución de todos los miembros del equipo adecuadamente; y que han tenido en cuenta cuestiones de longevidad y efimeridad. Para obtener una idea más detallada de nuestros criterios y procesos, consulte [las pautas que hemos preparado para nuestros revisores]({{site.baseurl}}/reviewers.html).
+Estamos particularmente interesados en apoyar proyectos que hagan una importante contribución académica al estudio del Caribe; que son conscientes del proceso de diseño y las infraestructuras subyacentes de la tecnología digital; que reconocen la contribución de todos los miembros del equipo adecuadamente; y que han tenido en cuenta cuestiones de longevidad y efimeridad. Para obtener una idea más detallada de nuestros criterios y procesos, consulte [las pautas que hemos preparado para nuestros revisores](https://archipelagosjournal.org/reviewers.html).
 
 La revisión directa del proyecto ocurre en dos fases:
 

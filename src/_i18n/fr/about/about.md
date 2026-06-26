@@ -21,7 +21,7 @@ Nous ne facturons pas les auteurs pour le traitement des articles ni pour la sou
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 
-La base technologique utilisée pour *archipelagos* est proposée avec une license MIT. Toutes nos données sont disponibles sur notre référentiel à <a href="{{site.githuburl}}">Github.</a>
+La base technologique utilisée pour *archipelagos* est proposée avec une license MIT. Toutes nos données sont disponibles sur notre référentiel à <a href="https://github.com/archipelagosjournal/">Github.</a>
 
 
 ### Standards académiques

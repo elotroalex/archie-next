@@ -28,7 +28,7 @@ We ask you to submit your abstracts and articles to <archipelagosjournal@gmail.c
 
 2. Article submissions must include a bio (or bios for multi-author) and an abstract. *Please place these at the bottom of your document*. All multimedia content should accompany the initial article submission in a zip file or equivalent.
 
-6. We are an open access journal. If you are accepted for publication you will receive a copy of our [Author Agreement]({{site.baseurl}}/public/author-agreement.pdf).
+6. We are an open access journal. If you are accepted for publication you will receive a copy of our [Author Agreement](https://archipelagosjournal.org/public/author-agreement.pdf).
 
 3. Articles are double-blind reviewed by our team of outside peer-reviewers. Digital project reviews are reviewed by the *archipelagos* Editorial Board. Contributors receive written notification from the editors (accepted, accepted with minor revisions, substantive revisions required or rejected) within two months of submission.
 
@@ -106,7 +106,7 @@ Throughout the review and publication process, our editorial team will work with
 
 In addition to reviewing projects directly, we support essay-length "project narratives" that describe the process, infrastructure, or new major feature of a digital project. These essays go through the same single-blind method as projects, and will be published alongside featured projects. If you have any questions about which is the right fit for you, feel free to contact us.
 
-We are particularly keen to support projects that make an important scholarly contribution to the study of the Caribbean; that are conscious of the design process and underlying infrastructures of digital technology; that acknowledge the contribution of all members of the team appropriately; and that have taken into account matters of longevity and ephemerality. For a more detailed sense of our criteria and process, please consult [the guidelines we have prepared for our reviewers]({{site.baseurl}}/reviewers.html).
+We are particularly keen to support projects that make an important scholarly contribution to the study of the Caribbean; that are conscious of the design process and underlying infrastructures of digital technology; that acknowledge the contribution of all members of the team appropriately; and that have taken into account matters of longevity and ephemerality. For a more detailed sense of our criteria and process, please consult [the guidelines we have prepared for our reviewers](https://archipelagosjournal.org/reviewers.html).
 
 Direct Project review occurs in two phases:
 
