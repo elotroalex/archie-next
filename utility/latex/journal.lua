@@ -136,6 +136,13 @@ function Pandoc(doc)
   return pandoc.Pandoc(out, doc.meta)
 end
 
+-- Pandoc 3.x parses {.underline} as a first-class Underline inline node
+-- and emits \ul{} in LaTeX, which requires the soul package. Strip it and
+-- keep the content — redundant in PDFs where links are already coloured.
+function Underline(el)
+  return el.content
+end
+
 -- Strip inline HTML that Pandoc can't use in LaTeX (Liquid tags, etc.)
 function RawInline(el)
   if el.format == "html" then
