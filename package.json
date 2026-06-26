@@ -1,0 +1,29 @@
+{
+  "name": "archie-next",
+  "version": "1.0.0",
+  "description": "archipelagos journal — a journal of Caribbean digital praxis",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "debug": "DEBUG=Eleventy* eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elotroalex/archie-next.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/elotroalex/archie-next/issues"
+  },
+  "homepage": "https://github.com/elotroalex/archie-next#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "js-yaml": "^5.1.0",
+    "markdown-it": "^14.2.0",
+    "markdown-it-attrs": "^5.0.0",
+    "markdown-it-footnote": "^4.0.0"
+  }
+}
