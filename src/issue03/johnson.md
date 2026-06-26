@@ -19,10 +19,10 @@ language: en
 script: 'multiverse.js'
 ---
 
-{% include epigraph.html
-    quote = "Memory ... dulls the lash/for the master, sharpens it for the slave."
-    citation = 'Natasha Tretheway, "Native Guard."'
-%}
+<div class="epigraph">
+<blockquote>Memory ... dulls the lash/for the master, sharpens it for the slave.</blockquote>
+<p class="citation">Natasha Tretheway, "Native Guard."</p>
+</div>
 
 
 A dyad of satellite images of Puerto Rico at night were taken by the

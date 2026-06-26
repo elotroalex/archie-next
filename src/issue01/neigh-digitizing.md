@@ -379,12 +379,12 @@ their synthesis of the dramatic monologue form and the music video
 genre, Skeete and the 2 Cents Movement team cultivate a sense of
 audience connection and encourage dialogue beyond the space of the poem.
 
-{% include interactive.html
-            type="youtube"
-            url="https://www.youtube.com/embed/9OA8eLoPylU"
-            img="issue01/maxi-man-youtube.jpg"
-            title="Crystal Skeete and the Maxi Man cast, University of the West Indies, St. Augustine Campus, Trinidad and Tobago. Posted on 23 June 2013."
-            caption="Figure 6. Crystal Skeete and the \"Maxi Man\" cast, University of the West Indies, St. Augustine Campus, Trinidad and Tobago. Posted on 23 June 2013." %}
+<figure>
+<a href="https://www.youtube.com/embed/9OA8eLoPylU" target="_blank">
+<img src="/images/issue01/maxi-man-youtube.jpg" alt="Crystal Skeete and the Maxi Man cast, University of the West Indies, St. Augustine Campus, Trinidad and Tobago. Posted on 23 June 2013." loading="lazy">
+</a>
+<figcaption>Figure 6. Crystal Skeete and the \</figcaption>
+</figure>
 
 
 

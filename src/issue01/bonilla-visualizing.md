@@ -271,12 +271,12 @@ see detailed information on how individual cessions were disputed and
 challenged, thus offering both a sense of the larger process and
 textured detail of its constitutive events.
 
-{% include interactive.html
-			type="youtube"
-			url="https://www.youtube.com/embed/pJxrTzfG2bo"
-            img="issue01/invasion-of-america.jpg"
-            title="Invasion of America"
-            caption="Figure 2. Invasion of America" %}
+<figure>
+<a href="https://www.youtube.com/embed/pJxrTzfG2bo" target="_blank">
+<img src="/images/issue01/invasion-of-america.jpg" alt="Invasion of America" loading="lazy">
+</a>
+<figcaption>Figure 2. Invasion of America</figcaption>
+</figure>
 
 
 Vincent Brown has developed a similarly rich visual argument in his
@@ -499,16 +499,12 @@ challenges the static effect of the original by allowing us to represent
 movement, contingency, temporary arrangements, and the constant
 challenges and reorganizations that have characterized the region.[^28]
 
-{% include interactive.html
-			type="youtube"
-			url="https://player.vimeo.com/video/169690419?autoplay=1"
-            img="issue01/bonilla-video.jpg"
-            title="Visualizing Sovereignty in the Postcolonial
-Caribbean, 2016; animated video designed by Yarimar Bonilla and Max
-Hantel and produced by Kindea Labs."
-            caption="Figure 7. \"Visualizing Sovereignty in the Postcolonial
-Caribbean\", 2016; animated video designed by Yarimar Bonilla and Max
-Hantel and produced by Kindea Labs." %}
+<figure>
+<a href="https://player.vimeo.com/video/169690419?autoplay=1" target="_blank">
+<img src="/images/issue01/bonilla-video.jpg" alt="Visualizing Sovereignty in the Postcolonial Caribbean, 2016; animated video designed by Yarimar Bonilla and Max Hantel and produced by Kindea Labs." loading="lazy">
+</a>
+<figcaption>Figure 7. \</figcaption>
+</figure>
 
 
 The video begins with a traditional geographic map of the Caribbean but

@@ -19,10 +19,10 @@ abstract: >
 language: en
 ---
 
-{% include epigraph.html
-    quote = "The slaves worked on the land, and, like revolutionary peasants everywhere, they aimed at the extermination of their oppressors. But working and living together in gangs of hundreds on the huge sugar-factories which covered the North Plain, they were closer to a modern proletariat than any group of workers in existence at the time, and the rising was, therefore, a thoroughly prepared and organized mass movement."
-    citation = "C. L. R. James, <em>The Black Jacobins</em>."
-%}
+<div class="epigraph">
+<blockquote>The slaves worked on the land, and, like revolutionary peasants everywhere, they aimed at the extermination of their oppressors. But working and living together in gangs of hundreds on the huge sugar-factories which covered the North Plain, they were closer to a modern proletariat than any group of workers in existence at the time, and the rising was, therefore, a thoroughly prepared and organized mass movement.</blockquote>
+<p class="citation">C. L. R. James, <em>The Black Jacobins</em>.</p>
+</div>
 
 
 In this famous passage that opens the fourth chapter of *The Black
