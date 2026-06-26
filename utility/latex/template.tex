@@ -1,0 +1,170 @@
+%% archipelagos journal — Pandoc LaTeX template
+%% Ported from env_journal.tex (ConTeXt) to lualatex/fontspec
+%% Paper: 190.5mm × 228.6mm, Helvetica Neue, running headers
+%%
+%% Pandoc variable usage:
+%%   $title$, $author$, $abstract$, $doi$, $issue$, $date$, $shortauthor$
+
+\documentclass[11pt]{article}
+
+%% ── Encoding & fonts ──────────────────────────────────────────────────────────
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX, Scale=MatchLowercase}
+
+%% Primary font: TeX Gyre Heros (open-source Helvetica Neue equivalent, included in TeX Live)
+%% To use the licensed Helvetica Neue, install the .ttf files to .fonts/ and
+%% uncomment the block below.
+\setmainfont{TeX Gyre Heros}
+\setsansfont{TeX Gyre Heros}
+
+%% Light weight: approximate with scaled Heros (no true light weight available)
+\newfontfamily\lightfont{TeX Gyre Heros}
+
+%% ── Helvetica Neue (if licensed fonts are available in .fonts/) ───────────
+%% Uncomment this block to use the proprietary fonts:
+%% \setmainfont{Helvetica Neue}[
+%%   Path           = ../../.fonts/,
+%%   Extension      = .ttf,
+%%   UprightFont    = *,
+%%   ItalicFont     = HelveticaNeueItalic,
+%%   BoldFont       = HelveticaNeue-Bold,
+%%   BoldItalicFont = HelveticaNeue-BoldItalic,
+%% ]
+%% \newfontfamily\lightfont{Helvetica Neue}[
+%%   Path           = ../../.fonts/,
+%%   Extension      = .ttf,
+%%   UprightFont    = HelveticaNeueLight,
+%%   ItalicFont     = HelveticaNeueLightItalic,
+%% ]
+
+%% ── Page geometry ─────────────────────────────────────────────────────────────
+%% Matches: width=190.5mm, height=228.6mm, backspace/cutspace=30.1625mm,
+%%          topspace=19.05mm, bottomspace=19.05mm
+\usepackage[
+  paperwidth  = 190.5mm,
+  paperheight = 228.6mm,
+  left        = 30.1625mm,
+  right       = 30.1625mm,
+  top         = 19.05mm,
+  bottom      = 19.05mm,
+  headsep     = 8.819mm
+]{geometry}
+
+%% ── Language & hyphenation ────────────────────────────────────────────────────
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+
+%% ── Microtypography ───────────────────────────────────────────────────────────
+\usepackage{microtype}
+
+%% ── Spacing ───────────────────────────────────────────────────────────────────
+\usepackage{setspace}
+\setstretch{1.0}
+\setlength{\parindent}{6.35mm}
+\setlength{\parskip}{0pt}
+
+%% ── Headers & footers ─────────────────────────────────────────────────────────
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[LE,RO]{\fontsize{9}{11}\selectfont archipelagos $if(issue)$Issue ($issue$)$endif$ $if(date)$[$date$]$endif$}
+\fancyhead[RE,LO]{\fontsize{9}{11}\selectfont $if(shortauthor)$[$shortauthor$]$endif$ \nouppercase{\leftmark}}
+\fancyfoot[C]{\fontsize{6}{8}\selectfont
+  archipelagos~\textbullet~$if(date)$$date$~\textbullet~$endif$DOI~$if(doi)$$doi$$endif$~\textbullet~CC-BY~4.0~International~\textbullet~ISSN:~2689-842X}
+
+%% First page: no header, footer only
+\fancypagestyle{firstpage}{%
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \fancyfoot[C]{\fontsize{6}{8}\selectfont
+    archipelagos~\textbullet~$if(date)$$date$~\textbullet~$endif$DOI~$if(doi)$$doi$$endif$~\textbullet~CC-BY~4.0~International~\textbullet~ISSN:~2689-842X}
+}
+
+%% ── Hyperlinks ────────────────────────────────────────────────────────────────
+\usepackage[
+  colorlinks = true,
+  allcolors  = black,
+  breaklinks = true
+]{hyperref}
+
+%% ── Graphics ──────────────────────────────────────────────────────────────────
+\usepackage{graphicx}
+\graphicspath{{images/}{../../images/}}
+\setkeys{Gin}{width=\linewidth, keepaspectratio}
+
+%% ── Tables ────────────────────────────────────────────────────────────────────
+\usepackage{longtable, booktabs, array}
+\renewcommand{\arraystretch}{1.2}
+
+%% ── Footnotes ─────────────────────────────────────────────────────────────────
+\usepackage{footnote}
+\renewcommand{\footnotesize}{\fontsize{8}{10}\selectfont\lightfont}
+
+%% ── Block quotes ──────────────────────────────────────────────────────────────
+\renewenvironment{quote}{%
+  \list{}{\leftmargin=1em\rightmargin=1em}\item\relax\itshape\lightfont}{%
+  \endlist}
+
+%% ── Section headings ──────────────────────────────────────────────────────────
+\usepackage{titlesec}
+\titleformat{\section}{\lightfont\large}{\thesection}{1em}{}
+\titleformat{\subsection}{\lightfont\normalsize\itshape}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\lightfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+\titlespacing*{\section}{0pt}{1.5ex plus .5ex minus .2ex}{.5ex plus .1ex}
+
+%% ── Thin rules ────────────────────────────────────────────────────────────────
+\usepackage{xhfill}
+\newcommand{\thinrule}{\vspace{0.5em}\noindent\xrfill[0.5ex]{0.4pt}[15em]\vspace{0.5em}}
+
+%% ── Epigraphs ─────────────────────────────────────────────────────────────────
+\usepackage{epigraph}
+\setlength{\epigraphwidth}{0.8\textwidth}
+\setlength{\epigraphrule}{0pt}
+\renewcommand{\textflush}{flushright}
+
+%% ── Pandoc boilerplate ────────────────────────────────────────────────────────
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+
+\usepackage{csquotes}
+
+%% ── Lua filter hook for custom environments ───────────────────────────────────
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+%% ══════════════════════════════════════════════════════════════════════════════
+\begin{document}
+\thispagestyle{firstpage}
+
+%% ── Title block ───────────────────────────────────────────────────────────────
+\vspace*{40mm}
+{\lightfont\fontsize{14}{18}\selectfont
+\setlength{\parindent}{0pt}
+$if(title)$$title$$endif$\par}
+
+\bigskip
+$if(author)$
+{\normalsize
+$for(author)$
+$if(it.name)$$it.name$$else$$it$$endif$$sep$, $endfor$%
+}
+$endif$
+
+$if(abstract)$
+\bigskip
+\begin{quote}
+\noindent\textbf{Abstract}\quad $abstract$
+\end{quote}
+\bigskip
+$endif$
+
+\hrule
+\bigskip
+
+%% ── Article body ──────────────────────────────────────────────────────────────
+$body$
+
+\end{document}
