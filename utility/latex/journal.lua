@@ -83,9 +83,19 @@ function Pandoc(doc)
       if img_src ~= "" then
         -- Strip leading slash — lualatex resolves relative to resource-path
         local path = img_src:gsub("^/", "")
-        -- Strip any leaked HTML tags and trim whitespace from caption
+        -- Strip leaked HTML tags, trim whitespace, then escape LaTeX specials
         local function clean(s)
-          return s:gsub("<[^>]+>", ""):gsub("^%s+", ""):gsub("%s+$", "")
+          s = s:gsub("<[^>]+>", ""):gsub("^%s+", ""):gsub("%s+$", "")
+          -- Escape LaTeX special characters in plain caption text
+          s = s:gsub("\\", "\\textbackslash{}")
+          s = s:gsub("&",  "\\&")
+          s = s:gsub("%%", "\\%%")
+          s = s:gsub("#",  "\\#")
+          s = s:gsub("%$", "\\$")
+          s = s:gsub("_",  "\\_")
+          s = s:gsub("%^", "\\^{}")
+          s = s:gsub("~",  "\\textasciitilde{}")
+          return s
         end
         local cap_text = clean(caption ~= "" and caption or img_alt)
         -- Use a plain styled paragraph for the caption rather than \caption{}:

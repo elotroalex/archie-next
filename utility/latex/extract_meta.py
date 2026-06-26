@@ -36,10 +36,15 @@ def build_meta(fm):
             {"name": a.get("name", a) if isinstance(a, dict) else a}
             for a in authors
         ]
-        # shortauthor: last names joined
-        shorts = [a.get("shortname", a.get("name", "").split()[-1])
-                  if isinstance(a, dict) else str(a).split()[-1]
-                  for a in authors]
+        # shortauthor: use shortname if present, else last word of name
+        def short_of(a):
+            if isinstance(a, dict):
+                s = a.get("shortname") or ""
+                if s:
+                    return s
+                return (a.get("name") or "").split()[-1] if (a.get("name") or "").strip() else ""
+            return str(a).split()[-1]
+        shorts = [s for s in (short_of(a) for a in authors) if s]
         meta["shortauthor"] = " and ".join(shorts) if len(shorts) <= 2 else shorts[0] + " et al."
     else:
         meta["author"] = str(authors)
