@@ -1,0 +1,54 @@
+name: Generate PDFs
+
+on:
+  workflow_dispatch:
+    inputs:
+      issues:
+        description: "Issues to process (space-separated, e.g. 'issue01 issue02') or leave blank for all"
+        required: false
+        default: ""
+
+jobs:
+  generate-pdfs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install TeX Live (lualatex)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y texlive-luatex texlive-fonts-recommended \
+            texlive-fonts-extra texlive-latex-extra texlive-science
+
+      - name: Install Pandoc
+        run: |
+          PANDOC_VERSION="3.1.3"
+          curl -sL "https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-1-amd64.deb" \
+            -o /tmp/pandoc.deb
+          sudo dpkg -i /tmp/pandoc.deb
+
+      - name: Install Python dependencies
+        run: pip3 install pyyaml
+
+      - name: Generate PDFs
+        run: |
+          chmod +x utility/latex/makeIssues.sh utility/latex/convert.sh
+          if [ -n "${{ github.event.inputs.issues }}" ]; then
+            bash utility/latex/makeIssues.sh ${{ github.event.inputs.issues }}
+          else
+            bash utility/latex/makeIssues.sh
+          fi
+
+      - name: Upload PDFs as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-pdfs
+          path: src/assets/
+          retention-days: 30
+
+      - name: Commit PDFs back to repository
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: regenerate PDFs via GitHub Actions"
+          file_pattern: "src/assets/**/*.pdf"
