@@ -1,5 +1,5 @@
 ---
-name: bandwidth-sustainability
+name: minicomp
 description: Use this agent to review any change — templates, assets, data structures, build config, or new features — for impact on low-bandwidth users and environmental sustainability. Invoke it proactively when adding images, fonts, scripts, new pages, or third-party resources. Also invoke it when you are unsure whether a design choice is data-efficient.
 tools: Read, Bash
 ---
