@@ -8,6 +8,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/images": "images" });
 
+  // HTML interactives — pass through untouched, do not template-process
+  eleventyConfig.addPassthroughCopy({ "src/issue03/parham": "issue03/parham" });
+  eleventyConfig.addPassthroughCopy({ "src/issue03/parham-process": "issue03/parham-process" });
+  eleventyConfig.ignores.add("src/issue03/parham/**");
+  eleventyConfig.ignores.add("src/issue03/parham-process/**");
+
   // --- Markdown configuration ---
   const md = markdownIt({
     html: true,
@@ -38,7 +44,7 @@ module.exports = function (eleventyConfig) {
   // Lookup a dotted key in the i18n data for a given lang
   // Usage in Nunjucks: {{ "global.subtitle" | t(lang) }}
   eleventyConfig.addFilter("t", function (key, lang) {
-    const i18n = this.ctx?.i18n || this.ctx?.collections?.i18n;
+    const i18n = this.ctx?.i18n;
     if (!i18n) return key;
     const dict = i18n[lang] || i18n["en"] || {};
     return key.split(".").reduce((obj, k) => (obj ? obj[k] : undefined), dict) ?? key;
@@ -58,7 +64,7 @@ module.exports = function (eleventyConfig) {
       includes: "_includes",
       data: "_data",
     },
-    markdownTemplateEngine: "njk",
+    markdownTemplateEngine: false,
     htmlTemplateEngine: "njk",
   };
 };
