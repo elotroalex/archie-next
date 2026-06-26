@@ -52,7 +52,7 @@ module.exports = {
     date: "February 2020",
     title: "Issue (4)",
     editors: ["Kaiama Glover", "Alex Gil"],
-    production: ["Alex Gil"],
+    production: ["Alex Gil", "Brian Ballsun-Stanton"],
   },
   issue05: {
     slug: "issue05",
@@ -62,7 +62,7 @@ module.exports = {
     date: "December 2020",
     title: "Issue (5)",
     editors: ["Kaiama Glover", "Alex Gil"],
-    production: ["Alex Gil"],
+    production: ["Alex Gil", "Brian Ballsun-Stanton"],
   },
   issue06: {
     slug: "issue06",
@@ -72,7 +72,7 @@ module.exports = {
     date: "May 2022",
     title: "Issue (6)",
     editors: ["Kaiama Glover", "Alex Gil"],
-    production: ["Alex Gil"],
+    production: ["Alex Gil", "Brian Ballsun-Stanton"],
   },
   issue07: {
     slug: "issue07",
@@ -82,7 +82,7 @@ module.exports = {
     date: "May 2023",
     title: "Issue (7)",
     editors: ["Kaiama Glover", "Alex Gil"],
-    production: ["Alex Gil"],
+    production: ["Alex Gil", "Brian Ballsun-Stanton", "Winnie E. Pérez Martínez"],
   },
   issue08: {
     slug: "issue08",
@@ -92,6 +92,16 @@ module.exports = {
     date: "April 2025",
     title: "Issue (8)",
     editors: ["Kaiama Glover", "Alex Gil"],
-    production: ["Alex Gil"],
+    production: ["Alex Gil", "Brian Ballsun-Stanton", "Winnie E. Pérez Martínez"],
+  },
+    issue09: {
+    slug: "issue09",
+    slug_fr: "fr/issue09",
+    slug_es: "es/issue09",
+    number: 9,
+    date: "April 2025",
+    title: "Issue (9)",
+    editors: ["Kaiama Glover", "Alex Gil"],
+    production: ["Alex Gil", "Isabella García Bernstein"],
   },
 };

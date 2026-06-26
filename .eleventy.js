@@ -1,3 +1,4 @@
+const fs = require("fs");
 const markdownIt = require("markdown-it");
 const markdownItFootnote = require("markdown-it-footnote");
 const markdownItAttrs = require("markdown-it-attrs");
@@ -7,6 +8,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/public": "public" });
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/images": "images" });
+
+  // Co-located images: new issues keep images inside src/issueXX/images/
+  // rather than the central src/images/issueXX/ tree used by older issues.
+  const issues = require("./src/_data/issues.js");
+  for (const key of Object.keys(issues)) {
+    const imgDir = `src/${key}/images`;
+    if (fs.existsSync(imgDir)) {
+      eleventyConfig.addPassthroughCopy({ [imgDir]: `${key}/images` });
+    }
+  }
 
   // HTML interactives — pass through untouched, do not template-process
   eleventyConfig.addPassthroughCopy({ "src/issue03/parham": "issue03/parham" });
@@ -22,7 +33,6 @@ module.exports = function (eleventyConfig) {
   // All issue articles combined — used by the i18n language variant generators.
   // Derived from the keys in src/_data/issues.js so no manual update is needed
   // when a new issue is added.
-  const issues = require("./src/_data/issues.js");
   eleventyConfig.addCollection("allIssueArticles", (collectionApi) => {
     return Object.keys(issues).flatMap((tag) =>
       collectionApi.getFilteredByTag(tag)

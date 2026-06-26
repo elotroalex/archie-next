@@ -8,6 +8,42 @@ Live site: [archipelagosjournal.org](http://archipelagosjournal.org)
 
 ---
 
+## Quick guide: create a new issue
+
+1. **Scaffold the folder structure**
+   ```bash
+   bash utility/intake/new-issue.sh issue09
+   ```
+
+2. **Register the issue** in `src/_data/issues.js` (see [Adding a new issue](#adding-a-new-issue) for the full entry format). The homepage updates automatically — no other config change needed.
+
+3. **Add labels** in `src/_i18n/en.yml`, `es.yml`, and `fr.yml` under the `issues:` key:
+   ```yaml
+   issue09: "Issue (9) | Theme | Month YYYY"
+   ```
+
+4. **Convert Word files to Markdown** — drop `.docx` files in `src/issue09/incoming/`, then for each one:
+   ```bash
+   bash utility/intake/convert-docx.sh src/issue09/incoming/author-title.docx
+   ```
+
+5. **Fill in front matter** — edit each generated `.md` file and replace every `# TODO` placeholder with real values. The `section` field must be one of: `introduction`, `articles`, `projects`, `reviews`.
+
+6. **Build and verify**
+   ```bash
+   npm run serve
+   ```
+   Open `http://localhost:8080` and check the homepage TOC.
+
+7. **Generate PDFs**
+   ```bash
+   bash utility/latex/makeIssues.sh issue09
+   ```
+
+8. **Commit and push** — GitHub Actions builds and deploys automatically.
+
+---
+
 ## Installation
 
 **Requirements:** Node.js 18+, npm.
@@ -31,21 +67,23 @@ npm run build      # production build to _site/
 Add an entry for the new issue. Follow the existing pattern:
 
 ```js
-issue04: {
-  slug: "issue04",
-  slug_fr: "fr/issue04",
-  slug_es: "es/issue04",
-  number: 4,
-  date: "March 2020",
-  title: "Issue (4)",
+issue09: {
+  slug: "issue09",
+  slug_fr: "fr/issue09",
+  slug_es: "es/issue09",
+  number: 9,
+  date: "April 2025",
+  title: "Issue (9)",
   editors: ["Editor Name"],
   production: ["Production Team Member"],
   // Optional: list pure-HTML interactives that fall outside the normal article pipeline
   // interactives: [
-  //   { title: "Piece Title", author: ["Author Name"], url: "/issue04/piece/piece.html", pdf: false },
+  //   { title: "Piece Title", author: ["Author Name"], url: "/issue09/piece/piece.html", pdf: false },
   // ],
 },
 ```
+
+The last key in `issues.js` is automatically treated as the current issue — the homepage updates without any further configuration change.
 
 ### 2. Add a label in each language file
 
@@ -53,32 +91,20 @@ In `src/_i18n/en.yml`, `es.yml`, and `fr.yml`, add a line under the `issues:` ke
 
 ```yaml
 issues:
-  issue04: "Issue (4) | March 2020"
+  issue09: "Issue (9) | Theme | April 2025"
 ```
 
-### 3. Create the article directory and its data file
+### 3. Scaffold the article directory
 
 ```bash
-mkdir src/issue04
+bash utility/intake/new-issue.sh issue09
 ```
 
-Create `src/issue04/issue04.11tydata.js`:
-
-```js
-module.exports = {
-  layout: "article",
-  lang: "en",
-  tags: ["issue04"],
-  eleventyComputed: {
-    permalink: (data) => `issue04/${data.page.fileSlug}.html`,
-    issueSlug: "issue04",
-  },
-};
-```
+This creates `src/issue09/`, `src/issue09/incoming/`, `src/issue09/images/`, and the Eleventy directory data file. See [Issue intake utility](#issue-intake-utility) for the full conversion workflow.
 
 ### 4. Add article files
 
-Place each article as a Markdown file in `src/issue04/`. Every article needs this front matter:
+Place each article as a Markdown file in `src/issue09/`. Use `utility/intake/convert-docx.sh` to generate them from Word files (recommended), or create them manually. Every article needs this front matter:
 
 ```yaml
 ---
@@ -93,8 +119,8 @@ author:
     shortname: Last      # used in PDF running header
     bio: >
       Author bio in markdown.
-pubDate: March 2020      # human-readable; do NOT use the key "date"
-issue: 4
+pubDate: April 2025      # human-readable; do NOT use the key "date"
+issue: 9
 order: 1                 # controls position within section in TOC
 abstract: >
   Article abstract.
@@ -110,19 +136,19 @@ For **project** entries, also include:
 ```yaml
 layout: project
 link: "https://project-url.example"
-thumb: images/issue04/project-thumb.jpg
+thumb: /issue09/images/project-thumb.jpg
 ```
 
 ### 5. Add images
 
-Place article images in `src/images/issue04/`. They are served from `/images/issue04/`.
+For new issues, images live inside the issue folder at `src/issue09/images/` and are served from `/issue09/images/`. When using `convert-docx.sh`, images are extracted there automatically.
 
-Use a native HTML `<figure>` element directly in the Markdown body. This format renders correctly in both the HTML site and the generated PDF without any special tooling:
+Reference images in article markdown using a root-relative path:
 
 ```html
 <figure>
-<img src="/images/issue04/filename.jpg" alt="Short description" loading="lazy">
-<figcaption>Figure 1. Full caption text, which may include markdown.</figcaption>
+<img src="/issue09/images/filename.jpg" alt="Short description" loading="lazy">
+<figcaption>Figure 1. Full caption text.</figcaption>
 </figure>
 ```
 
@@ -131,14 +157,14 @@ To wrap the image in a link:
 ```html
 <figure>
 <a href="https://external-site.com" target="_blank">
-<img src="/images/issue04/filename.jpg" alt="Short description" loading="lazy">
+<img src="/issue09/images/filename.jpg" alt="Short description" loading="lazy">
 </a>
 <figcaption>Figure 1. Caption with link to the source.</figcaption>
 </figure>
 ```
 
 **Rules:**
-- Always use a root-relative path starting with `/images/` — relative paths break on language-variant pages (`/es/`, `/fr/`).
+- Always use a root-relative path starting with `/issue09/images/` — relative paths break on language-variant pages (`/es/`, `/fr/`).
 - Always include `alt` (used as the PDF caption fallback) and `loading="lazy"`.
 - Do not use the old Jekyll `{% include image.html %}` syntax — it is not processed by Eleventy.
 
@@ -146,32 +172,86 @@ To wrap the image in a link:
 
 If an issue includes a self-contained HTML piece (like the Parham essay in Issue 3):
 
-1. Place the HTML and its assets in `src/issue04/piece-name/`.
+1. Place the HTML and its assets in `src/issue09/piece-name/`.
 2. In `.eleventy.js`, add passthrough copy and ignore rules:
    ```js
-   eleventyConfig.addPassthroughCopy({ "src/issue04/piece-name": "issue04/piece-name" });
-   eleventyConfig.ignores.add("src/issue04/piece-name/**");
+   eleventyConfig.addPassthroughCopy({ "src/issue09/piece-name": "issue09/piece-name" });
+   eleventyConfig.ignores.add("src/issue09/piece-name/**");
    ```
 3. Register it in the `interactives` array in `src/_data/issues.js` (see step 1 above). It will appear in the TOC under **Featured**.
 
-### 7. Set as current issue
-
-In `src/_data/site.js`, update:
-
-```js
-current: "issue04",
-"current-number": 4,
-```
-
-The homepage will now show Issue 4. Issues 1–3 remain accessible via their individual pages (`/issue01.html` etc.) linked from the "Issues" nav at the bottom of the homepage.
-
-### 8. Generate PDFs
+### 7. Generate PDFs
 
 ```bash
-bash utility/latex/makeIssues.sh issue04
+bash utility/latex/makeIssues.sh issue09
 ```
 
 Pre-existing PDFs in `src/assets/` are never overwritten unless you explicitly run the script for that issue.
+
+---
+
+## Issue intake utility
+
+When editors receive copy-edited Word files from authors, two scripts in `utility/intake/` handle the conversion to Markdown.
+
+### Scaffold a new issue
+
+```bash
+bash utility/intake/new-issue.sh issue09
+```
+
+Creates:
+- `src/issue09/incoming/` — drop `.docx` files here
+- `src/issue09/images/` — extracted images will land here
+- `src/issue09/issue09.11tydata.js` — Eleventy directory data file
+
+### Convert a Word file to Markdown
+
+```bash
+bash utility/intake/convert-docx.sh src/issue09/incoming/author-title.docx
+```
+
+This uses Pandoc 3 (already required by the PDF pipeline) to:
+- Convert the `.docx` to `src/issue09/author-title.md`
+- Extract embedded images to `src/issue09/images/media/`
+- Rewrite image paths to absolute `/issue09/images/media/…` (required for language-variant pages)
+- Inject a complete YAML front matter stub with `# TODO` placeholders for every required field
+
+Edit the output `.md` and fill in all `# TODO` fields before building. The `section` field must be exactly one of: `introduction`, `articles`, `projects`, `reviews` — the TOC will not display the article otherwise.
+
+---
+
+## Link checking
+
+The project uses [linkinator](https://github.com/JustinBeckwith/linkinator) to scan the built site for broken links.
+
+```bash
+npm run build
+npm run check-links
+```
+
+linkinator crawls `_site/` recursively and reports any URLs that return an error status. Results are printed to stdout — broken links appear as `[404]`, gone pages as `[410]`, server errors as `[5xx]`.
+
+**Configuration** is in [`linkinator.config.json`](linkinator.config.json) at the repo root. Key settings:
+
+- `skip` — patterns for URLs to skip entirely (DOIs, social media, known bot-blocked domains, the live `archipelagosjournal.org` domain)
+- `statusCodes` — `429` and `403` are treated as warnings rather than errors (rate-limiting and bot blocks that don't mean the link is actually dead)
+- `verbosity: "error"` — only broken links are printed; passing links are suppressed
+
+To write a report of all broken external links to a file at the repo root (local use only — macOS/Linux):
+
+```bash
+npm run report-links
+```
+
+This writes two files to the repo root (both gitignored):
+
+- `broken-links.txt` — external URLs returning 404/410/5xx (genuinely broken)
+- `missing-local.txt` — URLs returning status `0` (no HTTP response; usually local image paths, not real errors)
+
+**What to ignore:** `[0]` status on local image paths is a linkinator limitation (it cannot HEAD-check local files) — these are not real errors. Dead links in article body content (old blogs, defunct academic sites) are expected and not fixable from here.
+
+**CI:** The link check runs automatically on every push via GitHub Actions (`.github/workflows/build.yml`) with `continue-on-error: true`, so it surfaces the report without blocking deployment.
 
 ---
 

@@ -6,7 +6,8 @@
     "build": "eleventy",
     "serve": "eleventy --serve",
     "debug": "DEBUG=Eleventy* eleventy",
-    "check-links": "cd _site && npx linkinator . --config ../linkinator.config.json"
+    "check-links": "cd _site && npx linkinator . --config ../linkinator.config.json",
+    "report-links": "bash utility/report-links.sh"
   },
   "repository": {
     "type": "git",

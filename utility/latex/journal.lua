@@ -152,8 +152,10 @@ function RawInline(el)
   end
 end
 
--- Ensure native Pandoc Image elements don't overflow the text width
+-- Ensure native Pandoc Image elements don't overflow the text width,
+-- and strip leading slash so lualatex resolves relative to resource-path.
 function Image(el)
   el.attributes["width"] = nil
+  el.src = el.src:gsub("^/", "")
   return el
 end

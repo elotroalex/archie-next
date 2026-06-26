@@ -3,3 +3,5 @@ _site/
 .eleventy-cache/
 .cache/
 .DS_Store
+broken-links.txt
+missing-local.txt
