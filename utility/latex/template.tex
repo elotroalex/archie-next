@@ -128,6 +128,10 @@ $if(highlighting-macros)$
 $highlighting-macros$
 $endif$
 
+%% Compact lists (Pandoc emits \tightlist for tight markdown lists)
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
 \usepackage{csquotes}
 
 %% ── Lua filter hook for custom environments ───────────────────────────────────

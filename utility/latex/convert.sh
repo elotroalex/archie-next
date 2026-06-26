@@ -35,12 +35,13 @@ fi
 
 # Build image path relative to workdir so lualatex can find images
 ISSUE_DIR=$(basename "$(dirname "$FULLPATH")")  # e.g. issue01
-IMAGE_PATH="$ROOT/images/$ISSUE_DIR"
+IMAGE_PATH="$ROOT/src/images/$ISSUE_DIR"
 
-# Copy images to workdir so lualatex resolves them
-mkdir -p "$WORKDIR/images"
+# Copy images preserving the issue subdirectory so lualatex resolves
+# paths like images/issue02/filename.jpg
+mkdir -p "$WORKDIR/images/$ISSUE_DIR"
 if [ -d "$IMAGE_PATH" ]; then
-  cp -r "$IMAGE_PATH/." "$WORKDIR/images/"
+  cp -r "$IMAGE_PATH/." "$WORKDIR/images/$ISSUE_DIR/"
 fi
 
 # Copy fonts so fontspec can find them
