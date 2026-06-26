@@ -34,6 +34,10 @@ jobs:
       - name: Build Eleventy site
         run: npm run build
 
+      - name: Check links
+        run: npm run check-links
+        continue-on-error: true
+
       - name: Upload artifact
         if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3

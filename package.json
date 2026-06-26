@@ -5,7 +5,8 @@
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",
-    "debug": "DEBUG=Eleventy* eleventy"
+    "debug": "DEBUG=Eleventy* eleventy",
+    "check-links": "cd _site && npx linkinator . --config ../linkinator.config.json"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,8 @@
     "markdown-it": "^14.2.0",
     "markdown-it-attrs": "^5.0.0",
     "markdown-it-footnote": "^4.0.0"
+  },
+  "devDependencies": {
+    "linkinator": "^7.6.1"
   }
 }

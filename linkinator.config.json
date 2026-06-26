@@ -1,0 +1,21 @@
+{
+  "recurse": true,
+  "skip": [
+    "localhost:8888",
+    "doi\\.org",
+    "twitter\\.com",
+    "facebook\\.com",
+    "fonts\\.googleapis\\.com",
+    "gmpg\\.org",
+    "dublincore\\.org",
+    "archipelagosjournal\\.org",
+    "atom\\.xml"
+  ],
+  "timeout": 10000,
+  "concurrency": 25,
+  "verbosity": "error",
+  "statusCodes": {
+    "429": "warn",
+    "403": "warn"
+  }
+}
