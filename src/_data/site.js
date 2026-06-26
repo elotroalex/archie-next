@@ -1,3 +1,8 @@
+const issues = require("./issues.js");
+
+const issueKeys = Object.keys(issues);
+const currentKey = issueKeys[issueKeys.length - 1];
+
 module.exports = {
   title: "archipelagos",
   publisher: "Columbia University Libraries",
@@ -7,8 +12,7 @@ module.exports = {
   githuburl: "https://github.com/elotroalex/archie",
   old_issn: "2473-2206",
   issn: "2689-842X",
-  // current issue slug and number
-  current: "issue03",
-  "current-number": 3,
+  current: currentKey,
+  "current-number": issues[currentKey].number,
   languages: ["en", "es", "fr"],
 };
