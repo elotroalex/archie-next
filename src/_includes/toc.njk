@@ -33,6 +33,21 @@
 {% endfor %}
 </ul>
 
+{% set issueInteractives = issues[issueTag].interactives %}
+{% if issueInteractives and issueInteractives.length %}
+<h3>{{ i18n[lang].global.interactives }}</h3>
+<ul>
+{% for piece in issueInteractives %}
+  <li>
+    <a href="{{ piece.url }}">
+      <span class="toc-title">{{ piece.title | mdInline | safe }}</span>
+    </a><br>
+    <span class="byline">{% for name in piece.author %}{{ name }}{% if not loop.last %}, {% endif %}{% endfor %}</span>
+  </li>
+{% endfor %}
+</ul>
+{% endif %}
+
 <h3>{{ i18n[lang].global.projects }}</h3>
 <ul>
 {% for art in issueArticles %}
@@ -68,20 +83,5 @@
   {% endif %}
 {% endfor %}
 </ul>
-
-{% set issueInteractives = issues[issueTag].interactives %}
-{% if issueInteractives and issueInteractives.length %}
-<h3>{{ i18n[lang].global.interactives }}</h3>
-<ul>
-{% for piece in issueInteractives %}
-  <li>
-    <a href="{{ piece.url }}">
-      <span class="toc-title">{{ piece.title | mdInline | safe }}</span>
-    </a><br>
-    <span class="byline">{% for name in piece.author %}{{ name }}{% if not loop.last %}, {% endif %}{% endfor %}</span>
-  </li>
-{% endfor %}
-</ul>
-{% endif %}
 
 </div>
