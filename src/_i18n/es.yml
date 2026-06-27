@@ -28,6 +28,7 @@ titles:
   workflow: "flujo de trabajo"
   home: "página inicial"
   valences: "modalidades"
+  search: "búsqueda"
 
 issues:
   issue01: "Número (1) | junio 2016"

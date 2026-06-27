@@ -1,0 +1,112 @@
+---
+layout: default
+title: Search
+permalink: /search.html
+language: en
+---
+
+<h1>Search</h1>
+
+<div class="search-wrap">
+  <input
+    id="search-input"
+    type="search"
+    placeholder="Search articles, authors, abstracts…"
+    autofocus
+    autocomplete="off"
+    spellcheck="false"
+  />
+  <p id="search-status" class="search-status"></p>
+  <div id="search-results"></div>
+</div>
+
+<script src="/public/js/fuse.min.js"></script>
+<script>
+(function () {
+  var input = document.getElementById('search-input');
+  var status = document.getElementById('search-status');
+  var results = document.getElementById('search-results');
+  var fuse = null;
+  var index = null;
+
+  fetch('/search-index.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      index = data;
+      fuse = new Fuse(index, {
+        keys: [
+          { name: 'title',    weight: 3 },
+          { name: 'authors',  weight: 2 },
+          { name: 'abstract', weight: 2 },
+          { name: 'content',  weight: 1 },
+        ],
+        threshold: 0.3,
+        includeScore: true,
+        ignoreLocation: true,
+        minMatchCharLength: 3,
+      });
+      // Run search immediately if query is already in the field (e.g. back-button)
+      if (input.value.trim().length >= 3) runSearch(input.value.trim());
+    })
+    .catch(function () {
+      status.textContent = 'Search index could not be loaded.';
+    });
+
+  input.addEventListener('input', function () {
+    var q = input.value.trim();
+    if (q.length < 3) {
+      results.innerHTML = '';
+      status.textContent = q.length ? 'Type at least 3 characters…' : '';
+      return;
+    }
+    runSearch(q);
+  });
+
+  function sectionLabel(s) {
+    var map = { articles: 'Essay', projects: 'Digital Project', reviews: 'Project Review', introduction: 'Introduction' };
+    return map[s] || s || 'Article';
+  }
+
+  function excerpt(text, query) {
+    if (!text) return '';
+    var words = query.toLowerCase().split(/\s+/);
+    var lower = text.toLowerCase();
+    var pos = -1;
+    for (var i = 0; i < words.length; i++) {
+      pos = lower.indexOf(words[i]);
+      if (pos !== -1) break;
+    }
+    if (pos === -1) pos = 0;
+    var start = Math.max(0, pos - 80);
+    var end = Math.min(text.length, pos + 200);
+    var snip = (start > 0 ? '…' : '') + text.slice(start, end) + (end < text.length ? '…' : '');
+    // Bold the matched word
+    words.forEach(function (w) {
+      if (w.length < 3) return;
+      snip = snip.replace(new RegExp('(' + w + ')', 'gi'), '<mark>$1</mark>');
+    });
+    return snip;
+  }
+
+  function runSearch(q) {
+    var hits = fuse.search(q, { limit: 20 });
+    if (!hits.length) {
+      status.textContent = 'No results for "' + q + '".';
+      results.innerHTML = '';
+      return;
+    }
+    status.textContent = hits.length + ' result' + (hits.length === 1 ? '' : 's') + ' for “' + q + '”';
+    results.innerHTML = hits.map(function (h) {
+      var d = h.item;
+      var snip = excerpt(d.abstract || '', q);
+      return '<div class="search-result">' +
+        '<h2 class="search-result-title"><a href="' + d.url + '">' + d.title + '</a></h2>' +
+        (d.authors ? '<p class="search-result-meta">' + d.authors + '</p>' : '') +
+        '<p class="search-result-meta">Issue ' + d.issue + (d.pubDate ? ' &middot; ' + d.pubDate : '') +
+          (d.section ? ' &middot; ' + sectionLabel(d.section) : '') + '</p>' +
+        (snip ? '<p class="search-result-excerpt">' + snip + '</p>' : '') +
+        '</div>';
+    }).join('');
+  }
+})();
+</script>

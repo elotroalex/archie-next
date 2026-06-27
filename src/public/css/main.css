@@ -517,6 +517,71 @@ a#logo > img {
   margin-bottom: 2rem;
   text-align: left;
   padding-top: .8rem;
+  position: relative;
+}
+
+a.search-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #454545;
+  opacity: 0.6;
+  line-height: 1;
+}
+
+a.search-icon:hover {
+  opacity: 1;
+}
+
+/* Search page */
+.search-wrap {
+  max-width: 40rem;
+}
+
+#search-input {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: .5rem .75rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: .5rem;
+}
+
+.search-status {
+  font-size: .85rem;
+  color: #888;
+  margin: .25rem 0 1rem;
+}
+
+.search-result {
+  border-top: 1px solid #eee;
+  padding: 1rem 0;
+}
+
+.search-result-title {
+  font-size: 1rem;
+  margin: 0 0 .25rem;
+}
+
+.search-result-title a {
+  color: #222;
+}
+
+.search-result-meta {
+  font-size: .8rem;
+  color: #888;
+  margin: .15rem 0;
+}
+
+.search-result-excerpt {
+  font-size: .85rem;
+  color: #555;
+  margin: .4rem 0 0;
+}
+
+.search-result-excerpt mark {
+  background: #fff3b0;
+  padding: 0 1px;
 }
 
 

@@ -29,6 +29,7 @@ titles:
   home: "page d'accueil"
   workflow: "flux de travail"
   valences: "valences"
+  search: "recherche"
 
 issues:
   issue01: "Numéro (1) | juin 2016"
