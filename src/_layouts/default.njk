@@ -22,6 +22,13 @@
 
   {% include "footer.njk" %}
 
+  {% set basePath = page.url | replace("/es/", "/") | replace("/fr/", "/") %}
+  <div class="masthead-lang">
+    <a href="{{ basePath }}"{% if lang == "en" %} class="active"{% endif %}>en</a>
+    <a href="/es{{ basePath }}"{% if lang == "es" %} class="active"{% endif %}>es</a>
+    <a href="/fr{{ basePath }}"{% if lang == "fr" %} class="active"{% endif %}>fr</a>
+  </div>
+
   <a class="search-icon" href="/search.html" aria-label="Search">
     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
   </a>

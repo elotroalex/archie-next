@@ -519,6 +519,36 @@ a#logo > img {
   padding-top: .8rem;
 }
 
+.masthead-lang {
+  position: absolute;
+  top: 1.25rem;
+  left: 7rem; /* default (non-reverse): sits right of search icon */
+  display: flex;
+  gap: 0.6rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.layout-reverse .masthead-lang {
+  left: auto;
+  right: 8rem;
+}
+
+.masthead-lang a {
+  color: #505050;
+  text-decoration: none;
+}
+
+.masthead-lang a.active {
+  color: #D0181F;
+  font-weight: 700;
+}
+
+.masthead-lang a:hover {
+  color: #D0181F;
+}
+
 a.search-icon {
   position: absolute;
   top: 1rem;
@@ -891,14 +921,16 @@ a.sidebar-nav-item:focus {
 .wrap,
 .sidebar,
 .sidebar-toggle,
-a.search-icon {
+a.search-icon,
+.masthead-lang {
   -webkit-backface-visibility: hidden;
       -ms-backface-visibility: hidden;
           backface-visibility: hidden;
 }
 .wrap,
 .sidebar-toggle,
-a.search-icon {
+a.search-icon,
+.masthead-lang {
   -webkit-transition: -webkit-transform .3s ease-in-out;
           transition: transform .3s ease-in-out;
 }
@@ -910,7 +942,8 @@ a.search-icon {
 #sidebar-checkbox:checked ~ .sidebar,
 #sidebar-checkbox:checked ~ .wrap,
 #sidebar-checkbox:checked ~ .sidebar-toggle,
-#sidebar-checkbox:checked ~ a.search-icon {
+#sidebar-checkbox:checked ~ a.search-icon,
+#sidebar-checkbox:checked ~ .masthead-lang {
   -webkit-transform: translateX(14rem);
       -ms-transform: translateX(14rem);
           transform: translateX(14rem);
@@ -935,7 +968,8 @@ a.search-icon {
 .layout-reverse #sidebar-checkbox:checked ~ .sidebar,
 .layout-reverse #sidebar-checkbox:checked ~ .wrap,
 .layout-reverse #sidebar-checkbox:checked ~ .sidebar-toggle,
-.layout-reverse #sidebar-checkbox:checked ~ a.search-icon {
+.layout-reverse #sidebar-checkbox:checked ~ a.search-icon,
+.layout-reverse #sidebar-checkbox:checked ~ .masthead-lang {
   -webkit-transform: translateX(-14rem);
       -ms-transform: translateX(-14rem);
           transform: translateX(-14rem);
