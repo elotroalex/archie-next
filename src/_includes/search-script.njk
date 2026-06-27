@@ -1,4 +1,4 @@
-<script src="/public/js/fuse.min.js"></script>
+<script src="{{ '/public/js/fuse.min.js' | url }}"></script>
 <script>
 (function () {
   var input = document.getElementById('search-input');
@@ -13,7 +13,7 @@
     resultsForPlural:{{ (i18n[lang].search.results_for_plural or 'results for')                      | dump | safe }},
   };
 
-  fetch('/search-index.json')
+  fetch('{{ '/search-index.json' | url }}')
     .then(function (r) { return r.json(); })
     .then(function (data) {
       fuse = new Fuse(data, {

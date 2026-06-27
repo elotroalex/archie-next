@@ -46,7 +46,7 @@ layout: default
     <li><a href="#">{{ i18n[lang].global["return-to-top"] }}</a></li>
     {% if site["current-number"] == issue %}
     <li> | </li>
-    <a href="/">{{ i18n[lang].global.toc }}</a>
+    <a href="{{ '/' | url }}">{{ i18n[lang].global.toc }}</a>
     {% endif %}
   </ul>
 </div>

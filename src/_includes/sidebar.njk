@@ -14,13 +14,13 @@
     {% endif %}
   </div>
   <nav class="main-nav">
-    <a class="sidebar-nav-item" href="/index.html">{{ i18n[lang].titles.home }}</a>
-    <a class="sidebar-nav-item" href="/about.html">{{ i18n[lang].titles.about }}</a>
-    <a class="sidebar-nav-item" href="/credits.html">{{ i18n[lang].titles.credits }}</a>
-    <a class="sidebar-nav-item" href="/authors.html">{{ i18n[lang].titles.authors }}</a>
-    <a class="sidebar-nav-item" href="/reviewers.html">{{ i18n[lang].titles.reviewers }}</a>
-    <a class="sidebar-nav-item" href="/workflow.html">{{ i18n[lang].titles.workflow }}</a>
-    <a class="sidebar-nav-item" href="/valences.html">Valences</a>
+    <a class="sidebar-nav-item" href="{{ '/index.html' | url }}">{{ i18n[lang].titles.home }}</a>
+    <a class="sidebar-nav-item" href="{{ '/about.html' | url }}">{{ i18n[lang].titles.about }}</a>
+    <a class="sidebar-nav-item" href="{{ '/credits.html' | url }}">{{ i18n[lang].titles.credits }}</a>
+    <a class="sidebar-nav-item" href="{{ '/authors.html' | url }}">{{ i18n[lang].titles.authors }}</a>
+    <a class="sidebar-nav-item" href="{{ '/reviewers.html' | url }}">{{ i18n[lang].titles.reviewers }}</a>
+    <a class="sidebar-nav-item" href="{{ '/workflow.html' | url }}">{{ i18n[lang].titles.workflow }}</a>
+    <a class="sidebar-nav-item" href="{{ '/valences.html' | url }}">Valences</a>
   </nav>
 
   <div class="sidebar-footer">

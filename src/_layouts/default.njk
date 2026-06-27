@@ -9,18 +9,18 @@
 
   <div class="wrap">
     <div class="masthead">
-      <a id="logo" href="/index.html"><img src="/public/logo.png" height="64px" width="72px" alt="archipelagos logo"/></a>
+      <a id="logo" href="{{ '/index.html' | url }}"><img src="{{ '/public/logo.png' | url }}" height="64px" width="72px" alt="archipelagos logo"/></a>
       {% if title != "home" and (title is not string or "Issue" not in title) %}
-      <span class="running-title"><a href="/index.html">archipelagos</a></span>
+      <span class="running-title"><a href="{{ '/index.html' | url }}">archipelagos</a></span>
       {% endif %}
       <div class="masthead-controls">
         {% set basePath = page.url | replace("/es/", "/") | replace("/fr/", "/") %}
         <div class="masthead-lang">
-          <a href="{{ basePath }}"{% if lang == "en" %} class="active"{% endif %}>en</a>
-          <a href="/es{{ basePath }}"{% if lang == "es" %} class="active"{% endif %}>es</a>
-          <a href="/fr{{ basePath }}"{% if lang == "fr" %} class="active"{% endif %}>fr</a>
+          <a href="{{ basePath | url }}"{% if lang == "en" %} class="active"{% endif %}>en</a>
+          <a href="{{ ('/es' + basePath) | url }}"{% if lang == "es" %} class="active"{% endif %}>es</a>
+          <a href="{{ ('/fr' + basePath) | url }}"{% if lang == "fr" %} class="active"{% endif %}>fr</a>
         </div>
-        <a class="search-icon" href="/search.html" aria-label="Search">
+        <a class="search-icon" href="{{ '/search.html' | url }}" aria-label="Search">
           <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </a>
       </div>
@@ -35,10 +35,10 @@
 
   <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
-  <script type="text/javascript" src="/public/js/main.js"></script>
+  <script type="text/javascript" src="{{ '/public/js/main.js' | url }}"></script>
 
   {% if script %}
-  <script src="/public/js/special/{{ script }}"></script>
+  <script src="{{ ('/public/js/special/' + script) | url }}"></script>
   {% endif %}
 
   <script type="text/javascript">

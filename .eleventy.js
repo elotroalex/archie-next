@@ -113,7 +113,9 @@ module.exports = function (eleventyConfig) {
   });
 
   // --- Input / output directories ---
+  const pathPrefix = process.env.ELEVENTY_PATH_PREFIX || "/";
   return {
+    pathPrefix,
     dir: {
       input: "src",
       output: "_site",

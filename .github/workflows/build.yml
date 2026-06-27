@@ -33,6 +33,8 @@ jobs:
 
       - name: Build Eleventy site
         run: npm run build
+        env:
+          ELEVENTY_PATH_PREFIX: ${{ github.ref == 'refs/heads/staging' && '/archie-next/' || '/' }}
 
       - name: Check links
         run: npm run check-links
