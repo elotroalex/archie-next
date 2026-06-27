@@ -39,6 +39,14 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  // Strip Pandoc {=html} raw-block fences so markdown-it renders inline HTML.
+  // The fences are kept in the source files for the PDF pipeline (journal.lua
+  // needs each table as a single RawBlock); this preprocessor removes them
+  // only during the Eleventy web build.
+  eleventyConfig.addPreprocessor("strip-pandoc-raw-html", "md", (_data, content) => {
+    return content.replace(/^```\{=html\}\n([\s\S]*?)^```/gm, "$1");
+  });
+
   // --- Markdown configuration ---
   const md = markdownIt({
     html: true,
