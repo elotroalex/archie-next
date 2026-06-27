@@ -5,7 +5,7 @@ layout: default
 <div class="project">
   <h1 class="page-title">{{ title.long if title.long else title }}</h1>
   <a href="{{ link }}">
-    <img class="project-image" alt="project image" src="/{{ image }}"/>
+    <img class="project-image" alt="project image" src="{{ ('/' + image) | url }}"/>
   </a>
   {{ content | safe }}
   {% include "bios.njk" %}
@@ -16,7 +16,7 @@ layout: default
     <li><a href="#">Return to top</a></li>
     {% if site["current-number"] == issue %}
     <li> | </li>
-    <a href="/">Return to Table of Contents</a>
+    <a href="{{ '/' | url }}">Return to Table of Contents</a>
     {% endif %}
   </ul>
 </div>
