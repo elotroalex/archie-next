@@ -34,6 +34,8 @@ class SearchIndex {
   }
 
   render({ collections }) {
+    const pathPrefix = process.env.ELEVENTY_PATH_PREFIX || "/";
+    const prefixUrl = (u) => pathPrefix === "/" ? u : pathPrefix.replace(/\/$/, "") + u;
     const index = (collections.allIssueArticles || []).map((item) => {
       const raw = stripHtml(item.templateContent || "");
       return {
@@ -45,7 +47,7 @@ class SearchIndex {
         section: item.data.section || "",
         pubDate: item.data.pubDate || "",
         lang: item.data.language || "en",
-        url: item.url,
+        url: prefixUrl(item.url),
         content: filterStops(raw),
       };
     });
