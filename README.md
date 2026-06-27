@@ -46,7 +46,15 @@ Live site: [archipelagosjournal.org](http://archipelagosjournal.org)
 
    Open `http://localhost:8080` and check the homepage TOC.
 
-8. **Commit and push** — GitHub Actions builds and deploys automatically.
+8. **Commit and push to `staging`** — GitHub Actions deploys to GitHub Pages for testing.
+
+9. **Publish to production** — when the issue is ready, merge `staging` into `main`:
+
+   ```bash
+   git checkout main && git merge staging && git push
+   ```
+
+   GitHub Actions deploys to `archipelagosjournal.org` automatically via rsync.
 
 ---
 
@@ -260,6 +268,35 @@ This writes two files to the repo root (both gitignored):
 **What to ignore:** `[0]` status on local image paths is a linkinator limitation (it cannot HEAD-check local files) — these are not real errors. Dead links in article body content (old blogs, defunct academic sites) are expected and not fixable from here.
 
 **CI:** The link check runs automatically on every push via GitHub Actions (`.github/workflows/build.yml`) with `continue-on-error: true`, so it surfaces the report without blocking deployment.
+
+---
+
+## Deployment
+
+The site uses a two-branch deploy strategy:
+
+| Branch | Deploys to | Purpose |
+|--------|-----------|---------|
+| `staging` | GitHub Pages | Testing — link checking, preview before publication |
+| `main` | `archipelagosjournal.org` via rsync | Production |
+
+**Day-to-day workflow:** all work (new issues, edits, fixes) happens on `staging` or is merged into it. GitHub Pages updates automatically on every push to `staging`.
+
+**Publishing to production:**
+
+```bash
+git checkout main
+git merge staging
+git push
+```
+
+GitHub Actions SSHs into the production server and rsyncs `_site/` to `/home/elotroalex/public_html/`. After a successful push to `main`, immediately return to `staging` for the next issue:
+
+```bash
+git checkout staging
+```
+
+**Required GitHub secret:** the production deploy requires an `SSH_PRIVATE_KEY` secret set in the repository's Settings → Secrets and variables → Actions. The key must correspond to the `elotroalex` user on `archipelagosjournal.org`.
 
 ---
 
