@@ -27,6 +27,9 @@ class FrArticles {
         layout: (data) => data.art.data.layout,
         language: (data) => data.art.data.language,
         issueSlug: (data) => data.art.data.issueSlug,
+        image: (data) => data.art.data.image,
+        thumb: (data) => data.art.data.thumb,
+        link: (data) => data.art.data.link,
       },
     };
   }

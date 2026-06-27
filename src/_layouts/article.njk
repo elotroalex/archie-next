@@ -6,7 +6,8 @@ layout: default
   <h1 class="page-title">{{ title.long | mdInline | safe if title.long else title }}</h1>
   <p class="byline">{% include "author-loop.njk" %}</p>
   {% if pdf != false %}
-  <p><a class="pdf-download" href="{{ ('/assets' + page.url) | replace('.html', '.pdf') | url }}" target="_blank">⬇ Download PDF</a></p>
+  {% set canonicalPath = page.url | replace("/es/", "/") | replace("/fr/", "/") %}
+  <p><a class="pdf-download" href="{{ ('/assets' + canonicalPath) | replace('.html', '.pdf') | url }}" target="_blank">⬇ Download PDF</a></p>
   {% endif %}
   <br>
 

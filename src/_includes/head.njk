@@ -85,7 +85,8 @@
   <meta name="citation_language" content="{{ language }}" />
   <meta name="citation_fulltext_html_url" content="{{ site.url }}{{ page.url }}" />
   {% if pdf != false %}
-  <meta name="citation_pdf_url" content="{{ site.url }}/assets{{ page.url | replace('.html', '.pdf') }}" />
+  {% set canonicalPath = page.url | replace("/es/", "/") | replace("/fr/", "/") %}
+  <meta name="citation_pdf_url" content="{{ site.url }}/assets{{ canonicalPath | replace('.html', '.pdf') }}" />
   {% endif %}
   <meta name="citation_publisher" content="{{ site.publisher }}" />
   <meta name="citation_doi" content="{{ doi }}" />
@@ -100,6 +101,6 @@
   <link rel="apple-touch-icon" sizes="144x144" href="{{ site.url }}/public/apple-touch-icon.png" />
   <link rel="shortcut icon" href="{{ '/public/favicon.ico' | url }}" />
 
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ '/atom.xml' | url }}" />
+  <!-- RSS (atom.xml not yet generated — re-enable when feed is available) -->
+  <!-- <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ '/atom.xml' | url }}" /> -->
 </head>
