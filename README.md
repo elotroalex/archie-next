@@ -267,6 +267,14 @@ This writes two files to the repo root (both gitignored):
 
 **What to ignore:** `[0]` status on local image paths is a linkinator limitation (it cannot HEAD-check local files) — these are not real errors. Dead links in article body content (old blogs, defunct academic sites) are expected and not fixable from here.
 
+**Checking links on the staging site:** To check links against the live GitHub Pages deployment instead of a local build, run linkinator directly against the staging URL:
+
+```bash
+npx linkinator https://elotroalex.github.io/archie-next/ --recurse --skip "archipelagosjournal.org|doi.org|twitter.com|facebook.com|instagram.com"
+```
+
+This catches broken links that only appear under the `/archie-next/` path prefix and would be missed by a local check.
+
 **CI:** The link check runs automatically on every push via GitHub Actions (`.github/workflows/build.yml`) with `continue-on-error: true`, so it surfaces the report without blocking deployment.
 
 ---
