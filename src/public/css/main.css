@@ -303,6 +303,20 @@ a.footer-menu-item-active {
   color: #939598;
 }
 
+.pdf-download {
+  font-size: 0.85rem;
+  color: #939598;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.3rem;
+}
+
+.pdf-download:hover {
+  color: #D0181F;
+  border-color: #D0181F;
+}
+
 /* Lists */
 ul {
 	list-style: circle;
