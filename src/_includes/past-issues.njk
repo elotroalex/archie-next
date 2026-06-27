@@ -4,7 +4,7 @@
   <ul>
   {% for key, iss in issues %}
     {% if key != site.current %}
-    <li><a href="/{{ langPrefix }}{{ key }}.html">{{ i18n[lang].issues[key] }}</a></li>
+    <li><a href="{{ ('/' + langPrefix + key + '.html') | url }}">{{ i18n[lang].issues[key] }}</a></li>
     {% endif %}
   {% endfor %}
   </ul>
