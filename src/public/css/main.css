@@ -532,9 +532,8 @@ a#logo > img {
 .masthead-lang {
   display: flex;
   gap: 0.6rem;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-size: 1.2rem;
+  font-weight: 200;
 }
 
 .masthead-lang a {
