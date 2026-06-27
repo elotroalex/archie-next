@@ -31,6 +31,13 @@ titles:
   valences: "valences"
   search: "recherche"
 
+search:
+  placeholder: "Rechercher des articles, auteurs, résumés…"
+  min_chars: "Saisissez au moins 3 caractères…"
+  no_results: "Aucun résultat pour"
+  results_for: "résultat pour"
+  results_for_plural: "résultats pour"
+
 issues:
   issue01: "Numéro (1) | juin 2016"
   issue02: "Numéro (2) | septembre 2017"

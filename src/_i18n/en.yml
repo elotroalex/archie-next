@@ -41,6 +41,13 @@ titles:
   valences: "valences"
   search: "search"
 
+search:
+  placeholder: "Search articles, authors, abstracts…"
+  min_chars: "Type at least 3 characters…"
+  no_results: "No results for"
+  results_for: "result for"
+  results_for_plural: "results for"
+
 components:
   ccby: This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. Source documents can be found on our
   repository: repository

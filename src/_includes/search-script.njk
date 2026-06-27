@@ -1,0 +1,96 @@
+<script src="/public/js/fuse.min.js"></script>
+<script>
+(function () {
+  var input = document.getElementById('search-input');
+  var status = document.getElementById('search-status');
+  var results = document.getElementById('search-results');
+  var fuse = null;
+
+  var i18n = {
+    minChars:        {{ (i18n[lang].search.min_chars        or 'Type at least 3 characters…')        | dump | safe }},
+    noResults:       {{ (i18n[lang].search.no_results        or 'No results for')                    | dump | safe }},
+    resultsFor:      {{ (i18n[lang].search.results_for       or 'result for')                        | dump | safe }},
+    resultsForPlural:{{ (i18n[lang].search.results_for_plural or 'results for')                      | dump | safe }},
+  };
+
+  fetch('/search-index.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      fuse = new Fuse(data, {
+        keys: [
+          { name: 'title',    weight: 3 },
+          { name: 'authors',  weight: 2 },
+          { name: 'abstract', weight: 2 },
+          { name: 'content',  weight: 1 },
+        ],
+        threshold: 0.3,
+        includeScore: true,
+        ignoreLocation: true,
+        minMatchCharLength: 3,
+      });
+      if (input.value.trim().length >= 3) runSearch(input.value.trim());
+    })
+    .catch(function () {
+      status.textContent = 'Search index could not be loaded.';
+    });
+
+  input.addEventListener('input', function () {
+    var q = input.value.trim();
+    if (q.length < 3) {
+      results.innerHTML = '';
+      status.textContent = q.length ? i18n.minChars : '';
+      return;
+    }
+    runSearch(q);
+  });
+
+  function sectionLabel(s) {
+    var map = { articles: 'Essay', projects: 'Digital Project', reviews: 'Project Review', introduction: 'Introduction' };
+    return map[s] || s || '';
+  }
+
+  function excerpt(text, query) {
+    if (!text) return '';
+    var words = query.toLowerCase().split(/\s+/);
+    var lower = text.toLowerCase();
+    var pos = -1;
+    for (var i = 0; i < words.length; i++) {
+      pos = lower.indexOf(words[i]);
+      if (pos !== -1) break;
+    }
+    if (pos === -1) pos = 0;
+    var start = Math.max(0, pos - 80);
+    var end = Math.min(text.length, pos + 200);
+    var snip = (start > 0 ? '…' : '') + text.slice(start, end) + (end < text.length ? '…' : '');
+    words.forEach(function (w) {
+      if (w.length < 3) return;
+      snip = snip.replace(new RegExp('(' + w + ')', 'gi'), '<mark>$1</mark>');
+    });
+    return snip;
+  }
+
+  function runSearch(q) {
+    var hits = fuse.search(q, { limit: 20 });
+    if (!hits.length) {
+      status.textContent = i18n.noResults + ' “' + q + '”.';
+      results.innerHTML = '';
+      return;
+    }
+    var label = hits.length === 1 ? i18n.resultsFor : i18n.resultsForPlural;
+    status.textContent = hits.length + ' ' + label + ' “' + q + '”';
+    results.innerHTML = hits.map(function (h) {
+      var d = h.item;
+      var snip = excerpt(d.abstract || '', q);
+      var section = sectionLabel(d.section);
+      return '<div class="search-result">' +
+        '<h2 class="search-result-title"><a href="' + d.url + '">' + d.title + '</a></h2>' +
+        (d.authors ? '<p class="search-result-meta">' + d.authors + '</p>' : '') +
+        '<p class="search-result-meta">Issue ' + d.issue +
+          (d.pubDate ? ' &middot; ' + d.pubDate : '') +
+          (section   ? ' &middot; ' + section    : '') + '</p>' +
+        (snip ? '<p class="search-result-excerpt">' + snip + '</p>' : '') +
+        '</div>';
+    }).join('');
+  }
+})();
+</script>
