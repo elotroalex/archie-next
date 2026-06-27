@@ -95,6 +95,22 @@ module.exports = function (eleventyConfig) {
     return str || "";
   });
 
+  // Convert "Month YYYY" pubDate to YYYY/MM for citation_publication_date (Google Scholar format)
+  eleventyConfig.addFilter("isoDate", function (str) {
+    if (!str) return "";
+    const months = {
+      january: "01", february: "02", march: "03", april: "04",
+      may: "05", june: "06", july: "07", august: "08", september: "09",
+      october: "10", november: "11", december: "12",
+    };
+    const parts = str.trim().split(/\s+/);
+    if (parts.length === 2) {
+      const m = months[parts[0].toLowerCase()];
+      if (m) return `${parts[1]}/${m}`;
+    }
+    return str;
+  });
+
   // --- Input / output directories ---
   return {
     dir: {
