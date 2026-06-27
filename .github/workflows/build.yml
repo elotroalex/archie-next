@@ -2,9 +2,9 @@ name: Build and Deploy
 
 on:
   push:
-    branches: [main]
+    branches: [main, staging]
   pull_request:
-    branches: [main]
+    branches: [main, staging]
 
 permissions:
   contents: read
@@ -12,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: ${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -39,13 +39,14 @@ jobs:
         continue-on-error: true
 
       - name: Upload artifact
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/staging'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
 
-  deploy:
-    if: github.ref == 'refs/heads/main'
+  deploy-staging:
+    name: Deploy to GitHub Pages (staging)
+    if: github.ref == 'refs/heads/staging'
     needs: build
     runs-on: ubuntu-latest
     environment:
@@ -55,3 +56,38 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  deploy-production:
+    name: Deploy to production via rsync
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Eleventy site
+        run: npm run build
+
+      - name: Install SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: unnecessary
+          if_key_exists: replace
+
+      - name: Add server to known hosts
+        run: ssh-keyscan -p 22 archipelagosjournal.org >> ~/.ssh/known_hosts
+
+      - name: Deploy via rsync
+        run: |
+          rsync -r -e "ssh -p22" _site/. elotroalex@archipelagosjournal.org:/home/elotroalex/public_html/
