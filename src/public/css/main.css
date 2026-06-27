@@ -514,25 +514,26 @@ a#logo > img {
 
 
 .masthead {
+  display: flex;
+  align-items: center;
   margin-bottom: 2rem;
-  text-align: left;
   padding-top: .8rem;
+  padding-right: 4.5rem; /* leave room for the hamburger toggle */
+}
+
+.masthead-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-left: auto;
 }
 
 .masthead-lang {
-  position: absolute;
-  top: 1.25rem;
-  left: 7rem; /* default (non-reverse): sits right of search icon */
   display: flex;
   gap: 0.6rem;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-}
-
-.layout-reverse .masthead-lang {
-  left: auto;
-  right: 8rem;
 }
 
 .masthead-lang a {
@@ -550,32 +551,16 @@ a#logo > img {
 }
 
 a.search-icon {
-  position: absolute;
-  top: 1rem;
-  left: 4.5rem; /* default (non-reverse): sits right of hamburger at left: 2rem */
   display: flex;
   align-items: center;
-  padding: .4rem .4rem .2rem .4rem;
+  padding: .2rem .2rem .1rem .2rem;
   color: #505050;
-  background-color: #fff;
-  border-radius: .5rem;
   opacity: 0.85;
   line-height: 1;
 }
 
 a.search-icon:hover {
   opacity: 1;
-}
-
-.layout-reverse a.search-icon {
-  left: auto;
-  right: 4.5rem; /* sits to the left of hamburger */
-}
-
-@media (min-width: 30.1em) {
-  .layout-reverse a.search-icon {
-    right: 4.5rem;
-  }
 }
 
 /* Search page */
@@ -852,7 +837,7 @@ a.sidebar-nav-item:focus {
 /* Style the `label` that we use to target the `.sidebar-checkbox` */
 .sidebar-toggle {
   position: absolute;
-  top: 1rem;
+  top: 2.1rem;
   left: 2rem;
   display: block;
   padding: .5rem .5rem .25rem .5rem;
@@ -920,17 +905,13 @@ a.sidebar-nav-item:focus {
 
 .wrap,
 .sidebar,
-.sidebar-toggle,
-a.search-icon,
-.masthead-lang {
+.sidebar-toggle {
   -webkit-backface-visibility: hidden;
       -ms-backface-visibility: hidden;
           backface-visibility: hidden;
 }
 .wrap,
-.sidebar-toggle,
-a.search-icon,
-.masthead-lang {
+.sidebar-toggle {
   -webkit-transition: -webkit-transform .3s ease-in-out;
           transition: transform .3s ease-in-out;
 }
@@ -941,9 +922,7 @@ a.search-icon,
 }
 #sidebar-checkbox:checked ~ .sidebar,
 #sidebar-checkbox:checked ~ .wrap,
-#sidebar-checkbox:checked ~ .sidebar-toggle,
-#sidebar-checkbox:checked ~ a.search-icon,
-#sidebar-checkbox:checked ~ .masthead-lang {
+#sidebar-checkbox:checked ~ .sidebar-toggle {
   -webkit-transform: translateX(14rem);
       -ms-transform: translateX(14rem);
           transform: translateX(14rem);
@@ -967,9 +946,7 @@ a.search-icon,
 
 .layout-reverse #sidebar-checkbox:checked ~ .sidebar,
 .layout-reverse #sidebar-checkbox:checked ~ .wrap,
-.layout-reverse #sidebar-checkbox:checked ~ .sidebar-toggle,
-.layout-reverse #sidebar-checkbox:checked ~ a.search-icon,
-.layout-reverse #sidebar-checkbox:checked ~ .masthead-lang {
+.layout-reverse #sidebar-checkbox:checked ~ .sidebar-toggle {
   -webkit-transform: translateX(-14rem);
       -ms-transform: translateX(-14rem);
           transform: translateX(-14rem);
