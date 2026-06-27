@@ -589,6 +589,11 @@ a.search-icon:hover {
   border: 1px solid #D0181F;
   border-radius: 3px;
   margin-bottom: .5rem;
+  outline: none;
+}
+
+#search-input:focus {
+  box-shadow: 0 0 0 2px rgba(208, 24, 31, 0.25);
 }
 
 .search-status {
