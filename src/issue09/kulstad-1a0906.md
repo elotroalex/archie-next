@@ -68,7 +68,6 @@ The content analysis process revealed five different types of errors in the inde
 
 Table 2: Types of Cataloging Errors in AL and JLACA, as of August 30, 2019
 
-```{=html}
 <table>
 <colgroup>
 <col style="width: 27%" />
@@ -122,9 +121,7 @@ Boletin del Museo del Hombre</p>
 </tr>
 </tbody>
 </table>
-```
 
-```{=html}
 <table>
 <colgroup>
 <col style="width: 27%" />
@@ -180,9 +177,7 @@ and migrant labor in Haiti and the Dominican Republic. Latin</p>
 </tr>
 </tbody>
 </table>
-```
 
-```{=html}
 <table>
 <colgroup>
 <col style="width: 27%" />
@@ -205,11 +200,9 @@ and migrant labor in Haiti and the Dominican Republic. Latin</p>
 </tr>
 </tbody>
 </table>
-```
 
 Table 3: Temporal-Geographical Codebook
 
-```{=html}
 <table>
 <colgroup>
 <col style="width: 32%" />
@@ -282,9 +275,7 @@ term(s)…</td>
 </tr>
 </tbody>
 </table>
-```
 
-```{=html}
 <table>
 <colgroup>
 <col style="width: 32%" />
@@ -306,7 +297,6 @@ term(s)…</td>
 </tr>
 </tbody>
 </table>
-```
 
 _Findings_
 
@@ -314,7 +304,6 @@ The JLACA analysis revealed significant patterns. A percentage frequency distrib
 
 Table 4: Percentage Frequency Distribution and Rank of JLACA Search Results, by Country and Region, as of August 30, 2019
 
-```{=html}
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -373,9 +362,7 @@ Table 4: Percentage Frequency Distribution and Rank of JLACA Search Results, by 
 </tr>
 </tbody>
 </table>
-```
 
-```{=html}
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -561,9 +548,7 @@ Table 4: Percentage Frequency Distribution and Rank of JLACA Search Results, by 
 </tr>
 </tbody>
 </table>
-```
 
-```{=html}
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -773,9 +758,7 @@ Table 4: Percentage Frequency Distribution and Rank of JLACA Search Results, by 
 </tr>
 </tbody>
 </table>
-```
 
-```{=html}
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -831,13 +814,11 @@ Table 4: Percentage Frequency Distribution and Rank of JLACA Search Results, by 
 </tr>
 </tbody>
 </table>
-```
 
 We conducted a similar analysis for the AL search results. As Table 5 indicates, 50.55% of the citations are about North America, mostly (61.71%) Mexico. South America follows in the regional ranking. Peru has the most results (26.88%), followed by Brazil (19.10%), making up nearly half (45.98%) of the South American totals. Central America and the Caribbean have 10.14% and 3.99%, respectively. Most Caribbean resources are about Cuba (21.77%), followed by Haiti (13.10%), the Dominican Republic (11.87%) and Puerto Rico (10.24%).
 
 Table 5: Percentage Frequency Distribution and Rank Order of Anthropological Literature Search Results by Country and Region, as of August 30, 2019
 
-```{=html}
 <table>
 <colgroup>
 <col style="width: 18%" />
@@ -916,9 +897,7 @@ Table 5: Percentage Frequency Distribution and Rank Order of Anthropological Lit
 </tr>
 </tbody>
 </table>
-```
 
-```{=html}
 <table>
 <colgroup>
 <col style="width: 18%" />
@@ -1109,9 +1088,7 @@ Table 5: Percentage Frequency Distribution and Rank Order of Anthropological Lit
 </tr>
 </tbody>
 </table>
-```
 
-```{=html}
 <table>
 <colgroup>
 <col style="width: 18%" />
@@ -1315,9 +1292,7 @@ Table 5: Percentage Frequency Distribution and Rank Order of Anthropological Lit
 </tr>
 </tbody>
 </table>
-```
 
-```{=html}
 <table>
 <colgroup>
 <col style="width: 18%" />
@@ -1344,7 +1319,6 @@ Table 5: Percentage Frequency Distribution and Rank Order of Anthropological Lit
 </tr>
 </tbody>
 </table>
-```
 
 Place of publication
 
@@ -1358,7 +1332,6 @@ JLACA search results indicate similar patterns (see Table 7). The journal has pu
 
 Table 7: D.R., Haiti, Hispaniola Search Results by Type of Publication for JLACA as of August 30, 2019.
 
-```{=html}
 <table>
 <colgroup>
 <col style="width: 21%" />
@@ -1406,7 +1379,6 @@ Table 7: D.R., Haiti, Hispaniola Search Results by Type of Publication for JLACA
 </tr>
 </tbody>
 </table>
-```
 
 ### Erasures
 
@@ -1458,7 +1430,6 @@ Finally, there are more publications about each individual country, rather than 
 
 Table 8: Frequency Distribution of Search Results by Individual Country (D.R., Haiti) Versus Both (D.R. and Haiti, Hispaniola) in AL and JLACA, as of August 30, 2019.
 
-```{=html}
 <table style="width:100%;">
 <colgroup>
 <col style="width: 47%" />
@@ -1503,7 +1474,6 @@ Table 8: Frequency Distribution of Search Results by Individual Country (D.R., H
 </tr>
 </tbody>
 </table>
-```
 
 ### Contradictory Regional Classifications
 
@@ -1527,7 +1497,6 @@ Subjects terms: Performance \-- **Haiti** \-- Port-au-Prince; Theater \-- **Cari
 
 Table 9: Frequency Distribution of Select Subject and Geographic Terms by Country and Island in Anthropological Literature, as of August 30, 2019
 
-```{=html}
 <table>
 <colgroup>
 <col style="width: 31%" />
@@ -1577,9 +1546,7 @@ Table 9: Frequency Distribution of Select Subject and Geographic Terms by Countr
 </tr>
 </tbody>
 </table>
-```
 
-```{=html}
 <table style="width:100%;">
 <colgroup>
 <col style="width: 31%" />
@@ -1655,7 +1622,6 @@ Table 9: Frequency Distribution of Select Subject and Geographic Terms by Countr
 </tr>
 </tbody>
 </table>
-```
 
 In the first example, the Dominican Republic is situated within Latin America and America. In the second and third, it is in Central America and the Antilles. The other examples show how Haiti is linked to Latin America in one, and the Caribbean in another. While both countries were situated within multiple geographic regions, the Dominican Republic was assigned a broader geographic term more than Haiti (Table 9, columns 2 and 3). For example, the "West Indies" subject term was associated with the Dominican Republic 29 times. Haiti was categorized four times. Below, the "West Indies" is included in the first example's title but is not assigned.
 
