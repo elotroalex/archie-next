@@ -517,20 +517,35 @@ a#logo > img {
   margin-bottom: 2rem;
   text-align: left;
   padding-top: .8rem;
-  position: relative;
 }
 
 a.search-icon {
   position: absolute;
   top: 1rem;
-  right: 1rem;
-  color: #454545;
-  opacity: 0.6;
+  left: 4.5rem; /* default (non-reverse): sits right of hamburger at left: 2rem */
+  display: flex;
+  align-items: center;
+  padding: .4rem .4rem .2rem .4rem;
+  color: #505050;
+  background-color: #fff;
+  border-radius: .5rem;
+  opacity: 0.85;
   line-height: 1;
 }
 
 a.search-icon:hover {
   opacity: 1;
+}
+
+.layout-reverse a.search-icon {
+  left: auto;
+  right: 0.4rem; /* sits to the right of hamburger at right: 2rem on small screens */
+}
+
+@media (min-width: 30.1em) {
+  .layout-reverse a.search-icon {
+    right: 0.4rem;
+  }
 }
 
 /* Search page */
@@ -849,8 +864,8 @@ a.sidebar-nav-item:focus {
     position: absolute;
   }
   .layout-reverse .sidebar-toggle {
-  left: auto;
-  right: 1rem;
+    left: auto;
+    right: 3rem; /* shifted right to make room for search icon */
   }
 }
 
@@ -875,13 +890,15 @@ a.sidebar-nav-item:focus {
 
 .wrap,
 .sidebar,
-.sidebar-toggle {
+.sidebar-toggle,
+a.search-icon {
   -webkit-backface-visibility: hidden;
       -ms-backface-visibility: hidden;
           backface-visibility: hidden;
 }
 .wrap,
-.sidebar-toggle {
+.sidebar-toggle,
+a.search-icon {
   -webkit-transition: -webkit-transform .3s ease-in-out;
           transition: transform .3s ease-in-out;
 }
@@ -892,7 +909,8 @@ a.sidebar-nav-item:focus {
 }
 #sidebar-checkbox:checked ~ .sidebar,
 #sidebar-checkbox:checked ~ .wrap,
-#sidebar-checkbox:checked ~ .sidebar-toggle {
+#sidebar-checkbox:checked ~ .sidebar-toggle,
+#sidebar-checkbox:checked ~ a.search-icon {
   -webkit-transform: translateX(14rem);
       -ms-transform: translateX(14rem);
           transform: translateX(14rem);
@@ -916,7 +934,8 @@ a.sidebar-nav-item:focus {
 
 .layout-reverse #sidebar-checkbox:checked ~ .sidebar,
 .layout-reverse #sidebar-checkbox:checked ~ .wrap,
-.layout-reverse #sidebar-checkbox:checked ~ .sidebar-toggle {
+.layout-reverse #sidebar-checkbox:checked ~ .sidebar-toggle,
+.layout-reverse #sidebar-checkbox:checked ~ a.search-icon {
   -webkit-transform: translateX(-14rem);
       -ms-transform: translateX(-14rem);
           transform: translateX(-14rem);
