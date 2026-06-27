@@ -26,7 +26,7 @@
     </a><br>
     <span class="byline">{% set author = art.data.author %}{% include "author-loop.njk" %}</span>
     {% if art.data.pdf != false %}
-    <p><a class="alt-link" href="/assets{{ art.url | replace('.html', '.pdf') }}" target="_blank">PDF</a></p>
+    <p><a class="alt-link" href="{{ ('/assets' + art.url) | replace('.html', '.pdf') | url }}" target="_blank">PDF</a></p>
     {% endif %}
   </li>
   {% endif %}
@@ -59,10 +59,10 @@
     <span class="byline">{% set author = art.data.author %}{% include "author-loop.njk" %}</span><br>
     {% if art.data.layout == "project" %}
       <a class="alt-link" href="{{ art.url }}">{{ i18n[lang].global["read-exchange"] }}</a><span class="alt-link"> | </span><a class="alt-link" href="{{ art.data.link }}" target="_blank">{{ i18n[lang].global["visit-project"] }}</a>
-      <a class="alt-link" href="{{ art.data.link }}" target="_blank"><img class="project-image-toc" alt="thumbnail for {{ art.data.title.long }}" src="/{{ art.data.thumb }}" width="33%" /></a>
+      <a class="alt-link" href="{{ art.data.link }}" target="_blank"><img class="project-image-toc" alt="thumbnail for {{ art.data.title.long }}" src="{{ ('/' + art.data.thumb) | url }}" width="33%" /></a>
     {% endif %}
     {% if art.data.layout == "article" %}
-      <a class="alt-link" href="/assets{{ art.url | replace('.html', '.pdf') }}" target="_blank">PDF</a>
+      <a class="alt-link" href="{{ ('/assets' + art.url) | replace('.html', '.pdf') | url }}" target="_blank">PDF</a>
     {% endif %}
   </li>
   {% endif %}
@@ -78,7 +78,7 @@
       <span class="toc-title">{{ art.data.title | mdInline | safe if art.data.title is string else art.data.title.long | mdInline | safe }}</span>
     </a><br>
     <span class="byline">{% set author = art.data.author %}{% include "author-loop.njk" %}</span>
-    <p><a class="alt-link" href="/assets{{ art.url | replace('.html', '.pdf') }}" target="_blank">PDF</a></p>
+    <p><a class="alt-link" href="{{ ('/assets' + art.url) | replace('.html', '.pdf') | url }}" target="_blank">PDF</a></p>
   </li>
   {% endif %}
 {% endfor %}
