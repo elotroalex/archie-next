@@ -539,12 +539,12 @@ a.search-icon:hover {
 
 .layout-reverse a.search-icon {
   left: auto;
-  right: 3.4rem; /* sits to the left of hamburger */
+  right: 4.5rem; /* sits to the left of hamburger */
 }
 
 @media (min-width: 30.1em) {
   .layout-reverse a.search-icon {
-    right: 3.4rem;
+    right: 4.5rem;
   }
 }
 
@@ -865,7 +865,7 @@ a.sidebar-nav-item:focus {
   }
   .layout-reverse .sidebar-toggle {
     left: auto;
-    right: 0.4rem;
+    right: 1.5rem;
   }
 }
 
@@ -929,7 +929,7 @@ a.search-icon {
 }
 .layout-reverse .sidebar-toggle {
   left: auto;
-  right: 0.4rem;
+  right: 1.5rem;
 }
 
 .layout-reverse #sidebar-checkbox:checked ~ .sidebar,
