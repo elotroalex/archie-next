@@ -71,10 +71,10 @@ Table 2: Types of Cataloging Errors in AL and JLACA, as of August 30, 2019
 ```{=html}
 <table>
 <colgroup>
-<col style="width: 27%" />
-<col style="width: 30%" />
-<col style="width: 21%" />
-<col style="width: 21%" />
+<col style="width: 12%" />
+<col style="width: 20%" />
+<col style="width: 10%" />
+<col style="width: 58%" />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -127,10 +127,10 @@ Boletin del Museo del Hombre</p>
 ```{=html}
 <table>
 <colgroup>
-<col style="width: 27%" />
-<col style="width: 30%" />
-<col style="width: 21%" />
-<col style="width: 21%" />
+<col style="width: 12%" />
+<col style="width: 20%" />
+<col style="width: 10%" />
+<col style="width: 58%" />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -185,10 +185,10 @@ and migrant labor in Haiti and the Dominican Republic. Latin</p>
 ```{=html}
 <table>
 <colgroup>
-<col style="width: 27%" />
-<col style="width: 30%" />
-<col style="width: 21%" />
-<col style="width: 21%" />
+<col style="width: 12%" />
+<col style="width: 20%" />
+<col style="width: 10%" />
+<col style="width: 58%" />
 </colgroup>
 <tbody>
 <tr class="odd">
