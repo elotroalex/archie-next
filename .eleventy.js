@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
   // --- Passthrough copies ---
   eleventyConfig.addPassthroughCopy({ "src/public": "public" });
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "robots.txt" });
+  eleventyConfig.addPassthroughCopy({ "src/.nojekyll": ".nojekyll" });
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/images": "images" });
 
