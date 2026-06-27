@@ -126,6 +126,7 @@ a:focus {
 span.running-title {
   font-size: 1.2rem;
   font-weight: 200;
+  margin-left: 0.2rem;
 }
 
 a.header-title {
