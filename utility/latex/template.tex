@@ -109,9 +109,10 @@
 
 %% ── Section headings ──────────────────────────────────────────────────────────
 \usepackage{titlesec}
-\titleformat{\section}{\lightfont\large}{\thesection}{1em}{}
-\titleformat{\subsection}{\lightfont\normalsize\itshape}{\thesubsection}{1em}{}
-\titleformat{\subsubsection}{\lightfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+\setcounter{secnumdepth}{0}
+\titleformat{\section}{\lightfont\large}{}{0em}{}
+\titleformat{\subsection}{\lightfont\normalsize\itshape}{}{0em}{}
+\titleformat{\subsubsection}{\lightfont\normalsize\bfseries}{}{0em}{}
 \titlespacing*{\section}{0pt}{1.5ex plus .5ex minus .2ex}{.5ex plus .1ex}
 
 %% ── Thin rules ────────────────────────────────────────────────────────────────

@@ -66,7 +66,7 @@ Our database analysis is based on a combination of statistical analysis, content
 
 ```{=html}
 <table>
-<caption>Table 1: JLACA and Anthropological Literature Search Results by Country and by Island, as of August 30, 2019</caption>
+<caption>JLACA and Anthropological Literature Search Results by Country and by Island, as of August 30, 2019</caption>
 <colgroup>
 <col style="width: 40%" />
 <col style="width: 30%" />
@@ -112,7 +112,7 @@ The content analysis process revealed five different types of errors in the inde
 
 ```{=html}
 <table>
-<caption>Table 2: Types of Cataloging Errors in AL and JLACA, as of August 30, 2019</caption>
+<caption>Types of Cataloging Errors in AL and JLACA, as of August 30, 2019</caption>
 <colgroup>
 <col style="width: 15%" />
 <col style="width: 15%" />
@@ -178,7 +178,7 @@ Saint-Domingue, 7(10), pp.238-252. || Subjects: Dominican Republic -- Biological
 
 ```{=html}
 <table>
-<caption>Table 3: Temporal-Geographical Codebook</caption>
+<caption>Temporal-Geographical Codebook</caption>
 <colgroup>
 <col style="width: 33.33%" />
 <col style="width: 33.33%" />
@@ -265,7 +265,7 @@ The JLACA analysis revealed significant patterns. A percentage frequency distrib
 
 ```{=html}
 <table>
-<caption>Table 4: Percentage Frequency Distribution and Rank of JLACA Search Results, by Country and Region, as of August 30, 2019</caption>
+<caption>Percentage Frequency Distribution and Rank of JLACA Search Results, by Country and Region, as of August 30, 2019</caption>
 <colgroup>
 <col style="width: 40%" />
 <col style="width: 20%" />
@@ -664,7 +664,7 @@ We conducted a similar analysis for the AL search results. As Table 5 indicates,
 
 ```{=html}
 <table>
-<caption>Table 5: Percentage Frequency Distribution and Rank Order of Anthropological Literature Search Results by Country and Region, as of August 30, 2019</caption>
+<caption>Percentage Frequency Distribution and Rank Order of Anthropological Literature Search Results by Country and Region, as of August 30, 2019</caption>
 <colgroup>
 <col style="width: 40%" />
 <col style="width: 20%" />
@@ -1065,7 +1065,7 @@ A comparison of results per search term (Haiti and/or Dominican Republic, Hispan
 
 ```{=html}
 <table>
-<caption>Table 6: Percentage Frequency Distribution of AL Search Results by Place of Publication (Hispaniola/non-Hispaniola) as of August 30, 2019.</caption>
+<caption>Percentage Frequency Distribution of AL Search Results by Place of Publication (Hispaniola/non-Hispaniola) as of August 30, 2019.</caption>
 <thead>
 <tr>
 <th>Search term</th>
@@ -1107,7 +1107,7 @@ JLACA search results indicate similar patterns (see Table 7). The journal has pu
 
 ```{=html}
 <table>
-<caption>Table 7: D.R., Haiti, Hispaniola Search Results by Type of Publication for JLACA as of August 30, 2019.</caption>
+<caption>D.R., Haiti, Hispaniola Search Results by Type of Publication for JLACA as of August 30, 2019.</caption>
 <colgroup>
 <col style="width: 21%" />
 <col style="width: 20%" />
@@ -1191,7 +1191,7 @@ Finally, there are more publications about each individual country, rather than 
 
 ```{=html}
 <table style="width:100%;">
-<caption>Table 8: Frequency Distribution of Search Results by Individual Country (D.R., Haiti) Versus Both (D.R. and Haiti, Hispaniola) in AL and JLACA, as of August 30, 2019.</caption>
+<caption>Frequency Distribution of Search Results by Individual Country (D.R., Haiti) Versus Both (D.R. and Haiti, Hispaniola) in AL and JLACA, as of August 30, 2019.</caption>
 <colgroup>
 <col style="width: 47%" />
 <col style="width: 33%" />
@@ -1253,7 +1253,7 @@ The last pattern has to do with the way AL situates both countries within the re
 
 ```{=html}
 <table>
-<caption>Table 9: Frequency Distribution of Select Subject and Geographic Terms by Country and Island in Anthropological Literature, as of August 30, 2019</caption>
+<caption>Frequency Distribution of Select Subject and Geographic Terms by Country and Island in Anthropological Literature, as of August 30, 2019</caption>
 <colgroup>
 <col style="width: 40%" />
 <col style="width: 20%" />
@@ -1400,8 +1400,6 @@ Decolonizing the anthropology of Hispaniola requires significant efforts. The re
 [^13]: Ibid.
 
 [^14]: Emily Drabinski, "Teaching the Radical Catalog." In Radical Cataloging: Essays at the Front, edited by K. R. Roberto and Sanford Berman. Jefferson, NC: McFarland & Company, (2008): 198-205.
-
-[^15]: Deere, "The Practice of Latin American Studies: Dilemmas of Scholarly Communication," 7-23
 
 [^16]: Salman Haider, "Cataloging." Librarianship Studies and Technology. Accessed October 13, 2022, https://www.librarianshipstudies.com/2015/05/cataloging.html.
 

@@ -459,6 +459,10 @@ span.caption, figcaption {
 
 
 /* Tables */
+.article {
+  counter-reset: table-counter;
+}
+
 caption {
   color: #939598;
   font-size: 0.85rem;
@@ -466,6 +470,11 @@ caption {
   text-align: left;
   caption-side: top;
   padding-bottom: 0.5rem;
+}
+
+caption::before {
+  counter-increment: table-counter;
+  content: "Table " counter(table-counter) ": ";
 }
 
 table {
