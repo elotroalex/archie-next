@@ -131,69 +131,38 @@ The content analysis process revealed five different types of errors in the inde
 <td>Item about Dominica</td>
 <td>AL</td>
 <td>Baker, P., 1988. Ethnogenesis. The Case of the Dominica Caribs. América Indígena,
-48(2), pp.377-401. [...] Subjects: Carib Indians -- Ethnic identity; Dominican Republic -- Native races; Indians of the West Indies -- Dominican Republic -- Ethnic identity</td>
+48(2), pp.377-401. || Subjects: Carib Indians -- Ethnic identity; Dominican Republic -- Native races; Indians of the West Indies -- Dominican Republic -- Ethnic identity</td>
 </tr>
 <tr class="even">
 <td>Type 3</td>
 <td>Spelling error(s)</td>
-<td>AL, JLACA</td>
-<td>AL (error italicized): Jimenez, A., 1978. En torno al craneo ciguayo <em>descrtio</em> por el Dr. Alejandro Llenas en 1890.(A propos du crâne ciguayo décrit par le Dr. AL en 1890). Boletin del Museo del Hombre Dominicano</td>
-</tr>
-</tbody>
-</table>
-```
-
-```{=html}
-<table>
-<colgroup>
-<col style="width: 12%" />
-<col style="width: 20%" />
-<col style="width: 10%" />
-<col style="width: 58%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td>Saint-Domingue, 7(10), pp.238-252. Subjects: Dominican Republic -- Biological anthropology -- Skull</td>
+<td>JLACA, AL</td>
+<td>[From AL, error italicized:] Jimenez, A., 1978. En torno al craneo ciguayo <em>descrtio</em> por el Dr. Alejandro Llenas en 1890. (A propos du crâne ciguayo décrit par le Dr. AL en 1890). Boletin del Museo del Hombre Dominicano.
+Saint-Domingue, 7(10), pp.238-252. || Subjects: Dominican Republic -- Biological anthropology -- Skull</td>
 </tr>
 <tr class="even">
 <td>Type 4</td>
 <td>Only one country noted</td>
-<td>JLACA,AL</td>
-<td>AL: Horst, H.A. andTaylor, E.B., 2014. The role of mobile phones in the mediation of border crossings: A study of Haiti and the Dominican Republic. The Australian Journal of Anthropology, 25(2), pp.155-170. Subjects: “Cell phones”, “Ethnography”, “Labor mobility”, Communication and technology”, “Technology -- Social aspects– Haiti”.</td>
+<td>JLACA, AL</td>
+<td>[From AL:] Horst, H.A. and Taylor, E.B., 2014. The role of mobile phones in the mediation of border crossings: A study of Haiti and the Dominican Republic. The Australian Journal of Anthropology, 25(2), pp.155-170. || Subjects: “Cell phones”, “Ethnography”, “Labor mobility”, Communication and technology”, “Technology -- Social aspects -- Haiti”.</td>
 </tr>
 <tr class="odd">
 <td>Type 5</td>
-<td>Neither country labeled.</td>
+<td>Neither country labeled</td>
 <td>AL</td>
-<td>AL: Martínez, S., 1999. From hidden hand to heavy hand: sugar, the state, and migrant labor in Haiti and the Dominican Republic. Latin American Research Review, pp.57-84. Subjects: “West Indies -- Economic conditions”, “Sugar --West Indies -- Manufacture and refining”; “Migrant labor --West Indies”; “State, The– History</td>
+<td>Martínez, S., 1999. From hidden hand to heavy hand: sugar, the state, and migrant labor in Haiti and the Dominican Republic. Latin American Research Review, pp.57-84. || Subjects: “West Indies -- Economic conditions”, “Sugar -- West Indies -- Manufacture and refining”; “Migrant labor -- West Indies”; “State, The -- History</td>
 </tr>
 <tr class="even">
 <td>Type 6</td>
 <td>D.R. article labeled as Haiti</td>
 <td>AL</td>
-<td>AL: Norvell,D.G., 1969. Food marketing in an urban place in the DominicanRepublic. Caribbean Studies, 9(3), pp.104-110. Subjects: Haiti -- Technology -- Urbanism</td>
+<td>Norvell, D.G., 1969. Food marketing in an urban place in the Dominican Republic. Caribbean Studies, 9 (3), pp.104-110. || Subjects: Haiti -- Technology -- Urbanism</td>
 </tr>
-</tbody>
-</table>
-```
-
-```{=html}
-<table>
-<colgroup>
-<col style="width: 12%" />
-<col style="width: 20%" />
-<col style="width: 10%" />
-<col style="width: 58%" />
-</colgroup>
-<tbody>
 <tr class="odd">
 <td>Type 7</td>
 <td>Bordering</td>
 <td>AL</td>
-<td>AL: Rímoli, Renato O. 1977 “Una nueva especie de monos (Cebidae: Saimirinae: Saimiri) de la Hispaniola”. Cuadernos del CENDIA. v. 262, no. 1, 1977. p. 1-14 Subjects: Archaeology -- Methods – Zooarchaeology; Dominican Republic -- Archaeology -- Fauna</td>
+<td>Rímoli, Renato O. 1977. “Una nueva especie de monos (Cebidae: Saimirinae: Saimiri) de la Hispaniola”. Cuadernos del CENDIA. v. 262, no. 1, 1977. p. 1-14. || Subjects: Archaeology -- Methods – Zooarchaeology; Dominican Republic -- Archaeology -- Fauna</td>
 </tr>
 </tbody>
 </table>
@@ -203,23 +172,27 @@ The content analysis process revealed five different types of errors in the inde
 <table>
 <caption>Table 3: Temporal-Geographical Codebook</caption>
 <colgroup>
-<col style="width: 32%" />
-<col style="width: 33%" />
-<col style="width: 34%" />
+<col style="width: 33.33%" />
+<col style="width: 33.33%" />
+<col style="width: 33.34%" />
 </colgroup>
 <thead>
 <tr>
-<th>If the research takes place in (across)/between (down), use subject
-term(s)…</th>
+<th>Temporal Scope</th>
 <th>DR (Eastern 2/3)</th>
 <th>Haiti (Western 1/3)</th>
 </tr>
 </thead>
 <tbody>
+<tr class="odd">
+<td>Prehistory-1492</td>
+<td>Hispaniola Pre-1492</td>
+<td>Hispaniola Pre-1492</td>
+</tr>
 <tr class="even">
-<td>Prehistory-1492<br>1492-1697</td>
-<td>Hispaniola Pre-1492<br>S.D., Spanish colony (1492-1697)</td>
-<td>Hispaniola Pre-1492<br>Santo Domingo, Spanish colony (1492-1697)</td>
+<td>1492-1697</td>
+<td>S.D., Spanish colony (1492-1697)</td>
+<td>Santo Domingo, Spanish colony (1492-1697)</td>
 </tr>
 <tr class="odd">
 <td>1697-1793</td>
@@ -237,33 +210,41 @@ term(s)…</th>
 <td>Saint Domingue, British occupied (1793-1798)</td>
 </tr>
 <tr class="even">
-<td>1798-1804<br>1804-1809<br>1809-1821<br>1821-1822</td>
-<td>S.D., French occupied (1795-1809)<br>S.D., French occupied (1795-1809)<br>S.D., Spanish colony (1809-1821)<br>Republic of Spanish Haiti</td>
-<td>Saint Domingue, French colony (1798-1804)<br>Republic of Haiti<br>Republic of Haiti<br>Republic of Haiti</td>
+<td>1798-1804</td>
+<td>S.D., French occupied (1795-1809)</td>
+<td>Saint Domingue, French colony (1798-1804)</td>
 </tr>
 <tr class="odd">
-<td>1822-1844<br>1844-1861</td>
-<td>S.D., Haitian Occupied<br>Shared D.R. (1844-1861)</td>
-<td>Republic of Haiti<br>Shared Republic of Haiti</td>
+<td>1804-1809</td>
+<td>S.D., French occupied (1795-1809)</td>
+<td>Republic of Haiti</td>
 </tr>
-</tbody>
-</table>
-```
-
-```{=html}
-<table>
-<colgroup>
-<col style="width: 32%" />
-<col style="width: 33%" />
-<col style="width: 34%" />
-</colgroup>
-<tbody>
+<tr class="even">
+<td>1809-1821</td>
+<td>S.D., Spanish colony (1809-1821)</td>
+<td>Republic of Haiti</td>
+</tr>
 <tr class="odd">
+<td>1821-1822</td>
+<td>Republic of Spanish Haiti</td>
+<td>Republic of Haiti</td>
+</tr>
+<tr class="even">
+<td>1822-1844</td>
+<td>S.D., Haitian Occupied</td>
+<td>Republic of Haiti</td>
+</tr>
+<tr class="odd">
+<td>1844-1861</td>
+<td>Shared D.R. (1844-1861)</td>
+<td>Shared Republic of Haiti</td>
+</tr>
+<tr class="even">
 <td>1861-1865</td>
 <td>S.D., Spain occupied</td>
 <td>Republic of Haiti</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>1865-present</td>
 <td>D.R. (1865-present)</td>
 <td>Republic of Haiti</td>
@@ -271,8 +252,6 @@ term(s)…</th>
 </tbody>
 </table>
 ```
-
-_Findings_
 
 The JLACA analysis revealed significant patterns. A percentage frequency distribution of the number of search results by country revealed an imbalance in the numbers of publications per country and region. The fourth column shows that nearly half (49.17%) of JLACA's search results are from South America. North American publications comprise 28.16% of the total. The proportion for Central America is much smaller, at 13.54%. The Caribbean region is in last place with 9.13%, of which Cuba figures more prominently, followed by Puerto Rico, and Haiti. JLACA'S top three countries of publication, in descending order, are Mexico, Brazil, and Peru. At the bottom of the list are the non-Spanish-speaking Caribbean islands, except Jamaica, which is in 18^th^ position.
 
