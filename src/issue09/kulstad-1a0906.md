@@ -253,499 +253,397 @@ Saint-Domingue, 7(10), pp.238-252. || Subjects: Dominican Republic -- Biological
 </table>
 ```
 
-The JLACA analysis revealed significant patterns. A percentage frequency distribution of the number of search results by country revealed an imbalance in the numbers of publications per country and region. The fourth column shows that nearly half (49.17%) of JLACA's search results are from South America. North American publications comprise 28.16% of the total. The proportion for Central America is much smaller, at 13.54%. The Caribbean region is in last place with 9.13%, of which Cuba figures more prominently, followed by Puerto Rico, and Haiti. JLACA'S top three countries of publication, in descending order, are Mexico, Brazil, and Peru. At the bottom of the list are the non-Spanish-speaking Caribbean islands, except Jamaica, which is in 18^th^ position.
+The JLACA analysis revealed significant patterns. A percentage frequency distribution of the number of search results by country revealed an imbalance in the numbers of publications per country and region. The fourth column shows that nearly half (49.17%) of JLACA's search results are from South America. North American publications comprise 28.16% of the total. The proportion for Central America is much smaller, at 13.54%. The Caribbean region is in last place with 9.13%, of which Cuba figures more prominently, followed by Puerto Rico, and Haiti. JLACA'S top three countries of publication, in descending order, are Mexico, Brazil, and Peru. At the bottom of the list are the non-Spanish-speaking Caribbean islands, except Jamaica, which is in 18<sup>th</sup> position.
 
 ```{=html}
 <table>
 <caption>Table 4: Percentage Frequency Distribution and Rank of JLACA Search Results, by Country and Region, as of August 30, 2019</caption>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 37%" />
-<col style="width: 14%" />
-<col style="width: 11%" />
-<col style="width: 10%" />
+<col style="width: 40%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
 </colgroup>
 <thead>
 <tr>
-<th>Region</th>
 <th>Country</th>
-<th>Search Results (Search Criteria: Abstract)</th>
-<th>% of Total JLACA Search Results</th>
+<th>Results (Abstract)</th>
+<th>% of Total Results</th>
 <th>% of Region</th>
 </tr>
 </thead>
 <tbody>
-<tr class="even">
-<td></td>
+<tr><th colspan="4">North America</th></tr>
+<tr>
 <td>Canada</td>
 <td>7</td>
 <td>0.69</td>
 <td>2.44</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>United States</td>
 <td>36</td>
 <td>3.53</td>
 <td>12.54</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Mexico</td>
 <td>244</td>
 <td>23.95</td>
 <td>85.02</td>
 </tr>
-<tr class="odd">
-<td>Total North America</td>
-<td>Total North America</td>
+<tr>
+<td>Total</td>
 <td>287</td>
 <td>28.16</td>
 <td>100.00</td>
 </tr>
-</tbody>
-</table>
-```
-
-```{=html}
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 37%" />
-<col style="width: 14%" />
-<col style="width: 11%" />
-<col style="width: 10%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td></td>
+<tr><th colspan="4">Central America</th></tr>
+<tr>
 <td>Belize</td>
 <td>9</td>
 <td>0.88</td>
 <td>6.52</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Costa Rica</td>
 <td>5</td>
 <td>0.49</td>
 <td>3.62</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>El Salvador</td>
 <td>26</td>
 <td>2.55</td>
 <td>18.84</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Guatemala</td>
 <td>59</td>
 <td>5.79</td>
 <td>42.75</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Honduras</td>
 <td>14</td>
 <td>1.37</td>
 <td>10.14</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Nicaragua</td>
 <td>20</td>
 <td>1.96</td>
 <td>14.49</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Panama</td>
 <td>5</td>
 <td>0.49</td>
 <td>3.62</td>
 </tr>
-<tr class="even">
-<td>Total Central America</td>
-<td>Total Central America</td>
+<tr>
+<td>Total</td>
 <td>138</td>
 <td>13.54</td>
 <td>100.00</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr><th colspan="4">Caribbean</th></tr>
+<tr>
 <td>Antigua &amp; Barbuda</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Archipelago of San Andrés, Providencia and Santa Catalina (Archipelago de San Andrés, Providencia y Santa Catalina)</td>
 <td>0</td>
 <td>0.00</td>
 <td>0</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Aruba</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Bahamas</td>
 <td>1</td>
 <td>0.10</td>
 <td>1.08</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Barbados</td>
 <td>3</td>
 <td>0.29</td>
 <td>3.23</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Cayman Islands</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Cuba</td>
 <td>38</td>
 <td>3.73</td>
 <td>40.86</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Dominica</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Dominican Republic</td>
 <td>6</td>
 <td>0.59</td>
 <td>6.45</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Federal Dependencies of Venezuela (Dependencias Federales de Venezuela)</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Grenada</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Guadeloupe</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Haiti</td>
 <td>13</td>
 <td>1.28</td>
 <td>13.98</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Jamaica</td>
 <td>11</td>
 <td>1.08</td>
 <td>11.83</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Martinique</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Nueva Esparta (Venezuela)</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-</tbody>
-</table>
-```
-
-```{=html}
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 37%" />
-<col style="width: 14%" />
-<col style="width: 11%" />
-<col style="width: 10%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Puerto Rico</td>
 <td>14</td>
 <td>1.37</td>
 <td>15.05</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Saint Barthelemy</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>St. Kitts &amp; Nevis</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>St. Lucia</td>
 <td>1</td>
 <td>0.10</td>
 <td>1.08</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>St. Vincent and the Grenadines</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Trinidad &amp; Tobago</td>
 <td>5</td>
 <td>0.49</td>
 <td>5.38</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Turks &amp; Caicos</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>US Virgin Islands</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Anguilla</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Bonaire</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>British Virgin Islands</td>
 <td>1</td>
 <td>0.10</td>
 <td>1.08</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Curacao</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Montserrat</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Saba</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Collectivity of Saint Martin (Collectivité de Saint-Martin)</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>St. Eustasius</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Sint Maarten</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="even">
-<td>Total Caribbean</td>
-<td>Total Caribbean Region</td>
+<tr>
+<td>Total</td>
 <td>93</td>
 <td>9.13</td>
 <td>100.00</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr><th colspan="4">South America</th></tr>
+<tr>
 <td>Argentina</td>
 <td>36</td>
 <td>3.53</td>
 <td>7.19</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Bolivia</td>
 <td>68</td>
 <td>6.67</td>
 <td>13.57</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Brazil</td>
 <td>143</td>
 <td>14.03</td>
 <td>28.54</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Chile</td>
 <td>23</td>
 <td>2.26</td>
 <td>4.59</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Colombia</td>
 <td>48</td>
 <td>4.71</td>
 <td>9.58</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Ecuador</td>
 <td>72</td>
 <td>7.07</td>
 <td>14.37</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>French Guiana</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Guyana</td>
 <td>3</td>
 <td>0.29</td>
 <td>0.60</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Paraguay</td>
 <td>8</td>
 <td>0.79</td>
 <td>1.60</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Peru</td>
 <td>78</td>
 <td>7.65</td>
 <td>15.57</td>
 </tr>
-</tbody>
-</table>
-```
-
-```{=html}
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 37%" />
-<col style="width: 14%" />
-<col style="width: 11%" />
-<col style="width: 10%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Suriname</td>
 <td>2</td>
 <td>0.20</td>
 <td>0.40</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Uruguay</td>
 <td>1</td>
 <td>0.10</td>
 <td>0.20</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Venezuela</td>
 <td>19</td>
 <td>1.86</td>
 <td>3.79</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Falkland Islands</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="odd">
-<td>Total South America</td>
-<td></td>
+<tr>
+<td>Total</td>
 <td>501</td>
 <td>49.17</td>
 <td>100.00</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td><strong>Total search results</strong></td>
 <td><strong>1,019</strong></td>
 <td>100.00</td>
@@ -761,15 +659,13 @@ We conducted a similar analysis for the AL search results. As Table 5 indicates,
 <table>
 <caption>Table 5: Percentage Frequency Distribution and Rank Order of Anthropological Literature Search Results by Country and Region, as of August 30, 2019</caption>
 <colgroup>
-<col style="width: 18%" />
-<col style="width: 30%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 16%" />
+<col style="width: 40%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
 </colgroup>
 <thead>
 <tr>
-<th>Region</th>
 <th>Country</th>
 <th>Search Results</th>
 <th>% of Total AL Search Results</th>
@@ -777,477 +673,377 @@ We conducted a similar analysis for the AL search results. As Table 5 indicates,
 </tr>
 </thead>
 <tbody>
-<tr class="even">
-<td></td>
+<tr><th colspan="4">North America</th></tr>
+<tr>
 <td>Canada</td>
 <td>5,257</td>
 <td>5.05</td>
 <td>10.00</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>United States</td>
 <td>14,880</td>
 <td>14.30</td>
 <td>28.29</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Mexico</td>
 <td>32,459</td>
 <td>31.20</td>
 <td>61.71</td>
 </tr>
-<tr class="odd">
-<td>Total North America</td>
-<td>Total North America</td>
+<tr>
+<td>Total</td>
 <td>52,596</td>
 <td>50.55</td>
 <td>100.00</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr><th colspan="4">Central America</th></tr>
+<tr>
 <td>Belize</td>
 <td>948</td>
 <td>0.91</td>
 <td>8.99</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Costa Rica</td>
 <td>993</td>
 <td>0.95</td>
 <td>9.41</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>El Salvador</td>
 <td>378</td>
 <td>0.36</td>
 <td>3.58</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Guatemala</td>
 <td>5,545</td>
 <td>5.33</td>
 <td>52.57</td>
 </tr>
-</tbody>
-</table>
-```
-
-```{=html}
-<table>
-<colgroup>
-<col style="width: 18%" />
-<col style="width: 30%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 16%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Honduras</td>
 <td>1,203</td>
 <td>1.16</td>
 <td>11.41</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Nicaragua</td>
 <td>563</td>
 <td>0.54</td>
 <td>5.34</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Panama</td>
 <td>917</td>
 <td>0.88</td>
 <td>8.69</td>
 </tr>
-<tr class="even">
-<td>Total Central America</td>
-<td>Total Central America</td>
+<tr>
+<td>Total</td>
 <td>10,547</td>
 <td>10.14</td>
 <td>100.00</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr><th colspan="4">Caribbean</th></tr>
+<tr>
 <td>Antigua &amp; Barbuda</td>
 <td>7</td>
 <td>0.01</td>
 <td>0.17</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Archipelago of San Andrés, Providencia and Santa Catalina</td>
 <td>1</td>
 <td>0</td>
 <td>0.02</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Aruba</td>
 <td>20</td>
 <td>0.02</td>
 <td>0.48</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Bahamas</td>
 <td>126</td>
 <td>0.12</td>
 <td>3.03</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Barbados</td>
 <td>126</td>
 <td>0.12</td>
 <td>3.03</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Cayman Islands</td>
 <td>14</td>
 <td>0.01</td>
 <td>0.34</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Cuba</td>
 <td>904</td>
 <td>0.87</td>
 <td>21.77</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Dominica</td>
 <td>72</td>
 <td>0.07</td>
 <td>1.73</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Dominican Republic</td>
 <td>493</td>
 <td>0.47</td>
 <td>11.87</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Federal Dependencies of Venezuela (Dependencias Federales de Venezuela)</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Grenada</td>
 <td>71</td>
 <td>0.07</td>
 <td>1.71</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Guadeloupe</td>
 <td>69</td>
 <td>0.07</td>
 <td>1.66</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Haiti</td>
 <td>544</td>
 <td>0.52</td>
 <td>13.10</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Jamaica</td>
 <td>425</td>
 <td>0.41</td>
 <td>10.24</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Martinique</td>
 <td>98</td>
 <td>0.09</td>
 <td>2.36</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Puerto Rico</td>
 <td>446</td>
 <td>0.43</td>
 <td>10.74</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Saint Barthelemy</td>
 <td>12</td>
 <td>0.01</td>
 <td>0.29</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>St. Kitts &amp; Nevis</td>
 <td>10</td>
 <td>0.01</td>
 <td>0.24</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>St. Lucia</td>
 <td>272</td>
 <td>0.26</td>
 <td>6.55</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>St. Vincent and the Grenadines</td>
 <td>8</td>
 <td>0.01</td>
 <td>0.19</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Trinidad &amp; Tobago</td>
 <td>109</td>
 <td>0.10</td>
 <td>2.63</td>
 </tr>
-</tbody>
-</table>
-```
-
-```{=html}
-<table>
-<colgroup>
-<col style="width: 18%" />
-<col style="width: 30%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 16%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Turks &amp; Caicos</td>
 <td>13</td>
 <td>0.01</td>
 <td>0.31</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>US Virgin Islands</td>
 <td>29</td>
 <td>0.03</td>
 <td>0.70</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Anguilla</td>
 <td>9</td>
 <td>0.01</td>
 <td>0.22</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Bonaire</td>
 <td>4</td>
 <td>0.00</td>
 <td>0.10</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>British Virgin Islands</td>
 <td>9</td>
 <td>0.01</td>
 <td>0.22</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Curacao</td>
 <td>23</td>
 <td>0.02</td>
 <td>0.55</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Montserrat</td>
 <td>141</td>
 <td>0.14</td>
 <td>3.40</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Nueva Esparta (Venezuela)</td>
 <td>1</td>
 <td>0.00</td>
 <td>0.02</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Saba</td>
 <td>87</td>
 <td>0.08</td>
 <td>2.10</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Collectivity of Saint Martin (Collectivité de Saint-Martin)</td>
 <td>3</td>
 <td>0.00</td>
 <td>0.07</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Sint Eustatius</td>
 <td>3</td>
 <td>0.00</td>
 <td>0.07</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Sint Maarten</td>
 <td>3</td>
 <td>0.00</td>
 <td>0.07</td>
 </tr>
-<tr class="odd">
-<td>Total Caribbean</td>
-<td>Total Caribbean Region</td>
+<tr>
+<td>Total</td>
 <td>4,152</td>
 <td>3.99</td>
 <td>100.00</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr><th colspan="4">South America</th></tr>
+<tr>
 <td>Argentina</td>
 <td>5,483</td>
 <td>5.27</td>
 <td>14.92</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Bolivia</td>
 <td>2,069</td>
 <td>1.99</td>
 <td>5.63</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Brazil</td>
 <td>7,021</td>
 <td>6.75</td>
 <td>19.10</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Chile</td>
 <td>3,384</td>
 <td>3.25</td>
 <td>9.21</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Colombia</td>
 <td>3,328</td>
 <td>3.20</td>
 <td>9.06</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Ecuador</td>
 <td>2,102</td>
 <td>2.02</td>
 <td>5.72</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>French Guiana</td>
 <td>145</td>
 <td>0.14</td>
 <td>0.39</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Guyana</td>
 <td>254</td>
 <td>0.24</td>
 <td>0.69</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Paraguay</td>
 <td>831</td>
 <td>0.80</td>
 <td>2.26</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Peru</td>
 <td>9,879</td>
 <td>9.49</td>
 <td>26.88</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Suriname</td>
 <td>217</td>
 <td>0.21</td>
 <td>0.59</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Uruguay</td>
 <td>478</td>
 <td>0.46</td>
 <td>1.30</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td>Venezuela</td>
 <td>1,542</td>
 <td>1.48</td>
 <td>4.20</td>
 </tr>
-<tr class="odd">
-<td></td>
+<tr>
 <td>Falkland Islands</td>
 <td>18</td>
 <td>0.02</td>
 <td>0.05</td>
 </tr>
-</tbody>
-</table>
-```
-
-```{=html}
-<table>
-<colgroup>
-<col style="width: 18%" />
-<col style="width: 30%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 16%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Total South America</td>
-<td>Total South America</td>
+<tr>
+<td>Total</td>
 <td>36,751</td>
 <td>35.32</td>
 <td>100.00</td>
 </tr>
-<tr class="even">
-<td></td>
+<tr>
 <td><strong>Total search results</strong></td>
 <td><strong>104,046</strong></td>
 <td></td>
@@ -1261,9 +1057,45 @@ Place of publication
 
 A comparison of results per search term (Haiti and/or Dominican Republic, Hispaniola) indicates imbalances in terms of place of publication. If we consider place of publication (see Table 6) we can see that AL has more Haiti-related articles, published outside of Haiti. In turn, 63.29% of Dominican resources were published in the Dominican Republic. International journals are in the minority (36.71%). In contrast, most of the Haiti search results (80.33%) were published outside the country. This difference could suggest greater international interest in Haiti. It can also be the result of reduced interest in, and/or less access, to Haiti-produced scholarship. This question, however, requires further research and transcends the scope of this paper. An examination of island-wide research indicates that approximately three-fourths of the island-wide publications are published outside the island. This points to the absence of inter-island scholarly engagement, and/or reticence to engage island-wide matters within the island itself.
 
-Table 6: Percentage Frequency Distribution of AL Search Results by Hispaniola/non-Hispaniola Place of Publication as of August 30, 2019.
-
-![image1.png](/issue09/images/kulstad-1a0906-image2.png){width="3.6979166666666665in" height="2.3333333333333335in"}
+```{=html}
+<table>
+<caption>Table 6: Percentage Frequency Distribution of AL Search Results by Hispaniola/non-Hispaniola Place of Publication as of August 30, 2019.</caption>
+<thead>
+<tr>
+<th>Search term</th>
+<th>International</th>
+<th>Haiti/D.R.</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Haiti</td>
+<td>437 (80.33%)</td>
+<td>107 (19.67%)</td>
+<td>544 (100%)</td>
+</tr>
+<tr>
+<td>D.R.</td>
+<td>181 (36.71%)</td>
+<td>312 (63.29%)</td>
+<td>493 (100%)</td>
+</tr>
+<tr>
+<td>Haiti &amp; D.R.</td>
+<td>21 (75%)</td>
+<td>7 (25%)</td>
+<td>28 (100%)</td>
+</tr>
+<tr>
+<td>Hispaniola</td>
+<td>30 (73.17%)</td>
+<td>11 (26.83%)</td>
+<td>41 (100%)</td>
+</tr>
+</tbody>
+</table>
+```
 
 JLACA search results indicate similar patterns (see Table 7). The journal has published more articles about Haiti. Most of the Dominican Republic or Haiti search results are book reviews, 60% and 70.73%, respectively. In other words, there is little original research published about either country (10 articles for the DR, 9 for Haiti). JLACA, however, has almost twice as many book reviews (15 for the Dominican Republic versus 29 for Haiti). The fact that there are more book reviews about Haiti suggests more scholarly interest in Haiti. Nonetheless, this question also requires further research.
 
