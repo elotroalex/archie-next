@@ -64,12 +64,14 @@ Our database analysis is based on a combination of statistical analysis, content
 <col style="width: 30%" />
 <col style="width: 30%" />
 </colgroup>
-<tbody>
-<tr class="odd">
-<td>Search Term</td>
-<td>JLACA # of Results</td>
-<td>AL # of Results</td>
+<thead>
+<tr>
+<th>Search Term</th>
+<th>JLACA # of Results</th>
+<th>AL # of Results</th>
 </tr>
+</thead>
+<tbody>
 <tr class="even">
 <td>Haiti</td>
 <td>41</td>
@@ -104,42 +106,32 @@ The content analysis process revealed five different types of errors in the inde
 <table>
 <caption>Table 2: Types of Cataloging Errors in AL and JLACA, as of August 30, 2019</caption>
 <colgroup>
-<col style="width: 12%" />
-<col style="width: 20%" />
-<col style="width: 10%" />
-<col style="width: 58%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 55%" />
 </colgroup>
-<tbody>
-<tr class="odd">
-<td>Error Type</td>
-<td>Description</td>
-<td>Resource</td>
-<td>Examples</td>
+<thead>
+<tr>
+<th>Error Type</th>
+<th>Description</th>
+<th>Resource</th>
+<th>Examples</th>
 </tr>
+</thead>
+<tbody>
 <tr class="even">
 <td>Type 1</td>
 <td>Item irrelevant</td>
-<td><p>JLACA</p>
-<p>Search criteria:</p>
-<p>Anywhere</p></td>
-<td><p>JLACA:</p>
-<p>Heidbrink, L., 2019. The Coercive Power of Debt: Migration and</p>
-<p>Deportation of</p>
-<p>Guatemalan Indigenous Youth. The Journal of Latin American and</p>
-<p>Caribbean</p>
-<p>Anthropology, 24(1), pp.263-281.</p></td>
+<td><p>JLACA (Anywhere)</td>
+<td>Heidbrink, L., 2019. The Coercive Power of Debt: Migration and Deportation of Guatemalan Indigenous Youth. The Journal of Latin American and Caribbean Anthropology, 24(1), pp.263-281.</td>
 </tr>
 <tr class="odd">
 <td>Type 2</td>
 <td>Item about Dominica</td>
 <td>AL</td>
-<td><p>AL:</p>
-<p>Baker, P., 1988.</p>
-<p>Ethnogenesis. The Case of the Dominica Caribs. América Indígena,
-48(2), pp.377-401.</p>
-<p>Subjects: Carib Indians -- Ethnic identity;</p>
-<p>Dominican Republic -- Native races; Indians of the West Indies --</p>
-<p>Dominican Republic -- Ethnic identity</p></td>
+<td>Baker, P., 1988. Ethnogenesis. The Case of the Dominica Caribs. América Indígena,
+48(2), pp.377-401. [...] Subjects: Carib Indians -- Ethnic identity; Dominican Republic -- Native races; Indians of the West Indies -- Dominican Republic -- Ethnic identity</td>
 </tr>
 <tr class="even">
 <td>Type 3</td>
@@ -248,13 +240,15 @@ and migrant labor in Haiti and the Dominican Republic. Latin</p>
 <col style="width: 33%" />
 <col style="width: 34%" />
 </colgroup>
-<tbody>
-<tr class="odd">
-<td>If the research takes place in (across)/between (down), use subject
-term(s)…</td>
-<td>DR (Eastern 2/3)</td>
-<td>Haiti (Western 1/3)</td>
+<thead>
+<tr>
+<th>If the research takes place in (across)/between (down), use subject
+term(s)…</th>
+<th>DR (Eastern 2/3)</th>
+<th>Haiti (Western 1/3)</th>
 </tr>
+</thead>
+<tbody>
 <tr class="even">
 <td><p>Prehistory-1492</p>
 <p>1492-1697</p></td>
@@ -354,25 +348,27 @@ The JLACA analysis revealed significant patterns. A percentage frequency distrib
 <col style="width: 11%" />
 <col style="width: 10%" />
 </colgroup>
-<tbody>
-<tr class="odd">
-<td>Region</td>
-<td>Country</td>
-<td><p>Search</p>
+<thead>
+<tr>
+<th>Region</th>
+<th>Country</th>
+<th><p>Search</p>
 <p>Results</p>
 <p>(Search</p>
 <p>Criteria:</p>
-<p>Abstract)</p></td>
-<td><p>% of</p>
+<p>Abstract)</p></th>
+<th><p>% of</p>
 <p>Total</p>
 <p>JLACA</p>
 <p>Search</p>
 <p>Result</p>
-<p>s</p></td>
-<td><p>% of</p>
+<p>s</p></th>
+<th><p>% of</p>
 <p>Regio</p>
-<p>n</p></td>
+<p>n</p></th>
 </tr>
+</thead>
+<tbody>
 <tr class="even">
 <td></td>
 <td>Canada</td>
@@ -876,17 +872,19 @@ We conducted a similar analysis for the AL search results. As Table 5 indicates,
 <col style="width: 17%" />
 <col style="width: 16%" />
 </colgroup>
-<tbody>
-<tr class="odd">
-<td>Region</td>
-<td>Country</td>
-<td><p>Search</p>
-<p>Results</p></td>
-<td><p>% of Total</p>
+<thead>
+<tr>
+<th>Region</th>
+<th>Country</th>
+<th><p>Search</p>
+<p>Results</p></th>
+<th><p>% of Total</p>
 <p>AL Search</p>
-<p>Results</p></td>
-<td>% of Region</td>
+<p>Results</p></th>
+<th>% of Region</th>
 </tr>
+</thead>
+<tbody>
 <tr class="even">
 <td></td>
 <td>Canada</td>
@@ -1396,17 +1394,19 @@ JLACA search results indicate similar patterns (see Table 7). The journal has pu
 <col style="width: 19%" />
 <col style="width: 19%" />
 </colgroup>
-<tbody>
-<tr class="odd">
-<td>Search Criteria</td>
-<td><p>Book/Film</p>
-<p>Review</p></td>
-<td><p>Original</p>
-<p>Research</p></td>
-<td>Other</td>
-<td><p>Total JLACA</p>
-<p>revised results</p></td>
+<thead>
+<tr>
+<th>Search Criteria</th>
+<th><p>Book/Film</p>
+<p>Review</p></th>
+<th><p>Original</p>
+<p>Research</p></th>
+<th>Other</th>
+<th><p>Total JLACA</p>
+<p>revised results</p></th>
 </tr>
+</thead>
+<tbody>
 <tr class="even">
 <td>D.R.</td>
 <td>15 (60%)</td>
@@ -1493,12 +1493,14 @@ Finally, there are more publications about each individual country, rather than 
 <col style="width: 33%" />
 <col style="width: 18%" />
 </colgroup>
-<tbody>
-<tr class="odd">
-<td>Search term</td>
-<td>AL</td>
-<td>JLACA</td>
+<thead>
+<tr>
+<th>Search term</th>
+<th>AL</th>
+<th>JLACA</th>
 </tr>
+</thead>
+<tbody>
 <tr class="even">
 <td>Haiti</td>
 <td>544</td>
@@ -1563,17 +1565,19 @@ Subjects terms: Performance \-- **Haiti** \-- Port-au-Prince; Theater \-- **Cari
 <col style="width: 20%" />
 <col style="width: 15%" />
 </colgroup>
-<tbody>
-<tr class="odd">
-<td>Search criteria: SUBJECT+GEO . terms</td>
-<td><p>Dominica</p>
-<p>n Republic</p></td>
-<td><p>Hait</p>
-<p>i</p></td>
-<td><p>Hispaniol</p>
-<p>a</p></td>
-<td>Total</td>
+<thead>
+<tr>
+<th>Search criteria: SUBJECT+GEO . terms</th>
+<th><p>Dominica</p>
+<p>n Republic</p></th>
+<th><p>Hait</p>
+<p>i</p></th>
+<th><p>Hispaniol</p>
+<p>a</p></th>
+<th>Total</th>
 </tr>
+</thead>
+<tbody>
 <tr class="even">
 <td>African diaspora</td>
 <td>1</td>
