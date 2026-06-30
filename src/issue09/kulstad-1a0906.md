@@ -647,7 +647,6 @@ The JLACA analysis revealed significant patterns. A percentage frequency distrib
 <td><strong>Total search results</strong></td>
 <td><strong>1,019</strong></td>
 <td>100.00</td>
-<td></td>
 </tr>
 </tbody>
 </table>
@@ -1047,19 +1046,18 @@ We conducted a similar analysis for the AL search results. As Table 5 indicates,
 <td><strong>Total search results</strong></td>
 <td><strong>104,046</strong></td>
 <td></td>
-<td></td>
 </tr>
 </tbody>
 </table>
 ```
 
-Place of publication
+### Place of publication
 
 A comparison of results per search term (Haiti and/or Dominican Republic, Hispaniola) indicates imbalances in terms of place of publication. If we consider place of publication (see Table 6) we can see that AL has more Haiti-related articles, published outside of Haiti. In turn, 63.29% of Dominican resources were published in the Dominican Republic. International journals are in the minority (36.71%). In contrast, most of the Haiti search results (80.33%) were published outside the country. This difference could suggest greater international interest in Haiti. It can also be the result of reduced interest in, and/or less access, to Haiti-produced scholarship. This question, however, requires further research and transcends the scope of this paper. An examination of island-wide research indicates that approximately three-fourths of the island-wide publications are published outside the island. This points to the absence of inter-island scholarly engagement, and/or reticence to engage island-wide matters within the island itself.
 
 ```{=html}
 <table>
-<caption>Table 6: Percentage Frequency Distribution of AL Search Results by Hispaniola/non-Hispaniola Place of Publication as of August 30, 2019.</caption>
+<caption>Table 6: Percentage Frequency Distribution of AL Search Results by Place of Publication (Hispaniola/non-Hispaniola) as of August 30, 2019.</caption>
 <thead>
 <tr>
 <th>Search term</th>
@@ -1115,25 +1113,32 @@ JLACA search results indicate similar patterns (see Table 7). The journal has pu
 <th>Book/Film Review</th>
 <th>Original Research</th>
 <th>Other</th>
-<th>Total JLACA revised results</th>
+<th>Total revised results</th>
 </tr>
 </thead>
 <tbody>
-<tr class="even">
+<tr>
 <td>D.R.</td>
 <td>15 (60%)</td>
 <td>10 (40%)</td>
 <td>0 (0%)</td>
 <td>25 (100%)</td>
 </tr>
-<tr class="odd">
-<td>Haiti<br>Haiti and D. R.</td>
-<td>29 (70.73%)<br>8 (47.06%)</td>
-<td>9 (21.95%)<br>9 (52.94%)</td>
-<td>3 (7.32%)<br>0 (0%)</td>
-<td>41 (100%)<br>17 (100%)</td>
+<tr>
+<td>Haiti</td>
+<td>29 (70.73%)</td>
+<td>9 (21.95%)</td>
+<td>3 (7.32%)</td>
+<td>41 (100%)</td>
 </tr>
-<tr class="even">
+<tr>
+<td>Haiti and D.R.</td>
+<td>8 (47.06%)</td>
+<td>9 (52.94%)</td>
+<td>0 (0%)</td>
+<td>17 (100%)</td>
+</tr>
+<tr>
 <td>Hispaniola</td>
 <td>3 (75%)</td>
 <td>1 (25%)</td>
@@ -1150,45 +1155,29 @@ Our error analysis (see Table 2) points to a tendency to erase the Dominican Rep
 
 The Dominican results included 2.83% of instances in which the articles were about Haiti. In turn, 14.36% of Haiti results were about the Dominican Republic. The examples below, the first from the _Dominican_ search, the second, from the _Haiti_ search, illustrate these observations:
 
-Alvarez, José de Js. 1951 Studies on the A-B-O, M-N, and RH-HR blood factors in the **Dominican Republic\***,\* with special reference to the problem of
+> Alvarez, José de Js. 1951 Studies on the A-B-O, M-N, and RH-HR blood factors in the **Dominican Republic**, with special reference to the problem of admixture American Journal of Physical Anthropology v. 9,. pp. 127-148. || Subject terms: **Haiti** \-\- Somatology \-\- Blood; **Haiti** \-\- Somatology \-\- Miscegenation; Somatology \-\- Miscegenation
 
-admixture American Journal of Physical Anthropology v. 9,. pp.
-
-127-148.
-
-Subject terms: **Haiti** \-- Somatology -- Blood; **Haiti** \-- Somatology -- Miscegenation; Somatology \-- Miscegenation
-
-Deive, Carlos Esteban 1974 Glosario de Afronegrismos en la Toponimia
-
-y Español hablado de **Santo Domingo**, Boletin. no 5, pp. 17-41 Santo Domingo Subject terms: **Haiti** \-- Linguistics \-- Place-names; **Haiti** \-- Sociology -- Race
+> Deive, Carlos Esteban 1974 Glosario de Afronegrismos en la Toponimia y Español hablado de **Santo Domingo**, Boletin. no 5, pp. 17-41 Santo Domingo. || Subject terms: **Haiti** \-\- Linguistics \-\- Place-names; **Haiti** \-\- Sociology -- Race
 
 As the bold texts highlight, catalogers assigned a Haiti label, even though the article was about the Dominican Republic. The inverse error, that is, a Haiti-related article with a Dominican label, was only identified once, as is indicated in the example below. In this instance, we believe the cataloger mistook Saint Domingue, the French colony on Hispaniola, with Santo Domingo, the Spanish one.
 
-Geggus, David P. The slaves of British - occupied **Saint Dominique**: an analysis of the work forces of 197 absentee plantations, 1796 - 1797. Caribbean Studies. v. 18, no. 1-2, 1978. p. 5-41
-
-Subject terms: **Dominican Republic** \-- Sociology \-- Slavery; **Dominican Republic** \-- Economic anthropology \-- History; **Dominican Republic** \-- Economic anthropology \-- Agriculture
+> Geggus, David P. The slaves of British - occupied **Saint Dominique**: an analysis of the work forces of 197 absentee plantations, 1796 - 1797. Caribbean Studies. v. 18, no. 1-2, 1978. p. 5-41. || Subject terms: **Dominican Republic** \-\- Sociology \-\- Slavery; **Dominican Republic** \-\- Economic anthropology \-\- History; **Dominican Republic** \-\- Economic anthropology \-\- Agriculture
 
 ### Erasing Shared Histories
 
 The fourth pattern we identified erases shared sociocultural, political, economic, and historical ties between countries. Error Type 7 (see Table 2), the most frequent, refers to instances in which the country metadata is assigned according to where the research took place, not to whether the research is relevant to both countries. We found that 7.3% of all items in the AL _Dominican_ searches had this error. Haiti's results had 17.12% of entries. As mentioned, these designations assign shared knowledge to only one country.
 
-Deagan, Kathleen. 2004 Reconsidering Taíno social dynamics after Spanish conquest: gender and class in culture contact studies. American antiquity Vol. 69, no. 4 , p. 597-626.
+> Deagan, Kathleen. 2004. Reconsidering Taíno social dynamics after Spanish conquest: gender and class in culture contact studies. American antiquity Vol. 69, no. 4 , p. 597-626. || Subject terms: Culture contact; Taino Indians \-\- Social life and customs \-\- 1492-; Indians of the **West Indies** \-\- First contact with Europeans; **En Bas Saline Site (Haiti)**; **Spain** \-\- Colonies \-\- **West Indies**
 
-Subject terms: Culture contact; Taino Indians \-- Social life and customs \-- 1492-; Indians of the **West Indies** \-- First contact with Europeans; **En Bas Saline Site (Haiti)**; **Spain** \-- Colonies \-- **West Indies**
-
-Veloz Maggiolo, Marcio. 1979 Notas sobre modelos de ocupación prehistórica en la isla de **Santo Domingo** Boletin. año 7, no. 12, 1979. p. 49-57.
-
-Subject terms: Archaeology; Arawakan Indians -- Archaeology; **Dominican Republic** \-- Archaeology
+> Veloz Maggiolo, Marcio. 1979. Notas sobre modelos de ocupación prehistórica en la isla de **Santo Domingo** Boletin. año 7, no. 12, 1979. p. 49-57. || Subject terms: Archaeology; Arawakan Indians \-\- Archaeology; **Dominican Republic** \-\- Archaeology
 
 For example, Deagan's article[^33] above, from the Haiti search, is based on archaeological excavations in Haiti and is categorized as such. Nonetheless, this research is also central to Dominican history. Thus, catalogers erased this knowledge from its historical domain. The tendency to link articles to broader geographic designations, while eschewing the other, was observed multiple times. For instance, Veloz-Maggiolo's article[^34] above about the prehistoric population of the island of Hispaniola is germane to Haiti but was not categorized as such.
 
 Type 4 errors, or the instances in which island-wide topics were not acknowledged, were not as common. Nonetheless, they still had a bordering effect. As Table 2 shows, the Dominican search had 14 items; Haiti had 4. As the examples below show, the only geographic association in Horst's citation[^35] is a Haitian-related one even though the title states the article is about both countries. The error in Andrews' article[^36] is more subtle. The subject terms includes both geographical designations, but it only assigns the "Cholera" term to Haiti, when the article is about how the epidemic affected the Dominican Republic. The article should include a "Cholera -- Dominican" tag. Similarly, the "Emigration and immigration---Government policy" is not linked to Haiti, disassociating it from the process.
 
-Horst, Heather A 2014 The role of mobile phones in the mediation of border crossings: a study of **Haiti** and the **Dominican Republic** Australian journal of anthropology. Subject terms: Cell phones; Ethnography; Labor mobility; Communication and technology; Technology \-- Social aspects -- **Haiti**
+> Horst, Heather A. 2014. The role of mobile phones in the mediation of border crossings: a study of **Haiti** and the **Dominican Republic** Australian journal of anthropology. ||Subject terms: Cell phones; Ethnography; Labor mobility; Communication and technology; Technology \-\- Social aspects -- **Haiti**
 
-Andrews, Kyrstin Mallon 2018 Sinks for the press : cholera and the state performance of power at the Dominican border. Journal of Latin American and Caribbean anthropology volume 23, issue 2, pages 338-362.
-
-Subject terms: Public health; Cholera -- **Haiti**; Border crossing; Biosecurity Power (Social sciences); **Dominican Republic** \-- Emigration and immigration \-- Government policy
+> Andrews, Kyrstin Mallon. 2018. Sinks for the press : cholera and the state performance of power at the Dominican border. Journal of Latin American and Caribbean anthropology volume 23, issue 2, pages 338-362. || Subject terms: Public health; Cholera -- **Haiti**; Border crossing; Biosecurity Power (Social sciences); **Dominican Republic** \-\- Emigration and immigration \-\- Government policy
 
 Finally, there are more publications about each individual country, rather than about both. As Table 8 indicates, JLACA has approximately three times the number of articles about single-country research (66 individual versus 21 island-wide). AL results indicate 15 times more citations about each country (1037 individual versus 69 island-wide).
 
@@ -1246,39 +1235,29 @@ Finally, there are more publications about each individual country, rather than 
 
 The last pattern has to do with the way AL situates both countries within the region. Table 9, Column 1, is a compilation of the regional geographic subject terms used for both countries. Columns 2 and 3 indicate the frequency each term was assigned. As the examples below illustrate, the terms were applied inconsistently.
 
-Veloz Maggiolo, Marcio 1982 Preservation of cultural properties in the **Dominican Republic** New World Conference on Rescue Archeology no. 1, 1982, p.72-80 Subject terms: Archaeology; **Dominican Republic** \-- Archaeology \-- Cultural resource management; **Latin America** \-- Archaeology \-- Cultural resource management; **America** \-- Archaeology \-- Cultural resource management
+> Veloz Maggiolo, Marcio 1982 Preservation of cultural properties in the **Dominican Republic** New World Conference on Rescue Archeology no. 1, 1982, p.72-80. || Subject terms: Archaeology; **Dominican Republic** \-\- Archaeology \-\- Cultural resource management; **Latin America** \-\- Archaeology \-\- Cultural resource management; **America** \-\- Archaeology \-\- Cultural resource management
 
-Tavares, Julia 1978 Notas etnológicas sobre el cazabe. Boletín-Museo del Hombre Dominicano. año 7, no. 11, 1978. p. 147-176, ill.
+> Tavares, Julia 1978 Notas etnológicas sobre el cazabe. Boletín-Museo del Hombre Dominicano. año 7, no. 11, 1978. p. 147-176, ill. || Subject terms: **Antilles** \-\- Archaeology -- Food; **Dominican Republic** \-\- Technology -- Food
 
-Subject terms: **Antilles** \-- Archaeology -- Food; **Dominican Republic** \-- Technology -- Food
+> DeTemple, Jill. Haiti appeared at my church: faith-based organizations, transnational activism, and tourism in sustainable development. Urban anthropology Vol. 35, no. 2-3 (2006), p. 155-181 || Subject terms: Sustainable development \-\- **Latin America**; Missionaries \-\- **Latin America**; Religious institutions \-\- **Latin America**; Tourism \-\- **Latin America**; Christianity \-\- **Latin America**
 
-DeTemple, Jill. Haiti appeared at my church: faith-based organizations, transnational activism, and tourism in sustainable development. Urban anthropology Vol. 35, no. 2-3 (2006), p. 155-181
-
-Subject terms: Sustainable development \-- **Latin America**; Missionaries \-- **Latin America**; Religious institutions \-- **Latin America**; Tourism \-- **Latin America**; Christianity \-- **Latin America**
-
-Barba, Eugenio. 2009 Ange-animal : techniques perdues pour
-
-le spectateur. Ethnographie \[L\'Ethnographie\] : revue de la Société d\'ethnographie de Paris Vol. nouv. ed. , no. 4, p. 17-26.
-
-Subjects terms: Performance \-- **Haiti** \-- Port-au-Prince; Theater \-- **Caribbean Area**
+> Barba, Eugenio. 2009 Ange-animal : techniques perdues pour le spectateur. Ethnographie \[L\'Ethnographie\] : revue de la Société d\'ethnographie de Paris Vol. nouv. ed. , no. 4, p. 17-26. || Subject terms: Performance \-\- **Haiti** \-\- Port-au-Prince; Theater \-\- **Caribbean Area**
 
 ```{=html}
 <table>
 <caption>Table 9: Frequency Distribution of Select Subject and Geographic Terms by Country and Island in Anthropological Literature, as of August 30, 2019</caption>
 <colgroup>
-<col style="width: 31%" />
-<col style="width: 21%" />
-<col style="width: 11%" />
+<col style="width: 40%" />
 <col style="width: 20%" />
-<col style="width: 15%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
 </colgroup>
 <thead>
 <tr>
-<th>Search criteria: SUBJECT+GEO . terms</th>
+<th>Search criteria</th>
 <th>Dominican Republic</th>
 <th>Haiti</th>
 <th>Hispaniola</th>
-<th>Total</th>
 </tr>
 </thead>
 <tbody>
@@ -1287,105 +1266,78 @@ Subjects terms: Performance \-- **Haiti** \-- Port-au-Prince; Theater \-- **Cari
 <td>1</td>
 <td>5</td>
 <td>0</td>
-<td></td>
 </tr>
 <tr class="odd">
 <td>Afro-Americans</td>
 <td>6</td>
 <td>2</td>
 <td>0</td>
-<td></td>
 </tr>
 <tr class="even">
 <td>Afro-Caribbean</td>
 <td>1</td>
 <td>3</td>
 <td>0</td>
-<td></td>
 </tr>
 <tr class="odd">
 <td>America</td>
 <td>22</td>
 <td>8</td>
 <td>2</td>
-<td></td>
 </tr>
-</tbody>
-</table>
-```
-
-```{=html}
-<table style="width:100%;">
-<colgroup>
-<col style="width: 31%" />
-<col style="width: 21%" />
-<col style="width: 11%" />
-<col style="width: 20%" />
-<col style="width: 15%" />
-</colgroup>
-<tbody>
 <tr class="odd">
 <td>Antilles</td>
 <td>3</td>
 <td>7</td>
 <td>1</td>
-<td></td>
 </tr>
 <tr class="even">
 <td>Antilles, Greater</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
-<td></td>
 </tr>
 <tr class="odd">
 <td>Caribbean</td>
 <td>55</td>
 <td>21</td>
 <td>3</td>
-<td></td>
 </tr>
 <tr class="even">
 <td>Caribbean area</td>
 <td>54</td>
 <td>17</td>
 <td>3</td>
-<td></td>
 </tr>
 <tr class="odd">
 <td>Hispaniola</td>
 <td>6</td>
 <td>1</td>
 <td>NA</td>
-<td></td>
 </tr>
 <tr class="even">
 <td>Indians of Central America</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td></td>
 </tr>
 <tr class="odd">
 <td>Indians of North America</td>
 <td>3</td>
 <td>0</td>
 <td>1</td>
-<td></td>
 </tr>
 <tr class="even">
 <td>Latin America</td>
 <td>5</td>
 <td>3</td>
 <td>0</td>
-<td></td>
 </tr>
 <tr class="odd">
 <td>West Indies</td>
 <td>29</td>
 <td>4</td>
 <td>7</td>
-<td></td>
 </tr>
 </tbody>
 </table>
@@ -1393,17 +1345,13 @@ Subjects terms: Performance \-- **Haiti** \-- Port-au-Prince; Theater \-- **Cari
 
 In the first example, the Dominican Republic is situated within Latin America and America. In the second and third, it is in Central America and the Antilles. The other examples show how Haiti is linked to Latin America in one, and the Caribbean in another. While both countries were situated within multiple geographic regions, the Dominican Republic was assigned a broader geographic term more than Haiti (Table 9, columns 2 and 3). For example, the "West Indies" subject term was associated with the Dominican Republic 29 times. Haiti was categorized four times. Below, the "West Indies" is included in the first example's title but is not assigned.
 
-A. Basu \... \[et al.\]. Morphology, serology, dermatoglyphics, and microevolution of some village populations in Haiti, **West Indies**
-
-Subject terms: **Haiti** \-- Somatology -- Heredity; **Haiti** \-- Somatology \-- Anthropometry
+> A. Basu \... \[et al.\]. Morphology, serology, dermatoglyphics, and microevolution of some village populations in Haiti, **West Indies**. || Subject terms: **Haiti** \-\- Somatology -- Heredity; **Haiti** \-\- Somatology \-\- Anthropometry
 
 ### Discussion
 
 The goals of this exploratory research project were twofold. First, we set out to establish whether scholarship published on the island of Hispaniola has been made accessible and discoverable on the global stage by being included in some of the most important sites of anthropological knowledge dissemination. Second, we looked at the degree to which inter-island research, that which pertains to both Haiti and the Dominican Republic, has been carried out historically. We analyzed the contents of Anthropological Literature, one of the most comprehensive indexes in Anthropology, based at Harvard University, and the Journal of Latin American and Caribbean Anthropology, the official journal of the Latin American and Caribbean section of the American Anthropological Association. In addition, we analyzed the metadata used to determine the accessibility and discoverability of Haiti and Dominican Republic related research.
 
-Regarding the first goal, our analysis of Harvard's Anthropological Literature index shows that most of its Haiti-related content has been published outside the island. In other words, the data suggests that scholarship published about Haiti, in Haiti, is not making it into this important anthropological dissemination site. The reasons why this might be the case are difficult to establish given the data available. For instance, an in-depth analysis of AL's history of policies and practices of inclusion in the index would be helpful to understand how and why certain publications are included over others. Similarly, having an understanding of the history of Harvard's Anthropology Department's engagement with Haiti would shed light into how faculty might have helped shape these collections. Furthermore, having a list of the publications from Haiti would give us a better sense of what is being left out of the index. However, other research suggests that the imbalance of the Haiti-research content could be the result of other factors. For one, scholarship output is tied to national wealth and the amount of money that governments
-
-invest in research.[^37] Therefore, the United States is going to publish more than a small and impoverished country like Haiti. Secondly, not only are there more social scientists in the United States than in Haiti, but also there are a number of Haitian scholars that have migrated to the United States. If they work in U.S. academic institutions, they have likely published in the United States, rather than in Haiti. Third, the fact that Anthropological Literature is in an English-speaking institution, and the island publications are in languages other than English, is also a likely reason for the imbalance.
+Regarding the first goal, our analysis of Harvard's Anthropological Literature index shows that most of its Haiti-related content has been published outside the island. In other words, the data suggests that scholarship published about Haiti, in Haiti, is not making it into this important anthropological dissemination site. The reasons why this might be the case are difficult to establish given the data available. For instance, an in-depth analysis of AL's history of policies and practices of inclusion in the index would be helpful to understand how and why certain publications are included over others. Similarly, having an understanding of the history of Harvard's Anthropology Department's engagement with Haiti would shed light into how faculty might have helped shape these collections. Furthermore, having a list of the publications from Haiti would give us a better sense of what is being left out of the index. However, other research suggests that the imbalance of the Haiti-research content could be the result of other factors. For one, scholarship output is tied to national wealth and the amount of money that governments invest in research.[^37] Therefore, the United States is going to publish more than a small and impoverished country like Haiti. Secondly, not only are there more social scientists in the United States than in Haiti, but also there are a number of Haitian scholars that have migrated to the United States. If they work in U.S. academic institutions, they have likely published in the United States, rather than in Haiti. Third, the fact that Anthropological Literature is in an English-speaking institution, and the island publications are in languages other than English, is also a likely reason for the imbalance.
 
 Although these, and other factors, might be at play, we must also consider the broader colonial context within which these knowledge dissemination sites have developed. Anthropologists of knowledge like Harrison[^38] and Ntarangwi[^39] have described extensively how anthropology's colonial roots have shaped the field's trajectory. According to them, U.S. anthropology's canon has been shaped by racism, sexism, Euroamerican-centrism and other forms of exclusion. This is why the field's canon and practices are dominated by the theories of white, male scholars in Europe and the United States. The theories produced by minority groups in the United States and by scholars from the Global South have been excluded from dominant narratives because they are deemed to be of lower quality. In this overall context, anthropological knowledge dissemination sites like Anthropological Literature are also likely to reflect these broader patterns of exclusion.
 
@@ -1411,9 +1359,7 @@ Similarly, analysts of global production and dissemination of knowledge have ide
 
 In contrast to the Haitian-related content, most of the resources about the Dominican Republic have been published in the Dominican Republic. Why this is the case is difficult to establish given the data we have available. Once again, we would need to understand the processes and criteria of inclusion and the history of the Dominican collection to be able to explain its characteristics. We would also need to have information about publications coming out of the Dominican Republic to see what might be left out. However, although it might seem that Dominican scholarship is being included, we must emphasize that some of the Dominican-related scholarship is obscured within the database. The metadata analysis reveals a pattern of errors of classification (Dominican-related research classified as Haitian and ambiguity in regional classifications) that affect its discoverability and accessibility. In this sense, these cataloging errors also contribute to bibliometric coloniality.
 
-The second general question of this research examined the degree to which transnational research has taken place on Hispaniola. Our metadata analysis reveals that publications that pertain to the entire island are in the minority in both Anthropological Literature and JLACA. In
-
-other words, our findings reveal a long-lasting pattern of conducting anthropological research in one country or the other, rarely in both. This confirms what Mayes and Jayaram[^44] have argued about the study of Hispaniola. The reasons why each country has been studied individually, rather than together, are difficult to establish with the data we have available. However, Jayaram et al[^45] have suggested that the study of the island has been characterized by a research approach that Wimmer and Glick Schiller called methodological nationalism.[^46] That is, the common assumption that societies are confined within the boundaries of the nation-state. As a result, the transnational and migration processes are concealed or downplayed. Methodological nationalism was also evident in the indexing practices that labeled research that is pertinent to both countries as only belonging to one. These practices reify borders by erasing shared knowledge and the historical, sociocultural, and political and economic ties that exist between both countries.
+The second general question of this research examined the degree to which transnational research has taken place on Hispaniola. Our metadata analysis reveals that publications that pertain to the entire island are in the minority in both Anthropological Literature and JLACA. In other words, our findings reveal a long-lasting pattern of conducting anthropological research in one country or the other, rarely in both. This confirms what Mayes and Jayaram[^44] have argued about the study of Hispaniola. The reasons why each country has been studied individually, rather than together, are difficult to establish with the data we have available. However, Jayaram et al[^45] have suggested that the study of the island has been characterized by a research approach that Wimmer and Glick Schiller called methodological nationalism.[^46] That is, the common assumption that societies are confined within the boundaries of the nation-state. As a result, the transnational and migration processes are concealed or downplayed. Methodological nationalism was also evident in the indexing practices that labeled research that is pertinent to both countries as only belonging to one. These practices reify borders by erasing shared knowledge and the historical, sociocultural, and political and economic ties that exist between both countries.
 
 The patterns we have identified have significant consequences. The decision to include a journal (or not), and which subject terms to assign, effectively legitimize scholarship and make it discoverable or invisible.[^47] In the case of Haiti and the Dominican Republic, these knowledge dissemination sites are silencing the voices of scholars on the island, especially those from Haiti. In the end, the most visible research about Haiti and the Dominican Republic is the work produced and indexed in the United States and Europe. As a result, scholarship produced in places like the U.S. and Europe circulates more and gets cited more and what is published in the Global South remains at the margins promoting "Euro-American epistemic hegemony."[^48]
 
@@ -1423,17 +1369,17 @@ Efforts to decolonize the anthropology of Hispaniola require significant efforts
 
 [^2]: Ibid.
 
-[^3]: [Mayes, April J. and Kiran C. Jayaram. (2018) Transnational Hispaniola An Introduction. _In_: Mayes , A. J., & Jayaram, K. C. _Transnational Hispaniola: New Directions in Haitian and Dominican Studies_ (April J. Mayes & Kiran C. Jayaram, Eds.; 1st ed.). University of Florida Press. [[https://doi.org/10.2307/j.ctvx07bs1]{.underline}](https://doi.org/10.2307/j.ctvx07bs1)]{.mark}
+[^3]: Mayes, April J. and Kiran C. Jayaram. (2018) Transnational Hispaniola An Introduction. _In_: Mayes , A. J., & Jayaram, K. C. _Transnational Hispaniola: New Directions in Haitian and Dominican Studies_ (April J. Mayes & Kiran C. Jayaram, Eds.; 1st ed.). University of Florida Press. [https://doi.org/10.2307/j.ctvx07bs1](https://doi.org/10.2307/j.ctvx07bs1)
 
 [^4]: Ibid, 2.
 
 [^5]: Jayaram, Kiran C., Tess Kulstad‐González, Luisa Rollins Castillo, and Nadège Nau. \"Debating Decolonization in the Caribbean: Assessment and Polyvocal Response to Island Anthropologies Workshop (March 18--20, 2019).\" _The Journal of Latin American and Caribbean Anthropology_ 25, no. 3 (2020): 473-487.
 
-[^6]: "Anthropological Literature." Harvard Library. Accessed October 13, 2022, [https://library.harvard.edu/services-tools/anthropological-literature.]{.underline}
+[^6]: "Anthropological Literature." Harvard Library. Accessed October 13, 2022, [https://library.harvard.edu/services-tools/anthropological-literature](https://library.harvard.edu/services-tools/anthropological-literature).
 
 [^7]: Savo Heleta and Pedro Mzileni. \"Bibliometric coloniality in South Africa: Critical review of the indexes of accredited journals.\" Education as Change 28, no. 1 (2024): 1-26.
 
-[^8]: David Mills, et al. "_Who Counts? Ghanaian Academic Publishing and Global Science._ Cape Town: African Minds. [[https://doi.org/10.47622/9781928502647]{.underline}](https://doi.org/10.47622/9781928502647). Cited in Heleta and Mzileni.
+[^8]: David Mills, et al. "_Who Counts? Ghanaian Academic Publishing and Global Science._ Cape Town: African Minds. [https://doi.org/10.47622/9781928502647](https://doi.org/10.47622/9781928502647). Cited in Heleta and Mzileni.
 
 [^9]: See Heleta and Mzileni, \"Bibliometric coloniality in South Africa: Critical review of the indexes of accredited journals," and Carmen Diana Deere, "The Practice of Latin American Studies: Dilemmas of Scholarly Communication." In _Lasa Forum_, 49 (2018):7--23.
 
@@ -1441,7 +1387,7 @@ Efforts to decolonize the anthropology of Hispaniola require significant efforts
 
 [^11]: Jayaram, Kiran C., Tess Kulstad‐González, Luisa Rollins Castillo, and Nadège Nau. \"Debating Decolonization in the Caribbean: Assessment and Polyvocal Response to Island Anthropologies Workshop (March 18--20, 2019).\" _The Journal of Latin American and Caribbean Anthropology_ 25, no. 3 (2020): 473-487.
 
-[^12]: [Mayes, April J. and Kiran C. Jayaram. (2018) Transnational Hispaniola An Introduction. _In_: Mayes , A. J., & Jayaram, K. C. _Transnational Hispaniola: New Directions in Haitian and Dominican Studies_ (April J. Mayes & Kiran C. Jayaram, Eds.; 1st ed.). University of Florida Press. [[https://doi.org/10.2307/j.ctvx07bs1]{.underline}](https://doi.org/10.2307/j.ctvx07bs1)]{.mark}
+[^12]: Mayes, April J. and Kiran C. Jayaram. (2018) Transnational Hispaniola An Introduction. _In_: Mayes , A. J., & Jayaram, K. C. _Transnational Hispaniola: New Directions in Haitian and Dominican Studies_ (April J. Mayes & Kiran C. Jayaram, Eds.; 1st ed.). University of Florida Press. [https://doi.org/10.2307/j.ctvx07bs1](https://doi.org/10.2307/j.ctvx07bs1)
 
 [^13]: Ibid.
 
@@ -1459,35 +1405,35 @@ Efforts to decolonize the anthropology of Hispaniola require significant efforts
 
 [^20]: "Library of Congress Subject Headings PDF Files," Library of Congress. Accessed October 13, 2022, https://www.loc.gov/aba/publications/FreeLCSH/.
 
-[^21]: "Process for Adding and Revising Library of Congress Subject Headings \| Cataloging and Acquisitions (Library of Congress)," Library of Congress, Accessed October 13, 2022. [https://www.loc.gov/aba/cataloging/subject/lcsh-process.html]{.underline}.
+[^21]: "Process for Adding and Revising Library of Congress Subject Headings \| Cataloging and Acquisitions (Library of Congress)," Library of Congress, Accessed October 13, 2022. [https://www.loc.gov/aba/cataloging/subject/lcsh-process.html](https://www.loc.gov/aba/cataloging/subject/lcsh-process.html).
 
 [^22]: Ibid.
 
-[^23]: "Summary of Decisions, Editorial Meeting Number 03 (2016) - SACO - Program for Cooperative Cataloging (Library of Congress," Library of Congress Accessed October 13, 2022, [https://www.loc.gov/aba/pcc/saco/cpsoed/psd-160321.html.]{.underline}
+[^23]: "Summary of Decisions, Editorial Meeting Number 03 (2016) - SACO - Program for Cooperative Cataloging (Library of Congress," Library of Congress Accessed October 13, 2022, [https://www.loc.gov/aba/pcc/saco/cpsoed/psd-160321.html](https://www.loc.gov/aba/pcc/saco/cpsoed/psd-160321.html).
 
 [^24]: Deere, "The Practice of Latin American Studies: Dilemmas of Scholarly Communication," 7-23
 
-[^25]: "Quick Guide to Academic Journal Indexing: Top Index Types to Consider and Tips for Optimal Outcomes." Scholastica, accessed October 13, 2022, [https://blog.scholasticahq.com/post/index-types-for-academic-journal/.]{.underline}
+[^25]: "Quick Guide to Academic Journal Indexing: Top Index Types to Consider and Tips for Optimal Outcomes." Scholastica, accessed October 13, 2022, [https://blog.scholasticahq.com/post/index-types-for-academic-journal/](https://blog.scholasticahq.com/post/index-types-for-academic-journal/).
 
-[^26]: "Anthropological Literature." Harvard Library, accessed October 13, 2022, [https://library.harvard.edu/services-tools/anthropological-literature.]{.underline}
+[^26]: "Anthropological Literature." Harvard Library, accessed October 13, 2022, [https://library.harvard.edu/services-tools/anthropological-literature](https://library.harvard.edu/services-tools/anthropological-literature).
 
 [^27]: Weeks, John M. 1987. "Data Base: Tozzer Library: A 'National' Library for Anthropology in the United States on JSTOR." _Current Anthropology_ 28 (1):. **12? Is this the right citation?**
 
-[^28]: Helen Quiqley, "Research Guides: Using the Anthropological Literature Database: Origins," accessed October 13, 2022. [https://guides.library.harvard.edu/c.php?g=420132&p=2901444.]{.underline}
+[^28]: Helen Quiqley, "Research Guides: Using the Anthropological Literature Database: Origins," accessed October 13, 2022. [https://guides.library.harvard.edu/c.php?g=420132&p=2901444](https://guides.library.harvard.edu/c.php?g=420132&p=2901444).
 
-[^29]: **Weeks, "Data Base," 12.**
+[^29]: Weeks, "Data Base," 12.
 
 [^30]: Quigley, "Research Guides."
 
-[^31]: "The Journal of Latin American and Caribbean Anthropology," The Journal of Latin American and Caribbean Anthropology. October 17, 2022, [https://anthrosource.onlinelibrary.wiley.com/hub/journal/19354940/aims-and-scope/read-full-aim]{.underline} [s-and-scope]{.underline}.
+[^31]: "The Journal of Latin American and Caribbean Anthropology," The Journal of Latin American and Caribbean Anthropology. October 17, 2022, [https://anthrosource.onlinelibrary.wiley.com/hub/journal/19354940/aims-and-scope/read-full-aims-and-scope](https://anthrosource.onlinelibrary.wiley.com/hub/journal/19354940/aims-and-scope/read-full-aims-and-scope).
 
-[^32]: For background information see Frank Moya Pons, _Historia de la República Dominicana_. Editorial CSIC (CSIC Press, 2010); Jean Price-Mars, 2000. _La República de Haití y la República dominicana: diversos aspectos de un problema histórico, geográfico y etnológico,_ (Sociedad Dominicana de Bibliófilos, 2000); and Daniel Patrick Geggus,"The British Occupation of Saint Domingue 1793-98," (PhD diss., University of York, 1978), [https://etheses.whiterose.ac.uk/14096/.]{.underline}
+[^32]: For background information see Frank Moya Pons, _Historia de la República Dominicana_. Editorial CSIC (CSIC Press, 2010); Jean Price-Mars, 2000. _La República de Haití y la República dominicana: diversos aspectos de un problema histórico, geográfico y etnológico,_ (Sociedad Dominicana de Bibliófilos, 2000); and Daniel Patrick Geggus,"The British Occupation of Saint Domingue 1793-98," (PhD diss., University of York, 1978), [https://etheses.whiterose.ac.uk/14096/](https://etheses.whiterose.ac.uk/14096/).
 
-[^33]: Kathleen Deagan, "Reconsidering Taíno Social Dynamics after Spanish Conquest: Gender and Class in Culture Contact Studies." _American Antiquity_ 69, no. 4, (2004): 597--626. [https://doi.org/10.2307/4128440.]{.underline}
+[^33]: Kathleen Deagan, "Reconsidering Taíno Social Dynamics after Spanish Conquest: Gender and Class in Culture Contact Studies." _American Antiquity_ 69, no. 4, (2004): 597--626. [https://doi.org/10.2307/4128440](https://doi.org/10.2307/4128440).
 
 [^34]: Marcio Veloz Maggiolo, "Notas sobre modelos de ocupación prehistórica en la Isla de Santo Domingo. (Notes Sur Les Modèles d'occupation Préhistorique Dans l'île de Saint-Domingue)." _Boletin Del Museo Del Hombre Dominicano Saint-Domingue_ 8, no. 12 (1979): 49--57.
 
-[^35]: Heather A. Horst and Erin B. Taylor, "The role of mobile phones in the mediation of border crossings: A study of Haiti and the Dominican Republic," The Australian Journal of Anthropology, 25 (2014): 155-170. [[https://doi.org/10.1111/taja.12086]{.underline}](https://doi.org/10.1111/taja.12086)
+[^35]: Heather A. Horst and Erin B. Taylor, "The role of mobile phones in the mediation of border crossings: A study of Haiti and the Dominican Republic," The Australian Journal of Anthropology, 25 (2014): 155-170. [https://doi.org/10.1111/taja.12086](https://doi.org/10.1111/taja.12086)
 
 [^36]: Kyrstin Mallon Andrews, "Sinks for the press : cholera and the state performance of power at the Dominican border," Journal of Latin American and Caribbean anthropology volume 23, issue 2 (2018): 338-362.
 
@@ -1499,18 +1445,18 @@ Efforts to decolonize the anthropology of Hispaniola require significant efforts
 
 [^40]: Collyer, Fran M. \"Global patterns in the publishing of academic knowledge: Global North, global South.\" _Current Sociology_ 66, no. 1 (2018): 56-73.
 
-[^41]: Heleta and Mzileni, "Bibliometric Coloniality," 1. **Is the above cited in this work? Citations unclear**
+[^41]: Heleta and Mzileni, "Bibliometric Coloniality," 1.
 
 [^42]: See Heleta and Mzileni, "Bibliometric Coloniality"; Deere, "The Practice of Latin American Studies"; and Beigel, Fernanda. \"Introduction: Current tensions and trends in the World Scientific System.\" _Current sociology_ 62, no. 5 (2014): 617-625.
 
 [^43]: Alatas, Syed Farid. \"Academic dependency and the global division of labour in the social sciences.\" _Current sociology_ 51, no. 6 (2003): 599-613.
 
-[^44]: [Mayes, April J. and Kiran C. Jayaram. (2018) Transnational Hispaniola An Introduction. _In_: Mayes , A. J., & Jayaram, K. C. _Transnational Hispaniola: New Directions in Haitian and Dominican Studies_ (April J. Mayes & Kiran C. Jayaram, Eds.; 1st ed.). University of Florida Press. [[https://doi.org/10.2307/j.ctvx07bs1]{.underline}](https://doi.org/10.2307/j.ctvx07bs1)]{.mark}
+[^44]: Mayes, April J. and Kiran C. Jayaram. (2018) Transnational Hispaniola An Introduction. _In_: Mayes , A. J., & Jayaram, K. C. _Transnational Hispaniola: New Directions in Haitian and Dominican Studies_ (April J. Mayes & Kiran C. Jayaram, Eds.; 1st ed.). University of Florida Press. [https://doi.org/10.2307/j.ctvx07bs1](https://doi.org/10.2307/j.ctvx07bs1)
 
 [^45]: Jayaram, Kiran C., Tess Kulstad‐González, Luisa Rollins Castillo, and Nadège Nau. \"Debating Decolonization in the Caribbean: Assessment and Polyvocal Response to Island Anthropologies Workshop (March 18--20, 2019).\" _The Journal of Latin American and Caribbean Anthropology_ 25, no. 3 (2020): 473-487.
 
 [^46]: Wimmer, Andreas, and Nina Glick Schiller. \"Methodological nationalism and beyond: nation--state building, migration and the social sciences.\" _Global networks_ 2, no. 4 (2002): 301-334.
 
-[^47]: Richard Harvey Brown and Beth Davis-Brown, "The Making of Memory: The Politics of Archives, Libraries and Museums in the Construction of National Consciousness." _History of the Human Sciences_ 11, no. 4 (1998): 17--32. [https://doi.org/10.1177/095269519801100402.]{.underline}
+[^47]: Richard Harvey Brown and Beth Davis-Brown, "The Making of Memory: The Politics of Archives, Libraries and Museums in the Construction of National Consciousness." _History of the Human Sciences_ 11, no. 4 (1998): 17--32. [https://doi.org/10.1177/095269519801100402](https://doi.org/10.1177/095269519801100402).
 
 [^48]: Heleta and Mzileni, "Bibliometric Coloniality," 1.
