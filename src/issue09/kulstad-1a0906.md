@@ -123,7 +123,7 @@ The content analysis process revealed five different types of errors in the inde
 <tr class="even">
 <td>Type 1</td>
 <td>Item irrelevant</td>
-<td><p>JLACA (Anywhere)</td>
+<td>JLACA (Anywhere)</td>
 <td>Heidbrink, L., 2019. The Coercive Power of Debt: Migration and Deportation of Guatemalan Indigenous Youth. The Journal of Latin American and Caribbean Anthropology, 24(1), pp.263-281.</td>
 </tr>
 <tr class="odd">
@@ -137,13 +137,7 @@ The content analysis process revealed five different types of errors in the inde
 <td>Type 3</td>
 <td>Spelling error(s)</td>
 <td>AL, JLACA</td>
-<td><p>AL (error italicized):</p>
-<p>Jimenez, A., 1978. En torno al craneo ciguayo <em>descrtio</em> por
-el Dr.</p>
-<p>Alejandro Llenas en</p>
-<p>1890.(A propos du crâne ciguayo décrit par le Dr. AL en 1890).
-Boletin del Museo del Hombre</p>
-<p>Dominicano</p></td>
+<td>AL (error italicized): Jimenez, A., 1978. En torno al craneo ciguayo <em>descrtio</em> por el Dr. Alejandro Llenas en 1890.(A propos du crâne ciguayo décrit par le Dr. AL en 1890). Boletin del Museo del Hombre Dominicano</td>
 </tr>
 </tbody>
 </table>
@@ -162,46 +156,25 @@ Boletin del Museo del Hombre</p>
 <td></td>
 <td></td>
 <td></td>
-<td><p>Saint-Domingue, 7(10), pp.238-252.</p>
-<p>Subjects: Dominican Republic -- Biological anthropology --
-Skull</p></td>
+<td>Saint-Domingue, 7(10), pp.238-252. Subjects: Dominican Republic -- Biological anthropology -- Skull</td>
 </tr>
 <tr class="even">
 <td>Type 4</td>
 <td>Only one country noted</td>
 <td>JLACA,AL</td>
-<td><p>AL:</p>
-<p>Horst, H.A. andTaylor, E.B., 2014. The role of mobile phones in the
-mediation of border crossings: A study of Haiti and the Dominican
-Republic. The Australian Journal of Anthropology, 25(2), pp.155-170.</p>
-<p>Subjects: “Cell phones”, “Ethnography”, “Labor mobility”,</p>
-<p>Communication and technology”,</p>
-<p>“Technology -- Social aspects– Haiti”.</p></td>
+<td>AL: Horst, H.A. andTaylor, E.B., 2014. The role of mobile phones in the mediation of border crossings: A study of Haiti and the Dominican Republic. The Australian Journal of Anthropology, 25(2), pp.155-170. Subjects: “Cell phones”, “Ethnography”, “Labor mobility”, Communication and technology”, “Technology -- Social aspects– Haiti”.</td>
 </tr>
 <tr class="odd">
 <td>Type 5</td>
 <td>Neither country labeled.</td>
 <td>AL</td>
-<td><p>AL:</p>
-<p>Martínez, S., 1999. From hidden hand to heavy hand: sugar, the state,
-and migrant labor in Haiti and the Dominican Republic. Latin</p>
-<p>American Research</p>
-<p>Review, pp.57-84.</p>
-<p>Subjects: “West Indies -- Economic conditions”, “Sugar --West Indies
--- Manufacture and</p>
-<p>refining”; “Migrant</p>
-<p>labor --West Indies”; “State, The– History</p></td>
+<td>AL: Martínez, S., 1999. From hidden hand to heavy hand: sugar, the state, and migrant labor in Haiti and the Dominican Republic. Latin American Research Review, pp.57-84. Subjects: “West Indies -- Economic conditions”, “Sugar --West Indies -- Manufacture and refining”; “Migrant labor --West Indies”; “State, The– History</td>
 </tr>
 <tr class="even">
 <td>Type 6</td>
 <td>D.R. article labeled as Haiti</td>
 <td>AL</td>
-<td><p>AL:</p>
-<p>Norvell,D.G., 1969.</p>
-<p>Food marketing in an urban place in the</p>
-<p>DominicanRepublic. Caribbean Studies, 9(3), pp.104-110.</p>
-<p>Subjects: Haiti --</p>
-<p>Technology -- Urbanism</p></td>
+<td>AL: Norvell,D.G., 1969. Food marketing in an urban place in the DominicanRepublic. Caribbean Studies, 9(3), pp.104-110. Subjects: Haiti -- Technology -- Urbanism</td>
 </tr>
 </tbody>
 </table>
@@ -220,13 +193,7 @@ and migrant labor in Haiti and the Dominican Republic. Latin</p>
 <td>Type 7</td>
 <td>Bordering</td>
 <td>AL</td>
-<td><p>AL:</p>
-<p>Rímoli, Renato O. 1977 “Una nueva especie de monos (Cebidae:</p>
-<p>Saimirinae: Saimiri) de la Hispaniola”.</p>
-<p>Cuadernos del CENDIA. v. 262, no. 1, 1977. p. 1-14</p>
-<p>Subjects: Archaeology -- Methods –</p>
-<p>Zooarchaeology;</p>
-<p>Dominican Republic -- Archaeology -- Fauna</p></td>
+<td>AL: Rímoli, Renato O. 1977 “Una nueva especie de monos (Cebidae: Saimirinae: Saimiri) de la Hispaniola”. Cuadernos del CENDIA. v. 262, no. 1, 1977. p. 1-14 Subjects: Archaeology -- Methods – Zooarchaeology; Dominican Republic -- Archaeology -- Fauna</td>
 </tr>
 </tbody>
 </table>
@@ -250,61 +217,34 @@ term(s)…</th>
 </thead>
 <tbody>
 <tr class="even">
-<td><p>Prehistory-1492</p>
-<p>1492-1697</p></td>
-<td><p>Hispaniola Pre-1492</p>
-<p>S.D., Spanish colony</p>
-<p>(1492-1697)</p></td>
-<td><p>Hispaniola Pre-1492</p>
-<p>Santo Domingo, Spanish colony (1492-1697)</p></td>
+<td>Prehistory-1492<br>1492-1697</td>
+<td>Hispaniola Pre-1492<br>S.D., Spanish colony (1492-1697)</td>
+<td>Hispaniola Pre-1492<br>Santo Domingo, Spanish colony (1492-1697)</td>
 </tr>
 <tr class="odd">
 <td>1697-1793</td>
-<td><p>S.D., Spanish colony</p>
-<p>(1697-1795)</p></td>
+<td>S.D., Spanish colony (1697-1795)</td>
 <td>Saint Domingue, French colony (1697-1793)</td>
 </tr>
 <tr class="even">
 <td>1793-1795</td>
-<td><p>S.D., Spanish colony</p>
-<p>(1697-1795)</p></td>
-<td><p>Saint Domingue, British</p>
-<p>occupied (1793-1798)</p></td>
+<td>S.D., Spanish colony (1697-1795)</td>
+<td>Saint Domingue, British occupied (1793-1798)</td>
 </tr>
 <tr class="odd">
 <td>1795-1798</td>
-<td><p>S.D., French</p>
-<p>occupied (1795-1809)</p></td>
-<td><p>Saint Domingue, British</p>
-<p>occupied (1793-1798)</p></td>
+<td>S.D., French occupied (1795-1809)</td>
+<td>Saint Domingue, British occupied (1793-1798)</td>
 </tr>
 <tr class="even">
-<td><p>1798-1804</p>
-<p>1804-1809</p>
-<p>1809-1821</p>
-<p>1821-1822</p></td>
-<td><p>S.D., French</p>
-<p>occupied (1795-1809)</p>
-<p>S.D., French</p>
-<p>occupied (1795-1809)</p>
-<p>S.D., Spanish colony</p>
-<p>(1809-1821)</p>
-<p>Republic of Spanish Haiti</p></td>
-<td><p>Saint Domingue, French colony (1798-1804)</p>
-<p>Republic of Haiti</p>
-<p>Republic of Haiti</p>
-<p>Republic of Haiti</p></td>
+<td>1798-1804<br>1804-1809<br>1809-1821<br>1821-1822</td>
+<td>S.D., French occupied (1795-1809)<br>S.D., French occupied (1795-1809)<br>S.D., Spanish colony (1809-1821)<br>Republic of Spanish Haiti</td>
+<td>Saint Domingue, French colony (1798-1804)<br>Republic of Haiti<br>Republic of Haiti<br>Republic of Haiti</td>
 </tr>
 <tr class="odd">
-<td><p>1822-1844</p>
-<p>1844-1861</p></td>
-<td><p>S.D., Haitian</p>
-<p>Occupied</p>
-<p>Shared</p>
-<p>D.R. (1844-1861)</p></td>
-<td><p>Republic of Haiti</p>
-<p>Shared</p>
-<p>Republic of Haiti</p></td>
+<td>1822-1844<br>1844-1861</td>
+<td>S.D., Haitian Occupied<br>Shared D.R. (1844-1861)</td>
+<td>Republic of Haiti<br>Shared Republic of Haiti</td>
 </tr>
 </tbody>
 </table>
@@ -320,14 +260,12 @@ term(s)…</th>
 <tbody>
 <tr class="odd">
 <td>1861-1865</td>
-<td><p>S.D., Spain</p>
-<p>occupied</p></td>
+<td>S.D., Spain occupied</td>
 <td>Republic of Haiti</td>
 </tr>
 <tr class="even">
 <td>1865-present</td>
-<td><p>D.R.</p>
-<p>(1865-present)</p></td>
+<td>D.R. (1865-present)</td>
 <td>Republic of Haiti</td>
 </tr>
 </tbody>
@@ -352,20 +290,9 @@ The JLACA analysis revealed significant patterns. A percentage frequency distrib
 <tr>
 <th>Region</th>
 <th>Country</th>
-<th><p>Search</p>
-<p>Results</p>
-<p>(Search</p>
-<p>Criteria:</p>
-<p>Abstract)</p></th>
-<th><p>% of</p>
-<p>Total</p>
-<p>JLACA</p>
-<p>Search</p>
-<p>Result</p>
-<p>s</p></th>
-<th><p>% of</p>
-<p>Regio</p>
-<p>n</p></th>
+<th>Search Results (Search Criteria: Abstract)</th>
+<th>% of Total JLACA Search Results</th>
+<th>% of Region</th>
 </tr>
 </thead>
 <tbody>
@@ -395,8 +322,7 @@ The JLACA analysis revealed significant patterns. A percentage frequency distrib
 <td>Total North America</td>
 <td>287</td>
 <td>28.16</td>
-<td><p>100.0</p>
-<p>0</p></td>
+<td>100.00</td>
 </tr>
 </tbody>
 </table>
@@ -462,13 +388,11 @@ The JLACA analysis revealed significant patterns. A percentage frequency distrib
 <td>3.62</td>
 </tr>
 <tr class="even">
-<td><p>Total Central</p>
-<p>America</p></td>
+<td>Total Central America</td>
 <td>Total Central America</td>
 <td>138</td>
 <td>13.54</td>
-<td><p>100.0</p>
-<p>0</p></td>
+<td>100.00</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -479,9 +403,7 @@ The JLACA analysis revealed significant patterns. A percentage frequency distrib
 </tr>
 <tr class="even">
 <td></td>
-<td><p>Archipelago of San Andrés,</p>
-<p>Providencia and Santa Catalina (Archipelago de San Andrés,</p>
-<p>Providencia y Santa Catalina)</p></td>
+<td>Archipelago of San Andrés, Providencia and Santa Catalina (Archipelago de San Andrés, Providencia y Santa Catalina)</td>
 <td>0</td>
 <td>0.00</td>
 <td>0</td>
@@ -537,9 +459,7 @@ The JLACA analysis revealed significant patterns. A percentage frequency distrib
 </tr>
 <tr class="even">
 <td></td>
-<td><p>Federal Dependencies of</p>
-<p>Venezuela (Dependencias</p>
-<p>Federales de Venezuela)</p></td>
+<td>Federal Dependencies of Venezuela (Dependencias Federales de Venezuela)</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
@@ -630,8 +550,7 @@ The JLACA analysis revealed significant patterns. A percentage frequency distrib
 </tr>
 <tr class="odd">
 <td></td>
-<td><p>St. Vincent and the</p>
-<p>Grenadines</p></td>
+<td>St. Vincent and the Grenadines</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
@@ -725,8 +644,7 @@ The JLACA analysis revealed significant patterns. A percentage frequency distrib
 <td>Total Caribbean Region</td>
 <td>93</td>
 <td>9.13</td>
-<td><p>100.0</p>
-<p>0</p></td>
+<td>100.00</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -845,15 +763,13 @@ The JLACA analysis revealed significant patterns. A percentage frequency distrib
 <td></td>
 <td>501</td>
 <td>49.17</td>
-<td><p>100.0</p>
-<p>0</p></td>
+<td>100.00</td>
 </tr>
 <tr class="even">
 <td></td>
 <td><strong>Total search results</strong></td>
 <td><strong>1,019</strong></td>
-<td><p>100.0</p>
-<p>0</p></td>
+<td>100.00</td>
 <td></td>
 </tr>
 </tbody>
@@ -876,11 +792,8 @@ We conducted a similar analysis for the AL search results. As Table 5 indicates,
 <tr>
 <th>Region</th>
 <th>Country</th>
-<th><p>Search</p>
-<p>Results</p></th>
-<th><p>% of Total</p>
-<p>AL Search</p>
-<p>Results</p></th>
+<th>Search Results</th>
+<th>% of Total AL Search Results</th>
 <th>% of Region</th>
 </tr>
 </thead>
@@ -907,8 +820,7 @@ We conducted a similar analysis for the AL search results. As Table 5 indicates,
 <td>61.71</td>
 </tr>
 <tr class="odd">
-<td><p>Total North</p>
-<p>America</p></td>
+<td>Total North America</td>
 <td>Total North America</td>
 <td>52,596</td>
 <td>50.55</td>
@@ -993,8 +905,7 @@ We conducted a similar analysis for the AL search results. As Table 5 indicates,
 </tr>
 <tr class="even">
 <td></td>
-<td><p>Archipelago of San</p>
-<p>Andrés, Providencia and Santa Catalina</p></td>
+<td>Archipelago of San Andrés, Providencia and Santa Catalina</td>
 <td>1</td>
 <td>0</td>
 <td>0.02</td>
@@ -1050,9 +961,7 @@ We conducted a similar analysis for the AL search results. As Table 5 indicates,
 </tr>
 <tr class="even">
 <td></td>
-<td><p>Federal Dependencies of Venezuela</p>
-<p>(Dependencias</p>
-<p>Federales de Venezuela)</p></td>
+<td>Federal Dependencies of Venezuela (Dependencias Federales de Venezuela)</td>
 <td>0</td>
 <td>0.00</td>
 <td>0.00</td>
@@ -1122,8 +1031,7 @@ We conducted a similar analysis for the AL search results. As Table 5 indicates,
 </tr>
 <tr class="even">
 <td></td>
-<td><p>St. Vincent and the</p>
-<p>Grenadines</p></td>
+<td>St. Vincent and the Grenadines</td>
 <td>8</td>
 <td>0.01</td>
 <td>0.19</td>
@@ -1200,8 +1108,7 @@ We conducted a similar analysis for the AL search results. As Table 5 indicates,
 </tr>
 <tr class="even">
 <td></td>
-<td><p>Nueva Esparta</p>
-<p>(Venezuela)</p></td>
+<td>Nueva Esparta (Venezuela)</td>
 <td>1</td>
 <td>0.00</td>
 <td>0.02</td>
@@ -1215,8 +1122,7 @@ We conducted a similar analysis for the AL search results. As Table 5 indicates,
 </tr>
 <tr class="even">
 <td></td>
-<td><p>Collectivity of Saint</p>
-<p>Martin (Collectivité de Saint-Martin)</p></td>
+<td>Collectivity of Saint Martin (Collectivité de Saint-Martin)</td>
 <td>3</td>
 <td>0.00</td>
 <td>0.07</td>
@@ -1236,8 +1142,7 @@ We conducted a similar analysis for the AL search results. As Table 5 indicates,
 <td>0.07</td>
 </tr>
 <tr class="odd">
-<td><p>Total</p>
-<p>Caribbean</p></td>
+<td>Total Caribbean</td>
 <td>Total Caribbean Region</td>
 <td>4,152</td>
 <td>3.99</td>
@@ -1356,8 +1261,7 @@ We conducted a similar analysis for the AL search results. As Table 5 indicates,
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>Total South</p>
-<p>America</p></td>
+<td>Total South America</td>
 <td>Total South America</td>
 <td>36,751</td>
 <td>35.32</td>
@@ -1397,13 +1301,10 @@ JLACA search results indicate similar patterns (see Table 7). The journal has pu
 <thead>
 <tr>
 <th>Search Criteria</th>
-<th><p>Book/Film</p>
-<p>Review</p></th>
-<th><p>Original</p>
-<p>Research</p></th>
+<th>Book/Film Review</th>
+<th>Original Research</th>
 <th>Other</th>
-<th><p>Total JLACA</p>
-<p>revised results</p></th>
+<th>Total JLACA revised results</th>
 </tr>
 </thead>
 <tbody>
@@ -1415,16 +1316,11 @@ JLACA search results indicate similar patterns (see Table 7). The journal has pu
 <td>25 (100%)</td>
 </tr>
 <tr class="odd">
-<td><p>Haiti</p>
-<p>Haiti and D. R.</p></td>
-<td><p>29 (70.73%)</p>
-<p>8 (47.06%)</p></td>
-<td><p>9 (21.95%)</p>
-<p>9 (52.94%)</p></td>
-<td><p>3 (7.32%)</p>
-<p>0 (0%)</p></td>
-<td><p>41 (100%)</p>
-<p>17 (100%)</p></td>
+<td>Haiti<br>Haiti and D. R.</td>
+<td>29 (70.73%)<br>8 (47.06%)</td>
+<td>9 (21.95%)<br>9 (52.94%)</td>
+<td>3 (7.32%)<br>0 (0%)</td>
+<td>41 (100%)<br>17 (100%)</td>
 </tr>
 <tr class="even">
 <td>Hispaniola</td>
@@ -1568,12 +1464,9 @@ Subjects terms: Performance \-- **Haiti** \-- Port-au-Prince; Theater \-- **Cari
 <thead>
 <tr>
 <th>Search criteria: SUBJECT+GEO . terms</th>
-<th><p>Dominica</p>
-<p>n Republic</p></th>
-<th><p>Hait</p>
-<p>i</p></th>
-<th><p>Hispaniol</p>
-<p>a</p></th>
+<th>Dominican Republic</th>
+<th>Haiti</th>
+<th>Hispaniola</th>
 <th>Total</th>
 </tr>
 </thead>
@@ -1656,8 +1549,7 @@ Subjects terms: Performance \-- **Haiti** \-- Port-au-Prince; Theater \-- **Cari
 <td></td>
 </tr>
 <tr class="even">
-<td><p>Indians of</p>
-<p>Central America</p></td>
+<td>Indians of Central America</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
