@@ -7,9 +7,13 @@ title:
 doi: "10.7916/..."
 author:
   - name: "Tess Kulstad"
+    shortname: "T. Kulstad"
+    bio: >
+      Dr. Tess Marie Kulstad-González is a cultural anthropologist from the Dominican Republic. She is an assistant professor in anthropology at Grinnell College. Her research focuses on family life, child fosterage practices in the Caribbean, disasters, the Haiti-Dominican Republic border, and Haiti-Dominican Republic relations.
+  - name: "Pauline Kulstad"
     shortname: "Kulstad"
     bio: >
-      Tess M. Kulstad Gonzalez is a sociocultural anthropologist with a longstanding interest in the social construction of relatedness, childrearing, and the human rights of children. Her research explores the ways in which local and global sociocultural, economic, political processes affect family structure and child wellbeing in the Caribbean.  More specifically, her work focuses on child fosterage arrangements on the Haitian-Dominican border, whereby parents place offspring with both relatives and non-relatives, in informal and mostly temporary adoption arrangements. Her research examines the factors that influence fosterage decision-making processes and child wellbeing.
+      Dr. Pauline M. Kulstad-González is an archaeologist that specializes in the cataloging of Caribbean archaeological collections. She has taught at the Universidad Nacional Pedro Henríquez Ureña (Dominican Republic) and currently teaches at the Centro de Estudios Avanzados de Puerto Rico y el Caribe (Puerto Rico).
 pubDate: "July 2026"
 issue: "9"
 order: "2"
@@ -17,10 +21,6 @@ abstract: >
   This article presents the results of a metadata and content analysis of anthropological research about Haiti and the Dominican Republic available in the Anthropological Literature database and in the Journal of Latin American and Caribbean Anthropology. This analysis shows that anthropological knowledge about Haiti and/or the Dominican Republic, produced in Haiti and the Dominican Republic, is included less than scholarship published outside the island. In addition, our analysis indicates that research that pertains to both countries, or that considers transnational and/or inter-island processes has been infrequent. Furthermore, that which exists is not as discoverable or visible as research that focuses on each individual country. We consider how databases operate to create an archive of anthropological thought that excludes scholarship from the Global South.
 language: en
 ---
-
-**A Metadata Analysis of Anthropological Scholarship about Haiti and the Dominican Republic**
-
-_Abstract_: This article presents the results of a metadata and content analysis of anthropological research about Haiti and the Dominican Republic available in the Anthropological Literature database and in the Journal of Latin American and Caribbean Anthropology. This analysis shows that anthropological knowledge about Haiti and/or the Dominican Republic, produced in Haiti and the Dominican Republic, is included less than scholarship published outside the island. In addition, our analysis indicates that research that pertains to both countries, or that considers transnational and/or inter-island processes has been infrequent. Furthermore, that which exists is not as discoverable or visible as research that focuses on each individual country. We consider how databases operate to create an archive of anthropological thought that excludes scholarship from the Global South.
 
 ### Introduction
 
@@ -52,13 +52,47 @@ The Tozzer Library is the oldest anthropological library in the country.[^27] It
 
 The Journal of Latin American and Caribbean Anthropology (JLACA), the official publication of the Latin American and Caribbean section of the American Anthropological Association, started in 1995. Its official title changed from the Journal of Latin American Anthropology (JLAA) to include the Caribbean in 2007. The journal is indexed and abstracted through multiple subscription-based services like AnthroSource, Scopus, Anthropological Literature, among others. The index is based on the keywords authors assign to their articles. They can choose to add 1-5 keywords.[^31]
 
-Research methods
+### Research methods
 
-Our database analysis is based on a combination of statistical analysis, content analysis, and library research. First, we created a raw database of search results based on the following geographical search terms: *Dominican Republi*c*, Haiti, Dominican Republic AND Haiti*, and _Hispaniola_. We applied the "Anywhere," "Title," "Keyword," and "Abstract" search criteria available in JLACA's Advanced Search option. The number of results per search are detailed in Table 1. The results of each of these separate searches were subsequently transferred to a Google Sheets spreadsheet through a process called _scraping_. We collected the following metadata from each result: _Author(s), Title, Keywords, Subjects, Date of Publication, Funding Sources_ (when available), _Search Criteria used, Journal Name (JLAA or JLACA), Volume and Issue Number_. We used the spreadsheet "Sort Sheet By" function to identify duplicate results, which were later eliminated.
+Our database analysis is based on a combination of statistical analysis, content analysis, and library research. First, we created a raw database of search results based on the following geographical search terms: _Dominican Republic_, _Haiti_, _Dominican Republic AND Haiti_, and _Hispaniola_. We applied the "Anywhere," "Title," "Keyword," and "Abstract" search criteria available in JLACA's Advanced Search option. The number of results per search are detailed in Table 1. The results of each of these separate searches were subsequently transferred to a Google Sheets spreadsheet through a process called _scraping_. We collected the following metadata from each result: _Author(s), Title, Keywords, Subjects, Date of Publication, Funding Sources_ (when available), _Search Criteria used, Journal Name (JLAA or JLACA), Volume and Issue Number_. We used the spreadsheet "Sort Sheet By" function to identify duplicate results, which were later eliminated.
 
-Table 1: JLACA and Anthropological Literature Search Results by Country and by Island, as of August 30, 2019
-
-![image2.png](/issue09/images/kulstad-1a0906-image1.png){width="6.03125in" height="3.5625in"}
+```{=html}
+<table>
+<caption>Table 1: JLACA and Anthropological Literature Search Results by Country and by Island, as of August 30, 2019</caption>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 30%" />
+<col style="width: 30%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Search Term</td>
+<td>JLACA # of Results</td>
+<td>AL # of Results</td>
+</tr>
+<tr class="even">
+<td>Haiti</td>
+<td>41</td>
+<td>544</td>
+</tr>
+<tr class="odd">
+<td>Dominican Republic</td>
+<td>25</td>
+<td>493</td>
+</tr>
+<tr class="even">
+<td>Haiti AND Dominican Republic</td>
+<td>16</td>
+<td>28</td>
+</tr>
+<tr class="odd">
+<td>Hispaniola</td>
+<td>4</td>
+<td>41</td>
+</tr>
+</tbody>
+</table>
+```
 
 In AL, we searched for _Haiti, Dominican Republic, Haiti AND Dominican Republic, Hispaniola_ using the "TX All Text Fields" option. We ordered the search results by "Date Oldest" using the sorting option on the Database Results page and downloaded the results as a CSV file. The results included _Article/Journal/Book Title, the First Author First and Last Name, Year of Publication, Volume and Issue Number_, and other items not necessary for our analysis. We added _Additional Authors, Geographic Area of Focus, Place, Name, Language_, and _Type_. Since AL utilizes both "Subject Term" and "Geographic Term" interchangeably, we merged both categories into "Subject Term" for the purposes of this analysis. Table 1 also indicates the number of results from the AL search. After creating both raw databases, we carried out content analysis of the entries. This process consisted of examining the metadata associated with each item and coding each entry to identify data patterns. We added memos or observations, when necessary.
 
@@ -66,10 +100,9 @@ In AL, we searched for _Haiti, Dominican Republic, Haiti AND Dominican Republic,
 
 The content analysis process revealed five different types of errors in the indexing process (see Table 2 for specific examples). Types 1 and 2 errors refer to results that were not about either country or the island. These results were excluded. Type 3 errors pertain to misprints and spelling errors. Type 4 errors involve articles about _both_ countries yet were only assigned to one. Type 5 refer to instances when neither country is labeled. Type 6 refer to Dominican Republic-related articles that were assigned a Haiti subject/geographic term. Finally, Type 7, which we termed "bordering," relates to indexing patterns that assigned entries to one country when the research is relevant to both. For instance, the example in Table 2 is about the natural history of the entire island. That is, about a species that lived _before_ geopolitical divisions existed. However, Haiti is excluded from the metadata. Given the existence of Type 7 errors, we proceeded to recode Type 7 entries with the relevant temporal-geographical designation shown in Table 3. In other words, we recoded the entries according to the geographical area that was pertinent for the research item.[^32]
 
-Table 2: Types of Cataloging Errors in AL and JLACA, as of August 30, 2019
-
 ```{=html}
 <table>
+<caption>Table 2: Types of Cataloging Errors in AL and JLACA, as of August 30, 2019</caption>
 <colgroup>
 <col style="width: 12%" />
 <col style="width: 20%" />
@@ -207,10 +240,9 @@ and migrant labor in Haiti and the Dominican Republic. Latin</p>
 </table>
 ```
 
-Table 3: Temporal-Geographical Codebook
-
 ```{=html}
 <table>
+<caption>Table 3: Temporal-Geographical Codebook</caption>
 <colgroup>
 <col style="width: 32%" />
 <col style="width: 33%" />
@@ -312,10 +344,9 @@ _Findings_
 
 The JLACA analysis revealed significant patterns. A percentage frequency distribution of the number of search results by country revealed an imbalance in the numbers of publications per country and region. The fourth column shows that nearly half (49.17%) of JLACA's search results are from South America. North American publications comprise 28.16% of the total. The proportion for Central America is much smaller, at 13.54%. The Caribbean region is in last place with 9.13%, of which Cuba figures more prominently, followed by Puerto Rico, and Haiti. JLACA'S top three countries of publication, in descending order, are Mexico, Brazil, and Peru. At the bottom of the list are the non-Spanish-speaking Caribbean islands, except Jamaica, which is in 18^th^ position.
 
-Table 4: Percentage Frequency Distribution and Rank of JLACA Search Results, by Country and Region, as of August 30, 2019
-
 ```{=html}
 <table>
+<caption>Table 4: Percentage Frequency Distribution and Rank of JLACA Search Results, by Country and Region, as of August 30, 2019</caption>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 37%" />
@@ -835,10 +866,9 @@ Table 4: Percentage Frequency Distribution and Rank of JLACA Search Results, by 
 
 We conducted a similar analysis for the AL search results. As Table 5 indicates, 50.55% of the citations are about North America, mostly (61.71%) Mexico. South America follows in the regional ranking. Peru has the most results (26.88%), followed by Brazil (19.10%), making up nearly half (45.98%) of the South American totals. Central America and the Caribbean have 10.14% and 3.99%, respectively. Most Caribbean resources are about Cuba (21.77%), followed by Haiti (13.10%), the Dominican Republic (11.87%) and Puerto Rico (10.24%).
 
-Table 5: Percentage Frequency Distribution and Rank Order of Anthropological Literature Search Results by Country and Region, as of August 30, 2019
-
 ```{=html}
 <table>
+<caption>Table 5: Percentage Frequency Distribution and Rank Order of Anthropological Literature Search Results by Country and Region, as of August 30, 2019</caption>
 <colgroup>
 <col style="width: 18%" />
 <col style="width: 30%" />
@@ -1356,10 +1386,9 @@ Table 6: Percentage Frequency Distribution of AL Search Results by Hispaniola/no
 
 JLACA search results indicate similar patterns (see Table 7). The journal has published more articles about Haiti. Most of the Dominican Republic or Haiti search results are book reviews, 60% and 70.73%, respectively. In other words, there is little original research published about either country (10 articles for the DR, 9 for Haiti). JLACA, however, has almost twice as many book reviews (15 for the Dominican Republic versus 29 for Haiti). The fact that there are more book reviews about Haiti suggests more scholarly interest in Haiti. Nonetheless, this question also requires further research.
 
-Table 7: D.R., Haiti, Hispaniola Search Results by Type of Publication for JLACA as of August 30, 2019.
-
 ```{=html}
 <table>
+<caption>Table 7: D.R., Haiti, Hispaniola Search Results by Type of Publication for JLACA as of August 30, 2019.</caption>
 <colgroup>
 <col style="width: 21%" />
 <col style="width: 20%" />
@@ -1456,10 +1485,9 @@ Subject terms: Public health; Cholera -- **Haiti**; Border crossing; Biosecurity
 
 Finally, there are more publications about each individual country, rather than about both. As Table 8 indicates, JLACA has approximately three times the number of articles about single-country research (66 individual versus 21 island-wide). AL results indicate 15 times more citations about each country (1037 individual versus 69 island-wide).
 
-Table 8: Frequency Distribution of Search Results by Individual Country (D.R., Haiti) Versus Both (D.R. and Haiti, Hispaniola) in AL and JLACA, as of August 30, 2019.
-
 ```{=html}
 <table style="width:100%;">
+<caption>Table 8: Frequency Distribution of Search Results by Individual Country (D.R., Haiti) Versus Both (D.R. and Haiti, Hispaniola) in AL and JLACA, as of August 30, 2019.</caption>
 <colgroup>
 <col style="width: 47%" />
 <col style="width: 33%" />
@@ -1525,10 +1553,9 @@ le spectateur. Ethnographie \[L\'Ethnographie\] : revue de la Société d\'ethno
 
 Subjects terms: Performance \-- **Haiti** \-- Port-au-Prince; Theater \-- **Caribbean Area**
 
-Table 9: Frequency Distribution of Select Subject and Geographic Terms by Country and Island in Anthropological Literature, as of August 30, 2019
-
 ```{=html}
 <table>
+<caption>Table 9: Frequency Distribution of Select Subject and Geographic Terms by Country and Island in Anthropological Literature, as of August 30, 2019</caption>
 <colgroup>
 <col style="width: 31%" />
 <col style="width: 21%" />
@@ -1685,7 +1712,7 @@ The patterns we have identified have significant consequences. The decision to i
 
 Efforts to decolonize the anthropology of Hispaniola require significant efforts. The research presented here offers insights into some of the less obvious areas that need work. By shedding light on these processes, it is our hope that we can facilitate the disentanglement of scholarship from its colonial past.It is imperative that United States Anthropology work in ways that open paths for scholarship from other regions. It will take intentional efforts to increase anthropological conversations around the world, as well as shift the balance of the academic dissemination sites so that anthropologists, regardless of where they are from, can be heard. Scholars in the U.S. that work in places like Haiti have the responsibility to make sure that the material that is produced on the island circulates more and is made more visible and discoverable. It is imperative that we consciously decolonize our own scholarly practices by bringing in island voices into academic discussions about the island. In addition, we must work to highlight the scholarship produced on the island and the journals published in both countries. In this way, Haitians and Dominicans will have an opportunity to speak for themselves.
 
-[^1]: Jayaram, Kiran C., Tess Kulstad‐González, Luisa Rollins Castillo, and Nadège Nau. \"Debating Decolonization in the Caribbean: Assessment and Polyvocal Response to Island Anthropologies Workshop (March 18--20, 2019).\" *The Journal of Latin American and Caribbean Anthropology* 25, no. 3 (2020): 473-487.
+[^1]: Jayaram, Kiran C., Tess Kulstad‐González, Luisa Rollins Castillo, and Nadège Nau. \"Debating Decolonization in the Caribbean: Assessment and Polyvocal Response to Island Anthropologies Workshop (March 18--20, 2019).\" _The Journal of Latin American and Caribbean Anthropology_ 25, no. 3 (2020): 473-487.
 
 [^2]: Ibid.
 
@@ -1693,7 +1720,7 @@ Efforts to decolonize the anthropology of Hispaniola require significant efforts
 
 [^4]: Ibid, 2.
 
-[^5]: Jayaram, Kiran C., Tess Kulstad‐González, Luisa Rollins Castillo, and Nadège Nau. \"Debating Decolonization in the Caribbean: Assessment and Polyvocal Response to Island Anthropologies Workshop (March 18--20, 2019).\" *The Journal of Latin American and Caribbean Anthropology* 25, no. 3 (2020): 473-487.
+[^5]: Jayaram, Kiran C., Tess Kulstad‐González, Luisa Rollins Castillo, and Nadège Nau. \"Debating Decolonization in the Caribbean: Assessment and Polyvocal Response to Island Anthropologies Workshop (March 18--20, 2019).\" _The Journal of Latin American and Caribbean Anthropology_ 25, no. 3 (2020): 473-487.
 
 [^6]: "Anthropological Literature." Harvard Library. Accessed October 13, 2022, [https://library.harvard.edu/services-tools/anthropological-literature.]{.underline}
 
@@ -1705,7 +1732,7 @@ Efforts to decolonize the anthropology of Hispaniola require significant efforts
 
 [^10]: Ibid.
 
-[^11]: Jayaram, Kiran C., Tess Kulstad‐González, Luisa Rollins Castillo, and Nadège Nau. \"Debating Decolonization in the Caribbean: Assessment and Polyvocal Response to Island Anthropologies Workshop (March 18--20, 2019).\" *The Journal of Latin American and Caribbean Anthropology* 25, no. 3 (2020): 473-487.
+[^11]: Jayaram, Kiran C., Tess Kulstad‐González, Luisa Rollins Castillo, and Nadège Nau. \"Debating Decolonization in the Caribbean: Assessment and Polyvocal Response to Island Anthropologies Workshop (March 18--20, 2019).\" _The Journal of Latin American and Caribbean Anthropology_ 25, no. 3 (2020): 473-487.
 
 [^12]: [Mayes, April J. and Kiran C. Jayaram. (2018) Transnational Hispaniola An Introduction. _In_: Mayes , A. J., & Jayaram, K. C. _Transnational Hispaniola: New Directions in Haitian and Dominican Studies_ (April J. Mayes & Kiran C. Jayaram, Eds.; 1st ed.). University of Florida Press. [[https://doi.org/10.2307/j.ctvx07bs1]{.underline}](https://doi.org/10.2307/j.ctvx07bs1)]{.mark}
 
@@ -1761,21 +1788,21 @@ Efforts to decolonize the anthropology of Hispaniola require significant efforts
 
 [^38]: Faye Venetia Harrison and Association of Black Anthropologists. _Decolonizing Anthropology: Moving Further toward an Anthropology of Liberation_. Third edition. (Association of Black Anthropologists, American Anthropological Association, 2010).
 
-[^39]: Ntarangwi, M. (2010). *Reversed gaze : an African ethnography of American anthropology*. University of Illinois Press.
+[^39]: Ntarangwi, M. (2010). _Reversed gaze : an African ethnography of American anthropology_. University of Illinois Press.
 
-[^40]: Collyer, Fran M. \"Global patterns in the publishing of academic knowledge: Global North, global South.\" *Current Sociology* 66, no. 1 (2018): 56-73.
+[^40]: Collyer, Fran M. \"Global patterns in the publishing of academic knowledge: Global North, global South.\" _Current Sociology_ 66, no. 1 (2018): 56-73.
 
 [^41]: Heleta and Mzileni, "Bibliometric Coloniality," 1. **Is the above cited in this work? Citations unclear**
 
-[^42]: See Heleta and Mzileni, "Bibliometric Coloniality"; Deere, "The Practice of Latin American Studies"; and Beigel, Fernanda. \"Introduction: Current tensions and trends in the World Scientific System.\" *Current sociology* 62, no. 5 (2014): 617-625.
+[^42]: See Heleta and Mzileni, "Bibliometric Coloniality"; Deere, "The Practice of Latin American Studies"; and Beigel, Fernanda. \"Introduction: Current tensions and trends in the World Scientific System.\" _Current sociology_ 62, no. 5 (2014): 617-625.
 
-[^43]: Alatas, Syed Farid. \"Academic dependency and the global division of labour in the social sciences.\" *Current sociology* 51, no. 6 (2003): 599-613.
+[^43]: Alatas, Syed Farid. \"Academic dependency and the global division of labour in the social sciences.\" _Current sociology_ 51, no. 6 (2003): 599-613.
 
 [^44]: [Mayes, April J. and Kiran C. Jayaram. (2018) Transnational Hispaniola An Introduction. _In_: Mayes , A. J., & Jayaram, K. C. _Transnational Hispaniola: New Directions in Haitian and Dominican Studies_ (April J. Mayes & Kiran C. Jayaram, Eds.; 1st ed.). University of Florida Press. [[https://doi.org/10.2307/j.ctvx07bs1]{.underline}](https://doi.org/10.2307/j.ctvx07bs1)]{.mark}
 
-[^45]: Jayaram, Kiran C., Tess Kulstad‐González, Luisa Rollins Castillo, and Nadège Nau. \"Debating Decolonization in the Caribbean: Assessment and Polyvocal Response to Island Anthropologies Workshop (March 18--20, 2019).\" *The Journal of Latin American and Caribbean Anthropology* 25, no. 3 (2020): 473-487.
+[^45]: Jayaram, Kiran C., Tess Kulstad‐González, Luisa Rollins Castillo, and Nadège Nau. \"Debating Decolonization in the Caribbean: Assessment and Polyvocal Response to Island Anthropologies Workshop (March 18--20, 2019).\" _The Journal of Latin American and Caribbean Anthropology_ 25, no. 3 (2020): 473-487.
 
-[^46]: Wimmer, Andreas, and Nina Glick Schiller. \"Methodological nationalism and beyond: nation--state building, migration and the social sciences.\" *Global networks* 2, no. 4 (2002): 301-334.
+[^46]: Wimmer, Andreas, and Nina Glick Schiller. \"Methodological nationalism and beyond: nation--state building, migration and the social sciences.\" _Global networks_ 2, no. 4 (2002): 301-334.
 
 [^47]: Richard Harvey Brown and Beth Davis-Brown, "The Making of Memory: The Politics of Archives, Libraries and Museums in the Construction of National Consciousness." _History of the Human Sciences_ 11, no. 4 (1998): 17--32. [https://doi.org/10.1177/095269519801100402.]{.underline}
 

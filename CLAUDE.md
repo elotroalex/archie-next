@@ -2,7 +2,7 @@
 
 ## What this is
 
-**archipelagos** (`archipelagosjournal.org`) is a peer-reviewed, born-digital academic journal devoted to Caribbean digital humanities. It publishes scholarly essays, digital project exchanges, and project reviews. The journal is trilingual: English, Spanish, and French. ISSN: 2689-842X. Published by Columbia University Libraries.
+**archipelagos** (`archipelagosjournal.org`) is a peer-reviewed, born-digital academic journal devoted to Caribbean digital humanities. It publishes scholarly essays, digital project exchanges, and project reviews. The journal is trilingual: English, Spanish, and French. ISSN: 2689-842X.
 
 This repository (`archie-next`) is a migration of the original Jekyll 4.x site to **Eleventy 3.x**. Issues 1–9 are integrated. The live domain `archipelagosjournal.org` still points to the old Jekyll site until final validation and cutover.
 
@@ -53,6 +53,7 @@ utility/
 **Interactives** (pure-HTML pieces like the Parham essay) are listed per-issue in `src/_data/issues.js` under an `interactives` array and rendered in `toc.njk` under Featured. Their HTML files pass through Eleventy untouched via `addPassthroughCopy` + `eleventyConfig.ignores`.
 
 **Images — two layouts:**
+
 - Issues 1–8 (legacy): `src/images/issueXX/filename.jpg` → served at `/images/issueXX/filename.jpg`
 - Issues 9+ (co-located): `src/issueXX/images/filename.jpg` → served at `/issueXX/images/filename.jpg`
 
@@ -78,6 +79,7 @@ bash utility/intake/convert-docx.sh src/issue09/incoming/author-title.docx
 ```
 
 `convert-docx.sh` handles automatically:
+
 - Images extracted to `src/issueXX/images/slug-imageN.ext` (no `media/` subdirectory)
 - Image paths rewritten to absolute `/issueXX/images/…`
 - Tables converted from Pandoc grid format to HTML (works in markdown-it; journal.lua reads them back as LaTeX tables for PDF)
@@ -87,11 +89,13 @@ bash utility/intake/convert-docx.sh src/issue09/incoming/author-title.docx
 ## PDF pipeline
 
 To generate a single article:
+
 ```bash
 bash utility/latex/convert.sh src/issue09/article.md
 ```
 
 To regenerate a full issue:
+
 ```bash
 bash utility/latex/makeIssues.sh issue09
 ```
@@ -99,6 +103,7 @@ bash utility/latex/makeIssues.sh issue09
 Requires Pandoc ≥ 3.0 and lualatex (TeX Live). The template uses TeX Gyre Heros (open-source Helvetica Neue equivalent).
 
 **Known Lua filter behaviors in `journal.lua`:**
+
 - `Pandoc` walker: reassembles HTML `<figure>` RawBlock sequences into `\includegraphics` LaTeX
 - `Image`: strips `width` attribute; strips leading `/` from src so lualatex resolves relative to resource-path
 - `RawBlock`: converts HTML `<table>` blocks (produced by intake) back to Pandoc Table elements for LaTeX

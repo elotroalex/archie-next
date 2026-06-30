@@ -459,15 +459,23 @@ span.caption, figcaption {
 
 
 /* Tables */
+caption {
+  color: #939598;
+  font-size: 0.85rem;
+  font-style: italic;
+  text-align: left;
+  caption-side: top;
+  padding-bottom: 0.5rem;
+}
+
 table {
   table-layout: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   width: 100%;
   border: 1px solid #e5e5e5;
   border-collapse: collapse;
   border-spacing: 0;
-  display: block;
-  overflow-x:auto;
+  overflow-x: auto;
   margin-top: 2rem;
 }
 
