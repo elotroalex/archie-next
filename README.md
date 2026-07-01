@@ -53,7 +53,7 @@ Live site: [archipelagosjournal.org](http://archipelagosjournal.org)
    npm run check-issue -- issue09
    ```
 
-   Verifies HTML validity, internal/external links, front-matter and i18n completeness, image existence/alt text/minimum width, PDF existence, and footnote anchor pairing — see [Issue integrity check](#issue-integrity-check).
+   Verifies HTML validity, internal/external links, front-matter and i18n completeness, curly/smart quotation marks, image existence/alt text/minimum width, PDF existence, and footnote anchor pairing — see [Issue integrity check](#issue-integrity-check).
 
 9. **Commit and push** — GitHub Actions builds and deploys automatically.
 
@@ -232,6 +232,7 @@ This uses Pandoc 3 (already required by the PDF pipeline) to:
 - Convert the `.docx` to `src/issue09/author-title.md`
 - Extract embedded images to `src/issue09/images/media/`
 - Rewrite image paths to absolute `/issue09/images/media/…` (required for language-variant pages)
+- Normalize bare curly/smart quotes (`‘ ’ “ ”`) left over from Word — most often found in table cells — to the same escaped straight-quote style used throughout the rest of the document
 - Inject a complete YAML front matter stub with `# TODO` placeholders for every required field
 
 Edit the output `.md` and fill in all `# TODO` fields before building. The `section` field must be exactly one of: `introduction`, `articles`, `projects`, `reviews` — the TOC will not display the article otherwise.
@@ -280,13 +281,14 @@ Before cutting a finished issue over to production, run a full integrity gate sc
 npm run check-issue -- issue09   # defaults to the current issue (last key in issues.js) if omitted
 ```
 
-This builds the site, then runs six checks (`utility/check-issue/`) and exits non-zero if any of them fail:
+This builds the site, then runs seven checks (`utility/check-issue/`) and exits non-zero if any of them fail:
 
 | Check | What it verifies |
 | --- | --- |
 | **HTML validity** | Runs [html-validate](https://html-validate.org/) against the issue's built pages (en/es/fr). Config (`htmlvalidate.config.json`) disables rules that just reflect this codebase's deliberate conventions (self-closing void elements, inline table-width styles, legacy Dublin Core `profile`/`scheme` attributes) so only genuine structural errors surface — unclosed/misnested tags, duplicate ids, empty headings, etc. |
 | **Links** | Runs linkinator with the issue's own built pages as crawl entry points (reuses the root `linkinator.config.json` unmodified). `--recurse` stays on, so links out into older issues, `/public/`, the homepage, and cross-language switcher links are still followed and validated — this is narrower and faster than `npm run check-links`, not just a re-run of it. Unlike `report-links.sh`, unresolved (`[0]`) links are treated as hard failures here. |
 | **Front matter & i18n** | Every article's front matter is checked field-by-field against the intake stub's known placeholder text (not just a `# TODO:` grep — this also catches placeholders where the `# TODO:` prefix was stripped but the text itself was never replaced). Also confirms the issue has a label in `en.yml`, `es.yml`, and `fr.yml`. |
+| **Quotation marks** | Flags curly/smart quotation marks (`‘ ’ “ ”`) left in an article's markdown source — a common Word autocorrect artifact contributors are asked to avoid (see [Submission Guidelines](src/_i18n/en/authors/authors.md)), which can render unreliably through the PDF/LaTeX pipeline. `convert-docx.sh` now normalizes these automatically at intake time, so this is mainly a safety net for hand-edited content or articles converted before that fix. |
 | **Images** | Every `<img>` under `/issueXX/images/` (or the legacy `/images/issueXX/`) in the built English page must exist on disk, have non-empty `alt` text, and meet a minimum width (`check-issue.config.json`, default 800px, matching the [author image guidelines](#adding-a-new-issue)). |
 | **PDFs** | Every article without `pdf: false` must have a matching file at `src/assets/issueXX/<slug>.pdf`. |
 | **Footnotes** | Every footnote reference (`#fnrefN`) in the built HTML must have a matching definition (`#fnN`), and vice versa — catches renumbering mistakes. |

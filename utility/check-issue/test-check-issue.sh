@@ -60,6 +60,13 @@ check_contains "i18n label: fr missing is detected" "$FM_OUTPUT" "FAIL - i18n la
 if [ "$FM_EXIT" -ne 0 ]; then echo "  ok - overall exit is nonzero"; else echo "  FAIL - overall exit should be nonzero"; FAIL=1; fi
 
 echo ""
+echo "== check-quotes.js =="
+QUOTES_OUTPUT=$(node "$SCRIPT_DIR/check-quotes.js" "$MANIFEST" --root "$FIXTURE_ROOT" 2>&1)
+check_contains "clean article has no curly quotes" "$QUOTES_OUTPUT" "ok - quotes: clean-article.md"
+check_contains "broken article's curly double quote is detected" "$QUOTES_OUTPUT" "FAIL - quotes: broken-article.md has 1 line(s) with curly quotation marks"
+check_contains "broken article's curly quote line is reported" "$QUOTES_OUTPUT" "curly quote"
+
+echo ""
 echo "== check-images.js =="
 IMG_OUTPUT=$(node "$SCRIPT_DIR/check-images.js" "$MANIFEST" --root "$FIXTURE_ROOT" 2>&1)
 check_contains "wide image with alt passes" "$IMG_OUTPUT" "ok - image: /issuefx/images/wide.png"

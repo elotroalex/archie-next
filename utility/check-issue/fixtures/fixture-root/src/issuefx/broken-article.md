@@ -20,3 +20,5 @@ language: en
 
 This article deliberately still has unresolved front-matter placeholders,
 and no `pdf: false`, so it should also fail the PDF existence check.
+
+This line has a “curly quote” and a ‘single curly quote’ left over from Word.

@@ -82,6 +82,12 @@ done
 #   {.underline} — underlined text, most often Word's auto-underlined
 #                  hyperlinks (→ stray literal brackets/braces in rendered HTML)
 #   {dir="rtl"}  — curly/smart quotes tagged as RTL by Unicode bidi algorithm
+# Also normalize bare curly/smart quotes (‘ ’ “ ”) that Pandoc otherwise
+# passes through untouched — these are a common Word autocorrect artifact
+# (contributors are asked to avoid them, see authors.md) and render
+# unreliably through the PDF/LaTeX pipeline. Converted to the same escaped
+# straight-quote form (\" / \') Pandoc already uses for every other quote
+# in the document, so the output style stays consistent throughout.
 BODY=$(sed \
   -e "s|](images/|](/$ISSUE_SLUG/images/|g" \
   -e 's/\[\([^]]*\)\]{\.mark}/\1/g' \
@@ -89,6 +95,8 @@ BODY=$(sed \
   -e 's/\["\]{dir="rtl"}/"/g' \
   -e "s/\['\]{dir=\"rtl\"}/'/g" \
   -e 's/\["'"'"'\]{dir="rtl"}/"\x27/g' \
+  -e 's/[“”]/\\"/g' \
+  -e 's/[‘’]/\\'"'"'/g' \
   "$TMP")
 
 # Convert img=/caption=/alt=/url= placeholder blocks (author-typed figure
