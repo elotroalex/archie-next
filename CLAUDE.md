@@ -135,6 +135,20 @@ npm run report-links                    # writes broken-links.txt + missing-loca
 
 `[0]` status on local image paths is a linkinator limitation, not a real error. The check also runs in CI on every push (`continue-on-error: true`).
 
+## Issue integrity check
+
+Before cutting over a finished issue, run a full integrity gate over just that issue:
+
+```bash
+npm run check-issue -- issue09   # defaults to the current issue if omitted
+```
+
+Runs (`utility/check-issue/`): HTML validity (`html-validate`, config tuned to ignore this codebase's deliberate self-closing-void-tag/inline-table-style/legacy-DC-meta conventions — see `htmlvalidate.config.json`), link integrity (linkinator, scoped to the issue's own built pages as crawl entry points but still following `--recurse` into the rest of the site — reuses the root `linkinator.config.json` unmodified; unlike `report-links.sh`, unresolved `[0]` links are treated as hard failures here), front-matter completeness (checks parsed field values against the intake stub's known placeholder text, not just a literal `# TODO:` grep — catches cases where the prefix was stripped but the placeholder text wasn't replaced) and i18n label presence in all three yml files, image existence + non-empty alt text + minimum width (`utility/check-issue/check-issue.config.json`, default 800px, matching the author guidelines), PDF existence for every article that doesn't set `pdf: false`, and footnote anchor pairing (every `#fnrefN` has a matching `#fnN` and vice versa).
+
+`bash utility/check-issue/test-check-issue.sh` runs the fixture-based unit tests for the individual check scripts (`utility/check-issue/fixtures/fixture-root/`), following the same pattern as `utility/intake/test-convert-images.sh`.
+
+Manual script only — not wired into CI.
+
 ## Development
 
 ```bash

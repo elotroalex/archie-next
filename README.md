@@ -47,7 +47,15 @@ Live site: [archipelagosjournal.org](http://archipelagosjournal.org)
 
    Open `http://localhost:8080` and check the homepage TOC.
 
-8. **Commit and push** — GitHub Actions builds and deploys automatically.
+8. **Run the issue integrity check**
+
+   ```bash
+   npm run check-issue -- issue09
+   ```
+
+   Verifies HTML validity, internal/external links, front-matter and i18n completeness, image existence/alt text/minimum width, PDF existence, and footnote anchor pairing — see [Issue integrity check](#issue-integrity-check).
+
+9. **Commit and push** — GitHub Actions builds and deploys automatically.
 
 ---
 
@@ -261,6 +269,35 @@ This writes two files to the repo root (both gitignored):
 **What to ignore:** `[0]` status on local image paths is a linkinator limitation (it cannot HEAD-check local files) — these are not real errors. Dead links in article body content (old blogs, defunct academic sites) are expected and not fixable from here.
 
 **CI:** The link check runs automatically on every push via GitHub Actions (`.github/workflows/build.yml`) with `continue-on-error: true`, so it surfaces the report without blocking deployment.
+
+---
+
+## Issue integrity check
+
+Before cutting a finished issue over to production, run a full integrity gate scoped to just that issue:
+
+```bash
+npm run check-issue -- issue09   # defaults to the current issue (last key in issues.js) if omitted
+```
+
+This builds the site, then runs six checks (`utility/check-issue/`) and exits non-zero if any of them fail:
+
+| Check | What it verifies |
+| --- | --- |
+| **HTML validity** | Runs [html-validate](https://html-validate.org/) against the issue's built pages (en/es/fr). Config (`htmlvalidate.config.json`) disables rules that just reflect this codebase's deliberate conventions (self-closing void elements, inline table-width styles, legacy Dublin Core `profile`/`scheme` attributes) so only genuine structural errors surface — unclosed/misnested tags, duplicate ids, empty headings, etc. |
+| **Links** | Runs linkinator with the issue's own built pages as crawl entry points (reuses the root `linkinator.config.json` unmodified). `--recurse` stays on, so links out into older issues, `/public/`, the homepage, and cross-language switcher links are still followed and validated — this is narrower and faster than `npm run check-links`, not just a re-run of it. Unlike `report-links.sh`, unresolved (`[0]`) links are treated as hard failures here. |
+| **Front matter & i18n** | Every article's front matter is checked field-by-field against the intake stub's known placeholder text (not just a `# TODO:` grep — this also catches placeholders where the `# TODO:` prefix was stripped but the text itself was never replaced). Also confirms the issue has a label in `en.yml`, `es.yml`, and `fr.yml`. |
+| **Images** | Every `<img>` under `/issueXX/images/` (or the legacy `/images/issueXX/`) in the built English page must exist on disk, have non-empty `alt` text, and meet a minimum width (`check-issue.config.json`, default 800px, matching the [author image guidelines](#adding-a-new-issue)). |
+| **PDFs** | Every article without `pdf: false` must have a matching file at `src/assets/issueXX/<slug>.pdf`. |
+| **Footnotes** | Every footnote reference (`#fnrefN`) in the built HTML must have a matching definition (`#fnN`), and vice versa — catches renumbering mistakes. |
+
+Run the fixture-based unit tests for the check scripts themselves with:
+
+```bash
+bash utility/check-issue/test-check-issue.sh
+```
+
+This is a manual, standalone script — it is **not** wired into CI, so it won't block a build.
 
 ---
 

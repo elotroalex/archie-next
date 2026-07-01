@@ -15,8 +15,7 @@ layout: default
   <ul id="footer-nav">
     <li><a href="#">Return to top</a></li>
     {% if site["current-number"] == issue %}
-    <li> | </li>
-    <a href="{{ '/' | url }}">Return to Table of Contents</a>
+    <li> | <a href="{{ '/' | url }}">Return to Table of Contents</a></li>
     {% endif %}
   </ul>
 </div>

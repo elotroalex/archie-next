@@ -7,7 +7,8 @@
     "serve": "eleventy --serve",
     "debug": "DEBUG=Eleventy* eleventy",
     "check-links": "cd _site && npx linkinator . --config ../linkinator.config.json",
-    "report-links": "bash utility/report-links.sh"
+    "report-links": "bash utility/report-links.sh",
+    "check-issue": "bash utility/check-issue/check-issue.sh"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,8 @@
     "markdown-it-footnote": "^4.0.0"
   },
   "devDependencies": {
+    "html-validate": "^8.29.0",
+    "image-size": "^2.0.2",
     "linkinator": "^7.6.1"
   }
 }
