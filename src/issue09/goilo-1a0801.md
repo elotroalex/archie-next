@@ -12,7 +12,7 @@ author:
       Author bio in markdown.
 pubDate: "Month YYYY"
 issue: "9"
-order: "position within section (integer)"
+order: "1"
 abstract: >
   Article abstract.
 language: en
