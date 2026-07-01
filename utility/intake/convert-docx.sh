@@ -78,15 +78,24 @@ done
 # Rewrite image paths to absolute /issueXX/images/... so they work on
 # language-variant pages (/es/, /fr/) which are served from a different depth.
 # Also strip Word copy-editing artifacts that Pandoc preserves:
-#   {.mark}     — highlighted text (→ \hl{} in LaTeX, requires soul package)
-#   {dir="rtl"} — curly/smart quotes tagged as RTL by Unicode bidi algorithm
+#   {.mark}      — highlighted text (→ \hl{} in LaTeX, requires soul package)
+#   {.underline} — underlined text, most often Word's auto-underlined
+#                  hyperlinks (→ stray literal brackets/braces in rendered HTML)
+#   {dir="rtl"}  — curly/smart quotes tagged as RTL by Unicode bidi algorithm
 BODY=$(sed \
   -e "s|](images/|](/$ISSUE_SLUG/images/|g" \
   -e 's/\[\([^]]*\)\]{\.mark}/\1/g' \
+  -e 's/\[\([^][]*\)\]{\.underline}/\1/g' \
   -e 's/\["\]{dir="rtl"}/"/g' \
   -e "s/\['\]{dir=\"rtl\"}/'/g" \
   -e 's/\["'"'"'\]{dir="rtl"}/"\x27/g' \
   "$TMP")
+
+# Convert img=/caption=/alt=/url= placeholder blocks (author-typed figure
+# markup, used when images aren't embedded in the docx yet) into <figure>
+# HTML. Blocks that don't match the expected shape are left as-is for
+# manual conversion--see convert-images.py for the exact format required.
+BODY=$(printf '%s' "$BODY" | python3 "$SCRIPT_DIR/convert-images.py" "$ISSUE_SLUG")
 rm -f "$TMP"
 
 # Write the output file: complete front matter stub followed by the article body.

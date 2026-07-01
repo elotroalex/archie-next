@@ -65,12 +65,12 @@ Utilice la siguiente rúbrica en sus documentos, escriba cada carácter en el or
 
 ~~~ text
 img="my-image.jpg"
-title="insert title here"
-caption="insert caption here."
+caption="insert caption here"
+alt="insert alt text here."
 url="http://optional-url.com"
 ~~~
 
-Nótese bien: Las URLs son opcionales y solo deben usarse cuando desee que la imagen apunte a un recurso específico.
+Nótese bien: `img`, `caption` y `alt` son obligatorios; `url` es opcional y solo debe usarse cuando desee que la imagen apunte a un recurso específico. Cada línea debe estar en su propio párrafo (una línea en blanco entre ellas, sin saltos de línea manuales en medio de una). Si su descripción (caption) o texto alternativo (alt) necesita incluir comillas, escápelas con una barra invertida, por ejemplo: `caption="Ella dijo \"hola\" a la cámara"`.
 
 Le pedimos que nombre sus archivos de imagen utilizando una o dos palabras clave separadas por un guión como en el ejemplo anterior. **No use espacios o letras mayúsculas en su nombre de archivo**. Recuerde proporcionar texto de línea de crédito según sea necesario, particularmente para fotografías. El campo URL es opcional y solo debe usarlo si desea que el lector enlace desde su imagen a otra página en Internet. Estos archivos deben enviarse por separado junto con el documento de Office o el archivo Markdown.
 

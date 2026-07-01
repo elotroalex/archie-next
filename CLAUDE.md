@@ -84,7 +84,21 @@ bash utility/intake/convert-docx.sh src/issue09/incoming/author-title.docx
 - Image paths rewritten to absolute `/issueXX/images/…`
 - Tables converted from Pandoc grid format to HTML (works in markdown-it; journal.lua reads them back as LaTeX tables for PDF)
 - `{.mark}` highlighted spans stripped (Word copy-editing artifact → `\hl{}` LaTeX error)
+- `{.underline}` spans stripped (Word auto-underlined hyperlinks → stray literal brackets in rendered HTML)
 - `{dir="rtl"}` spans stripped from curly/smart quotes
+- Figure placeholders converted to `<figure>` HTML (`utility/intake/convert-images.py`) — used when an author's images aren't embedded in the docx yet and are instead typed as their own paragraphs, in this exact order:
+
+  ```
+  img="my-image.jpg"
+
+  caption="insert caption here"
+
+  alt="insert alt text here."
+
+  url="http://optional-url.com"
+  ```
+
+  `url` is optional; `img`, `caption`, and `alt` are required, each in its own paragraph (no manual line breaks inside a field). Quotation marks inside `caption` or `alt` must be escaped with a backslash (`\"`). A block that doesn't match this shape exactly is left as plain text in the output markdown for manual conversion. Run `bash utility/intake/test-convert-images.sh` to check the converter against its fixtures.
 
 ## PDF pipeline
 

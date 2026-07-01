@@ -63,12 +63,12 @@ Please use the following rubric in your documents, typing each character in the 
 
 ~~~ text
 img="my-image.jpg"
-title="insert title here"
-caption="insert caption here."
+caption="insert caption here"
+alt="insert alt text here."
 url="http://optional-url.com"
 ~~~
 
-N.B. Urls are optional, and should only be used when you want the image to point to a specific resource.
+N.B. `img`, `caption`, and `alt` are required; `url` is optional and should only be used when you want the image to point to a specific resource. Each line must be its own paragraph (a plain Enter/blank line between them, no manual line breaks in the middle of one). If your caption or alt text needs to include quotation marks, escape them with a backslash, e.g. `caption="She said \"hello\" to the camera"`.
 
 We ask that you name your image files using one or two keywords separated by a hyphen as in the example above. **Do not use spaces or capital letters in your file name**. Please remember to provide credit line text as needed, particularly for photographs inside the caption. 
 

@@ -58,12 +58,12 @@ Veuillez utiliser la rubrique suivante dans vos documents, en tapant chaque cara
 
 ~~~ text
 img="my-image.jpg"
-title="insert title here"
-caption="insert caption here."
+caption="insert caption here"
+alt="insert alt text here."
 url="http://optional-url.com"
 ~~~
 
-N.B. Les URL sont facultatives et ne doivent être utilisées que si vous souhaitez que l'image pointe vers une ressource spécifique.
+N.B. `img`, `caption` et `alt` sont obligatoires; `url` est facultative et ne doit être utilisée que si vous souhaitez que l'image pointe vers une ressource spécifique. Chaque ligne doit constituer son propre paragraphe (une ligne vide entre chacune, sans saut de ligne manuel au milieu de l'une d'elles). Si votre légende (caption) ou votre texte alternatif (alt) doit inclure des guillemets, échappez-les avec une barre oblique inverse, par exemple: `caption="Elle a dit \"bonjour\" à la caméra"`.
 
 Nous vous demandons de nommer vos fichiers image en utilisant un ou deux mots-clés séparés par un trait d'union, comme dans l'exemple ci-dessus. **N'utilisez pas d'espaces ni de lettres majuscules dans votre nom de fichier**. N'oubliez pas de fournir le texte de la ligne de crédit si nécessaire, en particulier pour les photographies. Le champ URL est facultatif et vous ne devez l'utiliser que si vous souhaitez que le lecteur crée un lien entre votre image et une autre page sur Internet.
 
