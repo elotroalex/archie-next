@@ -8,13 +8,15 @@ permalink: index.html
 <h1 class="journal-title">{{ site.title }}</h1>
 <h2 class="tagline">{{ i18n[lang].global.subtitle }}</h2>
 
-<hr>
+<p>{{ i18n[lang].global.blurb | safe }}</p>
+<p><a href="{{ '/about.html' | url }}">{{ i18n[lang].global.read_more }}</a></p>
+
+<hr />
 
 <h2>{{ i18n[lang].issues[site.current] }}</h2>
-{% set issueTag = site.current %}
-{% include "toc.njk" %}
+{% set issueTag = site.current %} {% include "toc.njk" %}
 
-<hr>
+<hr />
 
 {% include "past-issues.njk" %}
 
