@@ -577,16 +577,16 @@ languages.
     Curazoleña_ (Curaçao: Imprenta di Vicariato, 1928),
     [https://coleccion.aw/show/?UNIVERSITEITLEIDEN-DIG-444994](https://coleccion.aw/show/?UNIVERSITEITLEIDEN-DIG-444994); N.M. Geerdink and Jesurun Pinto, _Cuentanan di Nanzi_ (Curaçao:
     Fundasjon Nilda Pinto, 1952),
-    [<https://coleccion.aw/show/?BNA-DIG-PINTO-NANZI-1952>.]
+    <https://coleccion.aw/show/?BNA-DIG-PINTO-NANZI-1952>.
 
 [^15]:
     "Corant -- Newspapers," Coleccion Aruba. URL =
-    [<https://coleccion.aw/browse/?col=arubanewspapers&sort=date+desc>].
+    <https://coleccion.aw/browse/?col=arubanewspapers&sort=date+desc>.
 
 [^16]:
     "Coleccion Showtime," Coleccion Aruba,
     [https://coleccion.aw/browse/?col=ana-dig-showtime&sort=addeddate+desc](https://coleccion.aw/browse/?col=ana-dig-showtime&sort=addeddate+desc); "Telearuba," Coleccion Aruba,
-    [<https://coleccion.aw/browse/?col=telearuba&sort=date+desc>.]
+    <https://coleccion.aw/browse/?col=telearuba&sort=date+desc>.
 
 [^17]:
     Rachael Gilmour, "'A Nice Derangement of Epitaphs': Missioniary
@@ -603,7 +603,7 @@ languages.
     of Universities and the National Language: Language Policy
     Interventions and Case Studies*, eds. Danny Pieters & Thijs
     Keersmaekers, (Berlin: Peter Lang, 2020), 155-173,
-    [<https://doi.org/10.3726/b17283>.]
+    <https://doi.org/10.3726/b17283>.
 
 [^19]:
     Wim Rutgers et al., _Jacobus Putman: Godsdienst, taal en
