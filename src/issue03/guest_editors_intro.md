@@ -39,7 +39,7 @@ carried <br>
 
 (this, <br>
 
-<ul class="multiverse" data-multiverse-timer="3000"><li>political and deliberate lost-in-translation</li><li>masking</li><li>testimony</li><li><i>mi isla</i></li>)</ul>
+<ul class="multiverse" data-multiverse-timer="3000"><li>political and deliberate lost-in-translation</li><li>masking</li><li>testimony</li><li><i>mi isla</i></li></ul>)
 
 for years <br>
 
