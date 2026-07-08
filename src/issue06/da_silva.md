@@ -135,14 +135,14 @@ Understanding the past
 The MOF's digitization project also brings to light materials related to the Habitation Guillaume-Ogier, the eighteenth-century sugarcane plantation on which the museum stands. Museum archives include items used in the cultivation of sugarcane and in the production of sugar, documents related to the life of Ogier and his contemporaries, and photographs that document the condition plantation structures were in at the time the site was purchased. A photograph dated to the 1970s, for example, shows a prerestoration view of the aqueduct and the east facade (figure 4). As a whole, these photographs of surviving structures and their foundations depict the ruins of a robust plantation whose operation coincided with Saint-Domingue's most profitable decades.[^30] Their digitization contributes to knowledge of Saint-Domingue's plantation system, the years leading up to the Haitian Revolution, life and society in the Montrouis region, and events specifically tied to Ogier's plantation.
 
 <figure>
-<img src="/images/issue06/valence_1_nms_mof_figure4.jpg" alt="Habitation Guillame-Ogier" loading="lazy">
+<img src="/images/issue06/valence_1_nms_mof_figure4.jpg" alt="Remnants of the Habitation Guillaume-Ogier as it appeared in the 1970s" loading="lazy">
 <figcaption>Figure 4. Remnants of the Habitation Guillaume-Ogier as it appeared in the 1970s.</figcaption>
 </figure>
 
 Also pertinent to the site's history are photographs and documents related to the development of the museum itself. These materials ease research into which aspects of the MOF pertain to the distant past and which were added during the museum's construction. They also indicate transformations to the museum and its exhibitions, painting a picture of how the MOF reached its current state (figure 5). Additionally, they may aid development of a reference guide for collection items that may have been altered over time and showcase changes related to each director's curatorial style, the adoption of best practices over the course of the museum's history, and new pedagogical tools.
 
 <figure>
-<img src="/images/issue06/valence_1_nms_mof_figure5.jpg" alt="Habitation Guillame-Ogier" loading="lazy">
+<img src="/images/issue06/valence_1_nms_mof_figure5.jpg" alt="The Habitation Guillaume-Ogier exhibit in the 1980s, 1990s, and 2015" loading="lazy">
 <figcaption>Figure 5. The Habitation exhibit in the 1980s, 1990s, and in 2015.</figcaption>
 </figure>
 

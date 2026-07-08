@@ -32,7 +32,7 @@ Depestre wrote *Hadriana dans tous mes rêves* in France, where he had been livi
 
 *Hadriana*'s nonlinear structure, whose fragmentation is especially evident in the second movement, is a challenge for readers to follow and forces them to continually go back a few pages to rectify information or try to put the pieces together. For this reason, the website of the In All My Dreams book club includes a "Reader's Guide" with different tools (a list of characters, a map of the novel's structure) to give readers a better idea of how the novel is structured, who is who, and what is happening in each movement. The novel's nonlinearity made me ask myself what sort of project to build around it to contribute to the guide without spoiling the reading process by overexplaining. This central concern led to the creation of "Hadriana in Context: Timelines."
 
-<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1aH7yME3-wtTrFftpG9Ix57LtyG1Y7OldgWGLZPw54Bs&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe><span class="caption">Interactive 1. Hadriana in Context: Timelines</span>
+<iframe title="Interactive timeline: Hadriana in Context" src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1aH7yME3-wtTrFftpG9Ix57LtyG1Y7OldgWGLZPw54Bs&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe><span class="caption">Interactive 1. Hadriana in Context: Timelines</span>
 
 <br>
 
@@ -106,24 +106,24 @@ That said, the timelines proved to be an interesting feature for the book club a
 
 ---
 
-[^1]: NOLA 2021, "Reader's Guide: A 'Map' of Hadriana," accessed 18 January 2022, [<https://web.archive.org>](https://web.archive.org/web/20210520185531/https:/nola2021.iamdbookclub.com/a-map-of-hadriana-and-cast-of-characters/).
+[^1]: NOLA 2021, "Reader's Guide: A 'Map' of Hadriana," accessed 18 January 2022, [https://web.archive.org](https://web.archive.org/web/20210520185531/https:/nola2021.iamdbookclub.com/a-map-of-hadriana-and-cast-of-characters/).
 
 [^2]: René Depestre, *Hadriana dans tous mes rêves* (Paris: Gallimard, 1988), 189; hereafter cited parenthetically in the text.
 
-[^3]: "S. E. Sténio et le problème du reboisement," *Le Nouvelliste,* 17 July 1937, [<https://www.dloc.com/>](https://www.dloc.com/UF00000081/03078?l=en).
+[^3]: "S. E. Sténio et le problème du reboisement," *Le Nouvelliste,* 17 July 1937, [https://www.dloc.com/](https://www.dloc.com/UF00000081/03078?l=en).
 
-[^4]: "Le Reboisement," *Le Nouvelliste*, 26 July 1937, [<https://www.dloc.com/>](https://www.dloc.com/UF00000081/03085?l=en).
+[^4]: "Le Reboisement," *Le Nouvelliste*, 26 July 1937, [https://www.dloc.com/](https://www.dloc.com/UF00000081/03085?l=en).
 
-[^5]: "Propos et faits divers: Contraventions au décret sur le reboisement," *Le Nouvelliste*, 30 April 1938, [<https://www.dloc.com/>](https://www.dloc.com/UF00000081/03324?l=en).
+[^5]: "Propos et faits divers: Contraventions au décret sur le reboisement," *Le Nouvelliste*, 30 April 1938, [https://www.dloc.com/](https://www.dloc.com/UF00000081/03324?l=en).
 
-[^6]: "Reboisez vos terres," *Le Nouvelliste*, 26 June 1938, [<https://www.dloc.com/>](https://www.dloc.com/UF00000081/03060?l=en).
+[^6]: "Reboisez vos terres," *Le Nouvelliste*, 26 June 1938, [https://www.dloc.com/](https://www.dloc.com/UF00000081/03060?l=en).
 
-[^7]: "Propos et faits divers: Jacmel dans l'obscurité," *Le Nouvelliste*, 28 May 1938, [<https://www.dloc.com/>](https://www.dloc.com/UF00000081/03348?l=en).
+[^7]: "Propos et faits divers: Jacmel dans l'obscurité," *Le Nouvelliste*, 28 May 1938, [https://www.dloc.com/](https://www.dloc.com/UF00000081/03348?l=en).
 
-[^8]: "Propos et fait divers: Jacmel réclame son orchestre," *Le Nouvelliste*, 12 February 1938, [<https://www.dloc.com/>](https://www.dloc.com/UF00000081/03258?l=en).
+[^8]: "Propos et fait divers: Jacmel réclame son orchestre," *Le Nouvelliste*, 12 February 1938, [https://www.dloc.com/](https://www.dloc.com/UF00000081/03258?l=en).
 
-[^9]: For the first part of this column, see "Voyage autour de Jacmel," *Le Nouvelliste*, 16 September 1938, [<https://www.dloc.com/>](https://www.dloc.com/UF00000081/03443?l=en).
+[^9]: For the first part of this column, see "Voyage autour de Jacmel," *Le Nouvelliste*, 16 September 1938, [https://www.dloc.com/](https://www.dloc.com/UF00000081/03443?l=en).
 
 [^10]: Northwestern University, Knight Lab, home page, accessed 18 January 2022, https://web.archive.org/web/20210519012906/https:/knightlab.northwestern.edu/.
 
-[^11]: Digital Library of the Caribbean, search results for "jacmel\" anywhere and "Direction générale des Travaux Publics" as publisher, accessed 18 January 2022, [<https://www.dloc.com/>](https://dloc.com/results/brief/?t=jacmel,%22Direction+generale+des+travaux+publics%22&f=ZZ,PU).
+[^11]: Digital Library of the Caribbean, search results for "jacmel\" anywhere and "Direction générale des Travaux Publics" as publisher, accessed 18 January 2022, [https://www.dloc.com/](https://dloc.com/results/brief/?t=jacmel,%22Direction+generale+des+travaux+publics%22&f=ZZ,PU).
