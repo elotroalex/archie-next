@@ -32,7 +32,7 @@ created with a specific audience in mind, Miranda explained, "At YOUR
 request, we made a book."[^2]
 
 <figure>
-<img src="/images/issue04/machado/figure-1.png" alt="Miranda's <em>Little Pep Talks</em> marketing." loading="lazy">
+<img src="/images/issue04/machado/figure-1.png" alt="Miranda's Little Pep Talks marketing." loading="lazy">
 <figcaption>Figure 1. Miranda's *Little Pep Talks* marketing.</figcaption>
 </figure>
 
@@ -1027,7 +1027,7 @@ Miranda builds affective alliances with his audience and can bank on
 their emotional investment when he needs to mobilize his followers.
 
 <figure>
-<img src="/images/issue04/machado/figure-31.png" alt="Figure 31. A 2016 gratitude tweet with <em>Singing in the Rain</em>." loading="lazy">
+<img src="/images/issue04/machado/figure-31.png" alt="Figure 31. A 2016 gratitude tweet with Singing in the Rain." loading="lazy">
 <figcaption>Figure 31. A 2016 gratitude tweet with *Singing in the Rain*.</figcaption>
 </figure>
 
@@ -1100,7 +1100,7 @@ audience's consumption of his cultural production.[^52]
 </figure>
 
 <figure>
-<img src="/images/issue04/machado/figure-37.png" alt="Figure 37. Miranda\'s <em>Moana</em> marketing." loading="lazy">
+<img src="/images/issue04/machado/figure-37.png" alt="Figure 37. Miranda\'s Moana marketing." loading="lazy">
 <figcaption>Figure 37. Miranda\'s *Moana* marketing.]</figcaption>
 </figure>
 

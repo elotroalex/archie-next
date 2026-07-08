@@ -77,6 +77,7 @@ check_contains "image with no alt attribute fails" "$IMG_OUTPUT" "missing alt te
 check_contains "missing file is detected" "$IMG_OUTPUT" "does not exist on disk"
 check_contains "filename-as-alt-text is detected" "$IMG_OUTPUT" 'alt text looks like a raw filename ("filename-alt")'
 check_contains "duplicate alt text within an article is detected" "$IMG_OUTPUT" 'duplicate alt text "A duplicated caption" used for 2 images in broken-article'
+check_contains "alt text containing a tag with '>' doesn't truncate tag matching" "$IMG_OUTPUT" "ok - image: /issuefx/images/embedded-tag-alt.png"
 
 echo ""
 echo "== check-footnotes.js =="

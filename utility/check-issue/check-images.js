@@ -30,8 +30,14 @@ function loadConfig() {
 // Extracts {src, alt} for every <img> tag in an HTML string, tolerant of
 // attribute order (matches the templated markup: src/alt/width/height/loading
 // appear in varying order across legacy vs. new-issue figure markup).
+//
+// The tag-matching regex is quote-aware: a naive `[^>]*` stops at the FIRST
+// `>` it sees, which breaks if an attribute value itself contains one (e.g.
+// alt="Miranda's <em>Little Pep Talks</em> marketing." — real content found
+// in issue04/machado-gratitude.md). `(?:[^>"]|"[^"]*")*` instead treats a
+// fully-quoted "..." run as a single unit that can safely contain `>`.
 function extractImgTags(html) {
-  const tags = html.match(/<img\b[^>]*>/gi) || [];
+  const tags = html.match(/<img\b(?:[^>"]|"[^"]*")*>/gi) || [];
   return tags.map((tag) => {
     const srcMatch = tag.match(/\bsrc="([^"]*)"/);
     const altMatch = tag.match(/\balt="([^"]*)"/);

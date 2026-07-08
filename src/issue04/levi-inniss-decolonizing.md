@@ -491,7 +491,7 @@ archives.
 </figure>
 
 <figure>
-<img src="/images/issue04/levi-inness/LeviFig11.png" alt="Runaway-slave ad, 14 April 1807." loading="lazy">
+<img src="/images/issue04/levi-inness/LeviFig11.png" alt="Figure 11. Runaway-slave ad, 4 October 1788." loading="lazy">
 <figcaption>Figure 11. Runaway-slave ad, 4 October 1788.</figcaption>
 </figure>
 
@@ -689,47 +689,87 @@ people who need them the most.
 ---
 
 [^1]: The title of the newspaper changed throughout the years, beginning in 1783 as the _Barbados Mercury_ and changing to the _Barbados Mercury and Bridgetown Gazette_ circa 1805. For more contextual information about the history of the newspaper, please see \"The _Barbados Mercury and Bridgetown Gazette_ Newspaper Collection,\" British Library Endangered Archives Programme, <https://eap.bl.uk/collection/EAP1086-1>.
+
 [^2]: See \"Welcome to the Endangered Archives Programme,\" <https://eap.bl.uk>. Established in 2004, the EAP awards grants for identifying and digitizing culturally important \"material that is at risk of loss or decay, and is located in countries where resources and opportunities to preserve such material are lacking or limited\" (\"About the Programme,\" <https://eap.bl.uk/>). The EAP makes available digitized material through local partners and its website.
+
 [^3]: See Heather Junke, \"Brock Prof Part of International Mission to Save Caribbean History,\" _The Brock News, a News Source for Brock University_, 25 October 2017, <https://brocku.ca/brock-news/2017/10/brock-prof-part-of-international-mission-to-save-caribbean-history> (accessed 15 December 2019).
+
 [^4]: To learn more about the collaboration, see \"Collaboration across Disciplines to Make a Path Where None Existed\" (panel presented at ACURIL 2017: Multidisciplinary Research in the Caribbean, 4--8 June 2017, San Juan, Puerto Rico), [dloc.com/AA00054636/00001/citation](https://dloc.com/AA00054636/00001/citation). ACURIL is the Association of Caribbean University, Research, and Institutional Libraries.
+
 [^5]: See Jerome S. Handler, _A Guide to Source Materials for the Study of Barbados History, 1627--1834_ (Carbondale: Southern Illinois University Press, 1971).
+
 [^6]: To learn more about each phase, see Amalia S. Levi, \"Digitisation of the _Barbados Mercury Gazette_,\" _Endangered Archives Blog_, 3 August 2018, <https://blogs.bl.uk/endangeredarchives/2018/08/digitisation-of-the-barbados-mercury-gazette.html>.
+
 [^7]: See Maja Kominko, \"Crumb Trails, Threads, and Traces: Endangered Archives and History,\" in _From Dust to Digital: Ten Years of the Endangered Archives Programme_, ed. Maja Kominko (Cambridge: Open Book, 2016), xlix--lxviii, <https://books.openedition.org/obp/2216>. To read more about the post-custodial model, see Christian Kelleher, \"Archives without Archives: (Re)Locating and (Re)Defining the Archive through Post-Custodial Praxis,\" _Journal of Critical Library and Information Studies_ 1, no. 2 (2017), [doi:10.24242/jclis.v1i2.29](http://doi.org/10.24242/jclis.v1i2.29).
+
 [^8]: The _Mercury_ online can be accessed either through the EAP portal at <https://eap.bl.uk/project/EAP1086> or through the dLOC portal at <https://www.ufdc.ufl.edu/AA00047511/02334/allvolumes>.
+
 [^9]: Hugh Eakin, \"We're All in Danger of Watching Our History Go Up in Flames,\" _Washington Post_, 5 September 2018, <https://www.washingtonpost.com/opinions/our-art-has-burned-for-centuries-it-will-go-up-in-smoke-again/2018/09/05/53702182-b11b-11e8-a20b-5f4f84429666_story.html>.
+
 [^10]: \"Fire Destroys Building Housing St. Lucia's Most Extensive Collection of Cultural and Historical Artefacts,\" _Pride News_ (blog), 27 March 2018, <https://pridenews.ca/2018/03/27/fire-destroys-building-housing-st-lucias-extensive-collection-cultural-historical-artefacts/>.
+
 [^11]: See "About the Archive," _Slave Societies Digital Archive_, <https://www.slavesocieties.org/> (accessed 14 December 2019).
+
 [^12]: Angela Sutton, \"The Digital Overhaul of the Archive of Ecclesiastical and Secular Sources for Slave Societies (ESSSS),\" _sx archipelagos_, no. 2 (July 2017), <http://archipelagosjournal.org/issue02/essss.html>.
+
 [^13]: See Kathleen Arthur et al., \"Recognizing Digitization as a Preservation Reformatting Method,\" _Microform and Imaging Review_ 33, no. 4 (2004): 171--80.
+
 [^14]: See Nicholson Baker, \"Discards,\" _New Yorker_, 4 April 1994, <https://www.newyorker.com/magazine/1994/04/04/discards>.
+
 [^15]: Richard J. Cox, \"The Great Newspaper Caper: Backlash in the Digital Age,\" _First Monday_, 4 December 2000, [doi:10.5210/fm.v5i12.822](https://doi.org/10.5210/fm.v5i12.822).
+
 [^16]: See Randy Silverman, \"Retaining Hardcopy Papers Still Important in Digital Age,\" _Newspaper Research Journal_ 36, no. 3 (2015): 363--72, [doi:10.1177/0739532915600749](https://doi.org/10.1177/0739532915600749).
+
 [^17]: Recent government initiatives in Barbados suggest that there is a move to digitize public records on a large scale with the help of Inter-American Development Bank (IDB) funding. However, it is not clear how this policy will dovetail with a larger conservation policy. See Emmanuel Joseph, \"PM: I'm Sorry,\" _Barbados Today_, 23 October 2018, <https://barbadostoday.bb/>.
+
 [^18]: Hannah Alpert-Abrams, David A. Bliss, and Itza Carbajal, \"Post-Custodialism for the Collective Good: Examining Neoliberalism in US-Latin American Archival Partnerships,\" in \"Evidences, Implications, and Critical Interrogations of Neoliberalism in Information Studies,\" ed. Marika Cifor and Jamie A. Lee, special issue, _Journal of Critical Library and Information Studies_ 2, no. 1 (2019), [doi:10.24242/jclis.v2i1.87](https://doi.org/10.24242/jclis.v2i1.87).
+
 [^19]: Brooke Wooldridge and Laurie Taylor, \"The Role of Digital Libraries in Disaster Preparedness and Mitigation\" (paper presented at ACURIL 2011: The Role of Libraries and Archives in Disaster Preparedness, Response, and Research, 30 May--3 June 2011, University of South Florida, Tampa), <https://scholarcommons.usf.edu/cgi/viewcontent.cgi?article=1015&context=acuril_2011>.
+
 [^20]: For more on the process through the thoughts of the digitization team, see Brian Inniss and Lenora Williams, \"The _Barbados Mercury_: Thoughts from the Digitisation Team,\" _Endangered Archives Blog_, 19 March 2019, <https://blogs.bl.uk/endangeredarchives/2019/03/digitising-the-barbados-mercury-.html>.
+
 [^21]: For more information about the workshops, see \"The _Barbados Mercury Gazette_ Digitization Launch Workshop---December 12, 2017,\" <https://dloc.com/AA00061880/00001/citation>; \"The _Barbados Mercury Gazette_ Digitization Training Workshop,\" <https://dloc.com/AA00063750/00001/citation>; and \"The _Barbados Mercury Gazette_: Event to Celebrate the Launch of the Newspaper Online,\" <https://dloc.com/AA00066602/00001/citation>.
+
 [^22]: Amalia Skarlatou Levi (@amaliasl), \"We digitize and we destroy. We put together a puzzle that will never exist again. The pieces and the dust as embodiment of the necessity and inevitability of it all. // Some more spoils of \#digitization, volume 1812 of the \#BarbadosMercury @bl_eap,\" Twitter, 15 November 2018, 11:3 am, <https://twitter.com/amaliasl/status/1063152517075353600>.
+
 [^23]: Read project posts on Twitter through the hashtag \#BarbadosMercury.
+
 [^24]: Nathan H. Dize, \"Aphids and Digital Archives: Thinking through Digital Preservation with Dionne Brand's _The Blue Clerk_,\" _Digital Cultural Heritage Cluster_, Vanderbilt University, 13 October 2018, <https://my.vanderbilt.edu/digitalculturalheritage/2018/10/13/aphids-and-digital-archives-thinking-through-digital-preservation-with-dionne-brands-the-blue-clerk>.
+
 [^25]: See, for example, _Beyond 2022: Ireland's Virtual Records Treasury_, which aims to recreate the Public Record Office of Ireland that was destroyed by fire in 1922, <https://beyond2022.ie>.
+
 [^26]: See, for example, Marisa J. Fuentes, _Dispossessed Lives: Enslaved Women, Violence, and the Archive_ (Philadelphia: University of Pennsylvania Press, 2018).
+
 [^27]:
     Always Already Computational: Collections as Data project team, \"The Santa Barbara Statement on Collections as Data,\" version 2, <https://collectionsasdata.github.io/statement/> (accessed 6 July
     2019).
 
 [^28]: One such collection provided as data is the _Gaceta de la Habana_ at the University of Miami Libraries; see <https://github.com/UMiamiLibraries/collections-as-data/tree/master/LaGaceta>.
+
 [^29]: OCR was conducted with Prime Recognition.
+
 [^30]: See Dario Kampkaspar, \"Digital Edition of the 'Wienerisches Diarium,'\" November 2017, <https://read.transkribus.eu/wp-content/uploads/2017/07/Kampkaspar_Wienerisches_Diarium.pdf>.
+
 [^31]: The _Early Caribbean Digital Archive_ is an open-access digital archive, an online repository of documents, travel narratives, natural histories, novels, poetry, and maps from the sixteenth- to nineteenth-century Caribbean, which offers dynamic interactions with early Caribbean texts, a robust research community, and pedagogical and scholarly resources; see <https://ecda.northeastern.edu>. At the time of the writing of this article, the website of the Barbados Runaway Slaves Digital Collection project has not yet been finalized. Furthermore, the title of the digital collection is still tentative.
+
 [^32]: Paula Harper-Grant, \"Barbados Has Digital Runaway Slaves Collection,\" _GIS_ (blog), 13 March 2019, <https://gisbarbados.gov.bb/blog/barbados-has-digital-runaway-slaves-collection/>.
+
 [^33]: To learn more about the workshops conducted during fall 2019, please see Amalia S. Levi, \"Beyond Digitisation: Engaging the Community around the _Barbados Mercury_,\" _Endangered Archives Blog_, 2 January 2020, <https://blogs.bl.uk/endangeredarchives/2020/01/beyond-digitisation-the-barbados-mercury.html>.
+
 [^34]: For resistance strategies used among the enslaved in Barbados, the following sources provide more information: Hilary Beckles, \"An Economic Life of Their Own: Slaves as Commodity Producers and Distributors in Barbados,\" _Slavery and Abolition_ 12, no. 1 (1991): 31--47, [doi:10.1080/01440399108575021](https://doi.org/10.1080/01440399108575021); Hilary Beckles, \"Caribbean Anti-slavery: The Self-Liberation Ethos of Enslaved Blacks,\" in _Caribbean Slave Society and Economy_, ed. Hilary Beckles and Verene Shepherd (Kingston: Ian Randle, 1991); and Hilary Beckles, _Natural Rebels: A Social History of Enslaved Women in Barbados_ (New Brunswick, NJ: Rutgers University Press, 1989).
+
 [^35]: Jessica Marie Johnson, \"Markup Bodies: Black Life Studies and Slavery Death Studies at the Digital Crossroads,\" _Social Text_, no. 137 (December 2018): 57--79, [doi:10.1215/01642472-7145658](http://doi.org/10.1215/01642472-7145658).
+
 [^36]: See _Slave Voyages_, <https://www.slavevoyages.org>; Legacies of British Slave-Ownership, <http://www.ucl.ac.uk/lbs>; and _Enslaved: The People of the Historic Slave Trade_, <https://www.enslaved.org>.
+
 [^37]: See _Life and Labor under Slavery: The Jesuit Plantation Project_, <https://jesuitplantationproject.org/s/jpp/page/welcome>.
+
 [^38]: See _Slave Revolt in Jamaica, 1760--1761_, <https://revolt.axismaps.com>; and _Mapping Marronage_, <https://mapping-marronage.rll.lsa.umich.edu/welcome>.
+
 [^39]: See _Layers of London: Recording the Layers of London's Rich Heritage_, <http://www.layersoflondon.org>.
+
 [^40]: Pelagios, \"Final Report on LatAm: A Historical Gazetteer of Colonial Latin America and the Caribbean,\" _Medium_ (blog), 14 June 2019, <https://medium.com/pelagios/final-report-on-latam-a-historical-gazetteer-of-colonial-latin-america-and-the-caribbean-4772c7eae9e2>.
+
 [^41]: Caribbean Examinations Council, _Caribbean Examinations Council (CXC) Task Force on History Report_ (Bridgetown, Barbados: Caribbean Examinations Council, 2018).
+
 [^42]: One undergraduate student reflected, \"You can see how this session promotes the idea of critical analysis and would engage and promote the desire to study history from the secondary school level. I believe that some effort should be made to promote digital humanities beyond the university\"; Tevin Maynard, e-mail to authors, 20 May 2019. Another student mentioned how the exercise helped her to understand more about the lived experience of enslaved people in Barbados and the risks they took to challenge the system of slavery by running away and absenting themselves from slaveholders.
