@@ -134,8 +134,8 @@ In the case of Radio Haiti, however, journalism and memory work were explicitly 
 11 September. The day of the 1988 St. Jean Bosco massacre, when armed aggressors under the orders of Port-au-Prince mayor and former Macoute Franck Romain slaughtered parishioners at Father Jean-Bertrand Aristide’s church in the shantytown of La Saline. Among the victims was a baby girl stabbed while still inside her mother’s womb; miraculously, both the baby (who was given the pseudonym "Esperancia" by Radio Haiti) and her mother survived. Five years later, on another 11 September in the heart of the coup years, political activist Antoine Izméry, while attending a mass at commemorating the 1988 massacre, was dragged out of Église Sacre-Coeur and shot dead in the street.
 
 <figure>
-<img src="/images/issue02/esperancia.jpg" alt="Esperancia" loading="lazy">
-<figcaption>\</figcaption>
+<img src="/images/issue02/esperancia.jpg" alt="Newspaper clipping photo of a Black baby girl in a white dress with a bow in her hair, sitting on a wicker chair and looking quizzically to the side" loading="lazy">
+<figcaption>Newspaper photograph of "Esperancia," the baby who survived the 1988 St. Jean Bosco massacre.</figcaption>
 </figure>
 
 30 September. The day General Raoul Cédras overthrew the democratically elected government of Jean-Bertrand Aristide. Haiti was ruled for the next three years by a bloody military junta that violently repressed pro-Aristide partisans (particularly the very poor) and used systematic rape as a weapon. The date itself was so powerful that when activist [Lovinsky Pierre-Antoine](http://web.archive.org/web/20170904034917/https://soundcloud.com/radiohaitiarchives/sets/face-lopinion-lovinsky-pierre) created an organization to advocate for the rights of victims of the coup years, he christened it Fondation 30 Septembre.[^18]
