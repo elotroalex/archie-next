@@ -9,12 +9,12 @@ author:
   - name: "Jeannine Murray-Román"
     shortname: "Murray-Román"
     bio: >
-      Jeannine Murray-Román (Ph.D. comparative literature, UCLA) is an assistant professor of French and Spanish specializing in comparative Caribbean literatures and cultures. Her work is grounded in postcolonial, transnational, and performance studies and her research interest in experimental writing includes digital humanities as well as the interface of oral and performance practices and writing in the regions of the archipelagos in the Pacific and Indian Oceans. Her work has appeared in "Small Axe," the "International Journal of Francophone Studies," and "The French Review." Her current work focuses on walking, speculative poesis and reparations movements.
+      Jeannine Murray-Román is an independent scholar whose research starts in the Caribbean region and is grounded in comparative, performance, and digital methodologies. Since publishing their first monograph, *Performance and Personhood in Caribbean Literature* (University of Virginia Press, 2016), their research has ranged from Taylor Mac's manifestos, Roque Salas Rivera's debt and poiesis, and Fanon's medical writing. Their current book project, "Changing Imaginaries," focuses on Caribbean artists' hand-made cognitive experiments in transforming their political imaginaries.
 pubDate: "July 2026"
 issue: "9"
 order: "1"
 abstract: >
-  TODO: Article abstract.
+  From a recording of a hot pink flower on a foggy hillside, its leaves trembling slightly in the wind, to the ink made from its petals pooling onto white cardstock, Puerto Rican artist Rosaura Rodríguez shares her experimental processes on Instagram stories, fifteen seconds at a time. Instagram is a fraught platform that encourages aesthetic homogeneity, and yet, continues to function as a site for developing micro-poetic techniques. This article focuses on Rodríguez's in-process Instagram Stories, and particularly the "Highlights" feature which allows her to archive her working processes for two of her projects: 1. Temporada, a self-published comic that meditates on post hurricane María disaster recovery; 2. pigment-making from the plant and rock matter found around Tabonuco, the mountain farm and education center in the Cordillera Central of Puerto Rico where she lives. These two projects demonstrate how she uses the affordances of the Instagram Story feature to practice a form of digital placemaking that foreground the pace and scale of the plants, animals, and minerals around her.
 language: en
 ---
 
