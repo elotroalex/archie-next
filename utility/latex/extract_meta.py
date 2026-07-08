@@ -2,7 +2,7 @@
 """Extract front matter from a markdown file and emit Pandoc-compatible YAML metadata.
 
 Provides the variables that the LaTeX template uses:
-  title, author, abstract, doi, issue, date (pubDate), shortauthor
+  title, shorttitle, author, abstract, doi, issue, date (pubDate), shortauthor
 """
 
 import sys
@@ -26,6 +26,7 @@ def build_meta(fm):
     title = fm.get("title", "")
     if isinstance(title, dict):
         meta["title"] = title.get("long", title.get("short", ""))
+        meta["shorttitle"] = title.get("short", "")
     else:
         meta["title"] = str(title)
 
