@@ -262,12 +262,12 @@ legible forms of Black fugitivity, labeling sites of refuge such as
 *mornes* (mountains).
 
 <figure>
-<img src="/images/issue07/phelipeau-tiburon.jpg" alt="insert title here" loading="lazy">
-<figcaption>Phelipeau, \</figcaption>
+<img src="/images/issue07/phelipeau-tiburon.jpg" alt="Historical map of Tiburon by Phelipeau, showing plantation boundaries and refuge sites" loading="lazy">
+<figcaption>Historical map of Tiburon by Phelipeau, showing plantation boundaries and refuge sites.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue07/screenshot.jpg" alt="insert title here" loading="lazy">
+<img src="/images/issue07/screenshot.jpg" alt="Screenshot from the Monograph of Haiti Map, 1932/2022" loading="lazy">
 <figcaption>Screenshot from the Monograph of Haiti Map, 1932/2022.</figcaption>
 </figure>
 
@@ -307,7 +307,7 @@ town, there are visible empty spaces along the streets, conceivably left
 by the bombing a few decades earlier.
 
 <figure>
-<img src="/images/issue07/navy-planes.jpg" alt="insert title here" loading="lazy">
+<img src="/images/issue07/navy-planes.jpg" alt="U.S. Navy Curtiss HS-2Ls and other airplanes in Haiti, circa 1919" loading="lazy">
 <figcaption>U.S. Navy Curtiss HS-2Ls and other airplanes in Haiti circa 1919.From the Walter V. Brown Collection (COLL/4326), Marine Corps Archives & Special Collections.</figcaption>
 </figure>
 

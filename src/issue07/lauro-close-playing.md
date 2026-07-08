@@ -320,17 +320,17 @@ ended up mauled by dogs, captured, whipped, burned alive, cut up, my bones
 broken with a hammer, with molten lead poured into my wounds.
 
 <figure>
-<img src="/images/issue07/lauro1.png" alt="Screencapture of a Game Over screen" loading="lazy">
+<img src="/images/issue07/lauro1.png" alt="Game Over screen (1 of 3)" loading="lazy">
 <figcaption>Fig. 1. Screencapture of a Game Over screen. (\</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue07/lauro2.png" alt="Screencapture of a Game Over screen" loading="lazy">
+<img src="/images/issue07/lauro2.png" alt="Game Over screen (2 of 3)" loading="lazy">
 <figcaption>Fig. 2. Screencapture of a Game Over screen. (\</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue07/lauro3.png" alt="Screencapture of a Game Over screen" loading="lazy">
+<img src="/images/issue07/lauro3.png" alt="Game Over screen (3 of 3)" loading="lazy">
 <figcaption>Fig. 3. Screencapture of a Game Over screen. (\</figcaption>
 </figure>
 
@@ -622,7 +622,7 @@ contain things of value, like the stores of sugar), it is arguably more
 fun to run around the plantation setting everything on fire.
 
 <figure>
-<img src="/images/issue07/lauro-vid1.png" alt="Gameplay from DosZone for Freedom: Rebels in the Darkness, English version." loading="lazy">
+<img src="/images/issue07/lauro-vid1.png" alt="Gameplay from DosZone for Freedom: Rebels in the Darkness, English version" loading="lazy">
 <figcaption>Clip 1. Gameplay from DosZone for Freedom: Rebels in the Darkness, English version.</figcaption>
 </figure>
 
@@ -653,7 +653,7 @@ the history of slave rebellion.[^55] I will confess, though, that
 _Freedom_ can just feel frustrating in an unproductive manner.
 
 <figure>
-<img src="/images/issue07/lauro-vid2.png" alt="Gameplay from DosZone for Freedom: Rebels in the Darkness, English version." loading="lazy">
+<img src="/images/issue07/lauro-vid2.png" alt="Gameplay clip from DOSZONE showing a glitch during Freedom: Rebels in the Darkness" loading="lazy">
 <figcaption>Clip 2. I've provided some longer clips here from my gameplay because playthroughs online are so limited. In the one above, from DOSZONE, you can actually see a glitch occur.</figcaption>
 </figure>
 
@@ -667,19 +667,19 @@ experience of _Méwilo_, a game made the year before _Freedom_, to which
 we turn our attention now.[^56]
 
 <figure>
-<img src="/images/issue07/lauro7.png" alt="Screen captures from Atari, French version" loading="lazy">
+<img src="/images/issue07/lauro7.png" alt="Screen capture from Atari, French version: Afoukal responds to the player's attempt at an alliance" loading="lazy">
 <figcaption>Fig. 7. Screen captures from Atari, French version. The PC encounters named characters who might be made into alliances. In the first, Afoukal responds to the PC's attempts to \</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue07/lauro8.png" alt="Screen captures from Atari, French version" loading="lazy">
+<img src="/images/issue07/lauro8.png" alt="Screen capture from Atari, French version: the player character encounters Timolet, modeled on Chamoiseau's appearance" loading="lazy">
 <figcaption>Fig. 8. In the second, the PC encounters Timolet and is offered the button to attempt to rally him. The image of Timolet is based on Chamoiseau's physical appearance.</figcaption>
 </figure>
 
 ## Part III. Winnable(?)
 
 <figure>
-<img src="/images/issue07/lauro9.png" alt="Screen capture from *Méwilo*, Atari, French version." loading="lazy">
+<img src="/images/issue07/lauro9.png" alt="Screen capture from Méwilo, Atari, French version: the opening scene as the player character journeys to St. Pierre" loading="lazy">
 <figcaption>Fig. 9. Screen capture from *Méwilo*, Atari, French version. First screen that sets the scene as the PC journeys to St. Pierre. (\</figcaption>
 </figure>
 
@@ -706,7 +706,7 @@ internet and access to google---is a matter for another place and time.
 Whichever the case, I found the game's puzzles very difficult to solve.
 
 <figure>
-<img src="/images/issue07/lauro10.png" alt="Screen capture from *Méwilo*, Atari, French version." loading="lazy">
+<img src="/images/issue07/lauro10.png" alt="Screen capture from Méwilo, Atari, French version: Clarisse gives the player character her opinion" loading="lazy">
 <figcaption>Fig. 10. Screen capture from *Méwilo*, Atari, French version. Clarisse gives the PC her opinion on the restless \</figcaption>
 </figure>
 
