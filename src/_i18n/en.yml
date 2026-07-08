@@ -9,6 +9,10 @@ global:
   abstract_label: "Abstract"
   abstract_translated_suffix: "(in translation)"
   abstract_untranslated_suffix: "(not yet translated)"
+  authors_bios_label: "Authors' Bios"
+  skip_to_content: "Skip to content"
+  footnote_backref_label: "Back to content"
+  toggle_sidebar_label: "Toggle sidebar navigation"
   introduction: "Introduction"
   essays: Essays
   projects: Digital Projects

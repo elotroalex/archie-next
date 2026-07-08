@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 // Checks every <img> belonging to the issue's own content (built English
 // HTML is authoritative; es/fr pages render the same article body) for:
-// existence on disk, non-empty alt text, and minimum pixel width.
+// existence on disk, non-empty alt text, minimum pixel width, alt text that
+// looks like a raw filename, and duplicate alt text reused across multiple
+// images within the same article.
 //
 // Usage: node check-images.js <manifestPath> [--root <dir>]
 
@@ -47,6 +49,16 @@ function belongsToIssue(src, issueSlug) {
   return src.startsWith(`/${issueSlug}/images/`) || src.startsWith(`/images/${issueSlug}/`);
 }
 
+// Flags alt text that's just the image's own filename (e.g. alt="schoolclass"
+// for schoolclass.jpg) rather than an actual description — a copy-paste/
+// intake shortcut that passes the "non-empty" check but tells a screen
+// reader nothing useful.
+function looksLikeFilename(alt, src) {
+  const base = path.basename(src, path.extname(src)).toLowerCase().replace(/[-_\s]/g, "");
+  const normalizedAlt = alt.trim().toLowerCase().replace(/[-_\s]/g, "");
+  return normalizedAlt === base;
+}
+
 function main() {
   const { manifestPath, root } = parseArgs(process.argv);
   if (!manifestPath) {
@@ -67,8 +79,20 @@ function main() {
     }
     const html = fs.readFileSync(htmlPath, "utf8");
     const imgs = extractImgTags(html).filter((img) => belongsToIssue(img.src, manifest.issueSlug));
+    const fileSlug = path.basename(htmlRelPath, ".html");
+
+    // Tracked per article (not issue-wide) so two different articles reusing
+    // the same generic alt text (e.g. both captioning a "photograph") isn't
+    // a false positive — only a repeat within the same file is a real bug.
+    const altsInThisArticle = new Map();
 
     for (const img of imgs) {
+      if (img.hasAltAttr && img.alt.trim() !== "") {
+        const list = altsInThisArticle.get(img.alt) || [];
+        list.push(img.src);
+        altsInThisArticle.set(img.alt, list);
+      }
+
       if (seen.has(img.src)) continue;
       seen.add(img.src);
 
@@ -83,6 +107,8 @@ function main() {
 
       if (!img.hasAltAttr || img.alt.trim() === "") {
         problems.push("missing alt text");
+      } else if (looksLikeFilename(img.alt, img.src)) {
+        problems.push(`alt text looks like a raw filename ("${img.alt}")`);
       }
 
       let width;
@@ -100,6 +126,13 @@ function main() {
       } else {
         console.log(`FAIL - image: ${img.src} — ${problems.join("; ")}`);
         fail = true;
+      }
+    }
+
+    for (const [alt, srcs] of altsInThisArticle) {
+      if (srcs.length > 1) {
+        fail = true;
+        console.log(`FAIL - image: duplicate alt text "${alt}" used for ${srcs.length} images in ${fileSlug} (${srcs.join(", ")})`);
       }
     }
   }

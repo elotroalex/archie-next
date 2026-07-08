@@ -1,13 +1,13 @@
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" />
 
-<div class="sidebar" id="sidebar">
+<aside class="sidebar" id="sidebar">
   <div class="sidebar-item">
     {% if layout != "article" %}
     <p><em>archipelagos</em>—{{ i18n[lang].global.subtitle }}.</p>
     {% else %}
-    <h1 class="article-title">
+    <p class="article-title">
       {{ title.long | mdInline | safe if title.long else title }}
-    </h1>
+    </p>
     <p>{% include "author-loop.njk" %}</p>
     <p>Issue ({{ issue }}) | {{ pubDate }}<br />DOI: {{ doi }}</p>
     {% endif %}
@@ -31,4 +31,4 @@
     <p>{{ i18n[lang].components.ccby | safe }} <a href="{{ site.githuburl }}">{{ i18n[lang].components.repository }}</a>.</p>
     <p>ISSN: {{ site.issn }}</p>
   </div>
-</div>
+</aside>

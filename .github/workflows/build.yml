@@ -40,6 +40,10 @@ jobs:
         run: npm run check-links
         continue-on-error: true
 
+      - name: Check color contrast
+        run: npm run check-contrast
+        continue-on-error: true
+
       - name: Upload artifact
         if: github.ref == 'refs/heads/staging'
         uses: actions/upload-pages-artifact@v3

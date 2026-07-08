@@ -123,6 +123,35 @@ a:focus {
   text-decoration: underline;
 }
 
+/* Visually hidden but available to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skip-to-content link: hidden until keyboard-focused */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  z-index: 999;
+  background: #fff;
+  color: #303030;
+  padding: 0.5rem 1rem;
+}
+
+.skip-link:focus {
+  left: 0.5rem;
+  top: 0.5rem;
+}
+
 span.running-title {
   font-size: 1.2rem;
   font-weight: 200;
@@ -197,7 +226,7 @@ h1.journal-title {
 }
 
 h2.tagline {
-  color: #939598;
+  color: #6b6e70;
   font-weight: 100;
   font-size: 3rem;
   line-height: 2.6rem;
@@ -270,7 +299,7 @@ ul#footer-menu li {
 }
 
 a.footer-menu-item {
-    color: #939598;
+    color: #6b6e70;
 }
 
 a.footer-menu-item-active {
@@ -300,12 +329,12 @@ a.footer-menu-item-active {
 }
 
 .alt-link {
-  color: #939598;
+  color: #6b6e70;
 }
 
 .pdf-download {
   font-size: 0.85rem;
-  color: #939598;
+  color: #6b6e70;
   text-decoration: none;
   border: 1px solid #ccc;
   padding: 0.2rem 0.6rem;
@@ -442,7 +471,7 @@ figure img {
 }
 
 span.caption, figcaption {
-  color: #939598;
+  color: #6b6e70;
   margin-top: .4rem;
   font-size: .5rem;
   text-align: right;
@@ -464,7 +493,7 @@ span.caption, figcaption {
 }
 
 caption {
-  color: #939598;
+  color: #6b6e70;
   font-size: 0.85rem;
   font-style: italic;
   text-align: left;
@@ -695,7 +724,7 @@ ul#main-nav li.active {
 
 
 ul#main-nav-small a {
-  color: #939598;
+  color: #6b6e70;
 }
 
 ul#main-nav-small li.active a {
@@ -753,7 +782,7 @@ ul#footer-nav li {
 }
 
 .page-title {
-  color: #939598;
+  color: #6b6e70;
   margin-top: 0;
   margin-bottom: .2rem;
   font-weight: 100;
@@ -803,7 +832,7 @@ ul#footer-nav li {
 
 
 
-h1.article-title {
+.article-title {
   font-size: .8rem;
   color: white;
   margin-bottom: .4rem;

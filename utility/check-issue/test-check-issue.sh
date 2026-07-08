@@ -75,6 +75,8 @@ check_contains "empty-alt image is missing alt text" "$IMG_OUTPUT" "/issuefx/ima
 check_contains "narrow image fails width check" "$IMG_OUTPUT" "100px < 800px minimum"
 check_contains "image with no alt attribute fails" "$IMG_OUTPUT" "missing alt text"
 check_contains "missing file is detected" "$IMG_OUTPUT" "does not exist on disk"
+check_contains "filename-as-alt-text is detected" "$IMG_OUTPUT" 'alt text looks like a raw filename ("filename-alt")'
+check_contains "duplicate alt text within an article is detected" "$IMG_OUTPUT" 'duplicate alt text "A duplicated caption" used for 2 images in broken-article'
 
 echo ""
 echo "== check-footnotes.js =="
@@ -82,6 +84,13 @@ FN_OUTPUT=$(node "$SCRIPT_DIR/check-footnotes.js" "$MANIFEST" --root "$FIXTURE_R
 check_contains "clean article footnotes pass" "$FN_OUTPUT" "ok - footnotes: clean-article"
 check_contains "orphaned reference is detected" "$FN_OUTPUT" "reference(s) with no definition: #2"
 check_contains "orphaned definition is detected" "$FN_OUTPUT" "definition(s) with no reference: #3"
+
+echo ""
+echo "== check-a11y.js =="
+A11Y_OUTPUT=$(node "$SCRIPT_DIR/check-a11y.js" "$MANIFEST" --root "$FIXTURE_ROOT" 2>&1)
+check_contains "clean article passes a11y scan" "$A11Y_OUTPUT" "ok - a11y: clean-article"
+check_contains "broken article's missing alt is detected" "$A11Y_OUTPUT" "FAIL - a11y: broken-article — image-alt"
+check_contains "a11y-broken-article's heading-order skip is detected" "$A11Y_OUTPUT" "FAIL - a11y: a11y-broken-article — heading-order"
 
 echo ""
 echo "== check-pdfs.sh =="

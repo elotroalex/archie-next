@@ -5,7 +5,7 @@ layout: default
 <div class="project">
   <h1 class="page-title">{{ title.long if title.long else title }}</h1>
   <a href="{{ link }}">
-    <img class="project-image" alt="project image" src="{{ ('/' + image) | url }}"/>
+    <img class="project-image" alt="{{ title.long if title.long else title }} project thumbnail" src="{{ ('/' + image) | url }}"/>
   </a>
   {{ content | safe }}
   {% include "bios.njk" %}

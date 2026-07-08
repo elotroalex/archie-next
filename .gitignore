@@ -1,5 +1,5 @@
 node_modules/
-_site/
+/_site/
 .eleventy-cache/
 .cache/
 .DS_Store

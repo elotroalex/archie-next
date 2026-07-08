@@ -9,6 +9,10 @@ global:
   abstract_label: "Résumé"
   abstract_translated_suffix: "(en traduction)"
   abstract_untranslated_suffix: "(non traduit)"
+  authors_bios_label: "Biographies des auteurs"
+  skip_to_content: "Aller au contenu"
+  footnote_backref_label: "Retour au contenu"
+  toggle_sidebar_label: "Afficher/masquer la navigation latérale"
   introduction: "Introduction"
   essays: Essais
   projects: Projets numériques

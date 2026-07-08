@@ -166,8 +166,6 @@ Amid dual forces of visibility and erasure, it negotiates on social media, Papia
 
 The WhatsApp messages Lijde shared return to my mind, those anonymous thank-yous. They represent isolated selves, maybe even marginalized voices, finding themselves through Lijde\'s posts. The obvious assumption would be that social media is building communities in digital spaces when physical spaces remain shaped by colonial hierarchies. But the platforms themselves? Owned by Meta, driven by algorithms designed in California, monetizing engagement patterns that exploit the very addictions Lijde talks about. Who gets to theorize this connection? Lijde does it from inside, living the contradiction. I do it from another angle, academic and adjacent, mixing it with artistic literary practices. Neither perspective completely resolves the tension. Maybe that\'s the point---perhaps the multiplicity of his inner narratives is the story. Caribbean identity as fluid practice, digital selves as ongoing experiments, language as the water we swim through rather than the shore we reach.
 
-##
-
 [^1]: The platform defending Papiamentu and other creole languages I have founded, through EU (Creative Europe) funding is called Future Language Innovation: [www.futurelanguageinnovation.com](http://www.futurelanguageinnovation.com).
 
 [^2]: More information about the theater piece this article refers to see: [https://www.youtube.com/watch?v=GthYrsFbZXQ](https://www.youtube.com/watch?v=GthYrsFbZXQ).

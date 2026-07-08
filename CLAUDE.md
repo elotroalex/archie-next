@@ -61,6 +61,10 @@ Eleventy detects and copies both automatically. The PDF pipeline (`convert.sh`) 
 
 **i18n labels:** Every issue must have a label in all three yml files under `issues:` or the homepage will fall back to a blank entry. Example: `issue09: "Issue (9) | Theme | Month YYYY"`.
 
+**Heading levels are load-bearing, not just visual.** `article.njk`/`project.njk` already emit the page's only `<h1>` (the title) — article body markdown must start its own sections at `##` (h2), never `#`. The abstract heading and the "Authors' Bios" heading are also h2, as siblings of the body's own `##` sections — never skip from h1 straight to h4 or lower. `check-a11y.js` (see Issue integrity check) enforces this automatically via axe-core's `heading-order` rule.
+
+**Alt text must describe the image, not name the file or duplicate a generic label.** `alt="schoolclass"` (the filename) or reusing one image's alt text on a different image are both real bugs that have shipped before — `check-images.js` now flags filename-shaped alt text and duplicate alt text reused across images within the same article, in addition to the existing missing/empty-alt and minimum-width checks.
+
 ## Issue intake workflow
 
 For forthcoming issues, use the scripts in `utility/intake/`:
@@ -144,11 +148,21 @@ Before cutting over a finished issue, run a full integrity gate over just that i
 npm run check-issue -- issue09   # defaults to the current issue if omitted
 ```
 
-Runs (`utility/check-issue/`): HTML validity (`html-validate`, config tuned to ignore this codebase's deliberate self-closing-void-tag/inline-table-style/legacy-DC-meta conventions — see `htmlvalidate.config.json`), link integrity (linkinator, scoped to the issue's own built pages as crawl entry points but still following `--recurse` into the rest of the site — reuses the root `linkinator.config.json` unmodified; unlike `report-links.sh`, unresolved `[0]` links are treated as hard failures here), front-matter completeness (checks parsed field values against the intake stub's known placeholder text, not just a literal `# TODO:` grep — catches cases where the prefix was stripped but the placeholder text wasn't replaced) and i18n label presence in all three yml files, curly/smart quotation marks left over from Word (flags literal `‘ ’ “ ”` characters in the markdown source — `convert-docx.sh` now normalizes these at intake time, so this check is mainly a safety net for hand-edited content or articles converted before that fix), image existence + non-empty alt text + minimum width (`utility/check-issue/check-issue.config.json`, default 800px, matching the author guidelines), PDF existence for every article that doesn't set `pdf: false`, and footnote anchor pairing (every `#fnrefN` has a matching `#fnN` and vice versa).
+Runs (`utility/check-issue/`): HTML validity (`html-validate`, config tuned to ignore this codebase's deliberate self-closing-void-tag/inline-table-style/legacy-DC-meta conventions — see `htmlvalidate.config.json`), link integrity (linkinator, scoped to the issue's own built pages as crawl entry points but still following `--recurse` into the rest of the site — reuses the root `linkinator.config.json` unmodified; unlike `report-links.sh`, unresolved `[0]` links are treated as hard failures here), front-matter completeness (checks parsed field values against the intake stub's known placeholder text, not just a literal `# TODO:` grep — catches cases where the prefix was stripped but the placeholder text wasn't replaced) and i18n label presence in all three yml files, curly/smart quotation marks left over from Word (flags literal `‘ ’ “ ”` characters in the markdown source — `convert-docx.sh` now normalizes these at intake time, so this check is mainly a safety net for hand-edited content or articles converted before that fix), image existence + non-empty alt text + minimum width + alt text that looks like a raw filename + duplicate alt text reused across images in the same article (`utility/check-issue/check-issue.config.json`, default 800px, matching the author guidelines), PDF existence for every article that doesn't set `pdf: false`, footnote anchor pairing (every `#fnrefN` has a matching `#fnN` and vice versa), and an accessibility scan (`check-a11y.js`, axe-core run against jsdom — no headless browser dependency — checking heading order, landmarks, labels, and ARIA under the `wcag2a`/`wcag2aa`/`best-practice` rule sets, `color-contrast` disabled since jsdom can't compute real CSS cascade/layout).
+
+`check-a11y.js` has one hardcoded, documented exception (`KNOWN_EXCEPTIONS` in the script): the `region` rule on `#sidebar-checkbox` and its `<label>`, which drive the site's CSS-only mobile-menu toggle via sibling selectors in `main.css` (`#sidebar-checkbox:checked + .sidebar`, `~ .wrap`, `~ .sidebar-toggle`) that require both elements to stay direct body-level siblings — wrapping them in a landmark would break the toggle. Every other rule and node still fails normally.
 
 `bash utility/check-issue/test-check-issue.sh` runs the fixture-based unit tests for the individual check scripts (`utility/check-issue/fixtures/fixture-root/`), following the same pattern as `utility/intake/test-convert-images.sh`.
 
 Manual script only — not wired into CI.
+
+## Accessibility
+
+Site-wide landmark structure (`default.njk`): skip-to-content link → `<aside>` (sidebar) → `<header>` (masthead) → `<main id="main-content">` → `<footer>`. Footnote back-references get a localized `aria-label` via an Eleventy transform (`.eleventy.js`, `footnote-backref-label`) rather than at the markdown-it level, since Eleventy doesn't thread the page's `lang` into markdown-it's render `env`.
+
+**Color contrast:** `npm run check-contrast` (`utility/check-contrast.js`) checks a small hardcoded set of known text/background color pairs in `main.css` against their WCAG AA thresholds (4.5:1 normal text, 3:1 large text) — pure hex-math, no CSS parsing/rendering. It's an allowlist, not a general linter: extend `PAIRS` in that script whenever a new text color is added to `main.css`. Wired into CI (`.github/workflows/build.yml`) as a non-blocking step, same pattern as `check-links`.
+
+Test with `bash utility/test-check-contrast.sh`.
 
 ## Development
 

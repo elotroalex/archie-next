@@ -5,10 +5,12 @@
 
 <body class="layout-reverse">
 
+  <a class="skip-link" href="#main-content">{{ i18n[lang].global.skip_to_content }}</a>
+
   {% include "sidebar.njk" %}
 
   <div class="wrap">
-    <div class="masthead">
+    <header class="masthead">
       <a id="logo" href="{{ '/index.html' | url }}"><img src="{{ '/public/logo.png' | url }}" height="64px" width="72px" alt="archipelagos logo"/></a>
       {% if title != "home" and (title is not string or "Issue" not in title) %}
       <span class="running-title"><a href="{{ '/index.html' | url }}">archipelagos</a></span>
@@ -16,24 +18,24 @@
       <div class="masthead-controls">
         {% set basePath = page.url | replace("/es/", "/") | replace("/fr/", "/") %}
         <div class="masthead-lang">
-          <a href="{{ basePath | url }}"{% if lang == "en" %} class="active"{% endif %}>en</a>
-          <a href="{{ ('/es' + basePath) | url }}"{% if lang == "es" %} class="active"{% endif %}>es</a>
-          <a href="{{ ('/fr' + basePath) | url }}"{% if lang == "fr" %} class="active"{% endif %}>fr</a>
+          <a href="{{ basePath | url }}"{% if lang == "en" %} class="active" aria-current="page"{% endif %}>en</a>
+          <a href="{{ ('/es' + basePath) | url }}"{% if lang == "es" %} class="active" aria-current="page"{% endif %}>es</a>
+          <a href="{{ ('/fr' + basePath) | url }}"{% if lang == "fr" %} class="active" aria-current="page"{% endif %}>fr</a>
         </div>
         <a class="search-icon" href="{{ '/search.html' | url }}" aria-label="Search">
           <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </a>
       </div>
-    </div>
+    </header>
 
-    <div class="container content">
+    <main id="main-content" class="container content">
       {{ content | safe }}
-    </div>
+    </main>
   </div>
 
   {% include "footer.njk" %}
 
-  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  <label for="sidebar-checkbox" class="sidebar-toggle" aria-label="{{ i18n[lang].global.toggle_sidebar_label }}"></label>
 
   <script type="text/javascript" src="{{ '/public/js/main.js' | url }}"></script>
 

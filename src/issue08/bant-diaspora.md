@@ -147,7 +147,7 @@ collections on the Coleccion Aruba, and in various research publications
 and presentations.
 
 <figure>
-<img src="/images/issue08/arubaschecourant.jpg" alt="arubaschecourant" loading="lazy">
+<img src="/images/issue08/arubaschecourant.jpg" alt="Front page of De Arubasche Courant, the first newspaper printed on Aruba (1897)" loading="lazy">
 <figcaption>_De Arubasche Courant_ was the first newspaper printed on Aruba. This edition, from July 29, 1897, is the only known copy still in existence, and is held by the IISG in Amsterdam, The Netherlands. A digital copy was digitally donated to form part of Biblioteca Nacional Aruba's digital collection on the occasion of BNA's 70th anniversary in 2019.</figcaption>
 </figure>
 
@@ -301,7 +301,7 @@ is especially important, given the relative lack of research carried out
 in that language.
 
 <figure>
-<img src="/images/issue08/ewanhelie.jpg" alt="ewanhelie" loading="lazy">
+<img src="/images/issue08/ewanhelie.jpg" alt="Title page of Ewanhelie di San Matheo (1844)" loading="lazy">
 <figcaption>Title page of _Ewanhelie di San Matheo, poeblicado abau di direksjon di Domini C. Conradi_ (1844)</figcaption>
 </figure>
 
@@ -438,7 +438,7 @@ communities if they are rooted in the communities and institutes of the
 Global South.
 
 <figure>
-<img src="/images/issue08/schoolclass.jpg" alt="schoolclass" loading="lazy">
+<img src="/images/issue08/schoolclass.jpg" alt="Little girls in Parochial School in Santa Cruz, 1944" loading="lazy">
 <figcaption>Little girls in Parochial School in Santa Cruz (April 1944). Photographer: Nelson Morris. Part of the LAGO Picture Collection, Biblioteca Nacional Aruba.</figcaption>
 </figure>
 

@@ -53,7 +53,7 @@ Live site: [archipelagosjournal.org](http://archipelagosjournal.org)
    npm run check-issue -- issue09
    ```
 
-   Verifies HTML validity, internal/external links, front-matter and i18n completeness, curly/smart quotation marks, image existence/alt text/minimum width, PDF existence, and footnote anchor pairing — see [Issue integrity check](#issue-integrity-check).
+   Verifies HTML validity, internal/external links, front-matter and i18n completeness, curly/smart quotation marks, image existence/alt text/minimum width, PDF existence, footnote anchor pairing, and an accessibility scan — see [Issue integrity check](#issue-integrity-check) and [Accessibility](#accessibility).
 
 9. **Commit and push** — GitHub Actions builds and deploys automatically.
 
@@ -281,7 +281,7 @@ Before cutting a finished issue over to production, run a full integrity gate sc
 npm run check-issue -- issue09   # defaults to the current issue (last key in issues.js) if omitted
 ```
 
-This builds the site, then runs seven checks (`utility/check-issue/`) and exits non-zero if any of them fail:
+This builds the site, then runs eight checks (`utility/check-issue/`) and exits non-zero if any of them fail:
 
 | Check | What it verifies |
 | --- | --- |
@@ -289,9 +289,10 @@ This builds the site, then runs seven checks (`utility/check-issue/`) and exits 
 | **Links** | Runs linkinator with the issue's own built pages as crawl entry points (reuses the root `linkinator.config.json` unmodified). `--recurse` stays on, so links out into older issues, `/public/`, the homepage, and cross-language switcher links are still followed and validated — this is narrower and faster than `npm run check-links`, not just a re-run of it. Unlike `report-links.sh`, unresolved (`[0]`) links are treated as hard failures here. |
 | **Front matter & i18n** | Every article's front matter is checked field-by-field against the intake stub's known placeholder text (not just a `# TODO:` grep — this also catches placeholders where the `# TODO:` prefix was stripped but the text itself was never replaced). Also confirms the issue has a label in `en.yml`, `es.yml`, and `fr.yml`. |
 | **Quotation marks** | Flags curly/smart quotation marks (`‘ ’ “ ”`) left in an article's markdown source — a common Word autocorrect artifact contributors are asked to avoid (see [Submission Guidelines](src/_i18n/en/authors/authors.md)), which can render unreliably through the PDF/LaTeX pipeline. `convert-docx.sh` now normalizes these automatically at intake time, so this is mainly a safety net for hand-edited content or articles converted before that fix. |
-| **Images** | Every `<img>` under `/issueXX/images/` (or the legacy `/images/issueXX/`) in the built English page must exist on disk, have non-empty `alt` text, and meet a minimum width (`check-issue.config.json`, default 800px, matching the [author image guidelines](#adding-a-new-issue)). |
+| **Images** | Every `<img>` under `/issueXX/images/` (or the legacy `/images/issueXX/`) in the built English page must exist on disk, have non-empty `alt` text that isn't just the filename, meet a minimum width (`check-issue.config.json`, default 800px, matching the [author image guidelines](#adding-a-new-issue)), and not duplicate another image's alt text within the same article. |
 | **PDFs** | Every article without `pdf: false` must have a matching file at `src/assets/issueXX/<slug>.pdf`. |
 | **Footnotes** | Every footnote reference (`#fnrefN`) in the built HTML must have a matching definition (`#fnN`), and vice versa — catches renumbering mistakes. |
+| **Accessibility** | Runs [axe-core](https://github.com/dequelabs/axe-core) against each built English page via jsdom (no headless browser) — see [Accessibility](#accessibility). |
 
 Run the fixture-based unit tests for the check scripts themselves with:
 
@@ -300,6 +301,35 @@ bash utility/check-issue/test-check-issue.sh
 ```
 
 This is a manual, standalone script — it is **not** wired into CI, so it won't block a build.
+
+---
+
+## Accessibility
+
+### Conventions to follow when writing/converting content
+
+- **Heading levels must not skip.** `article.njk`/`project.njk` already emit the page's only `<h1>` (the title). Article body markdown must start its own sections at `##` (h2), never `#` — the abstract heading and the "Authors' Bios" heading are also h2, as siblings of the body's own `##` sections.
+- **Alt text must describe the image**, not name the file (`alt="schoolclass.jpg"`) or reuse another image's alt text. Every `<figure>` should have a real, descriptive `alt` distinct from any other image in the same article.
+
+### Site-wide structure
+
+`default.njk` provides a full landmark structure on every page: a skip-to-content link, `<aside>` (sidebar), `<header>` (masthead), `<main id="main-content">`, and `<footer>`. Footnote back-references get a localized `aria-label` ("Back to content" / "Volver al contenido" / "Retour au contenu") via an Eleventy transform (`.eleventy.js`, `footnote-backref-label`) rather than at the markdown-it level, since Eleventy doesn't thread the page's `lang` into markdown-it's render `env`.
+
+### Automated checks
+
+| Tool | What it checks | How to run |
+| --- | --- | --- |
+| **`check-a11y.js`** | Runs [axe-core](https://github.com/dequelabs/axe-core) against each built English page via [jsdom](https://github.com/jsdom/jsdom) (no headless browser dependency) — heading order, landmarks, labels, and ARIA under the `wcag2a`/`wcag2aa`/`best-practice` rule sets. `color-contrast` is disabled here since jsdom can't compute a real CSS cascade/layout. | Wired into `npm run check-issue` as one of the eight checks (manual, not in CI). |
+| **`check-contrast.js`** | Verifies a small hardcoded set of known text/background color pairs in `main.css` against their WCAG AA thresholds (4.5:1 normal text, 3:1 large text), using plain hex-math — no CSS parsing/rendering. It's an allowlist, not a general linter: extend `PAIRS` in the script whenever a new text color is added to `main.css`. | `npm run check-contrast`. Wired into CI (`.github/workflows/build.yml`) as a non-blocking step, same pattern as `check-links`. |
+
+Test both with:
+
+```bash
+bash utility/check-issue/test-check-issue.sh   # includes check-a11y.js fixture tests
+bash utility/test-check-contrast.sh
+```
+
+**Known, documented exception:** `check-a11y.js` hardcodes one exception (`KNOWN_EXCEPTIONS` in the script) for the `region` rule on `#sidebar-checkbox` and its `<label>`, which drive the site's CSS-only mobile-menu toggle via sibling selectors in `main.css` (`#sidebar-checkbox:checked + .sidebar`, `~ .wrap`, `~ .sidebar-toggle`). Both elements must stay direct body-level siblings for that CSS to work, so they can't be wrapped in a landmark without breaking the toggle. Every other rule and node still fails normally — this is the only suppressed finding.
 
 ---
 

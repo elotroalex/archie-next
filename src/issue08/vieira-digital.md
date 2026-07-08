@@ -95,6 +95,7 @@ Along with theater, film, we also see references to Bulabanda in music such as b
 
 <figure>
 <img src="/images/issue08/ribM-song_qt.png" alt="Excerpt from the song 'Dinapano'." loading="lazy">
+<figcaption>Excerpt from "Dinopano," from the album <em>Negropont</em> by Juny Martina</figcaption>
 </figure>
 [^23]
 

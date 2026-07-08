@@ -17,13 +17,13 @@ layout: default
     {% set translatedAbstract = translations[lang] %}
     {% set spacer = "<br><hr>" if lang == "en" else "<br><hr><br>" %}
     {% if lang == originalLanguage %}
-      <h4>{{ i18n[lang].global.abstract_label }}</h4>
+      <h2>{{ i18n[lang].global.abstract_label }}</h2>
       <p class="abstract">{{ abstract | mdInline | safe }}</p>
     {% elif translatedAbstract %}
-      <h4>{{ i18n[lang].global.abstract_label }} {{ i18n[lang].global.abstract_translated_suffix }}</h4>
+      <h2>{{ i18n[lang].global.abstract_label }} {{ i18n[lang].global.abstract_translated_suffix }}</h2>
       <p class="abstract">{{ translatedAbstract | mdInline | safe }}</p>
     {% else %}
-      <h4>{{ i18n[lang].global.abstract_label }} {{ i18n[lang].global.abstract_untranslated_suffix }}</h4>
+      <h2>{{ i18n[lang].global.abstract_label }} {{ i18n[lang].global.abstract_untranslated_suffix }}</h2>
       <p class="abstract">{{ abstract | mdInline | safe }}</p>
     {% endif %}
     {{ spacer | safe }}

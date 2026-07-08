@@ -8,7 +8,8 @@
     "debug": "DEBUG=Eleventy* eleventy",
     "check-links": "cd _site && npx linkinator . --config ../linkinator.config.json",
     "report-links": "bash utility/report-links.sh",
-    "check-issue": "bash utility/check-issue/check-issue.sh"
+    "check-issue": "bash utility/check-issue/check-issue.sh",
+    "check-contrast": "node utility/check-contrast.js"
   },
   "repository": {
     "type": "git",
@@ -31,8 +32,10 @@
     "markdown-it-sup": "^2.0.0"
   },
   "devDependencies": {
+    "axe-core": "^4.12.1",
     "html-validate": "^8.29.0",
     "image-size": "^2.0.2",
+    "jsdom": "^29.1.1",
     "linkinator": "^7.6.1"
   }
 }

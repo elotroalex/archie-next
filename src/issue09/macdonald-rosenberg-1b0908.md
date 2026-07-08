@@ -88,7 +88,7 @@ The collaboration contributed to all stakeholders' objectives by helping to tran
 In Spring 2024, we implemented a six-week interdisciplinary virtual exchange grounded in digital humanities methodologies, linking my university in the Eastern Caribbean with UF. My co-instructor who serves on the advisory board of dLOC, invited me\-\--a senior Caribbean studies scholar who shares a commitment to expanding student access to international learning and to Caribbean digital library resources \-\-- to join a COIL project. Our COIL project explored cultural interpretations of loss and memorialization from multiple perspectives.
 
 <figure>
-<img src="/issue09/images/macdonald-rosenberg-COIL-weekly-schedule.png" alt="Map of the venues where Garvey's plays were performed" loading="lazy">
+<img src="/issue09/images/macdonald-rosenberg-COIL-weekly-schedule.png" alt="Weekly schedule for the COIL exchange" loading="lazy">
 <figcaption>Figure 4. Weekly schedule.</figcaption>
 </figure>
 
@@ -101,7 +101,7 @@ Boum Make's concept of \"building imaginaries of caregiving\" was also reflected
 Positioning themselves as future archivists and scholars, students worked with community intellectuals to create reparative research proposals that expanded knowledge of the Grenada Revolution and, when shared in an open departmental seminar, brought new understanding of the Grenada revolution to their peers.[^33]
 
 <figure>
-<img src="/issue09/images/macdonald-rosenberg-post-COIL-group-presentations.png" alt="Map of the venues where Garvey's plays were performed" loading="lazy">
+<img src="/issue09/images/macdonald-rosenberg-post-COIL-group-presentations.png" alt="Group presentations following the 2024 COIL exchange" loading="lazy">
 <figcaption>Figure 5. Post-COIL 2024 Group Presentations.</figcaption>
 </figure>
 

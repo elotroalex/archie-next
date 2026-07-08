@@ -44,7 +44,7 @@ language: en
 pdf: true
 ---
 
-# An invitation to a trans-Caribbean data project: A pipeline for historical Caribbean population databases
+## An invitation to a trans-Caribbean data project: A pipeline for historical Caribbean population databases
 
 ## Introduction
 

@@ -3,6 +3,7 @@ const markdownIt = require("markdown-it");
 const markdownItFootnote = require("markdown-it-footnote");
 const markdownItAttrs = require("markdown-it-attrs");
 const markdownItSup = require("markdown-it-sup");
+const i18n = require("./src/_data/i18n.js");
 
 module.exports = function (eleventyConfig) {
   // --- Passthrough copies ---
@@ -61,6 +62,22 @@ module.exports = function (eleventyConfig) {
     .use(markdownItSup);
 
   eleventyConfig.setLibrary("md", md);
+
+  // markdown-it-footnote's default backref markup is just an arrow glyph
+  // (<a href="#fnrefN" class="footnote-backref">↩︎</a>) with no accessible
+  // name. This can't be fixed at the markdown-it/env level because Eleventy
+  // doesn't thread the current page's `lang` into markdown-it's render env,
+  // so it's done here instead as a post-render transform, where `this.lang`
+  // is available from the page's data cascade.
+  eleventyConfig.addTransform("footnote-backref-label", function (content, outputPath) {
+    if (!outputPath || !outputPath.endsWith(".html")) return content;
+    const lang = this.lang || "en";
+    const label = (i18n[lang] && i18n[lang].global.footnote_backref_label) || "Back to content";
+    return content.replace(
+      /(<a href="#fnref\d+" class="footnote-backref")(>)/g,
+      `$1 aria-label="${label}"$2`
+    );
+  });
 
   // --- Custom filters ---
 

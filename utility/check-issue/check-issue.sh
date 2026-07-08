@@ -2,7 +2,8 @@
 # Runs every issue-integrity check against a single issue: HTML validity,
 # link integrity (internal + external, scoped to the issue), front-matter/i18n
 # completeness, image existence + alt text + minimum width, PDF existence,
-# footnote anchor pairing, and non-standard (curly/smart) quotation marks.
+# footnote anchor pairing, non-standard (curly/smart) quotation marks, and
+# an axe-core accessibility scan (heading order, labels, ARIA, landmarks).
 # Intended to be run by an editor after finishing a new issue, before
 # flipping the live domain over.
 #
@@ -61,6 +62,7 @@ run_check "front matter & i18n"  node "$SCRIPT_DIR/check-frontmatter.js" "$MANIF
 run_check "quotes"               node "$SCRIPT_DIR/check-quotes.js" "$MANIFEST"
 run_check "images"               node "$SCRIPT_DIR/check-images.js" "$MANIFEST"
 run_check "footnotes"            node "$SCRIPT_DIR/check-footnotes.js" "$MANIFEST"
+run_check "accessibility"        node "$SCRIPT_DIR/check-a11y.js" "$MANIFEST"
 run_check "pdfs"                 bash "$SCRIPT_DIR/check-pdfs.sh" "$MANIFEST"
 run_check "html validity"        bash "$SCRIPT_DIR/check-html-validity.sh" "$MANIFEST"
 run_check "links"                bash "$SCRIPT_DIR/check-issue-links.sh" "$MANIFEST"
@@ -68,7 +70,7 @@ run_check "links"                bash "$SCRIPT_DIR/check-issue-links.sh" "$MANIF
 echo ""
 echo "================"
 if [ ${#FAILED_CHECKS[@]} -eq 0 ]; then
-  echo "PASS - $ISSUE_SLUG is clean (7/7 checks passed)"
+  echo "PASS - $ISSUE_SLUG is clean (8/8 checks passed)"
   exit 0
 else
   echo "FAIL - $ISSUE_SLUG has integrity problems in: $(IFS=', '; echo "${FAILED_CHECKS[*]}")"
