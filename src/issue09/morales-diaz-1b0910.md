@@ -129,10 +129,12 @@ Sin duda alguna, Andrés Díaz Marrero fue un gran humanista digital y gestor cu
 
 El escrito completo sobre la elaboración de _ABC_PR: Archivo digital de la literatura infantil puertorriqueña de Andrés Díaz Marrero_ se encuentra actualmente disponible, de manera abierta y gratuita, en el [Repositorio Digital de la Universidad de Puerto Rico](https://hdl.handle.net/11721/4374). Se invita a las personas interesadas en conocer con mayor profundidad otros procesos pertinentes a la elaboración de _ABC_PR_ a consultar el texto íntegro.
 
-img=\"abcpr-admyamd.png\"
-title=\"Retrato ilustrado de Andrés Díaz Marrero y Adriana Morales-Díaz\"
-caption=\"Retrato ilustrado de _abuelo-escritor-educador_ Andrés Díaz Marrero y _nieta-ilustradora-archivista_ Adriana Morales-Díaz. Sobre ellos, aparece el logo del archivo digital _ABC_PR_.\"
-url= \"[http://archivoabcpr.org/](http://archivoabcpr.org/)\"
+<figure>
+<a href="http://archivoabcpr.org/" target="_blank">
+<img src="/issue09/images/morales-diaz-abcpr-admyamd.png" alt="Retrato ilustrado de Andrés Díaz Marrero y Adriana Morales-Díaz" loading="lazy">
+</a>
+<figcaption>Figure 1. Retrato ilustrado de <em>abuelo-escritor-educador</em> Andrés Díaz Marrero y <em>nieta-ilustradora-archivista</em> Adriana Morales-Díaz. Sobre ellos, aparece el logo del archivo digital <em>ABC_PR</em>.</figcaption>
+</figure>
 
 [^1]: Ruth J. Sáez Vega, \"Andrés Díaz Marrero (1940)\". En _Gran Diccionario de Autores_
 
