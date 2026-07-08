@@ -102,7 +102,7 @@ function Pandoc(doc)
         -- the journal already includes "Figure N." in its caption text, so
         -- LaTeX's auto-numbering ("Figure N:") would double-count.
         local latex = "\\begin{figure}[htbp]\n\\centering\n"
-        latex = latex .. "\\includegraphics[width=\\linewidth]{" .. path .. "}\n"
+        latex = latex .. "\\includegraphics[width=\\linewidth,height=0.8\\textheight,keepaspectratio]{" .. path .. "}\n"
         if cap_text ~= "" then
           latex = latex .. "\\par\\vspace{0.4em}{\\small\\color{gray!80}" .. cap_text .. "}\n"
         end

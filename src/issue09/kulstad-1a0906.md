@@ -24,7 +24,7 @@ author:
       [Author bio will be added here.]
 pubDate: "July 2026"
 issue: "9"
-order: "2"
+order: "4"
 abstract: >
   This article presents the results of a metadata and content analysis of anthropological research about Haiti and the Dominican Republic available in the Anthropological Literature database and in the Journal of Latin American and Caribbean Anthropology. This analysis shows that anthropological knowledge about Haiti and/or the Dominican Republic, produced in Haiti and the Dominican Republic, is included less than scholarship published outside the island. In addition, our analysis indicates that research that pertains to both countries, or that considers transnational and/or inter-island processes has been infrequent. Furthermore, that which exists is not as discoverable or visible as research that focuses on each individual country. We consider how databases operate to create an archive of anthropological thought that excludes scholarship from the Global South.
 language: en
