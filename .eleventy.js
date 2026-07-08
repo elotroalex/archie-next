@@ -2,6 +2,7 @@ const fs = require("fs");
 const markdownIt = require("markdown-it");
 const markdownItFootnote = require("markdown-it-footnote");
 const markdownItAttrs = require("markdown-it-attrs");
+const markdownItSup = require("markdown-it-sup");
 
 module.exports = function (eleventyConfig) {
   // --- Passthrough copies ---
@@ -56,7 +57,8 @@ module.exports = function (eleventyConfig) {
     typographer: true, // smart quotes
   })
     .use(markdownItFootnote)
-    .use(markdownItAttrs);
+    .use(markdownItAttrs)
+    .use(markdownItSup);
 
   eleventyConfig.setLibrary("md", md);
 
