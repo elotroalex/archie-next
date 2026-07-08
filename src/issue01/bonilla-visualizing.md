@@ -273,7 +273,7 @@ textured detail of its constitutive events.
 
 <figure>
 <a href="https://www.youtube.com/embed/pJxrTzfG2bo" target="_blank">
-<img src="/images/issue01/invasion-of-america.jpg" alt="Invasion of America" loading="lazy">
+<img src="/images/issue01/invasion-of-america.jpg" alt="Screenshot of the time-lapse map from Claudio Saunt's The Invasion of America project" loading="lazy">
 </a>
 <figcaption>Figure 2. Invasion of America</figcaption>
 </figure>
