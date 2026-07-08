@@ -6,6 +6,9 @@ global:
   blurb: "<em>archipelagos</em> es una revista académica de publicación electrónica, revisada por pares, dedicada a la exploración creativa, el debate y pensamiento crítico sobre y a travez de la práctica digital en espacios artísticos y académicos en y para el Caribe. Dadas las amplias implicaciones del 'giro digital' para nuestra concepción del conocimiento, nuestra misión es discernir las formas en que lo digital puede mejorar y transformar nuestra comprensión del Caribe regional y diaspórico. <em>archipelagos</em> responde a este desafío con tres dimensiones distintas de producción crítica: ensayos académicos; proyectos de investigación digitales; y reseñas de proyectos digitales."
   read_more: "Leer más ..."
   orcid_label: "ORCID iD"
+  abstract_label: "Resumen"
+  abstract_translated_suffix: "(en traducción)"
+  abstract_untranslated_suffix: "(aún no traducido)"
   introduction: "Introducción"
   essays: Ensayos
   projects: Proyectos digitales

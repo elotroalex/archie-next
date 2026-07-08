@@ -12,31 +12,21 @@ layout: default
   <br>
 
   {% if abstract %}
-    {% if lang == "en" and abstract_en %}
-      <h4>Abstract (in translation)</h4>
-      <p class="abstract">{{ abstract_en | mdInline | safe }}</p>
-      <br><hr>
-    {% elif lang == "en" %}
-      <h4>Abstract</h4>
+    {% set originalLanguage = language if language else "en" %}
+    {% set translations = {"en": abstract_en, "es": abstract_es, "fr": abstract_fr} %}
+    {% set translatedAbstract = translations[lang] %}
+    {% set spacer = "<br><hr>" if lang == "en" else "<br><hr><br>" %}
+    {% if lang == originalLanguage %}
+      <h4>{{ i18n[lang].global.abstract_label }}</h4>
       <p class="abstract">{{ abstract | mdInline | safe }}</p>
-      <br><hr>
-    {% elif lang == "fr" and abstract_fr %}
-      <h4>Résumé (en traduction)</h4>
-      <p class="abstract">{{ abstract_fr | mdInline | safe }}</p>
-      <br><hr><br>
-    {% elif lang == "fr" %}
-      <h4>Abstract</h4>
+    {% elif translatedAbstract %}
+      <h4>{{ i18n[lang].global.abstract_label }} {{ i18n[lang].global.abstract_translated_suffix }}</h4>
+      <p class="abstract">{{ translatedAbstract | mdInline | safe }}</p>
+    {% else %}
+      <h4>{{ i18n[lang].global.abstract_label }} {{ i18n[lang].global.abstract_untranslated_suffix }}</h4>
       <p class="abstract">{{ abstract | mdInline | safe }}</p>
-      <br><hr><br>
-    {% elif lang == "es" and abstract_es %}
-      <h4>Resumen (en traducción)</h4>
-      <p class="abstract">{{ abstract_es | mdInline | safe }}</p>
-      <br><hr><br>
-    {% elif lang == "es" %}
-      <h4>Abstract</h4>
-      <p class="abstract">{{ abstract | mdInline | safe }}</p>
-      <br><hr><br>
     {% endif %}
+    {{ spacer | safe }}
   {% endif %}
 
   {{ content | safe }}
