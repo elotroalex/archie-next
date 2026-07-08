@@ -5,5 +5,8 @@
   {% if a.bio %}
   {{ a.bio | markdown | safe }}
   {% endif %}
+  {% if a.orcid %}
+  <p class="orcid"><a href="{{ a.orcid }}" target="_blank" rel="noopener">{{ i18n[lang].global.orcid_label }}: {{ a.orcid | replace("https://orcid.org/", "") }}</a></p>
+  {% endif %}
   {% endfor %}
 </div>

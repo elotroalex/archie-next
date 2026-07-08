@@ -119,6 +119,7 @@ doi: "# TODO: 10.7916/..."
 author:
 - name: "# TODO: Author full name"
   shortname: "# TODO: Last name"
+  orcid: ""  # optional: paste the author's ORCID iD URL, e.g. https://orcid.org/0000-0000-0000-0000 -- leave blank if none
   bio: >
     # TODO: Author bio in markdown.
 pubDate: "# TODO: Month YYYY"

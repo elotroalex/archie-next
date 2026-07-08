@@ -6,9 +6,26 @@
 -- Normalize title: if front matter has title.long / title.short (nested dict),
 -- flatten it so $title$ renders correctly in the template.
 -- In Pandoc 3.x Lua, MetaMap is a plain table with direct key access.
+--
+-- Also derive $it.orcid_id$ (the bare ORCID identifier, for link display
+-- text) from $it.orcid$ for each author. This has to happen here rather
+-- than in extract_meta.py: Pandoc's --metadata-file values for a field are
+-- entirely discarded in favor of the document's own front matter whenever
+-- both define that same top-level key, and every article's front matter
+-- already defines `author`--so any per-author field extract_meta.py adds
+-- (like orcid_id) is silently dropped before the template ever sees it.
 function Meta(meta)
   if type(meta.title) == "table" then
     meta.title = meta.title["long"] or meta.title["short"] or meta.title
+  end
+  if meta.author then
+    for _, a in ipairs(meta.author) do
+      if type(a) == "table" and a.orcid then
+        local orcid_str = pandoc.utils.stringify(a.orcid)
+        local id = orcid_str:gsub("^https?://orcid%.org/", "")
+        a.orcid_id = pandoc.MetaString(id)
+      end
+    end
   end
   return meta
 end

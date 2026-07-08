@@ -18,39 +18,13 @@ author:
       Mila Aponte-González is a Puerto Rican digital humanist, archivist, educator, and scholar. An alumna of the University of Puerto Rico–Río Piedras and New York University, she holds degrees in Comparative Literature, Drama, Performance Studies, and Information Science. Aponte-González plays multiple roles in cultural management and archival studies as a consultant and mentor for innovative Digital Humanities initiatives in the Caribbean. She co-creates community and cultural heritage digital archives and teaches in the graduate programs at UPR-Río Piedras. Her collaborations include projects with the Hemispheric Institute Digital Video Library, Archivo Histórico de Casa Pueblo, and the Digital Library of the Caribbean. Her work emphasizes scholarly research, critical pedagogy, and the ethical management of digital collections, aiming to safeguard cultural heritage and enhance access to unique educational resources while fostering interactive dialogues within communities.
 pubDate: "July 2026"
 issue: "9"
-order: "# TODO: position within section (integer)"
+order: "8"
 abstract: >
-  # TODO: Article abstract.
+  This paper documents _[Acervos Digitales de Puerto Rico y el Caribe @ UPR-Río Piedras](https://coleccionesuprrpcaribe.omeka.net)_, its origins, goals, activities and participants. It reflects on the team engagement with fundamental discussions regarding the use of Omeka in a Caribbean context, that resulted in the articulation and enactment of ethical principles for digital curation, as well as in its commitment for fundamental digital preservation efforts based on minimal technology requirements. The paper also provides an assessment of its continuity as a DH initiative committed to preserving, improving open access, and building capacity for the effective use of unique digitized humanities collections, and poses its methodology as a model for digital collections management in the Caribbean region.
+abstract_es: >
+  Este ensayo documenta los orígenes, los objetivos, las actividades y los participantes de _[Acervos Digitales de Puerto Rico y el Caribe @ UPR-Río Piedras](https://coleccionesuprrpcaribe.omeka.net)_. Reflexiona sobre el involucramiento del equipo con discusiones fundamentales con respecto al uso de Omeka en un contexto caribeño que resultó en la articulación y promulgación de principios éticos para la conservación digital así como su compromiso con los esfuerzos fundamentales de preservación digital basados en requisitos tecnológicos mínimos. El artículo también ofrece una evaluación de su continuidad como iniciativa de DH que está comprometida con la preservación, la mejora del acceso abierto y la construcción de la capacidad para el uso productivo de las colecciones digitalizadas únicas de las humanidades y propone su metodología como modelo para la gestión de colecciones digitales en la región caribeña.
 language: en
 ---
-
-_Acervos Documentales de Puerto Rico y el Caribe @ UPR-Río Piedras_: On Designing Digital Strategies for Preservation and Access of Unique Puerto Rican and Caribbean Studies Collections
-
-Mirerza González-Vélez, Principal Investigator and General Coordinator
-
-[mirerza.gonzalez1@upr.edu](mailto:mirerza.gonzalez1@upr.edu)
-
-Mila Aponte-González, Digital Archive Logistics Manager
-
-[mila.aponte@upr.edu](mailto:mila.aponte@upr.edu)
-
-College of Humanities
-
-University of Puerto Rico, Río Piedras Campus
-
-September 26, 2025
-
-[https://archipelagosjournal.org/authors.html](https://archipelagosjournal.org/authors.html)
-
-[Valence 1b -- Process Essay](https://docs.google.com/document/d/1-UqpM_DxW3unWs7Z0wuHBuzv24H9XvWC/edit)
-
-img=\"acervos-online-access.jpg\"
-
-title=\"Acervos Documentales de Puerto Rico y El Caribe @ UPR--Río Piedras\"
-
-caption=\"URL and QR code to _Acervos Documentales de Puerto Rico y el Caribe @ UPR--Río Piedras_ digital platform in Omeka.\"
-
-url=\"https://coleccionesuprrpcaribe.Omeka.net/\"
 
 ## Introduction
 
@@ -112,12 +86,9 @@ In preparation for the development of curated exhibits that would further enhanc
 
 The third phase, from September 2023 to November 2023, centered on the deployment of items on an Omeka site, making the most-needed resources available online. This included a group conversation on suitable site mapping, desired user interactions, development of a banner/logo for the project, and the design and delivery of formal and informal training sessions on the operation of Omeka as a digital management system for online collections and exhibits. Special attention was paid to the ethical practices inherent to the process, including web accessibility. All supportive materials created for s*eminarios*' staff, as well as other related digital collection management resources and policies developed to support personnel and user needs are displayed on the Omeka website (under the section \"Políticas\"[^32]) and are available for open access, offered as models to emulate, thanks to the assignation of a Creative Commons license. Added-value plugins, such as Hypothesis and Google Analytics were integrated to the digital platform to enrich user interactions. We validated our design and policy decisions by beta-testing the user experience (UX), via a focus group held in September of 2023, which provided important insights for ongoing creation, preservation, and delivering of our digital content.
 
-img=\"acervos-sitemap.jpg\"
-
+img=\"gonzalez-aponte-acervos-sitemap.jpg\"
 title=\"_Acervos Documentales de Puerto Rico y el Caribe @ UPR--Río Piedras_' sitemap\"
-
 caption=\"_Acervos Documentales de Puerto Rico y el Caribe @ UPR--Río Piedras_' sitemap.\"
-
 url=\"https://coleccionesuprrpcaribe.Omeka.net/\"
 
 Lastly, from October 2023 to December 2023, the project team held a series of dissemination events to foster widespread awareness of the Omeka site ([https://coleccionesuprrpcaribe.Omeka.net/](https://coleccionesuprrpcaribe.omeka.net/))[^33] as an open resource for education and research. Activities included an [official digital archive launch at UPR-RP](https://web.archive.org/web/20250923231136/https://coleccionesuprrpcaribe.omeka.net/items/show/2576),[^34] a [presentation on culturally-rich name authority records in RDA for Puerto Rican artists at the American Library Association's Interest Group Week](https://coleccionesuprrpcaribe.omeka.net/items/show/1592),[^35] and a [project presentation in The Caribbean Digital X Conference held at Yale University](<https://thecaribbeandigital.org/2023/schedule/%23:~:text=Mirerza%2520Gonz%25C3%25A1lez%2520V%25C3%25A9lez%2520and%2520Mila%2520Aponte-Gonz%25C3%25A1lez%2520(University%2520of%2520Puerto%2520Rico%2520at%2520R%25C3%25ADo%2520Piedra),%2520%25E2%2580%259CAcervos%2520Documentales%2520de%2520Puerto%2520Rico%2520y%2520el%2520Caribe%25E2%2580%259D>).[^36]
@@ -126,42 +97,30 @@ Lastly, from October 2023 to December 2023, the project team held a series of di
 
 At the end of our project's grant period, a great array of archival resources from our four featured collections has been digitized, catalogued, and made accessible through our open-access digital platform:
 
-img=\"acervos-jtf-snapshot.jpg\"
-
+img=\"gonzalez-aponte-acervos-jtf-snapshot.jpg\"
 title=\"JTF-AN at a glance\"
-
 caption=\"Snapshot of key project deliverables for Josefina del Toro Fulladosa's _Alfred Auguste Nemours Collection of Haitian History_ Collection.\"
-
 url=\"https://coleccionesuprrpcaribe.Omeka.net/jtf-an\"
 
 **_Alfred Auguste Nemours Collection of Haitian History_**: 261 documents were digitized, of which 229 were fully catalogued. A sample of 199 documents is accessible online through the Omeka site. Featured access points on the digital platform include: 29 subject headings regarding countries, history and politics; 22 topics; 31 institutions; and 116 prominent individuals.
 
-img=\"acervos-sha-snapshot.jpg\"
-
+img=\"gonzalez-aponte-acervos-sha-snapshot.jpg\"
 title=\"SHA-CCAPR at a glance\"
-
 caption=\"Snapshot of key project deliverables for Seminario de Historia del Arte's _Collection of Catalogs of Puerto Rican Artists_.\"
-
 url=\"https://coleccionesuprrpcaribe.Omeka.net/sha-ccapr\"
 
 **_Collection of Catalogs of Puerto Rican Artists_**: of the 590 catalogs that were digitized, there is a sample of 205 catalogs accessible online through the Omeka site. Featured access points on the digital platform include: 9 subject headings regarding artistic genres and 78 individual artists. The project created 46 new Library of Congress authorities and enriched 74 records for names of Puerto Rican artists, according to the current Resource Description and Access (RDA) cataloging standard, through the Library of Congress' Name Authority Cooperative Program (NACO).
 
-img=\"acervos-smjeg-snapshot.jpg\"
-
+img=\"gonzalez-aponte-acervos-smjeg-snapshot.jpg\"
 title=\"SMJEG-VE at a glance\"
-
 caption=\"Snapshot of key project deliverables for Seminario Multidisciplinario de Información y Documentación José Emilio González's _Victoria Espinosa Collection_.\"
-
 url=\"https://coleccionesuprrpcaribe.Omeka.net/smjeg-ve\"
 
 **_Victoria Espinosa Collection_**: of the 1,250 digitized documents, there is a sample of 282 documents accessible online through the Omeka site. Featured access points on the digital platform include: 10 theater productions (by title) and 4 subject headings regarding theater staging, history, and criticism.
 
-img=\"acervos-cih-snapshot.jpg\"
-
+img=\"gonzalez-aponte-acervos-cih-snapshot.jpg\"
 title=\"CIH-NARA-M1882 at a glance\"
-
 caption=\"Snapshot of key project deliverables for Centro de Investigaciones Históricas' _Agricultural Schedules of the 1935 Special Census of Puerto Rico (\"Censo de Riqueza de 1935\") Collection_.\"
-
 url=\"https://coleccionesuprrpcaribe.Omeka.net/cih-nara-m1882\"
 
 **_Agricultural Schedules of the 1935 Special Census of Puerto Rico (\"Censo de Riqueza de 1935\") Collection_**: the whole collection (135 documents, comprising 54,000 images) was made accessible online through the Omeka site. All the documents were geolocated by municipality, and users can access them through an embedded interactive map that allows zooming and browsing by region or by municipality. For municipalities with more than one related document, items are presented as clusters.
@@ -215,18 +174,6 @@ An added value of this project is its transdisciplinary team, composed of librar
 **_Acervos Documentales de Puerto Rico y el Caribe @ UPR-Río Piedras_** demonstrates that transdisciplinary teams are effective in the execution of digital projects, from its conceptualization, development, and functionality to its full deployment. The project proposes new approaches to the experience of archives from the perspective of digital humanities, from postcolonial assessments to the concepts of \"memory,\" \"voice,\" \"curatorship,\" and \"custody\" of documentary collections from Puerto Rico and the Caribbean.
 
 This project validates that digital preservation is an area of academic value, both for research and for the creation and professional management of cultural projects. _Acervos_ also addressed the \"ecological footprint\" of digital scholarship by preserving archives based on their value to their users. Our decision-making processes regarding dissemination were centered in user experience and open access. We hope this initiative will serve as an example for future efforts to preserve unique and priceless collections in the Caribbean region.
-
-## Authors' Bios
-
-**Mirerza González Vélez, Ph.D.** (ORCID iD: https://orcid.org/0009-0006-1915-0203) is a Professor at the Department of English, College of Humanities, UPR-Río Piedras. Her research focuses on social imaginaries and community-based, postcolonial Caribbean digital cultures. She is a Co-PI of the Caribbean Digital Scholarship Collective and collaborates with the Archivo de Respuestas de Emergencias de Puerto Rico and the Digital Preservation Coalition. Additionally, she co-chairs the Scholarly Advisory Board of the Digital Library of the Caribbean and is a member of the Red Iberoamericana de Preservación Digital de Archivos Sonoros y Audiovisuales. Her projects, including the Caribbean Diaspora Project and the Archivo Digital de Culebra, have received funding from the Mellon Foundation and NEH. She has authored several articles in journals such as Sargasso, Reviews in Digital Humanities and The Journal of Communication Inquiry, Political Communication.
-
-**Mila Aponte-González** (ORCID iD: https://orcid.org/0009-0003-2370-6698) is a Puerto Rican digital humanist, archivist, educator, and scholar. An alumna of the University of Puerto Rico--Río Piedras and New York University, she holds degrees in Comparative Literature, Drama, Performance Studies, and Information Science. Aponte-González plays multiple roles in cultural management and archival studies as a consultant and mentor for innovative Digital Humanities initiatives in the Caribbean. She co-creates community and cultural heritage digital archives and teaches in the graduate programs at UPR-Río Piedras. Her collaborations include projects with the Hemispheric Institute Digital Video Library, Archivo Histórico de Casa Pueblo, and the Digital Library of the Caribbean. Her work emphasizes scholarly research, critical pedagogy, and the ethical management of digital collections, aiming to safeguard cultural heritage and enhance access to unique educational resources while fostering interactive dialogues within communities.
-
-## Abstract
-
-This paper documents **_Acervos Digitales de Puerto Rico y el Caribe @ UPR-Río Piedras_**: [https://coleccionesuprrpcaribe.Omeka.net,](https://coleccionesuprrpcaribe.omeka.net) its origins, goals, activities and participants. It reflects on the team engagement with fundamental discussions regarding the use of Omeka in a Caribbean context, that resulted in the articulation and enactment of ethical principles for digital curation, as well as in its commitment for fundamental digital preservation efforts based on minimal technology requirements. The paper also provides an assessment of its continuity as a DH initiative committed to preserving, improving open access, and building capacity for the effective use of unique digitized humanities collections, and poses its methodology as a model for digital collections management in the Caribbean region.
-
-Resumen: Este ensayo documenta los orígenes, los objetivos, las actividades y los participantes de **_Acervos Digitales de Puerto Rico y el Caribe @ UPR-Río Piedras_**: [https://coleccionesuprrpcaribe.Omeka.net](https://coleccionesuprrpcaribe.omeka.net). Reflexiona sobre el involucramiento del equipo con discusiones fundamentales con respecto al uso de Omeka en un contexto caribeño que resultó en la articulación y promulgación de principios éticos para la conservación digital así como su compromiso con los esfuerzos fundamentales de preservación digital basados en requisitos tecnológicos mínimos. El artículo también ofrece una evaluación de su continuidad como iniciativa de DH que está comprometida con la preservación, la mejora del acceso abierto y la construcción de la capacidad para el uso productivo de las colecciones digitalizadas únicas de las humanidades y propone su metodología como modelo para la gestión de colecciones digitales en la región caribeña.
 
 [^1]: _Seminarios_ are academic special collections research centers (SCRC) that manage rare, archival, or special collections, and provide tailored research support, subject specialist staff, and unique materials to faculty, students, and external researchers.
 

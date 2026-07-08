@@ -3,6 +3,15 @@
 
 Provides the variables that the LaTeX template uses:
   title, shorttitle, author, abstract, doi, issue, date (pubDate), shortauthor
+
+Note: per-author fields (name, orcid, etc.) are NOT read from this script's
+"author" output--Pandoc's --metadata-file values for a key are discarded in
+favor of the document's own front matter whenever both define that same
+top-level key, and every article's front matter already defines `author`.
+$it.orcid_id$ is instead derived directly from the document's own
+$it.orcid$ in journal.lua's Meta() filter. This script's "author" list is
+only an intermediate value used below to compute shortauthor, which has no
+such collision since the document's front matter never defines it directly.
 """
 
 import sys

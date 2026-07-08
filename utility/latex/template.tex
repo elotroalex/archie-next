@@ -155,7 +155,7 @@ $if(title)$$title$$endif$\par}
 $if(author)$
 {\normalsize
 $for(author)$
-$if(it.name)$$it.name$$else$$it$$endif$$sep$, $endfor$%
+$if(it.name)$$it.name$$else$$it$$endif$$if(it.orcid)$\ {\footnotesize\color{gray}(ORCID iD: \href{$it.orcid$}{$it.orcid_id$})}$endif$$sep$, $endfor$%
 }
 $endif$
 
