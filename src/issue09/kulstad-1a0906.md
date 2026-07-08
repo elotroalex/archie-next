@@ -17,11 +17,11 @@ author:
   - name: "Zoe Grubbs"
     shortname: "Grubbs"
     bio: >
-      [Author bio will be added here.]
+      Zoe Grubbs is a software engineer. She received a Bachelor of Arts in computer science and Spanish, with a concentration in Global Development Studies.
   - name: "Hongyuan Zhang"
     shortname: "Zhang"
     bio: >
-      [Author bio will be added here.]
+      Hongyuan Zhang is a software engineer. She received a Bachelor of Arts in mathematics and computer science from Grinnell College and a master’s in computational data science from Carnegie Mellon University of Computer Science.
 pubDate: "July 2026"
 issue: "9"
 order: "4"
