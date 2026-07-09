@@ -16,8 +16,8 @@ author:
   shortname: Thompson
   bio: >
    Tracey Thompson is the director of "From Dat Time": The Oral and Public History Institute of the University of The Bahamas. She oversees the research program and administrative processes of the institute and has been involved in research, teaching, and administration at the University of The Bahamas for more than twenty-five years. Her research focuses principally on African and African diaspora history, the philosophy of history, oral history, and public history.
-image: images/issue02/ramble-bahamas.png
-thumb: images/issue02/ramble-bahamas-thumb.png
+image: issue02/images/ramble-bahamas.png
+thumb: issue02/images/ramble-bahamas-thumb.png
 link: "http://www.ramblebahamas.org/"
 language: en
 ---

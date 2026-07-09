@@ -32,7 +32,7 @@ In the early 2000s, several scholars independently working in these types of ecc
 
 
 <figure>
-<img src="/images/issue02/JanePaulMariza.jpg" alt="Jane Landers, Paul Lovejoy, and Mariza Soares de Carvalho" loading="lazy">
+<img src="/issue02/images/JanePaulMariza.jpg" alt="Jane Landers, Paul Lovejoy, and Mariza Soares de Carvalho" loading="lazy">
 <figcaption>The International ESSSS Team at the completion of their first digitization project in Matanzas, Cuba, 2005.</figcaption>
 </figure>
 
@@ -43,7 +43,7 @@ At the completion of the project in 2005, more than 120,000 images of rich, unde
 The success of this project has allowed this group of scholars, and the scholars they have trained, to win further grants from the British Library’s Endangered Archives Programme to digitize valuable endangered collections of historic documents throughout Latin America and the Caribbean. In the past fifteen years, these rapidly expanding teams have digitally preserved further key documents from Cuba and Brazil, as well as those in Colombia, Florida (the documents come from the Spanish colonial period), and Cape Verde. In doing so, they have captured an estimated 3 million records concerning more than 7 million enslaved Africans and their descendants as well as 2.5 million non-enslaved persons, many of them free blacks. Also captured in the images is documentation of the Asians, indigenous populations, and Europeans, and their descendants, who worked and lived alongside them through the past four hundred years of history. The project has since expanded beyond the ecclesiastical sources to include notarial material and slave registers. Now the teams, working together with the digital archive of Ecclesiastical and Secular Sources for Slave Societies, have preserved and curated the largest and oldest collection of digitized documents pertaining to Africans and their descendants in the Atlantic world. This information is secure on multiple servers and has backups in multiple versions; it is safe no matter what happens to the hard copies in their original locations.
 
 <figure>
-<img src="/images/issue02/Basilica.jpg" alt="Cathedral Basilica of St. Augustine, St. Augustine, Florida" loading="lazy">
+<img src="/issue02/images/Basilica.jpg" alt="Cathedral Basilica of St. Augustine, St. Augustine, Florida" loading="lazy">
 <figcaption>The Cathedral Basicila of St. Augustine, Florida, where the ESSSS team digitized hundreds of records of free and enslaved Africans from Florida’s Spanish period. Photo by Jane Landers</figcaption>
 </figure>
 
@@ -52,14 +52,14 @@ The success of this project has allowed this group of scholars, and the scholars
 As the ESSSS digital archive expanded, it outgrew the initial infrastructure used to manage it. The ESSSS team had in the past, out of necessity, privileged locating and saving endangered information over digital curation. This is because of the specialized and difficult, and often dangerous, nature of rescuing these older documents, which become permanently inaccessible on a regular basis. For example, in the Chocόe region of Colombia, the ESSSS preservation team worked in an area known for being a refuge of the Revolutionary Armed Forces of Columbia. In Cuba, they often labored without consistent access to electricity and running water. One of the collections the ESSSS team digitized went missing from the church where it had been stored, so now the ESSSS photographs are all that remains of the historic record of Africans in the region. Some of the churches, which served plantations in the early modern era, are in locations that are difficult to access or in places vulnerable to climate change: some document collections have been damaged from insect swarms and flooding, for example. Each day these records disappear from churches, and it is a race against time to collect and preserve these early and rare primary sources for African history in the Caribbean and wider Atlantic world.
 
 <figure>
-<img src="/images/issue02/Insects.jpg" alt="Insect-Damaged Manuscript" loading="lazy">
+<img src="/issue02/images/Insects.jpg" alt="Insect-Damaged Manuscript" loading="lazy">
 <figcaption>Insects have taken their toll on the pages of this manuscript. Photo by David LaFevor</figcaption>
 </figure>
 
 The rapid and necessary focus on the preservation mission meant that the images were being kept on an increasingly outdated digital platform that, over time, became unsustainable and difficult to maneuver. The repository grew faster than Vanderbilt’s library staff were able to curate it, which resulted in fewer and fewer global researchers able to successfully access or navigate it. This ran contrary to the original mission of ESSSS, which the team shared with the Endangered Archives Programme of the British Library: full and complete open global access to these documents. In particular, the ESSSS team wanted researchers in and of Latin America and the Caribbean to have increased access to their own histories.
 
 <figure>
-<img src="/images/issue02/FatherBendito.jpg" alt="Father Bendito with Part of the Archive" loading="lazy">
+<img src="/issue02/images/FatherBendito.jpg" alt="Father Bendito with Part of the Archive" loading="lazy">
 <figcaption>Father Bendito, parish priest of the Santísima Trinidad church, next to part of one of our Cuban collections. Photo by David LaFevor</figcaption>
 </figure>
 
@@ -82,7 +82,7 @@ Ideally, once each of these conditions has been met, the ESSSS team can proceed 
 It is important to note that this digitization process is not an extraction. All physical documents are left where they were found, though if the project is funded by an EAP grant, ESSSS team members will use the boxes and acid-free paper supplied by the British Library to organize and repackage the documents and other materials, if needed. And because we are aware of the issues that scholars, particularly those from developing nations, have encountered using our outdated site to read the digital images, we always leave behind hard drives full of the digital copies with local archivists, librarians, priests, and students who have indicated interest in receiving these materials. The goal of our project has always primarily been to widen access to the past for everyone.
 
 <figure>
-<img src="/images/issue02/BrazilStudents2015.jpg" alt="Digitization Training" loading="lazy">
+<img src="/issue02/images/BrazilStudents2015.jpg" alt="Digitization Training" loading="lazy">
 <figcaption>Josilene Pereira Pacheco and Francisco Sávio da Silva digitize a notarial record from the nineteenth century at the Arquivo Judicial da Comarca de João Pessoa in the city of João Pessoa, July 2015. Photo by David LaFevor</figcaption>
 </figure>
 
@@ -93,7 +93,7 @@ As each team digitizes, the members collect basic metadata using the Endangered 
 Following the conference \"Digital Humanities and the History of Slavery," at Vanderbilt University in 2015, the ESSSS teams moved forward with the plan to switch to a more standardized platform to enable better preservation and dissemination of the unique records and information within.[^4] In the past year, we have worked to transfer the two existing frameworks into a single Microsoft SQL system utilizing SobekCM, an open-source software developed by librarians at the University of Florida, who, along with a larger community of users, support ongoing development and updates. The most well-known collections that use SobekCM are digital libraries such as the University of Florida Digital Collections (UFDC) and the Digital Library of the Caribbean (dLOC). Many other important projects for Caribbean history, including the Historic St. Augustine Project, the Archive of Haitian Religion and Culture, and the Florida and Puerto Rico Digital Newspaper Project, also use this software. It utilizes C\# programming language to process metadata stored as METS ([www.loc.gov/standards/mets](http://web.archive.org/web/20170904034615/http://www.loc.gov/standards/mets/)).
 
 <figure>
-<img src="/images/issue02/Conference.jpg" alt="Digital Humanities and the History of Slavery" loading="lazy">
+<img src="/issue02/images/Conference.jpg" alt="Digital Humanities and the History of Slavery" loading="lazy">
 <figcaption>\</figcaption>
 </figure>
 

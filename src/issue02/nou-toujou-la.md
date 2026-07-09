@@ -29,7 +29,7 @@ When Jean Dominique, the outspoken and charismatic director of Radio Haïti-Inte
 They had been away, along with the rest of Radio Haiti’s team, since Jean-Claude Duvalier famously declared, "Le bal est fini" ("The party is over"), and cracked down on the independent press and human rights activists on 28 November 1980. Dominique took refuge in the Venezuelan embassy, since Jean-Claude Duvalier had issued an order that he be killed on sight. The other journalists of Radio Haiti were arrested, imprisoned at the Casernes Dessalines, and then exiled with nothing more than the clothes on their backs. They were able to return to Haiti only after the regime fell in 1986. That March day at the airport, the crowd lifted Dominique onto their shoulders, and virtually carried the car to Radio Haiti’s old station building, on Rue du Quai in downtown Port-au-Prince.
 
 <figure>
-<img src="/images/issue02/march1986_01.jpg" alt="Crowd Greeting Jean Dominique and Michèle Montas, 4 March 1986" loading="lazy">
+<img src="/issue02/images/march1986_01.jpg" alt="Crowd Greeting Jean Dominique and Michèle Montas, 4 March 1986" loading="lazy">
 <figcaption>Signs include, \</figcaption>
 </figure>
 
@@ -42,12 +42,12 @@ Duvalier’s militia, the dreaded Tontons Macoutes, had destroyed the station. T
 Over the next seven months, Radio Haiti launched a "solidarity campaign" to raise money to rebuild the station—it collected small sums, cent by cent, donated by ordinary Haitian people, many of whom had very little, and all of whom felt that Radio Haiti was theirs.
 
 <figure>
-<img src="/images/issue02/dove001.jpg" alt="Let Us Bring Haiti-Inter Back to Life" loading="lazy">
+<img src="/issue02/images/dove001.jpg" alt="Let Us Bring Haiti-Inter Back to Life" loading="lazy">
 <figcaption>Solidarity campaign for Radio Haiti. *Le Nouvelliste*, 21 March 1986</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue02/solidarity.jpg" alt="Radio Haiti Solidarity Campaign, 1986" loading="lazy">
+<img src="/issue02/images/solidarity.jpg" alt="Radio Haiti Solidarity Campaign, 1986" loading="lazy">
 <figcaption>Counting money donated to reopen Radio Haiti-Inter.</figcaption>
 </figure>
 
@@ -60,7 +60,7 @@ microphone](http://web.archive.org/web/20170904034718/https://soundcloud.com/rad
 
 <figure>
 <a href="http://bit.ly/2qHeHgE" target="_blank">
-<img src="/images/issue02/Reouverture.jpg" alt="Jean L. Dominique’s Editorial on the Reopening of Radio Haïti-Inter" loading="lazy">
+<img src="/issue02/images/Reouverture.jpg" alt="Jean L. Dominique’s Editorial on the Reopening of Radio Haïti-Inter" loading="lazy">
 </a>
 <figcaption>Jean L. Dominique’s Editorial on the Reopening of Radio Haïti-Inter</figcaption>
 </figure>
@@ -98,7 +98,7 @@ Radio Haiti had always kept its own archives, as J. J. Dominique explained, and 
 Archiving Radio Haiti is a project of unprecedented complexity and scope. Audio archives, particularly those in less common languages, are notoriously time consuming and costly to process.
 
 <figure>
-<img src="/images/issue02/RHreels.jpg" alt="Radio Haiti Reels" loading="lazy">
+<img src="/issue02/images/RHreels.jpg" alt="Radio Haiti Reels" loading="lazy">
 <figcaption>Photograph courtesy of the David M. Rubenstein Rare Book and Manuscript Library</figcaption>
 </figure>
 
@@ -111,7 +111,7 @@ Once the digitized audio returned to Duke, we began writing descriptions—in Ha
 As we describe the recordings, the trilingual metadata, along with streaming links to each recording, are ingested into two platforms: a traditional Duke University Libraries [collection guide](https://library.duke.edu/rubenstein/findingaids/radiohaiti/) and a [Duke Digital Repository (DDR) digital collection](https://repository.duke.edu/).[^9]
 
 <figure>
-<img src="/images/issue02/DDR_page_2.png" alt="Radio Haiti Archive Home Page, Duke Digital Repository" loading="lazy">
+<img src="/issue02/images/DDR_page_2.png" alt="Radio Haiti Archive Home Page, Duke Digital Repository" loading="lazy">
 <figcaption>Radio Haiti Archive Home Page, Duke Digital Repository</figcaption>
 </figure>
 
@@ -134,7 +134,7 @@ In the case of Radio Haiti, however, journalism and memory work were explicitly 
 11 September. The day of the 1988 St. Jean Bosco massacre, when armed aggressors under the orders of Port-au-Prince mayor and former Macoute Franck Romain slaughtered parishioners at Father Jean-Bertrand Aristide’s church in the shantytown of La Saline. Among the victims was a baby girl stabbed while still inside her mother’s womb; miraculously, both the baby (who was given the pseudonym "Esperancia" by Radio Haiti) and her mother survived. Five years later, on another 11 September in the heart of the coup years, political activist Antoine Izméry, while attending a mass at commemorating the 1988 massacre, was dragged out of Église Sacre-Coeur and shot dead in the street.
 
 <figure>
-<img src="/images/issue02/esperancia.jpg" alt="Newspaper clipping photo of a Black baby girl in a white dress with a bow in her hair, sitting on a wicker chair and looking quizzically to the side" loading="lazy">
+<img src="/issue02/images/esperancia.jpg" alt="Newspaper clipping photo of a Black baby girl in a white dress with a bow in her hair, sitting on a wicker chair and looking quizzically to the side" loading="lazy">
 <figcaption>Newspaper photograph of "Esperancia," the baby who survived the 1988 St. Jean Bosco massacre.</figcaption>
 </figure>
 
@@ -177,7 +177,7 @@ We also continue to face funding challenges, not in the least because the curren
 Let us return to the moment of crisis and uncertainty with which this story began. In the late 1970s, in the years just preceding the November 1980 crackdown, Radio Haiti lost its on-air sponsors. A new censorship law was in effect, ostensibly inspired by the "licentious" nature of Frankétienne’s play *Pèlin Tèt*;[^29] in truth, it was an attempt to muzzle the independent media. Radio Haiti was hit by a spurious lawsuit, supposedly brought against it by the widow of Ricardo Widmaïer, the former owner of the station; it was, in fact, a Duvalierist ploy to drive Jean Dominique out of business. The businessmen of Port-au-Prince did not want to be associated with a station that was in such open and dangerous opposition to the regime, so Radio Haiti had to be resourceful. [Richard Brisson](http://web.archive.org/web/20170904034957/http://www.alterpresse.org/spip.php?article21161) (who, unable to bear exile, would be executed in January 1982 in a failed and quixotic attempt at invasion) famously used his car as a taxi.[^30] Radio Haiti held a raffle of paintings by renowned Haitian artists; each ticket sold for \$3.
 
 <figure>
-<img src="/images/issue02/raffle004.jpg" alt="Raffle Ticket, December 1979" loading="lazy">
+<img src="/issue02/images/raffle004.jpg" alt="Raffle Ticket, December 1979" loading="lazy">
 <figcaption>Solidarity of Haitian painters</figcaption>
 </figure>
 

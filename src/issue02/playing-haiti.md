@@ -30,7 +30,7 @@ These kinds of viewpoints, a hallmark of the game franchise, may take on a speci
 
 <figure>
 <a href="https://www.youtube.com/embed/yZXlevoppJY" target="_blank">
-<img src="/images/issue02/lauro-vid1.png" alt="Viewpoint synchronization moment from Assassin’s Creed: Liberation" loading="lazy">
+<img src="/issue02/images/lauro-vid1.png" alt="Viewpoint synchronization moment from Assassin’s Creed: Liberation" loading="lazy">
 </a>
 <figcaption>Video 1. A viewpoint synchronization moment from the game *Assassin’s Creed: Liberation* (Ubisoft, 2012).</figcaption>
 </figure>
@@ -38,7 +38,7 @@ These kinds of viewpoints, a hallmark of the game franchise, may take on a speci
 
 <figure>
 <a href="https://www.youtube.com/embed/CWRfdULVtCU" target="_blank">
-<img src="/images/issue02/lauro-vid2.png" alt="Viewpoint synchronization moment from Freedom Cry" loading="lazy">
+<img src="/issue02/images/lauro-vid2.png" alt="Viewpoint synchronization moment from Freedom Cry" loading="lazy">
 </a>
 <figcaption>Video 2. A viewpoint synchronization moment from the game *Freedom Cry* (DLC, Ubisoft, 2013).</figcaption>
 </figure>
@@ -57,7 +57,7 @@ Troublingly, the game incorporates into its fiction the historical personage of 
 When Aveline seeks to kill the False Mackandal, the ally of her Spanish enemies, she must first reduce his forces; the acolytes with whom he surrounds himself are men of African descent who wear kilts and body paint similar to our ersatz prophet, including a feathered wing over one shoulder, creating a dramatic but inauthentic portrait of Vodou practitioners. At one point, the game’s directions read, "Kill the thugs. Remain undetected," in a use of the term *thug* that, although it may be appropriate here for its historical connection to religious assassins, has become increasingly problematic in recent years when applied to young black men, as these characters are. During the False Mackandal’s dying confession, Aveline comes to understand her enemy’s true identity and his relationship to the real Makandal. At this point, upon his death by her hand, Baptiste also discloses that he knows both Agaté and her mother, which he conveys by recognizing the locket she wears. If this were the extent of the historical Makandal’s inclusion in the narrative, it might merely raise an eyebrow as a questionable attempt at preserving historical realism in the game, but there is an underlying layer that must be revealed.
 
 <figure>
-<img src="/images/issue02/lauro-fig1.png" alt="Screenshot from Assassin’s Creed: Liberation of Aveline leaning over the dying Mackandal" loading="lazy">
+<img src="/issue02/images/lauro-fig1.png" alt="Screenshot from Assassin’s Creed: Liberation of Aveline leaning over the dying Mackandal" loading="lazy">
 <figcaption>Figure 1. In this screenshot from *Assassin’s Creed: Liberation*, Aveline leans over the dying Mackandal.</figcaption>
 </figure>
 
@@ -88,7 +88,7 @@ This issue of empathic occupation becomes even more complicated when we turn fro
 Videogames that capitalize on the history of slave resistance produce a potentially problematic act of occupation of the historically subjugated person, particularly when the player is invited to play *as* the slave or rebel slave. Although, as noted above, an exploration of the Assassin’s Creed games in this respect would necessitate an in-depth reception study taking into account player demographics and responses, we can nevertheless acknowledge here that commoditizing the rebel slave as a playable protagonist risks "eating the \[historical\] Other," to once again invoke hooks’s description of cultural appropriation: "Where the desire is not to make the Other over in one’s image but to *become* the Other."[^24] However, I would like to propose that these games’ interruption of their own "immediacy," that is, the media’s invisibility as a medium, works against this problematic consumption.[^25] Most simply stated, certain aspects of the game interrupt the immediacy of the gameplay. Absorption in the narrative is defied, and this serves to remind the gamer that she or he is merely a player. Like a defiance of continuity-editing in cinema—a jumpcut, for instance—these devices insist on the medium of the game and thereby interrupt the illusion that the player has become the character. This emphasis on the game’s media is on display in *Liberation* within Aveline’s presentation as a character with triple personae.
 
 <figure>
-<img src="/images/issue02/lauro-fig2.png" alt="Promotional graphic illustrating Aveline’s triple persona in Assassin’s Creed: Liberation — the assassin, the slave, and the lady" loading="lazy">
+<img src="/issue02/images/lauro-fig2.png" alt="Promotional graphic illustrating Aveline’s triple persona in Assassin’s Creed: Liberation — the assassin, the slave, and the lady" loading="lazy">
 <figcaption>Figure 2. This graphic from promotional materials associated with the game *Assassin’s Creed: Liberation* illustrates Aveline’s triple persona; from left to right: the assassin, the slave, and the lady.</figcaption>
 </figure>
 
@@ -99,7 +99,7 @@ At the same time that it depicts the diversity of colonial New Orleans, in part 
 Whereas Haiti and its legacy of slave revolt is backdrop in *Liberation*, it is front and center in *Freedom Cry*, another game within the Assassin’s Creed series. This is not a major release but what is called a DLC (downloadable content) and is an add-on for the game *Assassin’s Creed 4:* *Black Flag*, about pirates in the Caribbean. In *Freedom Cry*, the player incarnates a character called Adewalé, a former slave from a sugarcane plantation in Trinidad (and quartermaster to protagonist Edward Kenway in the pirate adventure) who journeys to Saint-Domingue, frees slaves, and falls in league with a band of maroons, led by a man called Augustin, who are waging a war against the colonial *gouverneur*. Set in 1735, the game draws explicitly on the prehistory of the Haitian Revolution, especially with its detailed depiction of an emancipation campaign carried out by the maroons, alongside whom Adewalé fights.[^30]
 
 <figure>
-<img src="/images/issue02/lauro-fig3.png" alt="Gameplay screenshot from Freedom Cry with Adewalé in the foreground" loading="lazy">
+<img src="/issue02/images/lauro-fig3.png" alt="Gameplay screenshot from Freedom Cry with Adewalé in the foreground" loading="lazy">
 <figcaption>Figure 3. A gameplay screenshot from *Freedom Cry*; Adewalé is in the foreground.</figcaption>
 </figure>
 
@@ -112,7 +112,7 @@ The first instance of Kreyol is heard from a slave whom Adewalé saves from muti
 
 <figure>
 <a href="https://www.youtube.com/embed/kc-5ngfN1Ww" target="_blank">
-<img src="/images/issue02/lauro-vid3.png" alt="Credit sequence from Freedom Cry showing subtitled translations of French, Trinidadian Creole, and Haitian Kreyòl dialogue" loading="lazy">
+<img src="/issue02/images/lauro-vid3.png" alt="Credit sequence from Freedom Cry showing subtitled translations of French, Trinidadian Creole, and Haitian Kreyòl dialogue" loading="lazy">
 </a>
 <figcaption>Video 3. This credit sequence and early segment from *Freedom Cry* illustrates the game’s use of language. Subtitles here caption the language in the cutscenes, with English translations of French, Trinidadian Creole, and Haitian Kreyole provided in parentheses. Note that in the gameplay (for example, when the protagonist chases down and kills the overseer), language is not translated or transliterated.</figcaption>
 </figure> 
@@ -121,7 +121,7 @@ The first instance of Kreyol is heard from a slave whom Adewalé saves from muti
 The significance of the game’s use of unidentified, untranslated language is suggested to me by the inclusion, early on in the game, of a password in a critical scene between Adewalé and Bastienne Josèphe. The latter turns out to be a wealthy and influential businesswoman with connections to both the leader of the maroon renegades and to the colonial governor. At the start of the game, Josèphe’s presumed connection to the Templars causes Adewalé to distrust her, and he withholds the package he had planned to deliver. Josèphe is also wary of Adewalé, and so on first meeting him, she gives him a task to prove his trustworthiness. Josèphe teaches Adewalé to sing a snippet of song to the field slaves as a passcode to gain access and information as he makes his way to the maroon hideout. The song is a line from a traditional Haitian lullaby, "Si vlé pa dodo crab la va manger," which roughly translates to "If you don’t go to sleep, the crab will eat you." While it is true that recognizing that the song is a lullaby and knowing what it means do not necessarily further one’s understanding of the game, the song’s inclusion here suggests that the use of language in the game acts similarly to a kind of shibboleth, holding some gamers at bay and admitting others.
 
 <figure>
-<img src="/images/issue02/lauro-fig4.png" alt="Screenshot of a cutscene from Freedom Cry showing Adewalé conversing with Bastienne Josèphe" loading="lazy">
+<img src="/issue02/images/lauro-fig4.png" alt="Screenshot of a cutscene from Freedom Cry showing Adewalé conversing with Bastienne Josèphe" loading="lazy">
 <figcaption>Figure 4. Screenshot of a cutscene from *Freedom Cry*, in which Adewalé converses with Bastienne Josèphe.</figcaption>
 </figure>
 
@@ -132,7 +132,7 @@ Playing further on the polysemy of language, when Adewalé first meets the maroo
 
 <figure>
 <a href="http://www.slaveryimages.org" target="_blank">
-<img src="/images/issue02/lauro-fig5.jpg" alt="Statue to the Maroon" loading="lazy">
+<img src="/issue02/images/lauro-fig5.jpg" alt="Statue to the Maroon" loading="lazy">
 </a>
 <figcaption>Figure 5. *Statue to the Maroon*, Port-au-Prince, Haiti, by Albert Mangones, circa 1969. Photo by Jerome Handler, 1970. Courtesy of Jerome Handler and the Virginia Foundation for the Humanities and University of Virginia Library; www.slaveryimages.org (Image Ref. NW0229)</figcaption>
 </figure>

@@ -43,14 +43,14 @@ Given this environment, it was imperative for us, the authors of [_A Colony in C
 The University of Maryland (UMD) Libraries’ Special Collections holds nearly ten thousand French pamphlets, dating from the seventeenth through the twentieth centuries. Many of the French pamphlets were stored in boxes according to subject; perhaps they arrived in College Park in said boxes, or perhaps this system was implemented during earlier attempts to catalogue this collection. Regardless, while the pamphlets focusing on mainland France were organized thematically in uniform boxes, those focusing on the French colonies had been preserved in separate boxes, distinct from the rest of the collection.
 
 <figure>
-<img src="/images/issue02/colonial-boxes.jpg" alt="French Pamphlet Storage Boxes" loading="lazy">
+<img src="/issue02/images/colonial-boxes.jpg" alt="French Pamphlet Storage Boxes" loading="lazy">
 <figcaption>Photo of colonial pamphlet storage boxes in UMD Special Collections</figcaption>
 </figure>
 
 The colonial materials were not included in a finding aid developed with the help of the UMD French Department in the 1990s, whereas the items from France were broken down into very specific subjects (Series).
 
 <figure>
-<img src="/images/issue02/finding-aid.jpg" alt="French Pamphlet Finding Aid" loading="lazy">
+<img src="/issue02/images/finding-aid.jpg" alt="French Pamphlet Finding Aid" loading="lazy">
 <figcaption>Scanned copy of early French pamphlet finding aid; excludes colonial pamphlets</figcaption>
 </figure>
 
@@ -73,14 +73,14 @@ The digital humanities can serve as a vast canvas for French-language students t
 In the past decade, historians have benefitted greatly from using comparative methods for teaching the Haitian and French Revolutions in the US-history classroom, providing students with a wider scope of history as well as encouraging nuanced discussions about race in the Americas. As John Garrigus argues in his article "White Jacobins/Black Jacobins: Bringing the Haitian and French Revolutions Together in the Classroom," "The case of Saint-Domingue/Haiti raises a topic of great importance for U.S. students—the interaction of racial and national identities." By teaching the Haitian Revolution alongside the French Revolution, Garrigus contends that we are allowed to ask "at what point were events no longer defined in Paris but in the Caribbean?"[^26] This decentering of the metropole in favor of the colonial periphery shifts explorations of identity, authoring, and influence away from traditionally French roots and towards a greater understanding of how the Haitian Revolution shaped the early history of the Americas. In the anglophone history classroom, these questions can be addressed in a number of ways. First, document readers such as _The Haitian Revolution: A Documentary History_; _Slave Revolution in the Caribbean, 1789–1804: A Brief History with Documents_; or _Race and the Enlightenment: A Reader_ help draw students to historical realities through a layer of curation—specific historical context allowing readers to enter into an isolated and excerpted document—giving nonspecialist readers the tools to reconstruct events. Second, the development and persistence of the fields of Haitian revolutionary studies and Atlantic history have allowed scholars to identify the connections between Haiti and the broader Atlantic world in the Age of Revolutions and beyond.[^27] By introducing these approaches into a French-language context, the need to focus on the francophone world beyond France becomes even more apparent.
 
 <figure>
-<img src="/images/issue02/intro.jpg" alt="Historical Introduction" loading="lazy">
+<img src="/issue02/images/intro.jpg" alt="Historical Introduction" loading="lazy">
 <figcaption>Screenshot showing historical introduction on *A Colony in Crisis* translation page.</figcaption>
 </figure>
 
 The historical context for each document on the site is currently available only in English. However, each translation is juxtaposed with images of its French-language original, allowing teachers of French to control the implementation of the sources by making use of the contextual précis and bibliographical notes embedded in each translation page.
 
 <figure>
-<img src="/images/issue02/originalandtranslation.jpg" alt="French Original and Translated Excerpt" loading="lazy">
+<img src="/issue02/images/originalandtranslation.jpg" alt="French Original and Translated Excerpt" loading="lazy">
 <figcaption>Screenshot showing a French original juxtaposed with its translated excerpt on *Colony in Crisis* translation page.</figcaption>
 </figure>
 
