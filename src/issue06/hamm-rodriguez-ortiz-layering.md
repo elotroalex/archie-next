@@ -47,7 +47,7 @@ Caribbean studies paradigms offer an entry point for pedagogical practices in se
 Inspiring our own approach to text selection for this project, Yomaira Figueroa-Vásquez expands Glissant's notion of poetics of relation to propose a "radical relational remapping" as "critical cartographic practice."[^7] Grounded in women of color feminism, Figueroa-Vásquez's approach puts Afro-hispanophone diasporic texts from the Caribbean and Equatorial Guinea in relation by acknowledging the incommensurability of different forms of racialization and how they shape subjective experiences while also pointing toward a range of liberation practices forged in diaspora and exile. In addition, we draw inspiration from the relational frameworks advanced by Myriam J. A. Chancy and Vanessa K. Valdés as they explore the histories and writings of the hispanophone Caribbean alongside the histories and writings of Haiti,[^8] which we attempt to do here for young adult (YA) literature by focusing on the Dominican Republic, Puerto Rico, Haiti, and their diasporas. The foundational work of Chancy and Valdés fills historical silences and contests dominant paradigms---whether related to race or language---that separate rather than put in relation the intellectual and political thought and embodied experiences of places and peoples often imagined as disparate rather than interconnected.
 
 <figure>
-<img src="/images/issue06/valence_1_mhr_lo_figure-1.jpg" alt="slide preview" loading="lazy">
+<img src="/issue06/images/valence_1_mhr_lo_figure-1.jpg" alt="slide preview" loading="lazy">
 <figcaption>Figure 1. Preview of Companion Slides to the Digital Project.</figcaption>
 </figure>
 
@@ -66,7 +66,7 @@ Black Diaspora Literacies in K--12 Classrooms
 </div>
 
 <figure>
-<img src="/images/issue06/valence_1_mhr_lo_figure-2.jpg" alt="American Street" loading="lazy">
+<img src="/issue06/images/valence_1_mhr_lo_figure-2.jpg" alt="American Street" loading="lazy">
 <figcaption>Figure 2. Cover of Ibi Zoboi's *American Street*.</figcaption>
 </figure>
 
@@ -87,7 +87,7 @@ Transliteracies and Translingualism in K--12 Classrooms
 </div>
 
 <figure>
-<img src="/images/issue06/valence_1_mhr_lo_figure-3.jpg" alt="Clap When You Land" loading="lazy">
+<img src="/issue06/images/valence_1_mhr_lo_figure-3.jpg" alt="Clap When You Land" loading="lazy">
 <figcaption>Figure 3. Cover of Elizabeth Acevedo's *Clap When You Land*.</figcaption>
 </figure>
 
@@ -107,14 +107,14 @@ Using dLOC and Other Archives to Layer Caribbean Texts in a Digital Project
 </div>
 
 <figure>
-<img src="/images/issue06/valence_1_mhr_lo_figure-4.jpg" alt="Never Look Back" loading="lazy">
+<img src="/issue06/images/valence_1_mhr_lo_figure-4.jpg" alt="Never Look Back" loading="lazy">
 <figcaption>Figure 4. Cover of Lilliam Rivera's *Never Look Back*.</figcaption>
 </figure>
 
 In Lilliam Rivera's *Never Look Back*, Eury moves from Puerto Rico to Tampa to the Bronx in the wake of Hurricane María. Eury's encounters with the New York City landscape and her love interest, Pheus, are marked by fears that Ato---a spirit from the Underworld who has followed her since childhood---will reappear at any turn. Metaphorically, Ato represents the weight of depression that continues to deepen for Eury. When Ato takes Eury to the Underworld---luring her to stay with idyllic scenes from the Puerto Rican *campo*---Pheus gathers strength from his ancestors and syncretic spirits to attempt to bring her back. Throughout the novel, readers see how the lingering effects of (un)natural disasters are carried in the moving body and how different ancestral and cultural sources of strength are drawn upon to face new challenges as they arise.[^26] Ultimately, this is the heart of the digital project. We propose a two-part digital project using dLOC and other archival resources for students to read these three novels relationally in order to understand complex migrations at the crossroads of Caribbean Black diasporic (im)mobility as well as the placemaking practices of young Afro-Caribbean protagonists as they imbue daily life and visions of the future with multiple meanings. In doing so, we offer educators a model that highlights pedagogical suggestions for prereading, reading, and postreading activities while encouraging teachers to modify activities and instructional foci based on the context of their classrooms, students, schools, communities, and/or regions.[^27]
 
 <figure>
-<img src="/images/issue06/valence_1_mhr_lo_figure-5.jpg" alt="digital project outline" loading="lazy">
+<img src="/issue06/images/valence_1_mhr_lo_figure-5.jpg" alt="digital project outline" loading="lazy">
 <figcaption>Figure 5. Recommended Outline of Digital Project.</figcaption>
 </figure>
 

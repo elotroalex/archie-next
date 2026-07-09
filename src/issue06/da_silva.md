@@ -75,7 +75,7 @@ The final example on our nonexhaustive list of responses to the challenges facin
 
 
 <figure>
-<img src="/images/issue06/v1_nms_mof_fig1.png" alt="2021 virtual exhibition" loading="lazy">
+<img src="/issue06/images/v1_nms_mof_fig1.png" alt="2021 virtual exhibition" loading="lazy">
 <figcaption>Figure 1. Image from the École Supérieure d'Infrotronique d'Haïti presenting a virtual exhibition of Haitian museums in 2021.</figcaption>
 </figure>
 
@@ -116,14 +116,14 @@ Tracing collection roots
 The process of documenting the MOF and organizing its archives has facilitated work on uncovering, or perhaps recovering, collection roots. Examples that inspired the staff and Les Amis include reconciling materials on Ulrick Jean-Pierre's *Portrait de Jean-Jacques Dessalines* (1991) and Maxo Blaise's *Le Serment du Bois Caïman* (2013), as well as works produced by the museum's founder. Documenting the installation *Le cortège macabre*, for example, led to the discovery of connections to various notes, images, and records that deepen understanding of the piece and its meanings (figure 2). Located in the southern quadrant of the museum's garden, the *Cortège* is used during guided visits to communicate the brutalities of enslavement. It includes a procession of chained figures led by a cart in the front and an overseer in the rear. They are heading toward a huge wooden cross, which represents *Croix-des-Bossales*, a marketplace from the colonial period where slaves were exposed and put on sale.
 
 <figure>
-<img src="/images/issue06/valence_1_nms_mof_figure2.jpg" alt="Le cortège macabre" loading="lazy">
+<img src="/issue06/images/valence_1_nms_mof_figure2.jpg" alt="Le cortège macabre" loading="lazy">
 <figcaption>Figure 2. Views of *Le cortège macabre*, an installation about slavery.</figcaption>
 </figure>
 
 Efforts to produce renderings of the *Cortège* revealed the state of its current condition. At the time of this writing, some of the figures' limbs had detached from their bodies and the wooden ox normally standing in front of the cart had fallen. The cart's condition also caused alarm: its roof and front area are caving in and iron chains attached to its interior have been obscured by debris. Inserting this information into the *Cortège*'s ledger led to discussions about the installation's origins, including how and why it was developed. In summary, available oral history demonstrates a public connection between the cart, which was procured from a *hounfort*, or Vodou temple, and slavery. This association developed, among other reasons, because at the time of its 1994 purchase, a set of long iron chains were found in its interior. Though more research is needed to confirm the cart's pre-*hounfort* origins, when it was constructed, its intended use, and whether the chains have the same provenance, the association with slavery contributed to its inclusion in *Le* *cortège macabre*. The origin of the figures emerged from notes and photographs that have since been reconnected with the *Cortège* through the cataloging of the archives. The chief inspiration for the figures and what they represent can be traced to an etching of captured slaves that Gérard came across in a 1865 manuscript by the Scottish missionary David Livingstone (figure 3).
 
 <figure>
-<img src="/images/issue06/valence_1_nms_mof_figure3.jpg" alt="Etching from Livingstone's Narrative of an Expedition" loading="lazy">
+<img src="/issue06/images/valence_1_nms_mof_figure3.jpg" alt="Etching from Livingstone's Narrative of an Expedition" loading="lazy">
 <figcaption>Figure 3. Etching published in David Livingstone, *Narrative of an Expedition to the Zambesi and Its Tributaries, and the Discovery of Lakes Shriwa and Nyassa, 1858--1864*. Available in the public domain. Retrieved May 2021 at https://commons.wikimedia.org/wiki/File:Gang\_of\_Captives\_at\_Mbame%E2%80%99s.jpg.</figcaption>
 </figure>
 
@@ -135,14 +135,14 @@ Understanding the past
 The MOF's digitization project also brings to light materials related to the Habitation Guillaume-Ogier, the eighteenth-century sugarcane plantation on which the museum stands. Museum archives include items used in the cultivation of sugarcane and in the production of sugar, documents related to the life of Ogier and his contemporaries, and photographs that document the condition plantation structures were in at the time the site was purchased. A photograph dated to the 1970s, for example, shows a prerestoration view of the aqueduct and the east facade (figure 4). As a whole, these photographs of surviving structures and their foundations depict the ruins of a robust plantation whose operation coincided with Saint-Domingue's most profitable decades.[^30] Their digitization contributes to knowledge of Saint-Domingue's plantation system, the years leading up to the Haitian Revolution, life and society in the Montrouis region, and events specifically tied to Ogier's plantation.
 
 <figure>
-<img src="/images/issue06/valence_1_nms_mof_figure4.jpg" alt="Remnants of the Habitation Guillaume-Ogier as it appeared in the 1970s" loading="lazy">
+<img src="/issue06/images/valence_1_nms_mof_figure4.jpg" alt="Remnants of the Habitation Guillaume-Ogier as it appeared in the 1970s" loading="lazy">
 <figcaption>Figure 4. Remnants of the Habitation Guillaume-Ogier as it appeared in the 1970s.</figcaption>
 </figure>
 
 Also pertinent to the site's history are photographs and documents related to the development of the museum itself. These materials ease research into which aspects of the MOF pertain to the distant past and which were added during the museum's construction. They also indicate transformations to the museum and its exhibitions, painting a picture of how the MOF reached its current state (figure 5). Additionally, they may aid development of a reference guide for collection items that may have been altered over time and showcase changes related to each director's curatorial style, the adoption of best practices over the course of the museum's history, and new pedagogical tools.
 
 <figure>
-<img src="/images/issue06/valence_1_nms_mof_figure5.jpg" alt="The Habitation Guillaume-Ogier exhibit in the 1980s, 1990s, and 2015" loading="lazy">
+<img src="/issue06/images/valence_1_nms_mof_figure5.jpg" alt="The Habitation Guillaume-Ogier exhibit in the 1980s, 1990s, and 2015" loading="lazy">
 <figcaption>Figure 5. The Habitation exhibit in the 1980s, 1990s, and in 2015.</figcaption>
 </figure>
 
@@ -154,7 +154,7 @@ Reclaiming the archive
 In sifting through the MOF's archive, a compelling panorama of Haitian museology and heritage management emerges. Surviving correspondence between the Musée Ogier-Fombrun, Laura Plantation in Louisiana, and the Maison des Esclaves in Dakar illustrates a budding transatlantic triad intent on connecting different corners of memorialization. Archived communication with UNESCO supports historians' work on the Slave Route Project, including expanding on Haiti's instrumentality to the project's development and deeper scrutiny into Haiti's placement on the route today.[^31] Other materials detail collaborative projects to develop museums, heritage sites, and cultural centers in different parts of the country (figure 6).
 
 <figure>
-<img src="/images/issue06/valence_1_nms_mof_figure6.jpg" alt="Fondation 92 booklet" loading="lazy">
+<img src="/issue06/images/valence_1_nms_mof_figure6.jpg" alt="Fondation 92 booklet" loading="lazy">
 <figcaption>Figure 6. Image from a Fondation 92 booklet on the development of a cultural center in northern Haiti.</figcaption>
 </figure>
 

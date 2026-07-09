@@ -38,12 +38,12 @@ In recent years, Haiti has inspired a profound reconceptualization of epistemolo
 The practices of these institutions reflect the transnational nature of intellectual networks that have sustained knowledge production about the Caribbean. They also facilitate access to disparate collections of cultural and political heritage for a putatively global audience. As one of the philanthropists behind the EAP has written, "Simply put: if this is the memory of the world, the world needs to be able to access it."[^3] But technology's power to shape dislocated international audiences runs the risk of erasing complex, deeply rooted intellectual and institutional histories that underpin every individual collection and the libraries that protect them. While efforts to preserve, digitize, and expand access to newspapers, ephemera, and state and private archives sometimes attempt to redress the violent colonial dynamics of the past, the invocation of a global audience that "needs to be able to access" materials from around the world runs the risk of reinforcing, through a claim to universalism, the "epistemic injustices" that shaped such profound inequalities in the first place.[^4] In this article, we analyze these dynamics by detailing a 2017--20 pilot grant project we organized to digitize nineteenth-century Haitian newspapers at the Bibliothèque Haïtienne des Frères de l'Instruction Chrétienne (BHFIC), funded by the EAP and implemented with support from dLOC.[^5]
 
 <figure>
-<img src="/images/issue06/valence_1_cp_photo-bhfic-new.jpg" alt="The Bibliothèque Haïtienne des Frères de l'Instruction Chrétienne newspaper collection" loading="lazy">
+<img src="/issue06/images/valence_1_cp_photo-bhfic-new.jpg" alt="The Bibliothèque Haïtienne des Frères de l'Instruction Chrétienne newspaper collection" loading="lazy">
 <figcaption>Figure 1. The Bibliothèque Haïtienne des Frères de l'Instruction Chrétienne in Port-au-Prince houses in its collection nearly 200 newspapers. Photo by Marie-France Guillaume.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue06/valence_1_cp_dsc02545.jpg" alt="reading room" loading="lazy">
+<img src="/issue06/images/valence_1_cp_dsc02545.jpg" alt="reading room" loading="lazy">
 <figcaption>Figure 2. BHFIC reading room. Photo by Marie-France Guillaume.</figcaption>
 </figure>
 
@@ -92,12 +92,12 @@ In 2016, a four-person team of Haitian and US scholars assembled to apply for fu
 In 2017, the EAP accepted our proposal, "Beyond the Revolution: Bibliothèque Haïtienne des Frères de l'Instruction Chrétienne Collections: Bringing Nineteenth-Century Haitian History to the World." It was important that our project complement and expand earlier BHFIC-dLOC collaborations and dovetail with any digitization infrastructure already in place. We knew that success would depend on working closely with both the library's executive director, Marie-France Guillaume, and the director of dLOC, Miguel Asencio. Based on Asensio's recommendations, our grant proposed to buy a Canon EOS 6D, wired remote, a Tiffin color check, fluorescent light kit, light bulbs, battery backup, an iMac with additional RAM, an external hard drive, shock- and drop-resistant portable hard drives, memory cards, and a memory card reader. With these materials, the library would be outfitted with two state-of-the-art digitization stations. Our grant also funded the salaries of two technicians for over a year, which doubled the size of the staff dedicated to digitization. It also covered the cost of high-speed wireless internet for the library. These investments, especially the equipment and the funding to train and employ technicians, reflect the EAP's commitment to building up the institutional capacity of local communities.[^32]
 
 <figure>
-<img src="/images/issue06/valence_1_cp_dsc00793.jpg" alt="Miguel Asencio demonstration" loading="lazy">
+<img src="/issue06/images/valence_1_cp_dsc00793.jpg" alt="Miguel Asencio demonstration" loading="lazy">
 <figcaption>Figure 3. dLOC Executive Director Miguel Asencio demonstrates digitization process during workshop. Photo by Marie-France Guillaume.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue06/valence_1_cp_dsc02548.jpg" alt="digitization workstation" loading="lazy">
+<img src="/issue06/images/valence_1_cp_dsc02548.jpg" alt="digitization workstation" loading="lazy">
 <figcaption>Figure 4. Digitization set up housed lighting and scanning equipment. Photo by Marie-France Guillaume.</figcaption>
 </figure>
 

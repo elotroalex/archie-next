@@ -33,7 +33,7 @@ El Archivo Histórico de Vieques
 El Archivo Histórico de Vieques (AHV) es parte de un grupo de archivos comunitarios en Puerto Rico que tiene como norte la preservación de los acervos documentales en su formato físico y digital. La visión de un archivo con un enfoque comunitario y participativo se enfoca en que los miembros de la comunidad aporten materiales de valor histórico al Archivo, se adiestren en la preservación, digitalización y catalogación de los mismos y los utilicen para profundizar en su conocimiento sobre la historia y las luchas del pueblo viequense. En la actualidad, el Archivo está ubicado en las facilidades del Fuerte Conde de Mirasol en el Barrio Mambiche de la isla municipio de Vieques (foto 1). El depósito de materiales incluye un área en la cual se ubican los materiales que requieren protección especial de la humedad (por ejemplo, documentos antiguos, periódicos, grabaciones y videos) (foto 2). Los documentos que han sido digitalizados y catalogados se encuentran en la página web de la Biblioteca Digital del Caribe (dLOC, por sus siglas en inglés)[^1].
 
 <figure>
-<img src="/images/issue06/valence_1_irb_nrv_foto1.png" alt="Fuerte Conde Mirasol" loading="lazy">
+<img src="/issue06/images/valence_1_irb_nrv_foto1.png" alt="Fuerte Conde Mirasol" loading="lazy">
 <figcaption>Foto 1. Fuerte Conde Mirasol, lugar donde ubica el Archivo Histórico de Vieques.</figcaption>
 </figure>
 
@@ -46,12 +46,12 @@ El carácter comunitario de este archivo promueve modelos ágiles, participativo
 
     
 <figure>
-<img src="/images/issue06/valence_1_irb_nrv_foto2.jpg" alt="Participantes en el taller sobre Preservación Audiovisual trabajan con la Colección Andrés Nieves" loading="lazy">
+<img src="/issue06/images/valence_1_irb_nrv_foto2.jpg" alt="Participantes en el taller sobre Preservación Audiovisual trabajan con la Colección Andrés Nieves" loading="lazy">
 <figcaption>Foto 2. Participantes en el taller sobre Preservación Audiovisual trabajan con la Colección Andrés Nieves.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue06/valence_1_irb_nrv_foto3.jpg" alt="Miembros de la Junta Asesora del Archivo Histórico de Vieques" loading="lazy">
+<img src="/issue06/images/valence_1_irb_nrv_foto3.jpg" alt="Miembros de la Junta Asesora del Archivo Histórico de Vieques" loading="lazy">
 <figcaption>Foto 3. Miembros de la Junta Asesora del Archivo Histórico de Vieques.</figcaption>
 </figure>
 
@@ -88,7 +88,7 @@ En la primera parte el estudiantado aprende, a través de videos y conferencias,
 La segunda parte de la actividad "Historias de lucha y resistencia en Vieques" es el proyecto de fin de curso. Para este proyecto cada estudiante aprende a utilizar la colección digital del AHV y realiza una reflexión sobre los acervos documentales del archivo, la cual graba y comparte a través de WhatsApp. Este audio es lo que llamamos en este artículo una "reflexión sonora". La producción de la reflexión sonora es un trabajo que cada estudiante realiza de manera independiente y que requiere explorar los materiales del AHV disponibles en dLOC (la investigación), analizar críticamente el material investigado para producir una reflexión escrita y una reflexión sonora (el análisis), y compartir la reflexión sonora con sus compañeras de curso y el AHV (la divulgación).
 
 <figure>
-<img src="/images/issue06/rivera-video.jpg" alt="Videos de estudiantes" loading="lazy">
+<img src="/issue06/images/rivera-video.jpg" alt="Videos de estudiantes" loading="lazy">
 <figcaption>Video 1. Videos de estudiantes.</figcaption>
 </figure>
 
@@ -127,7 +127,7 @@ Las dieciséis reflexiones sonoras creadas por los estudiantes universitarios de
 La reflexión sonora sobre la vida cotidiana en Vieques durante el proceso de militarización de la isla en la década de 1940[^20] describe la colección de más de 700 fotografías que miembros de la familia Catanzaro tomaron en Vieques entre 1941 y 1942. La colección está disponible en la plataforma dLOC[^21]. En la reflexión sonora del estudiante de comunicaciones Yarib Sánchez se describe que la colección incluye fotos de las condiciones de vida de los viequenses y fotos de la base militar y los militares. Estas fotos fueron confiscadas cuando la familia Catanzaro regresó a Estados Unidos. El estudiante que creó esta reflexión sonora se pregunta, ¿Por qué Estados Unidos no quería que la "historia gráfica" que documentaron los Catanzaro sobre el proceso de militarización se conociera? También reflexiona sobre cómo, al preservarlas, estas fotos "personales" de una "colección familiar" se convierten en registros de cómo se vivía en una época y sobre el valor de donar materiales de valor histórico al AHV.
 
 <figure>
-<img src="/images/issue06/valence_1_irb_nrv_foto4.png" alt="Desfile" loading="lazy">
+<img src="/issue06/images/valence_1_irb_nrv_foto4.png" alt="Desfile" loading="lazy">
 <figcaption>Foto 4. Colección de fotos de la familia Catanzaro, 1941--42. Fuente: Digital Library of the Caribbean, 'UPR: Caribbean Diaspora DH Center'.</figcaption>
 </figure>
 
