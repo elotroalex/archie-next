@@ -57,7 +57,7 @@ the West Indies during the nineteenth century that led to the abolition
 of slavery in British colonies in 1834.
 
 <figure>
-<img src="/images/issue04/levi-inness/LeviFig1.png" alt="A pristine issue of the *Barbados Mercury Gazette* August 1815" loading="lazy">
+<img src="/issue04/images/levi-inness/LeviFig1.png" alt="A pristine issue of the *Barbados Mercury Gazette* August 1815" loading="lazy">
 <figcaption>Figure 1. A pristine issue of the *Barbados Mercury Gazette* August 1815.</figcaption>
 </figure>
 
@@ -170,7 +170,7 @@ expensive strategies of either bringing in expert conservators or
 sending documents for conservation overseas.
 
 <figure>
-<img src="/images/issue04/levi-inness/LeviFig2.png" alt="Dust and pieces of paper" loading="lazy">
+<img src="/issue04/images/levi-inness/LeviFig2.png" alt="Dust and pieces of paper" loading="lazy">
 <figcaption>Figure 2. Dust and pieces of paper---the remains of digitization. Photo credit: Lenora Williams</figcaption>
 </figure>
 
@@ -278,7 +278,7 @@ and thereby to enhance student learning via exposure to digital skills
 and media literacy.
 
 <figure>
-<img src="/images/issue04/levi-inness/LeviFig3.png" alt="Workshop participants engaging with the print copies of the *Mercury*, 12 December 2017" loading="lazy">
+<img src="/issue04/images/levi-inness/LeviFig3.png" alt="Workshop participants engaging with the print copies of the *Mercury*, 12 December 2017" loading="lazy">
 <figcaption>Figure 3. Workshop participants engaging with the print copies of the *Mercury*, 12 December 2017. Photo credit: Lenora Williams</figcaption>
 </figure>
 
@@ -298,7 +298,7 @@ rebound but were carefully wrapped by Conservation Department staff with
 the aim of storing them properly.
 
 <figure>
-<img src="/images/issue04/levi-inness/LeviFig4.png" alt="Disbinding the *Mercury* in the Conservation Department, Barbados Archives" loading="lazy">
+<img src="/issue04/images/levi-inness/LeviFig4.png" alt="Disbinding the *Mercury* in the Conservation Department, Barbados Archives" loading="lazy">
 <figcaption>Figure 4. Disbinding the *Mercury* in the Conservation Department of the Barbados Archives. Photo credit: Lenora Williams.</figcaption>
 </figure>
 
@@ -321,7 +321,7 @@ the floor around us, we were well aware that we were the last people who
 would touch the physical copies of the _Mercury_.[^22]
 
 <figure>
-<img src="/images/issue04/levi-inness/LeviFig5.png" alt="A puzzle of disintegrating pages." loading="lazy">
+<img src="/issue04/images/levi-inness/LeviFig5.png" alt="A puzzle of disintegrating pages." loading="lazy">
 <figcaption>Figure 5. A puzzle of disintegrating pages. Photo credit: Lenora Williams</figcaption>
 </figure>
 
@@ -344,12 +344,12 @@ impact were those we posted of runaway-slave ads, which contained
 stories of violence, of course, but also of courage and liberation.
 
 <figure>
-<img src="/images/issue04/levi-inness/LeviFig6.jpg" alt="Unexpected marginalia: a bug" loading="lazy">
+<img src="/issue04/images/levi-inness/LeviFig6.jpg" alt="Unexpected marginalia: a bug" loading="lazy">
 <figcaption>Figure 6. Unexpected marginalia: a bug. Photo credit: Amalia Levi</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/levi-inness/LeviFig7.jpg" alt="Trails made by hungry, wandering bookworms" loading="lazy">
+<img src="/issue04/images/levi-inness/LeviFig7.jpg" alt="Trails made by hungry, wandering bookworms" loading="lazy">
 <figcaption>Figure 7. Trails made by hungry, wandering bookworms. Photo credit: Amalia Levi</figcaption>
 </figure>
 
@@ -476,32 +476,32 @@ from the people because in the postcolony, the community _is_ the
 archives.
 
 <figure>
-<img src="/images/issue04/levi-inness/LeviFig8.png" alt="Runaway-slave ad, 3 January 1789" loading="lazy">
+<img src="/issue04/images/levi-inness/LeviFig8.png" alt="Runaway-slave ad, 3 January 1789" loading="lazy">
 <figcaption>Figure 8. Runaway-slave ad, 3 January 1789.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/levi-inness/LeviFig9.png" alt="Runaway-slave ad, 27 January 1807." loading="lazy">
+<img src="/issue04/images/levi-inness/LeviFig9.png" alt="Runaway-slave ad, 27 January 1807." loading="lazy">
 <figcaption>Figure 9. Runaway-slave ad, 27 January 1807.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/levi-inness/LeviFig10.png" alt="Runaway-slave ad, 14 April 1807." loading="lazy">
+<img src="/issue04/images/levi-inness/LeviFig10.png" alt="Runaway-slave ad, 14 April 1807." loading="lazy">
 <figcaption>Figure 10. Runaway-slave ad, 14 April 1807.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/levi-inness/LeviFig11.png" alt="Figure 11. Runaway-slave ad, 4 October 1788." loading="lazy">
+<img src="/issue04/images/levi-inness/LeviFig11.png" alt="Figure 11. Runaway-slave ad, 4 October 1788." loading="lazy">
 <figcaption>Figure 11. Runaway-slave ad, 4 October 1788.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/levi-inness/LeviFig12.png" alt="Runaway-slave ad, 30 August 1783." loading="lazy">
+<img src="/issue04/images/levi-inness/LeviFig12.png" alt="Runaway-slave ad, 30 August 1783." loading="lazy">
 <figcaption>Figure 12. Runaway-slave ad, 30 August 1783.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/levi-inness/LeviFig13.png" alt="Runaway-slave ad, 14 April 1807." loading="lazy">
+<img src="/issue04/images/levi-inness/LeviFig13.png" alt="Runaway-slave ad, 14 April 1807." loading="lazy">
 <figcaption>Figure 13. Runaway-slave ad, 14 April 1807.</figcaption>
 </figure>
 

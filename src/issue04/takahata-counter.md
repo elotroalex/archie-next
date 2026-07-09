@@ -309,7 +309,7 @@ present-day readers to maintain the goal of challenging Grainger's
 colonial vision.
 
 <figure>
-<img src="/images/issue04/takahata/footnote-page.jpg" alt="Grainger's Footnotes" loading="lazy">
+<img src="/issue04/images/takahata/footnote-page.jpg" alt="Grainger's Footnotes" loading="lazy">
 <figcaption>An example of Grainger's extensive footnotes.</figcaption>
 </figure>
 
@@ -338,7 +338,7 @@ the corresponding pages of the 1764 edition. We also included in this
 version links to scanned images of pages from the 1764 edition.
 
 <figure>
-<img src="/images/issue04/takahata/footnote-view.jpg" alt="A Page-by-Page View" loading="lazy">
+<img src="/issue04/images/takahata/footnote-view.jpg" alt="A Page-by-Page View" loading="lazy">
 <figcaption>An example of a single page in *Digital Grainger*.</figcaption>
 </figure>
 
@@ -467,7 +467,7 @@ written by team members to help readers understand the significance of
 the theme and the selected passages.
 
 <figure>
-<img src="/images/issue04/takahata/counter-plantation.jpg" alt="The Counter-Plantation" loading="lazy">
+<img src="/issue04/images/takahata/counter-plantation.jpg" alt="The Counter-Plantation" loading="lazy">
 <figcaption>The menu for *Digital Grainger*, which includes the section 'The Counter-Plantation.'</figcaption>
 </figure>
 
@@ -493,7 +493,7 @@ animal that Grainger discusses in the poem as a serious threat to cane
 crops.
 
 <figure>
-<img src="/images/issue04/takahata/homepage.jpg" alt="Breaking apart *The Sugar-Cane*" loading="lazy">
+<img src="/issue04/images/takahata/homepage.jpg" alt="Breaking apart *The Sugar-Cane*" loading="lazy">
 <figcaption>Our homepage image by Vanessa Lee.</figcaption>
 </figure>
 

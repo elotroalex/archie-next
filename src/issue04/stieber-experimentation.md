@@ -203,7 +203,7 @@ resources needed to publish the _Revue_, and the general ability to
 realize the SHHGG's programming.
 
 <figure>
-<img src="/images/issue04/stieber/stieber-image_1.png" alt="Data Visualization" loading="lazy">
+<img src="/issue04/images/stieber/stieber-image_1.png" alt="Data Visualization" loading="lazy">
 <figcaption>Figure 1. Number of articles per year in *Revue de la Société haïtienne d'histoire, de géographie et de géologie*, 1925--2016.</figcaption>
 </figure>
 
@@ -273,7 +273,7 @@ _Revue_, most notably regarding the uniformization of articles and the
 quality and level of the publication.
 
 <figure>
-<img src="/images/issue04/stieber/stieber-image_2.jpg" alt="Cover Art" loading="lazy">
+<img src="/issue04/images/stieber/stieber-image_2.jpg" alt="Cover Art" loading="lazy">
 <figcaption>Figure 2. Cover art, *Revue de la Société haïtienne d'histoire, de géographie et de géologie*.</figcaption>
 </figure>
 
@@ -323,7 +323,7 @@ practices. More onerous still, the early issues through 1950 were only
 available on microfilm.
 
 <figure>
-<img src="/images/issue04/stieber/stieber-image_3.png" alt="Library of Congress Catalog Entry" loading="lazy">
+<img src="/issue04/images/stieber/stieber-image_3.png" alt="Library of Congress Catalog Entry" loading="lazy">
 <figcaption>Figure 3. Library of Congress catalog entry for the *Revue de la Société haïtienne d\'histoire, de géographie et de géologie*.</figcaption>
 </figure>
 
@@ -418,7 +418,7 @@ resources in twentieth-century Caribbean scholarly and intellectual
 production?[^20]
 
 <figure>
-<img src="/images/issue04/stieber/stieber-image_4.png" alt="Collections as Data" loading="lazy">
+<img src="/issue04/images/stieber/stieber-image_4.png" alt="Collections as Data" loading="lazy">
 <figcaption>Figure 4. Chelsea Stieber, *Collections as Data*, Library of Congress, 25 July 2017.</figcaption>
 </figure>
 

@@ -327,7 +327,7 @@ tribute to contributors who took the time to send their personal
 documents to our team.
 
 <figure>
-<img src="/images/issue04/odell-jegousso/LibraryofGlissantStudies_Image1.png" alt="Works by Édouard Glissant: Inscribed Books" loading="lazy">
+<img src="/issue04/images/odell-jegousso/LibraryofGlissantStudies_Image1.png" alt="Works by Édouard Glissant: Inscribed Books" loading="lazy">
 <figcaption>Figure 1. Screen shot of inscribed books received between June and October 2019.</figcaption>
 </figure>
 
@@ -340,7 +340,7 @@ and several of Glissant's former colleagues to share their materials
 with the project.
 
 <figure>
-<img src="/images/issue04/odell-jegousso/LibraryofGlissantStudies_Image2.png" alt="Works by Édouard Glissant: Manuscripts" loading="lazy">
+<img src="/issue04/images/odell-jegousso/LibraryofGlissantStudies_Image2.png" alt="Works by Édouard Glissant: Manuscripts" loading="lazy">
 <figcaption>Figure 2. Screen shot of manuscripts generously shared by Alexandre Leupin.</figcaption>
 </figure>
 

@@ -32,7 +32,7 @@ created with a specific audience in mind, Miranda explained, "At YOUR
 request, we made a book."[^2]
 
 <figure>
-<img src="/images/issue04/machado/figure-1.png" alt="Miranda's Little Pep Talks marketing." loading="lazy">
+<img src="/issue04/images/machado/figure-1.png" alt="Miranda's Little Pep Talks marketing." loading="lazy">
 <figcaption>Figure 1. Miranda's *Little Pep Talks* marketing.</figcaption>
 </figure>
 
@@ -358,7 +358,7 @@ limited collection of "for you" tweets that appeared from May 2017 to
 January 2018.[^26]
 
 <figure>
-<img src="/images/issue04/machado/figure-2.png" alt="Figure 2. An online archive of Miranda\'s \'for you\' tweets." loading="lazy">
+<img src="/issue04/images/machado/figure-2.png" alt="Figure 2. An online archive of Miranda\'s \'for you\' tweets." loading="lazy">
 <figcaption>Figure 2. An online archive of Miranda\'s \'for you\' tweets.</figcaption>
 </figure>
 
@@ -431,7 +431,7 @@ stopwords in order to visualize the patterns and distinguishing features
 of each Latinx writers' Twitter use.
 
 <figure>
-<img src="/images/issue04/machado/figure-5.jpg" alt="Figure 5. Twitter profiles of twelve Latinx writers." loading="lazy">
+<img src="/issue04/images/machado/figure-5.jpg" alt="Figure 5. Twitter profiles of twelve Latinx writers." loading="lazy">
 <figcaption>Figure 5. Twitter profiles of twelve Latinx writers.</figcaption>
 </figure>
 
@@ -473,22 +473,22 @@ references to a collective or kinship with followers, such as "we" and
 writers.
 
 <figure>
-<img src="/images/issue04/machado/figure-6.png" alt="Figure 6. The raw frequency of you in the corpora of thirteen writers." loading="lazy">
+<img src="/issue04/images/machado/figure-6.png" alt="Figure 6. The raw frequency of you in the corpora of thirteen writers." loading="lazy">
 <figcaption>Figure 6. The raw frequency of you in the corpora of thirteen writers.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/machado/figure-7.png" alt="Figure 7. The raw frequency of \'your\' in the corpora of thirteen writers." loading="lazy">
+<img src="/issue04/images/machado/figure-7.png" alt="Figure 7. The raw frequency of \'your\' in the corpora of thirteen writers." loading="lazy">
 <figcaption>Figure 7. The raw frequency of \'your\' in the corpora of thirteen writers.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/machado/figure-8.png" alt="Figure 8. The raw frequency of \'we\' in the corpora of thirteen writers." loading="lazy">
+<img src="/issue04/images/machado/figure-8.png" alt="Figure 8. The raw frequency of \'we\' in the corpora of thirteen writers." loading="lazy">
 <figcaption>Figure 8. The raw frequency of \'we\' in the corpora of thirteen writers.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/machado/figure-9.png" alt="Figure 9. The raw frequency of \'us\' in the corpora of thirteen writers." loading="lazy">
+<img src="/issue04/images/machado/figure-9.png" alt="Figure 9. The raw frequency of \'us\' in the corpora of thirteen writers." loading="lazy">
 <figcaption>Figure 9. The raw frequency of \'us\' in the corpora of thirteen writers.</figcaption>
 </figure>
 
@@ -621,7 +621,7 @@ means of confirming de León's critique of the administration's decision
 to pull out of the Paris climate accord.
 
 <figure>
-<img src="/images/issue04/machado/figure-14.png" alt="Figure 14. Chibas's reply to Kamala Harris." loading="lazy">
+<img src="/issue04/images/machado/figure-14.png" alt="Figure 14. Chibas's reply to Kamala Harris." loading="lazy">
 <figcaption>Figure 14. Chibas's reply to Kamala Harris.</figcaption>
 </figure>
 
@@ -653,12 +653,12 @@ Vázquez's "shout-out" parenthetically translates the "you" to "us" in
 imagining the shared familial context of absent fathers.[^27]
 
 <figure>
-<img src="/images/issue04/machado/figure-16.png" alt="Figure 16. Vázquez on fatherhood." loading="lazy">
+<img src="/issue04/images/machado/figure-16.png" alt="Figure 16. Vázquez on fatherhood." loading="lazy">
 <figcaption>Figure 16. Vázquez on fatherhood.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/machado/figure-17.png" alt="Figure 17. Vázquez for 'tested.'" loading="lazy">
+<img src="/issue04/images/machado/figure-17.png" alt="Figure 17. Vázquez for 'tested.'" loading="lazy">
 <figcaption>Figure 17. Vázquez for 'tested.'</figcaption>
 </figure>
 
@@ -745,7 +745,7 @@ recovery efforts can be interpreted as relying on similar a marketing
 dynamic and rhetoric to that of his self-promotion tweets.
 
 <figure>
-<img src="/images/issue04/machado/figure-18.png" alt="Figure 18. Miranda's \#AlmostLikePraying." loading="lazy">
+<img src="/issue04/images/machado/figure-18.png" alt="Figure 18. Miranda's \#AlmostLikePraying." loading="lazy">
 <figcaption>Figure 18. Miranda's \#AlmostLikePraying.</figcaption>
 </figure>
 
@@ -783,7 +783,7 @@ The #Ham4All challenge of June 2017 is a useful precursor to the
 marketing and activism web of the #AlmostLikePraying benefit song.[^35]
 
 <figure>
-<img src="/images/issue04/machado/figure-19.png" alt="Figure 19. Miranda's #Ham4All challenge." loading="lazy">
+<img src="/issue04/images/machado/figure-19.png" alt="Figure 19. Miranda's #Ham4All challenge." loading="lazy">
 <figcaption>Figure 19. Miranda's #Ham4All challenge.</figcaption>
 </figure>
 
@@ -825,22 +825,22 @@ Network] comes at a time when how Albany operates has come under
 increasing criticism and investigations."[^39]
 
 <figure>
-<img src="/images/issue04/machado/figure-20.png" alt="Figure 20. The Hamilton Campaign Network." loading="lazy">
+<img src="/issue04/images/machado/figure-20.png" alt="Figure 20. The Hamilton Campaign Network." loading="lazy">
 <figcaption>Figure 20. The Hamilton Campaign Network.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/machado/figure-21.png" alt="Figure 21. Miranda's \'in the meantime.\'" loading="lazy">
+<img src="/issue04/images/machado/figure-21.png" alt="Figure 21. Miranda's \'in the meantime.\'" loading="lazy">
 <figcaption>Figure 21. Miranda's \'in the meantime.\'</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/machado/figure-22.png" alt="Figure 22: Miranda on austerity protests in Puerto Rico." loading="lazy">
+<img src="/issue04/images/machado/figure-22.png" alt="Figure 22: Miranda on austerity protests in Puerto Rico." loading="lazy">
 <figcaption>Figure 22: Miranda on austerity protests in Puerto Rico.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/machado/figure-23.png" alt="Figure 23. Miranda's \'new path\' with Hispanic Federation." loading="lazy">
+<img src="/issue04/images/machado/figure-23.png" alt="Figure 23. Miranda's \'new path\' with Hispanic Federation." loading="lazy">
 <figcaption>Figure 23. Miranda's \'new path\' with Hispanic Federation.</figcaption>
 </figure>
 
@@ -904,12 +904,12 @@ Miranda explains that he has "tons of practice" in producing art in
 order to cultivate specific feelings in the spectator.[^46]
 
 <figure>
-<img src="/images/issue04/machado/figure-24.png" alt="Figure 24. Screenshot of Miranda\'s bio profile, January 2018." loading="lazy">
+<img src="/issue04/images/machado/figure-24.png" alt="Figure 24. Screenshot of Miranda\'s bio profile, January 2018." loading="lazy">
 <figcaption>Figure 24. Screenshot of Miranda's bio profile, January 2018.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/machado/figure-25.png" alt="Figure 25. Miranda\'s \'job description.\'" loading="lazy">
+<img src="/issue04/images/machado/figure-25.png" alt="Figure 25. Miranda\'s \'job description.\'" loading="lazy">
 <figcaption>Figure 25. Miranda\'s \'job description.\'</figcaption>
 </figure>
 
@@ -954,7 +954,7 @@ find gratitude to be a rhetorical move that bolsters the intimate
 dynamics of Miranda's Twitter account.
 
 <figure>
-<img src="/images/issue04/machado/figure-26.png" alt="Figure 26. Miranda\'s caregiver persona." loading="lazy">
+<img src="/issue04/images/machado/figure-26.png" alt="Figure 26. Miranda\'s caregiver persona." loading="lazy">
 <figcaption>Figure 26. Miranda\'s caregiver persona.</figcaption>
 </figure>
 
@@ -971,7 +971,7 @@ dynamics of Miranda's Twitter account.
 <span class="caption">Figure 27. List of the top twenty-five words within Miranda's \'for you\' corpus.</span>
 
 <figure>
-<img src="/images/issue04/machado/figure-29.png" alt="Figure 28. Miranda\'s gnight gratitude." loading="lazy">
+<img src="/issue04/images/machado/figure-29.png" alt="Figure 28. Miranda\'s gnight gratitude." loading="lazy">
 <figcaption>Figure 28. Miranda\'s gnight gratitude.</figcaption>
 </figure>
 
@@ -1006,12 +1006,12 @@ The advice tweets are thereby bolstered by claims on the universal
 follower's affect, through an implicit reciprocity.
 
 <figure>
-<img src="/images/issue04/machado/figure-30A.png" alt="Figure 29. Miranda\'s instruction." loading="lazy">
+<img src="/issue04/images/machado/figure-30A.png" alt="Figure 29. Miranda\'s instruction." loading="lazy">
 <figcaption>Figure 29. Miranda\'s instruction.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/machado/figure-30B.png" alt="Figure 30. Miranda\'s pedagogy." loading="lazy">
+<img src="/issue04/images/machado/figure-30B.png" alt="Figure 30. Miranda\'s pedagogy." loading="lazy">
 <figcaption>Figure 30. Miranda\'s pedagogy.</figcaption>
 </figure>
 
@@ -1027,12 +1027,12 @@ Miranda builds affective alliances with his audience and can bank on
 their emotional investment when he needs to mobilize his followers.
 
 <figure>
-<img src="/images/issue04/machado/figure-31.png" alt="Figure 31. A 2016 gratitude tweet with Singing in the Rain." loading="lazy">
+<img src="/issue04/images/machado/figure-31.png" alt="Figure 31. A 2016 gratitude tweet with Singing in the Rain." loading="lazy">
 <figcaption>Figure 31. A 2016 gratitude tweet with *Singing in the Rain*.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/machado/figure-32.png" alt="Figure 32. A 2016 gratitude tweet with Marilyn Monroe." loading="lazy">
+<img src="/issue04/images/machado/figure-32.png" alt="Figure 32. A 2016 gratitude tweet with Marilyn Monroe." loading="lazy">
 <figcaption>Figure 32. A 2016 gratitude tweet with Marilyn Monroe.</figcaption>
 </figure>
 
@@ -1061,17 +1061,17 @@ maintaining contact is one way that Miranda attempts to stay relevant on
 a daily basis with his millions of followers.
 
 <figure>
-<img src="/images/issue04/machado/figure-33.png" alt="Figure 33. A Miranda Spotify mixtape announcement." loading="lazy">
+<img src="/issue04/images/machado/figure-33.png" alt="Figure 33. A Miranda Spotify mixtape announcement." loading="lazy">
 <figcaption>Figure 33. A Miranda Spotify mixtape announcement.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/machado/figure-34.png" alt="Figure 34. Miranda\'s \'Any other questions?\' response to a playlist request." loading="lazy">
+<img src="/issue04/images/machado/figure-34.png" alt="Figure 34. Miranda\'s \'Any other questions?\' response to a playlist request." loading="lazy">
 <figcaption>Figure 34. Miranda\'s \'Any other questions?\' response to a playlist request.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/machado/figure-35.png" alt="Figure 35. Miranda\'s \'Nope\' response to a playlist request." loading="lazy">
+<img src="/issue04/images/machado/figure-35.png" alt="Figure 35. Miranda\'s \'Nope\' response to a playlist request." loading="lazy">
 <figcaption>Figure 35. Miranda\'s \'Nope\' response to a playlist request.</figcaption>
 </figure>
 
@@ -1095,12 +1095,12 @@ Miranda's gratitude but ends with the gesture expected in reply---the
 audience's consumption of his cultural production.[^52]
 
 <figure>
-<img src="/images/issue04/machado/figure-36.png" alt="Figure 36. Miranda as Gizmoduck." loading="lazy">
+<img src="/issue04/images/machado/figure-36.png" alt="Figure 36. Miranda as Gizmoduck." loading="lazy">
 <figcaption>Figure 36. Miranda as Gizmoduck.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/machado/figure-37.png" alt="Figure 37. Miranda\'s Moana marketing." loading="lazy">
+<img src="/issue04/images/machado/figure-37.png" alt="Figure 37. Miranda\'s Moana marketing." loading="lazy">
 <figcaption>Figure 37. Miranda\'s *Moana* marketing.]</figcaption>
 </figure>
 
@@ -1125,12 +1125,12 @@ example, Miranda posted expressions of sympathy regarding the August
 disastrous landfall in Dominica and Puerto Rico in September 2017.[^54]
 
 <figure>
-<img src="/images/issue04/machado/figure-38.png" alt="Figure 38. Miranda on the mass shooting in San Antonio, Texas." loading="lazy">
+<img src="/issue04/images/machado/figure-38.png" alt="Figure 38. Miranda on the mass shooting in San Antonio, Texas." loading="lazy">
 <figcaption>Figure 38. Miranda on the mass shooting in San Antonio, Texas.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/machado/figure-39.png" alt="Figure 39. Miranda\'s reaction to Hurricane Maria." loading="lazy">
+<img src="/issue04/images/machado/figure-39.png" alt="Figure 39. Miranda\'s reaction to Hurricane Maria." loading="lazy">
 <figcaption>Figure 39. Miranda\'s reaction to Hurricane Maria.</figcaption>
 </figure>
 
@@ -1151,7 +1151,7 @@ third-person narrative while implying that he acts as a member of a
 community that is "fighting" for immigrant rights.
 
 <figure>
-<img src="/images/issue04/machado/figure-40.png" alt="Figure 40. Miranda on dreamers." loading="lazy">
+<img src="/issue04/images/machado/figure-40.png" alt="Figure 40. Miranda on dreamers." loading="lazy">
 <figcaption>Figure 40. Miranda on dreamers.</figcaption>
 </figure>
 
@@ -1169,12 +1169,12 @@ that it is Trump who will not have to wait for his cosmic
 comeuppance.[^56]
 
 <figure>
-<img src="/images/issue04/machado/figure-41.png" alt="Figure 41. Miranda on Trump\'s response to Hurricane María." loading="lazy">
+<img src="/issue04/images/machado/figure-41.png" alt="Figure 41. Miranda on Trump\'s response to Hurricane María." loading="lazy">
 <figcaption>Figure 41. Miranda on Trump\'s response to Hurricane María.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue04/machado/figure-42.png" alt="Figure 42. Miranda on Trump\'s destination." loading="lazy">
+<img src="/issue04/images/machado/figure-42.png" alt="Figure 42. Miranda on Trump\'s destination." loading="lazy">
 <figcaption>Figure 42. Miranda on Trump\'s destination.</figcaption>
 </figure>
 

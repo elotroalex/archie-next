@@ -13,8 +13,8 @@ author:
 pubDate: February, 2020
 issue: 4
 order: 7
-image: images/issue04/carisealand.png
-thumb: images/issue04/carisealand-thumb.png
+image: issue04/images/carisealand.png
+thumb: issue04/images/carisealand-thumb.png
 link: "https://carisealand.org/"
 ---
 
