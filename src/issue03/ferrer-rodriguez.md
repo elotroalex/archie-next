@@ -245,7 +245,7 @@ curating our [*Digital Aponte*](http://aponte.hosting.nyu.edu/) project
 meant first making that archival record as accessible as possible.[^8]
 
 <figure>
-<img src="/images/issue03/ferrer-1.png" alt="Screenshot of *Digital Aponte*." loading="lazy">
+<img src="/issue03/images/ferrer-1.png" alt="Screenshot of *Digital Aponte*." loading="lazy">
 <figcaption>Figure 1. *Digital Aponte*.</figcaption>
 </figure>
 
@@ -578,7 +578,7 @@ Plaisir came up with more than fifty pieces, and Renée Stout with some
 nine (plus a gun).
 
 <figure>
-<img src="/images/issue03/ferrer-2.jpg" alt="José Bedia, *Júbilo de Aponte*, 2017; mixed media on mixed papers, 106 x 143 in. (courtesy of the artist)." loading="lazy">
+<img src="/issue03/images/ferrer-2.jpg" alt="José Bedia, *Júbilo de Aponte*, 2017; mixed media on mixed papers, 106 x 143 in. (courtesy of the artist)." loading="lazy">
 <figcaption>Figure 2. José Bedia, *Júbilo de Aponte*, 2017; mixed media on mixed papers, 106 x 143 in. (courtesy of the artist).</figcaption>
 </figure>
 
@@ -598,7 +598,7 @@ fig. 3). We might even say it derives from a synergy between her own
 artistic and political practice and Aponte's.
 
 <figure>
-<img src="/images/issue03/ferrer-3.jpg" alt="Teresita Fernández, *Aponte*, 2017; pyrite, oil, and graphite on wood panel, 21.5 x 36 x 2 in. overall (courtesy of the artist and Lehmann Maupin, New York; photograph by Yolanda Navas)." loading="lazy">
+<img src="/issue03/images/ferrer-3.jpg" alt="Teresita Fernández, *Aponte*, 2017; pyrite, oil, and graphite on wood panel, 21.5 x 36 x 2 in. overall (courtesy of the artist and Lehmann Maupin, New York; photograph by Yolanda Navas)." loading="lazy">
 <figcaption>Figure 3. Teresita Fernández, *Aponte*, 2017; pyrite, oil, and graphite on wood panel, 21.5 x 36 x 2 in. overall (courtesy of the artist and Lehmann Maupin, New York; photograph by Yolanda Navas).</figcaption>
 </figure>
 

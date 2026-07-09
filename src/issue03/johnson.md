@@ -34,7 +34,7 @@ days after Hurricane María made landfall in Puerto Rico.
 
 <figure>
 <a href="https://twitter.com/NOAASatellitePA/status/912368981784309760" target="_blank">
-<img src="/images/issue03/johnson-a.png" alt="Suomi Puerto Rico 24 September 2017" loading="lazy">
+<img src="/issue03/images/johnson-a.png" alt="Suomi Puerto Rico 24 September 2017" loading="lazy">
 </a>
 <figcaption>Suomi satellite images of Puerto Rico on 24 July 2017 and
     24 September 2017. Image credit\: NOAA National Environmental
@@ -162,7 +162,7 @@ land masses.
 
 <figure>
 <a href="http://sappingattention.blogspot.com/2012/11/reading-digital-sources-case-study-in.html" target="_blank">
-<img src="/images/issue03/johnson-b.png" alt="Schmidt ICOADS US Maury" loading="lazy">
+<img src="/issue03/images/johnson-b.png" alt="Schmidt ICOADS US Maury" loading="lazy">
 </a>
 <figcaption>All voyages from the ICOADS US Maury collection. Ships tracks
     in black, plotted on a white background, show the outlines of the
@@ -180,7 +180,7 @@ tornadoes."[^10]
 
 <figure>
 <a href="https://www.youtube.com/watch?v=ezQxonSFCaU" target="_blank">
-<img src="/images/issue03/johnson-c.png" alt="Johnson NOAA 20sep17\_maria\_geocolor hurricane" loading="lazy">
+<img src="/issue03/images/johnson-c.png" alt="Johnson NOAA 20sep17\_maria\_geocolor hurricane" loading="lazy">
 </a>
 <figcaption>NOAA GOES-16 satellite image of the eye of Hurricane María
     over Puerto Rico, 20 September 2017.</figcaption>
@@ -465,7 +465,7 @@ of hauntings left behind.
 
 <figure>
 <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/12068585&auto_play=false&show_user=true&visual=true" target="_blank">
-<img src="/images/issue03/johnson-audio-a.png" alt="Light a candle. Drink a glass of water. Press Play. Listen for two minutes." loading="lazy">
+<img src="/issue03/images/johnson-audio-a.png" alt="Light a candle. Drink a glass of water. Press Play. Listen for two minutes." loading="lazy">
 </a>
 <figcaption>Light a candle. Drink a glass of water. Press Play. Listen for two minutes.</figcaption>
 </figure>
@@ -623,7 +623,7 @@ the album; that blog no longer exists. The album remains available on
 SoundCloud for free.
 
 <figure>
-<img src="/images/issue03/johnson-d.jpeg" alt="Matana Roberts Notation" loading="lazy">
+<img src="/issue03/images/johnson-d.jpeg" alt="Matana Roberts Notation" loading="lazy">
 <figcaption>Roberts</figcaption>
 </figure>
 
@@ -683,7 +683,7 @@ live again.
 
 <figure>
 <a href="https://player.vimeo.com/video/23003301?autoplay=1&loop=1&color=ffffff" target="_blank">
-<img src="/images/issue03/johnson-vid-a.png" alt="Matana Roberts, &quot;Mississippi Moonchile,&quot; *Coin Coin*. Directed by Radwan Moumneh." loading="lazy">
+<img src="/issue03/images/johnson-vid-a.png" alt="Matana Roberts, &quot;Mississippi Moonchile,&quot; *Coin Coin*. Directed by Radwan Moumneh." loading="lazy">
 </a>
 <figcaption>Matana Roberts, &quot;Mississippi Moonchile,&quot; *Coin Coin*. Directed by Radwan Moumneh.</figcaption>
 </figure>
@@ -740,7 +740,7 @@ there and then attends to it.
 
 <figure>
 <a href="http://blackhaunts.mp285.com/" target="_blank">
-<img src="/images/issue03/johnson-e.png" alt="Parham" loading="lazy">
+<img src="/issue03/images/johnson-e.png" alt="Parham" loading="lazy">
 </a>
 <figcaption>In \</figcaption>
 </figure>
@@ -771,7 +771,7 @@ forget that even in the dark we keep the light.
 
 <figure>
 <a href="https://www.youtube.com/embed/mO-PAYLa0Y0" target="_blank">
-<img src="/images/issue03/johnson-vid-b.png" alt="Lighter Thieves. &quot;We Keep the Light.&quot;" loading="lazy">
+<img src="/issue03/images/johnson-vid-b.png" alt="Lighter Thieves. &quot;We Keep the Light.&quot;" loading="lazy">
 </a>
 <figcaption>Lighter Thieves. </figcaption>
 </figure>

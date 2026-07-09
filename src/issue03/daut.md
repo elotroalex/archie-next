@@ -86,7 +86,7 @@ an indemnity to France's King Charles X, to the US occupation of the
 country in 1915.
 
 <figure>
-<img src="/images/issue03/daut-a.jpg" alt="Close up of museum timeline showing the gap." loading="lazy">
+<img src="/issue03/images/daut-a.jpg" alt="Close up of museum timeline showing the gap." loading="lazy">
 <figcaption>Figure 1. Photo courtesy of Tabitha McIntosh</figcaption>
 </figure>
 
@@ -103,7 +103,7 @@ dictatorship that was simultaneously dominated by the Western powers
 (see fig. 2).
 
 <figure>
-<img src="/images/issue03/daut-b.jpg" alt="Long view of the timeline." loading="lazy">
+<img src="/issue03/images/daut-b.jpg" alt="Long view of the timeline." loading="lazy">
 <figcaption>Figure 2. Photo courtesy of Tabitha McIntosh</figcaption>
 </figure>
 
@@ -244,7 +244,7 @@ Haitian
 Atlantic](https://s3.amazonaws.com/uploads.knightlab.com/storymapjs/ba15390b4fd1e7d29a79c367f2799f1f/transnational-african-american-text-network/draft.html)."[^18]
 
 <figure>
-<img src="/images/issue03/daut-c.jpg" alt="Vèvè of Papa Legba" loading="lazy">
+<img src="/issue03/images/daut-c.jpg" alt="Vèvè of Papa Legba" loading="lazy">
 <figcaption>Figure 3. *Vèvè of Papa Legba*</figcaption>
 </figure>
 
@@ -564,7 +564,7 @@ we might refer to as historian archivists, a more finely honed
 variation, perhaps, of the "citizen historian" model?
 
 <figure>
-<img src="/images/issue03/daut-d.jpg" alt="Letter from General Donatien Rochambeau to General
+<img src="/issue03/images/daut-d.jpg" alt="Letter from General Donatien Rochambeau to General
 Jean-Jacques Dessalines." loading="lazy">
 <figcaption>Figure 4. Letter from General Donatien Rochambeau to General
 Jean-Jacques Dessalines. Josefina del Toro Fulladosa Collection, Alfred
@@ -572,7 +572,7 @@ Nemours Collection, University of Puerto Rico, Río Piedras Campus.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue03/daut-e.jpg" alt="Engraving by Barincou of Boyer in full dress uniform
+<img src="/issue03/images/daut-e.jpg" alt="Engraving by Barincou of Boyer in full dress uniform
 for a royal reception, 17 April 1825." loading="lazy">
 <figcaption>Figure 5. Engraving by Barincou of Boyer in full dress uniform
 for a royal reception, 17 April 1825. Josefina del Toro Fulladosa
@@ -581,7 +581,7 @@ Piedras Campus.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue03/daut-f.jpg" alt="Proclamation from 4 June 1812 signed by Alexandre
+<img src="/issue03/images/daut-f.jpg" alt="Proclamation from 4 June 1812 signed by Alexandre
 Pétion." loading="lazy">
 <figcaption>Figure 6. Proclamation from 4 June 1812 signed by Alexandre
 Pétion. Josefina del Toro Fulladosa Collection, Alfred Nemours

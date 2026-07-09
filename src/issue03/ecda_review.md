@@ -17,8 +17,8 @@ author:
 pubDate: July 9 2019
 issue: 3
 order: 8
-image: images/issue03/ecda.png
-thumb: images/issue03/ecda-thumb.png
+image: issue03/images/ecda.png
+thumb: issue03/images/ecda-thumb.png
 link: "https://ecda.northeastern.edu/"
 ---
 

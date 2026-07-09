@@ -363,7 +363,7 @@ make this eminently clear (see fig. 1).
 
 <figure>
 <a href="https://archive.org/details/tableaudesfinanc00slsn" target="_blank">
-<img src="/images/issue03/nesbitt-1.jpg" alt="&quot;Tableau des Finances et du Commerce de la partie Françoise de St. Domingue,&quot; 1792 (detail). Copy in the John Carter Brown Library, Brown University." loading="lazy">
+<img src="/issue03/images/nesbitt-1.jpg" alt="&quot;Tableau des Finances et du Commerce de la partie Françoise de St. Domingue,&quot; 1792 (detail). Copy in the John Carter Brown Library, Brown University." loading="lazy">
 </a>
 <figcaption>Figure 1. &quot;Tableau des Finances et du Commerce de la partie Françoise de St. Domingue,&quot; 1792 (detail). Copy in the John Carter Brown Library, Brown University.</figcaption>
 </figure>
@@ -447,7 +447,7 @@ barbarically premodern, a social form and mode of production in which
 humans constituted legal, machinic property (see fig. 2).
 
 <figure>
-<img src="/images/issue03/nesbitt-2.jpg" alt="&quot;Sucrerie,&quot; from Denis Diderot et al., *Encyclopédie, ou, Dictionnaire raisonné des sciences,des arts et des métiers.../ par Diderot \[et\] d" loading="lazy">
+<img src="/issue03/images/nesbitt-2.jpg" alt="&quot;Sucrerie,&quot; from Denis Diderot et al., *Encyclopédie, ou, Dictionnaire raisonné des sciences,des arts et des métiers.../ par Diderot \[et\] d" loading="lazy">
 <figcaption>Figure 2. &quot;Sucrerie,&quot; from Denis Diderot et al., *Encyclopédie, ou, Dictionnaire raisonné des sciences,des arts et des métiers.../ par Diderot \[et\] d</figcaption>
 </figure>
 
@@ -552,7 +552,7 @@ distinguishes them together from traditional handicraft (see fig.
 3).[^49]
 
 <figure>
-<img src="/images/issue03/nesbitt-3.jpg" alt="&quot;Aiguillier,&quot; from Diderot et al., *Encyclopédie*, vol. 1, plates." loading="lazy">
+<img src="/issue03/images/nesbitt-3.jpg" alt="&quot;Aiguillier,&quot; from Diderot et al., *Encyclopédie*, vol. 1, plates." loading="lazy">
 <figcaption>Figure 3. &quot;Aiguillier,&quot; from Diderot et al., *Encyclopédie*, vol. 1, plates.</figcaption>
 </figure>
 
@@ -569,7 +569,7 @@ founding their common distinction from the capitalist (industrial) mode
 of production (fig. 4).
 
 <figure>
-<img src="/images/issue03/nesbitt-4.jpg" alt="&quot;Aiguillier (detail),&quot; from Diderot et al.,
+<img src="/issue03/images/nesbitt-4.jpg" alt="&quot;Aiguillier (detail),&quot; from Diderot et al.,
     *Encyclopédie*, vol. 1, plates." loading="lazy">
 <figcaption>Figure 4. &quot;Aiguillier (detail),&quot; from Diderot et al.,
     *Encyclopédie*, vol. 1, plates.</figcaption>
@@ -582,7 +582,7 @@ in which living labor directly manipulates tools in the production
 process (see fig. 5).
 
 <figure>
-<img src="/images/issue03/nesbitt-5.jpg" alt="&quot;Récolte de l" loading="lazy">
+<img src="/issue03/images/nesbitt-5.jpg" alt="&quot;Récolte de l" loading="lazy">
 <figcaption>Figure 5. &quot;Récolte de l</figcaption>
 </figure>
 
@@ -610,7 +610,7 @@ of the anthropological function of living labor as "tool-bearer" (see
 fig. 6).
 
 <figure>
-<img src="/images/issue03/nesbitt-6.png" alt="&quot;Intérieur de la Sucrerie de betteraves de Château Freyes, près de Villeneuve-St.-Georges,&quot; *L" loading="lazy">
+<img src="/issue03/images/nesbitt-6.png" alt="&quot;Intérieur de la Sucrerie de betteraves de Château Freyes, près de Villeneuve-St.-Georges,&quot; *L" loading="lazy">
 <figcaption>Figure 6. &quot;Intérieur de la Sucrerie de betteraves de Château Freyes, près de Villeneuve-St.-Georges,&quot; *L</figcaption>
 </figure>
 
