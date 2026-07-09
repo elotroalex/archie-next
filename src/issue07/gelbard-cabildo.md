@@ -13,8 +13,8 @@ author:
 pubDate: May 2023
 issue: 7
 order: 3
-image: images/issue07/cabildo.jpg
-thumb: images/issue07/cabildo-thumb.jpg
+image: issue07/images/cabildo.jpg
+thumb: issue07/images/cabildo-thumb.jpg
 link: "https://cabildoderegla.org/"
 pdf: false
 ---

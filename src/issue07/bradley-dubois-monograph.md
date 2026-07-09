@@ -17,8 +17,8 @@ author:
 pubDate: May 2023
 issue: 7
 order: 2
-image: images/issue07/monograph.png
-thumb: images/issue07/monograph-thumb.png
+image: issue07/images/monograph.png
+thumb: issue07/images/monograph-thumb.png
 link: "https://www.arcgis.com/apps/webappviewer/index.html?id=de268c688b8142fbb689fb52826fa818"
 pdf: false
 ---

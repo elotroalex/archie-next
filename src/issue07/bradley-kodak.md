@@ -186,7 +186,7 @@ personnel being phased out and replaced by trained Haitian officers. The
 during the "Cacos Trouble," presumably in putting down peasant unrest.
 
 <figure>
-<img src="/images/issue07/garde-haiti.jpg" alt="Monograph image of the Garde d'Haiti." loading="lazy">
+<img src="/issue07/images/garde-haiti.jpg" alt="Monograph image of the Garde d'Haiti." loading="lazy">
 <figcaption>Monograph image of the Garde d'Haiti.</figcaption>
 </figure>
 
@@ -262,12 +262,12 @@ legible forms of Black fugitivity, labeling sites of refuge such as
 *mornes* (mountains).
 
 <figure>
-<img src="/images/issue07/phelipeau-tiburon.jpg" alt="Historical map of Tiburon by Phelipeau, showing plantation boundaries and refuge sites" loading="lazy">
+<img src="/issue07/images/phelipeau-tiburon.jpg" alt="Historical map of Tiburon by Phelipeau, showing plantation boundaries and refuge sites" loading="lazy">
 <figcaption>Historical map of Tiburon by Phelipeau, showing plantation boundaries and refuge sites.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue07/screenshot.jpg" alt="Screenshot from the Monograph of Haiti Map, 1932/2022" loading="lazy">
+<img src="/issue07/images/screenshot.jpg" alt="Screenshot from the Monograph of Haiti Map, 1932/2022" loading="lazy">
 <figcaption>Screenshot from the Monograph of Haiti Map, 1932/2022.</figcaption>
 </figure>
 
@@ -307,7 +307,7 @@ town, there are visible empty spaces along the streets, conceivably left
 by the bombing a few decades earlier.
 
 <figure>
-<img src="/images/issue07/navy-planes.jpg" alt="U.S. Navy Curtiss HS-2Ls and other airplanes in Haiti, circa 1919" loading="lazy">
+<img src="/issue07/images/navy-planes.jpg" alt="U.S. Navy Curtiss HS-2Ls and other airplanes in Haiti, circa 1919" loading="lazy">
 <figcaption>U.S. Navy Curtiss HS-2Ls and other airplanes in Haiti circa 1919.From the Walter V. Brown Collection (COLL/4326), Marine Corps Archives & Special Collections.</figcaption>
 </figure>
 

@@ -320,17 +320,17 @@ ended up mauled by dogs, captured, whipped, burned alive, cut up, my bones
 broken with a hammer, with molten lead poured into my wounds.
 
 <figure>
-<img src="/images/issue07/lauro1.png" alt="Game Over screen (1 of 3)" loading="lazy">
+<img src="/issue07/images/lauro1.png" alt="Game Over screen (1 of 3)" loading="lazy">
 <figcaption>Fig. 1. Screencapture of a Game Over screen. (\</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue07/lauro2.png" alt="Game Over screen (2 of 3)" loading="lazy">
+<img src="/issue07/images/lauro2.png" alt="Game Over screen (2 of 3)" loading="lazy">
 <figcaption>Fig. 2. Screencapture of a Game Over screen. (\</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue07/lauro3.png" alt="Game Over screen (3 of 3)" loading="lazy">
+<img src="/issue07/images/lauro3.png" alt="Game Over screen (3 of 3)" loading="lazy">
 <figcaption>Fig. 3. Screencapture of a Game Over screen. (\</figcaption>
 </figure>
 
@@ -557,12 +557,12 @@ to the revolt if ever they could be convinced to become an ally, as
 outlined in the manual.
 
 <figure>
-<img src="/images/issue07/lauro4.png" alt="Screen captures from the English version of the game showing the face of a man" loading="lazy">
+<img src="/issue07/images/lauro4.png" alt="Screen captures from the English version of the game showing the face of a man" loading="lazy">
 <figcaption>Fig. 4. Screen capture from the English version of the game, played on DosZone.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue07/lauro5.png" alt="Screen captures from the English version of the game showing the face of man" loading="lazy">
+<img src="/issue07/images/lauro5.png" alt="Screen captures from the English version of the game showing the face of man" loading="lazy">
 <figcaption>Fig. 5. Screen capture from the English version of the game, played on DosZone. Note that the same face is used though the man is clearly meant to indicate a different person, in a different part of the plantation.</figcaption>
 </figure>
 
@@ -588,7 +588,7 @@ of an indistinguishable horde of the enslaved, apart from the few named
 characters, who are rarely encountered in your mission.
 
 <figure>
-<img src="/images/issue07/lauro6.png" alt="Screen captures from the English version of the game" loading="lazy">
+<img src="/issue07/images/lauro6.png" alt="Screen captures from the English version of the game" loading="lazy">
 <figcaption>Fig. 6. Screen capture by the author from in-game play on the Hatari emulator: An option is given to kill or capture LaRochelle, the plantation veterinarian; my choice made little difference, I died immediately thereafter.</figcaption>
 </figure>
 
@@ -622,7 +622,7 @@ contain things of value, like the stores of sugar), it is arguably more
 fun to run around the plantation setting everything on fire.
 
 <figure>
-<img src="/images/issue07/lauro-vid1.png" alt="Gameplay from DosZone for Freedom: Rebels in the Darkness, English version" loading="lazy">
+<img src="/issue07/images/lauro-vid1.png" alt="Gameplay from DosZone for Freedom: Rebels in the Darkness, English version" loading="lazy">
 <figcaption>Clip 1. Gameplay from DosZone for Freedom: Rebels in the Darkness, English version.</figcaption>
 </figure>
 
@@ -653,7 +653,7 @@ the history of slave rebellion.[^55] I will confess, though, that
 _Freedom_ can just feel frustrating in an unproductive manner.
 
 <figure>
-<img src="/images/issue07/lauro-vid2.png" alt="Gameplay clip from DOSZONE showing a glitch during Freedom: Rebels in the Darkness" loading="lazy">
+<img src="/issue07/images/lauro-vid2.png" alt="Gameplay clip from DOSZONE showing a glitch during Freedom: Rebels in the Darkness" loading="lazy">
 <figcaption>Clip 2. I've provided some longer clips here from my gameplay because playthroughs online are so limited. In the one above, from DOSZONE, you can actually see a glitch occur.</figcaption>
 </figure>
 
@@ -667,19 +667,19 @@ experience of _Méwilo_, a game made the year before _Freedom_, to which
 we turn our attention now.[^56]
 
 <figure>
-<img src="/images/issue07/lauro7.png" alt="Screen capture from Atari, French version: Afoukal responds to the player's attempt at an alliance" loading="lazy">
+<img src="/issue07/images/lauro7.png" alt="Screen capture from Atari, French version: Afoukal responds to the player's attempt at an alliance" loading="lazy">
 <figcaption>Fig. 7. Screen captures from Atari, French version. The PC encounters named characters who might be made into alliances. In the first, Afoukal responds to the PC's attempts to \</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue07/lauro8.png" alt="Screen capture from Atari, French version: the player character encounters Timolet, modeled on Chamoiseau's appearance" loading="lazy">
+<img src="/issue07/images/lauro8.png" alt="Screen capture from Atari, French version: the player character encounters Timolet, modeled on Chamoiseau's appearance" loading="lazy">
 <figcaption>Fig. 8. In the second, the PC encounters Timolet and is offered the button to attempt to rally him. The image of Timolet is based on Chamoiseau's physical appearance.</figcaption>
 </figure>
 
 ## Part III. Winnable(?)
 
 <figure>
-<img src="/images/issue07/lauro9.png" alt="Screen capture from Méwilo, Atari, French version: the opening scene as the player character journeys to St. Pierre" loading="lazy">
+<img src="/issue07/images/lauro9.png" alt="Screen capture from Méwilo, Atari, French version: the opening scene as the player character journeys to St. Pierre" loading="lazy">
 <figcaption>Fig. 9. Screen capture from *Méwilo*, Atari, French version. First screen that sets the scene as the PC journeys to St. Pierre. (\</figcaption>
 </figure>
 
@@ -706,7 +706,7 @@ internet and access to google---is a matter for another place and time.
 Whichever the case, I found the game's puzzles very difficult to solve.
 
 <figure>
-<img src="/images/issue07/lauro10.png" alt="Screen capture from Méwilo, Atari, French version: Clarisse gives the player character her opinion" loading="lazy">
+<img src="/issue07/images/lauro10.png" alt="Screen capture from Méwilo, Atari, French version: Clarisse gives the player character her opinion" loading="lazy">
 <figcaption>Fig. 10. Screen capture from *Méwilo*, Atari, French version. Clarisse gives the PC her opinion on the restless \</figcaption>
 </figure>
 
@@ -726,7 +726,7 @@ PC, who appears to be a detective with paranormal abilities, in order to
 solve the case of a ghost that haunts a former plantation.
 
 <figure>
-<img src="/images/issue07/lauro-vid3.png" alt="Gameplay from very early in *Méwilo*, German version, Atari system, played on Hatari." loading="lazy">
+<img src="/issue07/images/lauro-vid3.png" alt="Gameplay from very early in *Méwilo*, German version, Atari system, played on Hatari." loading="lazy">
 <figcaption>Clip 3. Gameplay from very early in *Méwilo*, German version, Atari system, played on Hatari.</figcaption>
 </figure>
 
@@ -802,7 +802,7 @@ difficulty, and what that tells us about interpellation of this rich
 history.[^64]
 
 <figure>
-<img src="/images/issue07/lauro-vid4.png" alt="Clip 4. Gameplay from early in *Méwilo*, French version, Atari system, played on Hatari." loading="lazy">
+<img src="/issue07/images/lauro-vid4.png" alt="Clip 4. Gameplay from early in *Méwilo*, French version, Atari system, played on Hatari." loading="lazy">
 <figcaption>Clip 4. Gameplay from early in *Méwilo*, French version, Atari system, played on Hatari.</figcaption>
 </figure>
 
@@ -846,7 +846,7 @@ distiller will restart the quiz. The questions also rotate, so it can
 take several tries to get past this part of the game.
 
 <figure>
-<img src="/images/issue07/lauro11.png" alt="Fig. 11. Screen capture from *Méwilo*, Atari, French version." loading="lazy">
+<img src="/issue07/images/lauro11.png" alt="Fig. 11. Screen capture from *Méwilo*, Atari, French version." loading="lazy">
 <figcaption>Fig. 11. Screen capture from *Méwilo*, Atari, French version. One cannot advance in the game without successfully answering eight questions about Martinican culture. Translation: \</figcaption>
 </figure>
 
@@ -887,7 +887,7 @@ while the game is available only in French and German, Chamoiseau has
 infused it with his trademark creolizing linguistic play.[^72]
 
 <figure>
-<img src="/images/issue07/lauro12.png" alt="Fig. 12 Screen capture from *Méwilo*, Atari, French version." loading="lazy">
+<img src="/issue07/images/lauro12.png" alt="Fig. 12 Screen capture from *Méwilo*, Atari, French version." loading="lazy">
 <figcaption>Fig. 12 Screen capture from *Méwilo*, Atari, French version. Papa Echevin reluctantly gives the player background on the characters and their ancestral lineage.</figcaption>
 </figure>
 
@@ -901,7 +901,7 @@ point count is 03/99) in Echevin's passing reference to his sister
 serving callaloo at the port.
 
 <figure>
-<img src="/images/issue07/lauro13.png" alt="Fig. 13. Screen capture from *Méwilo*, Atari, French version." loading="lazy">
+<img src="/issue07/images/lauro13.png" alt="Fig. 13. Screen capture from *Méwilo*, Atari, French version." loading="lazy">
 <figcaption>Fig. 13. Screen capture from *Méwilo*, Atari, French version. Guessing the key ingredient in Man Cécé's Callaloo is one of the most difficult challenges in the game. Translation: \[Ah! If Da Evélina gave you her mongoose Zouzoufe, then you must be someone good...\]</figcaption>
 </figure>
 
@@ -925,7 +925,7 @@ one finally guesses correctly, the cheeky character insists that the
 player answer a second riddle to prove that the first time was no fluke!
 
 <figure>
-<img src="/images/issue07/lauro-vid5.png" alt="Clip 5. Gameplay from late in *Méwilo*, French version, Atari system, played on Hatari." loading="lazy">
+<img src="/issue07/images/lauro-vid5.png" alt="Clip 5. Gameplay from late in *Méwilo*, French version, Atari system, played on Hatari." loading="lazy">
 <figcaption>Clip 5. Gameplay from late in *Méwilo*, French version, Atari system, played on Hatari.</figcaption>
 </figure>
 

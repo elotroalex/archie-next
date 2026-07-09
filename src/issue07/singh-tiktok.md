@@ -112,12 +112,12 @@ the study of social media usage in the Caribbean.
 ## Caribbean TikTok 
 
 <figure>
-<img src="/images/issue07/felmine.jpg" alt="Trini Alphabet Series @stephon23" loading="lazy">
+<img src="/issue07/images/felmine.jpg" alt="Trini Alphabet Series @stephon23" loading="lazy">
 <figcaption>A is for Ah.</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue07/simpson.jpg" alt="@wellonyc" loading="lazy">
+<img src="/issue07/images/simpson.jpg" alt="@wellonyc" loading="lazy">
 <figcaption>Arinj.</figcaption>
 </figure>
 

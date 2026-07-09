@@ -337,7 +337,7 @@ fleetingly and mundanely as the day's weather---while also shedding
 light on the agency of captive Africans in their deaths.
 
 <figure>
-<img src="/images/issue07/logbook.jpg" alt="The logbook of the *Good Hope*" loading="lazy">
+<img src="/issue07/images/logbook.jpg" alt="The logbook of the *Good Hope*" loading="lazy">
 <figcaption>Figure 1. The logbook of the *Good Hope*, courtesy of the Connecticut State Library</figcaption>
 </figure>
 
@@ -403,7 +403,7 @@ in another, as critical humanists, it behooves us to trouble and add
 dimensionality to the dots and lines of the journey.
 
 <figure>
-<img src="/images/issue07/gis.png" alt="GIS rendering of the voyage of the *Good Hope*" loading="lazy">
+<img src="/issue07/images/gis.png" alt="GIS rendering of the voyage of the *Good Hope*" loading="lazy">
 <figcaption>Figure 2. GIS rendering of the voyage of the *Good Hope*, the base map for which emphasizes the ocean</figcaption>
 </figure>
 

@@ -21,8 +21,8 @@ author:
 pubDate: May 2023
 issue: 7
 order: 1
-image: images/issue07/coasts.png
-thumb: images/issue07/coasts-thumb.png
+image: issue07/images/coasts.png
+thumb: issue07/images/coasts-thumb.png
 link: "http://coastsincrisis.net/"
 pdf: false
 ---
@@ -56,7 +56,7 @@ the needs for shelter, food, and water often going unmet, why do the
 arts matter after a hurricane?
 
 <figure>
-<img src="/images/issue07/binard-afraid.jpg" alt="*Afraid to Launch*" loading="lazy">
+<img src="/issue07/images/binard-afraid.jpg" alt="*Afraid to Launch*" loading="lazy">
 <figcaption>*Afraid to Launch*. Binard, Sally. Florida Keys, 2017.</figcaption>
 </figure>
 
@@ -108,7 +108,7 @@ towards its territories after the hurricanes, creative practices emerge
 as a means through which colonized peoples can make their voices heard.
 
 <figure>
-<img src="/images/issue07/berg-deafening.jpg" alt="*Deafening Silence*" loading="lazy">
+<img src="/issue07/images/berg-deafening.jpg" alt="*Deafening Silence*" loading="lazy">
 <figcaption>Berg, David. St. Croix, 2018.</figcaption>
 </figure>
 
@@ -172,7 +172,7 @@ through art.
 ### Project Design and Description
 
 <figure>
-<img src="/images/issue07/site-homepage.png" alt="Three 2017 hurricane paths" loading="lazy">
+<img src="/issue07/images/site-homepage.png" alt="Three 2017 hurricane paths" loading="lazy">
 <figcaption>The homepage for Coasts in Crisis digital.</figcaption>
 </figure>
 
@@ -300,7 +300,7 @@ our design choices attempt to communicate this sense of manual craft, as
 shown by the typeset we used to display Nicole Delgado's poetry.
 
 <figure>
-<img src="/images/issue07/delgado-poem.png" alt="*Las casas vacías*" loading="lazy">
+<img src="/issue07/images/delgado-poem.png" alt="*Las casas vacías*" loading="lazy">
 <figcaption>Delgado, Nicole. Screenshot of the poem as it appears on the site. Puerto Rico.</figcaption>
 </figure>
 
@@ -528,7 +528,7 @@ wealthy investors from outside the archipelago purchase second homes
 while living costs become untenable for Caribbean residents.
 
 <figure>
-<img src="/images/issue07/cosme-welcome.jpg" alt="Welcome to Paradise I" loading="lazy">
+<img src="/issue07/images/cosme-welcome.jpg" alt="Welcome to Paradise I" loading="lazy">
 <figcaption>Cosme, Jo. Puerto Rico, 2017.</figcaption>
 </figure>
 
@@ -545,7 +545,7 @@ Our project points, time and again, to these empty spaces that still
 linger, and it offers a testament to regeneration.
 
 <figure>
-<img src="/images/issue07/berg-regrowth.jpg" alt="*Regrowth I*" loading="lazy">
+<img src="/issue07/images/berg-regrowth.jpg" alt="*Regrowth I*" loading="lazy">
 <figcaption>Berg, David. St. Croix, 2017.</figcaption>
 </figure>
 
