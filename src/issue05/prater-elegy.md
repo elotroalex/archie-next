@@ -62,7 +62,7 @@ the possibilities of consolation they contain.
 ## Defining the Term: Digital Diasporic Elegy
 
 <figure>
-<img src="/images/issue05/prater/fig1.jpg" alt="The Zea Mexican Diary" loading="lazy">
+<img src="/issue05/images/prater/fig1.jpg" alt="The Zea Mexican Diary" loading="lazy">
 <figcaption>Figure 1. From Kamau Brathwaite's *The Zea Mexican Diary, 7 Sept 1926–7 Sept 1986*, page 175.</figcaption>
 </figure>
 
@@ -224,7 +224,7 @@ experience in Jamaica, nor does he think his father ever knew of the
 track's classic status.[^15]
 
 <figure>
-<img src="/images/issue05/prater/fig2.png" alt="Pascal Cheng's Search" loading="lazy">
+<img src="/issue05/images/prater/fig2.png" alt="Pascal Cheng's Search" loading="lazy">
 <figcaption>Figure 2. In the comments section under an upload of \</figcaption>
 </figure>
 
@@ -256,7 +256,7 @@ American-identified "hippie"/pop culture. Several YouTube uploads of
 (fig. 3) or use photographic stills of skinheads in England.[^17]
 
 <figure>
-<img src="/images/issue05/prater/fig3.jpg" alt="Skinheads on the Dancefloor" loading="lazy">
+<img src="/issue05/images/prater/fig3.jpg" alt="Skinheads on the Dancefloor" loading="lazy">
 <figcaption>Figure 3. Album cover art sometimes used over the track of Stephen Cheng's \</figcaption>
 </figure>
 
@@ -269,17 +269,17 @@ Rocksteady: Always Together, 1964–1968_, a collection released in May
 6).
 
 <figure>
-<img src="/images/issue05/prater/fig4.jpg" alt="Sunshine Records 45rmp" loading="lazy">
+<img src="/issue05/images/prater/fig4.jpg" alt="Sunshine Records 45rmp" loading="lazy">
 <figcaption>Sunshine Records 45rmp</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue05/prater/fig5.jpg" alt="Images of 45rpm records sometimes used over the track of Stephen Cheng's \" loading="lazy">
+<img src="/issue05/images/prater/fig5.jpg" alt="Images of 45rpm records sometimes used over the track of Stephen Cheng's \" loading="lazy">
 <figcaption>Figures 4 and 5. Images of 45rpm records sometimes used over the track of Stephen Cheng's \</figcaption>
 </figure>
 
 <figure>
-<img src="/images/issue05/prater/fig6.jpg" alt="BMN Collection" loading="lazy">
+<img src="/issue05/images/prater/fig6.jpg" alt="BMN Collection" loading="lazy">
 <figcaption>Figure 6. Another album cover sometimes used over the track of Stephen Cheng's \</figcaption>
 </figure>
 
@@ -302,7 +302,7 @@ music histories of the original Taiwanese track and the one produced in
 Jamaica.
 
 <figure>
-<img src="/images/issue05/prater/fig7.png" alt="Exceprt from an exchange between Pascal Cheng and 1970Rudeboy (among others) in the comments below an upload of Stephen Cheng's \" loading="lazy">
+<img src="/issue05/images/prater/fig7.png" alt="Exceprt from an exchange between Pascal Cheng and 1970Rudeboy (among others) in the comments below an upload of Stephen Cheng's \" loading="lazy">
 <figcaption>Figure 7. Exceprt from an exchange between Pascal Cheng and 1970Rudeboy (among others) in the comments below an upload of Stephen Cheng's \</figcaption>
 </figure>
 
@@ -318,7 +318,7 @@ inform Cheng of the existence of Krish Raghav's longform comic
 _Topic Magazine_.[^18]
 
 <figure>
-<img src="/images/issue05/prater/fig8.png" alt="Redemption Songs" loading="lazy">
+<img src="/issue05/images/prater/fig8.png" alt="Redemption Songs" loading="lazy">
 <figcaption>Figure 8. Cover art to Krish Raghav's \</figcaption>
 </figure>
 

@@ -182,7 +182,7 @@ differentiate between humorous communication and other types of
 exchanges.[^18]
 
 <figure>
-<img src="/images/issue05/felix/fig1.png" alt="Natural Disasters" loading="lazy">
+<img src="/issue05/images/felix/fig1.png" alt="Natural Disasters" loading="lazy">
 <figcaption>Figure 1. This meme presents an unfavorable view of Trinidad and Tobago politician Colm Imbert. Source: *Meanwhile in T&T* (via Facebook)</figcaption>
 </figure>
 
@@ -429,7 +429,7 @@ international media collective *Global Voices* (see fig. 2).[^41] In the
 context of this example, at least five key elements are of importance.
 
 <figure>
-<img src="/images/issue05/felix/fig2.png" alt="Warren Le Platte Facebook" loading="lazy">
+<img src="/issue05/images/felix/fig2.png" alt="Warren Le Platte Facebook" loading="lazy">
 <figcaption>Figure 2. A screenshot of Le Platte's personal Facebook page with a snippet of his popular internet meme series. Source: Warren Le Platte (via Facebook)</figcaption>
 </figure>
 
@@ -506,7 +506,7 @@ evokes a sense of national identity and cultural memory through the
 mediated presentation of his lived experience.[^46]
 
 <figure>
-<img src="/images/issue05/felix/fig3.png" alt="So I spend 4 hours in de cinema…" loading="lazy">
+<img src="/issue05/images/felix/fig3.png" alt="So I spend 4 hours in de cinema…" loading="lazy">
 <figcaption>Figure 3. A meme used in Le Platte's series referencing Peter Jackson's Lord of the Rings film trilogy, as Le Platte compares his moviegoing experience to that of watching an installment from the famously lengthy franchise. Source: Warren Le Platte (via Facebook)</figcaption>
 </figure>
 
@@ -528,7 +528,7 @@ confirm this with their favorable comments in response to his series of
 online posts.
 
 <figure>
-<img src="/images/issue05/felix/fig4.png" alt="What is my life?" loading="lazy">
+<img src="/issue05/images/felix/fig4.png" alt="What is my life?" loading="lazy">
 <figcaption>Figure 4. This meme features an image of sitcom character Carlton Banks (Alfonso Ribeiro) crying. Derived from the popular \</figcaption>
 </figure>
 
@@ -644,7 +644,7 @@ attention to the screen," conveying the sense of excitement and
 enthusiasm Le Platte initially felt.
 
 <figure>
-<img src="/images/issue05/felix/fig5.png" alt="So I dey like…" loading="lazy">
+<img src="/issue05/images/felix/fig5.png" alt="So I dey like…" loading="lazy">
 <figcaption>Figure 5. A meme featuring famed pop music icon Michael Jackson. The caption expresses Le Platte's eagerness to watch a film at the cinema after initial technical difficulties. Source: Warren Le Platte (via Facebook)</figcaption>
 </figure>
 
@@ -664,7 +664,7 @@ and Tobago as "cultural" and technological advancement—have been the
 dominant means of accessing Hollywood films.[^55]
 
 <figure>
-<img src="/images/issue05/felix/fig6.png" alt="\#BringBackOurGlobeCinema" loading="lazy">
+<img src="/issue05/images/felix/fig6.png" alt="\#BringBackOurGlobeCinema" loading="lazy">
 <figcaption>Figure 6. Le Platte edited an image of Michelle Obama holding a sheet of paper to read a hashtag calling for the return of a well-known but now defunct local cinema (left). The original image is on the right. Warren Le Platte (via Facebook)</figcaption>
 </figure>
 
@@ -712,7 +712,7 @@ earlier, since he produces and consumes knowledge in his contribution to
 online public discourse through his culture jamming practice.
 
 <figure>
-<img src="/images/issue05/felix/fig7.png" alt="Comments" loading="lazy">
+<img src="/issue05/images/felix/fig7.png" alt="Comments" loading="lazy">
 <figcaption>Figure 7. A screenshot of the comments section of Le Platte's meme constellation, featuring interactions by users. Source: Warren Le Platte (via Facebook)</figcaption>
 </figure>
 

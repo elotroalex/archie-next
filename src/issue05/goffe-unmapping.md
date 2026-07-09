@@ -240,7 +240,7 @@ imaginary practice that sought to "know" as much as it sought to claim
 the island for European powers.
 
 <figure>
-<img src="/images/issue05/goffe/fig1.jpg" alt="West Indies, Christopher Columbus, 1492–93" loading="lazy">
+<img src="/issue05/images/goffe/fig1.jpg" alt="West Indies, Christopher Columbus, 1492–93" loading="lazy">
 <figcaption>Figure 1. A map of Insula hispana by Christopher Columbus, 1492–93.</figcaption>
 </figure>
 
@@ -256,7 +256,7 @@ States. Students who were of Caribbean origin expressed shame at having
 only "a sense" of the geography of their homelands.
 
 <figure>
-<img src="/images/issue05/goffe/fig2.jpg" alt="Maps from Memory" loading="lazy">
+<img src="/issue05/images/goffe/fig2.jpg" alt="Maps from Memory" loading="lazy">
 <figcaption>Figure 2. To start the project, students drew maps of five Caribbean locations from memory.</figcaption>
 </figure>
 
@@ -281,7 +281,7 @@ archipelagic and served as a starting point for unmapping, a palmistry
 of wayfinding (fig. 3).
 
 <figure>
-<img src="/images/issue05/goffe/fig3.jpg" alt="You Will Find a Way" loading="lazy">
+<img src="/issue05/images/goffe/fig3.jpg" alt="You Will Find a Way" loading="lazy">
 <figcaption>Figure 3. Tao Leigh Goffe, *You Will Find a Way*, 2018. A mid-sixteenth century map projected onto my hand became the anchoring image for the *Unmapping the Caribbean* project.</figcaption>
 </figure>
 
@@ -331,7 +331,7 @@ Thus we began our joint unmapping quest—one professor, nineteen
 students, and three technologists.[^22]
 
 <figure>
-<img src="/images/issue05/goffe/fig4.png" alt="Dear X" loading="lazy">
+<img src="/issue05/images/goffe/fig4.png" alt="Dear X" loading="lazy">
 <figcaption>Figure 4. My \</figcaption>
 </figure>
 
@@ -482,7 +482,7 @@ patwa offered the students a way to theorize sonic modes of declaring
 independence through the theatricality of Jamaicanisms.
 
 <figure>
-<img src="/images/issue05/goffe/fig5.png" alt="Xaymaca: Wi Likkle but Wi Tallawah" loading="lazy">
+<img src="/issue05/images/goffe/fig5.png" alt="Xaymaca: Wi Likkle but Wi Tallawah" loading="lazy">
 <figcaption>Figure 5. The story map of Jamaica for *Unmapping the Caribbean*.</figcaption>
 </figure>
 
@@ -530,7 +530,7 @@ website is a decolonial practice of coalition building; these students
 did not want the Manahatta map to fall into the "wrong" hands.
 
 <figure>
-<img src="/images/issue05/goffe/fig6.png" alt="New York as Caribbean City: Gentrification as Colonization" loading="lazy">
+<img src="/issue05/images/goffe/fig6.png" alt="New York as Caribbean City: Gentrification as Colonization" loading="lazy">
 <figcaption>Figure 6. A side map featuring layers of gentrification is part of the story map of New York City for *Unmapping the Caribbean*.</figcaption>
 </figure>
 
@@ -570,7 +570,7 @@ of the rainforest that is commonly described as "the interior" in
 Suriname.
 
 <figure>
-<img src="/images/issue05/goffe/fig7.png" alt="Surinen: Mapping the Interior" loading="lazy">
+<img src="/issue05/images/goffe/fig7.png" alt="Surinen: Mapping the Interior" loading="lazy">
 <figcaption>Figure 7. Part of the story map of Suriname for *Unmapping the Caribbean* pairs time-lapse video of blooming flowers with text by Gloria Wekker.</figcaption>
 </figure>
 
@@ -612,7 +612,7 @@ border, especially the 1937 "parsley massacre" and the more recent
 deportations of Afro-Dominicans.[^40]
 
 <figure>
-<img src="/images/issue05/goffe/fig8.png" alt="Kiskeya/Quisqueya: A Journey along/through the Border" loading="lazy">
+<img src="/issue05/images/goffe/fig8.png" alt="Kiskeya/Quisqueya: A Journey along/through the Border" loading="lazy">
 <figcaption>Figure 8. The Hispaniola story map for *Unmapping the Caribbean* follows a journey along, and through, the border between Haiti and the Dominican Republic.</figcaption>
 </figure>
 
@@ -635,7 +635,7 @@ classroom presentation of this story map was vibrant—students began to
 dance and gave the group a standing ovation.
 
 <figure>
-<img src="/images/issue05/goffe/fig9.png" alt="Cubao: Santería from Obscurity to Hypervisiblity" loading="lazy">
+<img src="/issue05/images/goffe/fig9.png" alt="Cubao: Santería from Obscurity to Hypervisiblity" loading="lazy">
 <figcaption>Figure 9. The story map of Cuba for *Unmapping the Caribbean* explores Santería as a cultural phenomenon.</figcaption>
 </figure>
 

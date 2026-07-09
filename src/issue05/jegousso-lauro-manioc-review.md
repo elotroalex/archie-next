@@ -40,7 +40,7 @@ tens of thousands of texts and images now accessible to users around the
 world.
 
 <figure>
-<img src="/images/issue05/jegousso-lauro/fig1.png" alt="*Manioc* Homepage Banner" loading="lazy">
+<img src="/issue05/images/jegousso-lauro/fig1.png" alt="*Manioc* Homepage Banner" loading="lazy">
 <figcaption>The banner from the homepage of *Manioc: Bibliothèque numérique Caraïbe, Amazonie, Plateau des Guyanes*.</figcaption>
 </figure>
 
@@ -92,7 +92,7 @@ throughout Martinique, Guadeloupe, and French Guiana, tasked with
 cataloging, documentation services, and other technical duties.[^7]
 
 <figure>
-<img src="/images/issue05/jegousso-lauro/fig2.png" alt="*Manioc* Homepage Content" loading="lazy">
+<img src="/issue05/images/jegousso-lauro/fig2.png" alt="*Manioc* Homepage Content" loading="lazy">
 <figcaption>A preview of the Manioc homepage. The site's content is organized into five categories, each with two to five subsections, some of which indicate the number of materials available.</figcaption>
 </figure>
 
@@ -143,7 +143,7 @@ distilling in photographic form the memories of slaves, resistance, and
 abolitionist struggles from all across the Atlantic.
 
 <figure>
-<img src="/images/issue05/jegousso-lauro/fig3.png" alt="Écriture contemporaine Caraïbe—Amazonie" loading="lazy">
+<img src="/issue05/images/jegousso-lauro/fig3.png" alt="Écriture contemporaine Caraïbe—Amazonie" loading="lazy">
 <figcaption>In \</figcaption>
 </figure>
 

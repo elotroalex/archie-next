@@ -17,8 +17,8 @@ author:
 pubDate: December 2020
 issue: 5
 order: 7
-image: images/issue05/haitian-revolution.png
-thumb: images/issue05/haitian-revolution-thumb.png
+image: issue05/images/haitian-revolution.png
+thumb: issue05/images/haitian-revolution-thumb.png
 link: "https://www.mappinghaitianrevolution.com/"
 ---
 
