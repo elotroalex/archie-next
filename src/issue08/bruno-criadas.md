@@ -13,8 +13,8 @@ author:
 pubDate: April 2025
 issue: 8
 order: 5
-image: images/issue08/criadas.jpg
-thumb: images/issue08/criadas-thumb.jpg
+image: issue08/images/criadas.jpg
+thumb: issue08/images/criadas-thumb.jpg
 link: "https://www.criadasproject.org/"
 language: en
 pdf: false
@@ -57,7 +57,7 @@ We thought about how the data would be seen, and where it would be viewed, what 
 In our design processes the silhouettes were a cornerstone of our design, not just physically, but also to represent how the girls and women entered the Picó Papers. We joined my performance studies background with digital humanities theory to build on what Frederick Charles Staidum was articulating in the essay “Mapping Slavery’s Attraction,” “the negative space left by the absence of a person, object, or idea is a type of presence, and by studying this residual outline, one yields insight about the contemporaneous conditions by which the absence originated and the current conditions by which the negative space becomes legible (the haunting).” The residual outline or the silhouette on our site is linked to the race and age the woman or girl was when first documented within the data.
 
 <figure>
-<img src="/images/issue08/criadas-sample.png" alt="Screen capture from The Criadas Project database." loading="lazy">
+<img src="/issue08/images/criadas-sample.png" alt="Screen capture from The Criadas Project database." loading="lazy">
 <figcaption>Screen capture from The Criadas Project database.</figcaption>
 </figure>
 

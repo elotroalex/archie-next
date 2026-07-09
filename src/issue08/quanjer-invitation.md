@@ -212,7 +212,7 @@ the Surinamese slave registers in 2018-2019 resulted in the writing of
 multiple family histories using this data set.[^12]
 
 <figure>
-<img src="/images/issue08/quaB-workflow.jpg" alt="diagram of the HDSC workflow" loading="lazy">
+<img src="/issue08/images/quaB-workflow.jpg" alt="diagram of the HDSC workflow" loading="lazy">
 <figcaption>The HDSC workflow</figcaption>
 </figure>
 
@@ -544,7 +544,7 @@ using the Transkribus default creates better outcomes.[^28] The layout
 models trained by HTR are freely available for other users.
 
 <figure>
-<img src="/images/issue08/quaB-figure2.jpg" alt="Image of incorrect and correct lay out detection." loading="lazy">
+<img src="/issue08/images/quaB-figure2.jpg" alt="Image of incorrect and correct lay out detection." loading="lazy">
 <figcaption>Example of incorrect and correct lay out detection.</figcaption>
 </figure>
 
@@ -686,7 +686,7 @@ in a higher Levenshtein distance. As a result, the linking then only
 occurs based on a last name or second name.
 
 <figure>
-<img src="/images/issue08/quaB-table1.jpg" alt="Levenshtein distance examples using the name Roset" loading="lazy">
+<img src="/issue08/images/quaB-table1.jpg" alt="Levenshtein distance examples using the name Roset" loading="lazy">
 <figcaption>Levenshtein distance examples using the name Roset</figcaption>
 </figure>
 
@@ -730,7 +730,7 @@ the descendants of former enslaved to the descendants of former
 enslavers.
 
 <figure>
-<img src="/images/issue08/quaB-table2.jpg" alt="Levenshtein distance between last name enslaver and enslaved upon manumission, Curaçao 1839-1863" loading="lazy">
+<img src="/issue08/images/quaB-table2.jpg" alt="Levenshtein distance between last name enslaver and enslaved upon manumission, Curaçao 1839-1863" loading="lazy">
 <figcaption>Levenshtein distance between last name enslaver and enslaved upon manumission, Curaçao 1839-1863</figcaption>
 </figure>
 
@@ -754,7 +754,7 @@ amount of collected data on a map, insights into how slavery was shaped
 geographically on an island like Curaçao emerge.
 
 <figure>
-<img src="/images/issue08/quaB-enslavedmap.jpg" alt="Enslaved population as percentage of the total population per administrative district in Curaçao 1840" loading="lazy">
+<img src="/issue08/images/quaB-enslavedmap.jpg" alt="Enslaved population as percentage of the total population per administrative district in Curaçao 1840" loading="lazy">
 <figcaption>Enslaved population as percentage of the total population per administrative district in Curaçao in 1840. Source: National archive of the Netherlands, inventory number: 1.05.12.02 Inventaris van de archieven van Curaçao, Bonaire en Aruba, (1771) 1828-1845 (1914), 172 Bevolkingsstaten van Curaçao alsmede naamlijsten van plantages, tuinen en hun eigenaars, opgemaakt door de wijk- en districtmeesters, 1838-1845.</figcaption>
 </figure> 
 

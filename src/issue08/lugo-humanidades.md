@@ -180,7 +180,7 @@ Rico. Además, se puede acceder a la colección creada en _Internet
 Archive_ titulada ["Gerardo Sellés Solá: Historia de la educación en Puerto Rico (Siglo XIX--XX)"](https://archive.org/details/historiaeducacionpuertorico?tab=collection).
 
 <figure>
-<img src="/images/issue08/selles_internet_archive.jpg" alt="Gerardo Sellés Solá: Historia de la educación en Puerto Rico (Siglo XIX --XX)" loading="lazy">
+<img src="/issue08/images/selles_internet_archive.jpg" alt="Gerardo Sellés Solá: Historia de la educación en Puerto Rico (Siglo XIX --XX)" loading="lazy">
 <figcaption>Copia de la collección digitalizada Gerardo Sellés Solá en Internet Archive.</figcaption>
 </figure>
 
@@ -209,7 +209,7 @@ y divulgación de la Colección Arturo Melero. Específicamente, 3,000
 imágenes de la serie "Danza" fueron digitalizadas[^13].
 
 <figure>
-<img src="/images/issue08/melero-ejemplo.jpg" alt="Antonio Santaella" loading="lazy">
+<img src="/issue08/images/melero-ejemplo.jpg" alt="Antonio Santaella" loading="lazy">
 <figcaption>Photograph of famours dancer Antonio Santaella's company taken by Arturo Melero.</figcaption>
 </figure>
 
@@ -518,7 +518,7 @@ de Río Piedras, se presentó el Archivo digital Juan Mari Brás, actividad
 que contó con una variada asistencia.
 
 <figure>
-<img src="/images/issue08/archivo-jmb.jpg" alt="Archivo digital Juan Mari Brás" loading="lazy">
+<img src="/issue08/images/archivo-jmb.jpg" alt="Archivo digital Juan Mari Brás" loading="lazy">
 <figcaption>Página de inicio del archivo digital Juan Mari Brás.</figcaption>
 </figure>
 
