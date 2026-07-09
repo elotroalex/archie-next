@@ -25,9 +25,8 @@ src/
   _layouts/       # Nunjucks layouts (default, article, project, page, info)
   public/         # CSS, fonts, favicon — served as-is
   assets/         # Pre-generated PDFs — served as-is
-  images/         # Article images for issues 1–8 (legacy central tree)
   issue01/–issue09/  # Issue markdown articles + directory data file
-                      # New issues (09+) keep images in issueXX/images/ (co-located)
+                      # Images co-located in issueXX/images/
   es/             # Spanish variants: index, info pages, issue-articles.11ty.js, issue-pages.njk
   fr/             # French variants: same structure as es/
   index.html      # Homepage (current issue only)
@@ -52,12 +51,7 @@ utility/
 
 **Interactives** (pure-HTML pieces like the Parham essay) are listed per-issue in `src/_data/issues.js` under an `interactives` array and rendered in `toc.njk` under Featured. Their HTML files pass through Eleventy untouched via `addPassthroughCopy` + `eleventyConfig.ignores`.
 
-**Images — two layouts:**
-
-- Issues 1–8 (legacy): `src/images/issueXX/filename.jpg` → served at `/images/issueXX/filename.jpg`
-- Issues 9+ (co-located): `src/issueXX/images/filename.jpg` → served at `/issueXX/images/filename.jpg`
-
-Eleventy detects and copies both automatically. The PDF pipeline (`convert.sh`) tries the co-located path first, falls back to the central tree.
+**Images are co-located per issue:** `src/issueXX/images/filename.jpg` → served at `/issueXX/images/filename.jpg`. Eleventy detects and copies each issue's images directory automatically (`.eleventy.js` loops over `issues.js` keys); the PDF pipeline (`convert.sh`) reads from the same path.
 
 **i18n labels:** Every issue must have a label in all three yml files under `issues:` or the homepage will fall back to a blank entry. Example: `issue09: "Issue (9) | Theme | Month YYYY"`.
 

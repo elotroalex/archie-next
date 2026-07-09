@@ -11,10 +11,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "robots.txt" });
   eleventyConfig.addPassthroughCopy({ "src/.nojekyll": ".nojekyll" });
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
-  eleventyConfig.addPassthroughCopy({ "src/images": "images" });
 
-  // Co-located images: new issues keep images inside src/issueXX/images/
-  // rather than the central src/images/issueXX/ tree used by older issues.
+  // Co-located images: every issue keeps its images inside src/issueXX/images/.
   const issues = require("./src/_data/issues.js");
   for (const key of Object.keys(issues)) {
     const imgDir = `src/${key}/images`;

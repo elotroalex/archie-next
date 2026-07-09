@@ -41,9 +41,7 @@ function parseFrontMatter(raw) {
 
 function findImagesDir(root, issueSlug) {
   const coLocated = `src/${issueSlug}/images`;
-  const central = `src/images/${issueSlug}`;
   if (fs.existsSync(path.join(root, coLocated))) return coLocated;
-  if (fs.existsSync(path.join(root, central))) return central;
   return null;
 }
 

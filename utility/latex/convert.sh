@@ -36,17 +36,12 @@ fi
 # Copy images into the workdir mirroring the URL path so lualatex can resolve
 # them after the Lua filter strips the leading slash from image src attributes.
 #
-# New issues (co-located):  src/issueXX/images/ → articles reference /issueXX/images/…
-#                            workdir needs:        issueXX/images/
-# Old issues (central):     src/images/issueXX/  → articles reference /images/issueXX/…
-#                            workdir needs:        images/issueXX/
+# Co-located images: src/issueXX/images/ → articles reference /issueXX/images/…
+#                     workdir needs:        issueXX/images/
 ISSUE_DIR=$(basename "$(dirname "$FULLPATH")")  # e.g. issue01
 if [ -d "$ROOT/src/$ISSUE_DIR/images" ]; then
   mkdir -p "$WORKDIR/$ISSUE_DIR/images"
   cp -r "$ROOT/src/$ISSUE_DIR/images/." "$WORKDIR/$ISSUE_DIR/images/"
-elif [ -d "$ROOT/src/images/$ISSUE_DIR" ]; then
-  mkdir -p "$WORKDIR/images/$ISSUE_DIR"
-  cp -r "$ROOT/src/images/$ISSUE_DIR/." "$WORKDIR/images/$ISSUE_DIR/"
 fi
 
 # Copy fonts so fontspec can find them
