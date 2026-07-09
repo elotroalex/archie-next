@@ -20,8 +20,8 @@ author:
   shortname: Lingold
   bio: >
     Mary Caton Lingold is a doctoral candidate in English at Duke, where she is completing a dissertation on early Afro-Atlantic literature and music. She is co-editor of the web collection [Provoke!: Digital Sound Studies](http://soundboxproject.com/), and a book by the same name and under contract at Duke UP. Her article on music in Caribbean travel narratives is forthcoming in *Early American Literature.* She also directs the [Sonic Dictionary](https://sonicdictionary.duke.edu/), a crowdsourced database of audio recordings.
-image: images/issue01/musical-passage.jpg
-thumb: images/issue01/musical-passage-thumb.jpg
+image: issue01/images/musical-passage.jpg
+thumb: issue01/images/musical-passage-thumb.jpg
 link: "http://www.musicalpassage.org/#home"
 language: en
 ---

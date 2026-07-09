@@ -44,7 +44,7 @@ exactly sovereignty has meant for the region as a whole and how one
 might seek to visually represent it.
 
 <figure>
-<img src="/images/issue01/yarimar-map.jpg" alt="Map of the Caribbean" loading="lazy">
+<img src="/issue01/images/yarimar-map.jpg" alt="Map of the Caribbean" loading="lazy">
 <figcaption>Figure 1. Map of the Caribbean created by Yarimar Bonilla in 2010.</figcaption>
 </figure>
 
@@ -273,7 +273,7 @@ textured detail of its constitutive events.
 
 <figure>
 <a href="https://www.youtube.com/embed/pJxrTzfG2bo" target="_blank">
-<img src="/images/issue01/invasion-of-america.jpg" alt="Screenshot of the time-lapse map from Claudio Saunt's The Invasion of America project" loading="lazy">
+<img src="/issue01/images/invasion-of-america.jpg" alt="Screenshot of the time-lapse map from Claudio Saunt's The Invasion of America project" loading="lazy">
 </a>
 <figcaption>Figure 2. Invasion of America</figcaption>
 </figure>
@@ -291,7 +291,7 @@ among insurgents than previously imagined.[^19]
 
 <figure>
 <a href="http://revolt.axismaps.com/map/" target="_blank">
-<img src="/images/issue01/brown-revolt.jpg" alt="Slave Revolt in Jamaica, 1760--1761: A Cartographic Narrative" loading="lazy">
+<img src="/issue01/images/brown-revolt.jpg" alt="Slave Revolt in Jamaica, 1760--1761: A Cartographic Narrative" loading="lazy">
 </a>
 <figcaption>Figure 3. Slave Revolt in Jamaica, 1760--1761: A Cartographic Narrative</figcaption>
 </figure>
@@ -332,7 +332,7 @@ goal was to visually depict the large number of Caribbean societies
 color to portray the diversity of political forms in the region.
 
 <figure>
-<img src="/images/issue01/landon-map.jpg" alt="Map created by Landon Yarrington in 2011." loading="lazy">
+<img src="/issue01/images/landon-map.jpg" alt="Map created by Landon Yarrington in 2011." loading="lazy">
 <figcaption>Figure 4. Map created by Landon Yarrington in 2011.</figcaption>
 </figure>
 
@@ -362,7 +362,7 @@ Caribbean (Belize, Guyana, Suriname, and Guiana). Once again, we used
 color to visually demarcate political jurisdictions.
 
 <figure>
-<img src="/images/issue01/blossom-map.jpg" alt="Map created by Jeff Blossom and Yarimar Bonilla in 2015." loading="lazy">
+<img src="/issue01/images/blossom-map.jpg" alt="Map created by Jeff Blossom and Yarimar Bonilla in 2015." loading="lazy">
 <figcaption>Figure 5. Map created by Jeff Blossom and Yarimar Bonilla in 2015.</figcaption>
 </figure>
 
@@ -396,7 +396,7 @@ entering into a "postcolonial" arrangement with their colonial
 centers.[^24]
 
 <figure>
-<img src="/images/issue01/temporal-map.jpg" alt="Temporal map of the postcolonial Caribbean created by Jeff Blossom and Yarimar Bonilla in 2015." loading="lazy">
+<img src="/issue01/images/temporal-map.jpg" alt="Temporal map of the postcolonial Caribbean created by Jeff Blossom and Yarimar Bonilla in 2015." loading="lazy">
 <figcaption>Figure 6. Temporal map of the postcolonial Caribbean created by Jeff Blossom and Yarimar Bonilla in 2015.</figcaption>
 </figure>
 
@@ -501,7 +501,7 @@ challenges and reorganizations that have characterized the region.[^28]
 
 <figure>
 <a href="https://player.vimeo.com/video/169690419?autoplay=1" target="_blank">
-<img src="/images/issue01/bonilla-video.jpg" alt="Visualizing Sovereignty in the Postcolonial Caribbean, 2016; animated video designed by Yarimar Bonilla and Max Hantel and produced by Kindea Labs." loading="lazy">
+<img src="/issue01/images/bonilla-video.jpg" alt="Visualizing Sovereignty in the Postcolonial Caribbean, 2016; animated video designed by Yarimar Bonilla and Max Hantel and produced by Kindea Labs." loading="lazy">
 </a>
 <figcaption>Figure 7. \</figcaption>
 </figure>

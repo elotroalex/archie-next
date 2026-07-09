@@ -95,7 +95,7 @@ language and his argument that sound reproduction technologies can be
 used to reinvigorate Afro-centric oral traditions.[^7]
 
 <figure>
-<img src="/images/issue01/poet-performing-2.jpg" alt="2 Cents Movement poet Idrees Saleem
+<img src="/issue01/images/poet-performing-2.jpg" alt="2 Cents Movement poet Idrees Saleem
 performing at the University of the West Indies, St. Augustine Campus, Trinidad and Tobago. Posted on 24 November 2014." loading="lazy">
 <figcaption>Figure 1. 2 Cents Movement poet Idrees Saleem
 performing at the University of the West Indies, St. Augustine Campus, Trinidad and Tobago. Posted on 24 November 2014.</figcaption>
@@ -235,7 +235,7 @@ reaching youth in Trinidad and Tobago, the artists have gained an
 international following by circulating their poetry on social media.
 
 <figure>
-<img src="/images/issue01/audience-interaction-1.jpg" alt="Marshall Davis Jones performing at El
+<img src="/issue01/images/audience-interaction-1.jpg" alt="Marshall Davis Jones performing at El
 Dorado East Secondary School, Trinidad and Tobago Courts Bocas Speak Out Tour 2015." loading="lazy">
 <figcaption>Figure 2. Marshall Davis Jones performing at El
 Dorado East Secondary School, Trinidad and Tobago Courts Bocas Speak Out Tour 2015.</figcaption>
@@ -256,14 +256,14 @@ In these shots, the camera points at the audience, often catching only
 the performer's back or the corner of her shoulder.[^26]
 
 <figure>
-<img src="/images/issue01/audience-interaction-2.jpg" alt="UWE Speak Event, University of the West Indies, St. Augustine Campus, Trinidad and Tobago, Courts Bocas Speak Out Tour 2015." loading="lazy">
+<img src="/issue01/images/audience-interaction-2.jpg" alt="UWE Speak Event, University of the West Indies, St. Augustine Campus, Trinidad and Tobago, Courts Bocas Speak Out Tour 2015." loading="lazy">
 <figcaption>Figure 3. UWE Speak Event, University of the West Indies, St. Augustine Campus, Trinidad and Tobago, Courts Bocas Speak Out Tour 2015.</figcaption>
 </figure> 
 
  
 
 <figure>
-<img src="/images/issue01/poet-performing-1.jpg" alt="Marshall Davis Jones performing at El
+<img src="/issue01/images/poet-performing-1.jpg" alt="Marshall Davis Jones performing at El
 Dorado East Secondary School, Trinidad and Tobago, Courts Bocas Speak Out Tour 2015." loading="lazy">
 <figcaption>Figure 4. Marshall Davis Jones performing at El
 Dorado East Secondary School, Trinidad and Tobago, Courts Bocas Speak Out Tour 2015.</figcaption>
@@ -288,7 +288,7 @@ Facebook to create "a constancy of presence" to link together different
 high school communities in Trinidad and Tobago.[^27]
 
 <figure>
-<img src="/images/issue01/audience-interaction-3.jpg" alt="Bishops Anstey Secondary School, Trinidad and Tobago, Courts Bocas Speak Out Tour 2015." loading="lazy">
+<img src="/issue01/images/audience-interaction-3.jpg" alt="Bishops Anstey Secondary School, Trinidad and Tobago, Courts Bocas Speak Out Tour 2015." loading="lazy">
 <figcaption>Figure 5. Bishops Anstey Secondary School, Trinidad and Tobago, Courts Bocas Speak Out Tour 2015.</figcaption>
 </figure> 
 
@@ -381,7 +381,7 @@ audience connection and encourage dialogue beyond the space of the poem.
 
 <figure>
 <a href="https://www.youtube.com/embed/9OA8eLoPylU" target="_blank">
-<img src="/images/issue01/maxi-man-youtube.jpg" alt="Crystal Skeete and the Maxi Man cast, University of the West Indies, St. Augustine Campus, Trinidad and Tobago. Posted on 23 June 2013." loading="lazy">
+<img src="/issue01/images/maxi-man-youtube.jpg" alt="Crystal Skeete and the Maxi Man cast, University of the West Indies, St. Augustine Campus, Trinidad and Tobago. Posted on 23 June 2013." loading="lazy">
 </a>
 <figcaption>Figure 6. Crystal Skeete and the \</figcaption>
 </figure>
