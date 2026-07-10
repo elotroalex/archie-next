@@ -1,0 +1,16 @@
+{# Lists every issue (including the current one), linking to each issue's
+   table-of-contents page, with the issue matching `currentIssueKey` marked
+   active -- same convention as the language switcher in default.njk (a
+   conditional `class="active" aria-current="page"`, styled in main.css).
+   The including page must `{% set currentIssueKey = ... %}` immediately
+   before this include: `site.current` on the homepage, `issueKey` on an
+   issue's own table-of-contents page. #}
+{% set langPrefix = "" if lang == "en" else lang + "/" %}
+<nav class="issues-list" aria-labelledby="issues-list-heading">
+  <h3 id="issues-list-heading">{{ i18n[lang].global.issues_label }}</h3>
+  <ul>
+  {% for key, iss in issues %}
+    <li><a href="{{ ('/' + langPrefix + key + '.html') | url }}"{% if key == currentIssueKey %} class="active" aria-current="page"{% endif %}>{{ i18n[lang].issues[key] }}</a></li>
+  {% endfor %}
+  </ul>
+</nav>
