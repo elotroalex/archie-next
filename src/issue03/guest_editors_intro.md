@@ -216,7 +216,7 @@ ground.
 <div>
 This special issue, with its wide range of themes, techniques, styles,
 methods, and applications, deals in black diasporic knowledge as a
-technology that has been like Aponte's insurgent book---hidden "deep
+technology that has been like Aponte's insurgent book—hidden "deep
 inside a trunk full of clothes" in "a pine box with a sliding top." Not
 absent, but hidden. Not lost, but secreted away. Never rejected, simply
 folded up for secret pleasure alone or with kin. Not accountable or even
@@ -235,9 +235,9 @@ for years and years. In this issue, scholars of the Caribbean and the
 African diaspora offer a glimpse of that joy and burden and what it
 means to confront slavery in the machine.
 </div>
-
+<br>
 This special issue is dedicated to scholar, organizer, and beautiful
-artistic soul Linda Rodriguez (1978--2018). There are no words to
+artistic soul Linda Rodriguez (1978–2018). There are no words to
 describe the pain of losing her, a pain everyone who knew her shared.
 Linda, we miss you. We have more to learn from you. We continue to read,
 to study, and to listen.
