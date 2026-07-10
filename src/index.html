@@ -9,6 +9,15 @@ permalink: index.html
 <h2 class="tagline">{{ i18n[lang].global.subtitle }}</h2>
 
 <p>{{ i18n[lang].global.blurb | safe }}</p>
+
+<!-- Special-issue call for papers button. Uncomment and fill in the
+     button text when a special-issue CFP is open (see /cfp/special.html;
+     set `published: true` in src/_i18n/en/cfp/special.md).
+<p class="centered spaced">
+  <a href="{{ '/cfp/special.html' | url }}" class="button"><strong>TODO: button text</strong></a>
+</p>
+-->
+
 <p><a href="{{ '/about.html' | url }}">{{ i18n[lang].global.read_more }}</a></p>
 
 <hr />
