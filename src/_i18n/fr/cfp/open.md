@@ -1,3 +1,8 @@
+---
+title: open
+permalink: fr/cfp/open.html
+---
+
 ## Appel à communications, propositions et projets
 
 ### Numéro (7) | Appel ouvert

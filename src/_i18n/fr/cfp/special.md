@@ -1,3 +1,8 @@
+---
+title: special
+permalink: fr/cfp/special.html
+---
+
 ## Appel à contributions et projets
 
 ### Numéro (8) | Numéro spécial sur le Papiamentu/o et les Caraïbes néerlandaises

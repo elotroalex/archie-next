@@ -13,7 +13,7 @@ This repository (`archie-next`) is a migration of the original Jekyll 4.x site t
 - **Markdown:** markdown-it with footnotes, attrs, and smart quotes (`markdownTemplateEngine: false` — markdown is never pre-processed by Nunjucks)
 - **Styles:** Plain CSS in `src/public/css/` — unchanged from the original Jekyll site
 - **PDF pipeline:** Pandoc 3.x + lualatex, scripts in `utility/latex/`
-- **i18n:** Custom — YAML files in `src/_i18n/{en,es,fr}.yml` for UI strings; the about/authors/credits/reviewers/valences/workflow info pages live as native Eleventy pages (front matter + markdown body) in `src/_i18n/{en,es,fr}/`, with a per-language `{lang}.11tydata.js` directory data file supplying the shared `layout`/`lang` defaults
+- **i18n:** Custom — YAML files in `src/_i18n/{en,es,fr}.yml` for UI strings; the about/authors/credits/reviewers/valences/workflow info pages and the cfp/open + cfp/special call-for-papers pages live as native Eleventy pages (front matter + markdown body) in `src/_i18n/{en,es,fr}/`, with a per-language `{lang}.11tydata.js` directory data file supplying the shared `layout`/`lang` defaults
 
 ## Directory structure
 
@@ -21,8 +21,9 @@ This repository (`archie-next`) is a migration of the original Jekyll 4.x site t
 src/
   _data/          # Global data: site.js, issues.js, i18n.js
   _i18n/          # en.yml, es.yml, fr.yml (UI strings) + en/, es/, fr/ (info
-                   # pages: about/authors/credits/reviewers/valences/workflow,
-                   # each a native page with its own front matter + permalink)
+                   # pages: about/authors/credits/reviewers/valences/workflow
+                   # and cfp/open, cfp/special (calls for papers) — each a
+                   # native page with its own front matter + permalink)
   _includes/      # Nunjucks partials (head, sidebar, toc, footer, etc.)
   _layouts/       # Nunjucks layouts (default, article, project, page, info)
   public/         # CSS, fonts, favicon — served as-is

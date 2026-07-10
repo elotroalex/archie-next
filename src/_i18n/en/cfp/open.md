@@ -1,3 +1,8 @@
+---
+title: open
+permalink: cfp/open.html
+---
+
 ## Call for Papers, Proposals and Projects
 
 ### Issue (7) | Open call

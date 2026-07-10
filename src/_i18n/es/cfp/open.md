@@ -1,3 +1,8 @@
+---
+title: open
+permalink: es/cfp/open.html
+---
+
 ## Convocatoria de artículos, propuestas y proyectos
 
 ### Número (7) | Llamado abierto

@@ -1,3 +1,8 @@
+---
+title: special
+permalink: cfp/special.html
+---
+
 ## Call for Papers and Projects
 
 ### Issue (8) | Special Issue on Papiamentu/o and the Dutch Caribbean
