@@ -6,3 +6,4 @@ node_modules/
 broken-links.txt
 missing-local.txt
 *.docx
+/log.md

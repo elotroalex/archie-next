@@ -7,6 +7,11 @@
 # Intended to be run by an editor after finishing a new issue, before
 # flipping the live domain over.
 #
+# Every run also writes log.md at the repo root (gitignored, overwritten
+# each run) with one section per check -- Images and Links get extra
+# structure (file/image/problem rows; internal/external file:line rows)
+# since those are the two categories expected to need manual triage.
+#
 # Usage: bash utility/check-issue/check-issue.sh [issueSlug]
 #        npm run check-issue -- issue09
 #
@@ -33,7 +38,8 @@ fi
 echo ""
 echo "== Collecting issue manifest: $ISSUE_SLUG =="
 MANIFEST="$(mktemp)"
-trap 'rm -f "$MANIFEST"' EXIT
+LOG_DIR="$(mktemp -d)"
+trap 'rm -f "$MANIFEST"; rm -rf "$LOG_DIR"' EXIT
 node "$SCRIPT_DIR/collect-issue.js" "$ISSUE_SLUG" > "$MANIFEST"
 if [ $? -ne 0 ]; then
   echo "FAIL - manifest: could not collect data for issue '$ISSUE_SLUG'"
@@ -46,26 +52,39 @@ if [ "$(node -e "console.log(JSON.parse(require('fs').readFileSync('$MANIFEST','
 fi
 
 declare -a FAILED_CHECKS=()
+declare -a LOG_TEXT_ARGS=()
+IMAGES_JSON="$LOG_DIR/images.json"
+LINKS_JSON="$LOG_DIR/links.json"
 
+# Runs a check, teeing its output to both the terminal (unbuffered, as
+# before) and a per-check log file consumed by generate-log.js afterward.
 run_check() {
   local name="$1"
+  local logfile="$LOG_DIR/$(echo "$name" | tr -cs 'a-zA-Z0-9' '-').log"
   shift
   echo ""
   echo "== ${name} =="
-  "$@"
-  if [ $? -ne 0 ]; then
+  "$@" 2>&1 | tee "$logfile"
+  local status=${PIPESTATUS[0]}
+  if [ "$status" -ne 0 ]; then
     FAILED_CHECKS+=("$name")
   fi
+  LOG_TEXT_ARGS+=(--text "${name}=${logfile}")
 }
 
 run_check "front matter & i18n"  node "$SCRIPT_DIR/check-frontmatter.js" "$MANIFEST"
 run_check "quotes"               node "$SCRIPT_DIR/check-quotes.js" "$MANIFEST"
-run_check "images"               node "$SCRIPT_DIR/check-images.js" "$MANIFEST"
+run_check "images"               node "$SCRIPT_DIR/check-images.js" "$MANIFEST" --json "$IMAGES_JSON"
 run_check "footnotes"            node "$SCRIPT_DIR/check-footnotes.js" "$MANIFEST"
 run_check "accessibility"        node "$SCRIPT_DIR/check-a11y.js" "$MANIFEST"
 run_check "pdfs"                 bash "$SCRIPT_DIR/check-pdfs.sh" "$MANIFEST"
 run_check "html validity"        bash "$SCRIPT_DIR/check-html-validity.sh" "$MANIFEST"
-run_check "links"                bash "$SCRIPT_DIR/check-issue-links.sh" "$MANIFEST"
+run_check "links"                node "$SCRIPT_DIR/check-issue-links.js" "$MANIFEST" --json "$LINKS_JSON"
+
+node "$SCRIPT_DIR/generate-log.js" "$ISSUE_SLUG" "$ROOT/log.md" \
+  "${LOG_TEXT_ARGS[@]}" \
+  --images-json "$IMAGES_JSON" \
+  --links-json "$LINKS_JSON"
 
 echo ""
 echo "================"

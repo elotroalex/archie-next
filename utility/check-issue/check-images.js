@@ -19,7 +19,12 @@ function parseArgs(argv) {
   if (rootIdx !== -1 && args[rootIdx + 1]) {
     root = path.resolve(args[rootIdx + 1]);
   }
-  return { manifestPath, root };
+  let jsonPath = null;
+  const jsonIdx = args.indexOf("--json");
+  if (jsonIdx !== -1 && args[jsonIdx + 1]) {
+    jsonPath = args[jsonIdx + 1];
+  }
+  return { manifestPath, root, jsonPath };
 }
 
 function loadConfig() {
@@ -66,26 +71,34 @@ function looksLikeFilename(alt, src) {
 }
 
 function main() {
-  const { manifestPath, root } = parseArgs(process.argv);
+  const { manifestPath, root, jsonPath } = parseArgs(process.argv);
   if (!manifestPath) {
-    console.error("Usage: check-images.js <manifestPath> [--root <dir>]");
+    console.error("Usage: check-images.js <manifestPath> [--root <dir>] [--json <path>]");
     process.exit(1);
   }
   const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
   const { minImageWidthPx } = loadConfig();
   let fail = false;
   const seen = new Set();
+  const problemEntries = [];
+
+  // fileSlug -> source markdown path (e.g. "clean-article" -> "src/issue09/clean-article.md")
+  const sourceFileBySlug = new Map(
+    (manifest.articles || []).map((a) => [a.fileSlug, a.file])
+  );
 
   for (const htmlRelPath of manifest.builtHtml.en) {
     const htmlPath = path.join(root, htmlRelPath);
+    const fileSlug = path.basename(htmlRelPath, ".html");
+    const sourceFile = sourceFileBySlug.get(fileSlug) || htmlRelPath;
     if (!fs.existsSync(htmlPath)) {
       console.log(`FAIL - image: built file missing, cannot check images (${htmlRelPath})`);
+      problemEntries.push({ file: sourceFile, image: null, problem: `built file missing, cannot check images (${htmlRelPath})` });
       fail = true;
       continue;
     }
     const html = fs.readFileSync(htmlPath, "utf8");
     const imgs = extractImgTags(html).filter((img) => belongsToIssue(img.src, manifest.issueSlug));
-    const fileSlug = path.basename(htmlRelPath, ".html");
 
     // Tracked per article (not issue-wide) so two different articles reusing
     // the same generic alt text (e.g. both captioning a "photograph") isn't
@@ -106,7 +119,9 @@ function main() {
       const filePath = path.join(root, "src", img.src.replace(/^\//, ""));
 
       if (!fs.existsSync(filePath)) {
-        console.log(`FAIL - image: ${img.src} does not exist on disk`);
+        const problem = "does not exist on disk";
+        console.log(`FAIL - image: ${img.src} ${problem} [file: ${sourceFile}]`);
+        problemEntries.push({ file: sourceFile, image: img.src, problem });
         fail = true;
         continue;
       }
@@ -128,9 +143,11 @@ function main() {
       }
 
       if (problems.length === 0) {
-        console.log(`ok - image: ${img.src} (${width}px, alt present)`);
+        console.log(`ok - image: ${img.src} (${width}px, alt present) [file: ${sourceFile}]`);
       } else {
-        console.log(`FAIL - image: ${img.src} — ${problems.join("; ")}`);
+        const problem = problems.join("; ");
+        console.log(`FAIL - image: ${img.src} — ${problem} [file: ${sourceFile}]`);
+        problemEntries.push({ file: sourceFile, image: img.src, problem });
         fail = true;
       }
     }
@@ -138,13 +155,19 @@ function main() {
     for (const [alt, srcs] of altsInThisArticle) {
       if (srcs.length > 1) {
         fail = true;
+        const problem = `duplicate alt text "${alt}" used for ${srcs.length} images (${srcs.join(", ")})`;
         console.log(`FAIL - image: duplicate alt text "${alt}" used for ${srcs.length} images in ${fileSlug} (${srcs.join(", ")})`);
+        problemEntries.push({ file: sourceFile, image: srcs.join(", "), problem });
       }
     }
   }
 
   if (seen.size === 0) {
     console.log(`ok - image: no issue-owned images referenced in ${manifest.issueSlug}`);
+  }
+
+  if (jsonPath) {
+    fs.writeFileSync(jsonPath, JSON.stringify(problemEntries, null, 2));
   }
 
   process.exit(fail ? 1 : 0);
