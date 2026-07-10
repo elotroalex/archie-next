@@ -20,7 +20,7 @@
   {% set langPrefix = "" if lang == "en" else lang + "/" %}
   <nav class="main-nav" aria-label="{{ i18n[lang].global.main_nav_label }}">
     <a class="sidebar-nav-item" href="{{ ('/' + langPrefix + 'index.html') | url }}">{{ i18n[lang].titles.home }}</a>
-    <a class="sidebar-nav-item" href="{{ ('/' + langPrefix + 'index.html') | url }}#issues-list-heading">{{ i18n[lang].global.issues_label }}</a>
+    <a class="sidebar-nav-item" href="{{ ('/' + langPrefix + 'issues.html') | url }}">{{ i18n[lang].titles.issues }}</a>
     <a class="sidebar-nav-item" href="{{ ('/' + langPrefix + 'about.html') | url }}">{{ i18n[lang].titles.about }}</a>
     <a class="sidebar-nav-item" href="{{ ('/' + langPrefix + 'credits.html') | url }}">{{ i18n[lang].titles.credits }}</a>
     <a class="sidebar-nav-item" href="{{ ('/' + langPrefix + 'authors.html') | url }}">{{ i18n[lang].titles.authors }}</a>

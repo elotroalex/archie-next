@@ -1,0 +1,11 @@
+---
+title: issues
+permalink: es/issues.html
+layout: page
+---
+
+<ul class="issues-list">
+{% for key, iss in issues %}
+  <li><a href="{{ ('/es/' + key + '.html') | url }}"{% if key == site.current %} class="active" aria-current="page"{% endif %}>{{ i18n[lang].issues[key] }}</a></li>
+{% endfor %}
+</ul>
