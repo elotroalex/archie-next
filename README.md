@@ -16,7 +16,7 @@ Live site: [archipelagosjournal.org](http://archipelagosjournal.org)
    bash utility/intake/new-issue.sh issue09
    ```
 
-2. **Register the issue** in `src/_data/issues.js` (see [Adding a new issue](#adding-a-new-issue) for the full entry format). The homepage updates automatically — no other config change needed.
+2. **Register the issue** in `src/_data/issues.js` (see [Adding a new issue](#adding-a-new-issue) for the full entry format). The homepage's featured issue, its table of contents, and the issues list on every issue page (`src/_includes/issues-list.njk`) all update automatically — no other config change needed. The previous issue simply stops being highlighted as current and stays in the list like every other past issue.
 
 3. **Add labels** in `src/_i18n/en.yml`, `es.yml`, and `fr.yml` under the `issues:` key:
 
@@ -230,12 +230,41 @@ bash utility/intake/convert-docx.sh src/issue09/incoming/author-title.docx
 This uses Pandoc 3 (already required by the PDF pipeline) to:
 
 - Convert the `.docx` to `src/issue09/author-title.md`
-- Extract embedded images to `src/issue09/images/media/`
-- Rewrite image paths to absolute `/issue09/images/media/…` (required for language-variant pages)
+- Extract embedded images directly to `src/issue09/images/` (no `media/` subdirectory), renamed `author-title-imageN.ext` so they're traceable back to the source article
+- Rewrite image paths to absolute `/issue09/images/…` (required for language-variant pages)
 - Normalize bare curly/smart quotes (`‘ ’ “ ”`) left over from Word — most often found in table cells — to the same escaped straight-quote style used throughout the rest of the document
 - Inject a complete YAML front matter stub with `# TODO` placeholders for every required field
+- Convert figure rubric blocks into `<figure>` HTML (see [Captioning images](#captioning-images) below)
 
 Edit the output `.md` and fill in all `# TODO` fields before building. The `section` field must be exactly one of: `introduction`, `articles`, `projects`, `reviews` — the TOC will not display the article otherwise.
+
+### Captioning images
+
+Authors caption a figure by typing a `caption=`/`alt=`/`url=` rubric as its own paragraphs directly after the image (blank line between each, no manual line break inside one — see the [For Authors](https://archipelagosjournal.org/authors.html#images) guidelines for the author-facing version of this). Two shapes are recognized by `utility/intake/convert-images.py`:
+
+1. **Embedded image** (preferred) — the author inserts the real picture in the `.docx` (Insert > Picture); Pandoc already extracts and renames it before this script runs, so only the rubric is needed, no `img=` line:
+
+   ```
+   caption="insert caption here"
+
+   alt="insert alt text here."
+
+   url="http://optional-url.com"
+   ```
+
+2. **Placeholder** — used when the image isn't embedded yet; an editor must separately drop a matching file into `src/issue09/images/`. Same rubric, with an `img=` filename line first:
+
+   ```
+   img="my-image.jpg"
+
+   caption="insert caption here"
+
+   alt="insert alt text here."
+
+   url="http://optional-url.com"
+   ```
+
+`caption` and `alt` are required in both shapes; `url` is optional. A block that doesn't match either shape exactly (wrong order, a missing required field, an image inline within a sentence rather than alone on its own paragraph) is left untouched in the output for manual conversion. Run `bash utility/intake/test-convert-images.sh` to check the converter against its fixtures.
 
 ---
 
@@ -360,9 +389,35 @@ abstract_fr: >
   Résumé en français.
 ```
 
-### Info pages (About, Authors, Credits, etc.)
+### Info pages (About, Authors, Credits, Reviewers, Valences, Workflow, CFPs)
 
-Translated content for info pages lives in `src/_i18n/{en,es,fr}/` subdirectories as Markdown files, loaded at build time via `src/_data/pages.js`. The corresponding page templates in `src/es/` and `src/fr/` render this content automatically.
+Each info page is a native Eleventy page — front matter plus a markdown body — living directly in `src/_i18n/{en,es,fr}/`, e.g. `src/_i18n/es/about.md`. There's no separate template file to edit; the content file *is* the page. A per-language directory data file (`src/_i18n/{en,es,fr}/{lang}.11tydata.js`) supplies the shared `layout: page` and `lang` defaults, so an individual page's front matter only needs its own `title` and `permalink`:
+
+```yaml
+---
+title: about
+permalink: es/about.html
+---
+Page content in markdown.
+```
+
+To add a new info page in this style: create the `.md` file in all three `src/_i18n/{en,es,fr}/` directories with matching `title`/`permalink` front matter (`permalink: about.html` for English, `permalink: es/about.html` / `fr/about.html` for the others).
+
+A page can be taken down without deleting it by adding `published: false` to its front matter — used for calls for papers (`src/_i18n/{en,es,fr}/cfp/`) that are open one issue and closed the next; see `cfp/special.md` for a live example.
+
+Any info page can drop `[[toc]]` on its own line to get an auto-generated table of contents (a nested list of links to that page's own `##`/`###` headings) — see [Table of contents](#table-of-contents) below.
+
+### Table of contents
+
+Drop `[[toc]]` on its own line anywhere in a page's markdown body to get an auto-generated, nested list of links to that page's `##`/`###` headings (deeper headings get real anchor ids too, for manual `[text](#id)` cross-references, but aren't listed in the TOC itself). Used on the Authors, Reviewers, and Valences pages.
+
+```markdown
+**Table of Contents**
+
+[[toc]]
+```
+
+Powered by `markdown-it-anchor` + `markdown-it-toc-done-right`, wired into the shared markdown-it instance in `.eleventy.js`. Heading ids are slugified consistently (accents and punctuation stripped, e.g. "Índice" → `indice`), and repeated heading text on the same page (e.g. four separate "Review Process" subsections) is disambiguated automatically (`review-process`, `review-process-1`, `review-process-2`, ...).
 
 ### Adding a new UI string
 

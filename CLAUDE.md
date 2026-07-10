@@ -13,7 +13,7 @@ This repository (`archie-next`) is a migration of the original Jekyll 4.x site t
 - **Markdown:** markdown-it with footnotes, attrs, and smart quotes (`markdownTemplateEngine: false` — markdown is never pre-processed by Nunjucks)
 - **Styles:** Plain CSS in `src/public/css/` — unchanged from the original Jekyll site
 - **PDF pipeline:** Pandoc 3.x + lualatex, scripts in `utility/latex/`
-- **i18n:** Custom — YAML files in `src/_i18n/{en,es,fr}.yml` for UI strings; the about/authors/credits/reviewers/valences/workflow info pages and the cfp/open + cfp/special call-for-papers pages live as native Eleventy pages (front matter + markdown body) in `src/_i18n/{en,es,fr}/`, with a per-language `{lang}.11tydata.js` directory data file supplying the shared `layout`/`lang` defaults
+- **i18n:** Custom — YAML files in `src/_i18n/{en,es,fr}.yml` for UI strings; the about/authors/credits/reviewers/valences/workflow info pages and the cfp/open + cfp/special call-for-papers pages live as native Eleventy pages (front matter + markdown body) in `src/_i18n/{en,es,fr}/`, with a per-language `{lang}.11tydata.js` directory data file supplying the shared `layout`/`lang` defaults. Any such page can be taken down without deleting it by adding `published: false` to its front matter — `{lang}.11tydata.js`'s `eleventyComputed.permalink` returns `false` (no output written) when that's set, otherwise falls through to the page's own static `permalink` unchanged. Used to close a call for papers between issues (`cfp/special.md`) without losing the content as a template for next time.
 
 ## Directory structure
 
@@ -46,7 +46,7 @@ utility/
 
 **`date:` is reserved by Eleventy.** Human-readable publication dates live in `pubDate:` in front matter, not `date:`.
 
-**Current issue** is always the last key in `src/_data/issues.js` — `site.js` derives it dynamically. No manual config change is needed when adding a new issue; just add it as the last entry.
+**Current issue** is always the last key in `src/_data/issues.js` — `site.js` derives it dynamically. No manual config change is needed when adding a new issue; just add it as the last entry. The homepage's featured issue, its TOC, and the issues list on every issue page (`src/_includes/issues-list.njk`, listing every issue with the current one highlighted the same way the active language is in the header) all follow this automatically too.
 
 **`allIssueArticles` collection** is also derived dynamically from `Object.keys(issues)` in `.eleventy.js` — no changes needed there when adding a new issue.
 
