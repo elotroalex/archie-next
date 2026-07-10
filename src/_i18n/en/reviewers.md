@@ -3,7 +3,7 @@ title: reviewers
 permalink: reviewers.html
 ---
 
-At *archipelagos* we are working to build a community of reviewers and contributors so to sustain and enrich our collective Caribbeanist scholarship. If you would like to join our team of reviewers—to help us review articles and digital projects—please contact us at archipelagosjournal@gmail.com.
+At _archipelagos_ we are working to build a community of reviewers and contributors so to sustain and enrich our collective Caribbeanist scholarship. If you would like to join our team of reviewers—to help us review articles and digital projects—please contact us at archipelagosjournal@gmail.com.
 
 ---
 
@@ -15,12 +15,12 @@ At *archipelagos* we are working to build a community of reviewers and contribut
 
 ## Review Guidelines for Digital Projects
 
-*archipelagos* accepts mid-stage digital scholarship projects beyond
+_archipelagos_ accepts mid-stage digital scholarship projects beyond
 the article or monograph format for single-blind review. Our review
 process is crafted in accordance with the [DHCommons
 model](http://dhcommons.org/journal/submission-guidelines), with some
 additions and revisions. Once peer review is completed, projects are
-"launched" via a dedicated page on the *archipelagos* platform. This
+"launched" via a dedicated page on the _archipelagos_ platform. This
 landing page features a brief description of and link to the project,
 along with excerpts of audio, visual, and other multimedia elements.
 This page also provides a link to (a curated version of) the dialogue
@@ -30,7 +30,6 @@ Project review occurs in two phases:
 
 1.  Authors submit a Project statement of 300 to 500 words. Reviewers will offer
     initial feedback within four to six weeks.
-
 2.  Authors respond to reviewer feedback in a 1000-to-1200-word
     narrative and provide a link to a navigable beta site for
     final review.
@@ -62,7 +61,7 @@ appropriate).
 
 We ask reviewers to be conscious of the labor that went into the making
 of a digital project. Digital projects generally depend on more
-distributed collaboration than monographs or articles. *archipelagos*
+distributed collaboration than monographs or articles. _archipelagos_
 encourages the crediting of work where credit is due and the
 acknowledgment of the scholarly and interpretative work involved in data
 curation, design, and the engineering of digital projects. Reviewers
@@ -78,23 +77,21 @@ should ask the following questions of a project:
 
 Although design constitutes a separate category of review, we ask
 reviewers to understand design in terms of its relationship to the
-purported intellectual contribution of a given project. For *archipelagos*, design includes back-end architecture, workflow, and
+purported intellectual contribution of a given project. For _archipelagos_, design includes back-end architecture, workflow, and
 front-end interface design. We ask reviewers to consider the overall
 temporal and technical structure of a project and how this structure
 relates to the goals of the project. A reviewer may ask questions like
 
--   How do effort and resources used in the project match its import?
-
--   How do the graphic and UX design elements of the front end
-    contribute to the goals of the intellectual contribution? (When
-    considering the public-facing design, reviewers should not place
-    undue weight on "ease of use" or "glossy design" but rather consider
-    whether the project\'s features fit the intellectual mission of the
-    project and the resources the project\'s team had available to them.)
-
--   How does the back-end architecture hinder or move forward the
-    contribution of the project and perhaps link it to existing digital
-    scholarship projects?
+- How do effort and resources used in the project match its import?
+- How do the graphic and UX design elements of the front end
+  contribute to the goals of the intellectual contribution? (When
+  considering the public-facing design, reviewers should not place
+  undue weight on "ease of use" or "glossy design" but rather consider
+  whether the project\'s features fit the intellectual mission of the
+  project and the resources the project\'s team had available to them.)
+- How does the back-end architecture hinder or move forward the
+  contribution of the project and perhaps link it to existing digital
+  scholarship projects?
 
 ### Preservation
 
@@ -107,27 +104,21 @@ projects with a minimum of two years post-beta support. We encourage our
 reviewers, therefore, to look for signs that the project team has
 considered the project\'s future. Possible questions are
 
--   What standards have been used and why?
-
--   How robust is the documentation on the project? Could the project be
-    decomposed and recomposed based on this documentation?
-
--   How is the project managing its rate of decay?
-
--   Is the level of complexity of the project appropriate for its
-    sociotechnical or institutional context?
-
--   How conscious is the project team regarding the life cycle of the
-    project?
+- What standards have been used and why?
+- How robust is the documentation on the project? Could the project be
+  decomposed and recomposed based on this documentation?
+- How is the project managing its rate of decay?
+- Is the level of complexity of the project appropriate for its
+  sociotechnical or institutional context?
+- How conscious is the project team regarding the life cycle of the
+  project?
 
 ---
 
 ## Review of Articles: A Brief Note
 
 Our reviewers are expected to maintain the highest academic standards in
-the review of scholarly articles for publication in *archipelagos*.
+the review of scholarly articles for publication in _archipelagos_.
 Since many of our articles are media-rich—linking prose arguments
 rhetorically to visuals—we ask our reviewers also to provide feedback on
 the figures, images, and interactives used in articles.
-
-
