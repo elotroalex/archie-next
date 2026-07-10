@@ -12,15 +12,22 @@
     <p>Issue ({{ issue }}) | {{ pubDate }}<br />DOI: {{ doi }}</p>
     {% endif %}
   </div>
+  {# Every info/CFP page has a real per-language variant at /{lang}/page.html
+     (e.g. src/_i18n/es/about.md's own front matter sets permalink: es/about.html) --
+     these links previously pointed at the English URL unconditionally on
+     every page regardless of `lang`, sending e.g. a reader on /es/about.html
+     to /about.html via the sidebar's own "about us" link. #}
+  {% set langPrefix = "" if lang == "en" else lang + "/" %}
   <nav class="main-nav" aria-label="{{ i18n[lang].global.main_nav_label }}">
-    <a class="sidebar-nav-item" href="{{ '/index.html' | url }}">{{ i18n[lang].titles.home }}</a>
-    <a class="sidebar-nav-item" href="{{ '/about.html' | url }}">{{ i18n[lang].titles.about }}</a>
-    <a class="sidebar-nav-item" href="{{ '/credits.html' | url }}">{{ i18n[lang].titles.credits }}</a>
-    <a class="sidebar-nav-item" href="{{ '/authors.html' | url }}">{{ i18n[lang].titles.authors }}</a>
-    <a class="sidebar-nav-item" href="{{ '/reviewers.html' | url }}">{{ i18n[lang].titles.reviewers }}</a>
-    <a class="sidebar-nav-item" href="{{ '/workflow.html' | url }}">{{ i18n[lang].titles.workflow }}</a>
-    <a class="sidebar-nav-item" href="{{ '/valences.html' | url }}">{{ i18n[lang].titles.valences }}</a>
-    <a class="sidebar-nav-item" href="{{ '/cfp/open.html' | url }}">{{ i18n[lang].titles.cfp }}</a>
+    <a class="sidebar-nav-item" href="{{ ('/' + langPrefix + 'index.html') | url }}">{{ i18n[lang].titles.home }}</a>
+    <a class="sidebar-nav-item" href="{{ ('/' + langPrefix + 'index.html') | url }}#issues-list-heading">{{ i18n[lang].global.issues_label }}</a>
+    <a class="sidebar-nav-item" href="{{ ('/' + langPrefix + 'about.html') | url }}">{{ i18n[lang].titles.about }}</a>
+    <a class="sidebar-nav-item" href="{{ ('/' + langPrefix + 'credits.html') | url }}">{{ i18n[lang].titles.credits }}</a>
+    <a class="sidebar-nav-item" href="{{ ('/' + langPrefix + 'authors.html') | url }}">{{ i18n[lang].titles.authors }}</a>
+    <a class="sidebar-nav-item" href="{{ ('/' + langPrefix + 'reviewers.html') | url }}">{{ i18n[lang].titles.reviewers }}</a>
+    <a class="sidebar-nav-item" href="{{ ('/' + langPrefix + 'workflow.html') | url }}">{{ i18n[lang].titles.workflow }}</a>
+    <a class="sidebar-nav-item" href="{{ ('/' + langPrefix + 'valences.html') | url }}">{{ i18n[lang].titles.valences }}</a>
+    <a class="sidebar-nav-item" href="{{ ('/' + langPrefix + 'cfp/open.html') | url }}">{{ i18n[lang].titles.cfp }}</a>
   </nav>
 
   <div class="sidebar-footer">

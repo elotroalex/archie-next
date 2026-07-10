@@ -13,9 +13,7 @@ layout: default
 
 <div class="footer">
   <ul id="footer-nav">
-    <li><a href="#">Return to top</a></li>
-    {% if site["current-number"] == issue %}
-    <li> | <a href="{{ '/' | url }}">Return to Table of Contents</a></li>
-    {% endif %}
+    <li><a href="#">{{ i18n[lang].global["return-to-top"] }}</a></li>
+    <li> | <a href="{{ issueSlug | issueTocUrl(lang) | url }}">{{ i18n[lang].global.toc }}</a></li>
   </ul>
 </div>

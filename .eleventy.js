@@ -122,6 +122,15 @@ module.exports = function (eleventyConfig) {
 
   // --- Custom filters ---
 
+  // Build the "Return to Table of Contents" link for an article/project's
+  // own issue (not always the current issue — a reader can land on an
+  // older issue's article via search/citation/external link with no other
+  // in-page way back to that issue's TOC). Usage: {{ issueSlug | issueTocUrl(lang) | url }}
+  eleventyConfig.addFilter("issueTocUrl", function (issueSlug, lang) {
+    const prefix = lang === "es" || lang === "fr" ? `/${lang}` : "";
+    return `${prefix}/${issueSlug}.html`;
+  });
+
   // Render markdown block (with <p> tags) — for author bios
   eleventyConfig.addFilter("markdown", function (str) {
     if (!str) return "";
