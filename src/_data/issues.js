@@ -99,7 +99,7 @@ module.exports = {
     slug_fr: "fr/issue09",
     slug_es: "es/issue09",
     number: 9,
-    date: "April 2025",
+    date: "July 2026",
     title: "Issue (9)",
     editors: ["Kaiama Glover", "Alex Gil"],
     production: ["Alex Gil", "Isabella García Bernstein"],
