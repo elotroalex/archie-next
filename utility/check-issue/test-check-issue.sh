@@ -57,6 +57,7 @@ check_contains "broken article fails (TODO prefix survived)" "$FM_OUTPUT" "FAIL 
 check_contains "broken article: section placeholder detected" "$FM_OUTPUT" "section still has placeholder text"
 check_contains "broken article: doi placeholder detected (no TODO prefix)" "$FM_OUTPUT" 'doi still has placeholder text ("10.7916/...")'
 check_contains "i18n label: fr missing is detected" "$FM_OUTPUT" "FAIL - i18n label: issuefx missing in fr.yml"
+check_contains "date consistency: issues.js vs en.yml mismatch is detected" "$FM_OUTPUT" 'FAIL - date consistency: issues.js date "January 2000" does not match en.yml label date "Test Fixture Issue"'
 if [ "$FM_EXIT" -ne 0 ]; then echo "  ok - overall exit is nonzero"; else echo "  FAIL - overall exit should be nonzero"; FAIL=1; fi
 
 echo ""

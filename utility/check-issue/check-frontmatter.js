@@ -98,6 +98,25 @@ function checkI18nLabel(root, issueSlug) {
   return missing;
 }
 
+// Catches drift between src/_data/issues.js's `date` field and the trailing
+// "| Month YYYY" segment of the en.yml issue label -- these are two
+// hand-maintained sources of truth for the same fact and nothing else
+// compares them (see issue03/issue04 date mismatch found in the 2026-07
+// site review).
+function checkDateConsistency(root, issueSlug, issueDate) {
+  if (!issueDate) return null;
+  const file = path.join(root, "src/_i18n/en.yml");
+  if (!fs.existsSync(file)) return null;
+  const data = yaml.load(fs.readFileSync(file, "utf8")) || {};
+  const label = data.issues && data.issues[issueSlug];
+  if (typeof label !== "string") return null;
+  const labelDate = label.split("|").pop().trim();
+  if (labelDate.toLowerCase() !== String(issueDate).trim().toLowerCase()) {
+    return `issues.js date "${issueDate}" does not match en.yml label date "${labelDate}"`;
+  }
+  return null;
+}
+
 function main() {
   const { manifestPath, root } = parseArgs(process.argv);
   if (!manifestPath) {
@@ -124,6 +143,14 @@ function main() {
   } else {
     fail = true;
     console.log(`FAIL - i18n label: ${manifest.issueSlug} missing in ${missingI18n.join(", ")}`);
+  }
+
+  const dateProblem = checkDateConsistency(root, manifest.issueSlug, manifest.issueDate);
+  if (dateProblem) {
+    fail = true;
+    console.log(`FAIL - date consistency: ${dateProblem}`);
+  } else {
+    console.log(`ok - date consistency: ${manifest.issueSlug}`);
   }
 
   process.exit(fail ? 1 : 0);

@@ -77,6 +77,7 @@ function collect(root, issueSlug) {
   return {
     issueSlug,
     issueNumber: meta.number ?? null,
+    issueDate: meta.date ?? null,
     slugEs: meta.slug_es ?? null,
     slugFr: meta.slug_fr ?? null,
     imagesDir: findImagesDir(root, issueSlug),
