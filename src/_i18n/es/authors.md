@@ -13,7 +13,7 @@ Contact: archipelagosjournal@gmail.com
 
 ---
 
-**Índice**
+**Índice**{.toc-label}
 
 [[toc]]
 

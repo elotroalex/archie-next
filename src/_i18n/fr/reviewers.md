@@ -7,7 +7,7 @@ Chez *archipelagos*, nous travaillons à l\'édification d\'une communauté de c
 
 ---
 
-**Table des matières**
+**Table des matières**{.toc-label}
 
 [[toc]]
 

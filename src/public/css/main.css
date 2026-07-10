@@ -240,6 +240,24 @@ h2 {
 	font-size: 1.2rem;
 }
 
+/* Visually matches h2 without being a real heading -- used for the
+   decorative label markdown-it-attrs attaches to (e.g. "In depth look...",
+   "Table of Contents") right before a [[toc]] block. Kept out of the
+   heading hierarchy on purpose so it doesn't introduce a spurious extra
+   heading level for screen readers / axe-core's heading-order rule.
+   markdown-it-attrs puts the class on the <strong> itself (inline by
+   default), so display:block is needed for the margins/sizing to apply
+   the way they would on a real block-level h2. */
+.toc-label {
+	display: block;
+	margin-top: 1.4rem;
+	margin-bottom: .8rem;
+	font-size: 1.2rem;
+	font-weight: 200;
+	color: #444;
+	line-height: 1.25;
+}
+
 h3 {
 	font-size: 1.1rem;
 }

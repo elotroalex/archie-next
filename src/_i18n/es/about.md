@@ -20,7 +20,7 @@ A medida que construimos y entendemos, lo hacemos iluminados por la primera luz 
 
 ---
 
-**Mirada en profundidad...**
+**Mirada en profundidad...**{.toc-label}
 
 [[toc]]
 

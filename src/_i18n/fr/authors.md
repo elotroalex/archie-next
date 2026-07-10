@@ -10,7 +10,7 @@ permalink: fr/authors.html
 
 Toutes les soumissions doivent être conformes au [Chicago Manual of Style](https://www.chicagomanualofstyle.org/home.html).
 
-**Table des matières**
+**Table des matières**{.toc-label}
 
 [[toc]]
 

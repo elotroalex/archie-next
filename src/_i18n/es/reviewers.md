@@ -7,7 +7,7 @@ En *archipelagos* estamos trabajando para construir una comunidad de revisores y
 
 ---
 
-**Índice**
+**Índice**{.toc-label}
 
 [[toc]]
 

@@ -18,7 +18,7 @@ As we build and understand, we do so illuminated by the first light of the long 
 
 ---
 
-**In depth look...**
+**In depth look...**{.toc-label}
 
 [[toc]]
 

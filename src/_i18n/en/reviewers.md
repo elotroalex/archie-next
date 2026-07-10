@@ -7,7 +7,7 @@ At _archipelagos_ we are working to build a community of reviewers and contribut
 
 ---
 
-**Table of Contents**
+**Table of Contents**{.toc-label}
 
 [[toc]]
 
