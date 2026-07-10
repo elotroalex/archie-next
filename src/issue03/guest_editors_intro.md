@@ -246,7 +246,8 @@ song by Ibeyi, we have carried
 
 for years and years. In this issue, scholars of the Caribbean and the
 African diaspora offer a glimpse of that joy and burden and what it
-means to confront slavery in the machine.</div>
+means to confront slavery in the machine.
+</div>
 <br>
 This special issue is dedicated to scholar, organizer, and beautiful
 artistic soul Linda Rodriguez (1978--2018). There are no words to

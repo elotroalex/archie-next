@@ -183,7 +183,7 @@ exchanges.[^18]
 
 <figure>
 <img src="/issue05/images/felix/fig1.png" alt="Natural Disasters" loading="lazy">
-<figcaption>Figure 1. This meme presents an unfavorable view of Trinidad and Tobago politician Colm Imbert. Source: *Meanwhile in T&T* (via Facebook)</figcaption>
+<figcaption>Figure 1. This meme presents an unfavorable view of Trinidad and Tobago politician Colm Imbert. Source: *Meanwhile in T&amp;T* (via Facebook)</figcaption>
 </figure>
 
 Ryan Milner comments that internet memes are part of the lingua franca

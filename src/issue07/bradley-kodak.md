@@ -308,7 +308,7 @@ by the bombing a few decades earlier.
 
 <figure>
 <img src="/issue07/images/navy-planes.jpg" alt="U.S. Navy Curtiss HS-2Ls and other airplanes in Haiti, circa 1919" loading="lazy">
-<figcaption>U.S. Navy Curtiss HS-2Ls and other airplanes in Haiti circa 1919.From the Walter V. Brown Collection (COLL/4326), Marine Corps Archives & Special Collections.</figcaption>
+<figcaption>U.S. Navy Curtiss HS-2Ls and other airplanes in Haiti circa 1919.From the Walter V. Brown Collection (COLL/4326), Marine Corps Archives &amp; Special Collections.</figcaption>
 </figure>
 
 ## III. Detours into dark sousveillance

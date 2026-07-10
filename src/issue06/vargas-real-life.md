@@ -32,7 +32,7 @@ Depestre wrote *Hadriana dans tous mes rêves* in France, where he had been livi
 
 *Hadriana*'s nonlinear structure, whose fragmentation is especially evident in the second movement, is a challenge for readers to follow and forces them to continually go back a few pages to rectify information or try to put the pieces together. For this reason, the website of the In All My Dreams book club includes a "Reader's Guide" with different tools (a list of characters, a map of the novel's structure) to give readers a better idea of how the novel is structured, who is who, and what is happening in each movement. The novel's nonlinearity made me ask myself what sort of project to build around it to contribute to the guide without spoiling the reading process by overexplaining. This central concern led to the creation of "Hadriana in Context: Timelines."
 
-<iframe title="Interactive timeline: Hadriana in Context" src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1aH7yME3-wtTrFftpG9Ix57LtyG1Y7OldgWGLZPw54Bs&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe><span class="caption">Interactive 1. Hadriana in Context: Timelines</span>
+<iframe title="Interactive timeline: Hadriana in Context" src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1aH7yME3-wtTrFftpG9Ix57LtyG1Y7OldgWGLZPw54Bs&amp;font=Default&amp;lang=en&amp;initial_zoom=2&amp;height=650" width="100%" height="650" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe><span class="caption">Interactive 1. Hadriana in Context: Timelines</span>
 
 <br>
 
