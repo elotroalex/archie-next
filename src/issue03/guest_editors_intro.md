@@ -6,15 +6,14 @@ order: 2
 pubDate: July 9 2019
 title: "We Are Deathless (Slavery in the Machine)"
 doi: "10.7916/archipelagos-q06t-dm84"
-author: 
-- name: Jessica Marie Johnson
-  shortname: Johnson
-  bio: >
-    Jessica Marie Johnson is a writer and historian of slavery at Johns Hopkins University. She is the author of *Practicing Freedom: Black Women, Intimacy, and Kinship in New Orleans Atlantic World* (University of Pennsylvania Press, forthcoming) and a co-editor, with Mark Anthony Neal, of "Black Code," a special issue of *The Black Scholar *(2017). Her work has appeared in *Slavery and Abolition*; *The Black Scholar*; *Meridians\: Feminism, Race, and Transnationalism*; *American Quarterly*; *Social Text*; the *Journal of African American History*; the *William and Mary Quarterly*; *Debates in the Digital Humanities*; *Forum Journal*; *Bitch Magazine*; *Black Perspectives* (AAIHS); *Somatosphere*; and *Post-Colonial Digital Humanities* (*DHPoco*). She tweets as @jmjafrx.  
+author:
+  - name: Jessica Marie Johnson
+    shortname: Johnson
+    bio: >
+      Jessica Marie Johnson is a writer and historian of slavery at Johns Hopkins University. She is the author of *Practicing Freedom: Black Women, Intimacy, and Kinship in New Orleans Atlantic World* (University of Pennsylvania Press, forthcoming) and a co-editor, with Mark Anthony Neal, of "Black Code," a special issue of *The Black Scholar *(2017). Her work has appeared in *Slavery and Abolition*; *The Black Scholar*; *Meridians\: Feminism, Race, and Transnationalism*; *American Quarterly*; *Social Text*; the *Journal of African American History*; the *William and Mary Quarterly*; *Debates in the Digital Humanities*; *Forum Journal*; *Bitch Magazine*; *Black Perspectives* (AAIHS); *Somatosphere*; and *Post-Colonial Digital Humanities* (*DHPoco*). She tweets as @jmjafrx.
 language: en
-script: 'multiverse.js'
+script: "multiverse.js"
 ---
-
 
 <div class="epigraph">
 <blockquote>
@@ -70,7 +69,7 @@ happened / Oh hey / We are deathless / We are deathless."
 
 [^p1]: Alyssa Edes, "Ibeyi on Spirituality and Joy in 'Ash,'" 4 October 2017, https://www.kbbi.org/post/ibeyi-spirituality-and-joy-ash.
 
-This special issue of *sx archipelagos*, "Slavery in the Machine," sings
+This special issue of _sx archipelagos_, "Slavery in the Machine," sings
 out with that same defiance. In the face of environmental catastrophes,
 "unpayable debt" levied by a global north created out of plantation
 profits, police and military violence, and the continued predations of
@@ -149,13 +148,13 @@ or the Haitian Revolution as their primary topic, Daut explores how
 us to better understand the political processes that drove Haitians to
 create and sustain an independent nation-state in the nineteenth
 century." In "The Slave-Machine: Slavery, Capitalism, and the
-'Proletariat' in *The Black Jacobins* and *Capital*," Nick Nesbitt
+'Proletariat' in _The Black Jacobins_ and _Capital_," Nick Nesbitt
 explores the machinery of capitalism. Centering C. L. R. James's claim
-in the iconic text *The Black Jacobins* that the enslaved of
+in the iconic text _The Black Jacobins_ that the enslaved of
 eighteenth-century Saint Domingue were "closer to a modern proletariat
 than any group of workers in existence at the time," Nesbitt compares
 the powerful political rhetoric in James's text with Marx's more narrow
-definition of *proletariat* and *capitalism*. In "Xroads Praxis: Black
+definition of _proletariat_ and _capitalism_. In "Xroads Praxis: Black
 Diasporic Technologies for Remaking the New World," I return to the
 devastation spread by Hurricane María and use the blackout created by
 the hurricane---a blackness so intense it could be seen from space---as a
@@ -179,7 +178,7 @@ their theoretical as well as their material function, not as
 grant-chasing pursuits.
 
 In keeping with the theme of missing data and defying death, Ada Ferrer
-and Linda Rodríguez explore *Digital Aponte*, their project translating
+and Linda Rodríguez explore _Digital Aponte_, their project translating
 the life and paintings of nineteenth-century Cuban artist and insurgent
 José Antonio Aponte into digital form. Spanish officials arrested Aponte
 during a series of slave revolts in 1812. Officials used his book of
@@ -192,23 +191,23 @@ transgressions occupied Spanish investigators and led to his execution
 (at the crossroads), and his story would seem to end with his death. But
 it is in his masking, that is, in the work he hid, destroyed,
 dissembled, and avoided discussing, that Ferrer and Rodriguez find
-inspiration. In "The Caribbean Digital and Open Peer Review: A *Musical
-Passage* Hypothesis," Laurent Dubois, David Garner, and Mary Caton
+inspiration. In "The Caribbean Digital and Open Peer Review: A _Musical
+Passage_ Hypothesis," Laurent Dubois, David Garner, and Mary Caton
 Lingold use the missing, the ephemeral, and the haunting echo of data as
 music and musical production to imagine community differently.
 Describing their process of peer review and the online forum they
-created to discuss and share work related to *Musical Passage*, Dubois,
+created to discuss and share work related to _Musical Passage_, Dubois,
 Garner, and Lingold remind us that one of the many contributions
 technology offers scholars of the Caribbean and the African diaspora is
 the opportunity to find intellectual, political, and sonic kin by
 creating virtual spaces that transgress borders. Lizabeth Paravisini-Gebert,
-in her review of *Puerto Rico Syllabus* notes a similar community formed
+in her review of _Puerto Rico Syllabus_ notes a similar community formed
 from Columbia University's Unpayable Debt Working Group. In 2016 the
 Puerto Rico Oversight, Management, and Economic Stability Act (PROMESA),
 signed by President Barack Obama, placed an impossible burden of debt
 and austerity on the island of Puerto Rico, leading to massive student
 and activist protests in Puerto Rico and on the mainland. Using the
-hashtag syllabus as form, medium, and genre, the *Puerto Rico Syllabus*
+hashtag syllabus as form, medium, and genre, the _Puerto Rico Syllabus_
 surfaced a conversation---a missing dataset---that challenged these
 austerity measures with evidence from across the disciplines and in a
 public format accessible to organizers, teachers, and laypeople on the
@@ -224,28 +223,21 @@ folded up for secret pleasure alone or with kin. Not accountable or even
 legible to institutions, but brimming with multiple legibilities and
 infinite literacies, accountable to black life, joy, and freedom
 projects around the world. Not dead, but deathless. Or, to remix another
-song by Ibeyi, we have carried
-
-<ul class="multiverse" data-multiverse-timer="3000">
-    <li>the crosssroads</li>
-    <li>spirit</li>
-    <li>the dead</li>
-    <li>the deathless</li>
-    <li>the living</li>
-    <li>humanity</li>
+song by Ibeyi, we have carried <ul class="multiverse" data-multiverse-timer="3000">
+<li>the crosssroads</li>
+<li>spirit</li>
+<li>the dead</li>
+<li>the deathless</li>
+<li>the living</li>
+<li>humanity</li>
 </ul>
-
 for years and years. In this issue, scholars of the Caribbean and the
 African diaspora offer a glimpse of that joy and burden and what it
 means to confront slavery in the machine.
 </div>
-<br>
+
 This special issue is dedicated to scholar, organizer, and beautiful
 artistic soul Linda Rodriguez (1978--2018). There are no words to
 describe the pain of losing her, a pain everyone who knew her shared.
 Linda, we miss you. We have more to learn from you. We continue to read,
 to study, and to listen.
-
----
-
-
