@@ -26,6 +26,6 @@ permalink: fr/index.html
 
 <hr />
 
-{% include "past-issues.njk" %}
+{% set currentIssueKey = site.current %} {% include "issues-list.njk" %}
 
 <h3><a href="{{ '/fr/about.html' | url }}">{{ i18n[lang].global.editorial }}</a></h3>

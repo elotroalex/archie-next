@@ -20,8 +20,7 @@ global:
   projects: Digital Projects
   reviews: Digital Project Reviews
   interactives: Featured
-  past_issues: Issues
-  return_to_home: Return to Homepage
+  issues_label: Issues
   editorial: Editorial Policies
   issue: Issue
   return-to-top: Return to Top

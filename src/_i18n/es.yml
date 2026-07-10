@@ -20,8 +20,7 @@ global:
   projects: Proyectos digitales
   reviews: Reseñas
   interactives: Destacado
-  past_issues: Números
-  return_to_home: Regresar a la página principal
+  issues_label: Números
   editorial: Política editorial
   issue: Número
   return-to-top: Volver al inicio de la página

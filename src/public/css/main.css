@@ -1351,6 +1351,13 @@ p.audio-title {
   display: none;
 }
 
+/* Issues list (src/_includes/issues-list.njk) -- same active-state
+   convention as .masthead-lang: brand red + bold for the current issue. */
+.issues-list a.active {
+  color: #D0181F;
+  font-weight: 700;
+}
+
 
 
 
