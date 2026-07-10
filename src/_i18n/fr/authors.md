@@ -80,7 +80,7 @@ url="http://optional-url.com"
 
 `caption` et `alt` sont obligatoires ; `url` est facultatif. Si l'un ou l'autre doit inclure des guillemets, échappez-les avec une barre oblique inverse, par exemple : `caption="Elle a dit \"bonjour\" à la caméra"`.
 
-*Vous n'avez pas encore inséré votre image ? Vous soumettez en Markdown ?* Si vous attendez toujours une photo ou un graphique définitif, vous pouvez laisser un espace réservé au lieu de l'insérer : tapez la même rubrique que ci-dessus, mais ajoutez une ligne supplémentaire *au-dessus* des autres avec le nom de fichier que vous nous enverrez éventuellement, et envoyez-nous ce fichier séparément :
+*Vous n'avez pas encore inséré votre image ? Vous soumettez en Markdown ?* Si vous travaillez dans Word et n'avez pas encore ajouté la photo, ou si vous soumettez directement en Markdown (où il n'y a pas d'étape « insérer une image »), utilisez un espace réservé à la place : tapez la même rubrique que ci-dessus, mais ajoutez une ligne supplémentaire *au-dessus* des autres avec le nom de fichier de l'image, et envoyez-nous ce fichier séparément, avec votre document :
 
 ~~~ text
 img="my-image.jpg"

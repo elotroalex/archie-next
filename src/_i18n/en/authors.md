@@ -85,7 +85,7 @@ url="http://optional-url.com"
 
 `caption` and `alt` are required; `url` is optional. If either needs to include quotation marks, escape them with a backslash, e.g. `caption="She said \"hello\" to the camera"`.
 
-*Haven't inserted your image yet? Submitting in Markdown?* If you're still waiting on a final photo or graphic, you can leave a placeholder instead of embedding it: type the same rubric as above, but add one more line *above* the others with the filename you'll eventually send us, and send that file to us separately:
+*Haven't inserted your image yet? Submitting in Markdown?* If you're working in Word and haven't added the photo yet, or you're submitting directly in Markdown (where there's no "insert picture" step), use a placeholder instead: type the same rubric as above, but add one more line *above* the others with the image's filename, and send us that file separately alongside your document:
 
 ~~~ text
 img="my-image.jpg"
