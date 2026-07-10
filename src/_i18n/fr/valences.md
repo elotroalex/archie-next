@@ -3,6 +3,8 @@ title: valences
 permalink: fr/valences.html
 ---
 
+En chimie, la valence décrit les différentes façons dont un atome peut se lier à d'autres. Nous empruntons ce terme pour désigner les différentes façons dont un travail scientifique et créatif peut s'engager avec *archipelagos* : deux formes d'essai — l'une fondée sur une argumentation soutenue, l'autre relatant le processus derrière un projet numérique — ainsi que deux façons de rendre compte de la recherche numérique elle-même, un dialogue édité avec les créateurs d'un projet ou une critique autonome. Parce qu'une grande partie de la recherche numérique caribéenne prend forme en dehors de l'article conventionnel, chaque valence est évaluée selon ses propres critères, attentive au type de travail spécifique qu'elle représente. Les sections ci-dessous détaillent les conditions de soumission et le processus d'évaluation pour chacune.
+
 ---
 
 **Table des matières**

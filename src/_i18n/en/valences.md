@@ -3,6 +3,8 @@ title: valences
 permalink: valences.html
 ---
 
+In chemistry, a valence describes the different ways an atom can bond with others. We borrow the term for the different ways scholarly and creative work can engage with *archipelagos*: two forms of essay — one built on sustained argument, the other narrating the process behind a digital project — alongside two ways of reviewing digital scholarship itself, an edited dialogue with a project's creators or a standalone critical review. Because so much Caribbean digital scholarship takes shape outside the conventional article, each valence is reviewed on its own terms, attentive to the specific kind of labor it represents. The sections below detail the submission requirements and review process for each.
+
 ---
 
 **Table of Contents**

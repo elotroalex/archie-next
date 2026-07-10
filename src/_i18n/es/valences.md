@@ -3,6 +3,8 @@ title: valences
 permalink: es/valences.html
 ---
 
+En química, la valencia describe las distintas formas en que un átomo puede enlazarse con otros. En *archipelagos* usamos el término modalidad, inspirado en esa misma idea, para nombrar las distintas formas en que el trabajo académico y creativo puede vincularse con la revista: dos tipos de ensayo —uno basado en un argumento sostenido, el otro que narra el proceso detrás de un proyecto digital— junto con dos formas de reseñar la investigación digital en sí misma, un diálogo editado con los creadores de un proyecto o una reseña crítica independiente. Dado que buena parte de la investigación digital caribeña toma forma fuera del artículo convencional, cada modalidad se evalúa según sus propios términos, atenta al tipo específico de trabajo que representa. Las secciones a continuación detallan los requisitos de envío y el proceso de revisión de cada una.
+
 ---
 
 **Tabla de contenidos**
