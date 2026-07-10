@@ -1,15 +1,16 @@
 ---
 title: open
 permalink: es/cfp/open.html
+published: true
 ---
 
 ## Convocatoria de artículos, propuestas y proyectos
 
-### Número (7) | Llamado abierto
+### Llamado abierto
 
-*archipelagos* se complace en anunciar nuestra convocatoria para nuestro siguiente número. Se aceptan envíos de artículos individuales de forma continua. Si gusta, puede enviar un resumen en lugar de un artículo completo para una evaluación editorial preliminar. Si desea que su proyecto digital sea evaluado por nosotros como parte de nuestro proceso de revisión pública por pares, háganoslo saber. Tenga en cuenta que también aceptamos propuestas de secciones temáticas editadas por editores invitados.
+*archipelagos* acepta envíos de manera continua. Se aceptan envíos de artículos individuales en cualquier momento y serán considerados para un próximo número. Si gusta, puede enviar un resumen en lugar de un artículo completo para una evaluación editorial preliminar. Si desea que su proyecto digital sea evaluado por nosotros como parte de nuestro proceso de revisión pública por pares, háganoslo saber. Tenga en cuenta que también aceptamos propuestas de secciones temáticas editadas por editores invitados.
 
-Para ser considerado para el número (7), la fecha límite para la entrega es el **15 de febrero de 2022**. Los resúmenes no deben tener más de 300 palabras. Los ensayos aceptados deberan ser entregados antes del **1 de junio de 2022**.
+Los resúmenes no deben tener más de 300 palabras.
 
 Aceptamos articulos en Español.
 

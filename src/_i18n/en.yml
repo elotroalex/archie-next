@@ -49,6 +49,7 @@ titles:
   workflow: "our workflow"
   valences: "valences"
   search: "search"
+  cfp: "call for papers"
 
 search:
   placeholder: "Search articles, authors, abstracts…"

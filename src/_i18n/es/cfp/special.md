@@ -1,6 +1,7 @@
 ---
 title: special
 permalink: es/cfp/special.html
+published: false
 ---
 
 ## Llamado a Contribuciones

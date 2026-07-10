@@ -39,6 +39,7 @@ titles:
   workflow: "flux de travail"
   valences: "valences"
   search: "recherche"
+  cfp: "appel à communications"
 
 search:
   placeholder: "Rechercher des articles, auteurs, résumés…"

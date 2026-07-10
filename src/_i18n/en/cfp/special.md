@@ -1,6 +1,7 @@
 ---
 title: special
 permalink: cfp/special.html
+published: false
 ---
 
 ## Call for Papers and Projects

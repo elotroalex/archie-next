@@ -1,15 +1,16 @@
 ---
 title: open
 permalink: fr/cfp/open.html
+published: true
 ---
 
 ## Appel à communications, propositions et projets
 
-### Numéro (7) | Appel ouvert
+### Appel ouvert
 
-*archipelagos* est heureux d'annoncer notre appel ouvert pour le Numéro (7). Les soumissions d'articles individuels sont acceptées sur une base continue. Vous pouvez envoyer un résumé au lieu d'un article complet pour une évaluation éditoriale préliminaire avant de continuer. Si vous souhaitez que votre projet numérique soit évalué dans le cadre de notre processus d'examen public par les pairs, veuillez nous en informer. Notez que nous acceptons également les propositions de sections thématiques éditées par des invités.
+*archipelagos* accepte les soumissions de manière continue. Les soumissions d'articles individuels sont acceptées à tout moment et seront considérées pour un prochain numéro. Vous pouvez envoyer un résumé au lieu d'un article complet pour une évaluation éditoriale préliminaire avant de continuer. Si vous souhaitez que votre projet numérique soit évalué dans le cadre de notre processus d'examen public par les pairs, veuillez nous en informer. Notez que nous acceptons également les propositions de sections thématiques éditées par des invités.
 
-Pour être pris en considération pour le Numéro (7), la date limite de soumission est **le 15 février 2022**. Les résumés ne doivent pas dépasser 300 mots. Les essais acceptés seront dus **le 1er juin 2022**.
+Les résumés ne doivent pas dépasser 300 mots.
 
 Nous acceptons des contributions en français.
 

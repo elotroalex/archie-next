@@ -38,6 +38,7 @@ titles:
   home: "página inicial"
   valences: "modalidades"
   search: "búsqueda"
+  cfp: "convocatoria de artículos"
 
 search:
   placeholder: "Buscar artículos, autores, resúmenes…"

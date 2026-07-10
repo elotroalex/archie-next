@@ -1,6 +1,7 @@
 ---
 title: special
 permalink: fr/cfp/special.html
+published: false
 ---
 
 ## Appel à contributions et projets
