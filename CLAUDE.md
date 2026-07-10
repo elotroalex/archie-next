@@ -187,3 +187,5 @@ npm run build   # production build to _site/
 ## Deployment
 
 GitHub Pages via GitHub Actions (`build.yml`). Push to `main` builds and deploys automatically. PDF generation is a separate manual workflow (`pdf.yml`).
+
+`robots.txt` is generated (`src/robots.11ty.js`), not static — it defaults to blocking all crawlers (safe for the `staging` GitHub Pages preview) and only allows them, with a sitemap reference, when `ELEVENTY_ALLOW_CRAWLERS=true` is set on the build step. `build.yml`'s `deploy-production` job (the `main`-branch rsync target) sets this; nothing else should.
