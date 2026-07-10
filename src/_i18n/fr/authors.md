@@ -26,7 +26,7 @@ Toutes les soumissions doivent être conformes au [Chicago Manual of Style](http
 
 - Les articles soumis doivent comprendre une biographie (ou une biographie pour plusieurs auteurs) et un résumé. Veuillez les placer au bas de votre document. Les images peuvent être insérées directement dans votre document (voir [Images](#images) ci-dessous) — vous n'avez plus besoin de les envoyer séparément. La vidéo et le son doivent toujours être envoyés sous forme de liens vers un service de streaming de votre choix (voir [Vidéo, son et médias interactifs](#video-son-et-medias-interactifs) ci-dessous).
 
-- Nous sommes un journal en libre accès. Si votre publication est acceptée, vous recevrez une copie de notre [contrat d\'auteur](http://archipelagosjournal.org/public/author-agreement.pdf).
+- Nous sommes un journal en libre accès. Si votre publication est acceptée, vous recevrez une copie de notre contrat d'auteur (voir la section [Accord d'auteur](#accord-dauteur) ci-dessous).
 
 - Les articles sont examinés à double insu par notre équipe d\'évaluateurs externes. Les critiques de projets numériques sont revues par le comité de rédaction de *archipelagos*. Les auteurs du site sous évaluation reçoivent une notification écrite des éditeurs (accepté, accepté avec des révisions mineures, des révisions de fond requises ou rejeté) dans un délai de deux mois à compter de la soumission.
 
@@ -134,4 +134,13 @@ L'évaluation directe du projet se déroule en deux phases:
 3. Les évaluations par les pairs et la réponse des auteurs du site seront compilées dans un récit dialogique par l\'équipe éditoriale de *archipelagos*. Les auteurs du site auront la possibilité de relire ce récit avant la publication.
 
 Les essais de description de projet suivront le même processus qu'une revue d'article.
+
+## Accord d'auteur
+
+Lisez [l'accord d'auteur](http://archipelagosjournal.org/public/author-agreement.pdf). Cet accord reflète la position selon laquelle le ou les auteurs doivent conserver le droit d'auteur sur l'article et doivent disposer de droits explicites pour utiliser l'article dans des projets de recherche, d'enseignement ou autres. Les droits d'auteur sont résumés comme suit:
+
+- Les auteurs conservent les droits d'auteur sans restriction;
+- les auteurs donnent à *archipelagos* le pouvoir de publier leurs travaux dans le journal avec une [licence internationale Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/);
+- les auteurs conservent les droits de publication sans restrictions;
+- les auteurs acceptent d'archiver une copie des articles, le cas échéant, sur le référentiel [Academic Commons](https://academiccommons.columbia.edu/) de l'Université Columbia.
 

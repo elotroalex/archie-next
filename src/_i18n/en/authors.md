@@ -31,7 +31,7 @@ We ask you to submit your abstracts and articles to <archipelagosjournal@gmail.c
 
 2. Article submissions must include a bio (or bios for multi-author) and an abstract. *Please place these at the bottom of your document*. Images can be inserted directly in your document (see [Images](#images) below) — you no longer need to send them separately. Video and sound should still be sent as links to a streaming service of your choice (see [Video, Sound, and Interactive Media](#video-sound-and-interactive-media) below).
 
-6. We are an open access journal. If you are accepted for publication you will receive a copy of our [Author Agreement](https://archipelagosjournal.org/public/author-agreement.pdf).
+6. We are an open access journal. If you are accepted for publication you will receive a copy of our Author Agreement (see the [Author Agreement](#author-agreement) section below).
 
 3. Articles are double-blind reviewed by our team of outside peer-reviewers. Digital project reviews are reviewed by the *archipelagos* Editorial Board. Contributors receive written notification from the editors (accepted, accepted with minor revisions, substantive revisions required or rejected) within two months of submission.
 
@@ -139,3 +139,12 @@ Direct Project review occurs in two phases:
 3. The editors will write an introduction to the project and compile the project's own introduction written exclusively for us, the reviewer comments and the response from the project team or lead for final publication on a dedicated project page.
 
 Project description essays will follow the same process as an article review.
+
+## Author Agreement
+
+Read the [Author Agreement](https://archipelagosjournal.org/public/author-agreement.pdf). This Agreement reflects the position that the Author(s) should retain the copyright to the Article and should have explicit rights to use the Article in future research, teaching, and other projects. Author rights can be summarized as follows:
+
+- Authors maintain copyright without restriction;
+- authors grant *archipelagos* the authority to publish their work in the journal with a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/);
+- authors maintain publication rights without restrictions;
+- authors agree to archive a copy of articles, when applicable, on Columbia University's repository [Academic Commons](https://academiccommons.columbia.edu/).

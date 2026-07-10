@@ -18,6 +18,12 @@ As we build and understand, we do so illuminated by the first light of the long 
 
 ---
 
+**Table of Contents**
+
+[[toc]]
+
+---
+
 ## Editorial Policies
 
 ### Open Access
@@ -44,11 +50,264 @@ We provide DOIs for all articles. Citation information and DOIs can be found on 
 
 Copies of articles will be archived on Columbia University's repository [Academic Commons](https://academiccommons.columbia.edu/). We are also archived in LOCKSS.
 
-## Author Agreement
+## Valences
 
-Read the [Author Agreement](https://archipelagosjournal.org/public/author-agreement.pdf). This Agreement reflects the position that the Author(s) should retain the copyright to the Article and should have explicit rights to use the Article in future research, teaching, and other projects. Author rights can be summarized as follows:
+In chemistry, a valence describes the different ways an atom can bond with others. We borrow the term for the different ways scholarly and creative work can engage with *archipelagos*: two forms of essay — one built on sustained argument, the other narrating the process behind a digital project — alongside two ways of reviewing digital scholarship itself, an edited dialogue with a project's creators or a standalone critical review. Because so much Caribbean digital scholarship takes shape outside the conventional article, each valence is reviewed on its own terms, attentive to the specific kind of labor it represents. The sections below detail the submission requirements and review process for each.
 
-- Authors maintain copyright without restriction;
-- authors grant *archipelagos* the authority to publish their work in the journal with a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/);
-- authors maintain publication rights without restrictions;
-- authors agree to archive a copy of articles, when applicable, on Columbia University's repository [Academic Commons](https://academiccommons.columbia.edu/).
+### Valence 1a | Critical Essays
+
+Critical Essays are 6000–8000-word articles that showcase groundbreaking, argument-based reflections on the theory, methods, and practices of digital scholarship and scholarship on the digital within the frame of Caribbean Studies.
+
+#### Submission Description
+
+An essay that presents a clear argument relevant to the field of Caribbean digital studies, broadly understood. All valence 1a essays go through a double-blind peer review process.
+
+All submissions should be:
+
+- within 6000–8000 words
+- double-spaced and follow the Chicago Manual of Style
+- written in English, French, Dutch, Papiamentu/o, or Spanish
+- submitted in .docx or .md format.
+
+Articles including images or other multimedia elements should follow the formatting instructions under [for authors](https://archipelagosjournal.org/authors.html#submission-guidelines-for-digital-projects) in the journal's website.
+
+Please familiarize yourself with the review process and guidelines for **_critical essays_**, detailed in the following before completing your evaluation. If you have any questions, feel free to contact us at: [archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com).
+
+#### Review Process
+
+1. Authors submit a guideline-compliant essay.
+2. Reviewers evaluate and offer initial feedback within five weeks of receiving the essay, answering the questions outlined below and then sending feedback to the journal editors ([archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com)).
+3. Editors read reviewer feedback and notify both authors and reviewers of the final publication decision.
+4. If accepted for publication, but with minor or major revisions, authors revise their submission within four weeks.
+5. Authors have a final opportunity to provide minor edits once the final proofs have been prepared.
+
+#### Reviewer Guidelines
+
+Please answer the following questions with as much elaboration as you feel the author and/or editors may need. Please enter answers on this form.
+
+1. Is the submission coherent, well structured and lucidly presented?
+2. Since many of our articles are media-rich—linking prose arguments rhetorically to visuals—we ask our reviewers also to provide feedback on the figures, images, and interactives used in articles. If the submission includes visual materials, how effectively integrated are these materials into the argument? Are there too many images? Too few?
+3. Does the submission make a new and significant contribution that has relevance to a Caribbean platform of criticism?
+4. Does the submission exhibit the kind of critical rethinking that is consistent with the _archipelagos_ project? (description copied below.)
+5. Does the submission display a knowledge of existing literature on the subject and contribute to its critical examination?
+6. We are particularly interested in submissions that provide a clear sense of what is at stake in their conceptual and analytical interventions. Do you recommend this submission for acceptance? For acceptance with revision? For rejection?
+
+---
+
+### Valence 1b | Process Essays
+
+Process Essays are 4000–6000-word articles that showcase work related to the theory, methods, and practices of digital project construction.
+
+#### Submission Description
+
+An essay written by project authors that foregrounds the labor and decision-making processes of bringing digital scholarship projects to fruition. These essays propose narratives of project development and infrastructure creation and/or provide details about new major features/stages of the digital project in question. All valence 1b articles are subject to a single-blind peer review process.
+
+All submissions should be:
+
+- within 4000–6000 words
+- double-spaced and follow the Chicago Manual of Style
+- written in English, French, Dutch, Papiamentu/o, or Spanish
+- submitted in .docx or .md format
+
+Articles including images or other multimedia elements should follow the formatting instructions under [for authors](https://archipelagosjournal.org/authors.html#submission-guidelines-for-digital-projects) in the journal's website.
+
+Please familiarize yourself with the review process and guidelines for **_process essays_**, detailed in the following before completing your evaluation. If you have any questions, feel free to contact us at: [archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com).
+
+#### Review Process
+
+1. Authors submit a guideline-compliant essay.
+2. Reviewers evaluate and offer initial feedback within five weeks of receiving the essay, answering the questions outlined below and then sending feedback to the journal editors ([archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com)).
+3. Editors read reviewer feedback and notify both authors and reviewers of the final publication decision.
+4. If accepted for publication, but with minor or major revisions, authors revise their submission within four weeks.
+5. Authors have a final opportunity to provide minor edits once the final proofs have been prepared.
+
+#### Questions For Reviewers
+
+Please answer the following questions with as much elaboration as you feel the author and/or editors may need. Please type your answers on this document.
+
+1. Is the submission coherent, well structured, and lucidly presented?
+2. We ask reviewers to carefully weigh the de facto or possible intellectual contribution of the project described. Reviewers should consider the nature of that contribution appropriate to the current stage of the project's development and consider early signs of process-derived knowledge; the project's relationship to existing literature/projects; and/or early conversations in the literature about the project (where appropriate).
+
+   - Are the methods used in the project appropriate to the research questions it poses?
+   - Do the project's methods contribute to digital scholarship in general, and if so, do the authors address how?
+
+3. We ask reviewers to be conscious of the labor that goes into the development of a digital project. _archipelagos_ encourages the crediting of work where credit is due and the acknowledgment of the scholarly and interpretative work involved in data curation, design, and the engineering of digital projects. Reviewers should ask the following questions of a project:
+
+   - Do the authors address how contributor attribution is handled?
+   - Are the labor conditions under which the project was (or is being) produced made evident?
+   - Does the work cite its (digital scholarship) precedents and data sources appropriately?
+
+4. When considering the life cycle of a digital scholarship project, reviewers should not consider preservation in terms of indefinite periods of time. We encourage authors to be realistic about the plausible rate of decay of their projects and to have plans in place to manage the obsolescence of the technologies they use. We encourage our reviewers, therefore, to look for signs that the project team has considered the project's future. Possible questions are:
+
+   - What standards have been used and why?
+   - How is the project managing its rate of decay?
+   - Is the level of complexity of the project appropriate for its socio-technical or institutional context?
+
+5. Since many of our articles are media-rich—linking prose arguments rhetorically to visuals—we ask our reviewers also to provide feedback on the figures, images, and interactives used in articles. If the submission includes visual materials, how effectively integrated are these materials into the argument? Are there too many images? Too few?
+
+6. Does the submission exhibit the kind of critical rethinking that is consistent with the _archipelagos_ project? (See description below.)
+
+7. We are particularly interested in submissions that provide a clear sense of what is at stake in their conceptual and analytical interventions. Do you recommend this submission for acceptance? For acceptance with revision? For rejection?
+
+---
+
+### Valence 2 | Digital Project Dialogues
+
+Dialogues comprise synthesized critical exchanges in prose between the authors and reviewers of a publicly available, typically mid-stage digital project.
+
+#### Submission Description
+
+A concise and edited exchange between site author(s) and reviewer(s) of a publicly available digital project. Reviewers evaluate the Project Statement prepared for them by the project authors along with the online digital project and submit comments to editors. Before publication, the journal editors revise and consolidate both author and reviewer notes. The published outcome is a nuanced conversation around digital scholarship on the Caribbean between reviewer and authors. All valence 2 essays go through a single-blind peer review process.
+
+All author submissions should be:
+
+- within words 600–800 words (Project Statement)
+- double-spaced and follow the Chicago Manual of Style
+- written in Dutch, English, French, Papiamentu/o, or Spanish
+- submitted in .docx or .md format
+
+Articles including images or other multimedia elements should follow the formatting instructions under [for authors](https://archipelagosjournal.org/authors.html#submission-guidelines-for-digital-projects) in the journal\'s website.
+
+Please familiarize yourself with the review process and guidelines for **_digital project dialogues_**, detailed in the following before completing your evaluation. If you have any questions, feel free to contact us at: [archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com).
+
+#### Review Process
+
+1. Project authors submit a Project Statement of 400 to 600 words explaining their goals and the rationale of their decision-making.
+2. Reviewers prepare an evaluation of the Project Statement and the online digital project site based on the questions outlined later in this document. The assessment should be sent within five weeks to the journal\'s email address: ([archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com)).
+3. Editors anonymize and share reviewer feedback with authors. If applicable, authors work on revising their project to incorporate reviewer comments and provide a link to the revised version (under development or publicly published).
+4. Project authors submit a 1000-to-2000-word narrative responding to reviewer feedback and explaining how they addressed (or plan to address) any concerns. This response is sent directly to the journal, and not shared with reviewers prior to publication.
+5. Before publication, editors condense both author and reviewer perspectives to create a dialogue between both parties. The final version generally ranges between 2000-to-6000 words.
+
+#### Questions For Reviewers
+
+Please answer the following questions with as much elaboration as you feel the author and/or editors may need. Please type your answers on this document. These guidelines are also available under the [for reviewers](https://archipelagosjournal.org/reviewers.html) section of the journal\'s website.
+
+1. We ask reviewers to carefully weigh the de facto or possible intellectual contribution of the project. Reviewers should consider the nature of that contribution appropriate to the current stage of the project\'s development and consider early signs of process-derived knowledge; the project\'s relationship to existing literature/projects; and/or early conversations in the literature about the project (where appropriate).
+
+   - Will the project frame new conversations in the relevant subject area?
+   - Are the methods used in the project appropriate to the research questions it poses?
+   - Do the project\'s methods contribute to digital scholarship in general, and if so, how?
+
+2. We ask reviewers to be conscious of the labor that goes into the development of a digital project. Digital projects generally depend on more distributed collaboration than monographs or articles. _archipelagos_ encourages the crediting of work where credit is due and the acknowledgment of the scholarly and interpretative work involved in data curation, design, and the engineering of digital projects. Reviewers should ask the following questions of a project:
+
+   - Does the project credit its contributors openly and fairly?
+   - Are the labor conditions under which the project was produced made evident?
+   - Does the work cite its (digital scholarship) precedents and data sources appropriately?
+
+3. Although design constitutes a separate category of review, we ask reviewers to understand design in terms of its relationship to the purported intellectual contribution of a given project. For archipelagos, design includes back-end architecture, workflow, and front-end interface design. We ask reviewers to consider the overall temporal and technical structure of a project and how this structure relates to the goals of the project. A reviewer may ask questions like:
+
+   - How do effort and resources used in the project match its import?
+   - How do the graphic and UX design elements of the front end contribute to the goals of the intellectual contribution? (When considering the public-facing design, reviewers should not place undue weight on \"ease of use\" or \"glossy design\" but rather consider whether the project\'s features fit the intellectual mission of the project and the resources the project\'s team had available to them.)
+   - How does the back-end architecture hinder or move forward the contribution of the project and perhaps link it to existing digital scholarship projects?
+
+4. When considering the life cycle of a digital scholarship project, reviewers should not consider preservation in terms of indefinite periods of time. We encourage authors to be realistic about the plausible rate of decay of their projects and to have plans in place to manage the obsolescence of the technologies they use. We encourage our reviewers, therefore, to look for signs that the project team has considered the project\'s future. Possible questions are:
+
+   - What standards have been used and why?
+   - How robust is the documentation on the project? Could the project be decomposed and recomposed based on this documentation?
+   - How is the project managing its rate of decay?
+   - Is the level of complexity of the project appropriate for its socio-technical or institutional context?
+
+5. Does the submission exhibit the kind of critical rethinking that is consistent with the _archipelagos_ project? (See description below.)
+
+6. We are particularly interested in submissions that provide a clear sense of what is at stake in their conceptual and analytical interventions. Do you recommend this submission for acceptance? For acceptance with revision? For rejection?
+
+---
+
+### Valence 3 | Digital Project Reviews
+
+#### Submission Description
+
+A brief reviewer-authored essay commenting on the merits and development of a public digital project. The review includes a paragraph-length description of the project in question followed by the review itself. The section is akin in format and length to scholarly book reviews. As opposed to valence 2 (Dialogue Review) submissions, there is no dialog between project creators and reviewers.
+
+All submissions should be:
+
+- within 1000–2000 words in length
+- double-spaced and follow the Chicago Manual of Style
+- written in English, French, Dutch, Papiamentu/o, or Spanish
+- submitted in .docx or .md format
+
+---
+
+#### Review Process
+
+1. Editors solicit public reviews from reviewers directly or accept proposals from reviewers for consideration on a rolling basis. Editors work directly with reviewers to ensure the quality of the essay.
+
+2. Reviewers evaluate a digital project and send a 1000-to-2000-word essay within five weeks of confirming the review. They answer the questions posed below and send their first draft to [archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com).
+
+3. Reviewers revise their submission based on the editors\' feedback and send their final, revised submission to the journal.
+
+The questions and comments that follow aim to provide a general line of discussion and evaluation for **_external reviews of digital projects_**. You can also find a copy of these guidelines published under the [for reviewers](https://archipelagosjournal.org/reviewers.html) page in our website. If you have any questions, feel free to contact us at: [archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com).
+
+#### Questions For Reviewers
+
+Please answer the following questions with as much elaboration as you feel the author and/or editors may need when writing about a project.
+
+1. Is the submission coherent, well structured, and lucidly presented?
+
+2. We ask reviewers to carefully weigh the de facto or possible intellectual contribution of the project. Reviewers should consider the nature of that contribution appropriate to the current stage of the project\'s development and consider early signs of process-derived knowledge; the project\'s relationship to existing literature/projects; and/or early conversations in the literature about the project (where appropriate).
+
+   - Will the project frame new conversations in the relevant subject area?
+   - Are the methods used in the project appropriate to the research questions it poses?
+   - Do the project\'s methods contribute to digital scholarship in general, and if so, how?
+
+3. We ask reviewers to be conscious of the labor that goes into the development of a digital project. Digital projects generally depend on more distributed collaboration than monographs or articles. _archipelagos_ encourages the crediting of work where credit is due and the acknowledgment of the scholarly and interpretative work involved in data curation, design, and the engineering of digital projects. Reviewers should ask the following questions of a project:
+
+   - Does the project credit its contributors openly and fairly?
+   - Are the labor conditions under which the project was produced made evident?
+   - Does the work cite its (digital scholarship) precedents and data sources appropriately?
+
+4. When considering the life cycle of a digital scholarship project, reviewers should not consider preservation in terms of indefinite periods of time. Is the project under review realistic about the plausible rate of decay of their projects and to have plans in place to manage the obsolescence of the technologies they use? We encourage our reviewers, therefore, to look for signs that the project team has considered the project\'s future. Possible questions are:
+
+   - What standards have been used and why?
+   - How robust is the documentation on the project? Could the project be decomposed and recomposed based on this documentation?
+   - How is the project managing its rate of decay?
+   - Is the level of complexity of the project appropriate for its sociotechnical or institutional context?
+
+5. Does the project reviewed exhibit the kind of critical rethinking that is consistent with the _archipelagos_ project? (See description below.) We are particularly interested in reviews of projects that provide a clear sense of what is at stake in their conceptual and analytical interventions.
+
+## Our Workflow
+
+Part of what makes _archipelagos_ unique is our work-flow, carefully designed to minimize production costs, and allow our small team to run a robust academic journal, without paid services outside server costs and DOI provision. While every journal will have unique requirements and resources available to the team, we believe that [our open source software stack](https://github.com/archipelagosjournal/) combined with our work-flow provides a viable, portable model. The work-flow below is the next step after the original set-up is in place.
+
+### New elements
+
+The defining characteristic of our work-flow is the division into two stages of production by the types of computer files handled: The Word Stage and the Markdown Stage. While we continue to work for a world where authors structure their own documents, reducing overall costs further, we are cognizant of ingrained work habits, and have designed our work accordingly.
+
+The second major requirement for our work-flow is the expanded role of the copy-editor. After receiving training in producing and editing well-formatted YAML/Markdown documents, our copy-editor is responsible for ensuring the smooth transition from the first stage to the next.
+
+The third requirement is knowledge of static site generation (Jekyll, GitHub, etc.) by a member of the team. In our case this is one of the editors—called the editor-tech below. For the sake of sustainability, we are in the process of passing on these skills to other team members and friends of the project.
+
+### The Production of Articles
+
+N.B. We understand each stage of a text's life-cycle from first draft to production as a different _version_ of the text, abbreviated here as v1, v2, etc.
+
+#### I. The Word Stage
+
+In this stage, all exchanges can take place in Microsoft Word, as long as all parties abide by [the style guidelines](http://archipelagosjournal.org/authors.html#documents) documented on the journal site. Editors will keep copies of all versions in this stage on Dropbox. No promise of preservation is made for this stage.
+
+1. CFP goes out
+2. Contributors submit abstract to Editors over email
+3. Contributors submits v1 to Editors over email
+4. Editors sends to Peer Reviewers over email as received
+5. Peer Reviewers evaluate work (1 month from receipt)
+6. Editors responds to Contributors with reports based on peer-review work
+7. Contributors make revisions & send v2 back to Editors via email (1 month from receipt)
+8. Editors share all v2s with Copy-Editor in Dropbox
+9. Copy-Editor makes v3, shares in Dropbox with Editors & sends to Contributors via email.
+10. Contributors make v4 with Track Changes and send to Copy-Editor along with Ancillary Materials (bio, abstracts and multimedia content). Copy-Editor places all files in appropriate folder in Dropbox.
+11. Copy-Editor makes v5
+12. CE shares set of v5 without Track Changes + Ancillary Materials with Editors in Dropbox.
+13. Editors obtain DOIs
+
+#### II. The Markdown Stage
+
+In this stage we transition to markdown work-flows, out of which both the site and the PDFs are generated. All edits by Copy Editor and Editor should happen on Github at this stage.
+
+1. Editor-tech converts v5 to markdown using Pandoc
+2. Editor-tech uploads v5.md to Github & creates draft of web issue for internal use.
+3. Editor-tech generates v5 as PDFs, & shares with Copy-Editor on Dropbox.
+4. Copy-Editor sends v5.pdf to Contributors as Final Proof
+5. Contributors annotate v5.pdf with minor changes & sends back to Copy-Editor.
+6. Copy-Editor incorporates minor changes to v5.pdf in the markdown file on Github to create v6.
+7. Editors review and test the final issue to ensure quality.
+8. Publication

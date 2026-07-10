@@ -25,13 +25,13 @@ _archipelagos_ se basa en principios de computación mínima. Alentamos a nuestr
 
 ### Notas generales
 
-_archipelagos_ utiliza una combinación de correo electrónico, Dropbox y GitHub para administrar [el flujo de trabajo editorial](http://archipelagosjournal.org/es/workflow.html). Le pedimos que envíe sus resúmenes y artículos a <archipelagosjournal@gmail.com>. La mayoría de los intercambios con los autores se realizarán por correo electrónico utilizando esta cuenta.
+_archipelagos_ utiliza una combinación de correo electrónico, Dropbox y GitHub para administrar [el flujo de trabajo editorial](http://archipelagosjournal.org/es/about.html#nuestro-flujo-de-trabajo). Le pedimos que envíe sus resúmenes y artículos a <archipelagosjournal@gmail.com>. La mayoría de los intercambios con los autores se realizarán por correo electrónico utilizando esta cuenta.
 
 1. Las entregas de artículos individuales se aceptan de forma continua. También aceptamos propuestas para secciones temáticas.
 
 2. Las presentaciones de artículos deben incluir una biografía (o biografías para varios autores) y un resumen. Por favor colóquelos al final de su documento. Las imágenes pueden insertarse directamente en su documento (véase [Imágenes](#imagenes) más abajo) — ya no es necesario enviarlas por separado. El video y el audio deben seguir enviándose como enlaces a un servicio de transmisión de su elección (véase [Video, sonido y medios interactivos](#video-sonido-y-medios-interactivos) más abajo).
 
-3. Somos una revista de acceso abierto. Si es aceptado para su publicación, recibirá una copia de nuestro [Acuerdo con el autor](https://archipelagosjournal.org/public/author-agreement.pdf).
+3. Somos una revista de acceso abierto. Si es aceptado para su publicación, recibirá una copia de nuestro Acuerdo con el autor (véase la sección [Acuerdo con el autor](#acuerdo-con-el-autor) más abajo).
 
 4. Los artículos son revisados a doble ciego por nuestro equipo de revisores externos. Las reseñas son revisadas por los editores de _archipelagos_. Los contribuyentes reciben una notificación por escrito de los editores (aceptada, aceptada con revisiones menores, revisiones sustantivas requeridas o rechazadas) dentro de los dos meses posteriores a la presentación.
 
@@ -141,3 +141,11 @@ La revisión directa del proyecto ocurre en dos fases:
 3. Los editores escribirán una introducción al proyecto y compilarán la propia introducción del proyecto escrita exclusivamente para nosotros, los comentarios del revisor y la respuesta del equipo del proyecto o el líder para la publicación final en una página dedicada al proyecto.
 
 Los ensayos de descripción del proyecto seguirán el mismo proceso que la revisión de un artículo.
+
+## Acuerdo con el autor
+
+Lea nuestro [Acuerdo con el autor](https://archipelagosjournal.org/public/author-agreement.pdf). Este Acuerdo refleja la posición de que los/las autores/ras conservan los derechos de autor del Artículo y tienen derechos explícitos para usar el Artículo en futuros proyectos de investigación, enseñanza y otros. Los derechos de autor se definen de la siguiente manera:
+
+- Los/las autores/ras mantienen los derechos de autor sin restricciones;
+- Los/las autores/ras otorgan a *archipelagos* la autoridad para publicar su trabajo en la revista con una licencia internacional [Creative Commons Attribution 4.0](http://creativecommons.org/licenses/by/4.0/);
+- Los autores mantienen los derechos de publicación sin restricciones.
