@@ -61,7 +61,7 @@ Yale University Faculty of Arts and Sciences
 
 ### Isabella Garcia Bernstein | managing editor
 
-Isabella Maganda Garcia Bernstein is a Filipino American doctoral student in the Department of Spanish & Portuguese at Yale University, where they specialize in 19th and 20th century hispanofilipino literature and culture. Isabella is a recipient of Yale’s Race, Indigeneity, and Transnational Migration (RITM) and Richard J. Franke fellowships. Their research focuses on the colonial portrayal of the Philippines and the geopolitical notion of “Hispanic Asia” across urban contexts of Manila, Hong Kong, Havana, Madrid, and Barcelona. With interests in the sociology of the novel and translation studies in Global Iberia, Isabella is eager to explore gendered conceptualizations of orientalism and mestizaje. Other research interests include tropical gothic literature, journalism, Philippine national identity, transnational migration, and Catalan Studies. Isabella is passionate about fostering educational empowerment and multicultural literacy.
+Isabella M. Garcia Bernstein is a Filipina American PhD student in the Department of Spanish & Portuguese at Yale University and a recipient of the RITM and Richard J. Franke fellowships. At Yale, they serve as convener of the Tropical Studies Working Group and hopes to encourage dialogues between Caribbean and Southeast Asian island world making. Their interests include hispanofilipino history and literature, translation, transcultural orientalism, and Asian Caribbean cultures.
 
 ---
 
