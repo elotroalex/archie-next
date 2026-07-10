@@ -13,21 +13,23 @@ This repository (`archie-next`) is a migration of the original Jekyll 4.x site t
 - **Markdown:** markdown-it with footnotes, attrs, and smart quotes (`markdownTemplateEngine: false` — markdown is never pre-processed by Nunjucks)
 - **Styles:** Plain CSS in `src/public/css/` — unchanged from the original Jekyll site
 - **PDF pipeline:** Pandoc 3.x + lualatex, scripts in `utility/latex/`
-- **i18n:** Custom — YAML files in `src/_i18n/{en,es,fr}.yml` for UI strings; translated page content in `src/_i18n/{en,es,fr}/` subdirectories as Markdown
+- **i18n:** Custom — YAML files in `src/_i18n/{en,es,fr}.yml` for UI strings; the about/authors/credits/reviewers/valences/workflow info pages live as native Eleventy pages (front matter + markdown body) in `src/_i18n/{en,es,fr}/`, with a per-language `{lang}.11tydata.js` directory data file supplying the shared `layout`/`lang` defaults
 
 ## Directory structure
 
 ```
 src/
-  _data/          # Global data: site.js, issues.js, i18n.js, pages.js
-  _i18n/          # en.yml, es.yml, fr.yml (UI strings) + en/, es/, fr/ (page content)
+  _data/          # Global data: site.js, issues.js, i18n.js
+  _i18n/          # en.yml, es.yml, fr.yml (UI strings) + en/, es/, fr/ (info
+                   # pages: about/authors/credits/reviewers/valences/workflow,
+                   # each a native page with its own front matter + permalink)
   _includes/      # Nunjucks partials (head, sidebar, toc, footer, etc.)
   _layouts/       # Nunjucks layouts (default, article, project, page, info)
   public/         # CSS, fonts, favicon — served as-is
   assets/         # Pre-generated PDFs — served as-is
   issue01/–issue09/  # Issue markdown articles + directory data file
                       # Images co-located in issueXX/images/
-  es/             # Spanish variants: index, info pages, issue-articles.11ty.js, issue-pages.njk
+  es/             # Spanish variants: index, issue-articles.11ty.js, issue-pages.njk
   fr/             # French variants: same structure as es/
   index.html      # Homepage (current issue only)
   issue-pages.njk # Generates /issue01.html … /issueXX.html via pagination

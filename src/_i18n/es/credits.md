@@ -1,3 +1,8 @@
+---
+title: credits
+permalink: es/credits.html
+---
+
 ### Editores
 
 [Kaiama L. Glover](#kaiama-l-glover--editora)\\

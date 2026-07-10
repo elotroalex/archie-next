@@ -1,3 +1,8 @@
+---
+title: reviewers
+permalink: es/reviewers.html
+---
+
 En *archipelagos* estamos trabajando para construir una comunidad de revisores y contribuyentes para mantener y enriquecer nuestros estudios caribeños colectivos. Si desea unirse a nuestro equipo de revisores, para ayudarnos a revisar artículos y proyectos digitales, contáctenos en archipelagosjournal@gmail.com.
 
 ---

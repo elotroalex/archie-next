@@ -29,7 +29,11 @@
       "Bash(bash /private/tmp/claude-501/-Users-alexgil-www-archie-next/46afc023-db48-4fde-a708-b827fd5aad63/scratchpad/migrate-issue.sh issue05)",
       "Bash(bash /private/tmp/claude-501/-Users-alexgil-www-archie-next/46afc023-db48-4fde-a708-b827fd5aad63/scratchpad/migrate-issue.sh issue06)",
       "Bash(bash /private/tmp/claude-501/-Users-alexgil-www-archie-next/46afc023-db48-4fde-a708-b827fd5aad63/scratchpad/migrate-issue.sh issue07)",
-      "Bash(bash /private/tmp/claude-501/-Users-alexgil-www-archie-next/46afc023-db48-4fde-a708-b827fd5aad63/scratchpad/migrate-issue.sh issue08)"
+      "Bash(bash /private/tmp/claude-501/-Users-alexgil-www-archie-next/46afc023-db48-4fde-a708-b827fd5aad63/scratchpad/migrate-issue.sh issue08)",
+      "Bash(grep -n \"^---$\" src/_i18n/en/credits/credits.md)",
+      "Bash(python3 /private/tmp/claude-501/-Users-alexgil-www-archie-next/46afc023-db48-4fde-a708-b827fd5aad63/scratchpad/fix_quotes.py /tmp/quote-test/nesbitt.md /tmp/quote-test/vieira-digital.md)",
+      "Bash(xargs -I{} python3 /private/tmp/claude-501/-Users-alexgil-www-archie-next/46afc023-db48-4fde-a708-b827fd5aad63/scratchpad/fix_quotes.py {})",
+      "Bash(grep -o \"archive.\\\\{0,15\\\\}platform\" _site/issue02/essss.html)"
     ]
   }
 }

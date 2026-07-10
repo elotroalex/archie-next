@@ -1,3 +1,8 @@
+---
+title: reviewers
+permalink: fr/reviewers.html
+---
+
 Chez *archipelagos*, nous travaillons à l\'édification d\'une communauté de critiques et de contributeurs afin de soutenir et d\'enrichir notre savoir collectif caribéen. Si vous souhaitez rejoindre notre équipe de relecteurs – pour nous aider à évaluer des articles et des projets numériques – veuillez nous contacter à archipelagosjournal@gmail.com.
 
 ---

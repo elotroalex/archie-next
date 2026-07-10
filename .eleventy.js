@@ -27,8 +27,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.ignores.add("src/issue03/parham/**");
   eleventyConfig.ignores.add("src/issue03/parham-process/**");
 
-  // _i18n content fragments are data files used by templates, not standalone pages
-  eleventyConfig.ignores.add("src/_i18n/**");
+  // Orphaned/unwired content under _i18n — not part of any collection, kept
+  // out of the build. Everything else under _i18n/{lang}/ is a real page
+  // (about/authors/credits/reviewers/valences/workflow), rendered natively.
+  eleventyConfig.ignores.add("src/_i18n/**/cfps/**");
+  eleventyConfig.ignores.add("src/_i18n/ht/**");
 
   // --- Collections ---
 

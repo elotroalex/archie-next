@@ -1,3 +1,8 @@
+---
+title: about
+permalink: es/about.html
+---
+
 La transformación de la academia a partir del surgimiento digital presenta desafíos a los metodos tradicionales de aprendizaje, enseñanza, investigación, interpretación de documentos y presentación de hallazgos. También ofrece inmensas oportunidades en cada una de estas áreas. Los nuevos medios permiten nuevas formas de oratoria, de gráficos, nuevos objetivos de investigación e incluso nuevas materialidades que complementan las formas pre-existentes de producción académica, así como nos permiten constituir plataformas completamente originales. Como resultado, las oportunidades de colaboración interdisciplinaria se han ampliado enormemente, la información se ha hecho más accesible y la investigación se ha hecho más eficiente en múltiples niveles. Los académicos estamos llamados ahora, con cierta urgencia, a adaptar nuestros métodos de investigación y pedagógicos a un clima académico inundado por una superabundancia de información y análisis. Esto ha creado oportunidades para nuevos encuentros abiertos y multiformes, archivos interactivos y continuamente actualizados, bases de datos, aplicaciones cartográficas que enriquecen la imaginación geográfica con información histórica y diálogos en línea con nuestros colegas y el público en general.
 
 

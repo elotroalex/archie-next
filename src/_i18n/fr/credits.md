@@ -1,3 +1,8 @@
+---
+title: credits
+permalink: fr/credits.html
+---
+
 ### Rédacteurs-en-chef
 
 [Kaiama L. Glover](#kaiama-l-glover--editor)  

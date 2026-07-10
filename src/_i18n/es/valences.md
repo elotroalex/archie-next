@@ -1,4 +1,9 @@
 ---
+title: valences
+permalink: es/valences.html
+---
+
+---
 
 ## Tabla de contenidos
 {:.no_toc}

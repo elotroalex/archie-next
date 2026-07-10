@@ -1,4 +1,9 @@
 ---
+title: valences
+permalink: fr/valences.html
+---
+
+---
 
 ## Table des matières
 {:.no_toc}
