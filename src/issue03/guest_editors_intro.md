@@ -19,7 +19,6 @@ script: 'multiverse.js'
 <div class="epigraph">
 <blockquote>
 i, <br>
-
 <ul class="multiverse" data-multiverse-timer="3000">
     <li>the crosssroads</li>
     <li>spirit</li>
@@ -28,29 +27,21 @@ i, <br>
     <li>the living</li>   
     <li>humanity</li>
 </ul>
-
 carried <br>
-
 <ul class="multiverse" data-multiverse-timer="6000">
     <li>the fractional</li>
     <li>the missing</li>
     <li>the destroyed</li>
 </ul>
-
 (this, <br>
-
 <ul class="multiverse" data-multiverse-timer="3000"><li>political and deliberate lost-in-translation</li><li>masking</li><li>testimony</li><li><i>mi isla</i></li></ul>)
-
 for years <br>
-
 <ul class="multiverse" data-multiverse-timer="6000">
     <li>of collaboration</li>
     <li>of accountability</li>
     <li>of community</li>
 </ul>
-
 and years <br>
-
 <ul class="multiverse" data-multiverse-timer="3000">
     <li>of creating</li>
     <li>of remixing</li>
