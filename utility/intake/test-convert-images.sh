@@ -106,6 +106,69 @@ Second part of the caption.\"
 
 alt=\"Alt6\"'
 
+# 7. Embedded image (already extracted/renamed by convert-docx.sh) followed
+# by caption=/alt=, no img= line needed since the picture is already there.
+check "embedded image paired with caption/alt, no url" \
+'![](/issue09/images/some-article-image1.png)
+
+caption=\"A view of the harbor\"
+
+alt=\"Fishing boats docked at sunset\"' \
+'<figure>
+<img src="/issue09/images/some-article-image1.png" alt="Fishing boats docked at sunset" loading="lazy">
+<figcaption>A view of the harbor</figcaption>
+</figure>'
+
+# 8. Embedded image, caption/alt/url all present.
+check "embedded image paired with caption/alt/url" \
+'![](/issue09/images/some-article-image2.png)
+
+caption=\"An interactive map\"
+
+alt=\"Screenshot of the interactive map interface\"
+
+url=\"https://example.com/map\"' \
+'<figure>
+<a href="https://example.com/map" target="_blank">
+<img src="/issue09/images/some-article-image2.png" alt="Screenshot of the interactive map interface" loading="lazy">
+</a>
+<figcaption>An interactive map</figcaption>
+</figure>'
+
+# 9. Embedded image with no caption/alt rubric following it at all -- left
+# untouched (an editor has to caption it by hand).
+check "embedded image with no following rubric is left as-is" \
+'![](/issue09/images/some-article-image3.png)
+
+Some regular paragraph text here, unrelated to the image.' \
+'![](/issue09/images/some-article-image3.png)
+
+Some regular paragraph text here, unrelated to the image.'
+
+# 10. Embedded image immediately followed by only alt= (no caption) -- left
+# untouched, same as the placeholder-shape missing-field case.
+check "embedded image with only alt (missing caption) is left as-is" \
+'![](/issue09/images/some-article-image4.png)
+
+alt=\"Alt only, no caption\"' \
+'![](/issue09/images/some-article-image4.png)
+
+alt=\"Alt only, no caption\"'
+
+# 11. An inline image that is part of a larger paragraph (not alone on its
+# own paragraph) is never treated as a figure candidate.
+check "inline image within a sentence is left as-is" \
+'See the diagram below: ![](/issue09/images/inline.png) for details.
+
+caption=\"Should not be consumed\"
+
+alt=\"Should not be consumed\"' \
+'See the diagram below: ![](/issue09/images/inline.png) for details.
+
+caption=\"Should not be consumed\"
+
+alt=\"Should not be consumed\"'
+
 if [ "$FAIL" -eq 0 ]; then
   echo "All convert-images.py tests passed."
 else

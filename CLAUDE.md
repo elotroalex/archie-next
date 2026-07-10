@@ -88,19 +88,31 @@ bash utility/intake/convert-docx.sh src/issue09/incoming/author-title.docx
 - `{.underline}` spans stripped (Word auto-underlined hyperlinks → stray literal brackets in rendered HTML)
 - `{dir="rtl"}` spans stripped from curly/smart quotes
 - Bare curly/smart quotes (`‘ ’ “ ”`) normalized to the same escaped straight-quote form (`\"` / `\'`) Pandoc already uses everywhere else — most commonly needed inside table cells, where the nested `pandoc.write` call in `tables-to-html.lua` bypasses Pandoc's normal smart-quote-to-straight-quote conversion, so Word's autocorrected curly quotes pass through as literal Unicode characters instead of being caught like they are in regular paragraph text
-- Figure placeholders converted to `<figure>` HTML (`utility/intake/convert-images.py`) — used when an author's images aren't embedded in the docx yet and are instead typed as their own paragraphs, in this exact order:
+- Figure rubric blocks converted to `<figure>` HTML (`utility/intake/convert-images.py`) — authors type a `caption=`/`alt=`/`url=` rubric as its own paragraphs (blank line between each, no manual line break inside one) immediately after the figure. Two shapes are recognized:
 
-  ```
-  img="my-image.jpg"
+  1. **Embedded image** (preferred): the author inserts the real picture directly in the .docx (Insert > Picture) at the point it belongs; `pandoc --extract-media` already pulls it out and renames it before this script runs, so the author only needs to follow it with:
 
-  caption="insert caption here"
+     ```
+     caption="insert caption here"
 
-  alt="insert alt text here."
+     alt="insert alt text here."
 
-  url="http://optional-url.com"
-  ```
+     url="http://optional-url.com"
+     ```
 
-  `url` is optional; `img`, `caption`, and `alt` are required, each in its own paragraph (no manual line breaks inside a field). Quotation marks inside `caption` or `alt` must be escaped with a backslash (`\"`). A block that doesn't match this shape exactly is left as plain text in the output markdown for manual conversion. Run `bash utility/intake/test-convert-images.sh` to check the converter against its fixtures.
+  2. **Placeholder** (image not embedded yet — an editor must separately drop a matching file into `images/`): same rubric, with an `img=` filename line first:
+
+     ```
+     img="my-image.jpg"
+
+     caption="insert caption here"
+
+     alt="insert alt text here."
+
+     url="http://optional-url.com"
+     ```
+
+  `url` is optional in both shapes; the rest are required. Quotation marks inside `caption` or `alt` must be escaped with a backslash (`\"`). A block that doesn't match either shape exactly — wrong order, a missing required field, a field split across paragraphs, or an image that's inline within a sentence rather than alone on its own paragraph — is left as plain text/a bare image in the output markdown for manual conversion. Run `bash utility/intake/test-convert-images.sh` to check the converter against its fixtures.
 
 ## PDF pipeline
 

@@ -31,7 +31,7 @@ We ask you to submit your abstracts and articles to <archipelagosjournal@gmail.c
 
 1. Submissions of individual articles are accepted on a rolling basis. We also welcome proposals for themed sections.
 
-2. Article submissions must include a bio (or bios for multi-author) and an abstract. *Please place these at the bottom of your document*. All multimedia content should accompany the initial article submission in a zip file or equivalent.
+2. Article submissions must include a bio (or bios for multi-author) and an abstract. *Please place these at the bottom of your document*. Images can be inserted directly in your document (see [Images](#images-guide) below) — you no longer need to send them separately. Video and sound should still be sent as links to a streaming service of your choice (see [Video, Sound, and Interactive Media](#interactive-media) below).
 
 6. We are an open access journal. If you are accepted for publication you will receive a copy of our [Author Agreement](https://archipelagosjournal.org/public/author-agreement.pdf).
 
@@ -45,26 +45,47 @@ We ask you to submit your abstracts and articles to <archipelagosjournal@gmail.c
 
 #### Documents
 
-*Office formats (.odt, .doc, .docx)*: In order to minimize the work needed to convert your files into publishable format, **please be sure to follow our guidelines and style guide closely**. Here are some specific formatting issues that will make our file conversion work tractable:
+*Office formats (.odt, .doc, .docx)*: Most of the cleanup we do by hand comes down to a handful of formatting habits. If you can follow the points below, your file will convert to our publishing format almost automatically — please read them closely.
 
-1. Please use the Heading styles (i.e. Heading 2, Heading 3, etc.) to separate your sections, beginning with Heading 2. Indicating headings by using bold does not translate well in our transformations. *Do not use bold for headings.*
-2. Attach links to the main body text (as opposed to spelling them out). In footnotes, spell out the link, but also link to it as you would with text: [http://example.com](http://example.com/)
-3. Remember to use `http://` and `https://` on your links or they won't work.
-4. Please make sure to use normal quotation marks. Avoid the use of "smart quotes."
-5. For hyphens, en-dashes and em-dashes use, respectively: `-` `--` and `---`.
-6. Do not try to do your own layout on Word. What you see is not what we get. If you need special layout, describe it in prose [in brackets].
-7. Do not insert images manually in the document. Refer to our guidelines for images below.
-8. Do not use data fields or tables in Word. Please see below for our accepted table formats.
+1. **Use Word's built-in Heading styles for your section titles — never bold text.** Apply "Heading 2" (from the Styles menu) to your first section, and "Heading 3" for any subsection within it. Bold, underlined, or larger text that's only made to *look* like a heading is invisible to our conversion tool — it has no way to tell it apart from a bolded word in the middle of a sentence, and your section breaks will be lost.
+
+   ![Comparison of bold text mistaken for a heading versus text with Word's Heading 2 style correctly applied, so section breaks convert automatically](/public/images/authors-guide/heading-styles.png)
+
+2. **Hyperlink your link text directly**, rather than spelling out the URL in the sentence. In footnotes, do both — spell out the link *and* hyperlink it, e.g. [http://example.com](http://example.com/).
+3. **Always include `http://` or `https://`** at the start of a link, or it won't work once converted.
+4. **Turn off "smart quotes."** Please use straight quotation marks (`"` and `'`), not the curly ones Word inserts by default.
+5. **Use plain hyphens and dashes**: a hyphen (`-`) for compound words, an en-dash (`--`) for ranges, an em-dash (`---`) for a break in a sentence.
+6. **Don't lay out the document yourself.** Columns, text boxes, and manually placed spacing will not survive conversion. If you need something laid out a particular way, describe it in plain prose, in [square brackets], and we'll take it from there.
+7. **Don't use Word's table tool or data fields.** See [Tables](#tables) below for the formats we do accept.
+8. **Insert images directly where they belong, then caption them with a short rubric.** See [Images](#images-guide) below.
 
 *Markdown (.md)*: Publishing is in many ways a game of file conversions. Both our website and PDFs are built from the same Markdown files. We accept plain text files (UTF-8 encoding), written using [Kramdown syntax](http://kramdown.gettalong.org/syntax.html), a version of Markdown, and saved with the .md extension. This helps us keep our workflow light and our file types closer to the production line, contributing in turn to our continued ownership of all aspects of journal production. For some background on our infrastructural choices, and to get started with Markdown, please take some time to read "[Sustainable Authorship in Plain Text using Pandoc and Markdown](http://programminghistorian.org/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown)," by Dennis Tenen and Grant Whytoff. We sincerely appreciate those who submitt well formatted Markdown to us directly.
 
-#### Images
+#### Images {#images-guide}
 
-At *archipelagos* we value the richness of our visual culture. If you are submitting your own photography, we ask you to be mindful of frame, color harmonies, and other design elements. Remember also that these files may contain embedded metadata that you might not want to publish. Images accompanying your documents will be open to the review process.
+At *archipelagos* we value the richness of our visual culture. If you are submitting your own photography, be mindful of frame, color harmonies, and other design elements. Remember also that image files can contain embedded metadata you might not want to publish. Images are open to the review process just like your text.
 
-Please provide crisp images with a minimum of 144ppi resolution and at least 800 pixels wide. Please submit your images in JPG format. We accept PNG's if the image has transparencies or is made of simple colors (i.e. a logo).
+Please provide crisp images: a minimum of 144ppi resolution and at least 800 pixels wide. JPG is our preferred format; PNG is fine for images with transparency or simple flat colors (e.g. a logo).
 
-Please use the following rubric in your documents, typing each character in the exact order, and filling out the appropriate content inside the quotation marks, and place the block of text where you would like your images to be inserted in your document:
+**Insert each image directly in your document, at the point where it belongs** — the same way you would normally add a picture in Word (Insert > Pictures). You no longer need to send us images separately in a zip file; our conversion tool extracts them from your document automatically.
+
+Immediately below each image, type three short lines of plain text — a blank line (Enter) between each one, no bullets, and no manual line break in the middle of a line:
+
+~~~ text
+caption="insert caption here"
+alt="insert alt text here."
+url="http://optional-url.com"
+~~~
+
+![Diagram of an inserted photo followed by caption, alt, and optional url text fields, with each field explained: caption is shown to every reader, alt is read by screen readers, url is an optional link](/public/images/authors-guide/image-captioning.png)
+
+- **`caption`** is shown to every reader, printed beneath the image on the site and in the PDF.
+- **`alt`** is read aloud by screen readers. Describe what's *in* the image — don't just repeat the caption.
+- **`url`** is optional. Only include it if the image itself should link somewhere, such as its original source.
+
+`caption` and `alt` are required; `url` is optional. If either needs to include quotation marks, escape them with a backslash, e.g. `caption="She said \"hello\" to the camera"`.
+
+*Haven't inserted your image yet?* If you're still waiting on a final photo or graphic, you can leave a placeholder instead of embedding it: type the same rubric as above, but add one more line *above* the others with the filename you'll eventually send us, and send that file to us separately:
 
 ~~~ text
 img="my-image.jpg"
@@ -73,17 +94,15 @@ alt="insert alt text here."
 url="http://optional-url.com"
 ~~~
 
-N.B. `img`, `caption`, and `alt` are required; `url` is optional and should only be used when you want the image to point to a specific resource. Each line must be its own paragraph (a plain Enter/blank line between them, no manual line breaks in the middle of one). If your caption or alt text needs to include quotation marks, escape them with a backslash, e.g. `caption="She said \"hello\" to the camera"`.
+If you use a placeholder, please name the file using one or two keywords separated by a hyphen, with no spaces or capital letters (e.g. `harbor-sunset.jpg`) — this becomes part of the file's permanent address on our site.
 
-We ask that you name your image files using one or two keywords separated by a hyphen as in the example above. **Do not use spaces or capital letters in your file name**. Please remember to provide credit line text as needed, particularly for photographs inside the caption. 
-
-#### Video, Sound, and Interactive Media
+#### Video, Sound, and Interactive Media {#interactive-media}
 
 In order to make our articles and reviews available in PDF, and in order to increase the longevity of the Web files, we separate interactive media from static text and images. For video and sound, we encourage our authors to use a streaming service of their choice. Be mindful of privacy, stability, and copyright concerns when choosing streaming video. When required, we can provide you with a Digital Publication Agreement Form to use with rights holders.
 
 Since *archipelagos* was born of the need to support emergent forms of digital scholarship, we are also open to including interactive media (e.g., maps, visualizations) in our articles. We ask that you provide us, whenever possible, a full-screen version of your interactive media hosted elsewhere.
 
-In order to include any of these media types, we ask that you send us a screenshot and the appropriate link to the separate content. Please use the same rubric as the one we use for images above, and place the rubric in the place of the text where you would like your screenshot link to appear. The URL should point to the full-screen version (whenever possible) of your interactive media, sound file or video. Whenever appropriate use a screenshot with the play button visible. For example, if it's a YouTube video, take a screenshot of the full screen version with the red and white play button in the center.
+To include any of these media types, take a screenshot and insert it directly in your document like any other image (see [Images](#images-guide) above), then use the same caption/alt/url rubric — with the `url` pointing to the full-screen version (whenever possible) of your interactive media, sound file, or video. Whenever appropriate, use a screenshot with the play button visible. For example, if it's a YouTube video, take a screenshot of the full-screen version with the red and white play button in the center.
 
 ### Hyperlinks
 
@@ -95,7 +114,7 @@ Please ensure that all external and internal links in your document are working 
 
 When sharing external documents, do not link to cloud storage services (e.g., Dropbox, Google Docs) or closed-access sources. In these cases, simply cite the documents. If you have permission to use them, you may be able to submit them with your files. We do welcome and encourage links to open institutional repositories.
 
-### Tables
+### Tables {#tables}
 
 If you would like a table to display as you read your text you can submit it either as a .csv (Comma Separated Values) file or written directly in [kramdown/markdown](http://kramdown.gettalong.org/syntax.html#tables), its final format. In general, we prefer the simpler table formats. Please avoid rowspans, for example. If you feel you need a complex visualization, consider submitting an image or hosting the visualization elsewhere and linking to it from a screenshot. 
 

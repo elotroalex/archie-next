@@ -1,26 +1,42 @@
 #!/usr/bin/env python3
-"""Convert img=/caption=/alt=/url= placeholder blocks into <figure> HTML.
+"""Convert figure markup into <figure> HTML.
 
-Authors and copy-editors mark up figures in the incoming .docx as their own
-paragraphs, in this exact order:
+Two input shapes are recognized, both keyed off a caption=/alt=/url= rubric
+that authors type as plain paragraphs (a blank line between each field, no
+manual line break inside one):
 
-    img="my-image.jpg"
+1. Placeholder blocks -- used when the image isn't embedded in the .docx yet.
+   Four fields, in this exact order:
 
-    caption="insert caption here"
+       img="my-image.jpg"
 
-    alt="insert alt text here."
+       caption="insert caption here"
 
-    url="http://optional-url.com"
+       alt="insert alt text here."
 
-`url` is optional; the other three fields are required. Quotation marks
-inside the caption or alt text must be escaped with a backslash (\") so the
-parser can tell them apart from the field's own closing quote.
+       url="http://optional-url.com"
 
-Each field must live in its own paragraph (i.e. a plain Enter/blank line
-between fields in the Word doc, no manual line breaks inside a field). A
-block that doesn't match this shape exactly--wrong order, a missing
-required field, or a field split across multiple paragraphs--is left
-untouched in the output so an editor can convert it by hand.
+   `img`, `caption`, and `alt` are required; `url` is optional. The `img`
+   filename must match a file an editor separately drops into images/.
+
+2. Embedded images -- the author inserts the real picture directly in the
+   .docx (Insert > Picture); convert-docx.sh's `pandoc --extract-media`
+   already pulls it out and renames it, so by the time this script runs it's
+   a bare `![](...)` paragraph in the body. If that paragraph is immediately
+   followed by caption=/alt=[/url=] fields (no img= line -- the picture is
+   already there), it's paired with them the same way. This is the preferred
+   shape going forward since it needs no separately-supplied file.
+
+   Note this only matches an image that is the *entire* content of its own
+   paragraph (typical figure placement). An image floated inline within a
+   sentence is left untouched, same as any other unrecognized shape.
+
+In both cases, quotation marks inside the caption or alt text must be
+escaped with a backslash (\") so the parser can tell them apart from the
+field's own closing quote. A block that doesn't match either shape exactly
+--wrong order, a missing required field, or a field split across multiple
+paragraphs--is left untouched in the output so an editor can convert it by
+hand.
 
 Usage: convert-images.py ISSUE_SLUG < body.md > body.md
 """
@@ -35,6 +51,11 @@ import sys
 # backslash) safely stay inside the captured value.
 FIELD = re.compile(r'^(\w+)=\\"(.*)\\"$')
 
+# A paragraph that is *only* a markdown image (nothing else on the line) --
+# the shape convert-docx.sh's extracted/renamed embedded images take by the
+# time this script runs (path already rewritten to /issueXX/images/...).
+IMAGE_ONLY = re.compile(r'^!\[[^\]]*\]\(([^)]+)\)$')
+
 
 def parse_field(paragraph, key):
     m = FIELD.match(paragraph.strip())
@@ -43,23 +64,48 @@ def parse_field(paragraph, key):
     return m.group(2)
 
 
-def make_figure(issue_slug, img, caption, alt, url):
-    img_path = f"/{issue_slug}/images/{img}"
+def parse_image_src(paragraph):
+    m = IMAGE_ONLY.match(paragraph.strip())
+    return m.group(1) if m else None
+
+
+def make_figure(img_src, caption, alt, url):
     if url:
         return (
             "<figure>\n"
             f'<a href="{url}" target="_blank">\n'
-            f'<img src="{img_path}" alt="{alt}" loading="lazy">\n'
+            f'<img src="{img_src}" alt="{alt}" loading="lazy">\n'
             "</a>\n"
             f"<figcaption>{caption}</figcaption>\n"
             "</figure>"
         )
     return (
         "<figure>\n"
-        f'<img src="{img_path}" alt="{alt}" loading="lazy">\n'
+        f'<img src="{img_src}" alt="{alt}" loading="lazy">\n'
         f"<figcaption>{caption}</figcaption>\n"
         "</figure>"
     )
+
+
+def parse_caption_alt_url(paragraphs, start):
+    """Tries to read caption=/alt=[/url=] fields starting at `start`.
+    Returns (caption, alt, url, consumed) or None if the shape doesn't match.
+    """
+    n = len(paragraphs)
+    caption = parse_field(paragraphs[start], "caption") if start < n else None
+    alt = parse_field(paragraphs[start + 1], "alt") if start + 1 < n else None
+    if caption is None or alt is None:
+        return None
+
+    consumed = 2
+    url = None
+    if start + 2 < n:
+        maybe_url = parse_field(paragraphs[start + 2], "url")
+        if maybe_url is not None:
+            url = maybe_url
+            consumed = 3
+
+    return caption, alt, url, consumed
 
 
 def convert(text, issue_slug):
@@ -69,29 +115,35 @@ def convert(text, issue_slug):
     n = len(paragraphs)
     while i < n:
         img = parse_field(paragraphs[i], "img")
-        if img is None:
-            out.append(paragraphs[i])
-            i += 1
+        if img is not None:
+            # Placeholder shape: img="..." then caption=/alt=[/url=].
+            parsed = parse_caption_alt_url(paragraphs, i + 1)
+            if parsed is None:
+                out.append(paragraphs[i])
+                i += 1
+                continue
+            caption, alt, url, consumed = parsed
+            img_src = f"/{issue_slug}/images/{img}"
+            out.append(make_figure(img_src, caption, alt, url))
+            i += 1 + consumed
             continue
 
-        caption = parse_field(paragraphs[i + 1], "caption") if i + 1 < n else None
-        alt = parse_field(paragraphs[i + 2], "alt") if i + 2 < n else None
-        if caption is None or alt is None:
-            # Doesn't match the expected shape--leave as-is for manual fixup.
-            out.append(paragraphs[i])
-            i += 1
+        img_src = parse_image_src(paragraphs[i])
+        if img_src is not None:
+            # Embedded-image shape: bare ![](...) then caption=/alt=[/url=],
+            # no img= line since the picture is already extracted in place.
+            parsed = parse_caption_alt_url(paragraphs, i + 1)
+            if parsed is None:
+                out.append(paragraphs[i])
+                i += 1
+                continue
+            caption, alt, url, consumed = parsed
+            out.append(make_figure(img_src, caption, alt, url))
+            i += 1 + consumed
             continue
 
-        consumed = 3
-        url = None
-        if i + 3 < n:
-            maybe_url = parse_field(paragraphs[i + 3], "url")
-            if maybe_url is not None:
-                url = maybe_url
-                consumed = 4
-
-        out.append(make_figure(issue_slug, img, caption, alt, url))
-        i += consumed
+        out.append(paragraphs[i])
+        i += 1
 
     return "\n\n".join(out)
 
