@@ -18,7 +18,7 @@ Contact: archipelagosjournal@gmail.com
 
 ## Submission Guidelines for Articles or Reviews
 
-*archipelagos* is founded on principles of minimal computing. We encourage our authors to help us avoid redundancy and costly workflows. We understand that unfamiliar environments and formats can be challenging to work with, and these guidelines are a work in progress as we strive for the right balance between our authors’ needs and our mission. Your ideas are most welcome.
+*archipelagos* is founded on principles of minimal computing. We encourage our authors to help us avoid redundancy and costly workflows. We understand that unfamiliar environments and formats can be challenging to work with, and these guidelines are a work in progress as we strive for the right balance between our authors\' needs and our mission. Your ideas are most welcome.
 
 ### General Notes
 

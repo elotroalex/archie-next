@@ -169,7 +169,7 @@ scholarship in the 21st century.
 [^6]: "Research Guide," *Colonial Collections Consortium*,
     [https://app.colonialcollections.nl/en/research-guide](https://app.colonialcollections.nl/en/research-guide)
 
-[^7]: For information on Local Context Notices, see “Collections Care Notices”, Local Contexts, [https://localcontexts.org/notices/cc-notices/](https://localcontexts.org/notices/cc-notices/)
+[^7]: For information on Local Context Notices, see \"Collections Care Notices\", Local Contexts, [https://localcontexts.org/notices/cc-notices/](https://localcontexts.org/notices/cc-notices/)
 
 [^8]: "Collections from Colonial Contexts," *Colonial Collections
     Consortium*,

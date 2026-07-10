@@ -1,4 +1,4 @@
-Notre flux de travail, conçu avec soin pour minimiser les coûts de production, et pour permettre à notre petite équipe de gérer un journal académique robuste, sans les services payants en dehors des coûts de serveur et de la fourniture de données DOI, fait partie du caractère unique de _archipelagos_. Bien que chaque journal ait des besoins et des ressources uniques disponibles pour l’équipe, nous pensons que notre infrastructure de logiciels open source, combinée à notre flux de travail, fournit un modèle viable et portable. Le flux de travail ci-dessous est la prochaine étape après la mise en place de la configuration initiale.
+Notre flux de travail, conçu avec soin pour minimiser les coûts de production, et pour permettre à notre petite équipe de gérer un journal académique robuste, sans les services payants en dehors des coûts de serveur et de la fourniture de données DOI, fait partie du caractère unique de _archipelagos_. Bien que chaque journal ait des besoins et des ressources uniques disponibles pour l\'équipe, nous pensons que notre infrastructure de logiciels open source, combinée à notre flux de travail, fournit un modèle viable et portable. Le flux de travail ci-dessous est la prochaine étape après la mise en place de la configuration initiale.
 
 ## Nouveaux éléments
 
@@ -6,11 +6,11 @@ La principale caractéristique de notre flux de travail est la division en deux 
 
 La deuxième exigence majeure de notre flux de travail est le rôle élargi du réviseur. Après avoir reçu une formation en production et édition de documents YAML / Markdown bien formatés, notre réviseur est responsable de la transition en douceur de la première étape à la suivante.
 
-La troisième condition est la connaissance de la génération de sites statiques (Jekyll, GitHub, etc.) par un membre de l'équipe. Dans notre cas, il s’agit de l’un des éditeurs, appelé éditeur-tech ci-dessous. Par souci de durabilité, nous sommes en train de transmettre ces compétences aux autres membres de l’équipe et aux amis du projet.
+La troisième condition est la connaissance de la génération de sites statiques (Jekyll, GitHub, etc.) par un membre de l'équipe. Dans notre cas, il s\'agit de l\'un des éditeurs, appelé éditeur-tech ci-dessous. Par souci de durabilité, nous sommes en train de transmettre ces compétences aux autres membres de l\'équipe et aux amis du projet.
 
 ## La production d'articles
 
-N.B. Chaque phase du cycle de vie d’un texte, du premier brouillon à la production, est comprise comme une version différente du texte, abrégée ici par v1, v2, etc.
+N.B. Chaque phase du cycle de vie d\'un texte, du premier brouillon à la production, est comprise comme une version différente du texte, abrégée ici par v1, v2, etc.
 
 I. Phase Word
 

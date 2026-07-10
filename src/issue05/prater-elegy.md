@@ -16,7 +16,7 @@ order: 1
 abstract: >
   This essay takes up the question of how diasporic Caribbean subjects deal with death, dying, and grieving in online spaces. With a focus on the genre of *digital diasporic elegy*, the author argues that by analyzing the digital life of a Sino-Caribbean diasporic cultural text, a digital diasporic elegiac practice emerges. This practice allows for consideration of the very code that enables our traversal between digital nodes, thereby allowing for a more nuanced understanding of rituals of mourning in our contemporary moment.
 abstract_fr: >
-  Cet article aborde la question de savoir comment les personnes de la diaspora caribbéenne font face à la mort, au fait de mourir, et au deuil dans les espaces en ligne. Se concentrant sur le genre de l’élégie numérique diasporique, l’auteure soutient que l’analyse de la vie numérique d’un texte d’une culture diasporique sino-caribbéenne révele une pratique de l’élégie numérique diasporique. Cette pratique permet de prendre en compte le code même qui permet notre traversée entre plusieurs foyers numériques, permettant ainsi une compréhension plus nuancée des rituels de deuil de notre moment contemporain.
+  Cet article aborde la question de savoir comment les personnes de la diaspora caribbéenne font face à la mort, au fait de mourir, et au deuil dans les espaces en ligne. Se concentrant sur le genre de l\'élégie numérique diasporique, l\'auteure soutient que l\'analyse de la vie numérique d\'un texte d\'une culture diasporique sino-caribbéenne révele une pratique de l\'élégie numérique diasporique. Cette pratique permet de prendre en compte le code même qui permet notre traversée entre plusieurs foyers numériques, permettant ainsi une compréhension plus nuancée des rituels de deuil de notre moment contemporain.
 abstract_es: >
   Este ensayo aborda la cuestión del cómo los sujetos de la diáspora caribeña abordan la muerte, el morir y el duelo en los espacios en línea. Con un enfoque en el género de *elegía diaspórica digital*, la autora argumenta que al analizar la vida digital de un texto cultural diaspórico chino-caribeño, surge una práctica elegíaca diaspórica digital. Esta práctica permite considerar el mismo código que permite nuestro recorrido entre nodos digitales, lo que permite una comprensión más matizada de los rituales de duelo en nuestro momento contemporáneo.
 language: en
@@ -159,7 +159,7 @@ regularly "popping into" timelines from multiple news media sources and
 personal connections. Circulating along with those names are visual
 components, elegiac images that can, according to Josh Ellenbogen, refuse to do the work of conventional elegy. They risk "\[taking\]
 us out of a narrative process of grief," bringing pain into the present
-and inhibiting the "‘normal' work of mourning," which is to move
+and inhibiting the "\'normal' work of mourning," which is to move
 emotionally toward consolation.[^11] Deep ontological wounds are renewed
 and reopened as the historical past bleeds into the present through
 racialized articulations of power in images of torture, pain, and death.
@@ -720,7 +720,7 @@ Williams, Gareth. "Cutting Edge Music Finds a Home in Shanghai at the
 Shelter." _Electronic Beats_, 24 June 2016.
 <https://www.electronicbeats.net/club-feature-shelter-shanghai/>.
 
-Xiao, Ying. "‘Hip Hop Is My Knife, Rap Is My Sword': Hip Hop Network and
+Xiao, Ying. "\'Hip Hop Is My Knife, Rap Is My Sword': Hip Hop Network and
 the Changing Landscape of Image and Sound Making." Chapter 6 in _China
 in the Mix: Cinema, Sound, and Popular Culture in the Age of
 Globalization_. Jackson: University Press of Mississippi, 2017.
@@ -856,7 +856,7 @@ Globalization_. Jackson: University Press of Mississippi, 2017.
     Handbook of Changes_ (Durham, NC: Duke University Press, 2000); Beth
     E. Notar, "Off and On the Road to Reform," chap. 6 in _Displacing
     Desire: Travel and Popular Culture in China_ (Honolulu: University
-    of Hawai'i Press, 2006); and Ying Xiao, "‘Hip Hop Is My Knife, Rap
+    of Hawai'i Press, 2006); and Ying Xiao, "\'Hip Hop Is My Knife, Rap
     Is My Sword': Hip Hop Network and the Changing Landscape of Image
     and Sound Making," chap. 6 in _China in the Mix: Cinema, Sound, and
     Popular Culture in the Age of Globalization_ (Jackson: University
@@ -992,7 +992,7 @@ Globalization_. Jackson: University Press of Mississippi, 2017.
     someone else, other than the person who wrote it\[,\] could maintain
     without wanting to strangle you and feed your corpse into a wood
     chipper." Daniel Super, "What Is the Biggest Difference between
-    ‘Clean Code' and ‘Messy Code'?," _Quora_, 12 August 2015,
+    \'Clean Code' and \'Messy Code'?," _Quora_, 12 August 2015,
     <https://www.quora.com/What-is-the-biggest-difference-between-clean-code-and-messy-code>.
 
 [^36]:

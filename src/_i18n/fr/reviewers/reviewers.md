@@ -1,4 +1,4 @@
-Chez *archipelagos*, nous travaillons à l’édification d’une communauté de critiques et de contributeurs afin de soutenir et d’enrichir notre savoir collectif caribéen. Si vous souhaitez rejoindre notre équipe de relecteurs – pour nous aider à évaluer des articles et des projets numériques – veuillez nous contacter à archipelagosjournal@gmail.com.
+Chez *archipelagos*, nous travaillons à l\'édification d\'une communauté de critiques et de contributeurs afin de soutenir et d\'enrichir notre savoir collectif caribéen. Si vous souhaitez rejoindre notre équipe de relecteurs – pour nous aider à évaluer des articles et des projets numériques – veuillez nous contacter à archipelagosjournal@gmail.com.
 
 ---
 
@@ -22,19 +22,19 @@ L'examen du projet se déroule en deux phases:
 
 Les Rédacteurs synthétisent les commentaires des relecteurs et la réponse de l'auteur pour publication finale sur une page de projet dédiée.
 
-Nos directives d’examen sont divisées en quatre catégories: contribution, crédit, conception et préservation.
+Nos directives d\'examen sont divisées en quatre catégories: contribution, crédit, conception et préservation.
 
 ### Contribution
 
-Nous demandons aux relecteurs de bien peser la contribution intellectuelle de fait ou éventuelle du projet. Les examinateurs devraient examiner la nature de cette contribution en fonction de l’état d’avancement actuel du projet et des premiers signes de connaissances issues du processus de la construction du site; la relation du projet avec la littérature / les projets existants; et/ou les premières conversations dans la littérature sur le projet (le cas échéant).
+Nous demandons aux relecteurs de bien peser la contribution intellectuelle de fait ou éventuelle du projet. Les examinateurs devraient examiner la nature de cette contribution en fonction de l\'état d\'avancement actuel du projet et des premiers signes de connaissances issues du processus de la construction du site; la relation du projet avec la littérature / les projets existants; et/ou les premières conversations dans la littérature sur le projet (le cas échéant).
 
 - Le projet définira-t-il de nouvelles conversations dans les domaines pertinents?
-- Les méthodes utilisées dans le projet sont-elles adaptées aux questions de recherche qu’il pose?
-- Les méthodes du projet contribuent-elles à l’érudition numérique en général, et si oui, comment?
+- Les méthodes utilisées dans le projet sont-elles adaptées aux questions de recherche qu\'il pose?
+- Les méthodes du projet contribuent-elles à l\'érudition numérique en général, et si oui, comment?
 
 ### Crédit
 
-Nous demandons aux relecteurs d’être conscients du travail nécessaire à la réalisation d’un projet numérique. Les projets numériques reposent généralement sur une collaboration plus distribuée que les monographies ou les articles. *archipelagos* encourage la comptabilisation des travaux lorsque la créance est due et la reconnaissance du travail scientifique et interprétatif impliqué dans la conservation, la conception et la conception de données numériques. Les examinateurs doivent poser les questions suivantes sur un projet:
+Nous demandons aux relecteurs d\'être conscients du travail nécessaire à la réalisation d\'un projet numérique. Les projets numériques reposent généralement sur une collaboration plus distribuée que les monographies ou les articles. *archipelagos* encourage la comptabilisation des travaux lorsque la créance est due et la reconnaissance du travail scientifique et interprétatif impliqué dans la conservation, la conception et la conception de données numériques. Les examinateurs doivent poser les questions suivantes sur un projet:
 
 - Le projet crédite-t-il ses contributeurs ouvertement et équitablement?
 - Les conditions de travail dans lesquelles le projet a été réalisé sont-elles mises en évidence?
@@ -50,7 +50,7 @@ Bien que le design constitue une catégorie distincte d'évaluation, nous demand
 
 ### Préservation
 
-Lorsqu'ils envisagent le cycle de vie d'un projet de recherche numérique, les examinateurs ne doivent pas envisager la préservation en termes de durée indéterminée. Nous encourageons les auteurs à faire preuve de réalisme quant au taux de décroissance plausible de leurs projets et à mettre en place des plans pour gérer l'obsolescence des technologies qu'ils utilisent. Nous accueillons les projets avec un support minimum de deux ans après la version bêta. Nous encourageons donc nos examinateurs à rechercher des signes indiquant que l’équipe de projet a envisagé l’avenir du projet. Les questions possibles sont:
+Lorsqu'ils envisagent le cycle de vie d'un projet de recherche numérique, les examinateurs ne doivent pas envisager la préservation en termes de durée indéterminée. Nous encourageons les auteurs à faire preuve de réalisme quant au taux de décroissance plausible de leurs projets et à mettre en place des plans pour gérer l'obsolescence des technologies qu'ils utilisent. Nous accueillons les projets avec un support minimum de deux ans après la version bêta. Nous encourageons donc nos examinateurs à rechercher des signes indiquant que l\'équipe de projet a envisagé l\'avenir du projet. Les questions possibles sont:
 
 - Quelles normes ont été utilisées et pourquoi?
 - Quelle est la robustesse de la documentation sur le projet? Le projet pourrait-il être - décomposé et recomposé sur la base de cette documentation?

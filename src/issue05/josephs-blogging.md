@@ -678,7 +678,7 @@ anonymous peer reviewers for *archipelagos*.
     essay for a print publication?" James responds, "My blog posts are
     very much searches, me writing towards finding what I really want to
     say. For some reason that feels more natural in a blog format, the
-    act of getting my s\*\*t together. In print, my post about ‘The
+    act of getting my s\*\*t together. In print, my post about \'The
     Bigots On My Bookshelf' would seem unformed and slightly
     inconclusive, but online it seems like what it is, my going through
     a process." Laughlin, "Talking to Jamaican Writer and Blogger Marlon

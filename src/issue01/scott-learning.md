@@ -14,15 +14,15 @@ language: en
 ---
 
 
-The ethos of the Small Axe Project, I’ve said, consists of a reflexive
+The ethos of the Small Axe Project, I\'ve said, consists of a reflexive
 attitude of listening to, and engaging with, the challenges and
 provocations that grow out of the changing problem-spaces within which
 we contingently find ourselves as Caribbean intellectuals, and as
 scholars of the Caribbean. The ethos of the Small Axe Project,
 therefore, is essentially an ethos of learning, and of learning how to
 better learn—even to better learn what we think we already know. After
-all, the Caribbean won’t stand still; and so the questions that
-constitute the Caribbean as an interpretive domain don’t remain the
+all, the Caribbean won\'t stand still; and so the questions that
+constitute the Caribbean as an interpretive domain don\'t remain the
 same. Consequently, we in the Small Axe Project are constantly being
 called upon (and calling upon each other) to think, and to think again,
 about the forms and platforms that should best shape and drive our

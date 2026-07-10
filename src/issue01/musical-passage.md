@@ -11,7 +11,7 @@ author:
 - name: Laurent Dubois
   shortname: Dubois
   bio: >
-    Laurent Dubois is Professor of Romance Studies and History and the Faculty Director of the [Forum for Scholars & Publics](https://fsp.trinity.duke.edu/) at Duke University. He is the author of six books, including Avengers of the New World: The Story of the Haitian Revolution (2004), Haiti: The Aftershocks of History (2012) and most recently [The Banjo: America’s African Instrument](http://www.hup.harvard.edu/catalog.php?isbn=9780674047846). In 2016-2017 he will be a Fellow at the National Humanities Center.
+    Laurent Dubois is Professor of Romance Studies and History and the Faculty Director of the [Forum for Scholars & Publics](https://fsp.trinity.duke.edu/) at Duke University. He is the author of six books, including Avengers of the New World: The Story of the Haitian Revolution (2004), Haiti: The Aftershocks of History (2012) and most recently [The Banjo: America\'s African Instrument](http://www.hup.harvard.edu/catalog.php?isbn=9780674047846). In 2016-2017 he will be a Fellow at the National Humanities Center.
 - name: David Garner
   shortname: Garner
   bio: >
@@ -34,7 +34,7 @@ Developed by historian Laurent Dubois, PhD candidate in English Mary
 Caton Lingold, and composer-scholar David Garner, *Musical Passage* uses
 a digital format to explore a unique artifact of early African diasporic
 music. The site is designed around two pages from eighteenth-century
-British naturalist and collector Hans Sloane’s *A Voyage to the Islands*
+British naturalist and collector Hans Sloane\'s *A Voyage to the Islands*
 (1707), which documents his time in Jamaica in the late 1680s. The pages
 of *Voyage* that have been placed at the center of this site present
 notation of songs played at a "festival." This material is precious and
@@ -45,7 +45,7 @@ survivors of the Middle Passage who may have been playing music they had
 learned in their homelands. They may also have been in the process of
 creating entirely new performance traditions.
 
-The goal of the site’s authors is to encourage users to slow down and to
+The goal of the site\'s authors is to encourage users to slow down and to
 linger on the page and in the songs so as to learn more about the music
 and its context through the experience of a series of musical
 interpretations of the pieces Sloane presents. The interpretations
@@ -64,22 +64,22 @@ history and ethnomusicology"
 scholarship that makes an important contribution to the fields of
 Atlantic and Caribbean history and ethnomusicology. There is a
 direct—and successful—effort here to combat the phenomenon of presumed
-"loss in" and "silences of" the Afro-Atlantic archive. The site’s
+"loss in" and "silences of" the Afro-Atlantic archive. The site\'s
 authors present a compelling articulation of the importance of their
 methodological approach and of, especially, the singular value of the
 digital to grappling with the diversity of textual artifacts that must
 be examined in the context of the Americas (and the Afro-Atlantic, more
 broadly). They take seriously their role as mediators and strike a fine
-balance between guiding and directing the user’s experience of the site.
+balance between guiding and directing the user\'s experience of the site.
 In their rigorous engagement with a fragment/trace from the archive and
 their fundamentally interdisciplinary approach, they offer a model for
 collaboration among researchers in the humanities and social scientists,
 experts from outside the academy, and university libraries.
 
 The site design is both aesthetically pleasing and illustrative of the
-project’s substantive contribution. The considered decision to use the
+project\'s substantive contribution. The considered decision to use the
 artifact itself as landing page and central querying point to which the
-user must constantly return beautifully marries the object’s
+user must constantly return beautifully marries the object\'s
 multidimensionality, the interactivity of the site, and the
 interdisciplinarity of the approach.
 
@@ -94,7 +94,7 @@ future do those plans remain viable? Also, given the range of expertise
 and positioning of the three site authors (one full professor, one
 graduate student, one scholar-musician) and of the institutional teams
 with which they collaborated, we hope that the site will make explicit
-the precise nature of the participants’ respective contributions.
+the precise nature of the participants\' respective contributions.
 
 It would also be desirable that the site authors situate the project
 with respect to existing, related digital scholarship projects. How is
@@ -119,7 +119,7 @@ enjoyed the extent to which this has been a richly collaborative
 project, we also are pleased that it seems to offer a broader model for
 this kind of scholarly engagement with a particular set of materials.
 
-We also appreciate reviewers’ suggestions for articulating and thinking
+We also appreciate reviewers\' suggestions for articulating and thinking
 through some questions we have not given enough attention to at this
 point. The review encourages us to explicitly discuss some of these
 questions with our Web designer, Marc Harkness, in order to find a way
@@ -163,7 +163,7 @@ inspire.
 One option we have considered is to see if we can incorporate *Musical
 Passage* in some way into the Duke University Libraries site, since our
 project is built around an object in the Rubenstein Rare Book and
-Manuscript Library’s collection. This would ensure some kind of
+Manuscript Library\'s collection. This would ensure some kind of
 maintenance infrastructure beyond what we can provide. Whether this kind
 of arrangement is possible or not, we will also seek to archive the site
 with Duke University Libraries and also to create a digital object

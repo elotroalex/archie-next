@@ -43,8 +43,8 @@ Credit, Design, and Preservation.
 We ask reviewers to carefully weigh the de facto or possible
 intellectual contribution of the project. Reviewers should consider the
 nature of that contribution appropriate to the current stage of the
-project’s development and consider early signs of process-derived
-knowledge; the project’s relationship to existing literature/projects;
+project\'s development and consider early signs of process-derived
+knowledge; the project\'s relationship to existing literature/projects;
 and/or early conversations in the literature about the project (where
 appropriate).
 
@@ -52,7 +52,7 @@ appropriate).
   area?
 - Are the methods used in the project appropriate to the research
   questions it poses?
-- Do the project’s methods contribute to digital scholarship in
+- Do the project\'s methods contribute to digital scholarship in
   general, and if so, how?
 
 ### Credit
@@ -86,8 +86,8 @@ relates to the goals of the project. A reviewer may ask questions like
     contribute to the goals of the intellectual contribution? (When
     considering the public-facing design, reviewers should not place
     undue weight on "ease of use" or "glossy design" but rather consider
-    whether the project’s features fit the intellectual mission of the
-    project and the resources the project’s team had available to them.)
+    whether the project\'s features fit the intellectual mission of the
+    project and the resources the project\'s team had available to them.)
 
 -   How does the back-end architecture hinder or move forward the
     contribution of the project and perhaps link it to existing digital
@@ -102,7 +102,7 @@ plausible rate of decay of their projects and to have plans in place to
 manage the obsolescence of the technologies they use. We welcome
 projects with a minimum of two years post-beta support. We encourage our
 reviewers, therefore, to look for signs that the project team has
-considered the project’s future. Possible questions are
+considered the project\'s future. Possible questions are
 
 -   What standards have been used and why?
 

@@ -20,7 +20,7 @@ language: en
 
 We have had a hard time settling on the "right" moment to launch this
 fifth issue of *archipelagos* *journal*. This is very likely because so
-much about This Long Year 2020 just hasn’t felt, well, right. With
+much about This Long Year 2020 just hasn\'t felt, well, right. With
 dangerous shenanigans ever-emanating from the executive branch, fires
 burning relentlessly on the West Coast, and state violence being
 perpetrated against black women and men across the United States and
@@ -58,9 +58,9 @@ intervention. Both Jacob Edmond and Tao Leigh Goffe lay out ways that
 seemingly neutral practices like seeing and mapping bear deconstructing
 when it comes to the matter of representational authority in the
 Caribbean. Edmond makes the case for privileging the audio over the
-visual in pedagogical engagements with Kamau Brathwaite’s poetry. In his
+visual in pedagogical engagements with Kamau Brathwaite\'s poetry. In his
 sound-rich essay Edmond argues that digital audio archives provide
-platforms through which to experience Brathwaite’s work in ways that
+platforms through which to experience Brathwaite\'s work in ways that
 disorder our conventional reading and teaching practices. Goffe
 similarly proposes shifting our intellectual investments from the visual
 to the sonic in a determined praxis of what she calls "unmapping."
@@ -69,15 +69,15 @@ to the signposts of imperial modernity—to maps in particular—allows
 Goffe to bring students into Maroon spaces of both collaboration and,
 where necessary, refusal.
 
-This issue’s second valence also takes up and takes on cartographies of
+This issue\'s second valence also takes up and takes on cartographies of
 empire and modes of pedagogical refusal. Stephanie Curci and Christopher
-Jones’s visualization, an interactive map and timeline of the Haitian
+Jones\'s visualization, an interactive map and timeline of the Haitian
 Revolution, is a rich resource for secondary school teachers and
 students seeking to robustly situate Haiti in the American age of
 independence. A deliberate pushback to the silences that surround the
-Haitian past, Curci and Jones’s project makes a crucial scholarly
+Haitian past, Curci and Jones\'s project makes a crucial scholarly
 intervention into the world beyond the academy—a world that ultimately
-nourishes the academy in a very real way. Annette Joseph-Gabriel’s
+nourishes the academy in a very real way. Annette Joseph-Gabriel\'s
 visualization of *marronage* as literal and metaphorical black Atlantic
 practice of refusal also proposes a radical intervention, pedagogical in
 both its construction and its intention. The map not only contributes to

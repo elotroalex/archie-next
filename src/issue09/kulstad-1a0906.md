@@ -21,7 +21,7 @@ author:
   - name: "Hongyuan Zhang"
     shortname: "Zhang"
     bio: >
-      Hongyuan Zhang is a software engineer. She received a Bachelor of Arts in mathematics and computer science from Grinnell College and a master’s in computational data science from Carnegie Mellon University of Computer Science.
+      Hongyuan Zhang is a software engineer. She received a Bachelor of Arts in mathematics and computer science from Grinnell College and a master\'s in computational data science from Carnegie Mellon University of Computer Science.
 pubDate: "July 2026"
 issue: "9"
 order: "4"
@@ -152,13 +152,13 @@ Saint-Domingue, 7(10), pp.238-252. || Subjects: Dominican Republic -- Biological
 <td>Type 4</td>
 <td>Only one country noted</td>
 <td>JLACA, AL</td>
-<td>[From AL:] Horst, H.A. and Taylor, E.B., 2014. The role of mobile phones in the mediation of border crossings: A study of Haiti and the Dominican Republic. The Australian Journal of Anthropology, 25(2), pp.155-170. || Subjects: “Cell phones”, “Ethnography”, “Labor mobility”, Communication and technology”, “Technology -- Social aspects -- Haiti”.</td>
+<td>[From AL:] Horst, H.A. and Taylor, E.B., 2014. The role of mobile phones in the mediation of border crossings: A study of Haiti and the Dominican Republic. The Australian Journal of Anthropology, 25(2), pp.155-170. || Subjects: \"Cell phones\", \"Ethnography\", \"Labor mobility\", Communication and technology\", \"Technology -- Social aspects -- Haiti\".</td>
 </tr>
 <tr class="odd">
 <td>Type 5</td>
 <td>Neither country labeled</td>
 <td>AL</td>
-<td>Martínez, S., 1999. From hidden hand to heavy hand: sugar, the state, and migrant labor in Haiti and the Dominican Republic. Latin American Research Review, pp.57-84. || Subjects: “West Indies -- Economic conditions”, “Sugar -- West Indies -- Manufacture and refining”; “Migrant labor -- West Indies”; “State, The -- History</td>
+<td>Martínez, S., 1999. From hidden hand to heavy hand: sugar, the state, and migrant labor in Haiti and the Dominican Republic. Latin American Research Review, pp.57-84. || Subjects: \"West Indies -- Economic conditions\", \"Sugar -- West Indies -- Manufacture and refining\"; \"Migrant labor -- West Indies\"; \"State, The -- History</td>
 </tr>
 <tr class="even">
 <td>Type 6</td>
@@ -170,7 +170,7 @@ Saint-Domingue, 7(10), pp.238-252. || Subjects: Dominican Republic -- Biological
 <td>Type 7</td>
 <td>Bordering</td>
 <td>AL</td>
-<td>Rímoli, Renato O. 1977. “Una nueva especie de monos (Cebidae: Saimirinae: Saimiri) de la Hispaniola”. Cuadernos del CENDIA. v. 262, no. 1, 1977. p. 1-14. || Subjects: Archaeology -- Methods – Zooarchaeology; Dominican Republic -- Archaeology -- Fauna</td>
+<td>Rímoli, Renato O. 1977. \"Una nueva especie de monos (Cebidae: Saimirinae: Saimiri) de la Hispaniola\". Cuadernos del CENDIA. v. 262, no. 1, 1977. p. 1-14. || Subjects: Archaeology -- Methods – Zooarchaeology; Dominican Republic -- Archaeology -- Fauna</td>
 </tr>
 </tbody>
 </table>

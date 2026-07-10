@@ -29,10 +29,10 @@ At this stage in the evolution of the academy, the idea of decolonizing the hist
 ### Contribution
 
 Insofar as the site ultimately grounds its archival claims in materials
-from outside the site, the project’s specific contribution is
+from outside the site, the project\'s specific contribution is
 necessarily grounded in how it asks users to navigate archival materials
 differently. The site points to the code base of Alex Gil and Kaiama L.
-Glover’s mapping visualization [*In the Same
+Glover\'s mapping visualization [*In the Same
 Boats*](http://sameboats.org/) as structural blueprint.[^2] While the
 *Same Boats* (*SB*) interface is a great one, in the case of *Mapping
 Marronage* (*MM*), claims regarding multiple kinds of flight need more
@@ -42,23 +42,23 @@ experiences, propose engagement with evidential documentation of
 movements, and call for attention to ephemera. To more fully actualize
 these elements would make for a significant contribution.
 
-It is always crucial to think about people’s movement as an index of
+It is always crucial to think about people\'s movement as an index of
 their lived experience. Much like *SB*, *MM* helps elicit a sense of
 discovery in how rich a single life can be, especially when put in
 relation to/network with the lives of others. But, again, there is great
 potential here to complicate more dramatically the very idea of mapping
 itself. What, for instance, might this project present for a person who
 never leaves a very tight geographic radius but who fits one of this
-site’s multiple definitions of *marronage*?
+site\'s multiple definitions of *marronage*?
 
 ### Design
 
-Is the site’s ultimate intent to map people’s movements, or to map the
+Is the site\'s ultimate intent to map people\'s movements, or to map the
 life/transaction of things they produce? Is it to map individuals or
 their traces, or to conceive of one as the index of the other? These
 queries, engendered by *MM*, have so much potential, but the intent
 needs to be more consistently framed across the site—on the level of the
-sentence and, at the same time, in design terms. The site’s creator
+sentence and, at the same time, in design terms. The site\'s creator
 (rightfully) wants *marronage* to encompass phenomena on multiple
 registers. But because this is a hands-on experience, more might be done
 to align those various goals with visually differentiated design
@@ -114,7 +114,7 @@ preservation of the project.
 On the whole, *Mapping Marronage* is an exciting project that has the
 potential to offer both substantive and methodological innovations to
 the study of the colonial black Atlantic. A valuable resource for both
-research and pedagogy, the site’s curated content approaches the lives
+research and pedagogy, the site\'s curated content approaches the lives
 of enslaved peoples in the eighteenth and nineteenth centuries from the
 perspective of movement, network, and exchange. In so doing, it usefully
 refigures the intersecting landscapes of the colonial Americas.
@@ -143,7 +143,7 @@ the Atlantic world.
 *Mapping Marronage* is neither monument nor commemoration, though it
 does seek to retrace and remember the movement of enslaved people within
 and beyond the Atlantic world. The primary goal of the digital map is to
-visualize enslaved people’s flights from captivity as processes, as
+visualize enslaved people\'s flights from captivity as processes, as
 lived realities, and as relationships to space and power in slaveholding
 societies. Because this vision of mobility is so expansive, it requires
 different kinds of maps. The site therefore offers two kinds of
@@ -155,10 +155,10 @@ networks and communities that were defined by enslavement but also
 imagined life otherwise. A focus on travel, however, precludes the
 experiences of those who lived and died on a single plantation but whose
 influences, stories, ideas, and myths extended beyond the tightly
-circumscribed sphere of their captivity. Indeed, as the project’s
+circumscribed sphere of their captivity. Indeed, as the project\'s
 reviewer asks, "What, for instance, might this project present for a
 person who never leaves a very tight geographic radius but who fits one
-of this site’s multiple definitions of *marronage*?"
+of this site\'s multiple definitions of *marronage*?"
 "[Networks](http://mapping-marronage.rll.lsa.umich.edu/networks)"
 attempts to account for these varied forms of mobility. Pierre
 Toussaint, for example, moved only once, from Haiti to New York. Yet his
@@ -175,10 +175,10 @@ undergraduate research assistants and students in my course Mapping the
 French Atlantic. I am still working through best practices for
 attribution that is attentive to questions of student data privacy and
 that takes into account the ephemeral nature of undergraduate
-researchers’ involvement with the project. The Colored Conventions
+researchers\' involvement with the project. The Colored Conventions
 Project offers a useful model for crediting collaborators that I intend
 to adapt for this purpose. Because *Mapping Marronage* tries to account
-for varied forms of enslaved people’s mobility whose meanings are not
+for varied forms of enslaved people\'s mobility whose meanings are not
 always readily decipherable, the data points on the map are accompanied
 by text that briefly summarizes the nature and circumstances of
 movement. In my mapping course, I encouraged my students to incorporate
@@ -187,11 +187,11 @@ think about which voices could be amplified or become more audible
 through this map. Each point on the map also opens out further onto a
 digitized version of the relevant archival source. As the reviewer aptly
 points out, it is perhaps best to think about *Mapping Marronage* as
-layers: layered accounts of layered lives. The project’s envisioned
+layers: layered accounts of layered lives. The project\'s envisioned
 users are students, teachers, and researchers who want to work with
-visual and spatial renderings of enslaved people’s narratives. The
-site’s future iterations have these audiences in mind, and the
-reviewer’s helpful and generative suggestions provide clarity on the way
+visual and spatial renderings of enslaved people\'s narratives. The
+site\'s future iterations have these audiences in mind, and the
+reviewer\'s helpful and generative suggestions provide clarity on the way
 forward. I particularly appreciate the nudge to consider more robust
 citation, and so the updated site will include a list of works cited,
 with hyperlinks to the archival sources.
@@ -199,7 +199,7 @@ with hyperlinks to the archival sources.
 The reviewer also notes, more broadly, that the site does not yet show
 all that it promises to show. The user interface currently does not show
 differences in the kinds of movement that are encompassed in the
-project’s expansive understanding of *marronage*. To rectify this, the
+project\'s expansive understanding of *marronage*. To rectify this, the
 reviewer suggests reworking the framing text on the site to be more
 transparent about its limits, to state what the site can actually show
 *for now*. I am struck by this deceptively simple but really profound
@@ -213,10 +213,10 @@ its functionality as part of a practice of being accountable to the
 story the site seeks to tell. For this reason, I am deeply grateful to
 the reviewer for this opportunity to think otherwise, to begin not from
 the end of the project and feeling my way toward a goal but from the
-beginning. To implement this suggestion, I plan to rewrite the site’s
+beginning. To implement this suggestion, I plan to rewrite the site\'s
 framing narrative and to divide the
 "[About](http://mapping-marronage.rll.lsa.umich.edu/about)" section into
-two parts. The first part will give an overview of the project’s
+two parts. The first part will give an overview of the project\'s
 overarching aims. The second will walk the user through which of these
 aims are attainable in the moment, therefore functioning as part
 tutorial, part framing essay. It is my hope that providing users with a
@@ -240,14 +240,14 @@ represent the archival breaks, the silences and ruptures in narratives
 that tell of movement that was concealed and subversive.
 
 While the expense associated with building a more complex site explains
-some of the map’s flattening, it does not account for all of it. Telling
+some of the map\'s flattening, it does not account for all of it. Telling
 stories about slavery requires us to grapple with the ethics of speaking
 the unspeakable and of recounting often unimaginable horrors. How do we
 visualize the journeys of those African captives on slave ships who were
 jettisoned overboard during the Middle Passage? Would a dot on the map
 in the middle of the Atlantic Ocean mark loss, or would it replicate
 violence? *Mapping Marronage* began at a site of commemoration, Henry
-Christophe’s statue in Port-au-Prince, and the ethics of commemoration
+Christophe\'s statue in Port-au-Prince, and the ethics of commemoration
 continue to haunt this project as it evolves. I extend my sincerest
 gratitude to the reviewer for these productive new directions.
 
