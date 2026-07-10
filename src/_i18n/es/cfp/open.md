@@ -1,14 +1,12 @@
 ---
-title: open
+title: Convocatoria de artículos, propuestas y proyectos
 permalink: es/cfp/open.html
 published: true
 ---
 
-## Convocatoria de artículos, propuestas y proyectos
+## Llamado abierto
 
-### Llamado abierto
-
-*archipelagos* acepta envíos de manera continua. Se aceptan envíos de artículos individuales en cualquier momento y serán considerados para un próximo número. Si gusta, puede enviar un resumen en lugar de un artículo completo para una evaluación editorial preliminar. Si desea que su proyecto digital sea evaluado por nosotros como parte de nuestro proceso de revisión pública por pares, háganoslo saber. Tenga en cuenta que también aceptamos propuestas de secciones temáticas editadas por editores invitados.
+_archipelagos_ acepta envíos de manera continua. Se aceptan envíos de artículos individuales en cualquier momento y serán considerados para un próximo número. Si gusta, puede enviar un resumen en lugar de un artículo completo para una evaluación editorial preliminar. Si desea que su proyecto digital sea evaluado por nosotros como parte de nuestro proceso de revisión pública por pares, háganoslo saber. Tenga en cuenta que también aceptamos propuestas de secciones temáticas editadas por editores invitados.
 
 Los resúmenes no deben tener más de 300 palabras.
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ language if language else 'en' }}">
+<html lang="{{ language if language else (lang if lang else 'en') }}">
 
 {% include "head.njk" %}
 

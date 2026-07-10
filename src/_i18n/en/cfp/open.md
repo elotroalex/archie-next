@@ -1,14 +1,12 @@
 ---
-title: open
+title: Call for Papers, Proposals and Projects
 permalink: cfp/open.html
 published: true
 ---
 
-## Call for Papers, Proposals and Projects
+## Open call
 
-### Open call
-
-*archipelagos* accepts submissions on a rolling basis. Submissions of individual articles are accepted at any time and will be considered for an upcoming issue. You may send an abstract in lieu of a full article for a preliminary editorial evaluation before proceeding. If you would like your digital scholarship project to be evaluated by us as part of our public peer review process, please let us know. Note that we also welcome proposals for guest-edited themed sections.
+_archipelagos_ accepts submissions on a rolling basis. Submissions of individual articles are accepted at any time and will be considered for an upcoming issue. You may send an abstract in lieu of a full article for a preliminary editorial evaluation before proceeding. If you would like your digital scholarship project to be evaluated by us as part of our public peer review process, please let us know. Note that we also welcome proposals for guest-edited themed sections.
 
 Abstracts should be no more than 300 words.
 
