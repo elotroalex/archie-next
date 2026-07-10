@@ -176,6 +176,53 @@ module.exports = function (eleventyConfig) {
     return str;
   });
 
+  // schema.org JSON-LD for article/project pages -- the Highwire Press
+  // citation_* meta tags in head.njk already cover Google Scholar
+  // indexing; this adds structured data for general search engines and
+  // other discovery tools that look for ScholarlyArticle/CreativeWork
+  // instead. A *filter* (not addShortcode -- tried first, but shortcodes
+  // silently don't resolve when a page's layout is applied on top of a
+  // paginated .11ty.js template, e.g. src/es/issue-articles.11ty.js;
+  // filters render fine there, same as mdInline/isoDate above already do
+  // for those same pages' citation_* tags). Explicit args since none of
+  // this data is threaded through `this.ctx` for either shortcodes or
+  // filters here -- these are the same bare template variables head.njk
+  // already uses directly (e.g. {{ title }}).
+  // Usage in head.njk: {{ layout | articleJsonLd(title, author, doi, issue, language, abstract, page, site) | safe }}
+  eleventyConfig.addFilter(
+    "articleJsonLd",
+    function (layout, title, author, doi, issue, language, abstract, page, site) {
+      if (layout !== "article" && layout !== "project") return "";
+      const titleText = (title && title.long) || title;
+      const json = {
+        "@context": "https://schema.org",
+        "@type": layout === "article" ? "ScholarlyArticle" : "CreativeWork",
+        headline: titleText,
+        name: titleText,
+        inLanguage: language,
+        url: `${site.url}${page.url}`,
+        ...(abstract ? { abstract } : {}),
+        ...(doi ? { identifier: `https://doi.org/${doi}`, sameAs: `https://doi.org/${doi}` } : {}),
+        author: (author || []).map((a) => ({ "@type": "Person", name: a.name })),
+        publisher: { "@type": "Organization", name: site.publisher },
+        isPartOf: {
+          "@type": "PublicationIssue",
+          issueNumber: issue,
+          isPartOf: {
+            "@type": "Periodical",
+            name: site.title,
+            issn: site.issn,
+            url: site.url,
+          },
+        },
+      };
+      // Escape "<" (not just "</script>") so no JSON string value can break
+      // out of the surrounding <script> tag; < is valid inside a JSON
+      // string and browsers decode it back to "<" when parsing the script.
+      return JSON.stringify(json).replace(/</g, "\\u003c");
+    }
+  );
+
   // --- Input / output directories ---
   const pathPrefix = process.env.ELEVENTY_PATH_PREFIX || "/";
   return {

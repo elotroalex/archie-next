@@ -92,6 +92,11 @@
   <meta name="citation_doi" content="{{ doi }}" />
   {% endif %}
 
+  <!-- schema.org structured data (general-purpose search/discovery, alongside the Highwire tags above for Google Scholar) -->
+  {% if layout == "article" or layout == "project" %}
+  <script type="application/ld+json">{{ layout | articleJsonLd(title, author, doi, issue, language, abstract, page, site) | safe }}</script>
+  {% endif %}
+
   <!-- CSS -->
   <link rel="stylesheet" href="{{ '/public/css/syntax.css' | url }}" />
   <link rel="stylesheet" href="{{ '/public/css/main.css' | url }}" />
