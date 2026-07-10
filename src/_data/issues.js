@@ -1,4 +1,10 @@
 // Issue metadata — migrated from _config.yml collections block
+//
+// The LAST key here is always treated as the current issue (src/_data/site.js
+// derives `current`/`current-number` from it) -- add new issues as the last
+// entry, in increasing `number` order. site.js throws at build time if the
+// last key isn't also the highest-numbered issue, to catch accidental
+// reordering.
 module.exports = {
   issue01: {
     slug: "issue01",
