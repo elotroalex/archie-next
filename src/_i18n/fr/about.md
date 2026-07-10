@@ -17,7 +17,7 @@ Au fur et à mesure que nous construisons et comprenons, nous sommes éclairés 
 
 ---
 
-**Table des matières**
+**Regard approfondi...**
 
 [[toc]]
 

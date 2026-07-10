@@ -18,7 +18,7 @@ As we build and understand, we do so illuminated by the first light of the long 
 
 ---
 
-**Table of Contents**
+**In depth look...**
 
 [[toc]]
 
