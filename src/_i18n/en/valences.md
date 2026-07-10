@@ -5,11 +5,9 @@ permalink: valences.html
 
 ---
 
-## Table of Contents
-{:.no_toc}
+**Table of Contents**
 
-* ToC
-{:toc}
+[[toc]]
 
 ---
 

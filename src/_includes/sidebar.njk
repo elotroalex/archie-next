@@ -12,7 +12,7 @@
     <p>Issue ({{ issue }}) | {{ pubDate }}<br />DOI: {{ doi }}</p>
     {% endif %}
   </div>
-  <nav class="main-nav">
+  <nav class="main-nav" aria-label="{{ i18n[lang].global.main_nav_label }}">
     <a class="sidebar-nav-item" href="{{ '/index.html' | url }}">{{ i18n[lang].titles.home }}</a>
     <a class="sidebar-nav-item" href="{{ '/about.html' | url }}">{{ i18n[lang].titles.about }}</a>
     <a class="sidebar-nav-item" href="{{ '/credits.html' | url }}">{{ i18n[lang].titles.credits }}</a>

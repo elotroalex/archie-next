@@ -10,11 +10,9 @@ permalink: fr/authors.html
 
 Toutes les soumissions doivent être conformes au [Chicago Manual of Style](https://www.chicagomanualofstyle.org/home.html).
 
-## Table des matières
-{:.no_toc}
+**Table des matières**
 
-* ToC
-{:toc}
+[[toc]]
 
 ## Directives de soumission d'articles ou de critiques
 
@@ -26,7 +24,7 @@ Toutes les soumissions doivent être conformes au [Chicago Manual of Style](http
 
 - Les soumissions d'articles individuels sont acceptées sur une base continue. Nous accueillons également les propositions de sections thématiques.
 
-- Les articles soumis doivent comprendre une biographie (ou une biographie pour plusieurs auteurs) et un résumé. Veuillez les placer au bas de votre document. Les images peuvent être insérées directement dans votre document (voir [Images](#images-guide) ci-dessous) — vous n'avez plus besoin de les envoyer séparément. La vidéo et le son doivent toujours être envoyés sous forme de liens vers un service de streaming de votre choix (voir [Vidéo, son et médias interactifs](#interactive-media) ci-dessous).
+- Les articles soumis doivent comprendre une biographie (ou une biographie pour plusieurs auteurs) et un résumé. Veuillez les placer au bas de votre document. Les images peuvent être insérées directement dans votre document (voir [Images](#images) ci-dessous) — vous n'avez plus besoin de les envoyer séparément. La vidéo et le son doivent toujours être envoyés sous forme de liens vers un service de streaming de votre choix (voir [Vidéo, son et médias interactifs](#video-son-et-medias-interactifs) ci-dessous).
 
 - Nous sommes un journal en libre accès. Si votre publication est acceptée, vous recevrez une copie de notre [contrat d\'auteur](http://archipelagosjournal.org/public/author-agreement.pdf).
 
@@ -51,12 +49,12 @@ Formats Office (.odt, .doc, .docx) : La plupart du travail de nettoyage que nous
 4. **Désactivez les « guillemets intelligents ».** Utilisez des guillemets droits (`"` et `'`), pas les guillemets courbes que Word insère par défaut.
 5. **Utilisez des traits d'union et des tirets simples** : un trait d'union (`-`) pour les mots composés, un tiret demi-cadratin (`--`) pour les plages, un tiret cadratin (`---`) pour une rupture dans la phrase.
 6. **Ne mettez pas en page le document vous-même.** Les colonnes, les zones de texte et l'espacement placé manuellement ne survivront pas à la conversion. Si vous avez besoin d'une mise en page particulière, décrivez-la en prose simple, [entre crochets], et nous nous en chargerons.
-7. **N'utilisez pas l'outil de tableaux ni les champs de données de Word.** Voir [Tableaux](#tables) ci-dessous pour les formats que nous acceptons.
-8. **Insérez les images directement là où elles doivent apparaître, puis légendez-les avec une courte rubrique.** Voir [Images](#images-guide) ci-dessous.
+7. **N'utilisez pas l'outil de tableaux ni les champs de données de Word.** Voir [Tableaux](#tableaux) ci-dessous pour les formats que nous acceptons.
+8. **Insérez les images directement là où elles doivent apparaître, puis légendez-les avec une courte rubrique.** Voir [Images](#images) ci-dessous.
 
 Markdown (.md): La publication est à bien des égards un jeu de conversion de fichiers. Notre site Web et nos fichiers PDF sont construits à partir des mêmes fichiers Markdown. Bien que nous acceptions volontiers les articles de format Office, nous encourageons nos auteurs à soumettre des fichiers texte (encodage UTF-8), écrits en utilisant la syntaxe Kramdown, une version de Markdown et enregistrés avec l'extension .md. Cela nous aidera à garder notre flux de travail léger et nos types de fichiers plus proches de la chaîne de production, ce qui contribuera à ce que nous continuons à contrôler tous les aspects de la production du journal. Pour en savoir plus sur nos choix d\'infrastructure et pour commencer à utiliser Markdown, prenez le temps de lire [« L\'auteur durable en texte clair avec Pandoc et Markdown »](https://programminghistorian.org/en/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown), de Dennis Tenen et Grant Whytoff. Nous apprécions sincèrement ceux qui acceptent le défi de changer leurs habitudes de travail et nous sommes offrons volontiers notre assistance pendant le processus. Vous trouverez de nombreux outils d'édition de Markdown disponibles, et la plupart des éditeurs de texte brut sont excellents pour la gestion de Markdown.
 
-#### Images {#images-guide}
+#### Images
 
 Chez *archipelagos*, nous valorisons la richesse de notre culture visuelle. Si vous soumettez vos propres photographies, veuillez garder à l'esprit le cadrage, les harmonies de couleurs et d'autres éléments de conception. N'oubliez pas non plus que les fichiers image peuvent contenir des métadonnées intégrées que vous ne souhaitez peut-être pas publier. Les images sont soumises au processus de révision au même titre que votre texte.
 
@@ -91,25 +89,25 @@ url="http://optional-url.com"
 
 Si vous utilisez un espace réservé, veuillez nommer le fichier avec un ou deux mots-clés séparés par un trait d'union, sans espaces ni majuscules (par exemple, `harbor-sunset.jpg`) — cela devient une partie de l'adresse permanente du fichier sur notre site.
 
-#### Vidéo, son et médias interactifs {#interactive-media}
+#### Vidéo, son et médias interactifs
 
 Afin de rendre nos articles et nos critiques disponibles au format PDF, et afin d'accroître la longévité des fichiers Web, nous séparons les médias interactifs des textes et images statiques. Pour la vidéo et le son, nous encourageons nos auteurs à utiliser le service de streaming de leur choix. Tenez compte des questions de confidentialité, de stabilité et de droit d'auteur lors du choix de la vidéo en streaming. Si nécessaire, nous pouvons vous fournir un formulaire d'accord de publication numérique à utiliser avec les titulaires de droits.
 
 Puisque *archipelagos* est né de la nécessité de soutenir les nouvelles formes de recherche numérique, nous sommes également disposés à inclure des médias interactifs (par exemple, des cartes, des visualisations) dans nos articles. Nous vous demandons de nous fournir, dans la mesure du possible, une version plein écran de votre média interactif hébergé ailleurs.
 
-Pour inclure l'un de ces types de médias, prenez une capture d'écran et insérez-la directement dans votre document comme n'importe quelle autre image (voir [Images](#images-guide) ci-dessus), puis utilisez la même rubrique caption/alt/url — avec `url` pointant vers la version plein écran (dans la mesure du possible) de votre média interactif, fichier audio ou vidéo. Lorsque cela est approprié, utilisez une capture d'écran avec le bouton de lecture visible. Par exemple, s'il s'agit d'une vidéo YouTube, prenez une capture d'écran de la version plein écran avec le bouton de lecture rouge et blanc au centre.
+Pour inclure l'un de ces types de médias, prenez une capture d'écran et insérez-la directement dans votre document comme n'importe quelle autre image (voir [Images](#images) ci-dessus), puis utilisez la même rubrique caption/alt/url — avec `url` pointant vers la version plein écran (dans la mesure du possible) de votre média interactif, fichier audio ou vidéo. Lorsque cela est approprié, utilisez une capture d'écran avec le bouton de lecture visible. Par exemple, s'il s'agit d'une vidéo YouTube, prenez une capture d'écran de la version plein écran avec le bouton de lecture rouge et blanc au centre.
 
-#### Les hyperliens
+### Les hyperliens
 
 Toutes les pages référencées (lorsque cela est possible et autorisé par le fichier robot.txt du site) doivent pointer vers une copie archivée spécifique de l\'[Internet Archive](https://archive.org/index.php), dans la mesure du possible. Si une copie n\'existe pas encore, veuillez en créer une en utilisant la fonction [« Enregistrer la page maintenant »](https://archive.org/web/). Faites-nous savoir si vous avez besoin d'aide avec ce processus.
 
 Assurez-vous que tous les liens externes et internes de votre document fonctionnent avant d'être soumis. De nombreux sites Web et pages Web disparaissent ou se déplacent avec le temps. Afin d'éviter la pourriture des liens, nous effectuons des tests de construction périodiques pour garantir la viabilité de nos liens internes et externes. Malgré ces mesures, des liens seront perdus dans les années à venir. Afin de minimiser l'impact sur votre article, veuillez fournir les citations appropriées lorsque les liens sont essentiels à l'argument et que vous ne pouvez pas fournir une copie archivée sur Internet Archive.
 
-#### Documents externes
+### Documents externes
 
 Lors du partage de documents externes, ne vous connectez pas à des services de stockage dans le cloud (tels que Dropbox, Google Docs) ou des sources à accès fermé. Dans ces cas, citez simplement les documents. Si vous avez la permission de les utiliser, vous pourrez peut-être les soumettre avec vos fichiers. Nous accueillons et encourageons les liens pour ouvrir des dépôts institutionnels.
 
-#### Tableaux {#tables}
+### Tableaux
 
 Si vous souhaitez qu'un tableau s'affiche au fur et à mesure que vous lisez votre texte, vous pouvez le soumettre sous forme de fichier .csv (valeurs séparées par des virgules) ou directement au format [kramdown/markdown](http://kramdown.gettalong.org/syntax.html#tables), son format final. En général, nous préférons les formats de tableau les plus simples. Veuillez éviter les lignes de rangée, par exemple. Si vous estimez que vous avez besoin d\'une visualisation complexe, envisagez de soumettre une image ou d\'organiser la visualisation ailleurs et de la relier à partir d\'une capture d\'écran.
 

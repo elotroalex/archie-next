@@ -13,12 +13,9 @@ Contact: archipelagosjournal@gmail.com
 
 ---
 
-## Indice
+**Índice**
 
-{:.no_toc}
-
-- ToC
-  {:toc}
+[[toc]]
 
 ---
 
@@ -32,7 +29,7 @@ _archipelagos_ utiliza una combinación de correo electrónico, Dropbox y GitHub
 
 1. Las entregas de artículos individuales se aceptan de forma continua. También aceptamos propuestas para secciones temáticas.
 
-2. Las presentaciones de artículos deben incluir una biografía (o biografías para varios autores) y un resumen. Por favor colóquelos al final de su documento. Las imágenes pueden insertarse directamente en su documento (véase [Imágenes](#images-guide) más abajo) — ya no es necesario enviarlas por separado. El video y el audio deben seguir enviándose como enlaces a un servicio de transmisión de su elección (véase [Video, sonido y medios interactivos](#interactive-media) más abajo).
+2. Las presentaciones de artículos deben incluir una biografía (o biografías para varios autores) y un resumen. Por favor colóquelos al final de su documento. Las imágenes pueden insertarse directamente en su documento (véase [Imágenes](#imagenes) más abajo) — ya no es necesario enviarlas por separado. El video y el audio deben seguir enviándose como enlaces a un servicio de transmisión de su elección (véase [Video, sonido y medios interactivos](#video-sonido-y-medios-interactivos) más abajo).
 
 3. Somos una revista de acceso abierto. Si es aceptado para su publicación, recibirá una copia de nuestro [Acuerdo con el autor](https://archipelagosjournal.org/public/author-agreement.pdf).
 
@@ -57,12 +54,12 @@ _Formatos de Office (.odt, .doc, .docx)_: La mayor parte de la limpieza que hace
 4. **Desactive las "comillas inteligentes".** Utilice comillas rectas (`"` y `'`), no las curvas que Word inserta de forma predeterminada.
 5. **Use guiones simples**: un guion (`-`) para palabras compuestas, un guion medio (`--`) para rangos, una raya (`---`) para un corte en la oración.
 6. **No diseñe el documento usted mismo.** Las columnas, los cuadros de texto y el espaciado colocado manualmente no sobrevivirán la conversión. Si necesita algo con un diseño particular, descríbalo en prosa simple, [entre corchetes], y nosotros nos encargaremos del resto.
-7. **No use la herramienta de tablas ni los campos de datos de Word.** Consulte [Tablas](#tables) más abajo para conocer los formatos que aceptamos.
-8. **Inserte las imágenes directamente donde correspondan y luego agrégueles un pie de foto con una breve rúbrica.** Consulte [Imágenes](#images-guide) más abajo.
+7. **No use la herramienta de tablas ni los campos de datos de Word.** Consulte [Tablas](#tablas) más abajo para conocer los formatos que aceptamos.
+8. **Inserte las imágenes directamente donde correspondan y luego agrégueles un pie de foto con una breve rúbrica.** Consulte [Imágenes](#imagenes) más abajo.
 
 _Markdown (.md)_: la publicación es, en muchos sentidos, un juego de conversiones de archivos de un formato a otro. Tanto nuestro sitio web como nuestros PDF se crean a partir de los mismos archivos de Markdown. Aceptamos con gusto los artículos esritos en texto sin formato (codificación UTF-8), utilizando el Markdown con [sintaxis Kramdown](http://kramdown.gettalong.org/syntax.html), y con la extensión .md. Esto nos ayudará a mantener nuestro flujo de trabajo ligero y nuestros tipos de archivos más cerca de la línea de producción, contribuyendo a su vez al control continuo de todos los aspectos de la producción de nuestra revista. Para obtener algunos antecedentes sobre nuestras opciones de infraestructura, y para comenzar con Markdown, tómese un tiempo para leer "[Sustainable Authorship in Plain Text using Pandoc and Markdown](http://programminghistorian.org/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown)", por Dennis Tenen y Grant Whytoff. Agradecemos sinceramente a quienes aceptan el desafío de cambiar sus hábitos de trabajo y les brindamos nuestra asistencia durante el proceso. Encontrará muchas herramientas de edición de Markdown disponibles, y la mayoría de los editores de texto plano son igualmente excelentes para manejar el mismo.
 
-#### Imágenes {#images-guide}
+#### Imágenes
 
 En _archipelagos_ valoramos la riqueza de nuestra cultura visual. Si envía su propia fotografía, tenga en cuenta el encuadre, las armonías de color y otros elementos de diseño. Recuerde también que los archivos de imagen pueden contener metadatos incrustados que quizás no desee publicar. Las imágenes están sujetas al proceso de revisión al igual que su texto.
 
@@ -97,13 +94,13 @@ url="http://optional-url.com"
 
 Si usa un marcador de posición, nombre el archivo con una o dos palabras clave separadas por un guion, sin espacios ni letras mayúsculas (por ejemplo, `harbor-sunset.jpg`) — esto pasa a formar parte de la dirección permanente del archivo en nuestro sitio.
 
-#### Video, sonido y medios interactivos {#interactive-media}
+#### Video, sonido y medios interactivos
 
 Para que nuestros artículos y reseñas estén disponibles en PDF, y para aumentar la longevidad de los archivos web, separamos los medios interactivos del texto estático y las imágenes. Para video y sonido, alentamos a nuestros autores a usar un servicio de transmisión de su elección (SoundCloud, YouTube, etc). Tenga en cuenta las preocupaciones de privacidad, estabilidad y derechos de autor al elegir la transmisión de video. Cuando sea necesario, podemos proporcionarle un Formulario de Acuerdo de Publicación Digital para usar con los dueños de derechos de autor.
 
 Dado que _archipelagos_ nació de la necesidad de apoyar formas emergentes de investigación digital, también estamos abiertos a incluir medios interactivos (por ejemplo, mapas, visualizaciones) en nuestros artículos. Le pedimos que nos proporcione, siempre que sea posible, una versión de pantalla completa de sus medios interactivos alojados en otro lugar.
 
-Para incluir cualquiera de estos tipos de medios, tome una captura de pantalla e insértela directamente en su documento como cualquier otra imagen (véase [Imágenes](#images-guide) más arriba), y luego use la misma rúbrica de caption/alt/url — con `url` apuntando a la versión de pantalla completa (siempre que sea posible) de su medio interactivo, archivo de sonido o video. Cuando sea apropiado, use una captura de pantalla con el botón de reproducción visible. Por ejemplo, si se trata de un video de YouTube, tome una captura de pantalla de la versión de pantalla completa con el botón de reproducción rojo y blanco en el centro.
+Para incluir cualquiera de estos tipos de medios, tome una captura de pantalla e insértela directamente en su documento como cualquier otra imagen (véase [Imágenes](#imagenes) más arriba), y luego use la misma rúbrica de caption/alt/url — con `url` apuntando a la versión de pantalla completa (siempre que sea posible) de su medio interactivo, archivo de sonido o video. Cuando sea apropiado, use una captura de pantalla con el botón de reproducción visible. Por ejemplo, si se trata de un video de YouTube, tome una captura de pantalla de la versión de pantalla completa con el botón de reproducción rojo y blanco en el centro.
 
 ### Enlaces
 
@@ -115,7 +112,7 @@ Asegúrese de que todos los enlaces externos e internos de su documento estén f
 
 Al compartir documentos externos, no se vincule a servicios de almacenamiento en la nube (por ejemplo, Dropbox, Google Docs) ni a fuentes de acceso cerrado. En estos casos, simplemente cite los documentos. Si tiene permiso para usarlos, puede enviarlos con sus archivos. Damos la bienvenida y alentamos los enlaces a repositorios institucionales abiertos.
 
-### Tablas {#tables}
+### Tablas
 
 Si desea que se muestre una tabla mientras lee su texto, puede enviarla como un archivo .csv (valores separados por comas) o escrito directamente en [kramdown/Markdown](http://kramdown.gettalong.org/syntax.html#tables), su formato final. En general, preferimos los formatos de tabla más simples. Evite los espacios en filas, por ejemplo. Si desea enviar una tabla más compleja, puede hacerlo como un PDF separado. Luego vincularíamos a la tabla desde el texto.
 

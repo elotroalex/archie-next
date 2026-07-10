@@ -12,6 +12,8 @@ global:
   authors_bios_label: "Authors' Bios"
   skip_to_content: "Skip to content"
   footnote_backref_label: "Back to content"
+  toc_label: "Table of contents"
+  main_nav_label: "Main navigation"
   toggle_sidebar_label: "Toggle sidebar navigation"
   introduction: "Introduction"
   essays: Essays

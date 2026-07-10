@@ -5,11 +5,9 @@ permalink: fr/valences.html
 
 ---
 
-## Table des matières
-{:.no_toc}
+**Table des matières**
 
-* ToC
-{:toc}
+[[toc]]
 
 ---
 

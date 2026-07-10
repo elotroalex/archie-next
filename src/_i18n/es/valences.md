@@ -5,11 +5,9 @@ permalink: es/valences.html
 
 ---
 
-## Tabla de contenidos
-{:.no_toc}
+**Tabla de contenidos**
 
-* ToC
-{:toc}
+[[toc]]
 
 ---
 

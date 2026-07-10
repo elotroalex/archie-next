@@ -12,6 +12,8 @@ global:
   authors_bios_label: "Biographies des auteurs"
   skip_to_content: "Aller au contenu"
   footnote_backref_label: "Retour au contenu"
+  toc_label: "Table des matières"
+  main_nav_label: "Navigation principale"
   toggle_sidebar_label: "Afficher/masquer la navigation latérale"
   introduction: "Introduction"
   essays: Essais

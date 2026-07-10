@@ -7,11 +7,9 @@ At *archipelagos* we are working to build a community of reviewers and contribut
 
 ---
 
-## Table of Contents
-{:.no_toc}
+**Table of Contents**
 
-* ToC
-{:toc}
+[[toc]]
 
 ---
 

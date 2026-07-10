@@ -3,7 +3,25 @@ const markdownIt = require("markdown-it");
 const markdownItFootnote = require("markdown-it-footnote");
 const markdownItAttrs = require("markdown-it-attrs");
 const markdownItSup = require("markdown-it-sup");
+const markdownItAnchor = require("markdown-it-anchor");
+const markdownItTocDoneRight = require("markdown-it-toc-done-right");
 const i18n = require("./src/_data/i18n.js");
+
+// Shared between markdown-it-anchor (assigns heading ids) and
+// markdown-it-toc-done-right (builds hrefs pointing at those same ids) so a
+// [[toc]] block's links always match the ids actually on the page. Produces
+// clean, readable slugs (accents stripped, punctuation dropped) instead of
+// each library's own default percent-encoded fallback.
+function slugify(str) {
+  return String(str)
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
+}
 
 module.exports = function (eleventyConfig) {
   // --- Passthrough copies ---
@@ -54,7 +72,9 @@ module.exports = function (eleventyConfig) {
   })
     .use(markdownItFootnote)
     .use(markdownItAttrs)
-    .use(markdownItSup);
+    .use(markdownItSup)
+    .use(markdownItAnchor, { slugify })
+    .use(markdownItTocDoneRight, { slugify, level: [2, 3], listType: "ul" });
 
   eleventyConfig.setLibrary("md", md);
 
@@ -70,6 +90,20 @@ module.exports = function (eleventyConfig) {
     const label = (i18n[lang] && i18n[lang].global.footnote_backref_label) || "Back to content";
     return content.replace(
       /(<a href="#fnref\d+" class="footnote-backref")(>)/g,
+      `$1 aria-label="${label}"$2`
+    );
+  });
+
+  // markdown-it-toc-done-right's <nav class="table-of-contents"> has no
+  // accessible name, which collides with the sidebar's own <nav> landmark
+  // (two unlabeled <nav> regions on one page). Same lang-threading problem
+  // and same fix as the footnote backref label above.
+  eleventyConfig.addTransform("toc-nav-label", function (content, outputPath) {
+    if (!outputPath || !outputPath.endsWith(".html")) return content;
+    const lang = this.lang || "en";
+    const label = (i18n[lang] && i18n[lang].global.toc_label) || "Table of contents";
+    return content.replace(
+      /(<nav class="table-of-contents")(>)/g,
       `$1 aria-label="${label}"$2`
     );
   });

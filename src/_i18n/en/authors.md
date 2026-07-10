@@ -13,11 +13,9 @@ Contact: archipelagosjournal@gmail.com
 
 ---
 
-## Table of Contents
-{:.no_toc}
+**Table of Contents**
 
-* ToC
-{:toc}
+[[toc]]
 
 ---
 
@@ -31,7 +29,7 @@ We ask you to submit your abstracts and articles to <archipelagosjournal@gmail.c
 
 1. Submissions of individual articles are accepted on a rolling basis. We also welcome proposals for themed sections.
 
-2. Article submissions must include a bio (or bios for multi-author) and an abstract. *Please place these at the bottom of your document*. Images can be inserted directly in your document (see [Images](#images-guide) below) — you no longer need to send them separately. Video and sound should still be sent as links to a streaming service of your choice (see [Video, Sound, and Interactive Media](#interactive-media) below).
+2. Article submissions must include a bio (or bios for multi-author) and an abstract. *Please place these at the bottom of your document*. Images can be inserted directly in your document (see [Images](#images) below) — you no longer need to send them separately. Video and sound should still be sent as links to a streaming service of your choice (see [Video, Sound, and Interactive Media](#video-sound-and-interactive-media) below).
 
 6. We are an open access journal. If you are accepted for publication you will receive a copy of our [Author Agreement](https://archipelagosjournal.org/public/author-agreement.pdf).
 
@@ -57,11 +55,11 @@ We ask you to submit your abstracts and articles to <archipelagosjournal@gmail.c
 5. **Use plain hyphens and dashes**: a hyphen (`-`) for compound words, an en-dash (`--`) for ranges, an em-dash (`---`) for a break in a sentence.
 6. **Don't lay out the document yourself.** Columns, text boxes, and manually placed spacing will not survive conversion. If you need something laid out a particular way, describe it in plain prose, in [square brackets], and we'll take it from there.
 7. **Don't use Word's table tool or data fields.** See [Tables](#tables) below for the formats we do accept.
-8. **Insert images directly where they belong, then caption them with a short rubric.** See [Images](#images-guide) below.
+8. **Insert images directly where they belong, then caption them with a short rubric.** See [Images](#images) below.
 
 *Markdown (.md)*: Publishing is in many ways a game of file conversions. Both our website and PDFs are built from the same Markdown files. We accept plain text files (UTF-8 encoding), written using [Kramdown syntax](http://kramdown.gettalong.org/syntax.html), a version of Markdown, and saved with the .md extension. This helps us keep our workflow light and our file types closer to the production line, contributing in turn to our continued ownership of all aspects of journal production. For some background on our infrastructural choices, and to get started with Markdown, please take some time to read "[Sustainable Authorship in Plain Text using Pandoc and Markdown](http://programminghistorian.org/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown)," by Dennis Tenen and Grant Whytoff. We sincerely appreciate those who submitt well formatted Markdown to us directly.
 
-#### Images {#images-guide}
+#### Images
 
 At *archipelagos* we value the richness of our visual culture. If you are submitting your own photography, be mindful of frame, color harmonies, and other design elements. Remember also that image files can contain embedded metadata you might not want to publish. Images are open to the review process just like your text.
 
@@ -96,13 +94,13 @@ url="http://optional-url.com"
 
 If you use a placeholder, please name the file using one or two keywords separated by a hyphen, with no spaces or capital letters (e.g. `harbor-sunset.jpg`) — this becomes part of the file's permanent address on our site.
 
-#### Video, Sound, and Interactive Media {#interactive-media}
+#### Video, Sound, and Interactive Media
 
 In order to make our articles and reviews available in PDF, and in order to increase the longevity of the Web files, we separate interactive media from static text and images. For video and sound, we encourage our authors to use a streaming service of their choice. Be mindful of privacy, stability, and copyright concerns when choosing streaming video. When required, we can provide you with a Digital Publication Agreement Form to use with rights holders.
 
 Since *archipelagos* was born of the need to support emergent forms of digital scholarship, we are also open to including interactive media (e.g., maps, visualizations) in our articles. We ask that you provide us, whenever possible, a full-screen version of your interactive media hosted elsewhere.
 
-To include any of these media types, take a screenshot and insert it directly in your document like any other image (see [Images](#images-guide) above), then use the same caption/alt/url rubric — with the `url` pointing to the full-screen version (whenever possible) of your interactive media, sound file, or video. Whenever appropriate, use a screenshot with the play button visible. For example, if it's a YouTube video, take a screenshot of the full-screen version with the red and white play button in the center.
+To include any of these media types, take a screenshot and insert it directly in your document like any other image (see [Images](#images) above), then use the same caption/alt/url rubric — with the `url` pointing to the full-screen version (whenever possible) of your interactive media, sound file, or video. Whenever appropriate, use a screenshot with the play button visible. For example, if it's a YouTube video, take a screenshot of the full-screen version with the red and white play button in the center.
 
 ### Hyperlinks
 
@@ -114,7 +112,7 @@ Please ensure that all external and internal links in your document are working 
 
 When sharing external documents, do not link to cloud storage services (e.g., Dropbox, Google Docs) or closed-access sources. In these cases, simply cite the documents. If you have permission to use them, you may be able to submit them with your files. We do welcome and encourage links to open institutional repositories.
 
-### Tables {#tables}
+### Tables
 
 If you would like a table to display as you read your text you can submit it either as a .csv (Comma Separated Values) file or written directly in [kramdown/markdown](http://kramdown.gettalong.org/syntax.html#tables), its final format. In general, we prefer the simpler table formats. Please avoid rowspans, for example. If you feel you need a complex visualization, consider submitting an image or hosting the visualization elsewhere and linking to it from a screenshot. 
 
