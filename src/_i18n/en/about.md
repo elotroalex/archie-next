@@ -71,7 +71,7 @@ All submissions should be:
 
 Articles including images or other multimedia elements should follow the formatting instructions under [for authors](https://archipelagosjournal.org/authors.html#submission-guidelines-for-digital-projects) in the journal's website.
 
-Please familiarize yourself with the review process and guidelines for **_critical essays_**, detailed in the following before completing your evaluation. If you have any questions, feel free to contact us at: [archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com).
+Please familiarize yourself with the review process below, and see our [reviewer guidelines for critical essays](reviewers.html#critical-essays) for the full evaluation criteria. If you have any questions, feel free to contact us at: [archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com).
 
 #### Review Process
 
@@ -80,17 +80,6 @@ Please familiarize yourself with the review process and guidelines for **_critic
 3. Editors read reviewer feedback and notify both authors and reviewers of the final publication decision.
 4. If accepted for publication, but with minor or major revisions, authors revise their submission within four weeks.
 5. Authors have a final opportunity to provide minor edits once the final proofs have been prepared.
-
-#### Reviewer Guidelines
-
-Please answer the following questions with as much elaboration as you feel the author and/or editors may need. Please enter answers on this form.
-
-1. Is the submission coherent, well structured and lucidly presented?
-2. Since many of our articles are media-rich—linking prose arguments rhetorically to visuals—we ask our reviewers also to provide feedback on the figures, images, and interactives used in articles. If the submission includes visual materials, how effectively integrated are these materials into the argument? Are there too many images? Too few?
-3. Does the submission make a new and significant contribution that has relevance to a Caribbean platform of criticism?
-4. Does the submission exhibit the kind of critical rethinking that is consistent with the _archipelagos_ project? (description copied below.)
-5. Does the submission display a knowledge of existing literature on the subject and contribute to its critical examination?
-6. We are particularly interested in submissions that provide a clear sense of what is at stake in their conceptual and analytical interventions. Do you recommend this submission for acceptance? For acceptance with revision? For rejection?
 
 ---
 
@@ -111,7 +100,7 @@ All submissions should be:
 
 Articles including images or other multimedia elements should follow the formatting instructions under [for authors](https://archipelagosjournal.org/authors.html#submission-guidelines-for-digital-projects) in the journal's website.
 
-Please familiarize yourself with the review process and guidelines for **_process essays_**, detailed in the following before completing your evaluation. If you have any questions, feel free to contact us at: [archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com).
+Please familiarize yourself with the review process below, and see our [reviewer guidelines for process essays](reviewers.html#process-essays) for the full evaluation criteria. If you have any questions, feel free to contact us at: [archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com).
 
 #### Review Process
 
@@ -120,34 +109,6 @@ Please familiarize yourself with the review process and guidelines for **_proces
 3. Editors read reviewer feedback and notify both authors and reviewers of the final publication decision.
 4. If accepted for publication, but with minor or major revisions, authors revise their submission within four weeks.
 5. Authors have a final opportunity to provide minor edits once the final proofs have been prepared.
-
-#### Questions For Reviewers
-
-Please answer the following questions with as much elaboration as you feel the author and/or editors may need. Please type your answers on this document.
-
-1. Is the submission coherent, well structured, and lucidly presented?
-2. We ask reviewers to carefully weigh the de facto or possible intellectual contribution of the project described. Reviewers should consider the nature of that contribution appropriate to the current stage of the project's development and consider early signs of process-derived knowledge; the project's relationship to existing literature/projects; and/or early conversations in the literature about the project (where appropriate).
-
-   - Are the methods used in the project appropriate to the research questions it poses?
-   - Do the project's methods contribute to digital scholarship in general, and if so, do the authors address how?
-
-3. We ask reviewers to be conscious of the labor that goes into the development of a digital project. _archipelagos_ encourages the crediting of work where credit is due and the acknowledgment of the scholarly and interpretative work involved in data curation, design, and the engineering of digital projects. Reviewers should ask the following questions of a project:
-
-   - Do the authors address how contributor attribution is handled?
-   - Are the labor conditions under which the project was (or is being) produced made evident?
-   - Does the work cite its (digital scholarship) precedents and data sources appropriately?
-
-4. When considering the life cycle of a digital scholarship project, reviewers should not consider preservation in terms of indefinite periods of time. We encourage authors to be realistic about the plausible rate of decay of their projects and to have plans in place to manage the obsolescence of the technologies they use. We encourage our reviewers, therefore, to look for signs that the project team has considered the project's future. Possible questions are:
-
-   - What standards have been used and why?
-   - How is the project managing its rate of decay?
-   - Is the level of complexity of the project appropriate for its socio-technical or institutional context?
-
-5. Since many of our articles are media-rich—linking prose arguments rhetorically to visuals—we ask our reviewers also to provide feedback on the figures, images, and interactives used in articles. If the submission includes visual materials, how effectively integrated are these materials into the argument? Are there too many images? Too few?
-
-6. Does the submission exhibit the kind of critical rethinking that is consistent with the _archipelagos_ project? (See description below.)
-
-7. We are particularly interested in submissions that provide a clear sense of what is at stake in their conceptual and analytical interventions. Do you recommend this submission for acceptance? For acceptance with revision? For rejection?
 
 ---
 
@@ -168,7 +129,7 @@ All author submissions should be:
 
 Articles including images or other multimedia elements should follow the formatting instructions under [for authors](https://archipelagosjournal.org/authors.html#submission-guidelines-for-digital-projects) in the journal\'s website.
 
-Please familiarize yourself with the review process and guidelines for **_digital project dialogues_**, detailed in the following before completing your evaluation. If you have any questions, feel free to contact us at: [archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com).
+Please familiarize yourself with the review process below, and see our [reviewer guidelines for digital project dialogues](reviewers.html#digital-project-dialogues) for the full evaluation criteria. If you have any questions, feel free to contact us at: [archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com).
 
 #### Review Process
 
@@ -177,39 +138,6 @@ Please familiarize yourself with the review process and guidelines for **_digita
 3. Editors anonymize and share reviewer feedback with authors. If applicable, authors work on revising their project to incorporate reviewer comments and provide a link to the revised version (under development or publicly published).
 4. Project authors submit a 1000-to-2000-word narrative responding to reviewer feedback and explaining how they addressed (or plan to address) any concerns. This response is sent directly to the journal, and not shared with reviewers prior to publication.
 5. Before publication, editors condense both author and reviewer perspectives to create a dialogue between both parties. The final version generally ranges between 2000-to-6000 words.
-
-#### Questions For Reviewers
-
-Please answer the following questions with as much elaboration as you feel the author and/or editors may need. Please type your answers on this document. These guidelines are also available under the [for reviewers](https://archipelagosjournal.org/reviewers.html) section of the journal\'s website.
-
-1. We ask reviewers to carefully weigh the de facto or possible intellectual contribution of the project. Reviewers should consider the nature of that contribution appropriate to the current stage of the project\'s development and consider early signs of process-derived knowledge; the project\'s relationship to existing literature/projects; and/or early conversations in the literature about the project (where appropriate).
-
-   - Will the project frame new conversations in the relevant subject area?
-   - Are the methods used in the project appropriate to the research questions it poses?
-   - Do the project\'s methods contribute to digital scholarship in general, and if so, how?
-
-2. We ask reviewers to be conscious of the labor that goes into the development of a digital project. Digital projects generally depend on more distributed collaboration than monographs or articles. _archipelagos_ encourages the crediting of work where credit is due and the acknowledgment of the scholarly and interpretative work involved in data curation, design, and the engineering of digital projects. Reviewers should ask the following questions of a project:
-
-   - Does the project credit its contributors openly and fairly?
-   - Are the labor conditions under which the project was produced made evident?
-   - Does the work cite its (digital scholarship) precedents and data sources appropriately?
-
-3. Although design constitutes a separate category of review, we ask reviewers to understand design in terms of its relationship to the purported intellectual contribution of a given project. For archipelagos, design includes back-end architecture, workflow, and front-end interface design. We ask reviewers to consider the overall temporal and technical structure of a project and how this structure relates to the goals of the project. A reviewer may ask questions like:
-
-   - How do effort and resources used in the project match its import?
-   - How do the graphic and UX design elements of the front end contribute to the goals of the intellectual contribution? (When considering the public-facing design, reviewers should not place undue weight on \"ease of use\" or \"glossy design\" but rather consider whether the project\'s features fit the intellectual mission of the project and the resources the project\'s team had available to them.)
-   - How does the back-end architecture hinder or move forward the contribution of the project and perhaps link it to existing digital scholarship projects?
-
-4. When considering the life cycle of a digital scholarship project, reviewers should not consider preservation in terms of indefinite periods of time. We encourage authors to be realistic about the plausible rate of decay of their projects and to have plans in place to manage the obsolescence of the technologies they use. We encourage our reviewers, therefore, to look for signs that the project team has considered the project\'s future. Possible questions are:
-
-   - What standards have been used and why?
-   - How robust is the documentation on the project? Could the project be decomposed and recomposed based on this documentation?
-   - How is the project managing its rate of decay?
-   - Is the level of complexity of the project appropriate for its socio-technical or institutional context?
-
-5. Does the submission exhibit the kind of critical rethinking that is consistent with the _archipelagos_ project? (See description below.)
-
-6. We are particularly interested in submissions that provide a clear sense of what is at stake in their conceptual and analytical interventions. Do you recommend this submission for acceptance? For acceptance with revision? For rejection?
 
 ---
 
@@ -236,34 +164,7 @@ All submissions should be:
 
 3. Reviewers revise their submission based on the editors\' feedback and send their final, revised submission to the journal.
 
-The questions and comments that follow aim to provide a general line of discussion and evaluation for **_external reviews of digital projects_**. You can also find a copy of these guidelines published under the [for reviewers](https://archipelagosjournal.org/reviewers.html) page in our website. If you have any questions, feel free to contact us at: [archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com).
-
-#### Questions For Reviewers
-
-Please answer the following questions with as much elaboration as you feel the author and/or editors may need when writing about a project.
-
-1. Is the submission coherent, well structured, and lucidly presented?
-
-2. We ask reviewers to carefully weigh the de facto or possible intellectual contribution of the project. Reviewers should consider the nature of that contribution appropriate to the current stage of the project\'s development and consider early signs of process-derived knowledge; the project\'s relationship to existing literature/projects; and/or early conversations in the literature about the project (where appropriate).
-
-   - Will the project frame new conversations in the relevant subject area?
-   - Are the methods used in the project appropriate to the research questions it poses?
-   - Do the project\'s methods contribute to digital scholarship in general, and if so, how?
-
-3. We ask reviewers to be conscious of the labor that goes into the development of a digital project. Digital projects generally depend on more distributed collaboration than monographs or articles. _archipelagos_ encourages the crediting of work where credit is due and the acknowledgment of the scholarly and interpretative work involved in data curation, design, and the engineering of digital projects. Reviewers should ask the following questions of a project:
-
-   - Does the project credit its contributors openly and fairly?
-   - Are the labor conditions under which the project was produced made evident?
-   - Does the work cite its (digital scholarship) precedents and data sources appropriately?
-
-4. When considering the life cycle of a digital scholarship project, reviewers should not consider preservation in terms of indefinite periods of time. Is the project under review realistic about the plausible rate of decay of their projects and to have plans in place to manage the obsolescence of the technologies they use? We encourage our reviewers, therefore, to look for signs that the project team has considered the project\'s future. Possible questions are:
-
-   - What standards have been used and why?
-   - How robust is the documentation on the project? Could the project be decomposed and recomposed based on this documentation?
-   - How is the project managing its rate of decay?
-   - Is the level of complexity of the project appropriate for its sociotechnical or institutional context?
-
-5. Does the project reviewed exhibit the kind of critical rethinking that is consistent with the _archipelagos_ project? (See description below.) We are particularly interested in reviews of projects that provide a clear sense of what is at stake in their conceptual and analytical interventions.
+For the full evaluation criteria reviewers use for external reviews of digital projects, see our [reviewer guidelines for digital project reviews](reviewers.html#digital-project-reviews). If you have any questions, feel free to contact us at: [archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com).
 
 ## Our Workflow
 

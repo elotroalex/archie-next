@@ -13,56 +13,107 @@ En *archipelagos* estamos trabajando para construir una comunidad de revisores y
 
 ---
 
-## Pautas para revisión de proyectos digitales
+## Pautas de revisión por tipo de contribución
 
-*archipelagos* acepta proyectos de estudios digitales en etapa de desarrollo intermedia para una revisión anonima de una vía. Nuestro proceso de revisión está diseñado según el [modelo de DHCommons](http://dhcommons.org/journal/submission-guidelines), con algunas adiciones y revisiones. Una vez que se completa la revisión por pares, los proyectos se "lanzan" a través de una página dedicada en la plataforma *archipelagos*. Esta página presenta una breve descripción y un enlace al proyecto, junto con extractos de audio, visuales y otros elementos multimedia pertinentes. Esta página también proporciona (una versión curada de) el diálogo entre los autores del sitio y los revisores por pares.
+*archipelagos* acepta contribuciones a través de varias modalidades: ensayos críticos, ensayos de proceso, diálogos sobre proyectos digitales y reseñas de proyectos digitales. Nuestro proceso de revisión para proyectos digitales está diseñado según el [modelo de DHCommons](http://dhcommons.org/journal/submission-guidelines), con algunas adiciones y revisiones. Una vez que se completa la revisión por pares, los proyectos se "lanzan" a través de una página dedicada en la plataforma *archipelagos*. Esta página presenta una breve descripción y un enlace al proyecto, junto con extractos de audio, visuales y otros elementos multimedia pertinentes. Esta página también proporciona (una versión curada de) el diálogo entre los autores del sitio y los revisores por pares. Solicitamos que los proyectos digitales enviados a revisión cuenten con un mínimo de dos años de soporte post-beta, y alentamos a los evaluadores a permanecer atentos a qué tan consciente es el equipo del proyecto respecto de su propio ciclo de vida. Para conocer los requisitos de envío y los plazos de revisión específicos de cada modalidad, consulte la sección correspondiente en nuestra página [Acerca de](about.html#modalidades).
 
-La revisión del proyecto ocurre en dos fases:
+### Ensayos críticos
 
-1. Los autores envían una Declaración de proyecto que consta de un resumen de 350 a 500 palabras. Los revisores ofrecerán comentarios iniciales dentro de cuatro a seis semanas.
-2. Los autores responden a los comentarios de los revisores en una narrativa de 1000 a 1200 palabras y proporcionan un enlace a un sitio beta navegable para la revisión final.
+Se espera que nuestros evaluadores mantengan los más altos estándares académicos en la revisión de artículos académicos para su publicación en *archipelagos*.
 
-Los editores sintetizan los comentarios de los revisores y la respuesta del autor para su publicación final en una página dedicada al proyecto. 
+Por favor, responda las siguientes preguntas con la elaboración que considere necesaria para el beneficio del autor y/o los editores.
 
-Nuestras pautas de revisión se dividen en cuatro categorías: Contribución, Crédito, Diseño y Preservación.
+1. ¿Es la contribución coherente, está bien estructurada y se presenta con claridad?
+2. Dado que muchos de nuestros artículos son ricos en medios —vinculando argumentos en prosa retóricamente a elementos visuales—, pedimos a nuestros evaluadores que también proporcionen retroalimentación sobre las figuras, imágenes e interactivos utilizados en los artículos. Si la contribución incluye materiales visuales, ¿qué tan efectivamente están integrados en el argumento? ¿Hay demasiadas imágenes? ¿Muy pocas?
+3. ¿Hace la contribución una aportación nueva y significativa que tenga relevancia para una plataforma caribeña de crítica?
+4. ¿Muestra la contribución el tipo de replanteamiento crítico que es coherente con el proyecto _archipelagos_?
+5. ¿Muestra la contribución un conocimiento de la literatura existente sobre el tema y contribuye a su examen crítico?
+6. Estamos especialmente interesados en contribuciones que ofrezcan una idea clara de lo que está en juego en sus intervenciones conceptuales y analíticas. ¿Recomienda usted aceptar esta contribución? ¿Aceptarla con revisiones? ¿Rechazarla?
 
-### Contribución
+### Ensayos de proceso
 
-Solicitamos a los revisores que evalúen cuidadosamente la contribución intelectual de facto o posible del proyecto. Los revisores deben considerar la naturaleza de esa contribución apropiada para la etapa actual del desarrollo del proyecto y considerar indicios de nuevo conocimiento derivados del proceso; la relación del proyecto con la literatura/proyectos existentes; y/o conversaciones tempranas en la literatura sobre el proyecto (cuando corresponda)
+Por favor, responda las siguientes preguntas con la elaboración que considere necesaria para el beneficio del autor y/o los editores.
 
-- ¿El proyecto enmarcará nuevas conversaciones en el área temática relevante? 
-- ¿Los métodos utilizados en el proyecto son apropiados para las preguntas de investigación que plantea?
-- ¿Los métodos del proyecto contribuyen a la investigación digital en general, y si es así, cómo?
+1. ¿Es la contribución coherente, está bien estructurada y se presenta con claridad?
+2. Pedimos a los evaluadores que sopesen cuidadosamente la contribución intelectual real o posible del proyecto descrito. Los evaluadores deben considerar la naturaleza de esa contribución en función de la etapa actual de desarrollo del proyecto, y tener en cuenta los primeros indicios del conocimiento derivado del proceso; la relación del proyecto con la literatura y proyectos existentes; y/o las primeras conversaciones en la literatura sobre el proyecto (cuando corresponda).
 
-### Crédito
+   - ¿Son los métodos utilizados en el proyecto apropiados para las preguntas de investigación que plantea?
+   - ¿Contribuyen los métodos del proyecto a la investigación digital en general y, si es así, abordan los autores cómo lo hacen?
 
-Pedimos a los revisores que sean conscientes del trabajo que se dedicó a la realización del proyecto digital. Los proyectos digitales generalmente dependen de una colaboración más distribuida que las monografías o artículos. *archipelagos* fomenta la acreditación del trabajo donde se debe y el reconocimiento del trabajo académico e interpretativo involucrado en la conservación de datos, el diseño y la ingeniería de proyectos digitales. Los revisores deben hacer las siguientes preguntas de un proyecto:
+3. Pedimos a los evaluadores que sean conscientes del trabajo que conlleva el desarrollo de un proyecto digital. _archipelagos_ fomenta el reconocimiento del trabajo cuando este es merecido y el reconocimiento del trabajo académico e interpretativo que implica la curaduría de datos, el diseño y la ingeniería de proyectos digitales. Los evaluadores deben hacer las siguientes preguntas sobre un proyecto:
 
-- ¿El proyecto acredita a sus contribuyentes de manera abierta y justa?
-- ¿Son evidentes las condiciones laborales bajo las cuales se produjo el proyecto?
-- ¿Cita el trabajo sus antecedentes (otros proyectos digitales) y fuentes de datos de manera apropiada?
+   - ¿Abordan los autores cómo se gestiona la atribución de las contribuciones?
+   - ¿Se hacen evidentes las condiciones laborales bajo las cuales se produjo (o se está produciendo) el proyecto?
+   - ¿Cita el trabajo sus precedentes (en investigación digital) y fuentes de datos de manera apropiada?
 
-### Diseño
+4. Al considerar el ciclo de vida de un proyecto de investigación digital, los evaluadores no deben contemplar la preservación en términos de períodos de tiempo indefinidos. Animamos a los autores a ser realistas sobre la tasa de deterioro plausible de sus proyectos y a tener planes para gestionar la obsolescencia de las tecnologías que utilizan. Animamos a nuestros evaluadores, por tanto, a buscar indicios de que el equipo del proyecto ha pensado en el futuro del mismo. Las posibles preguntas son:
 
-Aunque el diseño constituye una categoría separada de revisión, solicitamos a los revisores que comprendan el diseño en términos de su relación con la supuesta contribución intelectual de un proyecto dado. Para *archipelagos*, el diseño incluye arquitectura de base (back-end), flujo de trabajo y diseño de interfaz (front-end). Solicitamos a los revisores que consideren la estructura general temporal y técnica de un proyecto y cómo esta estructura se relaciona con los objetivos del proyecto. Un revisor puede hacer preguntas como:
+   - ¿Qué estándares se han utilizado y por qué?
+   - ¿Cómo gestiona el proyecto su tasa de deterioro?
+   - ¿Es el nivel de complejidad del proyecto apropiado para su contexto sociotécnico o institucional?
 
-- ¿Cómo coinciden el esfuerzo y los recursos utilizados en el proyecto con su importación?
-- ¿Cómo contribuyen los elementos de diseño gráfico y UX del front end a los objetivos de la contribución intelectual? (Al considerar el diseño orientado al público, los revisores no deben asignar un peso indebido a la "facilidad de uso" o al "diseño brillante", sino más bien considerar si las características del proyecto se ajustan a la misión intelectual del proyecto y los recursos que el equipo del proyecto tenía a su disposición.)
-- ¿Cómo la arquitectura de fondo obstaculiza o avanza la contribución del proyecto y tal vez lo vincula con los proyectos de becas digitales existentes?
+5. Dado que muchos de nuestros artículos son ricos en medios —vinculando argumentos en prosa retóricamente a elementos visuales—, pedimos a nuestros evaluadores que también proporcionen retroalimentación sobre las figuras, imágenes e interactivos utilizados en los artículos. Si la contribución incluye materiales visuales, ¿qué tan efectivamente están integrados en el argumento? ¿Hay demasiadas imágenes? ¿Muy pocas?
 
-### Preservación
+6. ¿Muestra la contribución el tipo de replanteamiento crítico que es coherente con el proyecto _archipelagos_?
 
-Al considerar el ciclo de vida de un proyecto de beca digital, los revisores no deben considerar la preservación en términos de períodos de tiempo indefinidos. Preferimos que los autores ser realistas sobre la tasa plausible de la decadencia de sus proyectos y tener planes en marcha para gestionar la obsolescencia de las tecnologías que utilizan. Damos la bienvenida a proyectos con un mínimo de dos años de soporte post-beta. Por lo tanto, alentamos a nuestros revisores a buscar signos de que el equipo del proyecto haya considerado el futuro del proyecto. Las posibles preguntas son:
+7. Estamos especialmente interesados en contribuciones que ofrezcan una idea clara de lo que está en juego en sus intervenciones conceptuales y analíticas. ¿Recomienda usted aceptar esta contribución? ¿Aceptarla con revisiones? ¿Rechazarla?
 
-- ¿Qué estándares se han utilizado y por qué?
-- ¿Qué tan robusta es la documentación del proyecto? ¿Se podría descomponer y recomponer el proyecto en función de esta documentación?
-- ¿Cómo gestiona el proyecto su tasa de descomposición?
-- ¿El nivel de complejidad del proyecto es apropiado para su contexto sociotécnico o institucional?
-- ¿Cuán consciente es el equipo del proyecto con respecto al ciclo de vida del proyecto?
+### Diálogos sobre proyectos digitales
 
----
+Por favor, responda las siguientes preguntas con la elaboración que considere necesaria para el beneficio del autor y/o los editores.
 
-## Revisión de artículos: una breve nota
+1. Pedimos a los evaluadores que sopesen cuidadosamente la contribución intelectual real o posible del proyecto. Los evaluadores deben considerar la naturaleza de esa contribución en función de la etapa actual de desarrollo del proyecto, y tener en cuenta los primeros indicios del conocimiento derivado del proceso; la relación del proyecto con la literatura y proyectos existentes; y/o las primeras conversaciones en la literatura sobre el proyecto (cuando corresponda).
 
-Se espera que nuestros revisores mantengan los más altos estándares académicos en la revisión de artículos académicos para su publicación en *archipelagos*. Dado que muchos de nuestros artículos son ricos en medios (vinculando retóricamente los argumentos en prosa a las imágenes), les pedimos a nuestros revisores que también den su opinión sobre las figuras, imágenes e interactivos utilizados en los artículos.
+   - ¿Planteará el proyecto nuevas conversaciones en el área temática relevante?
+   - ¿Son los métodos utilizados en el proyecto apropiados para las preguntas de investigación que plantea?
+   - ¿Contribuyen los métodos del proyecto a la investigación digital en general y, si es así, cómo?
 
+2. Pedimos a los evaluadores que sean conscientes del trabajo que conlleva el desarrollo de un proyecto digital. Los proyectos digitales generalmente dependen de una colaboración más distribuida que las monografías o los artículos. _archipelagos_ fomenta el reconocimiento del trabajo cuando este es merecido y el reconocimiento del trabajo académico e interpretativo que implica la curaduría de datos, el diseño y la ingeniería de proyectos digitales. Los evaluadores deben hacer las siguientes preguntas sobre un proyecto:
+
+   - ¿Acredita el proyecto a sus colaboradores de manera abierta y justa?
+   - ¿Se hacen evidentes las condiciones laborales bajo las cuales se produjo el proyecto?
+   - ¿Cita el trabajo sus precedentes (en investigación digital) y fuentes de datos de manera apropiada?
+
+3. Aunque el diseño constituye una categoría separada de revisión, pedimos a los evaluadores que entiendan el diseño en términos de su relación con la contribución intelectual supuesta de un proyecto determinado. Para archipelagos, el diseño incluye la arquitectura del back-end, el flujo de trabajo y el diseño de la interfaz del front-end. Pedimos a los evaluadores que consideren la estructura temporal y técnica general de un proyecto y cómo esta estructura se relaciona con los objetivos del mismo. Un evaluador puede hacer preguntas como:
+
+   - ¿Cómo se adecúan el esfuerzo y los recursos utilizados en el proyecto a su importancia?
+   - ¿Cómo contribuyen los elementos de diseño gráfico y UX del front-end a los objetivos de la contribución intelectual? (Al considerar el diseño público, los evaluadores no deben dar excesivo peso a la "facilidad de uso" o al "diseño atractivo", sino considerar si las características del proyecto se ajustan a la misión intelectual del proyecto y a los recursos disponibles para el equipo.)
+   - ¿Cómo obstaculiza o impulsa la arquitectura del back-end la contribución del proyecto y quizás lo vincula a proyectos existentes de investigación digital?
+
+4. Al considerar el ciclo de vida de un proyecto de investigación digital, los evaluadores no deben contemplar la preservación en términos de períodos de tiempo indefinidos. Animamos a los autores a ser realistas sobre la tasa de deterioro plausible de sus proyectos y a tener planes para gestionar la obsolescencia de las tecnologías que utilizan. Animamos a nuestros evaluadores, por tanto, a buscar indicios de que el equipo del proyecto ha pensado en el futuro del mismo. Las posibles preguntas son:
+
+   - ¿Qué estándares se han utilizado y por qué?
+   - ¿Qué tan sólida es la documentación del proyecto? ¿Podría descomponerse y recomponerse el proyecto a partir de esa documentación?
+   - ¿Cómo gestiona el proyecto su tasa de deterioro?
+   - ¿Es el nivel de complejidad del proyecto apropiado para su contexto sociotécnico o institucional?
+
+5. ¿Muestra la contribución el tipo de replanteamiento crítico que es coherente con el proyecto _archipelagos_?
+
+6. Estamos especialmente interesados en contribuciones que ofrezcan una idea clara de lo que está en juego en sus intervenciones conceptuales y analíticas. ¿Recomienda usted aceptar esta contribución? ¿Aceptarla con revisiones? ¿Rechazarla?
+
+### Reseñas de proyectos digitales
+
+Por favor, responda las siguientes preguntas con la elaboración que considere necesaria al escribir sobre un proyecto.
+
+1. ¿Es la contribución coherente, está bien estructurada y se presenta con claridad?
+
+2. Pedimos a los evaluadores que sopesen cuidadosamente la contribución intelectual real o posible del proyecto. Los evaluadores deben considerar la naturaleza de esa contribución en función de la etapa actual de desarrollo del proyecto, y tener en cuenta los primeros indicios del conocimiento derivado del proceso; la relación del proyecto con la literatura y proyectos existentes; y/o las primeras conversaciones en la literatura sobre el proyecto (cuando corresponda).
+
+   - ¿Planteará el proyecto nuevas conversaciones en el área temática relevante?
+   - ¿Son los métodos utilizados en el proyecto apropiados para las preguntas de investigación que plantea?
+   - ¿Contribuyen los métodos del proyecto a la investigación digital en general y, si es así, cómo?
+
+3. Pedimos a los evaluadores que sean conscientes del trabajo que conlleva el desarrollo de un proyecto digital. Los proyectos digitales generalmente dependen de una colaboración más distribuida que las monografías o los artículos. _archipelagos_ fomenta el reconocimiento del trabajo cuando este es merecido y el reconocimiento del trabajo académico e interpretativo que implica la curaduría de datos, el diseño y la ingeniería de proyectos digitales. Los evaluadores deben hacer las siguientes preguntas sobre un proyecto:
+
+   - ¿Acredita el proyecto a sus colaboradores de manera abierta y justa?
+   - ¿Se hacen evidentes las condiciones laborales bajo las cuales se produjo el proyecto?
+   - ¿Cita el trabajo sus precedentes (en investigación digital) y fuentes de datos de manera apropiada?
+
+4. Al considerar el ciclo de vida de un proyecto de investigación digital, ¿es el proyecto reseñado realista sobre la tasa de deterioro plausible de sus proyectos y cuenta con planes para gestionar la obsolescencia de las tecnologías que utiliza? Animamos a nuestros evaluadores, por tanto, a buscar indicios de que el equipo del proyecto ha pensado en el futuro del mismo. Las posibles preguntas son:
+
+   - ¿Qué estándares se han utilizado y por qué?
+   - ¿Qué tan sólida es la documentación del proyecto? ¿Podría descomponerse y recomponerse el proyecto a partir de esa documentación?
+   - ¿Cómo gestiona el proyecto su tasa de deterioro?
+   - ¿Es el nivel de complejidad del proyecto apropiado para su contexto sociotécnico o institucional?
+
+5. ¿Muestra el proyecto reseñado el tipo de replanteamiento crítico que es coherente con el proyecto _archipelagos_? Estamos especialmente interesados en reseñas de proyectos que ofrezcan una idea clara de lo que está en juego en sus intervenciones conceptuales y analíticas.
