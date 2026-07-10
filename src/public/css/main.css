@@ -1341,6 +1341,16 @@ p.audio-title {
   font-size: .66rem;
 }
 
+/* Table of contents ([[toc]] in markdown, see .eleventy.js) */
+
+/* markdown-it-toc-done-right emits an empty <ul></ul> for headings whose
+   own children fall outside the TOC's level range (e.g. a level-3 heading
+   whose only subsections are level 4) -- hide it rather than let its
+   default browser margin show as a blank line in the list. */
+.table-of-contents ul:empty {
+  display: none;
+}
+
 
 
 
