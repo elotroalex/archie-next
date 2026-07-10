@@ -7,7 +7,7 @@
 {% for art in issueArticles %}
   {% if art.data.section == "introduction" %}
   <li>
-    <a href="{{ art.url | url }}">
+    <a href="{{ art.url | localizeUrl(lang) | url }}">
       <span class="toc-title">{{ art.data.title | mdInline | safe if art.data.title is string else art.data.title.long | mdInline | safe }}</span>
     </a><br>
     <span class="byline">{% set author = art.data.author %}{% include "author-loop.njk" %}</span>
@@ -21,7 +21,7 @@
 {% for art in issueArticles %}
   {% if art.data.section == "articles" %}
   <li>
-    <a href="{{ art.url | url }}">
+    <a href="{{ art.url | localizeUrl(lang) | url }}">
       <span class="toc-title">{{ art.data.title | mdInline | safe if art.data.title is string else art.data.title.long | mdInline | safe }}</span>
     </a><br>
     <span class="byline">{% set author = art.data.author %}{% include "author-loop.njk" %}</span>
@@ -54,12 +54,12 @@
 {% for art in issueArticles %}
   {% if art.data.section == "projects" %}
   <li>
-    <a href="{{ art.url | url }}">
+    <a href="{{ art.url | localizeUrl(lang) | url }}">
       <span class="toc-title">{{ art.data.title | mdInline | safe if art.data.title is string else art.data.title.long | mdInline | safe }}</span>
     </a><br>
     <span class="byline">{% set author = art.data.author %}{% include "author-loop.njk" %}</span><br>
     {% if art.data.layout == "project" %}
-      <a class="alt-link" href="{{ art.url | url }}">{{ i18n[lang].global["read-exchange"] }}</a><span class="alt-link"> | </span><a class="alt-link" href="{{ art.data.link }}" target="_blank">{{ i18n[lang].global["visit-project"] }}</a>
+      <a class="alt-link" href="{{ art.url | localizeUrl(lang) | url }}">{{ i18n[lang].global["read-exchange"] }}</a><span class="alt-link"> | </span><a class="alt-link" href="{{ art.data.link }}" target="_blank">{{ i18n[lang].global["visit-project"] }}</a>
       <a class="alt-link" href="{{ art.data.link }}" target="_blank"><img class="project-image-toc" alt="thumbnail for {{ art.data.title.long }}" src="{{ ('/' + art.data.thumb) | url }}" width="33%" /></a>
     {% endif %}
     {% if art.data.layout == "article" %}
@@ -76,7 +76,7 @@
 {% for art in issueArticles %}
   {% if art.data.section == "reviews" %}
   <li>
-    <a href="{{ art.url | url }}">
+    <a href="{{ art.url | localizeUrl(lang) | url }}">
       <span class="toc-title">{{ art.data.title | mdInline | safe if art.data.title is string else art.data.title.long | mdInline | safe }}</span>
     </a><br>
     <span class="byline">{% set author = art.data.author %}{% include "author-loop.njk" %}</span>

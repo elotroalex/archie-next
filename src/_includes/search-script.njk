@@ -13,6 +13,17 @@
     resultsForPlural:{{ (i18n[lang].search.results_for_plural or 'results for')                      | dump | safe }},
   };
 
+  // search-index.json stores raw canonical (English) paths -- localize
+  // each result's href to the language of the search page it's rendered
+  // on, the same fix as the localizeUrl filter applied server-side in
+  // toc.njk (see .eleventy.js).
+  var pathPrefix = {{ ('/' | url) | dump | safe }};
+  var langPrefix = {{ (('/' + lang) if lang != 'en' else '') | dump | safe }};
+  function localizedHref(canonicalPath) {
+    var pp = pathPrefix === '/' ? '' : pathPrefix.replace(/\/$/, '');
+    return pp + langPrefix + canonicalPath;
+  }
+
   fetch('{{ '/search-index.json' | url }}')
     .then(function (r) { return r.json(); })
     .then(function (data) {
@@ -83,7 +94,7 @@
       var snip = excerpt(d.abstract || '', q);
       var section = sectionLabel(d.section);
       return '<div class="search-result">' +
-        '<h2 class="search-result-title"><a href="' + d.url + '">' + d.title + '</a></h2>' +
+        '<h2 class="search-result-title"><a href="' + localizedHref(d.url) + '">' + d.title + '</a></h2>' +
         (d.authors ? '<p class="search-result-meta">' + d.authors + '</p>' : '') +
         '<p class="search-result-meta">Issue ' + d.issue +
           (d.pubDate ? ' &middot; ' + d.pubDate : '') +

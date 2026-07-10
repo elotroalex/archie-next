@@ -34,8 +34,6 @@ class SearchIndex {
   }
 
   render({ collections }) {
-    const pathPrefix = process.env.ELEVENTY_PATH_PREFIX || "/";
-    const prefixUrl = (u) => pathPrefix === "/" ? u : pathPrefix.replace(/\/$/, "") + u;
     const index = (collections.allIssueArticles || []).map((item) => {
       const raw = stripHtml(item.templateContent || "");
       return {
@@ -47,7 +45,13 @@ class SearchIndex {
         section: item.data.section || "",
         pubDate: item.data.pubDate || "",
         lang: item.data.language || "en",
-        url: prefixUrl(item.url),
+        // Raw canonical (English) path, e.g. "/issue09/daut.html" -- NOT
+        // prefixed with pathPrefix or a language here. search-script.njk
+        // builds the final href client-side so it can localize the link
+        // to whichever language's search page produced the result (see
+        // the localizeUrl filter in .eleventy.js for the server-side
+        // equivalent of this same fix in toc.njk).
+        url: item.url,
         content: filterStops(raw),
       };
     });

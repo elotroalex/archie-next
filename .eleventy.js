@@ -130,6 +130,20 @@ module.exports = function (eleventyConfig) {
     return `${prefix}/${issueSlug}.html`;
   });
 
+  // Localize a canonical (English) article/project URL for the current
+  // page's language. Needed because collections[issueTag] and
+  // collections.allIssueArticles only contain the original English-tagged
+  // pages (the es/fr variants are deliberately excluded via
+  // addAllPagesToCollections: false so those collections stay a clean
+  // "canonical English source" list for search-index/check-issue) --
+  // meaning art.url inside a shared include like toc.njk is always the
+  // English path regardless of which language page it's rendered on.
+  // Usage: {{ art.url | localizeUrl(lang) | url }}
+  eleventyConfig.addFilter("localizeUrl", function (canonicalUrl, lang) {
+    const prefix = lang === "es" || lang === "fr" ? `/${lang}` : "";
+    return `${prefix}${canonicalUrl}`;
+  });
+
   // Render markdown block (with <p> tags) — for author bios
   eleventyConfig.addFilter("markdown", function (str) {
     if (!str) return "";
