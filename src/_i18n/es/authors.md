@@ -86,7 +86,7 @@ url="http://optional-url.com"
 
 `caption` y `alt` son obligatorios; `url` es opcional. Si alguno necesita incluir comillas, escápelas con una barra invertida, por ejemplo: `caption="Ella dijo \"hola\" a la cámara"`.
 
-_¿Todavía no ha insertado su imagen?_ Si aún está esperando una foto o gráfico definitivo, puede dejar un marcador de posición en lugar de insertarla: escriba la misma rúbrica anterior, pero agregue una línea más _arriba_ de las demás con el nombre de archivo que eventualmente nos enviará, y envíenos ese archivo por separado:
+_¿Todavía no ha insertado su imagen? ¿Está enviando su archivo en Markdown?_ Si aún está esperando una foto o gráfico definitivo, puede dejar un marcador de posición en lugar de insertarla: escriba la misma rúbrica anterior, pero agregue una línea más _arriba_ de las demás con el nombre de archivo que eventualmente nos enviará, y envíenos ese archivo por separado:
 
 ```text
 img="my-image.jpg"
