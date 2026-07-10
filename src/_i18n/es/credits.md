@@ -10,7 +10,9 @@ permalink: es/credits.html
 
 ### Editora gerente
 
-[Soraya Limare](#soraya-limare--asistente-editorial)
+[Isabella García Bernstein](#isabella-garcia-bernstein--editora-gerente)
+
+<!-- [Soraya Limare](#soraya-limare--asistente-editorial) -->
 
 ### Producción | Diseño
 [Juliet Ali](#juliet-ali--diseñadora)\\
@@ -29,23 +31,21 @@ permalink: es/credits.html
 [Vincent Brown](#vincent-brown--consejo-editorial)  
 [Laurie Taylor](#laurie-taylor--consejo-editorial)
 
-### Publicado por
+### Antiguos miembros del equipo
 
-[Digital Scholarship at Columbia](https://library.columbia.edu/services/digital-scholarship.html)
-
-### Apoyo institucional de
-
-[Columbia group for experimental methods in the humanities](http://xpmethod.plaintext.in/) (xpmethod)\\
-Columbia University Libraries
+Winnie Pérez Martínez | editora gerente (2022-2026)\\
+Soraya Limare | editora gerente (2020-2022)
 
 ### Agradecimiento especial a
 
 *archipelagos* is particularly grateful for the support we received from the National Endowment for the Humanities. Through its Digital Start-Up Grant program, the NEH provided much-needed resources for the multiple valences of experimentation and innovation undergirding this platform.
 
-### Patrocinadores
+### Patrocinadores pasados y presentes
 NEH Office of Digital Humanities\\
 Columbia University Center for the Study of Social Difference\\
-Barnard Committee on Online and On-Campus Learning
+Barnard Committee on Online and On-Campus Learning\\
+Columbia University Libraries\\
+Yale University Faculty of Arts and Sciences
 
 ---
 
@@ -57,9 +57,9 @@ Barnard Committee on Online and On-Campus Learning
 ### Alex Gil | editor
 [Alex Gil](http://www.elotroalex.com) is Senior Lecturer II and Associate Research Faculty of Digital Humanities in the Department of Spanish and Portuguese at Yale University, where he teaches introductory and advanced courses in digital humanities, and runs project-based learning and collective research initiatives. Before joining Yale, Alex served for ten years as Digital Scholarship Librarian at Columbia University, where he co-created and nurtured the Butler Studio and the Group for Experimental Methods in Humanistic Research. His research interests include Caribbean culture and history, digital humanities and technology design for different infrastructural and socio-economic environments, and the ownership and material extent of the cultural and scholarly record. 
 
-### Soraya Limare | asistente editorial
+### Isabella Garcia Bernstein | editora gerente
 
-Soraya Limare graduated from Ecole Normale Supérieure-Ulm and is now a PhD candidate at Columbia University in the department of French and Romance Philology. Her research focuses on francophone literature from the Caribbean. 
+Isabella Maganda Garcia Bernstein es una estudiante de doctorado filipino-estadounidense en el Departamento de Español y Portugués de la Universidad de Yale, donde se especializa en literatura y cultura hispanofilipina de los siglos XIX y XX. Isabella es beneficiaria de las becas Race, Indigeneity, and Transnational Migration (RITM) y Richard J. Franke de Yale. Su investigación se centra en la representación colonial de Filipinas y la noción geopolítica de "Asia Hispánica" en los contextos urbanos de Manila, Hong Kong, La Habana, Madrid y Barcelona. Con interés en la sociología de la novela y los estudios de traducción en la Iberia Global, Isabella está deseosa de explorar conceptualizaciones de género del orientalismo y el mestizaje. Otros intereses de investigación incluyen la literatura gótica tropical, el periodismo, la identidad nacional filipina, la migración transnacional y los estudios catalanes. Isabella se dedica a fomentar el empoderamiento educativo y la alfabetización multicultural. 
 
 ---
 
