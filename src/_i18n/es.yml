@@ -40,6 +40,7 @@ titles:
   valences: "modalidades"
   search: "búsqueda"
   cfp: "convocatoria de artículos"
+  not_found: "página no encontrada"
 
 search:
   placeholder: "Buscar artículos, autores, resúmenes…"

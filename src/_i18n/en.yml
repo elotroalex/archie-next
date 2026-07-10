@@ -51,6 +51,7 @@ titles:
   valences: "valences"
   search: "search"
   cfp: "call for papers"
+  not_found: "page not found"
 
 search:
   placeholder: "Search articles, authors, abstracts…"

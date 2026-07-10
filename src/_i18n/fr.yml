@@ -41,6 +41,7 @@ titles:
   valences: "valences"
   search: "recherche"
   cfp: "appel à communications"
+  not_found: "page non trouvée"
 
 search:
   placeholder: "Rechercher des articles, auteurs, résumés…"
