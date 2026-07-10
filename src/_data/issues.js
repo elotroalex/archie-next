@@ -100,7 +100,7 @@ module.exports = {
     editors: ["Kaiama Glover", "Alex Gil"],
     production: ["Alex Gil", "Brian Ballsun-Stanton", "Winnie E. Pérez Martínez"],
   },
-    issue09: {
+  issue09: {
     slug: "issue09",
     slug_fr: "fr/issue09",
     slug_es: "es/issue09",

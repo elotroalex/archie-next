@@ -1,4 +1,5 @@
 const fs = require("fs");
+const path = require("path");
 const markdownIt = require("markdown-it");
 const markdownItFootnote = require("markdown-it-footnote");
 const markdownItAttrs = require("markdown-it-attrs");
@@ -39,11 +40,18 @@ module.exports = function (eleventyConfig) {
     }
   }
 
-  // HTML interactives — pass through untouched, do not template-process
-  eleventyConfig.addPassthroughCopy({ "src/issue03/parham": "issue03/parham" });
-  eleventyConfig.addPassthroughCopy({ "src/issue03/parham-process": "issue03/parham-process" });
-  eleventyConfig.ignores.add("src/issue03/parham/**");
-  eleventyConfig.ignores.add("src/issue03/parham-process/**");
+  // HTML interactives (pure-HTML pieces like the Parham essay) — pass
+  // through untouched, do not template-process. Derived from each issue's
+  // `interactives` array in issues.js (the directory is the parent of the
+  // interactive's `url`), so a future issue with its own interactive needs
+  // no changes here.
+  for (const key of Object.keys(issues)) {
+    for (const interactive of issues[key].interactives || []) {
+      const dir = path.dirname(interactive.url).replace(/^\/+/, "");
+      eleventyConfig.addPassthroughCopy({ [`src/${dir}`]: dir });
+      eleventyConfig.ignores.add(`src/${dir}/**`);
+    }
+  }
 
   // --- Collections ---
 
@@ -78,35 +86,39 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setLibrary("md", md);
 
+  // Both accessibility-label transforms below share the same "only touch
+  // built HTML, and Eleventy doesn't thread page.lang into markdown-it's
+  // render env so read it off `this.lang` in a transform instead" shape —
+  // factored out so the two labeling rules stay obviously parallel.
+  function addI18nHtmlTransform(name, i18nKey, fallback, pattern, replacement) {
+    eleventyConfig.addTransform(name, function (content, outputPath) {
+      if (!outputPath || !outputPath.endsWith(".html")) return content;
+      const lang = this.lang || "en";
+      const label = (i18n[lang] && i18n[lang].global[i18nKey]) || fallback;
+      return content.replace(pattern, replacement(label));
+    });
+  }
+
   // markdown-it-footnote's default backref markup is just an arrow glyph
-  // (<a href="#fnrefN" class="footnote-backref">↩︎</a>) with no accessible
-  // name. This can't be fixed at the markdown-it/env level because Eleventy
-  // doesn't thread the current page's `lang` into markdown-it's render env,
-  // so it's done here instead as a post-render transform, where `this.lang`
-  // is available from the page's data cascade.
-  eleventyConfig.addTransform("footnote-backref-label", function (content, outputPath) {
-    if (!outputPath || !outputPath.endsWith(".html")) return content;
-    const lang = this.lang || "en";
-    const label = (i18n[lang] && i18n[lang].global.footnote_backref_label) || "Back to content";
-    return content.replace(
-      /(<a href="#fnref\d+" class="footnote-backref")(>)/g,
-      `$1 aria-label="${label}"$2`
-    );
-  });
+  // (<a href="#fnrefN" class="footnote-backref">↩︎</a>) with no accessible name.
+  addI18nHtmlTransform(
+    "footnote-backref-label",
+    "footnote_backref_label",
+    "Back to content",
+    /(<a href="#fnref\d+" class="footnote-backref")(>)/g,
+    (label) => `$1 aria-label="${label}"$2`
+  );
 
   // markdown-it-toc-done-right's <nav class="table-of-contents"> has no
   // accessible name, which collides with the sidebar's own <nav> landmark
-  // (two unlabeled <nav> regions on one page). Same lang-threading problem
-  // and same fix as the footnote backref label above.
-  eleventyConfig.addTransform("toc-nav-label", function (content, outputPath) {
-    if (!outputPath || !outputPath.endsWith(".html")) return content;
-    const lang = this.lang || "en";
-    const label = (i18n[lang] && i18n[lang].global.toc_label) || "Table of contents";
-    return content.replace(
-      /(<nav class="table-of-contents")(>)/g,
-      `$1 aria-label="${label}"$2`
-    );
-  });
+  // (two unlabeled <nav> regions on one page).
+  addI18nHtmlTransform(
+    "toc-nav-label",
+    "toc_label",
+    "Table of contents",
+    /(<nav class="table-of-contents")(>)/g,
+    (label) => `$1 aria-label="${label}"$2`
+  );
 
   // --- Custom filters ---
 
@@ -137,11 +149,6 @@ module.exports = function (eleventyConfig) {
     if (!i18n) return key;
     const dict = i18n[lang] || i18n["en"] || {};
     return key.split(".").reduce((obj, k) => (obj ? obj[k] : undefined), dict) ?? key;
-  });
-
-  // Format a date string like "July 2017" → keep as-is (already human-readable in front matter)
-  eleventyConfig.addFilter("dateDisplay", function (str) {
-    return str || "";
   });
 
   // Convert "Month YYYY" pubDate to YYYY/MM for citation_publication_date (Google Scholar format)
