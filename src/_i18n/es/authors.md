@@ -31,7 +31,7 @@ Contact: archipelagosjournal@gmail.com
 
 1. Las entregas de artículos individuales se aceptan de forma continua. También aceptamos propuestas para secciones temáticas.
 
-2. Las presentaciones de artículos deben incluir una biografía (o biografías para varios autores) y un resumen. Por favor colóquelos al final de su documento. Todo el contenido multimedia debe acompañar el envío inicial del artículo en un archivo zip o equivalente.
+2. Las presentaciones de artículos deben incluir una biografía (o biografías para varios autores) y un resumen. Por favor colóquelos al final de su documento. Las imágenes pueden insertarse directamente en su documento (véase [Imágenes](#images-guide) más abajo) — ya no es necesario enviarlas por separado. El video y el audio deben seguir enviándose como enlaces a un servicio de transmisión de su elección (véase [Video, sonido y medios interactivos](#interactive-media) más abajo).
 
 6. Somos una revista de acceso abierto. Si es aceptado para su publicación, recibirá una copia de nuestro [Acuerdo con el autor](https://archipelagosjournal.org/public/author-agreement.pdf).
 
@@ -47,26 +47,47 @@ Contact: archipelagosjournal@gmail.com
 
 
 
-*Formatos de Office (.odt, .doc, .docx)*: Para minimizar el trabajo necesario para convertir sus archivos a formato publicable, **asegúrese de seguir atentamente nuestras pautas**. Aquí una lista de soluciones específicas para el formato Office que harán que nuestra conversión de archivos funcione:
+*Formatos de Office (.odt, .doc, .docx)*: La mayor parte de la limpieza que hacemos a mano se debe a un puñado de hábitos de formato. Si sigue los puntos a continuación, su archivo se convertirá a nuestro formato de publicación casi automáticamente — le pedimos que los lea con atención.
 
-1. Utilice los estilos de Encabezado (es decir, Heading 2, Heading 3, etc.) para separar sus secciones, comenzando con el Encabezado 2. La indicación de encabezados usando negrita no funciona bien en nuestras transformaciones. No use negrita para encabezados.
-2. Adjunte enlaces al texto del cuerpo principal (en lugar de deletrearlos). En las notas al pie, deletree el enlace, pero también enlácelo como lo haría con el texto: `[ejemplo](http://example.com/)`
-3. Recuerde usar `http://` y `https://` en sus enlaces o no funcionarán.
-4. Asegúrese de utilizar comillas normales. Evite el uso de "comillas inteligentes".
-5. Para guiones, y dependiendo del tamaño de guion que desea, use un guion para guion sencillo, dos para guion corto (series de numeros o fechas) o, tres para guion largo. Respectivamente: `-`,`--` o `---`.
-6. No intente hacer su propio diseño en Word. Lo que ve, no es lo que obtenemos. Si necesita un diseño especial, descríbalo en prosa [entre corchetes].
-7. No inserte imágenes manualmente en el documento. Consulte nuestras pautas para las imágenes a continuación.
-8. No use campos de datos o tablas en Word. Consulte a continuación nuestros formatos de tabla aceptados.
+1. **Utilice los estilos de Encabezado integrados de Word para los títulos de sus secciones — nunca use negrita.** Aplique "Encabezado 2" (Heading 2, desde el menú Estilos) a su primera sección, y "Encabezado 3" (Heading 3) para cualquier subsección dentro de ella. El texto en negrita, subrayado o de mayor tamaño que solo está hecho para *parecer* un encabezado es invisible para nuestra herramienta de conversión — no tiene forma de distinguirlo de una palabra en negrita en medio de una oración, y las divisiones de sus secciones se perderán.
+
+   ![Comparación entre texto en negrita confundido con un encabezado y texto con el estilo Encabezado 2 de Word correctamente aplicado, para que las divisiones de sección se conviertan automáticamente](/public/images/authors-guide/heading-styles-es.png)
+
+2. **Enlace el texto directamente**, en lugar de escribir la URL completa dentro de la oración. En las notas al pie, haga ambas cosas — escriba el enlace completo *y* enlácelo, por ejemplo: [http://example.com](http://example.com/).
+3. **Incluya siempre `http://` o `https://`** al comienzo de un enlace, o no funcionará una vez convertido.
+4. **Desactive las "comillas inteligentes".** Utilice comillas rectas (`"` y `'`), no las curvas que Word inserta de forma predeterminada.
+5. **Use guiones simples**: un guion (`-`) para palabras compuestas, un guion medio (`--`) para rangos, una raya (`---`) para un corte en la oración.
+6. **No diseñe el documento usted mismo.** Las columnas, los cuadros de texto y el espaciado colocado manualmente no sobrevivirán la conversión. Si necesita algo con un diseño particular, descríbalo en prosa simple, [entre corchetes], y nosotros nos encargaremos del resto.
+7. **No use la herramienta de tablas ni los campos de datos de Word.** Consulte [Tablas](#tables) más abajo para conocer los formatos que aceptamos.
+8. **Inserte las imágenes directamente donde correspondan y luego agrégueles un pie de foto con una breve rúbrica.** Consulte [Imágenes](#images-guide) más abajo.
 
 *Markdown (.md)*: la publicación es, en muchos sentidos, un juego de conversiones de archivos de un formato a otro. Tanto nuestro sitio web como nuestros PDF se crean a partir de los mismos archivos de Markdown. Aceptamos con gusto los artículos esritos en texto sin formato (codificación UTF-8), utilizando el Markdown con [sintaxis Kramdown](http://kramdown.gettalong.org/syntax.html), y con la extensión .md. Esto nos ayudará a mantener nuestro flujo de trabajo ligero y nuestros tipos de archivos más cerca de la línea de producción, contribuyendo a su vez al control continuo de todos los aspectos de la producción de nuestra revista. Para obtener algunos antecedentes sobre nuestras opciones de infraestructura, y para comenzar con Markdown, tómese un tiempo para leer "[Sustainable Authorship in Plain Text using Pandoc and Markdown](http://programminghistorian.org/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown)", por Dennis Tenen y Grant Whytoff. Agradecemos sinceramente a quienes aceptan el desafío de cambiar sus hábitos de trabajo y les brindamos nuestra asistencia durante el proceso. Encontrará muchas herramientas de edición de Markdown disponibles, y la mayoría de los editores de texto plano son igualmente excelentes para manejar el mismo.
 
-#### Imagenes
+#### Imágenes {#images-guide}
 
-En *archipelagos* valoramos la riqueza de nuestra cultura visual. Si envía su propia fotografía, le pedimos que tenga en cuenta el marco, las armonías de color y otros elementos de diseño. Recuerde también que estos archivos pueden contener metadatos incrustados que es posible que no desee compartir con el público. Las imágenes que acompañan a sus documentos estarán expuestas al proceso de revisión por pares junto a su texto.
+En *archipelagos* valoramos la riqueza de nuestra cultura visual. Si envía su propia fotografía, tenga en cuenta el encuadre, las armonías de color y otros elementos de diseño. Recuerde también que los archivos de imagen pueden contener metadatos incrustados que quizás no desee publicar. Las imágenes están sujetas al proceso de revisión al igual que su texto.
 
-Proporcione imágenes nítidas con una resolución mínima de 144ppi y al menos 800 píxeles de ancho. Por favor envíe sus imágenes en formato JPG. Aceptamos PNG si la imagen tiene transparencias o está hecha de colores simples (es decir, un logotipo).
+Proporcione imágenes nítidas: una resolución mínima de 144ppi y al menos 800 píxeles de ancho. JPG es nuestro formato preferido; PNG está bien para imágenes con transparencia o colores planos simples (por ejemplo, un logotipo).
 
-Utilice la siguiente rúbrica en sus documentos, escriba cada carácter en el orden exacto y complete el contenido apropiado entre paréntesis (sin los paréntesis en la versión final), y coloque el conjunto donde desea que se inserten sus imágenes:
+**Inserte cada imagen directamente en su documento, en el lugar donde corresponda** — de la misma manera en que normalmente agregaría una imagen en Word (Insertar > Imágenes). Ya no necesita enviarnos las imágenes por separado en un archivo zip; nuestra herramienta de conversión las extrae automáticamente de su documento.
+
+Justo debajo de cada imagen, escriba tres líneas breves de texto plano — una línea en blanco (Enter) entre cada una, sin viñetas, y sin saltos de línea manuales en medio de una línea:
+
+~~~ text
+caption="insert caption here"
+alt="insert alt text here."
+url="http://optional-url.com"
+~~~
+
+![Diagrama de una foto insertada seguida de los campos de texto caption, alt y url (opcional), con cada campo explicado: caption se muestra a todos los lectores, alt lo leen los lectores de pantalla, url es un enlace opcional](/public/images/authors-guide/image-captioning-es.png)
+
+- **`caption`** se muestra a todos los lectores, impreso debajo de la imagen en el sitio y en el PDF.
+- **`alt`** lo leen en voz alta los lectores de pantalla. Describa lo que *hay* en la imagen — no repita simplemente el pie de foto.
+- **`url`** es opcional. Inclúyalo solo si la imagen misma debe enlazar a algún lugar, como su fuente original.
+
+`caption` y `alt` son obligatorios; `url` es opcional. Si alguno necesita incluir comillas, escápelas con una barra invertida, por ejemplo: `caption="Ella dijo \"hola\" a la cámara"`.
+
+*¿Todavía no ha insertado su imagen?* Si aún está esperando una foto o gráfico definitivo, puede dejar un marcador de posición en lugar de insertarla: escriba la misma rúbrica anterior, pero agregue una línea más *arriba* de las demás con el nombre de archivo que eventualmente nos enviará, y envíenos ese archivo por separado:
 
 ~~~ text
 img="my-image.jpg"
@@ -75,17 +96,15 @@ alt="insert alt text here."
 url="http://optional-url.com"
 ~~~
 
-Nótese bien: `img`, `caption` y `alt` son obligatorios; `url` es opcional y solo debe usarse cuando desee que la imagen apunte a un recurso específico. Cada línea debe estar en su propio párrafo (una línea en blanco entre ellas, sin saltos de línea manuales en medio de una). Si su descripción (caption) o texto alternativo (alt) necesita incluir comillas, escápelas con una barra invertida, por ejemplo: `caption="Ella dijo \"hola\" a la cámara"`.
+Si usa un marcador de posición, nombre el archivo con una o dos palabras clave separadas por un guion, sin espacios ni letras mayúsculas (por ejemplo, `harbor-sunset.jpg`) — esto pasa a formar parte de la dirección permanente del archivo en nuestro sitio.
 
-Le pedimos que nombre sus archivos de imagen utilizando una o dos palabras clave separadas por un guión como en el ejemplo anterior. **No use espacios o letras mayúsculas en su nombre de archivo**. Recuerde proporcionar texto de línea de crédito según sea necesario, particularmente para fotografías. El campo URL es opcional y solo debe usarlo si desea que el lector enlace desde su imagen a otra página en Internet. Estos archivos deben enviarse por separado junto con el documento de Office o el archivo Markdown.
-
-#### Video, sonido y medios interactivos
+#### Video, sonido y medios interactivos {#interactive-media}
 
 Para que nuestros artículos y reseñas estén disponibles en PDF, y para aumentar la longevidad de los archivos web, separamos los medios interactivos del texto estático y las imágenes. Para video y sonido, alentamos a nuestros autores a usar un servicio de transmisión de su elección (SoundCloud, YouTube, etc). Tenga en cuenta las preocupaciones de privacidad, estabilidad y derechos de autor al elegir la transmisión de video. Cuando sea necesario, podemos proporcionarle un Formulario de Acuerdo de Publicación Digital para usar con los dueños de derechos de autor.
 
 Dado que *archipelagos* nació de la necesidad de apoyar formas emergentes de investigación digital, también estamos abiertos a incluir medios interactivos (por ejemplo, mapas, visualizaciones) en nuestros artículos. Le pedimos que nos proporcione, siempre que sea posible, una versión de pantalla completa de sus medios interactivos alojados en otro lugar.
 
-Para incluir cualquiera de estos tipos de medios, le pedimos que nos envíe una captura de pantalla y el enlace apropiado al contenido separado. Utilice la misma rúbrica que la que usamos para las imágenes de arriba y coloque la rúbrica en el lugar del texto donde desea que aparezca el enlace de la captura de pantalla. La URL debe apuntar a la versión de pantalla completa (siempre que sea posible) de su medio interactivo, archivo de sonido o video. Siempre que sea apropiado, use una captura de pantalla con el botón de reproducción visible. Por ejemplo, si se trata de un video de YouTube, tome una captura de pantalla de la versión de pantalla completa con el botón de reproducción rojo y blanco en el centro.
+Para incluir cualquiera de estos tipos de medios, tome una captura de pantalla e insértela directamente en su documento como cualquier otra imagen (véase [Imágenes](#images-guide) más arriba), y luego use la misma rúbrica de caption/alt/url — con `url` apuntando a la versión de pantalla completa (siempre que sea posible) de su medio interactivo, archivo de sonido o video. Cuando sea apropiado, use una captura de pantalla con el botón de reproducción visible. Por ejemplo, si se trata de un video de YouTube, tome una captura de pantalla de la versión de pantalla completa con el botón de reproducción rojo y blanco en el centro.
 
 ### Enlaces
 
@@ -97,7 +116,7 @@ Asegúrese de que todos los enlaces externos e internos de su documento estén f
 
 Al compartir documentos externos, no se vincule a servicios de almacenamiento en la nube (por ejemplo, Dropbox, Google Docs) ni a fuentes de acceso cerrado. En estos casos, simplemente cite los documentos. Si tiene permiso para usarlos, puede enviarlos con sus archivos. Damos la bienvenida y alentamos los enlaces a repositorios institucionales abiertos.
 
-### Tablas
+### Tablas {#tables}
 
 Si desea que se muestre una tabla mientras lee su texto, puede enviarla como un archivo .csv (valores separados por comas) o escrito directamente en [kramdown/Markdown](http://kramdown.gettalong.org/syntax.html#tables), su formato final. En general, preferimos los formatos de tabla más simples. Evite los espacios en filas, por ejemplo. Si desea enviar una tabla más compleja, puede hacerlo como un PDF separado. Luego vincularíamos a la tabla desde el texto. 
 

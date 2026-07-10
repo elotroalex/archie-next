@@ -26,7 +26,7 @@ Toutes les soumissions doivent être conformes au [Chicago Manual of Style](http
 
 - Les soumissions d'articles individuels sont acceptées sur une base continue. Nous accueillons également les propositions de sections thématiques.
 
-- Les articles soumis doivent comprendre une biographie (ou une biographie pour plusieurs auteurs) et un résumé. Veuillez les placer au bas de votre document. Tout le contenu multimédia doit accompagner la soumission initiale de l'article dans un fichier zip ou équivalent.
+- Les articles soumis doivent comprendre une biographie (ou une biographie pour plusieurs auteurs) et un résumé. Veuillez les placer au bas de votre document. Les images peuvent être insérées directement dans votre document (voir [Images](#images-guide) ci-dessous) — vous n'avez plus besoin de les envoyer séparément. La vidéo et le son doivent toujours être envoyés sous forme de liens vers un service de streaming de votre choix (voir [Vidéo, son et médias interactifs](#interactive-media) ci-dessous).
 
 - Nous sommes un journal en libre accès. Si votre publication est acceptée, vous recevrez une copie de notre [contrat d\'auteur](http://archipelagosjournal.org/public/author-agreement.pdf).
 
@@ -40,26 +40,47 @@ Toutes les soumissions doivent être conformes au [Chicago Manual of Style](http
 
 #### Les documents
 
-Formats Office (.odt, .doc, .docx): Afin de minimiser le travail nécessaire à la conversion de vos fichiers en format publiable, **veillez à suivre scrupuleusement nos instructions**. Voici quelques éléments de formatage spécifiques qui rendront notre travail de conversion de fichier facile à gérer:
+Formats Office (.odt, .doc, .docx) : La plupart du travail de nettoyage que nous faisons à la main se résume à quelques habitudes de mise en forme. Si vous suivez les points ci-dessous, votre fichier se convertira presque automatiquement dans notre format de publication — merci de les lire attentivement.
 
-- Utilisez les styles de titre (par exemple, titre 2, titre 3, etc.) pour séparer vos sections, en commençant par le titre 2. Indiquer les titres en caractères gras ne se traduit pas bien dans nos transformations. Ne pas utiliser de gras pour les titres.
-- Attachez les liens au corps du texte (au lieu de les épeler). Dans les notes de bas de page, épelez le lien, mais faites-le également comme vous le feriez avec du texte: [http://example.com](http://example.com)
-- N'oubliez pas d'utiliser http: // et https: // sur vos liens, sinon ils ne fonctionneront pas.
-- Assurez-vous d'utiliser des guillemets normaux. Évitez d'utiliser des « citations intelligentes ».
-- Pour les traits d'union, tirets et em-tirets, utilisez respectivement: - - et ---.
-- N'essayez pas de faire votre propre mise en page sur Word. Ce que vous voyez n'est pas ce que nous obtenons. Si vous avez besoin d'une mise en page spéciale, décrivez-la en prose [entre parenthèses].
-- N'insérez pas d'images manuellement dans le document. Consultez nos directives pour les images ci-dessous.
-- N'utilisez pas de champs de données ni de tableaux dans Word. Veuillez voir ci-dessous nos formats de tableaux acceptés.
+1. **Utilisez les styles de titre intégrés de Word pour vos titres de section — jamais de texte en gras.** Appliquez « Titre 2 » (Heading 2, depuis le menu Styles) à votre première section, et « Titre 3 » (Heading 3) pour toute sous-section. Un texte en gras, souligné ou agrandi qui ne fait que *ressembler* à un titre est invisible pour notre outil de conversion — il n'a aucun moyen de le distinguer d'un mot en gras au milieu d'une phrase, et vos coupures de section seront perdues.
+
+   ![Comparaison entre un texte en gras confondu avec un titre et un texte avec le style Titre 2 de Word correctement appliqué, afin que les coupures de section se convertissent automatiquement](/public/images/authors-guide/heading-styles-fr.png)
+
+2. **Créez un hyperlien directement sur le texte du lien**, plutôt que d'épeler l'URL dans la phrase. Dans les notes de bas de page, faites les deux — épelez le lien *et* créez un hyperlien, par exemple : [http://example.com](http://example.com/).
+3. **Incluez toujours `http://` ou `https://`** au début d'un lien, sinon il ne fonctionnera pas une fois converti.
+4. **Désactivez les « guillemets intelligents ».** Utilisez des guillemets droits (`"` et `'`), pas les guillemets courbes que Word insère par défaut.
+5. **Utilisez des traits d'union et des tirets simples** : un trait d'union (`-`) pour les mots composés, un tiret demi-cadratin (`--`) pour les plages, un tiret cadratin (`---`) pour une rupture dans la phrase.
+6. **Ne mettez pas en page le document vous-même.** Les colonnes, les zones de texte et l'espacement placé manuellement ne survivront pas à la conversion. Si vous avez besoin d'une mise en page particulière, décrivez-la en prose simple, [entre crochets], et nous nous en chargerons.
+7. **N'utilisez pas l'outil de tableaux ni les champs de données de Word.** Voir [Tableaux](#tables) ci-dessous pour les formats que nous acceptons.
+8. **Insérez les images directement là où elles doivent apparaître, puis légendez-les avec une courte rubrique.** Voir [Images](#images-guide) ci-dessous.
 
 Markdown (.md): La publication est à bien des égards un jeu de conversion de fichiers. Notre site Web et nos fichiers PDF sont construits à partir des mêmes fichiers Markdown. Bien que nous acceptions volontiers les articles de format Office, nous encourageons nos auteurs à soumettre des fichiers texte (encodage UTF-8), écrits en utilisant la syntaxe Kramdown, une version de Markdown et enregistrés avec l'extension .md. Cela nous aidera à garder notre flux de travail léger et nos types de fichiers plus proches de la chaîne de production, ce qui contribuera à ce que nous continuons à contrôler tous les aspects de la production du journal. Pour en savoir plus sur nos choix d\'infrastructure et pour commencer à utiliser Markdown, prenez le temps de lire [« L\'auteur durable en texte clair avec Pandoc et Markdown »](https://programminghistorian.org/en/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown), de Dennis Tenen et Grant Whytoff. Nous apprécions sincèrement ceux qui acceptent le défi de changer leurs habitudes de travail et nous sommes offrons volontiers notre assistance pendant le processus. Vous trouverez de nombreux outils d'édition de Markdown disponibles, et la plupart des éditeurs de texte brut sont excellents pour la gestion de Markdown.
 
-#### Images
+#### Images {#images-guide}
 
-Chez *archipelagos*, nous valorisons la richesse de notre culture visuelle. Si vous soumettez vos propres photographies, nous vous demandons de garder à l\'esprit le cadre, les harmonies de couleurs et d\'autres éléments graphiques. N'oubliez pas non plus que ces fichiers peuvent contenir des métadonnées incorporées que vous ne souhaitez peut-être pas publier. Les images accompagnant vos documents seront ouvertes au processus de révision.
+Chez *archipelagos*, nous valorisons la richesse de notre culture visuelle. Si vous soumettez vos propres photographies, veuillez garder à l'esprit le cadrage, les harmonies de couleurs et d'autres éléments de conception. N'oubliez pas non plus que les fichiers image peuvent contenir des métadonnées intégrées que vous ne souhaitez peut-être pas publier. Les images sont soumises au processus de révision au même titre que votre texte.
 
-Veuillez fournir des images nettes avec une résolution minimale de 144ppi et une largeur minimale de 800 pixels. S'il vous plaît, soumettez vos images au format JPG. Nous acceptons les images PNG si l\'image a des transparences ou est faite de couleurs simples (c\'est-à-dire un logo).
+Veuillez fournir des images nettes : une résolution minimale de 144ppi et une largeur d'au moins 800 pixels. Le JPG est notre format préféré ; le PNG convient pour les images avec transparence ou couleurs unies simples (par exemple, un logo).
 
-Veuillez utiliser la rubrique suivante dans vos documents, en tapant chaque caractère dans l'ordre exact et en remplissant le contenu approprié entre guillemets (style anglais) et placez le tout à l'endroit où vous souhaitez insérer vos images:
+**Insérez chaque image directement dans votre document, à l'endroit où elle doit apparaître** — de la même manière que vous ajouteriez normalement une image dans Word (Insertion > Images). Vous n'avez plus besoin de nous envoyer les images séparément dans un fichier zip ; notre outil de conversion les extrait automatiquement de votre document.
+
+Juste en dessous de chaque image, tapez trois courtes lignes de texte brut — une ligne vide (Entrée) entre chacune, sans puces, et sans saut de ligne manuel au milieu d'une ligne :
+
+~~~ text
+caption="insert caption here"
+alt="insert alt text here."
+url="http://optional-url.com"
+~~~
+
+![Schéma d'une photo insérée suivie des champs caption, alt et url (facultatif), avec chaque champ expliqué : caption est affiché à tous les lecteurs, alt est lu par les lecteurs d'écran, url est un lien facultatif](/public/images/authors-guide/image-captioning-fr.png)
+
+- **`caption`** est affiché à tous les lecteurs, imprimé sous l'image sur le site et dans le PDF.
+- **`alt`** est lu à voix haute par les lecteurs d'écran. Décrivez ce qui se trouve *dans* l'image — ne répétez pas simplement la légende.
+- **`url`** est facultatif. Ne l'incluez que si l'image elle-même doit renvoyer vers un lien, comme sa source originale.
+
+`caption` et `alt` sont obligatoires ; `url` est facultatif. Si l'un ou l'autre doit inclure des guillemets, échappez-les avec une barre oblique inverse, par exemple : `caption="Elle a dit \"bonjour\" à la caméra"`.
+
+*Vous n'avez pas encore inséré votre image ?* Si vous attendez toujours une photo ou un graphique définitif, vous pouvez laisser un espace réservé au lieu de l'insérer : tapez la même rubrique que ci-dessus, mais ajoutez une ligne supplémentaire *au-dessus* des autres avec le nom de fichier que vous nous enverrez éventuellement, et envoyez-nous ce fichier séparément :
 
 ~~~ text
 img="my-image.jpg"
@@ -68,17 +89,15 @@ alt="insert alt text here."
 url="http://optional-url.com"
 ~~~
 
-N.B. `img`, `caption` et `alt` sont obligatoires; `url` est facultative et ne doit être utilisée que si vous souhaitez que l'image pointe vers une ressource spécifique. Chaque ligne doit constituer son propre paragraphe (une ligne vide entre chacune, sans saut de ligne manuel au milieu de l'une d'elles). Si votre légende (caption) ou votre texte alternatif (alt) doit inclure des guillemets, échappez-les avec une barre oblique inverse, par exemple: `caption="Elle a dit \"bonjour\" à la caméra"`.
+Si vous utilisez un espace réservé, veuillez nommer le fichier avec un ou deux mots-clés séparés par un trait d'union, sans espaces ni majuscules (par exemple, `harbor-sunset.jpg`) — cela devient une partie de l'adresse permanente du fichier sur notre site.
 
-Nous vous demandons de nommer vos fichiers image en utilisant un ou deux mots-clés séparés par un trait d'union, comme dans l'exemple ci-dessus. **N'utilisez pas d'espaces ni de lettres majuscules dans votre nom de fichier**. N'oubliez pas de fournir le texte de la ligne de crédit si nécessaire, en particulier pour les photographies. Le champ URL est facultatif et vous ne devez l'utiliser que si vous souhaitez que le lecteur crée un lien entre votre image et une autre page sur Internet.
+#### Vidéo, son et médias interactifs {#interactive-media}
 
-#### Vidéo, son et médias interactifs
-
-Afin de rendre nos articles et nos critiques disponibles au format PDF, et afin d'accroître la longévité des fichiers Web, nous séparons les médias interactifs des textes et images statiques. Pour la vidéo et le son, nous encourageons nos auteurs à utiliser le service de streaming de leur choix. Tenez compte des questions de confidentialité, de stabilité et de droit d'auteur lors du choix de la vidéo en streaming. Si nécessaire, nous pouvons vous fournir un formulaire d\'accord de publication numérique à utiliser avec les titulaires de droits.
+Afin de rendre nos articles et nos critiques disponibles au format PDF, et afin d'accroître la longévité des fichiers Web, nous séparons les médias interactifs des textes et images statiques. Pour la vidéo et le son, nous encourageons nos auteurs à utiliser le service de streaming de leur choix. Tenez compte des questions de confidentialité, de stabilité et de droit d'auteur lors du choix de la vidéo en streaming. Si nécessaire, nous pouvons vous fournir un formulaire d'accord de publication numérique à utiliser avec les titulaires de droits.
 
 Puisque *archipelagos* est né de la nécessité de soutenir les nouvelles formes de recherche numérique, nous sommes également disposés à inclure des médias interactifs (par exemple, des cartes, des visualisations) dans nos articles. Nous vous demandons de nous fournir, dans la mesure du possible, une version plein écran de votre média interactif hébergé ailleurs.
 
-Afin d'inclure n'importe lequel de ces types de média, nous vous demandons de nous envoyer une capture d'écran et le lien approprié vers le contenu séparé. Veuillez utiliser la même rubrique que celle utilisée pour les images ci-dessus et placez-la à la place du texte à l'endroit où vous souhaitez que le lien de votre capture d'écran apparaisse. L'URL doit pointer vers la version plein écran (dans la mesure du possible) de votre média interactif, fichier audio ou vidéo. Lorsque cela est approprié, utilisez une capture d'écran avec le bouton de lecture visible. Par exemple, s\'il s\'agit d\'une vidéo YouTube, prenez une capture d\'écran de la version plein écran avec le bouton de lecture rouge et blanc au centre.
+Pour inclure l'un de ces types de médias, prenez une capture d'écran et insérez-la directement dans votre document comme n'importe quelle autre image (voir [Images](#images-guide) ci-dessus), puis utilisez la même rubrique caption/alt/url — avec `url` pointant vers la version plein écran (dans la mesure du possible) de votre média interactif, fichier audio ou vidéo. Lorsque cela est approprié, utilisez une capture d'écran avec le bouton de lecture visible. Par exemple, s'il s'agit d'une vidéo YouTube, prenez une capture d'écran de la version plein écran avec le bouton de lecture rouge et blanc au centre.
 
 #### Les hyperliens
 
@@ -90,7 +109,7 @@ Assurez-vous que tous les liens externes et internes de votre document fonctionn
 
 Lors du partage de documents externes, ne vous connectez pas à des services de stockage dans le cloud (tels que Dropbox, Google Docs) ou des sources à accès fermé. Dans ces cas, citez simplement les documents. Si vous avez la permission de les utiliser, vous pourrez peut-être les soumettre avec vos fichiers. Nous accueillons et encourageons les liens pour ouvrir des dépôts institutionnels.
 
-#### Tableaux
+#### Tableaux {#tables}
 
 Si vous souhaitez qu'un tableau s'affiche au fur et à mesure que vous lisez votre texte, vous pouvez le soumettre sous forme de fichier .csv (valeurs séparées par des virgules) ou directement au format [kramdown/markdown](http://kramdown.gettalong.org/syntax.html#tables), son format final. En général, nous préférons les formats de tableau les plus simples. Veuillez éviter les lignes de rangée, par exemple. Si vous estimez que vous avez besoin d\'une visualisation complexe, envisagez de soumettre une image ou d\'organiser la visualisation ailleurs et de la relier à partir d\'une capture d\'écran.
 
