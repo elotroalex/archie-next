@@ -52,6 +52,8 @@ Nous fournissons des DOI pour tous les articles. Vous trouverez des informations
 
 Des exemplaires des articles seront conservés dans le référentiel [Academic Commons](https://academiccommons.columbia.edu/) de l\'Université de Columbia. Nous sommes aussi conservés dans le système [LOCKSS](https://www.lockss.org/).
 
+---
+
 ## Valences
 
 En chimie, la valence décrit les différentes façons dont un atome peut se lier à d'autres. Nous empruntons ce terme pour désigner les différentes façons dont un travail scientifique et créatif peut s'engager avec *archipelagos* : deux formes d'essai — l'une fondée sur une argumentation soutenue, l'autre relatant le processus derrière un projet numérique — ainsi que deux façons de rendre compte de la recherche numérique elle-même, un dialogue édité avec les créateurs d'un projet ou une critique autonome. Parce qu'une grande partie de la recherche numérique caribéenne prend forme en dehors de l'article conventionnel, chaque valence est évaluée selon ses propres critères, attentive au type de travail spécifique qu'elle représente. Les sections ci-dessous détaillent les conditions de soumission et le processus d'évaluation pour chacune.
@@ -83,8 +85,6 @@ Veuillez vous familiariser avec le processus d'évaluation ci-dessous, et consul
 4. En cas d'acceptation avec des révisions mineures ou majeures, les auteurs révisent leur contribution dans un délai de quatre semaines.
 5. Les auteurs ont une dernière possibilité d'apporter des modifications mineures une fois les épreuves finales préparées.
 
----
-
 ### Valence 1b | Essais de processus
 
 Les essais de processus sont des articles de 4 000 à 6 000 mots qui présentent des travaux liés à la théorie, aux méthodes et aux pratiques de la construction de projets numériques.
@@ -111,8 +111,6 @@ Veuillez vous familiariser avec le processus d'évaluation ci-dessous, et consul
 3. Les éditeurs lisent les commentaires des évaluateurs et informent les auteurs et les évaluateurs de la décision finale de publication.
 4. En cas d'acceptation avec des révisions mineures ou majeures, les auteurs révisent leur contribution dans un délai de quatre semaines.
 5. Les auteurs ont une dernière possibilité d'apporter des modifications mineures une fois les épreuves finales préparées.
-
----
 
 ### Valence 2 | Dialogues sur les projets numériques
 
@@ -141,8 +139,6 @@ Veuillez vous familiariser avec le processus d'évaluation ci-dessous, et consul
 4. Les auteurs du projet soumettent un récit de 1 000 à 2 000 mots en réponse aux commentaires de l'évaluateur, expliquant comment ils ont abordé (ou prévoient d'aborder) les préoccupations soulevées. Cette réponse est envoyée directement à la revue et n'est pas partagée avec les évaluateurs avant la publication.
 5. Avant la publication, les éditeurs condensent les perspectives des auteurs et des évaluateurs pour créer un dialogue entre les deux parties. La version finale comprend généralement entre 2 000 et 6 000 mots.
 
----
-
 ### Valence 3 | Recensions de projets numériques
 
 #### Description de la contribution
@@ -156,8 +152,6 @@ Toutes les contributions doivent :
 - être rédigées en anglais, en français, en néerlandais, en papiamentu/o ou en espagnol
 - être soumises en format .docx ou .md
 
----
-
 #### Processus d'évaluation
 
 1. Les éditeurs sollicitent des recensions publiques auprès des évaluateurs directement ou acceptent des propositions d'évaluateurs à titre continu. Les éditeurs travaillent directement avec les évaluateurs pour garantir la qualité de l'essai.
@@ -167,6 +161,8 @@ Toutes les contributions doivent :
 3. Les évaluateurs révisent leur contribution en fonction des commentaires des éditeurs et envoient leur version finale et révisée à la revue.
 
 Pour connaître l'ensemble des critères d'évaluation utilisés pour les recensions externes de projets numériques, consultez nos [directives pour les évaluateurs de recensions de projets numériques](reviewers.html#recensions-de-projets-numeriques). Pour toute question, n'hésitez pas à nous contacter à : [archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com).
+
+---
 
 ## Notre flux de travail
 

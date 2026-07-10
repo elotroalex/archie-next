@@ -50,6 +50,8 @@ We provide DOIs for all articles. Citation information and DOIs can be found on 
 
 Copies of articles will be archived on Columbia University's repository [Academic Commons](https://academiccommons.columbia.edu/). We are also archived in LOCKSS.
 
+---
+
 ## Valences
 
 In chemistry, a valence describes the different ways an atom can bond with others. We borrow the term for the different ways scholarly and creative work can engage with *archipelagos*: two forms of essay — one built on sustained argument, the other narrating the process behind a digital project — alongside two ways of reviewing digital scholarship itself, an edited dialogue with a project's creators or a standalone critical review. Because so much Caribbean digital scholarship takes shape outside the conventional article, each valence is reviewed on its own terms, attentive to the specific kind of labor it represents. The sections below detail the submission requirements and review process for each.
@@ -81,8 +83,6 @@ Please familiarize yourself with the review process below, and see our [reviewer
 4. If accepted for publication, but with minor or major revisions, authors revise their submission within four weeks.
 5. Authors have a final opportunity to provide minor edits once the final proofs have been prepared.
 
----
-
 ### Valence 1b | Process Essays
 
 Process Essays are 4000–6000-word articles that showcase work related to the theory, methods, and practices of digital project construction.
@@ -109,8 +109,6 @@ Please familiarize yourself with the review process below, and see our [reviewer
 3. Editors read reviewer feedback and notify both authors and reviewers of the final publication decision.
 4. If accepted for publication, but with minor or major revisions, authors revise their submission within four weeks.
 5. Authors have a final opportunity to provide minor edits once the final proofs have been prepared.
-
----
 
 ### Valence 2 | Digital Project Dialogues
 
@@ -139,8 +137,6 @@ Please familiarize yourself with the review process below, and see our [reviewer
 4. Project authors submit a 1000-to-2000-word narrative responding to reviewer feedback and explaining how they addressed (or plan to address) any concerns. This response is sent directly to the journal, and not shared with reviewers prior to publication.
 5. Before publication, editors condense both author and reviewer perspectives to create a dialogue between both parties. The final version generally ranges between 2000-to-6000 words.
 
----
-
 ### Valence 3 | Digital Project Reviews
 
 #### Submission Description
@@ -154,8 +150,6 @@ All submissions should be:
 - written in English, French, Dutch, Papiamentu/o, or Spanish
 - submitted in .docx or .md format
 
----
-
 #### Review Process
 
 1. Editors solicit public reviews from reviewers directly or accept proposals from reviewers for consideration on a rolling basis. Editors work directly with reviewers to ensure the quality of the essay.
@@ -165,6 +159,8 @@ All submissions should be:
 3. Reviewers revise their submission based on the editors\' feedback and send their final, revised submission to the journal.
 
 For the full evaluation criteria reviewers use for external reviews of digital projects, see our [reviewer guidelines for digital project reviews](reviewers.html#digital-project-reviews). If you have any questions, feel free to contact us at: [archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com).
+
+---
 
 ## Our Workflow
 

@@ -46,6 +46,8 @@ Proporcionamos DOIs para todos los artículos. La información de citas y los DO
 
 La base tecnológica utilizada para *archipelagos* se ofrece con una licencia MIT. Todos nuestros datos están abiertos en nuestro <a href="https://github.com/archipelagosjournal/">repositorio de Github</a>.
 
+---
+
 ## Modalidades
 
 En química, la valencia describe las distintas formas en que un átomo puede enlazarse con otros. En *archipelagos* usamos el término modalidad, inspirado en esa misma idea, para nombrar las distintas formas en que el trabajo académico y creativo puede vincularse con la revista: dos tipos de ensayo —uno basado en un argumento sostenido, el otro que narra el proceso detrás de un proyecto digital— junto con dos formas de reseñar la investigación digital en sí misma, un diálogo editado con los creadores de un proyecto o una reseña crítica independiente. Dado que buena parte de la investigación digital caribeña toma forma fuera del artículo convencional, cada modalidad se evalúa según sus propios términos, atenta al tipo específico de trabajo que representa. Las secciones a continuación detallan los requisitos de envío y el proceso de revisión de cada una.
@@ -77,8 +79,6 @@ Por favor, familiarícese con el proceso de revisión a continuación, y consult
 4. En caso de aceptación con revisiones menores o mayores, los autores revisan su contribución en un plazo de cuatro semanas.
 5. Los autores tienen una última oportunidad de realizar ediciones menores una vez preparadas las pruebas finales.
 
----
-
 ### Modalidad 1b | Ensayos de proceso
 
 Los ensayos de proceso son artículos de 4000 a 6000 palabras que presentan trabajos relacionados con la teoría, los métodos y las prácticas de la construcción de proyectos digitales.
@@ -105,8 +105,6 @@ Por favor, familiarícese con el proceso de revisión a continuación, y consult
 3. Los editores leen los comentarios de los evaluadores y notifican a los autores y a los evaluadores la decisión final de publicación.
 4. En caso de aceptación con revisiones menores o mayores, los autores revisan su contribución en un plazo de cuatro semanas.
 5. Los autores tienen una última oportunidad de realizar ediciones menores una vez preparadas las pruebas finales.
-
----
 
 ### Modalidad 2 | Diálogos sobre proyectos digitales
 
@@ -135,8 +133,6 @@ Por favor, familiarícese con el proceso de revisión a continuación, y consult
 4. Los autores del proyecto envían una narrativa de 1000 a 2000 palabras en respuesta a los comentarios del evaluador, explicando cómo han abordado (o planean abordar) las preocupaciones planteadas. Esta respuesta se envía directamente a la revista y no se comparte con los evaluadores antes de la publicación.
 5. Antes de la publicación, los editores condensan las perspectivas de los autores y de los evaluadores para crear un diálogo entre ambas partes. La versión final generalmente tiene entre 2000 y 6000 palabras.
 
----
-
 ### Modalidad 3 | Reseñas de proyectos digitales
 
 #### Descripción de la contribución
@@ -150,8 +146,6 @@ Todas las contribuciones deben:
 - estar escritas en inglés, francés, neerlandés, papiamentu/o o español
 - enviarse en formato .docx o .md
 
----
-
 #### Proceso de revisión
 
 1. Los editores solicitan reseñas públicas a los evaluadores directamente o aceptan propuestas de evaluadores para su consideración de manera continua. Los editores trabajan directamente con los evaluadores para garantizar la calidad del ensayo.
@@ -161,6 +155,8 @@ Todas las contribuciones deben:
 3. Los evaluadores revisan su contribución según los comentarios de los editores y envían su versión final y revisada a la revista.
 
 Para conocer los criterios de evaluación completos que utilizan los evaluadores en las reseñas externas de proyectos digitales, consulte nuestras [pautas para evaluadores de reseñas de proyectos digitales](reviewers.html#resenas-de-proyectos-digitales). Si tiene alguna pregunta, no dude en contactarnos en: [archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com).
+
+---
 
 ## Nuestro flujo de trabajo
 
