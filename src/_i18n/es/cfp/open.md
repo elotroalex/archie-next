@@ -21,3 +21,7 @@ Nuestra revista académica está entrando en un período de madurez y definició
 - investigación sobre los archivos y colecciones digitales, y el proceso continuo de digitalización, pertinente a la historia y la cultura del Caribe
 
 ¡Esperamos leerte!
+
+Para leer nuestras pautas de envío, por favor consulte nuestra página [para nuestros autores](/es/authors.html).
+
+Para consultas, escríbanos a archipelagosjournal@gmail.com.

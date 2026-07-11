@@ -21,3 +21,7 @@ Notre revue entre dans une période de maturité et de définition en tant que p
 - recherches sur les archives et les collections numériques, et le processus continu de numérisation, liés à l'histoire et à la culture des Caraïbes
 
 Nous avons hâte de vous lire !
+
+Pour consulter nos directives de soumission, veuillez consulter notre page [pour nos auteurs](/fr/authors.html).
+
+Pour toute question, veuillez nous contacter à archipelagosjournal@gmail.com.

@@ -19,3 +19,7 @@ Our journal is entering a period of maturity and definition as the point of refe
 - scholarship on digital archives and collections, and the continuing process of digitization, related to Caribbean history and culture
 
 We look forward to reading you!
+
+To read our submission guidelines please consult our [For Authors](/authors.html) page.
+
+For inquiries, please contact us at archipelagosjournal@gmail.com.
