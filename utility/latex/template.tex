@@ -11,14 +11,27 @@
 \usepackage{fontspec}
 \defaultfontfeatures{Ligatures=TeX, Scale=MatchLowercase}
 
+%% Emoji fallback: TeX Gyre Heros has no emoji glyphs. Noto Emoji (monochrome,
+%% bundled in TeX Live — no external install needed) fills in via luaotfload's
+%% automatic per-glyph fallback. Noto Color Emoji was tried first but LuaTeX
+%% can't draw its bitmap (CBDT/CBLC) color glyphs — they come out blank with
+%% no warning, which is worse than Noto Emoji's honest "Missing character"
+%% warning for the handful of emoji outside its own (limited) coverage.
+\directlua{
+  luaotfload.add_fallback
+    ("emojifallback",
+     {"Noto Emoji:mode=harf;"}
+    )
+}
+
 %% Primary font: TeX Gyre Heros (open-source Helvetica Neue equivalent, included in TeX Live)
 %% To use the licensed Helvetica Neue, install the .ttf files to .fonts/ and
 %% uncomment the block below.
-\setmainfont{TeX Gyre Heros}
-\setsansfont{TeX Gyre Heros}
+\setmainfont{TeX Gyre Heros}[RawFeature={fallback=emojifallback}]
+\setsansfont{TeX Gyre Heros}[RawFeature={fallback=emojifallback}]
 
 %% Light weight: approximate with scaled Heros (no true light weight available)
-\newfontfamily\lightfont{TeX Gyre Heros}
+\newfontfamily\lightfont{TeX Gyre Heros}[RawFeature={fallback=emojifallback}]
 
 %% ── Helvetica Neue (if licensed fonts are available in .fonts/) ───────────
 %% Uncomment this block to use the proprietary fonts:

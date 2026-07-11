@@ -1,25 +1,29 @@
 {% set issueArticles = collections[issueTag] | sort(false, false, "data.order") %}
+{% set introArticles = issueArticles | filterSection("introduction") %}
+{% set essayArticles = issueArticles | filterSection("articles") %}
+{% set projectArticles = issueArticles | filterSection("projects") %}
+{% set reviewArticles = issueArticles | filterSection("reviews") %}
 
 <div id="toc">
 
+{% if introArticles.length %}
 <h3>{{ i18n[lang].global.introduction }}</h3>
 <ul>
-{% for art in issueArticles %}
-  {% if art.data.section == "introduction" %}
+{% for art in introArticles %}
   <li>
     <a href="{{ art.url | localizeUrl(lang) | url }}">
       <span class="toc-title">{{ art.data.title | mdInline | safe if art.data.title is string else art.data.title.long | mdInline | safe }}</span>
     </a><br>
     <span class="byline">{% set author = art.data.author %}{% include "author-loop.njk" %}</span>
   </li>
-  {% endif %}
 {% endfor %}
 </ul>
+{% endif %}
 
+{% if essayArticles.length %}
 <h3>{{ i18n[lang].global.essays }}</h3>
 <ul>
-{% for art in issueArticles %}
-  {% if art.data.section == "articles" %}
+{% for art in essayArticles %}
   <li>
     <a href="{{ art.url | localizeUrl(lang) | url }}">
       <span class="toc-title">{{ art.data.title | mdInline | safe if art.data.title is string else art.data.title.long | mdInline | safe }}</span>
@@ -30,9 +34,9 @@
     <p><a class="alt-link" href="{{ ('/assets' + artPath) | replace('.html', '.pdf') | url }}" target="_blank">PDF</a></p>
     {% endif %}
   </li>
-  {% endif %}
 {% endfor %}
 </ul>
+{% endif %}
 
 {% set issueInteractives = issues[issueTag].interactives %}
 {% if issueInteractives and issueInteractives.length %}
@@ -49,10 +53,10 @@
 </ul>
 {% endif %}
 
+{% if projectArticles.length %}
 <h3>{{ i18n[lang].global.projects }}</h3>
 <ul>
-{% for art in issueArticles %}
-  {% if art.data.section == "projects" %}
+{% for art in projectArticles %}
   <li>
     <a href="{{ art.url | localizeUrl(lang) | url }}">
       <span class="toc-title">{{ art.data.title | mdInline | safe if art.data.title is string else art.data.title.long | mdInline | safe }}</span>
@@ -67,14 +71,14 @@
       <a class="alt-link" href="{{ ('/assets' + artPath) | replace('.html', '.pdf') | url }}" target="_blank">PDF</a>
     {% endif %}
   </li>
-  {% endif %}
 {% endfor %}
 </ul>
+{% endif %}
 
+{% if reviewArticles.length %}
 <h3>{{ i18n[lang].global.reviews }}</h3>
 <ul>
-{% for art in issueArticles %}
-  {% if art.data.section == "reviews" %}
+{% for art in reviewArticles %}
   <li>
     <a href="{{ art.url | localizeUrl(lang) | url }}">
       <span class="toc-title">{{ art.data.title | mdInline | safe if art.data.title is string else art.data.title.long | mdInline | safe }}</span>
@@ -83,8 +87,8 @@
     {% set artPath = art.url | replace("/es/", "/") | replace("/fr/", "/") %}
     <p><a class="alt-link" href="{{ ('/assets' + artPath) | replace('.html', '.pdf') | url }}" target="_blank">PDF</a></p>
   </li>
-  {% endif %}
 {% endfor %}
 </ul>
+{% endif %}
 
 </div>

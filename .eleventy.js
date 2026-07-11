@@ -144,6 +144,12 @@ module.exports = function (eleventyConfig) {
     return `${prefix}${canonicalUrl}`;
   });
 
+  // Filter an issue's articles collection down to one TOC section
+  // Usage: {{ issueArticles | filterSection("projects") }}
+  eleventyConfig.addFilter("filterSection", function (articles, section) {
+    return (articles || []).filter((art) => art.data.section === section);
+  });
+
   // Render markdown block (with <p> tags) — for author bios
   eleventyConfig.addFilter("markdown", function (str) {
     if (!str) return "";
