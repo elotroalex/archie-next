@@ -146,9 +146,9 @@ Project description essays will follow the same process as an article review.
 
 ## Author Agreement
 
-Read the [Author Agreement](https://archipelagosjournal.org/public/author-agreement.pdf). This Agreement reflects the position that the Author(s) should retain the copyright to the Article and should have explicit rights to use the Article in future research, teaching, and other projects. Author rights can be summarized as follows:
+Read the [Author Agreement](https://archipelagosjournal.org/public/author-agreement.pdf). This Agreement reflects the position that the Author(s) should retain the copyright to the Article and should have explicit rights to use the Article in future research, teaching, and other projects. Author and journal rights can be summarized as follows:
 
 - Authors maintain copyright without restriction;
 - authors grant _archipelagos_ the authority to publish their work in the journal with a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/);
 - authors maintain publication rights without restrictions;
-- authors agree to archive a copy of articles, when applicable, on Columbia University's repository [Academic Commons](https://academiccommons.columbia.edu/).
+- authors grant _archipelagos_ the right to archive a copy of articles, when applicable, on a University repository or other open access repository;
