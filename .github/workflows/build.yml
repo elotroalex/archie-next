@@ -44,6 +44,10 @@ jobs:
         run: npm run check-contrast
         continue-on-error: true
 
+      - name: Fix root-absolute paths for GitHub Pages subpath
+        if: github.ref == 'refs/heads/staging'
+        run: node utility/fix-staging-paths.js --prefix /archie-next/
+
       - name: Upload artifact
         if: github.ref == 'refs/heads/staging'
         uses: actions/upload-pages-artifact@v3
