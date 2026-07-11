@@ -18,8 +18,8 @@ Our journal is entering a period of maturity and definition as the point of refe
 - reflections on the use of technology in and outside of the classroom for pedagogical purposes
 - scholarship on digital archives and collections, and the continuing process of digitization, related to Caribbean history and culture
 
-We look forward to reading you!
-
 To read our submission guidelines please consult our [For Authors](/authors.html) page.
 
 For inquiries, please contact us at archipelagosjournal@gmail.com.
+
+We look forward to reading you!
