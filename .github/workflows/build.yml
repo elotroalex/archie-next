@@ -44,6 +44,10 @@ jobs:
         run: npm run check-contrast
         continue-on-error: true
 
+      - name: Check same-page anchor links
+        run: npm run check-anchors
+        continue-on-error: true
+
       - name: Fix root-absolute paths for GitHub Pages subpath
         if: github.ref == 'refs/heads/staging'
         run: node utility/fix-staging-paths.js --prefix /archie-next/

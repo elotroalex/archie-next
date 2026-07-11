@@ -9,7 +9,8 @@
     "check-links": "cd _site && npx linkinator . --config ../linkinator.config.json",
     "report-links": "bash utility/report-links.sh",
     "check-issue": "bash utility/check-issue/check-issue.sh",
-    "check-contrast": "node utility/check-contrast.js"
+    "check-contrast": "node utility/check-contrast.js",
+    "check-anchors": "node utility/check-anchors.js"
   },
   "repository": {
     "type": "git",

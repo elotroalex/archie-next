@@ -1,11 +1,14 @@
 #!/bin/bash
 # Runs every issue-integrity check against a single issue: HTML validity,
-# link integrity (internal + external, scoped to the issue), front-matter/i18n
-# completeness, image existence + alt text + minimum width, PDF existence,
-# footnote anchor pairing, non-standard (curly/smart) quotation marks, and
-# an axe-core accessibility scan (heading order, labels, ARIA, landmarks).
-# Intended to be run by an editor after finishing a new issue, before
-# flipping the live domain over.
+# link integrity (internal + external, scoped to the issue), same-page
+# anchor links (href="#id" resolving to a real id on that page -- separate
+# from "links" because linkinator's own fragment-checking turned out to be
+# unreliable for anything past the first hop or two of a crawl, see
+# check-anchors.js), front-matter/i18n completeness, image existence + alt
+# text + minimum width, PDF existence, footnote anchor pairing, non-standard
+# (curly/smart) quotation marks, and an axe-core accessibility scan (heading
+# order, labels, ARIA, landmarks). Intended to be run by an editor after
+# finishing a new issue, before flipping the live domain over.
 #
 # Every run also writes log.md at the repo root (gitignored, overwritten
 # each run) with one section per check -- Images and Links get extra
@@ -80,6 +83,7 @@ run_check "accessibility"        node "$SCRIPT_DIR/check-a11y.js" "$MANIFEST"
 run_check "pdfs"                 bash "$SCRIPT_DIR/check-pdfs.sh" "$MANIFEST"
 run_check "html validity"        bash "$SCRIPT_DIR/check-html-validity.sh" "$MANIFEST"
 run_check "links"                node "$SCRIPT_DIR/check-issue-links.js" "$MANIFEST" --json "$LINKS_JSON"
+run_check "anchors"              node "$ROOT/utility/check-anchors.js" "$MANIFEST" --root "$ROOT"
 
 node "$SCRIPT_DIR/generate-log.js" "$ISSUE_SLUG" "$ROOT/log.md" \
   "${LOG_TEXT_ARGS[@]}" \
@@ -89,7 +93,7 @@ node "$SCRIPT_DIR/generate-log.js" "$ISSUE_SLUG" "$ROOT/log.md" \
 echo ""
 echo "================"
 if [ ${#FAILED_CHECKS[@]} -eq 0 ]; then
-  echo "PASS - $ISSUE_SLUG is clean (8/8 checks passed)"
+  echo "PASS - $ISSUE_SLUG is clean (9/9 checks passed)"
   exit 0
 else
   echo "FAIL - $ISSUE_SLUG has integrity problems in: $(IFS=', '; echo "${FAILED_CHECKS[*]}")"

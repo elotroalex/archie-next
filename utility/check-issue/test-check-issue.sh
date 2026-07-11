@@ -41,6 +41,19 @@ check_contains() {
   fi
 }
 
+# check_not_contains NAME COMMAND_OUTPUT UNEXPECTED_SUBSTRING
+# Asserts that CAPTURED_OUTPUT does NOT contain UNEXPECTED_SUBSTRING.
+check_not_contains() {
+  local name="$1" output="$2" unexpected="$3"
+  if echo "$output" | grep -qF "$unexpected"; then
+    echo "  FAIL - $name (expected NOT to find: $unexpected)"
+    echo "$output" | sed 's/^/      /'
+    FAIL=1
+  else
+    echo "  ok - $name"
+  fi
+}
+
 echo "== collect-issue.js =="
 MANIFEST="$(mktemp)"
 COLLECT_OUTPUT=$(node "$SCRIPT_DIR/collect-issue.js" issuefx --root "$FIXTURE_ROOT" | tee "$MANIFEST")
@@ -86,6 +99,13 @@ FN_OUTPUT=$(node "$SCRIPT_DIR/check-footnotes.js" "$MANIFEST" --root "$FIXTURE_R
 check_contains "clean article footnotes pass" "$FN_OUTPUT" "ok - footnotes: clean-article"
 check_contains "orphaned reference is detected" "$FN_OUTPUT" "reference(s) with no definition: #2"
 check_contains "orphaned definition is detected" "$FN_OUTPUT" "definition(s) with no reference: #3"
+
+echo ""
+echo "== check-anchors.js =="
+ANCHORS_OUTPUT=$(node "$SCRIPT_DIR/../check-anchors.js" "$MANIFEST" --root "$FIXTURE_ROOT" 2>&1)
+check_contains "broken article's dangling #fn2 href is detected" "$ANCHORS_OUTPUT" "#fn2 has no matching id on _site/issuefx/broken-article.html"
+check_contains "broken article's dangling #fnref3 href is detected" "$ANCHORS_OUTPUT" "#fnref3 has no matching id on _site/issuefx/broken-article.html"
+check_not_contains "clean article's #fn1/#fnref1 anchors are not flagged" "$ANCHORS_OUTPUT" "#fn1 has no matching id"
 
 echo ""
 echo "== check-a11y.js =="

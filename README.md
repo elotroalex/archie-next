@@ -53,7 +53,7 @@ Live site: [archipelagosjournal.org](http://archipelagosjournal.org)
    npm run check-issue -- issue09
    ```
 
-   Verifies HTML validity, internal/external links, front-matter and i18n completeness, curly/smart quotation marks, image existence/alt text/minimum width, PDF existence, footnote anchor pairing, and an accessibility scan — see [Issue integrity check](#issue-integrity-check) and [Accessibility](#accessibility).
+   Verifies HTML validity, internal/external links, same-page anchor links, front-matter and i18n completeness, curly/smart quotation marks, image existence/alt text/minimum width, PDF existence, footnote anchor pairing, and an accessibility scan — see [Issue integrity check](#issue-integrity-check) and [Accessibility](#accessibility).
 
 9. **Commit and push** — GitHub Actions builds and deploys automatically.
 
@@ -300,6 +300,18 @@ This writes two files to the repo root (both gitignored):
 
 **CI:** The link check runs automatically on every push via GitHub Actions (`.github/workflows/build.yml`) with `continue-on-error: true`, so it surfaces the report without blocking deployment.
 
+### Same-page anchor links
+
+linkinator doesn't cover `href="#id"` links (in-page anchors, e.g. the editor bio links on the Credits page, or footnote references). Those are checked separately:
+
+```bash
+npm run check-anchors
+```
+
+`utility/check-anchors.js` scans every built HTML file and checks each `href="#..."` against a real `id="..."`/`name="..."` on that same page (the bare `href="#"` "return to top" idiom is intentionally skipped, since it needs no target). This is a plain per-file HTML scan, not a crawl — linkinator does have a `checkFragments` option, but it turned out to only reliably validate fragments on pages reached within the first hop or two of a crawl (e.g. a page linked directly from the site root); it silently skips validation, with no warning, for anything reached deeper in the recursion — which is nearly all of this site's actual content. `check-anchors.js` avoids that blind spot entirely since it doesn't crawl at all.
+
+**CI:** Runs automatically on every push, same non-blocking pattern as the link check (`continue-on-error: true`).
+
 ---
 
 ## Issue integrity check
@@ -310,12 +322,13 @@ Before cutting a finished issue over to production, run a full integrity gate sc
 npm run check-issue -- issue09   # defaults to the current issue (last key in issues.js) if omitted
 ```
 
-This builds the site, then runs eight checks (`utility/check-issue/`) and exits non-zero if any of them fail:
+This builds the site, then runs nine checks (`utility/check-issue/`) and exits non-zero if any of them fail:
 
 | Check | What it verifies |
 | --- | --- |
 | **HTML validity** | Runs [html-validate](https://html-validate.org/) against the issue's built pages (en/es/fr). Config (`htmlvalidate.config.json`) disables rules that just reflect this codebase's deliberate conventions (self-closing void elements, inline table-width styles, legacy Dublin Core `profile`/`scheme` attributes) so only genuine structural errors surface — unclosed/misnested tags, duplicate ids, empty headings, etc. |
 | **Links** | Runs linkinator with the issue's own built pages as crawl entry points (reuses the root `linkinator.config.json` unmodified). `--recurse` stays on, so links out into older issues, `/public/`, the homepage, and cross-language switcher links are still followed and validated — this is narrower and faster than `npm run check-links`, not just a re-run of it. Unlike `report-links.sh`, unresolved (`[0]`) links are treated as hard failures here. |
+| **Anchors** | Runs `check-anchors.js` (see [Same-page anchor links](#same-page-anchor-links)) scoped to just the issue's own built pages, via the same manifest every other check here uses. Catches broken `href="#id"` links — e.g. a bio link or footnote reference pointing at an id that doesn't exist on the page. |
 | **Front matter & i18n** | Every article's front matter is checked field-by-field against the intake stub's known placeholder text (not just a `# TODO:` grep — this also catches placeholders where the `# TODO:` prefix was stripped but the text itself was never replaced). Also confirms the issue has a label in `en.yml`, `es.yml`, and `fr.yml`. |
 | **Quotation marks** | Flags curly/smart quotation marks (`‘ ’ “ ”`) left in an article's markdown source — a common Word autocorrect artifact contributors are asked to avoid (see [Submission Guidelines](src/_i18n/en/authors/authors.md)), which can render unreliably through the PDF/LaTeX pipeline. `convert-docx.sh` now normalizes these automatically at intake time, so this is mainly a safety net for hand-edited content or articles converted before that fix. |
 | **Images** | Every `<img>` under `/issueXX/images/` (or the legacy `/images/issueXX/`) in the built English page must exist on disk, have non-empty `alt` text that isn't just the filename, meet a minimum width (`check-issue.config.json`, default 800px, matching the [author image guidelines](#adding-a-new-issue)), and not duplicate another image's alt text within the same article. |
