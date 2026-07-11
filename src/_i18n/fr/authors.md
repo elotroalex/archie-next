@@ -62,19 +62,23 @@ Veuillez fournir des images nettes : une résolution minimale de 144ppi et une l
 
 **Insérez chaque image directement dans votre document, à l'endroit où elle doit apparaître** — de la même manière que vous ajouteriez normalement une image dans Word (Insertion > Images). Vous n'avez plus besoin de nous envoyer les images séparément dans un fichier zip ; notre outil de conversion les extrait automatiquement de votre document.
 
-Juste en dessous de chaque image, tapez trois courtes lignes de texte brut — une ligne vide (Entrée) entre chacune, sans puces, et sans saut de ligne manuel au milieu d'une ligne :
+Juste en dessous de chaque image, tapez trois courtes lignes de texte brut avec les informations supplémentaires pour l'image --- une ligne vide (Entrée) entre chacune, sans puces, et sans saut de ligne manuel au milieu d'une ligne :
 
 ~~~ text
 caption="insert caption here"
 alt="insert alt text here."
-url="http://optional-url.com"
+url="http://example.com" (optional)
 ~~~
 
-![Schéma d'une photo insérée suivie des champs caption, alt et url (facultatif), avec chaque champ expliqué : caption est affiché à tous les lecteurs, alt est lu par les lecteurs d'écran, url est un lien facultatif](/public/images/authors-guide/image-captioning-fr.png)
+**`caption`** est affiché à tous les lecteurs, imprimé sous l'image sur le site et dans le PDF.
 
-- **`caption`** est affiché à tous les lecteurs, imprimé sous l'image sur le site et dans le PDF.
-- **`alt`** est lu à voix haute par les lecteurs d'écran. Décrivez ce qui se trouve *dans* l'image — ne répétez pas simplement la légende.
-- **`url`** est facultatif. Ne l'incluez que si l'image elle-même doit renvoyer vers un lien, comme sa source originale.
+**`alt`** est lu à voix haute par les lecteurs d'écran. Décrivez ce qui se trouve *dans* l'image — ne répétez pas simplement la légende.
+
+**`url`** est facultatif. Ne l'incluez que si l'image elle-même doit renvoyer vers un lien, comme sa source originale.
+
+**Exemple :**
+
+![Exemple d'une photo insérée dans un document Word suivie des champs de texte caption, alt et url facultatif](/public/images/authors-guide/image-captioning-fr.png)
 
 `caption` et `alt` sont obligatoires ; `url` est facultatif. Si l'un ou l'autre doit inclure des guillemets, échappez-les avec une barre oblique inverse, par exemple : `caption="Elle a dit \"bonjour\" à la caméra"`.
 

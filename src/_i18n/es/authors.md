@@ -67,19 +67,23 @@ Proporcione imágenes nítidas: una resolución mínima de 144ppi y al menos 800
 
 **Inserte cada imagen directamente en su documento, en el lugar donde corresponda** — de la misma manera en que normalmente agregaría una imagen en Word (Insertar > Imágenes). Ya no necesita enviarnos las imágenes por separado en un archivo zip; nuestra herramienta de conversión las extrae automáticamente de su documento.
 
-Justo debajo de cada imagen, escriba tres líneas breves de texto plano — una línea en blanco (Enter) entre cada una, sin viñetas, y sin saltos de línea manuales en medio de una línea:
+Justo debajo de cada imagen, escriba tres líneas breves de texto plano con la información adicional de la imagen --- una línea en blanco (Enter) entre cada una, sin viñetas, y sin saltos de línea manuales en medio de una línea:
 
 ```text
 caption="insert caption here"
 alt="insert alt text here."
-url="http://optional-url.com"
+url="http://example.com" (optional)
 ```
 
-![Diagrama de una foto insertada seguida de los campos de texto caption, alt y url (opcional), con cada campo explicado: caption se muestra a todos los lectores, alt lo leen los lectores de pantalla, url es un enlace opcional](/public/images/authors-guide/image-captioning-es.png)
+**`caption`** se muestra a todos los lectores, impreso debajo de la imagen en el sitio y en el PDF.
 
-- **`caption`** se muestra a todos los lectores, impreso debajo de la imagen en el sitio y en el PDF.
-- **`alt`** lo leen en voz alta los lectores de pantalla. Describa lo que _hay_ en la imagen — no repita simplemente el pie de foto.
-- **`url`** es opcional. Inclúyalo solo si la imagen misma debe enlazar a algún lugar, como su fuente original.
+**`alt`** lo leen en voz alta los lectores de pantalla. Describa lo que _hay_ en la imagen — no repita simplemente el pie de foto.
+
+**`url`** es opcional. Inclúyalo solo si la imagen misma debe enlazar a algún lugar, como su fuente original.
+
+**Ejemplo:**
+
+![Ejemplo de una foto insertada en un documento de Word seguida de los campos de texto caption, alt y url opcional](/public/images/authors-guide/image-captioning-es.png)
 
 `caption` y `alt` son obligatorios; `url` es opcional. Si alguno necesita incluir comillas, escápelas con una barra invertida, por ejemplo: `caption="Ella dijo \"hola\" a la cámara"`.
 
