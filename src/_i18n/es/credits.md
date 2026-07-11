@@ -5,31 +5,31 @@ permalink: es/credits.html
 
 ### Editores
 
-[Kaiama L. Glover](#kaiama-l-glover--editora)\\
-[Alex Gil](#alex-gil--editor)
+[Kaiama L. Glover](#kaiama-l-glover-editora)\\
+[Alex Gil](#alex-gil-editor)
 
 ### Editora gerente
 
-[Isabella García Bernstein](#isabella-garcia-bernstein--editora-gerente)
+[Isabella García Bernstein](#isabella-garcia-bernstein-editora-gerente)
 
-<!-- [Soraya Limare](#soraya-limare--asistente-editorial) -->
+<!-- [Soraya Limare](#soraya-limare-asistente-editorial) -->
 
 ### Producción | Diseño
-[Juliet Ali](#juliet-ali--diseñadora)\\
-[Brian Ballsun-Stanton](#brian-ballsun-stanton--editor-de-producción)\\
-[Dennis Tenen](#dennis-tenen--arquitecto-del-proyecto)  
+[Juliet Ali](#juliet-ali-disenadora)\\
+[Brian Ballsun-Stanton](#brian-ballsun-stanton-editor-de-produccion)\\
+[Dennis Tenen](#dennis-tenen-arquitecto-del-proyecto)  
 
 
 ### Consejo editorial
-[Yarimar Bonilla](#yarimar-bonilla--consejo-editorial)  
-[Elizabeth Maddock Dillon](#elizabeth-maddock-dillon--consejo-editorial)  
-[Laurent Dubois](#laurent-dubois--consejo-editorial)  
-[Schuyler Esprit](#schuyler-esprit--consejo-editorial)  
-[Jessica Marie Johnson](#jessica-marie-johnson--consejo-editorial)  
-[Kelly Baker Josephs](#kelly-baker-josephs--consejo-editorial)  
-[Frances Negrón-Muntaner](#frances-negrón-muntaner--consejo-editorial)  
-[Vincent Brown](#vincent-brown--consejo-editorial)  
-[Laurie Taylor](#laurie-taylor--consejo-editorial)
+[Yarimar Bonilla](#yarimar-bonilla-consejo-editorial)  
+[Elizabeth Maddock Dillon](#elizabeth-maddock-dillon-consejo-editorial)  
+[Laurent Dubois](#laurent-dubois-consejo-editorial)  
+[Schuyler Esprit](#schuyler-esprit-consejo-editorial)  
+[Jessica Marie Johnson](#jessica-marie-johnson-consejo-editorial)  
+[Kelly Baker Josephs](#kelly-baker-josephs-consejo-editorial)  
+[Frances Negrón-Muntaner](#frances-negron-muntaner-consejo-editorial)  
+[Vincent Brown](#vincent-brown-consejo-editorial)  
+[Laurie Taylor](#laurie-taylor-consejo-editorial)
 
 ### Antiguos miembros del equipo
 

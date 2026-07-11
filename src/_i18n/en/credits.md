@@ -5,32 +5,32 @@ permalink: credits.html
 
 ### Editors
 
-[Kaiama L. Glover](#kaiama-l-glover--editor)  
-[Alex Gil](#alex-gil--editor)
+[Kaiama L. Glover](#kaiama-l-glover-editor)  
+[Alex Gil](#alex-gil-editor)
 
 ### Managing Editor
 
-[Isabella García Bernstein](#isabella-garcia-bernstein--managing-editor)
+[Isabella García Bernstein](#isabella-garcia-bernstein-managing-editor)
 
-<!-- [Soraya Limare](#soraya-limare--managing-editor) -->
+<!-- [Soraya Limare](#soraya-limare-managing-editor) -->
 
 ### Production | Design
 
-[Juliet Ali](#juliet-ali--designer)  
-[Brian Ballsun-Stanton](#brian-ballsun-stanton--production-editor)  
-[Dennis Tenen](#dennis-tenen--project-architect)
+[Juliet Ali](#juliet-ali-designer)  
+[Brian Ballsun-Stanton](#brian-ballsun-stanton-production-editor)  
+[Dennis Tenen](#dennis-tenen-project-architect)
 
 ### Editorial Board
 
-[Yarimar Bonilla](#yarimar-bonilla--editorial-board)  
-[Elizabeth Maddock Dillon](#elizabeth-maddock-dillon--editorial-board)  
-[Laurent Dubois](#laurent-dubois--editorial-board)  
-[Schuyler Esprit](#schuyler-esprit--editorial-board)  
-[Jessica Marie Johnson](#jessica-marie-johnson--editorial-board)  
-[Kelly Baker Josephs](#kelly-baker-josephs--editorial-board)  
-[Frances Negrón-Muntaner](#frances-negrón-muntaner--editorial-board)  
-[Vincent Brown](#vincent-brown--editorial-board)  
-[Laurie Taylor](#laurie-taylor--editorial-board)
+[Yarimar Bonilla](#yarimar-bonilla-editorial-board)  
+[Elizabeth Maddock Dillon](#elizabeth-maddock-dillon-editorial-board)  
+[Laurent Dubois](#laurent-dubois-editorial-board)  
+[Schuyler Esprit](#schuyler-esprit-editorial-board)  
+[Jessica Marie Johnson](#jessica-marie-johnson-editorial-board)  
+[Kelly Baker Josephs](#kelly-baker-josephs-editorial-board)  
+[Frances Negrón-Muntaner](#frances-negron-muntaner-editorial-board)  
+[Vincent Brown](#vincent-brown-editorial-board)  
+[Laurie Taylor](#laurie-taylor-editorial-board)
 
 ### Former Team Members
 

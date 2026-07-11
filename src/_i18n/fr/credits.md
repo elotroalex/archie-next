@@ -5,30 +5,30 @@ permalink: fr/credits.html
 
 ### Rédacteurs-en-chef
 
-[Kaiama L. Glover](#kaiama-l-glover--editor)  
-[Alex Gil](#alex-gil--editor)
+[Kaiama L. Glover](#kaiama-l-glover-editor)  
+[Alex Gil](#alex-gil-editor)
 
 ### Assistante aux rédacteurs-en-chef
 
-[Isabella García Bernstein](#isabella-garcia-bernstein--redactrice-en-chef-adjointe)
+[Isabella García Bernstein](#isabella-garcia-bernstein-redactrice-en-chef-adjointe)
 
-<!-- [Soraya Limare](#soraya-limare--assistante-editoriale) -->
+<!-- [Soraya Limare](#soraya-limare-assistante-editoriale) -->
 
 ### Production | Conception
-[Juliet Ali](#juliet-ali--designer)\\
-[Brian Ballsun-Stanton](#brian-ballsun-stanton--production-editor)\\
-[Dennis Tenen](#dennis-tenen--project-architect)
+[Juliet Ali](#juliet-ali-designer)\\
+[Brian Ballsun-Stanton](#brian-ballsun-stanton-production-editor)\\
+[Dennis Tenen](#dennis-tenen-project-architect)
 
 ### Comité éditorial
-[Yarimar Bonilla](#yarimar-bonilla--editorial-board)  
-[Elizabeth Maddock Dillon](#elizabeth-maddock-dillon--editorial-board)  
-[Laurent Dubois](#laurent-dubois--editorial-board)  
-[Schuyler Esprit](#schuyler-esprit--editorial-board)  
-[Jessica Marie Johnson](#jessica-marie-johnson--editorial-board)  
-[Kelly Baker Josephs](#kelly-baker-josephs--editorial-board)  
-[Frances Negrón-Muntaner](#frances-negrón-muntaner--editorial-board)  
-[Vincent Brown](#vincent-brown--editorial-board)  
-[Laurie Taylor](#laurie-taylor--editorial-board)
+[Yarimar Bonilla](#yarimar-bonilla-editorial-board)  
+[Elizabeth Maddock Dillon](#elizabeth-maddock-dillon-editorial-board)  
+[Laurent Dubois](#laurent-dubois-editorial-board)  
+[Schuyler Esprit](#schuyler-esprit-editorial-board)  
+[Jessica Marie Johnson](#jessica-marie-johnson-editorial-board)  
+[Kelly Baker Josephs](#kelly-baker-josephs-editorial-board)  
+[Frances Negrón-Muntaner](#frances-negron-muntaner-editorial-board)  
+[Vincent Brown](#vincent-brown-editorial-board)  
+[Laurie Taylor](#laurie-taylor-editorial-board)
 
 ### Anciens membres de l'équipe
 
