@@ -4,7 +4,7 @@ section: "articles"
 title:
   long: "A Metadata Analysis of Anthropological Scholarship about Haiti and the Dominican Republic"
   short: "Metadata Analysis of Anthropological Scholarship"
-doi: "10.7916/..."
+doi: "DOI pending"
 author:
   - name: "Tess Kulstad González"
     shortname: "Kulstad"
@@ -22,11 +22,15 @@ author:
     shortname: "Zhang"
     bio: >
       Hongyuan Zhang is a software engineer. She received a Bachelor of Arts in mathematics and computer science from Grinnell College and a master\'s in computational data science from Carnegie Mellon University of Computer Science.
-pubDate: "July 2026"
+pubDate: "August 2026"
 issue: "9"
 order: "4"
 abstract: >
   This article presents the results of a metadata and content analysis of anthropological research about Haiti and the Dominican Republic available in the Anthropological Literature database and in the Journal of Latin American and Caribbean Anthropology. This analysis shows that anthropological knowledge about Haiti and/or the Dominican Republic, produced in Haiti and the Dominican Republic, is included less than scholarship published outside the island. In addition, our analysis indicates that research that pertains to both countries, or that considers transnational and/or inter-island processes has been infrequent. Furthermore, that which exists is not as discoverable or visible as research that focuses on each individual country. We consider how databases operate to create an archive of anthropological thought that excludes scholarship from the Global South.
+abstract_es: >
+  Este artículo presenta los resultados de un análisis de los metadatos y el contenido de la investigación antropológica sobre Haití y la República Dominicana que están disponibles en la base de datos de Anthropological Literature y el Journal of Latin American and Caribbean Anthropology. Este análisis muestra que el conocimiento antropológico sobre Haití y/o la República Dominicana se incluye menos que la investigación publicada fuera de la isla. Además, nuestro análisis indica que los estudios que pertenecen a los dos países, o que consideran los procesos transnacionales y/o entre islas, han sido poco frecuentes. Asimismo, lo que existe no es tan detectable o visible como la investigación que se enfoca en cada país individual. Nosotros contemplamos la función de las bases de datos al crear un archivo de conocimiento antropológico que excluye los estudios del Sur Global.
+abstract_fr: >
+  [lorem ipsum]
 language: en
 ---
 
