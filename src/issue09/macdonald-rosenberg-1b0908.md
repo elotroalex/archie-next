@@ -4,7 +4,7 @@ section: "articles"
 title:
   long: "Raising History from the Grave: Reparative Archival Pedagogy, International Virtual Exchange, and Community Engagement"
   short: "Raising History from the Grave"
-doi: "10.7916/..."
+doi: "DOI pending"
 author:
   - name: "Antonia MacDonald"
     shortname: "MacDonald"
@@ -14,7 +14,7 @@ author:
     shortname: "Rosenberg"
     bio: >
       Leah Rosenberg is associate professor of English at the University of Florida where she teaches Caribbean studies and Digital Humanities. She is the author of *Nationalism and the Formation of Caribbean Literature* (Palgrave October 2007) and co-editor with J. Dillon Brown of *Beyond Windrush: Rethinking Postwar West Indian Literature* (University of Mississippi Press, 2105). She is a co-chair of the scholarly advisory board of the Digital Library of the Caribbean and member of the Journal of West Indian Literature editorial board.
-pubDate: "July 2026"
+pubDate: "August 2026"
 issue: "9"
 order: "5"
 abstract: >

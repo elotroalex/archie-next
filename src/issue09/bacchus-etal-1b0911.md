@@ -9,15 +9,15 @@ author:
   - name: "Ra Bacchus"
     shortname: "Bacchus"
     bio: >
-      TODO: Author bio in markdown.
+      Ra Bacchus is a fourth-year Ph.D. student in Digital Humanities at the University of Miami. Ra completed his undergraduate education at Stanford University, earning a B.A.H. and an M.A. in Anthropology in 2018 and 2019, respectively. Prior to pursuing his dissertation research on the implications of LLM hallucinations for contemporary senses of empiricism, Ra worked at Google as a User Data Policy Specialist from 2019-2024 and is a founding organizer of JamCoders (2020-present). He was a UM Fellow for the 2024-26 academic years; is currently involved with the Miami Law & AI Lab (MiLA) as a dashboard designer; and in 2024 was selected as a Caribbean Digital Scholarship Summer Institute Fellow. 
   - name: "Alexander S. Butler"
     shortname: "Butler"
     bio: >
-      TODO: Author bio in markdown.
+      Dr. Alexander S. Butler is an assistant professor of elementary social studies methods and content in Bowling Green State University’s Inclusive Early Childhood Education Program and an Associate Editor of The Great Lakes Social Studies Journal. His Ph.D. is from Indiana University in Curriculum and Instruction with an emphasis on Teacher Education and The Learning and Developmental Sciences. He has extensive experience working with K-12 and higher education students in a variety of contexts. He has been a classroom teacher, wrap-around service provider, coach, senior instructional designer, and co-program coordinator of the Inclusive Early Childhood Program at Bowling Green State University. Additionally, he is an expert at social studies curriculum development, having built curricula for K-12 schools, universities, and non-profit organizations across the world (e.g., Dominican Republic, Puerto Rico, Ghana, and U.S.). His research focuses on several topics, including: teacher candidates’ beliefs and conceptions of teaching, learning, and historical thinking skills; how social studies is being taught at the elementary level; and educational stakeholders’ perceptions of the Caribbean. Dr. Butler has published in academic journals in the U.S. and internationally. In 2024 he was selected as Caribbean Digital Scholarship Summer Institute Fellow.
   - name: "Medardo G. Rosario"
     shortname: "Rosario"
     bio: >
-      TODO: Author bio in markdown.
+      Dr. Medardo G. Rosario is an assistant professor in the Department of Modern Languages at Florida International University. He obtained a Bachelor of Science with a concentration in Chemistry from the University of Puerto Rico (2005) and a Master of Arts with a concentration in Chemistry from Brown University (2006). Subsequently, he earned a Master of Arts with a concentration in Hispanic Studies also from the University of Puerto Rico (2014) and a doctorate in Hispanic and Portuguese-Brazilian Studies from the University of Chicago (2020). His academic research revolves around two themes: the influence of Spanish Golden Age literature in Latin America and representations of the Caribbean in cartography and literature developed in Europe during the 16th and 17th centuries.
 pubDate: "July 2026"
 issue: "9"
 order: "6"

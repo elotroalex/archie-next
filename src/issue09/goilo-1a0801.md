@@ -4,17 +4,19 @@ section: "articles"
 title:
   long: "Tracing Caribbean Narratives at the Intersection of Language, Identity, and Social Media"
   short: "Tracing Caribbean Narratives"
-doi: "10.7916/..."
+doi: "DOI pending"
 author:
   - name: "Juan-Carlos M.E. Goilo"
     shortname: "Goilo"
     bio: >
-      Author bio in markdown.
+      Juan-Carlos M.E. Goilo is a guest researcher at Leiden University.
 pubDate: "Month YYYY"
 issue: "9"
 order: "3"
 abstract: >
-  Article abstract.
+  This article delves into how the creole language of Papiamentu navigates the complexities of cultural identity and decolonial praxis within the social media landscape. Drawing from literature reviews, digital ethnography, content analysis, and an interview with social media influencer Gerald Lijde, I explore Papiamentu's deep-rooted colonial ambivalence—a legacy that shapes its contemporary online use. While digital platforms offer new avenues for celebrating and formalizing Papiamentu, they also risk commodifying its radical, anti-colonial roots into tourist-friendly narratives. By linking online content production to theories of agency and digital culture, the article illuminates Papiamentu's enduring role as a vessel of resistance and communal affirmation, continually reinvented by its speakers to challenge entrenched hierarchies and forge new paths of belonging across borders.
+abstract_es: >
+  Este artículo profundiza en cómo el idioma criollo del Papiamentu navega por las complejidades de la identidad cultural y la praxis decolonial dentro del panorama de las redes sociales. A partir de las reseñas literarias, etnografía digital, análisis digital y una entrevista con el influencer Gerald Lijde, el artículo explora la ambivalencia colonial profundamente arraigada del Papiamentu – un legado que da forma a su uso en línea contemporáneo. Si bien las plataformas digitales ofrecen nuevas vías para celebrar y formalizar el Papiamentu, también arriesgan la comercialización de sus raíces anticoloniales y radicales en narrativas turísticas. Al conectar la producción de contenido en línea a las teorías de agencia y cultura digital, el artículo ilumina el papel perdurable como vasija de resistencia y afirmación comunitaria, reinventada continuamente por sus hablantes para desafiar las jerarquías enraizadas y forjar nuevos caminos de pertenencia a través de las fronteras. 
 language: en
 ---
 
