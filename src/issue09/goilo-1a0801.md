@@ -9,7 +9,7 @@ author:
   - name: "Juan-Carlos M.E. Goilo"
     shortname: "Goilo"
     bio: >
-      Juan-Carlos M.E. Goilo is a guest researcher at Leiden University.
+      Juan-Carlos Goilo is an independent artistic and design researcher and practitioner working on systemic transitions, with a particular focus on the Caribbean. He is the founder of Mente Kaweta and the Curaçao Doughnut Economy Foundation, organizations that explore regenerative urban development, circularity, and new approaches to social and ecological prosperity. His work examines how knowledge, data, collaboration, and collective action can support transitions towards more inclusive, distributive, regenerative, and ecologically sustainable societies. He combines an interdisciplinary background in anthropology, information, arts, and technology with a strong emphasis on place-based and participatory approaches to systemic change.
 pubDate: "Month YYYY"
 issue: "9"
 order: "3"
@@ -19,10 +19,6 @@ abstract_es: >
   Este artículo profundiza en cómo el idioma criollo del Papiamentu navega por las complejidades de la identidad cultural y la praxis decolonial dentro del panorama de las redes sociales. A partir de las reseñas literarias, etnografía digital, análisis digital y una entrevista con el influencer Gerald Lijde, el artículo explora la ambivalencia colonial profundamente arraigada del Papiamentu – un legado que da forma a su uso en línea contemporáneo. Si bien las plataformas digitales ofrecen nuevas vías para celebrar y formalizar el Papiamentu, también arriesgan la comercialización de sus raíces anticoloniales y radicales en narrativas turísticas. Al conectar la producción de contenido en línea a las teorías de agencia y cultura digital, el artículo ilumina el papel perdurable como vasija de resistencia y afirmación comunitaria, reinventada continuamente por sus hablantes para desafiar las jerarquías enraizadas y forjar nuevos caminos de pertenencia a través de las fronteras. 
 language: en
 ---
-
-Tracing Caribbean Narratives at the Intersection of Language, Identity, and Social Media
-
-Juan-Carlos M.E. Goilo
 
 ## Introduction
 
