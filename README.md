@@ -119,7 +119,17 @@ This creates `src/issue09/`, `src/issue09/incoming/`, `src/issue09/images/`, and
 
 ### 4. Add article files
 
-Place each article as a Markdown file in `src/issue09/`. Use `utility/intake/convert-docx.sh` to generate them from Word files (recommended), or create them manually. Every article needs this front matter:
+#### Converting from Word
+
+Place each article as a Markdown file in the `incoming` folder inside the relevant issue folder, ex. `src/issue09/incoming/`. Use `utility/intake/convert-docx.sh` to generate them from Word files (recommended). Example of the full command:
+
+```bash
+$ utility/intake/convert-docx.sh src/issue09/incoming/editors-intro.docx
+```
+
+#### Adding manually
+
+You can also create them manually. Every article needs this front matter:
 
 ```yaml
 ---
