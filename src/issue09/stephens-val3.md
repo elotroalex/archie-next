@@ -1,29 +1,22 @@
 ---
 layout: article
-section: "# TODO: articles | projects | reviews | introduction"
+section: "reviews"
 title:
-  long: "# TODO: Full article title"
-  short: "# TODO: Short title for running header"
-doi: "# TODO: 10.7916/..."
+  long: "Unaccountable Archives: A Review of Underwriting Souls"
+  short: "Unaccountable Archives"
+doi: "DOI pending"
 author:
-- name: "# TODO: Author full name"
-  shortname: "# TODO: Last name"
+- name: "Samantha Stephens"
+  shortname: "Stephens"
   orcid: ""  # optional: paste the author's ORCID iD URL, e.g. https://orcid.org/0000-0000-0000-0000 -- leave blank if none
   bio: >
-    # TODO: Author bio in markdown.
-pubDate: "# TODO: Month YYYY"
-issue: "# TODO: issue number (integer)"
-order: "# TODO: position within section (integer)"
-abstract: >
-  # TODO: Article abstract.
+    Samantha Stephens is a researcher, educator, and digital humanities practitioner whose work focuses on making complex ideas accessible, engaging, and meaningful for different audiences. Her background combines literary and archival research, public humanities, digital project development, and teaching. She holds a PhD in English from the University of Virginia and a Certificate in Digital Humanities. Her research explores Caribbean literature, archives, and media, with a particular focus on how Black Caribbean women use visual, poetic, and digital forms to challenge colonial histories and imagine new possibilities.
+pubDate: "August 2026"
+issue: "9"
+order: "1"
+abstract: ""
 language: en
 ---
-
-Samantha Stephens
-
-*archipelagos* journal -- Valence 3, Digital Project Review
-
-**Unaccountable Archives: A Review of *Underwriting Souls***
 
 The archives of the transatlantic slave trade bear witness to the inhumane tabulation, valuation, and accounting of Black life. While imperial forces maintained financial accounts for the "cargo" enslaved people represented, they have historically refused accountability for the capture, dehumanization, trafficking, and trauma inflicted on enslaved Africans. In 2020 the Lloyd's Insurance Market -- a central site for insuring slaving voyages -- formally apologized for their role in the slave trade.[^1] [*Underwriting Souls*](https://underwritingsouls.org/) is the product of an independent collaboration between the Mellon-funded digital humanities initiative, Black Beyond Data, and Lloyd's market "to present the artifacts related to slavery within the proper context of their production" and "address past harms."[^2] This educational platform holds a digitized archive of key elements of Lloyd's Collection and a set of online exhibits which illustrate the underexamined link between insurance and slavery. While this project focuses on a British archive from seventeenth- to nineteenth-century London, its impact looms large on the histories of the Caribbean, our understanding of the Black Atlantic, and the contours of the modern world.
 
