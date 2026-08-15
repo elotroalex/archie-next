@@ -2,7 +2,7 @@
 layout: article
 section: "articles"
 title:
-  long: <em>"Acervos Documentales de Puerto Rico y el Caribe @ UPR-Río Piedras: On Designing Digital Strategies for Preservation and Access of Unique Puerto Rican and Caribbean Studies Collections"</em>
+  long: "Acervos Documentales de Puerto Rico y el Caribe @ UPR-Río Piedras: On Designing Digital Strategies for Preservation and Access of Unique Puerto Rican and Caribbean Studies Collections"
   short: "Acervos Documentales"
 doi: "10.7916/..."
 author:
