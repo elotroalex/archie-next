@@ -12,7 +12,7 @@ author:
       Juan-Carlos Goilo is an independent artistic and design researcher and practitioner working on systemic transitions, with a particular focus on the Caribbean. He is the founder of Mente Kaweta and the Curaçao Doughnut Economy Foundation, organizations that explore regenerative urban development, circularity, and new approaches to social and ecological prosperity. His work examines how knowledge, data, collaboration, and collective action can support transitions towards more inclusive, distributive, regenerative, and ecologically sustainable societies. He combines an interdisciplinary background in anthropology, information, arts, and technology with a strong emphasis on place-based and participatory approaches to systemic change.
 pubDate: "Month YYYY"
 issue: "9"
-order: "3"
+order: "4"
 abstract: >
   This article delves into how the creole language of Papiamentu navigates the complexities of cultural identity and decolonial praxis within the social media landscape. Drawing from literature reviews, digital ethnography, content analysis, and an interview with social media influencer Gerald Lijde, I explore Papiamentu's deep-rooted colonial ambivalence—a legacy that shapes its contemporary online use. While digital platforms offer new avenues for celebrating and formalizing Papiamentu, they also risk commodifying its radical, anti-colonial roots into tourist-friendly narratives. By linking online content production to theories of agency and digital culture, the article illuminates Papiamentu's enduring role as a vessel of resistance and communal affirmation, continually reinvented by its speakers to challenge entrenched hierarchies and forge new paths of belonging across borders.
 abstract_es: >
