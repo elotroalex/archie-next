@@ -28,7 +28,7 @@ author:
       Felicia J. Fricke is an Assistant Professor at the University of Copenhagen. She received her PhD in the interdisciplinary study of the lifeways of enslaved people in the Dutch Caribbean from the University of Kent (UK) in 2019 and later rewrote her thesis as a book entitled _Slaafgemaakt: Rethinking Enslavement in the Dutch Caribbean_ (CGRN, 2020). She has published journal articles and book chapters in English, Dutch, and Papiamentu, and is co-editor of the volume _Ethics in Caribbean Archaeology_ (with Eduardo Herrera Malatesta and Maaike S. de Waal, University Press of Florida, 2026). Dr. Fricke's current work in the DFF-funded project "Racialized Motherhood: Documenting and Analyzing Early Modern Discourses on Reproduction" (PI: Natália da Silva Perez) concerns the decision-making practices of women running from slavery with their children in the late eighteenth and early nineteenth centuries.
 pubDate: "July 2026"
 issue: "9"
-order: "5"
+order: "05"
 abstract: >
   This article demonstrates the benefits and pitfalls of utilizing Natural Language Processing to structure a large corpus of newspaper adverts on fugitive enslaved people from the Atlantic World between 1766 and 1821. We evaluate a model for multilingual event extraction trained specifically for fugitive ads and jail lists in its capacity to extract correctly the attributes relevant for historical analysis. Finally, we discuss how the current model may be used to expand and qualify databases concerning enslaved fugitives in the eastern Caribbean.
 abstract_es: >
