@@ -1,7 +1,8 @@
 ---
 layout: project
 section: projects
-issue: 1
+issue: 2
+order: 5
 title: 
   "long": "Ramble Bahamas"
   "short": "Ramble Bahamas"

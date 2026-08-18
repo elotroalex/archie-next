@@ -2,6 +2,7 @@
 layout: project
 section: projects
 issue: 1
+order: 0
 title: 
   "long": "Musical Passage: A Voyage to 1688 Jamaica "
   "short": "Musical Passage"
