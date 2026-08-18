@@ -2,6 +2,7 @@
 -- Handles journal-specific elements: epigraphs, iframes, figures
 -- Replaces the old contextStyles.py + ssed pipeline
 -- luacheck: globals pandoc PANDOC_DOCUMENT PANDOC_VERSION
+-- luacheck: globals is_url strip_trailing_punct unnest_links UrlLink BareUrl
 
 -- Normalize title: if front matter has title.long / title.short (nested dict),
 -- flatten it so $title$ renders correctly in the template.
@@ -150,7 +151,14 @@ function Pandoc(doc)
       i = i + 1
     end
   end
-  return pandoc.Pandoc(out, doc.meta)
+  -- URL handling (see the section at the end of this file) runs here, over the
+  -- body only, rather than as a top-level Link/Str filter. Pandoc applies
+  -- element filters to metadata inlines too, and an author's `orcid:` front
+  -- matter value is a bare URL: rewritten there, it reaches template.tex as
+  -- \href{\url{...}}{...}, and the nested url.sty catcode scan blows the input
+  -- stack ("TeX capacity exceeded").
+  local body = pandoc.walk_block(pandoc.Div(out), { Link = UrlLink, Str = BareUrl })
+  return pandoc.Pandoc(body.content, doc.meta)
 end
 
 -- Pandoc 3.x parses {.underline} as a first-class Underline inline node
@@ -193,3 +201,97 @@ function RawBlock(el)
     return doc.blocks
   end
 end
+
+-- ── URLs shown as their own text ──────────────────────────────────────────────
+-- template.tex sets \urlstyle{same} and a break-anywhere \UrlBreaks, but that
+-- only reaches text that actually goes through url.sty — i.e. \url{}. Two
+-- common shapes in this journal's footnotes miss it:
+--
+--   [https://x.org/a](https://x.org/a/)  → \href{target}{plain text}
+--        Pandoc only shortens a link to \url{} when its text and target match
+--        exactly, so a trailing slash or an "http" vs "https" difference is
+--        enough to lose it.
+--   https://x.org/a                      → not a link at all; Pandoc's default
+--        markdown reader has no autolink_bare_uris, so it stays plain text.
+--
+-- Either way the URL is typeset as one ordinary word with no break points, so
+-- a long one forces TeX to stretch the whole line's interword glue — the white
+-- space rivers in URL-heavy citation footnotes. Both are normalized here into
+-- a Link whose text is exactly its target, which is the shape Pandoc's LaTeX
+-- writer renders as \url{}.
+--
+-- Note this is deliberately *not* done by emitting raw \href{...}{\nolinkurl{...}}:
+-- hand-built LaTeX has to hand-escape the target too, and a URL containing a
+-- fragment (#) then blows up with "Illegal parameter number". Handing Pandoc a
+-- normal Link instead keeps its own escaping in charge.
+
+-- Scheme-qualified only, and non-empty after the scheme. A bare "www.foo.org"
+-- is deliberately not matched: turning it into a link would mean inventing a
+-- scheme for a target the author never wrote, and a scheme-less PDF link target
+-- is not reliably resolvable anyway. Those keep their previous plain-text
+-- treatment. (8 in the corpus as of issue 9, all short enough not to strand a
+-- line.)
+function is_url(s)
+  return s:match("^%a[%w+.%-]*://[^%s]") ~= nil
+end
+
+-- Trailing sentence punctuation that a writer put after a bare URL, not in it.
+function strip_trailing_punct(s)
+  local core, tail = s, ""
+  while #core > 0 and core:find("[%.,;:%)%]]$") do
+    tail = core:sub(-1) .. tail
+    core = core:sub(1, -2)
+  end
+  return core, tail
+end
+
+-- Any Link that ended up nested inside this inline list is replaced by its own
+-- content. Markdown can't produce a link inside a link; the only ones that ever
+-- show up here are the ones BareUrl just created inside an existing link's text,
+-- and flattening them is how that gets undone.
+function unnest_links(inlines)
+  local out = {}
+  for _, il in ipairs(inlines) do
+    if il.t == "Link" then
+      for _, inner in ipairs(il.content) do out[#out + 1] = inner end
+    else
+      out[#out + 1] = il
+    end
+  end
+  return out
+end
+
+-- A link already showing its own URL: display the target verbatim, which is the
+-- shape Pandoc's LaTeX writer renders as \url{}. The only visible change is
+-- trivia the author didn't mean to assert (a dropped trailing slash), and it now
+-- agrees with where the link actually goes.
+function UrlLink(el)
+  if is_url(pandoc.utils.stringify(el.content)) then
+    el.content = { pandoc.Str(el.target) }
+  else
+    el.content = unnest_links(el.content)
+  end
+  return el
+end
+
+-- A bare URL in running text becomes a real link. It renders identically —
+-- hyperref is configured colorlinks with allcolors=black — but gains url.sty's
+-- break points, which is the whole point.
+function BareUrl(el)
+  if not is_url(el.text) then return nil end
+  local core, tail = strip_trailing_punct(el.text)
+  if not is_url(core) then return nil end
+  local out = { pandoc.Link({ pandoc.Str(core) }, core) }
+  if tail ~= "" then out[#out + 1] = pandoc.Str(tail) end
+  return out
+end
+
+-- Note where these two get applied: not as top-level `Link`/`Str` filter
+-- functions, but by the explicit pandoc.walk_block call inside Pandoc() above.
+-- That keeps them off metadata (see the comment there), and it fixes them to a
+-- bottom-up walk. Bottom-up is what makes this terminate — Pandoc does not
+-- re-walk what a handler returns, whereas a topdown pass re-walks BareUrl's new
+-- Link, finds the URL Str inside it, and loops forever building links inside
+-- links. It also means BareUrl runs on a link's text before UrlLink runs on the
+-- link itself, briefly nesting a link inside a link; UrlLink resolves that,
+-- either by replacing the content outright or via unnest_links.

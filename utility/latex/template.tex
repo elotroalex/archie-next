@@ -95,11 +95,59 @@
 }
 
 %% ── Hyperlinks ────────────────────────────────────────────────────────────────
+%% hyperref loads url.sty for us, so url's own options have to be passed ahead
+%% of it. `hyphens` is what makes \do@url@hyp (see \UrlBigBreaks below) expand
+%% to a real breakpoint: without it url.sty refuses to break after a hyphen at
+%% all, which is why long slug URLs still had to break mid-word.
+\PassOptionsToPackage{hyphens}{url}
 \usepackage[
   colorlinks = true,
   allcolors  = black,
   breaklinks = true
 ]{hyperref}
+
+%% ── URL typesetting ───────────────────────────────────────────────────────────
+%% Two problems this fixes, both most visible in footnotes (where citation URLs
+%% cluster):
+%%
+%% 1. Font. url.sty defaults to \urlstyle{tt}, so every \url{} came out in
+%%    Latin Modern Mono while the surrounding text was TeX Gyre
+%%    Heros. \urlstyle{same} makes URLs inherit whatever font is in force —
+%%    including the footnote's \lightfont — so a citation URL matches the
+%%    citation text around it.
+%%
+%% 2. Justification. url.sty only allows breaks after a handful of punctuation
+%%    characters, so a long unbroken run (a domain, a slug) had to sit on one
+%%    line; TeX then stretched the interword glue of the whole line to fill the
+%%    gap, producing the rivers of white space between words. We now allow a
+%%    break anywhere in a URL, but grade the cost so the natural points win
+%%    whenever they can:
+%%
+%%      \UrlBigBreaks (mathcode class 3 "relation", penalty \UrlBigBreakPenalty)
+%%        — separators a reader expects a URL to wrap at: : / . - ? = & _ # % + @ ~
+%%      \UrlBreaks    (class 2 "binop",    penalty \UrlBreakPenalty)
+%%        — letters, digits and the leftovers: only used when no separator is
+%%          reachable, because the penalty is much higher.
+%%
+%%    \do@url@hyp is url.sty's hyphen hook — empty by default, a real breakpoint
+%%    once the `hyphens` option above is set — hence the \makeatletter.
+\makeatletter
+\def\UrlBigBreaks{\do\:\do@url@hyp\do\/\do\.\do\?\do\=\do\&\do\_\do\#\do\%\do\+\do\@\do\~}
+\makeatother
+\def\UrlBreaks{\do\\\do\!\do\|\do\;\do\>\do\]\do\)\do\,\do\'%
+  \do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j\do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v\do\w\do\x\do\y\do\z%
+  \do\A\do\B\do\C\do\D\do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N\do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X\do\Y\do\Z%
+  \do\0\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9}
+\mathchardef\UrlBigBreakPenalty=100
+%% 3000 vs 100 is a wide gap on purpose: it makes a mid-token break a genuine
+%% last resort, taken only when no separator is reachable on the line.
+\mathchardef\UrlBreakPenalty=3000
+%% No stretch inside URLs. url.sty spaces \UrlBigBreaks characters with
+%% \Urlmuskip, so any "plus" here shows up as a visible gap after every hyphen
+%% and slash in the URL. With breaks available everywhere, TeX doesn't need
+%% that slack to set the line anyway.
+\Urlmuskip=0mu
+\urlstyle{same}
 
 %% ── Graphics ──────────────────────────────────────────────────────────────────
 \usepackage{xcolor}
