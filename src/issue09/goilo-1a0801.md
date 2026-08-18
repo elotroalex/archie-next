@@ -52,11 +52,17 @@ For this research, I primarily analyzed data from YouTube, Facebook, and Instagr
 
 Two Facebook pages about Papiamentu, [Literatura na Papiamentu](https://www.facebook.com/groups/papiamentu) and [_Dicho i Palabranan di antes i nan nifikashon_](https://www.facebook.com/groups/147424812008997), showcase the language\'s soul beyond bite-sized lessons. One curates literary heritage; the other crowdsources traditional sayings. The former celebrates the literary heritage of Papiamentu from diverse geographical locations, thereby connecting and interacting in their native and traditional forms.[^25] The latter allows individuals to share sayings in Papiamentu, enhancing knowledge of the language and increasing its visibility.
 
-The banner art of \'Dicho i Palabranan di Antes\' tells a deeper, more critical story. Figure 1 captures the Facebook banners of the pages. On the left, a man steps out of a kunuku home to feed his chickens. Kunuku---from the Arawak word for \"farm\" or \"countryside\"---evokes the land once worked by enslaved people, their humble homes outposts of survival. On the right, two chapi (hoes) rest in the dirt. Once wielded by the enslaved, agricultural tools now echo through Tambú music as percussive instruments of resistance. The caption reads: \"Where the hoe falls from your hand, pick it up and continue to work the thick soil, plant, care, harvest the joyful and wild tongue of my mother.\"
+The banner art of \'Dicho i Palabranan di Antes\' tells a deeper, more critical story. Figure 1 and 2 capture the Facebook banners of the pages. In Figure 1, a man steps out of a kunuku home to feed his chickens. Kunuku---from the Arawak word for \"farm\" or \"countryside\"---evokes the land once worked by enslaved people, their humble homes outposts of survival. In figure 2, two chapi (hoes) rest in the dirt. Once wielded by the enslaved, agricultural tools now echo through Tambú music as percussive instruments of resistance. The caption reads: \"Where the hoe falls from your hand, pick it up and continue to work the thick soil, plant, care, harvest the joyful and wild tongue of my mother.\"
 
-![No photo description available.](/issue09/images/goilo-1a0801-image1.jpeg){width="3.326777121609799in" height="2.089899387576553in"} ![image3.jpg](/issue09/images/goilo-1a0801-image2.jpeg){width="3.1496948818897637in" height="2.099459755030621in"}
+<figure>
+  <img src="/issue09/images/goilo-1a0801-image1.jpeg" alt="A man feeding chickens outside the front door of his kunuku home" loading="lazy" />
+  <figcaption>Figure 1: Facebook banner of 'Dicho i Palabranan di Antes' (Sayings and Words of the Past)</figcaption>
+</figure>
 
-_Figure 1: Facebook banners of \'Dicho i Palabranan di Antes\' (left: Sayings and Words of the Past) and \'Literatura na Papiamentu\' (right: Literature in Papiamentu)_
+<figure>
+  <img src="/issue09/images/goilo-1a0801-image2.jpeg" alt="two chapi (hoes) resting in the dirt" loading="lazy" />
+  <figcaption>Figure 2: Facebook banner of 'Literatura na Papiamentu' (Literature in Papiamentu)</figcaption>
+</figure>
 
 This quote doesn\'t just recall the past---it reclaims it. The kunuku and chapi aren\'t mere artifacts, but rather emblems of endurance, creativity, and the will to speak in one\'s own tongue. To \"pick up the chapi\" is to continue the unfinished labor of cultural survival---tending to a language that has always been both soil and song. In a digital landscape where Papiamentu is often polished into a tourist-friendly brand, these banners aim to do the opposite. They remind viewers that the language wasn\'t gently blended from colonial tongues, but birthed in struggle and resistance. Where some pages risk reducing Papiamentu to a tourist gaze, these communities attempt to dig deeper. In this sense, social media platforms can both empower cultural memory and justice and limit perspectives to see the gaze imposed by the tourist economy.
 
@@ -64,9 +70,10 @@ Beneath this celebration and exposure, however, lies a more troubling reality. T
 
 Take, for example, the word dushi. It is one of the first words that generally comes to mind when people think of Papiamentu. Derived from the Spanish word \'dulce,\' meaning \'sweet,\' the word carries many other connotations, including \'tasty,\' \'darling,\' and \'lovely.\' Its meaning, how it rolls off your tongue, and how it excites the tourist and their exoticized gaze of locals reinforce its use and popularity. Many such explanations are available on YouTube. The following explanation was developed by one of the Curaçaoan literary artists active on the FLI-platform, Sheedia Jansen. Her short video, one of the oldest I could find on YouTube explaining the word, walks the fine line between visibility and erasure, where belonging is both affirmed and contested, where the exoticization is exploited but also flipped into a sense of pride and love for Papiamentu.[^28]
 
-![image7.png](/issue09/images/goilo-1a0801-image1.png){width="5.789133858267716in" height="3.2031266404199474in"}
-
-_Figure 2: Youtube video explaining the Papiamentu word \'Dushi\'_
+<!-- <figure>
+  <img src="" alt="" loading="lazy" />
+  <figcaption>Figure 3: Youtube video explaining the Papiamentu word 'Dushi'</figcaption>
+</figure> -->
 
 The same goes for channels like Papiamentu-o.tv, which broadcast sports chatter and short cultural bits for native speakers and celebrate Papiamentu/o, with 14.3k followers on Facebook, 3.8k on YouTube, and almost 18k on Instagram. Infotainment from 5W Press, with casual brunches in Creole, expands domains, but light fare sidesteps to island politics and other news related to the island\'s sovereignty. Yet, the brand also sits at a crossroads. The transformation of Papiamentu phrases and identity markers into consumable fashion risks commodification, glossing over the deeper structural histories of language marginalization, colonial legacies, and social inequality in Curaçao. If Papiamentu, as a national identity marker, is to fulfill a truly decolonial role, it would need to deepen its engagement with the literary richness and intricacies of the language. However, as the following section shows, the interview with Lijde indicates that the language\'s complexity is at odds with its status as a popular and accessible language for both locals and tourists.
 
@@ -80,7 +87,7 @@ Some context is necessary to understand Lijde\'s perspective. Today, he is an in
 
 Lijde arrives at our meeting in sharp office wear---no gym clothes or street wear today. Those shades he always wears make it impossible to tell what he\'s actually looking at. His phone never leaves his hand, screen illuminating his face every few seconds. Between his three kids and mine, his high-stakes role as a project manager at the island's industrial port and my strategic advisory role in the arts and city development, matching our schedules has been like a mathematical formula for controlled chaos. We both order shlongs (long blacks with less hot water). He adds a grilled cheese sandwich. Our mutual friend, who owns the place, lets us slip into the back office, where he also runs a marketing agency. The AC hums away the sweaty morning rush.
 
-### _Digital selves as a practice of being_
+### Digital selves as a practice of being
 
 \"So here\'s the thing,\" I start, watching him settle into the chair. \"You barely mention the rap stuff nowadays. Your posts are all about transitions, youth to adulthood, this constant evolution. But Nok Blok was huge for you, right? How do I even explain who you are?\"
 
@@ -90,9 +97,9 @@ _He_. Third person. Gerald Lijde talks about Nok Blok like a former roommate, so
 
 Nok Blok built his reputation on verses that shifted perspective mid-bar, that played with bubbling\'s conventions while dismantling them. In one video (see image below) --- Immorales member Pimpi Stinki\'s \"Selfie\"--- Nok Blok roasted the whole selfie culture in verse while clearly enjoying being filmed himself. He was also the only member wearing street clothes in one scene and a buttoned-up shirt in another scene. The contradiction seems to be the point. He critiques and participates simultaneously, never letting you pin him down.
 
-![image8.png](/issue09/images/goilo-1a0801-image2.png){width="6.5in" height="3.7in"}
+<!-- ![image8.png](/issue09/images/goilo-1a0801-image2.png){width="6.5in" height="3.7in"}
 
-_Figure 3: Nok Blok\'s verse featured in the video clip of Immorales member Pimpi Stinki\'s song \'Selfie.\'_
+_Figure 3: Nok Blok\'s verse featured in the video clip of Immorales member Pimpi Stinki\'s song \'Selfie.\'_ -->
 
 "So how do I address you?" I pushed. "You are Nok Blok, but you're so clearly not just that."
 
@@ -100,15 +107,27 @@ _Figure 3: Nok Blok\'s verse featured in the video clip of Immorales member Pimp
 
 This was not the answer to my question, but it was the key. He wasn\'t a man leaving a part of himself behind; he was a collage, layering the bookish nerd, the chemist, the father, the industrial energy project manager, and the razor-tongued rapper into a single, evolving self. Critical introspection meets a public persona, showcasing his humanity through both his strengths and flaws. Maybe it is because he was speaking to a friend who has a PhD in cultural anthropology. Would he have responded differently if I were a journalist or a TV celebrity? Lijde\'s self-description can be interpreted as a reflection of the symbiotic relationship between human identity and technology, where digital platforms serve as tools for self-representation and self-exploration, resonating a notion of technics as fundamental to shaping individual and collective identities in the digital age.[^31]
 
-Figure 4 shows three of Lijde\'s tiles he pinned to his Instagram profile in 2023. They reminded me of quotes he had shared from the Ecuadorian self-help guru Yung Pueblo via Instagram stories a few months earlier. The recurring pattern of these pinned tiles is that Lijde encourages others to rely on their intuition and judgment rather than conforming to external expectations or societal norms. By suggesting that personal authenticity and self-trust are the highest virtues, Lijde promotes a holistic view of personal development. He advocates for self-discovery and self-acceptance, emphasizing that true fulfillment arises from deconstructing and overcoming personal traits that perpetuate a negative self-image.
+Figure 3, 4 and 5 show three of Lijde\'s tiles he pinned to his Instagram profile in 2023. They reminded me of quotes he had shared from the Ecuadorian self-help guru Yung Pueblo via Instagram stories a few months earlier. The recurring pattern of these pinned tiles is that Lijde encourages others to rely on their intuition and judgment rather than conforming to external expectations or societal norms. By suggesting that personal authenticity and self-trust are the highest virtues, Lijde promotes a holistic view of personal development. He advocates for self-discovery and self-acceptance, emphasizing that true fulfillment arises from deconstructing and overcoming personal traits that perpetuate a negative self-image.
 
 Papiamentu moves through his posts not as a cultural preservation project but as a daily practice, the day-to-day medium through which transformation happens. When he code-switches between languages, personas, silence and speech, social media presence and absence, he is not contradicting himself but rather showing how identity actually works in the transnational Caribbean---fluid, strategic, multiple, alive.
 
-![image1.png](/issue09/images/goilo-1a0801-image3.png){width="1.8137937445319334in" height="1.8137937445319334in"} ![image2.png](/issue09/images/goilo-1a0801-image4.png){width="1.8336679790026247in" height="1.8336679790026247in"} ![image6.png](/issue09/images/goilo-1a0801-image5.png){width="1.8221227034120735in" height="1.8221227034120735in"}
+<figure>
+  <img src="/issue09/images/goilo-1a0801-image3.png" alt="Instagram card with the username @geraldijde. The profile picture is to the left: a black man with a beard wearing a t-shirt. The message is written in Papiementu: Bo ta super bunita. No laga bo mes lubida e kos ei." loading="lazy" />
+  <figcaption>Figure 3: A tile from Lijde\'s Instagram page, last accessed on June 26, 2023. "You are super beautiful. Do not let yourself forget that"</figcaption>
+</figure>
 
-_Figure 4: The three pinned tiles on Lijde\'s Instagram account page, last accessed on June 26, 2023. Translation from left to right: \"You are super beautiful. Do not let yourself forget that\'; \"Delete the old version of me in your mind. He no longer exists. You have to update your software. The new version has been here for a while now.\"; \"Physical connection is much better than mental connection. I want to be on your mind before being in you.\"_
+<figure>
+  <img src="/issue09/images/goilo-1a0801-image4.png" alt="Instagram card with the username @geraldijde. The profile picture is to the left: a black man with a beard wearing a t-shirt. The message is written in Papiementu: Delete e vershon bieu ku bo tin dimi den bo mente. E no tei mas. Bo tinku update bo software. Masha dia tin un vershon nobo." loading="lazy" />
+  <figcaption>Figure 4: A tile from Lijde\'s Instagram page, last accessed on June 26, 2023. "Delete the old version of me in your mind. He no longer exists. You have to update your software. The new version has been here for a while now."</figcaption>
+</figure>
 
-### _Language as home_
+<figure>
+  <img src="/issue09/images/goilo-1a0801-image5.png" alt="Instagram card with the username @geraldijde. The profile picture is to the left: a black man with a beard wearing a t-shirt. The message is written in Papiementu: Konekshon fisiko ta hopi mas dushi ora tin konekshon mental. Mi ke den bo mente promé, kaba mi ke ta den bo." loading="lazy" />
+  <figcaption>Figure 5: A tile from Lijde\'s Instagram page, last accessed on June 26, 2023. "Physical connection is much better than mental connection. I want to be on your mind before being in you."</figcaption>
+</figure>
+
+
+### Language as home
 
 \"Is Papiamentu important for your social media posts?\" I continued.
 
@@ -116,21 +135,24 @@ _Figure 4: The three pinned tiles on Lijde\'s Instagram account page, last acces
 
 _Our language._ Not _the_ language. The possessive does work here---it claims something, provides a network for belonging that geography apparently can\'t quite capture. I think about his Instagram tiles ---the one about past mistakes being like a first paintbrush---imperfect but necessary (see Figure 5). He writes these in Papiamentu, in colloquial, everyday language, as if there is a method to being in the everyday.
 
-![image4.png](/issue09/images/goilo-1a0801-image6.png){width="2.0910870516185476in" height="2.6176563867016625in"}
+<figure>
+  <img src="/issue09/images/goilo-1a0801-image6.png" alt="Instagram card with the username @geraldijde. The profile picture is to the left: a black man with a beard wearing a t-shirt. The message is written in Papiementu: No keda tuma bo mes na malu pa fayonan den pasado. Tur tabata nesesario pabo krese bira e persona ku bo ta awe. Korda k'e prome man di fèrf nunka no ta keda bon, pero t'e ta buta k'e di dos man di fèrf ta keda bunita." loading="lazy" />
+  <figcaption>Figure 6: A tile from Lijde\'s Instagram page, last accessed on June 26, 2023. "Do not feel ashamed of your past mistakes. They were all necessary to grow into who you are today. Remember that the first paintbrush is never perfect, but is the foundation for the next brush to remain in its beauty."</figcaption>
+</figure>
 
-_Figure 5: A tile from Lijde\'s Instagram page, last accessed on June 26, 2023. Translation: Do not feel ashamed of your past mistakes. They were all necessary to grow into who you are today. Remember that the first paintbrush is never perfect, but is the foundation for the next brush to remain in its beauty._
+Figure 5: A tile from Lijde\'s Instagram page, last accessed on June 26, 2023. Translation: Do not feel ashamed of your past mistakes. They were all necessary to grow into who you are today. Remember that the first paintbrush is never perfect, but is the foundation for the next brush to remain in its beauty.
 
 He suddenly admits something unexpected: social media addiction. I remember how he often stares down at his phone in Pakaya Society. Although he admits to also struggling with the need to scroll, seeking likes and connections, he seems driven by something else. He explains how he weaponizes his addiction, transforming it into something else entirely. Those reflective posts that populated his feed in 2023 weren\'t just thoughts. They\'re treatment, personal editing, an adaptation, a self-upgrade. Instead of losing himself in just the act of scrolling, he decided to fuel his actions with inspiration, insight, and affirmations.
 
 \"It is self-therapeutic in more ways than one. I am a very effective person in everything I do. Instead of mindlessly scrolling, let\'s give this habit purpose. Let\'s talk with other people\'s minds by talking to myself. That\'s it.\" The logic is almost too clean, too self-aware. He\'s turned the scroll into a philosophy of empowerment to others and healing to himself. His feed transformed into a personal journal that others can read. Personal growth as performance, ontologizing functionality. Whether it was pre- or post-emptive remained unclear in the conversation.
 
-### _The resonance of impact_
+### The resonance of impact
 
 \"How do you know that you have an impact on social media?\" I followed.
 
 \"When you post an argument, a like indicates they agree with your argument or have engaged with it,\" said Lijde. For him, likes and follows on Facebook represent not just superficial approval but rather engagement with the content. \"Likes show how your post resonated,\" he continued. \"It\'s a real thing \[\...\] When you convey a message that gives the reader and myself an added value, it\'s proof that it has added value beyond superficial images. I\'ve often received messages from people thanking me for providing them with an empowering perspective.\" A few days after our meeting, my phone lights up. Lijde forwards screenshots and one audio file; WhatsApp messages from followers, anonymous and grateful. \"Thank you for this. This helped me today. I needed to hear this.\" The messages are in Papiamentu: intimate, vulnerable in ways that social media content rarely is. Reading Lijde\'s posts, I don\'t always find them radical. The messages about self-trust and authenticity feel like common knowledge, at times even cliché. But that is likely my outsider lens to the online bubble he inhabits, failing. What I seem to be missing is the how, the way Papiamentu itself becomes the medium of empowerment, the way its colloquial everyday practice creates permission for other informal selves to exist, or at least momentarily escape the deep-rooted colonial ambivalence.
 
-### _The art of influencer critique_
+### The art of influencer critique
 
 Lijde sees himself as part of a broader social media ecosystem. \"You know how Oompie Stroopie expresses critique with humor, and Yves Cooper critiques only," he says, citing a series of Papiamentu-speaking influencers, \"Roderick Vader Volk critiques with humor... Cossy Curaçao uses critique and humor...\"
 
@@ -144,9 +166,9 @@ After a moment of silence, Lijde continues, \"I am achieving for myself the art 
 
 Then he breaks down the local social media landscape like he\'s teaching a masterclass. \"Look at Facebook in Curaçao. In Curaçao, there is a culture of \'we post to critique or to joke.\' Effectiveness in this context is if I critique or joke, and you have nothing left to joke about or critique, but reflect!\" He slaps the table for emphasis. \"Because you cannot tell me anything, because I did not accuse you of anything, I did not label you. I told you that I am doing the thing that I critique. But I told you in a way that undoubtedly you yourself are questioning yourself, like, \'Do I also do this? And why?\' That is the critique part.\"
 
-### _Ongoing tensions with formality in Papiamentu_
+### Ongoing tensions with formality in Papiamentu
 
-When people in the streets read something, they stop at the first line if it\'s boring, he said. In Papiamentu: *\"*Ora e hende den kaya lesa algu, nan ta stop di lesa na e promé alinea si e ta laf*.*\" Formal writing loses them immediately. He gives another example, performing it: \"\'Si, ayera nos tabata presente.\' Present? Nò, kla! Kla!\" (\'Yes, yesterday we were present\' Present? No, done! Done!) The repetition of _kla_ underlines that people are finished; they\'ve tuned out. It hammers the point. Political language, formal Papiamentu, disconnects instantly.
+When people in the streets read something, they stop at the first line if it\'s boring, he said. In Papiamentu: "Ora e hende den kaya lesa algu, nan ta stop di lesa na e promé alinea si e ta laf." Formal writing loses them immediately. He gives another example, performing it: \"\'Si, ayera nos tabata presente.\' Present? Nò, kla! Kla!\" (\'Yes, yesterday we were present\' Present? No, done! Done!) The repetition of _kla_ underlines that people are finished; they\'ve tuned out. It hammers the point. Political language, formal Papiamentu, disconnects instantly.
 
 \"Yesterday we were present at the opening that was held at\' done! That\'s formal political talk. It doesn\'t connect with anyone in the streets.\" His hands move expressively now. \"I take the same phrase and change it to say, \'I was in the streets.\' The reader thinks, \'Let me see what comes next, because yesterday this man was in the streets. Papiamentu has to be lived\'\"
 
