@@ -385,6 +385,109 @@ bash utility/test-check-contrast.sh
 
 ---
 
+## Deployment
+
+The site uses a two-branch deploy strategy:
+
+| Branch | Deploys to | Purpose |
+|--------|-----------|---------|
+| `staging` | GitHub Pages, under `/archie-next/` | Testing — link checking, preview before publication |
+| `main` | Reclaim Hosting via rsync — target set by repository variables | Production |
+
+**Day-to-day workflow:** all work (new issues, edits, fixes) happens on `staging` or is merged into it. GitHub Pages updates automatically on every push to `staging`.
+
+**Publishing to production:**
+
+```bash
+git checkout main
+git merge staging
+git push
+```
+
+GitHub Actions builds the site, runs the checks against the exact bytes it is about to ship, then rsyncs `_site/` to the server over SSH. After a successful push to `main`, immediately return to `staging` for the next issue:
+
+```bash
+git checkout staging
+```
+
+Tag each production deploy so there is always a named rollback target:
+
+```bash
+git tag prod-$(date +%Y-%m-%d) && git push --tags
+```
+
+### Configuration
+
+The deploy target lives entirely in repository settings, never in the workflow, so moving from the pre-cutover preview to the live docroot is a settings change with no code change.
+
+Settings → Secrets and variables → Actions.
+
+**Secret:**
+
+| name | value |
+|------|-------|
+| `SSH_PRIVATE_KEY` | Full contents of the CI-only private key, `-----BEGIN`/`-----END` lines and trailing newline included |
+
+**Variables** (deliberately variables, not secrets — this is operational config you want visible and auditable in the run log, and an SSH host key is public information):
+
+| name | preview | live |
+|------|---------|------|
+| `DEPLOY_HOST` | Reclaim server hostname | same |
+| `DEPLOY_USER` | `elotroalex` | same |
+| `DEPLOY_PORT` | `22` | same |
+| `DEPLOY_PATH` | `/home/elotroalex/preview.archipelagosjournal.org/` | `/home/elotroalex/public_html/` |
+| `SITE_URL` | `https://preview.archipelagosjournal.org` | `https://archipelagosjournal.org` |
+| `ALLOW_CRAWLERS` | *(unset)* | `true` |
+| `MAX_DELETIONS` | `50` | `50` |
+| `SSH_KNOWN_HOSTS` | `ssh-keyscan` output, verified out of band | same |
+
+`DEPLOY_HOST` should be the Reclaim **server** hostname rather than `archipelagosjournal.org`: SSH to the domain only works while that A record points, unproxied, at the Reclaim box, and the record may change during cutover. A `known_hosts` entry is keyed by the hostname string you connect to, so capture `SSH_KNOWN_HOSTS` against the same hostname you put in `DEPLOY_HOST`.
+
+There is also a `production` environment (Settings → Environments) with a required reviewer and deployment branches restricted to `main`, so every production run needs an explicit human approval.
+
+### Dry runs
+
+The production job can be run by hand at any time: Actions → Build and Deploy → Run workflow → branch `main`. **Dry run** is checked by default; it runs every check and the full rsync plan, prints the list of files that would be deleted to the job summary, and writes nothing to the server.
+
+The job refuses to proceed if rsync would delete more than `MAX_DELETIONS` remote files, unless **allow_mass_delete** is also checked. That check exists for exactly one legitimate case — the live cutover, which removes the old Jekyll site.
+
+### Preview → live cutover
+
+1. Take a full snapshot of the existing site and download it off-server (a 500 MB tarball left in the account eats the cPanel quota, and inside `public_html` it would be web-accessible):
+   ```bash
+   ssh elotroalex@<host> 'tar czf ~/jekyll-pre-cutover-$(date -u +%Y%m%d).tar.gz -C ~ public_html'
+   ```
+2. Flip three variables: `DEPLOY_PATH`, `SITE_URL`, and set `ALLOW_CRAWLERS=true`.
+3. Run a manual **dry run** and confirm the deletion count matches the old Jekyll file count, and that `.well-known`, `cgi-bin`, and `.htaccess` are *not* in the plan.
+4. Re-run with **allow_mass_delete** checked.
+5. Verify: `robots.txt` says `Allow: /`, no `noindex` meta anywhere, and 5–10 legacy article URLs still resolve — DOI resolution depends on the frozen URL structure.
+
+### What the deploy does not touch
+
+`.htaccess`, `.htpasswd`, `.well-known/`, `cgi-bin/`, and the cPanel stats directories are on the rsync exclude list. They are **server-managed state**: `.well-known/` carries AutoSSL's domain-control challenges (deleting it silently breaks certificate renewal about 60 days later), and `.htaccess` carries the PHP handler, any redirects, Directory Privacy, and the preview's `X-Robots-Tag` header. Because they are excluded, they are never overwritten *and* never deleted.
+
+Never add `--delete-excluded` to the rsync flags — it inverts that exclude list into a kill list.
+
+### Rollback
+
+1. **Per-deploy backup**, automatic. Every run leaves `~/.deploy-backups/<UTC stamp>-<run id>/` containing the previous version of every file it changed or removed; the path is printed in the job summary. Restore with `rsync -a ~/.deploy-backups/<stamp>/ ~/public_html/`. This restores changed and deleted files but does not remove files the deploy added — for a clean revert use 2.
+2. **Re-deploy a known-good commit** — the canonical rollback, since the build is fully reproducible from source. Revert on `main` and push, or run the workflow against an earlier tag.
+3. **The pre-cutover tarball**, for the one-time worst case.
+
+Prune old backups periodically — the site is ~500 MB, so they add up against the cPanel quota:
+
+```bash
+ssh elotroalex@<host> 'ls -1dt ~/.deploy-backups/*/ | tail -n +4 | xargs -r rm -rf'
+```
+
+### Site URL and indexing
+
+`src/_data/site.js` builds every absolute URL the site emits (canonical, hreflang, `og:url`, `citation_*`, sitemap `<loc>`, atom, JSON-LD) from `SITE_URL`, defaulting to the canonical `https://archipelagosjournal.org`. It throws at build time if `SITE_URL` isn't https, and — the important one — if `ELEVENTY_ALLOW_CRAWLERS=true` is combined with a non-canonical `SITE_URL`. A mistyped variable therefore can't ship preview canonicals or a preview sitemap to a build search engines are allowed to crawl.
+
+Indexing is blocked two ways, both keyed off `ELEVENTY_ALLOW_CRAWLERS`: `robots.txt` (generated by `src/robots.11ty.js`) and a `<meta name="robots" content="noindex, nofollow">` in `head.njk`. Both are needed. robots.txt is only honored at a **host root**, so it does nothing at all for the GitHub Pages preview at `elotroalex.github.io/archie-next/` — the meta tag is what actually covers a subpath deploy. On the Reclaim preview subdomain, an `X-Robots-Tag` header in its hand-placed `.htaccess` adds a third layer, since robots.txt prevents crawling but not indexing from an external link.
+
+---
+
 ## Internationalization
 
 The site publishes in English, Spanish, and French. Each language is a full parallel version of the site, not a translation layer.

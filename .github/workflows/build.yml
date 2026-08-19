@@ -5,18 +5,32 @@ on:
     branches: [main, staging]
   pull_request:
     branches: [main, staging]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run -- rsync --dry-run; nothing is written to the server"
+        type: boolean
+        default: true
+      allow_mass_delete:
+        description: "Allow deleting more than MAX_DELETIONS remote files (needed for the live cutover)"
+        type: boolean
+        default: false
 
+# Least privilege by default; deploy-staging opts back into what Pages needs.
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: ${{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.ref }}
+  # Deliberately false: cancelling a run mid-rsync is exactly what we don't want.
   cancel-in-progress: false
 
 jobs:
   build:
+    name: Build and check
+    # Production builds and checks now happen inside deploy-production, against
+    # the exact bytes it ships, so a push to main skips this job entirely.
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/staging'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -31,6 +45,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # ELEVENTY_ALLOW_CRAWLERS is deliberately unset here, so site.noindex is
+      # true and head.njk emits <meta name="robots" content="noindex">. That
+      # meta tag -- not robots.txt -- is what keeps the /archie-next/ subpath
+      # preview out of search results.
       - name: Build Eleventy site
         run: npm run build
         env:
@@ -63,6 +81,10 @@ jobs:
     if: github.ref == 'refs/heads/staging'
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -71,12 +93,73 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
+  # ---------------------------------------------------------------------------
+  # Production: rsync to Reclaim Hosting (cPanel shared host).
+  #
+  # The target is entirely driven by repository variables, so moving from the
+  # pre-cutover preview subdomain to the live docroot is three variable edits
+  # (DEPLOY_PATH, SITE_URL, ALLOW_CRAWLERS) and no code change. See README.md.
+  # ---------------------------------------------------------------------------
   deploy-production:
     name: Deploy to production via rsync
-    if: github.ref == 'refs/heads/main'
-    needs: build
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'push' && github.ref == 'refs/heads/main')
     runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: ${{ vars.SITE_URL }}
+    env:
+      DEPLOY_HOST: ${{ vars.DEPLOY_HOST }}
+      DEPLOY_USER: ${{ vars.DEPLOY_USER }}
+      DEPLOY_PORT: ${{ vars.DEPLOY_PORT || '22' }}
+      DEPLOY_PATH: ${{ vars.DEPLOY_PATH }}
+      SITE_URL: ${{ vars.SITE_URL }}
+      ELEVENTY_ALLOW_CRAWLERS: ${{ vars.ALLOW_CRAWLERS }}
+      MAX_DELETIONS: ${{ vars.MAX_DELETIONS || '50' }}
+      DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || false }}
+      ALLOW_MASS_DELETE: ${{ github.event_name == 'workflow_dispatch' && inputs.allow_mass_delete || false }}
+
     steps:
+      # -----------------------------------------------------------------------
+      # 1. Fail fast on misconfiguration, before anything is built or connected.
+      # -----------------------------------------------------------------------
+      - name: Validate deploy configuration
+        run: |
+          set -euo pipefail
+          missing=""
+          for v in DEPLOY_HOST DEPLOY_USER DEPLOY_PORT DEPLOY_PATH SITE_URL; do
+            if [ -z "${!v:-}" ]; then missing="$missing $v"; fi
+          done
+          if [ -n "$missing" ]; then
+            echo "::error::Missing repository variables:$missing (Settings -> Secrets and variables -> Actions -> Variables)"
+            exit 1
+          fi
+          case "$DEPLOY_PATH" in
+            /home/*) ;;
+            *) echo "::error::DEPLOY_PATH must be an absolute /home/... path, got '$DEPLOY_PATH'"; exit 1 ;;
+          esac
+          case "$DEPLOY_PATH" in
+            */) ;;
+            *) echo "::error::DEPLOY_PATH must end with a trailing slash, got '$DEPLOY_PATH'"; exit 1 ;;
+          esac
+          if [ "$DEPLOY_PATH" = "/home/$DEPLOY_USER/" ]; then
+            echo "::error::Refusing to deploy to the account home directory itself."
+            exit 1
+          fi
+          {
+            echo "### Deploy target"
+            echo ""
+            echo "| setting | value |"
+            echo "| --- | --- |"
+            echo "| host | \`$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PORT\` |"
+            echo "| path | \`$DEPLOY_PATH\` |"
+            echo "| SITE_URL | \`$SITE_URL\` |"
+            echo "| indexable | \`${ELEVENTY_ALLOW_CRAWLERS:-false}\` |"
+            echo "| dry run | \`$DRY_RUN\` |"
+            echo "| commit | \`${GITHUB_SHA:0:8}\` |"
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -89,21 +172,239 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build Eleventy site
+      # ELEVENTY_PATH_PREFIX is deliberately unset -> pathPrefix "/". SITE_URL
+      # and ELEVENTY_ALLOW_CRAWLERS come from the job env; src/_data/site.js
+      # refuses to build an indexable site at a non-canonical SITE_URL.
+      - name: Build Eleventy site (production settings)
         run: npm run build
-        env:
-          ELEVENTY_ALLOW_CRAWLERS: "true"
 
-      - name: Install SSH key
+      # -----------------------------------------------------------------------
+      # 2. Checks, run against the exact bytes about to ship. The two
+      #    deterministic ones block; the external link crawl does not -- link
+      #    rot in a 2016 article must never block publishing a 2026 issue.
+      # -----------------------------------------------------------------------
+      - name: Check same-page anchor links
+        run: npm run check-anchors
+
+      - name: Check color contrast
+        run: npm run check-contrast
+
+      - name: Check links (advisory)
+        run: npm run check-links
+        continue-on-error: true
+
+      # -----------------------------------------------------------------------
+      # 3. Preflight. This is the guard that makes `--delete` safe: a truncated,
+      #    empty, or wrongly-configured build must never reach the docroot.
+      # -----------------------------------------------------------------------
+      - name: Deploy preflight
+        run: |
+          set -euo pipefail
+
+          for f in _site/index.html _site/sitemap.xml _site/robots.txt _site/atom.xml; do
+            [ -s "$f" ] || { echo "::error::$f is missing or empty"; exit 1; }
+          done
+          for d in _site/public _site/assets _site/es _site/fr; do
+            [ -d "$d" ] || { echo "::error::$d is missing"; exit 1; }
+          done
+
+          html_count=$(find _site -name '*.html' | wc -l | tr -d ' ')
+          echo "HTML pages built: $html_count"
+          if [ "$html_count" -lt 300 ]; then
+            echo "::error::Only $html_count HTML pages in _site (expected ~332). Refusing to rsync --delete a suspiciously small build."
+            exit 1
+          fi
+
+          echo "--- robots.txt ---"
+          cat _site/robots.txt
+
+          # Assert robots.txt AND the noindex meta agree with ALLOW_CRAWLERS in
+          # both directions, so neither can silently drift from the other.
+          if [ "${ELEVENTY_ALLOW_CRAWLERS:-}" = "true" ]; then
+            grep -qx 'Allow: /' _site/robots.txt \
+              || { echo "::error::ALLOW_CRAWLERS=true but robots.txt does not allow crawling"; exit 1; }
+            grep -qF "Sitemap: ${SITE_URL%/}/sitemap.xml" _site/robots.txt \
+              || { echo "::error::robots.txt sitemap URL does not match SITE_URL"; exit 1; }
+            if grep -q 'name="robots"' _site/index.html; then
+              echo "::error::indexable build still emits a robots meta tag"; exit 1
+            fi
+          else
+            grep -qx 'Disallow: /' _site/robots.txt \
+              || { echo "::error::non-indexable target must ship a crawler-blocking robots.txt"; exit 1; }
+            grep -q 'name="robots" content="noindex' _site/index.html \
+              || { echo "::error::non-indexable target must ship <meta name=robots content=noindex>"; exit 1; }
+          fi
+
+          if grep -rlq 'http://archipelagosjournal\.org' _site --include='*.html' --include='*.xml'; then
+            echo "::error::insecure http:// journal URLs found in the build:"
+            grep -rl 'http://archipelagosjournal\.org' _site --include='*.html' --include='*.xml' | head -20
+            exit 1
+          fi
+
+          canonical=$(grep -m1 -o 'rel="canonical" href="[^"]*"' _site/index.html || true)
+          echo "Homepage $canonical"
+          case "$canonical" in
+            *"${SITE_URL%/}"*) ;;
+            *) echo "::error::homepage canonical does not match SITE_URL=${SITE_URL%/}"; exit 1 ;;
+          esac
+
+      # -----------------------------------------------------------------------
+      # 4. SSH with a pinned host key. No ssh-keyscan at run time: the key is
+      #    captured and verified out of band once, then stored in the
+      #    SSH_KNOWN_HOSTS variable (see README.md).
+      # -----------------------------------------------------------------------
+      - name: Install deploy SSH key
         uses: shimataro/ssh-key-action@v2
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          known_hosts: unnecessary
-          if_key_exists: replace
+          name: id_ed25519
+          known_hosts: ${{ vars.SSH_KNOWN_HOSTS }}
+          if_key_exists: fail
+          config: |
+            Host deploy-target
+              HostName ${{ vars.DEPLOY_HOST }}
+              User ${{ vars.DEPLOY_USER }}
+              Port ${{ vars.DEPLOY_PORT || '22' }}
+              IdentityFile ~/.ssh/id_ed25519
+              IdentitiesOnly yes
+              StrictHostKeyChecking yes
+              UserKnownHostsFile ~/.ssh/known_hosts
+              BatchMode yes
+              ServerAliveInterval 30
 
-      - name: Add server to known hosts
-        run: ssh-keyscan -p 22 archipelagosjournal.org >> ~/.ssh/known_hosts
+      - name: Verify SSH connection and remote target
+        run: |
+          set -euo pipefail
+          ssh deploy-target "
+            set -e
+            command -v rsync >/dev/null 2>&1 || { echo 'rsync is not available on the remote host'; exit 1; }
+            rsync --version | head -1
+            [ -d '$DEPLOY_PATH' ] || { echo 'DEPLOY_PATH does not exist: $DEPLOY_PATH'; exit 1; }
+            [ -w '$DEPLOY_PATH' ] || { echo 'DEPLOY_PATH is not writable: $DEPLOY_PATH'; exit 1; }
+            echo '--- disk / quota ---'
+            df -Ph '$DEPLOY_PATH' | tail -1
+            quota -s 2>/dev/null | tail -2 || true
+          "
 
+      # -----------------------------------------------------------------------
+      # 5. rsync: always plan first, then apply.
+      # -----------------------------------------------------------------------
       - name: Deploy via rsync
         run: |
-          rsync -r -e "ssh -p22" _site/. elotroalex@archipelagosjournal.org:/home/elotroalex/public_html/
+          set -euo pipefail
+
+          # Outside the docroot, so --delete can't eat it and it isn't web-served.
+          BACKUP_DIR="/home/${DEPLOY_USER}/.deploy-backups/$(date -u +%Y%m%dT%H%M%SZ)-${GITHUB_RUN_ID}"
+
+          # The excludes are everything on a cPanel docroot that the *server*
+          # owns, not this repo:
+          #   .well-known/  AutoSSL + ACME domain-control challenges. Deleting
+          #                 it breaks certificate renewal ~60 days later.
+          #   cgi-bin/      created by cPanel on domain provisioning
+          #   .htaccess     Apache config: PHP handler, redirects, Directory
+          #                 Privacy, and the preview's X-Robots-Tag header.
+          #                 Hand-managed on the server, never shipped from here.
+          #   .htpasswd     cPanel Directory Privacy credentials
+          #   error_log     Apache per-directory error logs, at any depth
+          #
+          # NEVER add --delete-excluded: it inverts this list into a kill list.
+          #
+          # Also deliberately absent: --size-only (a one-character HTML fix
+          # keeps the byte count identical and would be silently skipped) and
+          # --checksum (a full ~500 MB read on both ends, every run).
+          RSYNC_FLAGS=(
+            --archive
+            --no-owner --no-group
+            --chmod=D755,F644
+            --compress
+            --skip-compress=pdf/jpg/jpeg/png/gif/webp/ico/woff/woff2/zip/gz/mp4/mp3
+            --human-readable
+            --itemize-changes
+            --stats
+            --delete-after
+            --backup
+            --backup-dir="$BACKUP_DIR"
+            --timeout=600
+            --exclude=/.well-known/
+            --exclude=/cgi-bin/
+            --exclude=/awstats/
+            --exclude=/webalizer/
+            --exclude=/stats/
+            --exclude=/cp/
+            --exclude=.htaccess
+            --exclude=.htpasswd
+            --exclude=.user.ini
+            --exclude=php.ini
+            --exclude=error_log
+            --exclude=.ftpquota
+            --exclude=.DS_Store
+            --exclude=.git/
+          )
+
+          # --- Pass 1: plan ----------------------------------------------
+          echo "::group::rsync plan (--dry-run)"
+          rsync "${RSYNC_FLAGS[@]}" --dry-run -e ssh _site/ "deploy-target:$DEPLOY_PATH" \
+            | tee /tmp/rsync-plan.txt
+          echo "::endgroup::"
+
+          deletions=$(grep -c '^\*deleting' /tmp/rsync-plan.txt || true)
+          deletions=${deletions:-0}
+          echo "Remote files that would be deleted: $deletions"
+
+          {
+            echo ""
+            echo "### rsync plan"
+            echo ""
+            echo "- deletions: **$deletions** (limit \`$MAX_DELETIONS\`)"
+            echo ""
+            echo "<details><summary>Files to be deleted</summary>"
+            echo ""
+            echo '```'
+            grep '^\*deleting' /tmp/rsync-plan.txt | head -200 || echo "(none)"
+            echo '```'
+            echo ""
+            echo "</details>"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          if [ "$deletions" -gt "$MAX_DELETIONS" ] && [ "$ALLOW_MASS_DELETE" != "true" ]; then
+            echo "::error::rsync would delete $deletions remote files (limit $MAX_DELETIONS). If this is the live cutover, re-run via workflow_dispatch with 'allow_mass_delete' checked."
+            exit 1
+          fi
+
+          if [ "$DRY_RUN" = "true" ]; then
+            echo "::notice::DRY RUN -- nothing was written to $DEPLOY_HOST."
+            exit 0
+          fi
+
+          # --- Pass 2: apply ---------------------------------------------
+          echo "::group::rsync apply"
+          rsync "${RSYNC_FLAGS[@]}" -e ssh _site/ "deploy-target:$DEPLOY_PATH"
+          echo "::endgroup::"
+
+          echo "::notice::Deployed ${GITHUB_SHA:0:8} to $DEPLOY_HOST:$DEPLOY_PATH"
+          echo "Rollback snapshot: $BACKUP_DIR"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- rollback snapshot: \`$BACKUP_DIR\`" >> "$GITHUB_STEP_SUMMARY"
+
+      # -----------------------------------------------------------------------
+      # 6. Smoke test the real server, not the build output.
+      # -----------------------------------------------------------------------
+      - name: Smoke test the deployed site
+        if: env.DRY_RUN != 'true'
+        run: |
+          set -euo pipefail
+          base="${SITE_URL%/}"
+          fail=0
+          for p in / /index.html /issues.html /about.html \
+                   /es/ /fr/ /robots.txt /sitemap.xml /atom.xml \
+                   /public/css/main.css; do
+            code=$(curl -sS -o /dev/null -w '%{http_code}' \
+                   --retry 3 --retry-delay 5 --max-time 30 "$base$p" || echo 000)
+            printf '%s  %s\n' "$code" "$p"
+            [ "$code" = "200" ] || fail=1
+          done
+          echo "--- served robots.txt ---"
+          curl -sS "$base/robots.txt"
+          echo "--- X-Robots-Tag ---"
+          curl -sSI "$base/" | grep -i 'x-robots-tag' || echo "(none)"
+          [ "$fail" = "0" ]
