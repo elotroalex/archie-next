@@ -16,9 +16,15 @@ on:
         type: boolean
         default: false
 
-# Least privilege by default; deploy-staging opts back into what Pages needs.
+# Kept at workflow level, matching GitHub's own Pages starter workflow. The
+# `build` job is what calls upload-pages-artifact, so narrowing this to
+# `contents: read` and granting pages/id-token only on deploy-staging would
+# change the staging deploy path -- not worth the risk for a token scope that
+# deploy-production never uses anyway.
 permissions:
   contents: read
+  pages: write
+  id-token: write
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -81,10 +87,6 @@ jobs:
     if: github.ref == 'refs/heads/staging'
     needs: build
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
