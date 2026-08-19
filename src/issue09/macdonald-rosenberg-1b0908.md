@@ -4,7 +4,7 @@ section: "articles"
 title:
   long: "Raising History from the Grave: Reparative Archival Pedagogy, International Virtual Exchange, and Community Engagement"
   short: "Raising History from the Grave"
-doi: "DOI pending"
+doi: "https://doi.org/10.17132/2689-842X.1010"
 author:
   - name: "Antonia MacDonald"
     shortname: "MacDonald"
