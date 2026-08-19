@@ -10,7 +10,7 @@ author:
     shortname: "Chong"
     bio: >
       Grayson Chong is an artist-scholar whose textile-based pieces explore the intersections between fashion, gender, and race in Jamaica and the Caribbean diaspora. Born and raised in Toronto, Canada, she received her PhD at the University of Massachusetts Amherst in May 2025. Grayson is the editorial assistant of *sx salon: a small axe literary platform*. Her works have been featured in *Contemporary Media Arts Journal* (2021); the *sx salon* special issue on textiles (2021); and *MaComère Journal* (2024). She is also the curatorial assistant for *Rendering Revolution/Revolisyon toupatou*, a bilingual digital humanities project and exhibit that explores the impact of the Haitian Revolution on contemporary art and fashion. Grayson is the inaugural recipient of the Rendering Revolution Maker-Scholar Fashion Fellowship for 2025-2026. She has a forthcoming chapter entitled "Stitching in Knots: Art-Making as Knowledge-Making in the Chinese-West Indian Diaspora(s)" in an edited volume called _Diasporic Womanisms: Introducing Hope and Solidarity from Non Western Sources_ (Routledge, forthcoming). You can find more about her artworks and scholarship at graysonchong.com.
-pubDate: "July 2026"
+pubDate: "August 2026"
 issue: "9"
 order: "08"
 abstract: >

@@ -11,7 +11,7 @@ author:
     shortname: "Rivera"
     bio: >
       Luis Rivera Jiménez (b. 1997) is a Dominican and Puerto Rican multidisciplinary artist and researcher. His work explores how physical and digital materials can open new spaces for reconfiguring Western epistemologies and racial structures. Drawing from contemporary art, Caribbean life, anarchist thought, and psychoanalysis, his practice questions systems of representation, hierarchy, and collaboration—foregrounding \"poor\" materials and quotidian aesthetics to examine how digital and racial conditions shape lived experience and collective imagination. Currently resides between Mexico City and Santo Domingo.
-pubDate: "July 2026"
+pubDate: "August 2026"
 issue: "9"
 order: "01"
 abstract: >

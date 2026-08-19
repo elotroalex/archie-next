@@ -16,7 +16,7 @@ author:
     orcid: "https://orcid.org/0009-0003-2370-6698"
     bio: >
       Mila Aponte-González is a Puerto Rican digital humanist, archivist, educator, and scholar. An alumna of the University of Puerto Rico–Río Piedras and New York University, she holds degrees in Comparative Literature, Drama, Performance Studies, and Information Science. Aponte-González plays multiple roles in cultural management and archival studies as a consultant and mentor for innovative Digital Humanities initiatives in the Caribbean. She co-creates community and cultural heritage digital archives and teaches in the graduate programs at UPR-Río Piedras. Her collaborations include projects with the Hemispheric Institute Digital Video Library, Archivo Histórico de Casa Pueblo, and the Digital Library of the Caribbean. Her work emphasizes scholarly research, critical pedagogy, and the ethical management of digital collections, aiming to safeguard cultural heritage and enhance access to unique educational resources while fostering interactive dialogues within communities.
-pubDate: "July 2026"
+pubDate: "August 2026"
 issue: "9"
 order: "07"
 abstract: >

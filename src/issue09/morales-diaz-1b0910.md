@@ -11,7 +11,7 @@ author:
     orcid: "" # optional: paste the author's ORCID iD URL, e.g. https://orcid.org/0000-0000-0000-0000 -- leave blank if none
     bio: >
       Adriana Morales-Díaz es gestora cultural, humanista digital, artista e investigadora puertorriqueña independiente, oriunda de Toa Baja, Puerto Rico. Posee un bachillerato en Artes con concentraciones en Literatura Comparada e Historia del Arte Occidental y una maestría en Gestión y Administración Cultural (MAGAC) de la Universidad de Puerto Rico - Recinto de Río Piedras. Es archivista y custodia de _ABC_PR: Archivo digital de la literatura infantil puertorriqueña de Andrés Díaz Marrero_, proyecto dedicado a la salvaguarda de las creaciones del escritor puertorriqueño Andrés Díaz Marrero, quien era su abuelo. Adriana se centra en las intersecciones entre la educación, las artes, las humanidades, la cultura y el bienestar social en Puerto Rico.
-pubDate: "July 2026"
+pubDate: "August 2026"
 issue: "9"
 order: "06"
 abstract_en: >

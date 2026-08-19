@@ -10,7 +10,7 @@ author:
     shortname: "Murray-Román"
     bio: >
       Jeannine Murray-Román is an independent scholar whose research starts in the Caribbean region and is grounded in comparative, performance, and digital methodologies. Since publishing their first monograph, *Performance and Personhood in Caribbean Literature* (University of Virginia Press, 2016), their research has ranged from Taylor Mac's manifestos, Roque Salas Rivera's debt and poiesis, and Fanon's medical writing. Their current book project, "Changing Imaginaries," focuses on Caribbean artists' hand-made cognitive experiments in transforming their political imaginaries.
-pubDate: "July 2026"
+pubDate: "August 2026"
 issue: "9"
 order: "02"
 abstract: >

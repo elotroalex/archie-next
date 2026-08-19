@@ -26,7 +26,7 @@ author:
     orcid: "" # optional: paste the author's ORCID iD URL, e.g. https://orcid.org/0000-0000-0000-0000 -- leave blank if none
     bio: >
       Felicia J. Fricke is an Assistant Professor at the University of Copenhagen. She received her PhD in the interdisciplinary study of the lifeways of enslaved people in the Dutch Caribbean from the University of Kent (UK) in 2019 and later rewrote her thesis as a book entitled _Slaafgemaakt: Rethinking Enslavement in the Dutch Caribbean_ (CGRN, 2020). She has published journal articles and book chapters in English, Dutch, and Papiamentu, and is co-editor of the volume _Ethics in Caribbean Archaeology_ (with Eduardo Herrera Malatesta and Maaike S. de Waal, University Press of Florida, 2026). Dr. Fricke's current work in the DFF-funded project "Racialized Motherhood: Documenting and Analyzing Early Modern Discourses on Reproduction" (PI: Natália da Silva Perez) concerns the decision-making practices of women running from slavery with their children in the late eighteenth and early nineteenth centuries.
-pubDate: "July 2026"
+pubDate: "August 2026"
 issue: "9"
 order: "05"
 abstract: >

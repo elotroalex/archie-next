@@ -10,7 +10,7 @@ author:
     shortname: "Goilo"
     bio: >
       Juan-Carlos Goilo is an independent artistic and design researcher and practitioner working on systemic transitions, with a particular focus on the Caribbean. He is the founder of Mente Kaweta and the Curaçao Doughnut Economy Foundation, organizations that explore regenerative urban development, circularity, and new approaches to social and ecological prosperity. His work examines how knowledge, data, collaboration, and collective action can support transitions towards more inclusive, distributive, regenerative, and ecologically sustainable societies. He combines an interdisciplinary background in anthropology, information, arts, and technology with a strong emphasis on place-based and participatory approaches to systemic change.
-pubDate: "Month YYYY"
+pubDate: "August 2026"
 issue: "9"
 order: "04"
 abstract: >
