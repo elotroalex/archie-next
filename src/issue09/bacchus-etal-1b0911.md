@@ -4,7 +4,7 @@ section: "articles"
 title:
   long: "Measure by Measure: Reflections on Building a Quiz Map for Critical Caribbean Digital Pedagogy"
   short: "Measure by Measure"
-doi: "10.7916/..."
+doi: "https://doi.org/10.17132/2689-842X.1009"
 author:
   - name: "Ra Bacchus"
     shortname: "Bacchus"
