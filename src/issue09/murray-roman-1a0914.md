@@ -4,7 +4,7 @@ section: "articles"
 title:
   long: '"Un compromiso con la tierra": Digital Placemaking in the Art of Rosaura Rodríguez''''s Instagram Stories'
   short: "Digital Placemaking"
-doi: " https://doi.org/10.17132/2689-842X.1002"
+doi: " https://doi.org/10.17132/2689-842X.1002" 
 author:
   - name: "Jeannine Murray-Román"
     shortname: "Murray-Román"
