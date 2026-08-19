@@ -115,17 +115,17 @@ Papiamentu moves through his posts not as a cultural preservation project but as
 
 <figure>
   <img src="/issue09/images/goilo-1a0801-image3.png" alt="Instagram card with the username @geraldijde. The profile picture is to the left: a black man with a beard wearing a t-shirt. The message is written in Papiementu: Bo ta super bunita. No laga bo mes lubida e kos ei." loading="lazy" />
-  <figcaption>Figure 3: A tile from Lijde\'s Instagram page, last accessed on June 26, 2023. "You are super beautiful. Do not let yourself forget that"</figcaption>
+  <figcaption>Figure 3: A tile from Lijde's Instagram page, last accessed on June 26, 2023. "You are super beautiful. Do not let yourself forget that"</figcaption>
 </figure>
 
 <figure>
   <img src="/issue09/images/goilo-1a0801-image4.png" alt="Instagram card with the username @geraldijde. The profile picture is to the left: a black man with a beard wearing a t-shirt. The message is written in Papiementu: Delete e vershon bieu ku bo tin dimi den bo mente. E no tei mas. Bo tinku update bo software. Masha dia tin un vershon nobo." loading="lazy" />
-  <figcaption>Figure 4: A tile from Lijde\'s Instagram page, last accessed on June 26, 2023. "Delete the old version of me in your mind. He no longer exists. You have to update your software. The new version has been here for a while now."</figcaption>
+  <figcaption>Figure 4: A tile from Lijde's Instagram page, last accessed on June 26, 2023. "Delete the old version of me in your mind. He no longer exists. You have to update your software. The new version has been here for a while now."</figcaption>
 </figure>
 
 <figure>
   <img src="/issue09/images/goilo-1a0801-image5.png" alt="Instagram card with the username @geraldijde. The profile picture is to the left: a black man with a beard wearing a t-shirt. The message is written in Papiementu: Konekshon fisiko ta hopi mas dushi ora tin konekshon mental. Mi ke den bo mente promé, kaba mi ke ta den bo." loading="lazy" />
-  <figcaption>Figure 5: A tile from Lijde\'s Instagram page, last accessed on June 26, 2023. "Physical connection is much better than mental connection. I want to be on your mind before being in you."</figcaption>
+  <figcaption>Figure 5: A tile from Lijde's Instagram page, last accessed on June 26, 2023. "Physical connection is much better than mental connection. I want to be on your mind before being in you."</figcaption>
 </figure>
 
 
@@ -139,7 +139,7 @@ _Our language._ Not _the_ language. The possessive does work here---it claims so
 
 <figure>
   <img src="/issue09/images/goilo-1a0801-image6.png" alt="Instagram card with the username @geraldijde. The profile picture is to the left: a black man with a beard wearing a t-shirt. The message is written in Papiementu: No keda tuma bo mes na malu pa fayonan den pasado. Tur tabata nesesario pabo krese bira e persona ku bo ta awe. Korda k'e prome man di fèrf nunka no ta keda bon, pero t'e ta buta k'e di dos man di fèrf ta keda bunita." loading="lazy" />
-  <figcaption>Figure 6: A tile from Lijde\'s Instagram page, last accessed on June 26, 2023. "Do not feel ashamed of your past mistakes. They were all necessary to grow into who you are today. Remember that the first paintbrush is never perfect, but is the foundation for the next brush to remain in its beauty."</figcaption>
+  <figcaption>Figure 6: A tile from Lijde's Instagram page, last accessed on June 26, 2023. "Do not feel ashamed of your past mistakes. They were all necessary to grow into who you are today. Remember that the first paintbrush is never perfect, but is the foundation for the next brush to remain in its beauty."</figcaption>
 </figure>
 
 Figure 5: A tile from Lijde\'s Instagram page, last accessed on June 26, 2023. Translation: Do not feel ashamed of your past mistakes. They were all necessary to grow into who you are today. Remember that the first paintbrush is never perfect, but is the foundation for the next brush to remain in its beauty.
