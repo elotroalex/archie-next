@@ -4,7 +4,7 @@ section: "articles"
 title:
   long: "A Metadata Analysis of Anthropological Scholarship about Haiti and the Dominican Republic"
   short: "Metadata Analysis of Anthropological Scholarship"
-doi: "https://doi.org/10.17132/2689-842X.1003"
+doi: "10.17132/2689-842X.1003"
 author:
   - name: "Tess Kulstad González"
     shortname: "Kulstad"

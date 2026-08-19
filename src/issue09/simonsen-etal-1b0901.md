@@ -4,7 +4,7 @@ section: "articles"
 title:
   long: "Digital Research Tools, Newspaper Texts, and Enslaved Fugitives in the Atlantic World"
   short: "Digital Research Tools"
-doi: "https://doi.org/10.17132/2689-842X.1005"
+doi: "10.17132/2689-842X.1005"
 author:
   - name: "Gunvor Simonsen"
     shortname: "Simonsen"

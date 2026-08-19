@@ -5,7 +5,6 @@ issue: 9
 order: 0
 pubDate: August 2026
 title: "Making Networks, Building Archives"
-doi: "DOI Pending"
 author:
   - name: Kaiama L. Glover
     shortname: Glover

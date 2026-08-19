@@ -4,7 +4,7 @@ section: "articles"
 title:
   long: "<em>Acervos Documentales de Puerto Rico y el Caribe @ UPR-Río Piedras</em>: On Designing Digital Strategies for Preservation and Access of Unique Puerto Rican and Caribbean Studies Collections"
   short: "Acervos Documentales"
-doi: " https://doi.org/10.17132/2689-842X.1007"
+doi: "10.17132/2689-842X.1007"
 author:
   - name: "Mirerza González-Vélez"
     shortname: "González-Vélez"

@@ -4,7 +4,7 @@ section: "articles"
 title:
   long: "Tun Up: Building Digital Dancehall Fashion Archives from an Artist's Perspective"
   short: "Tun Up"
-doi: "https://doi.org/10.17132/2689-842X.1008"
+doi: "10.17132/2689-842X.1008"
 author:
   - name: "Grayson Chong"
     shortname: "Chong"

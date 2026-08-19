@@ -4,7 +4,7 @@ section: "articles"
 title:
   long: "Raising History from the Grave: Reparative Archival Pedagogy, International Virtual Exchange, and Community Engagement"
   short: "Raising History from the Grave"
-doi: "https://doi.org/10.17132/2689-842X.1010"
+doi: "10.17132/2689-842X.1010"
 author:
   - name: "Antonia MacDonald"
     shortname: "MacDonald"
@@ -183,7 +183,7 @@ Through international and civic collaboration, we envision contributing to the e
 
 [^27]: 85% of my class were Grenadians.
 
-[^28]: Maha Bali, Catherine Cronin, & Rajiv Jhangiani. (2020). Framing Open Educational Practices from a social justice perspective. *Journal of Interactive Media in Education*. 2020(1):10, pp. 1--12. DOI: https://doi.org/10.5334/jime.565.
+[^28]: Maha Bali, Catherine Cronin, & Rajiv Jhangiani. (2020). Framing Open Educational Practices from a social justice perspective. *Journal of Interactive Media in Education*. 2020(1):10, pp. 1--12. https://doi.org/10.5334/jime.565.
 
 [^29]: Boum Make, p. 25
 

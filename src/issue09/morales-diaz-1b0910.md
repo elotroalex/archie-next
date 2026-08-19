@@ -4,7 +4,7 @@ section: "articles"
 title:
   long: "La elaboración de ABC_PR: Un archivo digital de la literatura infantil puertorriqueña de Andrés Díaz Marrero"
   short: "ABC_PR"
-doi: " https://doi.org/10.17132/2689-842X.1006"
+doi: "10.17132/2689-842X.1006"
 author:
   - name: "Adriana Morales-Díaz"
     shortname: "Morales-Díaz"
