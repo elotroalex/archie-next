@@ -2,7 +2,7 @@
 layout: article
 section: "articles"
 title:
-  long: '"Un compromiso con la tierra": Digital Placemaking in the Art of Rosaura Rodríguez's Instagram Stories'
+  long: '"Un compromiso con la tierra": Digital Placemaking in the Art of Rosaura Rodríguez''s Instagram Stories'
   short: "Digital Placemaking"
 doi: "10.17132/2689-842X.1002"
 author:
