@@ -109,9 +109,7 @@ Despite being the archival backbone of this project, Omeka has its limitations. 
 Patricia Mears and Valerie Steele remind us that designing exhibitions is like storytelling that requires multiple design and communication strategies.[^33] In its most basic form, "Tun Up" is a digital exhibition that describes the history of dancehall fashion and celebrates the people who have and continue to showcase the importance of dancehall culture. The decision to create a digital archive emphasizes how dancehall fashion is a cultural expression that can continuously be expanded upon. To take Bastian's words, dancehall fashion is "a living cultural archive."[^34] I am inspired by digital mixed media exhibitions such as [fi di gyal dem](https://dorismccarthygallery.utoronto.ca/exhibitions/fi-di-gyal-dem) (2022) hosted by the Doris McCarthy Art Gallery (University of Toronto Scarborough) and [Bags: Inside Out](https://www.vam.ac.uk/exhibitions/bags?srsltid=AfmBOooTPytZgBM_iQ9C85n3C9agwfBwq_ZBXpf62rjpCQBO3jcx9BKF) (2021-2022) exhibited at the Victoria and Albert Museum. The layout of the "Tun Up" exhibit is inspired by The Set Girls: None So Fine virtual exhibit hosted at the African Caribbean Institute of Jamaica.[^35] What I particularly admire about "The Set Girls" exhibit is its use of virtual reality (VR). When the viewers access the exhibit via a link, they are immersed into a 360-degree view of the space, allowing them to navigate the rooms and closely examine dresses, costumes, and accompanying wall text by moving their cursor. This interactive experience effectively mimics the feeling of touring a physical gallery or museum. Drawing on this approach, "Tun Up" would use the VR capabilities of ArtSteps to create a 3D curatorial experience where each room is dedicated to one of the four central themes: History, Adornment, Brand, and Lyrics.
 
 <figure>
-<a href="https://about.com.co/set_girls/" target="_blank">
 <img src="/issue09/images/chong-img-05.png" alt="Screenshot of The Set Girls: None So Fine virtual exhibit" loading="lazy">
-</a>
 <figcaption>Figure 5. Screenshot of <em>The Set Girls: None So Fine</em> Virtual Exhibit.</figcaption>
 </figure>
 
@@ -210,7 +208,7 @@ I extend my sincerest thanks to the reviewers and the editorial team for their g
 
 [^21]: The exhibition featured fashion garments by Daveed Baptiste, Waïna Chancy, Stella Jean, Saphyra Saint-Fort, and Jonathan Square, visual art by Madjeen Isaac, Naderson Saint Pierre, and Gina Samson, and _Madan Sara_, a documentary directed by Etant Dupain.
 
-[^22]: In this interview from _Kaleidoscope Media_, Felix Petty speaks with Carolyn Cooper and Carol Tulloch. They discuss how Jamaican dancehall culture, music, and style have evolved over the last 30 years. For the full interview, see [https://www.kaleidoscope.media/magazine/42/popcaan](https://www.kaleidoscope.media/magazine/42/popcaan).
+[^22]: In this interview from _Kaleidoscope Media_, Felix Petty speaks with Carolyn Cooper and Carol Tulloch. They discuss how Jamaican dancehall culture, music, and style have evolved over the last 30 years. For the full interview, see [https://www.kaleidoscope.media/magazine/42/popcaan](https://www.kaleidoscope.media/magazine/42/popcaan). Archived at [https://web.archive.org/web/20240730204724/https://www.kaleidoscope.media/magazine/42/popcaan](https://web.archive.org/web/20240730204724/https://www.kaleidoscope.media/magazine/42/popcaan).
 
 [^23]: Grace Aneiza Ali, "The Motherland Between Us," in _Black Matrilineage, Photography, and Representation: Another Way of Knowing_, eds. Lesly Deschler Canossi and Zoraida Lopez-Diago (Leuven, Belgium: Universitaire Pers Leuven, 2022), 250.
 
@@ -236,7 +234,7 @@ I extend my sincerest thanks to the reviewers and the editorial team for their g
 
 [^34]: Bastian, "'Play Mas'," 506.
 
-[^35]: The exhibit was on view at the African Caribbean Institute of Jamaica from December 15, 2022 to August 31, 2023. Check out the virtual exhibit here: [https://about.com.co/set_girls/](https://about.com.co/set_girls/). I thank Dr. Rachel Mordecai for informing me about the exhibit.
+[^35]: The exhibit was on view at the African Caribbean Institute of Jamaica from December 15, 2022 to August 31, 2023. I thank Dr. Rachel Mordecai for informing me about the exhibit.
 
 [^36]: Real-life examples of Dancehall Queens include Carlene Smith, Jamaica's first National Dancehall Queen. She was awarded the crown in 1992 and held the title until 2001. She is featured in the "Murder She Wrote" music video by Chaka Demus & Pliers and is credited to have created the Butterfly dance move ; Denise Cumberland, known by her stage name Stacey who reigned from 1999 to 2002 ; and Ann Marie McKoy, whose stage name is Mad Michelle and is said to have created the Dutty Wine dance featured in Tony Matterhorn's 2006 hit "Dutty Wine."
 
