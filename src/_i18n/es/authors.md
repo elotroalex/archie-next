@@ -25,7 +25,7 @@ _archipelagos_ se basa en principios de computación mínima. Alentamos a nuestr
 
 ### Notas generales
 
-_archipelagos_ utiliza una combinación de correo electrónico, Dropbox y GitHub para administrar [el flujo de trabajo editorial](http://archipelagosjournal.org/es/about.html#nuestro-flujo-de-trabajo). Le pedimos que envíe sus resúmenes y artículos a <archipelagosjournal@gmail.com>. La mayoría de los intercambios con los autores se realizarán por correo electrónico utilizando esta cuenta.
+_archipelagos_ utiliza una combinación de correo electrónico, Dropbox y GitHub para administrar [el flujo de trabajo editorial](https://archipelagosjournal.org/es/about.html#nuestro-flujo-de-trabajo). Le pedimos que envíe sus resúmenes y artículos a <archipelagosjournal@gmail.com>. La mayoría de los intercambios con los autores se realizarán por correo electrónico utilizando esta cuenta.
 
 1. Las entregas de artículos individuales se aceptan de forma continua. También aceptamos propuestas para secciones temáticas.
 

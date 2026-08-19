@@ -40,6 +40,6 @@ Finally, *Île en île* can help students to connect to a world beyond themselve
 
 ---
 
-[^1]: Edwards, Brent Hayes. "The Taste of the Archive." Callaloo 35, no. 4 (2012): 944-972. [doi:10.1353/cal.2013.0002](http://doi.org/10.1353/cal.2013.0002).
+[^1]: Edwards, Brent Hayes. "The Taste of the Archive." Callaloo 35, no. 4 (2012): 944-972. [doi:10.1353/cal.2013.0002](https://doi.org/10.1353/cal.2013.0002).
 
 [^2]: Alexander, M. Jacqui. *Pedagogies of Crossing: Meditations on Feminism, Sexual Politics, Memory, and the Sacred.* Durham: Duke University Press, 2005.

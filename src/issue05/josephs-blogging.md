@@ -567,7 +567,7 @@ anonymous peer reviewers for *archipelagos*.
     <https://www.nytimes.com/2015/03/15/magazine/from-jamaica-to-minnesota-to-myself.html>.
 
 [^3]: Sandra Pouchet Paquet, "On Caribbean Autobiographies," *Anthurium*
-    10, no. 2 (2013): 2, <http://doi.org/10.33596/anth.231>.
+    10, no. 2 (2013): 2, <https://doi.org/10.33596/anth.231>.
 
 [^4]: Sandra Pouchet Paquet, *Caribbean Autobiography:* *Cultural
     Identity and Self-Representation* (Madison; University of Wisconsin

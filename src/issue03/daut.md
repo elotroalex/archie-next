@@ -1325,7 +1325,7 @@ acts in this moment, but which must always remain open."[^87]
 [^40]:
     See Laura Wagner, "*Nou toujou la!* The Digital (After-)Life of
     Radio Haïti-Inter," _sx archipelagos_ 2
-    [smallaxe.net/sxarchipelagos/issue02/nou-toujou-la.html](http://archipelagosjournal.org/issue02/nou-toujou-la.html).
+    [smallaxe.net/sxarchipelagos/issue02/nou-toujou-la.html](https://archipelagosjournal.org/issue02/nou-toujou-la.html).
 
 [^41]:
     Julia Gaffield, "1 January 1804 (printed pamphlet)," _Dessalines

@@ -325,7 +325,7 @@ Students in US K--12 schools must have more opportunities to read texts authored
 
 [^12]: We thank the librarians across institutions who met with us during early stages of this work and who pointed us to a plethora of useful resources: Gayle Williams (Florida International University), Kathia Ibacache (University of Colorado Boulder), Lisa Gardinier (University of Iowa), and Antonio Sotomayor (University of Illinois at Urbana-Champaign).
 
-[^13]: M. L. Daut, "Haiti @ the Digital Crossroads: Archiving Black Sovereignty," *archipelagos* 3 (July 2019), [[https://doi.org/10.7916/archipelagos-53xt-3v66]](http://doi.org/10.7916/archipelagos-53xt-3v66).
+[^13]: M. L. Daut, "Haiti @ the Digital Crossroads: Archiving Black Sovereignty," *archipelagos* 3 (July 2019), [[https://doi.org/10.7916/archipelagos-53xt-3v66]](https://doi.org/10.7916/archipelagos-53xt-3v66).
 
 [^14]: J. M. Johnson, "Xroads Praxis: Black Diasporic Technologies for Remaking the New World," *archipelagos* 3 (July 2019), [[https://doi.org/10.7916/archipelagos-4fjd-k774]](https://doi.org/10.7916/archipelagos-4fjd-k774).
 

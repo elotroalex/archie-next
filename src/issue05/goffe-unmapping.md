@@ -1002,7 +1002,7 @@ generosity, intellectual curiosity, and work as project manager.
     James Bond novel *Dr. No*, which centers on a guano island called
     Crab Key. See Tao Leigh Goffe, "007 versus the Darker Races: The
     Black and Yellow Peril in *Dr. No*," *Anthurium* 12, no. 1 (2015),
-    article 5, <http://doi.org/10.33596/anth.280>.
+    article 5, <https://doi.org/10.33596/anth.280>.
 
 [^31]: See Sylvia Wynter, "Towards the Sociogenic Principle: Fanon,
     Identity, the Puzzle of Conscious Experience, and What It Is Like to

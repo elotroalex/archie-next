@@ -176,7 +176,7 @@ Nótese bien: Entendemos cada etapa del ciclo de vida de un texto desde el prime
 
 #### I. La etapa Word
 
-En esta etapa, todos los intercambios pueden tener lugar en Microsoft Word, siempre y cuando todas las partes cumplan con [las pautas de estilo](http://archipelagosjournal.org/authors.html#documents) documentadas en el sitio de la revista. Los editores mantendrán copias de todas las versiones en esta etapa en Dropbox. No se hace ninguna promesa de preservación para esta etapa.
+En esta etapa, todos los intercambios pueden tener lugar en Microsoft Word, siempre y cuando todas las partes cumplan con [las pautas de estilo](https://archipelagosjournal.org/authors.html#documents) documentadas en el sitio de la revista. Los editores mantendrán copias de todas las versiones en esta etapa en Dropbox. No se hace ninguna promesa de preservación para esta etapa.
 
 1. CFP se pública
 2. Los colaboradores envían el resumen a los editores por correo electrónico

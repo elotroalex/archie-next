@@ -404,7 +404,7 @@ The complex interplay of silence, inequity, and illegibility
 (re)produced between infrastructures of information maintenance and
 North Atlantic scholarship led Stieber to a series of provocations,
 elaborated in dialogue with the [_Small Axe
-Archipelagos_](http://archipelagosjournal.org/index.html) project,
+Archipelagos_](https://archipelagosjournal.org/index.html) project,
 that informed the shape of the project to come: How can we unsilence
 locally produced Caribbean knowledge within North Atlantic
 infrastructures of information maintenance and render if more accessible
@@ -837,7 +837,7 @@ experimenting as we continue to the next stage of the RSHHGG Lab.
 [^4]:
     Marlene L. Daut, "Haiti @ the Digital Crossroads: Archiving Black
     Sovereignty," _sx archipelagos_, no 3 (2019),
-    [http://archipelagosjournal.org/issue03/daut.html](http://archipelagosjournal.org/issue03/daut.html).
+    [https://archipelagosjournal.org/issue03/daut.html](https://archipelagosjournal.org/issue03/daut.html).
 
 [^5]:
     On the LC Labs project, see <https://labs.loc.gov/>. On the
@@ -982,7 +982,7 @@ experimenting as we continue to the next stage of the RSHHGG Lab.
 
 [^23]:
     "About Us," _sx archipelagos_,
-    <http://archipelagosjournal.org/about.html>.
+    <https://archipelagosjournal.org/about.html>.
 
 [^24]:
     See "About," Minimal Computing: A Working Group of GO::DH,

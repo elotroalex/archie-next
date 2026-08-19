@@ -14516,7 +14516,7 @@
               aA: {
                 a: [
                   {
-                    j: "http://archipelagosjournal.org/issue03",
+                    j: "https://archipelagosjournal.org/issue03",
                     p: 5,
                     k: true,
                   },

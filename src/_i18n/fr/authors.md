@@ -127,7 +127,7 @@ Tout au long du processus de révision et de publication, notre équipe éditori
 
 En plus de la révision directe des projets, nous prenons en charge des «descriptifs de projet» d'une durée de rédaction décrivant le processus, l'infrastructure ou les nouvelles fonctionnalités principales d'un projet numérique. Ces essais suivent la même méthode à simple insu que les projets et seront publiés avec les projets présentés. Si vous avez des questions sur ce qui vous convient, n'hésitez pas à nous contacter.
 
-Nous sommes particulièrement désireux de soutenir des projets qui apportent une importante contribution scientifique à l\'étude des Caraïbes; conscients du processus de conception et des infrastructures sous-jacentes de la technologie numérique; qui reconnaissent la contribution de tous les membres de l'équipe de manière appropriée; et qui ont pris en compte les questions de longévité et d\'éphémère. Pour une idée plus détaillée de nos critères et de notre processus, veuillez consulter [les directives que nous avons préparées pour nos réviseurs](http://archipelagosjournal.org/reviewers.html).
+Nous sommes particulièrement désireux de soutenir des projets qui apportent une importante contribution scientifique à l\'étude des Caraïbes; conscients du processus de conception et des infrastructures sous-jacentes de la technologie numérique; qui reconnaissent la contribution de tous les membres de l'équipe de manière appropriée; et qui ont pris en compte les questions de longévité et d\'éphémère. Pour une idée plus détaillée de nos critères et de notre processus, veuillez consulter [les directives que nous avons préparées pour nos réviseurs](https://archipelagosjournal.org/reviewers.html).
 
 L'évaluation directe du projet se déroule en deux phases:
 
@@ -141,7 +141,7 @@ Les essais de description de projet suivront le même processus qu'une revue d'a
 
 ## Accord d'auteur
 
-Lisez [l'accord d'auteur](http://archipelagosjournal.org/public/author-agreement.pdf). Cet accord reflète la position selon laquelle le ou les auteurs doivent conserver le droit d'auteur sur l'article et doivent disposer de droits explicites pour utiliser l'article dans des projets de recherche, d'enseignement ou autres. Les droits d'auteur sont résumés comme suit:
+Lisez [l'accord d'auteur](https://archipelagosjournal.org/public/author-agreement.pdf). Cet accord reflète la position selon laquelle le ou les auteurs doivent conserver le droit d'auteur sur l'article et doivent disposer de droits explicites pour utiliser l'article dans des projets de recherche, d'enseignement ou autres. Les droits d'auteur sont résumés comme suit:
 
 - Les auteurs conservent les droits d'auteur sans restriction;
 - les auteurs donnent à *archipelagos* le pouvoir de publier leurs travaux dans le journal avec une [licence internationale Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/);

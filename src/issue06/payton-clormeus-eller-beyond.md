@@ -178,7 +178,7 @@ Despite the different approaches, the library's work of cultivating Port-au-Prin
 [^33]: Stieber, Wrubel, and Denis, "Cross-Boundary Digital Collaboration."
 [^34]: Daut, "Haiti @ the Digital Crossroads."
 [^35]: Prior to its reopening in 2019, this library was known as Bibliothèque Haïtienne des Pères de Saint-Esprit. Due to the devastation of the January 2010 earthquake, the library had been closed to full public access for the preceding nine years.
-[^36]: Laura Wagner, "_Nou toujou la!_ The Digital (After-)Life of Radio Haïti-Inter," _archipelagos_ 2 (September 2017), <http://archipelagosjournal.org/issue02/nou-toujou-la.html>.
+[^36]: Laura Wagner, "_Nou toujou la!_ The Digital (After-)Life of Radio Haïti-Inter," _archipelagos_ 2 (September 2017), <https://archipelagosjournal.org/issue02/nou-toujou-la.html>.
 [^37]: Jennifer Garçon, "Haiti's Resistant Press in the Age of Jean-Claude Duvalier, 1971--1986" (PhD diss., University of Miami, 2018).
 [^38]: Daut, "Haiti @ the Digital Crossroads."
 [^39]: Stieber, Wrubel, and Denis, "Cross-Boundary Digital Collaboration."

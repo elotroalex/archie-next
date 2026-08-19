@@ -182,7 +182,7 @@ N.B. Chaque phase du cycle de vie d\'un texte, du premier brouillon à la produc
 
 I. Phase Word
 
-À cette étape, tous les échanges peuvent avoir lieu dans Microsoft Word, à condition que toutes les parties respectent les [directives de style](http://archipelagosjournal.org/authors.html#documents) documentées sur le site du journal. Les rédacteurs conserveront des copies de toutes les versions de cette étape sur Dropbox. Aucune promesse de conservation n'est faite pour cette étape.
+À cette étape, tous les échanges peuvent avoir lieu dans Microsoft Word, à condition que toutes les parties respectent les [directives de style](https://archipelagosjournal.org/authors.html#documents) documentées sur le site du journal. Les rédacteurs conserveront des copies de toutes les versions de cette étape sur Dropbox. Aucune promesse de conservation n'est faite pour cette étape.
 
 1. Les contributeurs soumettent la v1 aux rédacteurs par courrier électronique
 2. Les éditeurs envoient aux examinateurs par courrier électronique à la réception

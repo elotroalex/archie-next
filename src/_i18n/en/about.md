@@ -180,7 +180,7 @@ N.B. We understand each stage of a text's life-cycle from first draft to product
 
 #### I. The Word Stage
 
-In this stage, all exchanges can take place in Microsoft Word, as long as all parties abide by [the style guidelines](http://archipelagosjournal.org/authors.html#documents) documented on the journal site. Editors will keep copies of all versions in this stage on Dropbox. No promise of preservation is made for this stage.
+In this stage, all exchanges can take place in Microsoft Word, as long as all parties abide by [the style guidelines](https://archipelagosjournal.org/authors.html#documents) documented on the journal site. Editors will keep copies of all versions in this stage on Dropbox. No promise of preservation is made for this stage.
 
 1. CFP goes out
 2. Contributors submit abstract to Editors over email

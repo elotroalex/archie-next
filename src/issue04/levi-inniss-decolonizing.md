@@ -700,7 +700,7 @@ people who need them the most.
 
 [^6]: To learn more about each phase, see Amalia S. Levi, \"Digitisation of the _Barbados Mercury Gazette_,\" _Endangered Archives Blog_, 3 August 2018, <https://blogs.bl.uk/endangeredarchives/2018/08/digitisation-of-the-barbados-mercury-gazette.html>.
 
-[^7]: See Maja Kominko, \"Crumb Trails, Threads, and Traces: Endangered Archives and History,\" in _From Dust to Digital: Ten Years of the Endangered Archives Programme_, ed. Maja Kominko (Cambridge: Open Book, 2016), xlix--lxviii, <https://books.openedition.org/obp/2216>. To read more about the post-custodial model, see Christian Kelleher, \"Archives without Archives: (Re)Locating and (Re)Defining the Archive through Post-Custodial Praxis,\" _Journal of Critical Library and Information Studies_ 1, no. 2 (2017), [doi:10.24242/jclis.v1i2.29](http://doi.org/10.24242/jclis.v1i2.29).
+[^7]: See Maja Kominko, \"Crumb Trails, Threads, and Traces: Endangered Archives and History,\" in _From Dust to Digital: Ten Years of the Endangered Archives Programme_, ed. Maja Kominko (Cambridge: Open Book, 2016), xlix--lxviii, <https://books.openedition.org/obp/2216>. To read more about the post-custodial model, see Christian Kelleher, \"Archives without Archives: (Re)Locating and (Re)Defining the Archive through Post-Custodial Praxis,\" _Journal of Critical Library and Information Studies_ 1, no. 2 (2017), [doi:10.24242/jclis.v1i2.29](https://doi.org/10.24242/jclis.v1i2.29).
 
 [^8]: The _Mercury_ online can be accessed either through the EAP portal at <https://eap.bl.uk/project/EAP1086> or through the dLOC portal at <https://www.ufdc.ufl.edu/AA00047511/02334/allvolumes>.
 
@@ -710,7 +710,7 @@ people who need them the most.
 
 [^11]: See "About the Archive," _Slave Societies Digital Archive_, <https://www.slavesocieties.org/> (accessed 14 December 2019).
 
-[^12]: Angela Sutton, \"The Digital Overhaul of the Archive of Ecclesiastical and Secular Sources for Slave Societies (ESSSS),\" _sx archipelagos_, no. 2 (July 2017), <http://archipelagosjournal.org/issue02/essss.html>.
+[^12]: Angela Sutton, \"The Digital Overhaul of the Archive of Ecclesiastical and Secular Sources for Slave Societies (ESSSS),\" _sx archipelagos_, no. 2 (July 2017), <https://archipelagosjournal.org/issue02/essss.html>.
 
 [^13]: See Kathleen Arthur et al., \"Recognizing Digitization as a Preservation Reformatting Method,\" _Microform and Imaging Review_ 33, no. 4 (2004): 171--80.
 
@@ -758,7 +758,7 @@ people who need them the most.
 
 [^34]: For resistance strategies used among the enslaved in Barbados, the following sources provide more information: Hilary Beckles, \"An Economic Life of Their Own: Slaves as Commodity Producers and Distributors in Barbados,\" _Slavery and Abolition_ 12, no. 1 (1991): 31--47, [doi:10.1080/01440399108575021](https://doi.org/10.1080/01440399108575021); Hilary Beckles, \"Caribbean Anti-slavery: The Self-Liberation Ethos of Enslaved Blacks,\" in _Caribbean Slave Society and Economy_, ed. Hilary Beckles and Verene Shepherd (Kingston: Ian Randle, 1991); and Hilary Beckles, _Natural Rebels: A Social History of Enslaved Women in Barbados_ (New Brunswick, NJ: Rutgers University Press, 1989).
 
-[^35]: Jessica Marie Johnson, \"Markup Bodies: Black Life Studies and Slavery Death Studies at the Digital Crossroads,\" _Social Text_, no. 137 (December 2018): 57--79, [doi:10.1215/01642472-7145658](http://doi.org/10.1215/01642472-7145658).
+[^35]: Jessica Marie Johnson, \"Markup Bodies: Black Life Studies and Slavery Death Studies at the Digital Crossroads,\" _Social Text_, no. 137 (December 2018): 57--79, [doi:10.1215/01642472-7145658](https://doi.org/10.1215/01642472-7145658).
 
 [^36]: See _Slave Voyages_, <https://www.slavevoyages.org>; Legacies of British Slave-Ownership, <http://www.ucl.ac.uk/lbs>; and _Enslaved: The People of the Historic Slave Trade_, <https://www.enslaved.org>.
 

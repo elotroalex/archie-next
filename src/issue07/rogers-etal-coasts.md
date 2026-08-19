@@ -194,7 +194,7 @@ histories. In this way, "Coasts in Crisis" digital contributes to
 ongoing discussions within Caribbean Digital Humanities that ask linear
 digital forms to function in nonlinear ways, as shown by projects such
 as Laura Vargas Zuleta's "[Hadriana in Context:
-Timelines](http://archipelagosjournal.org/issue06/vargas-real-life.html),"
+Timelines](https://archipelagosjournal.org/issue06/vargas-real-life.html),"
 which uses Knight Lab timelines to articulate Caribbean temporalities.
 To communicate this nonlinearity in our own project, we took the spiral
 as an important feature of Caribbean life, from the shape of the

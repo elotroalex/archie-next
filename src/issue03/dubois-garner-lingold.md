@@ -35,7 +35,7 @@ What forms of peer review can best nurture and sustain the practice and
 potential of digital work in Caribbean studies? This question has
 animated _sx archipelagos_ from its founding and, in the spring of 2017,
 this journal's editors posed it to us directly. Having [reviewed and
-presented](http://archipelagosjournal.org/issue01/musical-passage.html)
+presented](https://archipelagosjournal.org/issue01/musical-passage.html)
 in issue 1 of the journal a project we were then developing, the editors
 invited us one year later to participate in an experiment with our
 by-then-finished site. They proposed that we use the annotation tool

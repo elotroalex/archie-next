@@ -685,7 +685,7 @@ Donnell. Cambridge: Cambridge University Press, forthcoming.
 
 Josephs, Kelly Baker. "Me, Myself, and Unno: Writing the Queer Caribbean
 Self into Digital Community." _archipelagos journal_ 5, November 2020.
-http://archipelagosjournal.org/issue05/josephs-blogging.html.
+https://archipelagosjournal.org/issue05/josephs-blogging.html.
 
 Min, Susette. "Remains to Be Seen: Reading the Works of Dean Sameshima
 and Khanh Vo." In _Loss: The Politics of Mourning_, edited by David L.
@@ -772,7 +772,7 @@ Globalization_. Jackson: University Press of Mississippi, 2017.
     See Josephs, "Digital Yard" 219; see also her "Me, Myself, and
     Unno: Writing the Queer Caribbean Self into Digital Community" in
     this issue of _archipelagos journal_,
-    http://archipelagosjournal.org/issue05/josephs-blogging.html.
+    https://archipelagosjournal.org/issue05/josephs-blogging.html.
 
 [^11]:
     Josh Ellenbogen, "On Photographic Elegy," in Weisman, _Oxford
