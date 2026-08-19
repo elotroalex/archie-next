@@ -4,7 +4,7 @@ section: "articles"
 title:
   long: "Tracing Caribbean Narratives at the Intersection of Language, Identity, and Social Media"
   short: "Tracing Caribbean Narratives"
-doi: "DOI pending"
+doi: "https://doi.org/10.17132/2689-842X.1004"
 author:
   - name: "Juan-Carlos M.E. Goilo"
     shortname: "Goilo"
