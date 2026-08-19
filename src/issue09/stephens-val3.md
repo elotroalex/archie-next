@@ -4,7 +4,7 @@ section: "reviews"
 title:
   long: "Unaccountable Archives: A Review of Underwriting Souls"
   short: "Unaccountable Archives"
-doi: "DOI pending"
+doi: " https://doi.org/10.17132/2689-842X.1011"
 author:
 - name: "Samantha Stephens"
   shortname: "Stephens"
