@@ -295,6 +295,8 @@ linkinator crawls `_site/` recursively and reports any URLs that return an error
 - `statusCodes` — `429` and `403` are treated as warnings rather than errors (rate-limiting and bot blocks that don't mean the link is actually dead)
 - `verbosity: "error"` — only broken links are printed; passing links are suppressed
 
+There is a second, separate list at [`utility/check-issue/flaky-domains.json`](utility/check-issue/flaky-domains.json), used only by `npm run check-issue`. It does not suppress requests the way `skip` does — it downgrades failures on known rate-limiting hosts so they're still reported but don't block publication. See [Flaky domains](#flaky-domains).
+
 To write a report of all broken external links to a file at the repo root (local use only — macOS/Linux):
 
 ```bash
@@ -337,7 +339,7 @@ This builds the site, then runs nine checks (`utility/check-issue/`) and exits n
 | Check | What it verifies |
 | --- | --- |
 | **HTML validity** | Runs [html-validate](https://html-validate.org/) against the issue's built pages (en/es/fr). Config (`htmlvalidate.config.json`) disables rules that just reflect this codebase's deliberate conventions (self-closing void elements, inline table-width styles, legacy Dublin Core `profile`/`scheme` attributes) so only genuine structural errors surface — unclosed/misnested tags, duplicate ids, empty headings, etc. |
-| **Links** | Runs linkinator with the issue's own built pages as crawl entry points (reuses the root `linkinator.config.json` unmodified). `--recurse` stays on, so links out into older issues, `/public/`, the homepage, and cross-language switcher links are still followed and validated — this is narrower and faster than `npm run check-links`, not just a re-run of it. Unlike `report-links.sh`, unresolved (`[0]`) links are treated as hard failures here — except on the domains listed in [`flaky-domains.json`](utility/check-issue/flaky-domains.json), see below. |
+| **Links** | Runs linkinator with the issue's own built pages as crawl entry points (reuses the root `linkinator.config.json` unmodified). `--recurse` stays on, so links out into older issues, `/public/`, the homepage, and cross-language switcher links are still followed and validated — this is narrower and faster than `npm run check-links`, not just a re-run of it. Unlike `report-links.sh`, unresolved (`[0]`) links are treated as hard failures here — except on the domains listed in [`utility/check-issue/flaky-domains.json`](utility/check-issue/flaky-domains.json), see [Flaky domains](#flaky-domains) below. |
 | **Anchors** | Runs `check-anchors.js` (see [Same-page anchor links](#same-page-anchor-links)) scoped to just the issue's own built pages, via the same manifest every other check here uses. Catches broken `href="#id"` links — e.g. a bio link or footnote reference pointing at an id that doesn't exist on the page. |
 | **Front matter & i18n** | Every article's front matter is checked field-by-field against the intake stub's known placeholder text (not just a `# TODO:` grep — this also catches placeholders where the `# TODO:` prefix was stripped but the text itself was never replaced). Also confirms the issue has a label in `en.yml`, `es.yml`, and `fr.yml`. |
 | **Quotation marks** | Flags curly/smart quotation marks (`‘ ’ “ ”`) left in an article's markdown source — a common Word autocorrect artifact contributors are asked to avoid (see [Submission Guidelines](src/_i18n/en/authors/authors.md)), which can render unreliably through the PDF/LaTeX pipeline. `convert-docx.sh` now normalizes these automatically at intake time, so this is mainly a safety net for hand-edited content or articles converted before that fix. |
@@ -348,9 +350,13 @@ This builds the site, then runs nine checks (`utility/check-issue/`) and exits n
 
 ### Flaky domains
 
+> **Editable list:** [`utility/check-issue/flaky-domains.json`](utility/check-issue/flaky-domains.json)
+>
+> This is the only place where the link check is told to stop failing on something, so it is worth re-reading whenever a link problem seems to have disappeared on its own. Keep it short, and prefer fixing a link over adding its host.
+
 Some hosts routinely time out or rate-limit under a recursive crawl even though their links are perfectly good — web archives above all. On a large issue, `web.archive.org` alone can account for fifty-odd apparent failures, which buries the handful of real ones.
 
-[`utility/check-issue/flaky-domains.json`](utility/check-issue/flaky-domains.json) is a short list of such domains:
+`utility/check-issue/flaky-domains.json` is a short list of such domains:
 
 ```json
 {
