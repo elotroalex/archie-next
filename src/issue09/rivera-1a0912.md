@@ -4,7 +4,8 @@ section: "articles"
 title:
   long: "Infrastructure of Lack: Defining Caribbean Vernacular Networks"
   short: "Infrastructure of Lack"
-doi: "DOI pending"
+doi: "https://doi.org/10.17132/2689-842X.1001"
+
 author:
   - name: "Luis Rivera Jiménez"
     shortname: "Rivera"
