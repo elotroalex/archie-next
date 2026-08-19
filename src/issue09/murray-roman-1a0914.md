@@ -204,7 +204,7 @@ As with so many Puerto Rican projects of _autogestión_, Rodríguez\'s pigment-m
 
 [^4]: Yarimar Bonilla, \"The coloniality of disaster: Race, empire, and the temporal logics of emergency in Puerto Rico, USA,\" _Political Geography_ 78 (2020): 1, [https://doi.org/10.1016/j.polgeo.2020.102181](https://doi.org/10.1016/j.polgeo.2020.102181).
 
-[^5]: Héctor Hoyos. \"Aftershock: Naomi Klein and the Southern Cone,\" _Third Text_ 26, No. 2 (March 2012): 220-221, [http://doi.org/10.1080/09528822.2012.663969](http://doi.org/10.1080/09528822.2012.663969).
+[^5]: Héctor Hoyos. \"Aftershock: Naomi Klein and the Southern Cone,\" _Third Text_ 26, No. 2 (March 2012): 220-221, [https://doi.org/10.1080/09528822.2012.663969](https://doi.org/10.1080/09528822.2012.663969).
 
 [^6]: García López draws on the example of the 1990 Land Use Plan, intended to replace communities with military bases, industrial parks, and mines and make the land uninhabitable. Activists protested this plan by calling it a plan for a \"Puerto Rico without Puerto Ricans,\" a phrase that García López links to the Puerto Rican state\'s post-hurricane policies. (Gustavo A. García López, \"Environmental Corruption and the Colonial Growth Machine in Puerto Rico,\" _Centro Journal_ 34, No. 2 (Summer 2022): 182-3).
 
@@ -228,7 +228,7 @@ As with so many Puerto Rican projects of _autogestión_, Rodríguez\'s pigment-m
 
 [^16]: Video Stories are now longer to allow Tik-Tok reels to be cross-posted.
 
-[^17]: See Rebekka Kreling et al., \"Feeling Authentic on Social Media: Subjective Authenticity Across Instagram Stories and Posts,\" _Social Media + Society_ 8, no. 1 (Jan-Mar 2022): 4, [https://doi.org/10.1177/20563051221086235](https://doi.org/10.1177/20563051221086235); Bo Li et al., \"Tell Me a Story: Exploring Elite Female Athletes\' Self-Presentation via an Analysis of Instagram Stories,\" _Journal of Interactive Advertising_, 21, no. 2, (2021): 115, [https://10.1080/15252019.2020.1837038](https://10.1080/15252019.2020.1837038).
+[^17]: See Rebekka Kreling et al., \"Feeling Authentic on Social Media: Subjective Authenticity Across Instagram Stories and Posts,\" _Social Media + Society_ 8, no. 1 (Jan-Mar 2022): 4, [https://doi.org/10.1177/20563051221086235](https://doi.org/10.1177/20563051221086235); Bo Li et al., \"Tell Me a Story: Exploring Elite Female Athletes\' Self-Presentation via an Analysis of Instagram Stories,\" _Journal of Interactive Advertising_, 21, no. 2, (2021): 115, [https://doi.org/10.1080/15252019.2020.1837038](https://doi.org/10.1080/15252019.2020.1837038).
 
 [^18]: Josh Constine, \"Instagram Stories,\" TechCrunch, August 2, 2016, [https://techcrunch.com/2016/08/02/instagram-stories](https://techcrunch.com/2016/08/02/instagram-stories/).
 
@@ -262,7 +262,7 @@ As with so many Puerto Rican projects of _autogestión_, Rodríguez\'s pigment-m
 
 [^33]: Rosaura Rodríguez, _Temporada_ (pub. by author, 2019). All my thanks to Luis Nestor at La Librería la Esquinita in its Santurce iteration in 2019, who talked with me while I was browsing and when I mentioned that I was working on a post-disaster Facebook thread, put _Temporada_ in my hands, saying that if there was one thing I needed to buy, it was Rodríguez\'s comic.
 
-[^34]: Daniel Arbino, \"The Gifts of the Hurricane: Reimagining Post-María Puerto Rico through Comics,\" _eTropic_ 20, no. 2 (2021): 172, [http://doi.org/10.25120/etropic.20.2.2021.3815](http://doi.org/10.25120/etropic.20.2.2021.3815). María Fernanda Díaz-Basteris, \"Puerto Rican Graphic Narratives and the Colonial Disaster,\" _Latinx Spaces_ (2021).
+[^34]: Daniel Arbino, \"The Gifts of the Hurricane: Reimagining Post-María Puerto Rico through Comics,\" _eTropic_ 20, no. 2 (2021): 172, [https://doi.org/10.25120/etropic.20.2.2021.3815](https://doi.org/10.25120/etropic.20.2.2021.3815). María Fernanda Díaz-Basteris, \"Puerto Rican Graphic Narratives and the Colonial Disaster,\" _Latinx Spaces_ (2021).
 
 [^35]: Greg Beckett, _There is No More Haiti: Between Life and Death in Port-au-Prince_ (UC Berkeley Press, 2020), 170. Writing about Port-au-Prince after the 2011 earthquake, _blakawout_ is \"both a disruption _in_ routine and a disruption that _has become_ routine.
 
@@ -272,6 +272,6 @@ As with so many Puerto Rican projects of _autogestión_, Rodríguez\'s pigment-m
 
 [^38]: Paul Humphrey, \"Framing a Decolonial Future: Hurricane María in Puerto Rican Comics,\" _Latin American Literary Review_ 48, no 96 (Summer 2021): 66.
 
-    Daniel Arbino, \"The Gifts of the Hurricane: Reimagining Post-María Puerto Rico through Comics,\" _eTropic_ 20, no. 2 (2021): 172, [http://doi.org/10.25120/etropic.20.2.2021.3815](http://doi.org/10.25120/etropic.20.2.2021.3815).
+    Daniel Arbino, \"The Gifts of the Hurricane: Reimagining Post-María Puerto Rico through Comics,\" _eTropic_ 20, no. 2 (2021): 172, [https://doi.org/10.25120/etropic.20.2.2021.3815](https://doi.org/10.25120/etropic.20.2.2021.3815).
 
 [^39]: Rosaura Rodríguez, in discussion with the author, March 2022.
