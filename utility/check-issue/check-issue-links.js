@@ -20,6 +20,12 @@
 // "internal" (resolves to a local file under _site/) or "external" (a
 // real http(s) request to another domain) for reporting.
 //
+// Failures on domains listed in flaky-domains.json (web archives, DOI and
+// handle resolvers -- infrastructure that rate-limits hard under a recursive
+// crawl) are separated out as "tolerated": still requested, still listed in
+// log.md, but not counted as failures and not gating publication. See that
+// file's _comment for why this is distinct from linkinator's own skip list.
+//
 // Usage: node check-issue-links.js <manifestPath> [--root <dir>] [--json <path>]
 
 const fs = require("fs");
@@ -40,6 +46,48 @@ function parseArgs(argv) {
     jsonPath = args[jsonIdx + 1];
   }
   return { manifestPath, root, jsonPath };
+}
+
+const DEFAULT_TOLERATED_STATUSES = [0, 403, 408, 429, 503];
+
+// Loads the flaky-domain allowlist. Absent or malformed file means "tolerate
+// nothing" -- the check stays strict rather than silently going permissive.
+function loadFlakyConfig(root) {
+  const configPath = path.join(root, "utility", "check-issue", "flaky-domains.json");
+  if (!fs.existsSync(configPath)) return { domains: [], tolerateStatuses: DEFAULT_TOLERATED_STATUSES };
+  try {
+    const parsed = JSON.parse(fs.readFileSync(configPath, "utf8"));
+    return {
+      domains: Array.isArray(parsed.domains) ? parsed.domains : [],
+      tolerateStatuses: Array.isArray(parsed.tolerateStatuses)
+        ? parsed.tolerateStatuses
+        : DEFAULT_TOLERATED_STATUSES,
+    };
+  } catch (err) {
+    console.log(`    (warning: could not read flaky-domains.json: ${err.message})`);
+    return { domains: [], tolerateStatuses: DEFAULT_TOLERATED_STATUSES };
+  }
+}
+
+// Matches on hostname rather than substring, so a listed "archive.org" covers
+// "web.archive.org" but never something like "notarchive.org.example.com".
+function hostMatches(url, domain) {
+  let hostname;
+  try {
+    hostname = new URL(url).hostname.toLowerCase();
+  } catch {
+    return false;
+  }
+  const d = domain.toLowerCase().replace(/^\.+/, "");
+  return hostname === d || hostname.endsWith(`.${d}`);
+}
+
+// A failure is tolerated only if BOTH the domain is listed and the status is
+// one of the forgiven ones -- so a 404 on a listed domain (a missing archive
+// snapshot, a dead handle) still fails the check.
+function isTolerated(url, status, config) {
+  if (!config.domains.some((d) => hostMatches(url, d))) return false;
+  return config.tolerateStatuses.includes(status || 0);
 }
 
 // Recursively collects template files (.njk) that can contain site-wide
@@ -191,17 +239,13 @@ async function main() {
     return !fs.existsSync(localPath);
   });
 
-  if (broken.length === 0) {
-    console.log("ok - links: no broken links reachable from this issue's pages");
-    if (jsonPath) fs.writeFileSync(jsonPath, JSON.stringify({ internal: [], external: [] }, null, 2));
-    process.exit(0);
-  }
-
+  const flakyConfig = loadFlakyConfig(root);
   const candidateFiles = [...manifest.markdownFiles, ...listTemplateFiles(root)];
   const lineCache = new Map();
   const seenRows = new Set();
   const internal = [];
   const external = [];
+  const tolerated = [];
 
   for (const l of broken) {
     const isExternal = /^https?:\/\//i.test(l.url);
@@ -222,22 +266,46 @@ async function main() {
     if (seenRows.has(dedupeKey)) continue;
     seenRows.add(dedupeKey);
 
-    (isExternal ? external : internal).push(row);
+    if (isExternal && isTolerated(l.url, l.status, flakyConfig)) {
+      tolerated.push(row);
+    } else if (isExternal) {
+      external.push(row);
+    } else {
+      internal.push(row);
+    }
   }
 
-  console.log(`FAIL - links: ${internal.length} internal, ${external.length} external broken/unresolved`);
+  const toleratedNote = tolerated.length
+    ? ` (${tolerated.length} tolerated on flaky domains, see log.md)`
+    : "";
+  const realFailures = internal.length + external.length;
+
+  if (realFailures === 0) {
+    console.log(`ok - links: no broken links reachable from this issue's pages${toleratedNote}`);
+  } else {
+    console.log(
+      `FAIL - links: ${internal.length} internal, ${external.length} external broken/unresolved${toleratedNote}`
+    );
+  }
   for (const row of internal) {
     console.log(`    [internal] ${row.error} ${row.url} (${row.file}${row.line ? ":" + row.line : ""})`);
   }
   for (const row of external) {
     console.log(`    [external] ${row.error} ${row.url} (${row.file}${row.line ? ":" + row.line : ""})`);
   }
-
-  if (jsonPath) {
-    fs.writeFileSync(jsonPath, JSON.stringify({ internal, external }, null, 2));
+  for (const row of tolerated) {
+    console.log(`    [tolerated] ${row.error} ${row.url} (${row.file}${row.line ? ":" + row.line : ""})`);
   }
 
-  process.exit(1);
+  if (jsonPath) {
+    fs.writeFileSync(jsonPath, JSON.stringify({ internal, external, tolerated }, null, 2));
+  }
+
+  process.exit(realFailures === 0 ? 0 : 1);
 }
 
-main();
+// Exported for the fixture tests, which exercise the classification rules
+// directly rather than standing up a crawl.
+module.exports = { hostMatches, isTolerated, loadFlakyConfig, DEFAULT_TOLERATED_STATUSES };
+
+if (require.main === module) main();

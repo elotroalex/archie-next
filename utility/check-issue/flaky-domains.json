@@ -1,0 +1,27 @@
+{
+  "_comment": [
+    "Domains that routinely time out or rate-limit under a recursive crawl, but",
+    "whose links are not actually broken. A failure on one of these is reported",
+    "in log.md under 'Tolerated' and does NOT fail the links check.",
+    "",
+    "This is deliberately different from the `skip` list in the repo-root",
+    "linkinator.config.json: skipped links are never requested at all, so they",
+    "vanish from the report entirely. Domains listed here ARE still requested",
+    "and still listed -- they just don't gate publication.",
+    "",
+    "Matching is on hostname, and covers subdomains: 'archive.org' also matches",
+    "'web.archive.org'.",
+    "",
+    "tolerateStatuses limits which failures are forgiven, so a listed domain",
+    "can still fail the check for a real problem. 0 is a timeout or network",
+    "error; 408/429/503 are rate limiting; 403 is bot-blocking. A 404 or 410 is",
+    "deliberately NOT in this list -- a missing archive snapshot or a dead",
+    "handle is a genuine content error worth fixing, on any domain."
+  ],
+  "domains": [
+    "archive.org",
+    "doi.org",
+    "hdl.handle.net"
+  ],
+  "tolerateStatuses": [0, 403, 408, 429, 503]
+}

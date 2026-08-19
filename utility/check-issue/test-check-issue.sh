@@ -120,6 +120,33 @@ PDF_OUTPUT=$(bash "$SCRIPT_DIR/check-pdfs.sh" "$MANIFEST" --root "$FIXTURE_ROOT"
 check_contains "clean article (pdf: false) is skipped" "$PDF_OUTPUT" "skip - pdf: clean-article (pdf: false)"
 check_contains "broken article missing pdf fails" "$PDF_OUTPUT" "FAIL - pdf: src/assets/issuefx/broken-article.pdf missing"
 
+echo ""
+echo "== check-issue-links.js (flaky-domain classification) =="
+# The crawl itself needs a network and a built site, so exercise only the
+# tolerate/fail classification rules, which are pure functions.
+LINKS_OUTPUT=$(node -e '
+const { hostMatches, isTolerated, loadFlakyConfig } = require("'"$SCRIPT_DIR"'/check-issue-links.js");
+const root = "'"$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"'";
+const cfg = loadFlakyConfig(root);
+const t = (name, actual, expected) =>
+  console.log(`${actual === expected ? "ok" : "FAIL"} - ${name}`);
+
+t("subdomain matches parent domain", hostMatches("https://web.archive.org/web/1/x", "archive.org"), true);
+t("exact domain matches", hostMatches("https://doi.org/10.1/x", "doi.org"), true);
+t("lookalike suffix does not match", hostMatches("https://notarchive.org/x", "archive.org"), false);
+t("unrelated host embedding the name does not match", hostMatches("https://archive.org.evil.com/x", "archive.org"), false);
+t("malformed url does not match", hostMatches("not a url", "archive.org"), false);
+
+t("timeout on listed domain is tolerated", isTolerated("https://web.archive.org/web/1/x", 0, cfg), true);
+t("rate limit on listed domain is tolerated", isTolerated("https://doi.org/10.1/x", 429, cfg), true);
+t("404 on listed domain is NOT tolerated", isTolerated("https://web.archive.org/web/1/x", 404, cfg), false);
+t("410 on listed domain is NOT tolerated", isTolerated("https://hdl.handle.net/1/2", 410, cfg), false);
+t("timeout on unlisted domain is NOT tolerated", isTolerated("https://example.com/x", 0, cfg), false);
+t("empty config tolerates nothing", isTolerated("https://web.archive.org/x", 0, { domains: [], tolerateStatuses: [0] }), false);
+' 2>&1)
+echo "$LINKS_OUTPUT" | sed 's/^/  /'
+if echo "$LINKS_OUTPUT" | grep -q '^FAIL'; then FAIL=1; fi
+
 rm -f "$MANIFEST"
 
 echo ""

@@ -79,9 +79,10 @@ function renderImagesSection(imagesJson) {
   ].join("\n");
 }
 
-function renderLinksSubsection(title, rows) {
+function renderLinksSubsection(title, rows, options = {}) {
+  const { emptyText = "_No broken links found._", note = null } = options;
   if (rows.length === 0) {
-    return [`### ${title}`, "", "_No broken links found._", ""].join("\n");
+    return [`### ${title}`, "", emptyText, ""].join("\n");
   }
   const body = rows
     .map((r) => `| ${r.file || "—"}${r.line ? ":" + r.line : ""} | ${r.url} | ${r.error} |`)
@@ -89,7 +90,8 @@ function renderLinksSubsection(title, rows) {
   return [
     `### ${title}`,
     "",
-    `${rows.length} broken/unresolved link(s).`,
+    `${rows.length} ${options.countLabel || "broken/unresolved link(s)"}.`,
+    ...(note ? ["", note] : []),
     "",
     "| File:Line | URL | Error |",
     "|---|---|---|",
@@ -99,7 +101,7 @@ function renderLinksSubsection(title, rows) {
 }
 
 function renderLinksSection(linksJson) {
-  let data = { internal: [], external: [] };
+  let data = { internal: [], external: [], tolerated: [] };
   if (linksJson && fs.existsSync(linksJson)) {
     data = JSON.parse(fs.readFileSync(linksJson, "utf8"));
   }
@@ -108,6 +110,16 @@ function renderLinksSection(linksJson) {
     "",
     renderLinksSubsection("Internal", data.internal || []),
     renderLinksSubsection("External", data.external || []),
+    renderLinksSubsection("Tolerated (flaky domains)", data.tolerated || [], {
+      countLabel: "link(s) on domains listed in `utility/check-issue/flaky-domains.json`",
+      note:
+        "These did not fail the check. They are web archives, DOI and handle resolvers " +
+        "that rate-limit under a recursive crawl, so a failure here usually means the " +
+        "crawler was throttled rather than that the link is dead. Worth a spot-check " +
+        "before publication, but not a blocker. A 404 or 410 on these domains is still " +
+        "reported as a real failure above.",
+      emptyText: "_No tolerated failures._",
+    }),
   ].join("\n");
 }
 

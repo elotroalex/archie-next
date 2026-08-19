@@ -337,7 +337,7 @@ This builds the site, then runs nine checks (`utility/check-issue/`) and exits n
 | Check | What it verifies |
 | --- | --- |
 | **HTML validity** | Runs [html-validate](https://html-validate.org/) against the issue's built pages (en/es/fr). Config (`htmlvalidate.config.json`) disables rules that just reflect this codebase's deliberate conventions (self-closing void elements, inline table-width styles, legacy Dublin Core `profile`/`scheme` attributes) so only genuine structural errors surface — unclosed/misnested tags, duplicate ids, empty headings, etc. |
-| **Links** | Runs linkinator with the issue's own built pages as crawl entry points (reuses the root `linkinator.config.json` unmodified). `--recurse` stays on, so links out into older issues, `/public/`, the homepage, and cross-language switcher links are still followed and validated — this is narrower and faster than `npm run check-links`, not just a re-run of it. Unlike `report-links.sh`, unresolved (`[0]`) links are treated as hard failures here. |
+| **Links** | Runs linkinator with the issue's own built pages as crawl entry points (reuses the root `linkinator.config.json` unmodified). `--recurse` stays on, so links out into older issues, `/public/`, the homepage, and cross-language switcher links are still followed and validated — this is narrower and faster than `npm run check-links`, not just a re-run of it. Unlike `report-links.sh`, unresolved (`[0]`) links are treated as hard failures here — except on the domains listed in [`flaky-domains.json`](utility/check-issue/flaky-domains.json), see below. |
 | **Anchors** | Runs `check-anchors.js` (see [Same-page anchor links](#same-page-anchor-links)) scoped to just the issue's own built pages, via the same manifest every other check here uses. Catches broken `href="#id"` links — e.g. a bio link or footnote reference pointing at an id that doesn't exist on the page. |
 | **Front matter & i18n** | Every article's front matter is checked field-by-field against the intake stub's known placeholder text (not just a `# TODO:` grep — this also catches placeholders where the `# TODO:` prefix was stripped but the text itself was never replaced). Also confirms the issue has a label in `en.yml`, `es.yml`, and `fr.yml`. |
 | **Quotation marks** | Flags curly/smart quotation marks (`‘ ’ “ ”`) left in an article's markdown source — a common Word autocorrect artifact contributors are asked to avoid (see [Submission Guidelines](src/_i18n/en/authors/authors.md)), which can render unreliably through the PDF/LaTeX pipeline. `convert-docx.sh` now normalizes these automatically at intake time, so this is mainly a safety net for hand-edited content or articles converted before that fix. |
@@ -345,6 +345,26 @@ This builds the site, then runs nine checks (`utility/check-issue/`) and exits n
 | **PDFs** | Every article without `pdf: false` must have a matching file at `src/assets/issueXX/<slug>.pdf`. |
 | **Footnotes** | Every footnote reference (`#fnrefN`) in the built HTML must have a matching definition (`#fnN`), and vice versa — catches renumbering mistakes. |
 | **Accessibility** | Runs [axe-core](https://github.com/dequelabs/axe-core) against each built English page via jsdom (no headless browser) — see [Accessibility](#accessibility). |
+
+### Flaky domains
+
+Some hosts routinely time out or rate-limit under a recursive crawl even though their links are perfectly good — web archives above all. On a large issue, `web.archive.org` alone can account for fifty-odd apparent failures, which buries the handful of real ones.
+
+[`utility/check-issue/flaky-domains.json`](utility/check-issue/flaky-domains.json) is a short list of such domains:
+
+```json
+{
+  "domains": ["archive.org", "doi.org", "hdl.handle.net"],
+  "tolerateStatuses": [0, 403, 408, 429, 503]
+}
+```
+
+Failures on these are reported in `log.md` under **Tolerated (flaky domains)** and do **not** fail the check. Add a domain by appending to `domains` — matching is on hostname and covers subdomains, so `archive.org` also covers `web.archive.org`.
+
+Two deliberate limits on how forgiving this is:
+
+- It is **not** the same as the `skip` list in the root `linkinator.config.json`. Skipped links are never requested at all and vanish from the report entirely; domains listed here are still requested and still listed — they just don't gate publication. You keep the information, you lose the false alarm.
+- `tolerateStatuses` covers timeouts (`0`), bot-blocking (`403`), and rate limiting (`408`/`429`/`503`). **`404` and `410` are deliberately excluded**, so a missing archive snapshot or a dead handle is still a hard failure. A dead link is a dead link regardless of which domain it's on.
 
 Run the fixture-based unit tests for the check scripts themselves with:
 
