@@ -39,6 +39,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "src/google35092ce22e94fffc.html": "google35092ce22e94fffc.html",
   });
+
+  // Also serve the favicon from the site root. head.njk links it at
+  // /public/favicon.ico and browsers honour that, but feed readers,
+  // bookmarking tools and some crawlers request /favicon.ico by convention
+  // and were getting a 404.
+  eleventyConfig.addPassthroughCopy({ "src/public/favicon.ico": "favicon.ico" });
   eleventyConfig.ignores.add("src/google35092ce22e94fffc.html");
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
 
