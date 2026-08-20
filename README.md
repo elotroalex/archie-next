@@ -242,7 +242,7 @@ This uses Pandoc 3 (already required by the PDF pipeline) to:
 - Convert the `.docx` to `src/issue09/author-title.md`
 - Extract embedded images directly to `src/issue09/images/` (no `media/` subdirectory), renamed `author-title-imageN.ext` so they're traceable back to the source article
 - Rewrite image paths to absolute `/issue09/images/…` (required for language-variant pages)
-- Normalize bare curly/smart quotes (`‘ ’ “ ”`) left over from Word — most often found in table cells — to the same escaped straight-quote style used throughout the rest of the document
+- Normalize bare curly/smart quotes (`‘ ’ “ ”`) left over from Word — most often found in table cells — to the same escaped straight-quote style used throughout the rest of the document (see [Inline normalization](#inline-normalization) for why this step is Perl and not `sed`)
 - Inject a complete YAML front matter stub with `# TODO` placeholders for every required field
 - Convert figure rubric blocks into `<figure>` HTML (see [Captioning images](#captioning-images) below)
 
@@ -275,6 +275,25 @@ Authors caption a figure by typing a `caption=`/`alt=`/`url=` rubric as its own 
    ```
 
 `caption` and `alt` are required in both shapes; `url` is optional. A block that doesn't match either shape exactly (wrong order, a missing required field, an image inline within a sentence rather than alone on its own paragraph) is left untouched in the output for manual conversion. Run `bash utility/intake/test-convert-images.sh` to check the converter against its fixtures.
+
+### Inline normalization
+
+The text-level cleanup during intake — image paths made absolute, `{.mark}` and `{.underline}` spans stripped, curly quotes normalized — lives in [`utility/intake/normalize-inline.pl`](utility/intake/normalize-inline.pl).
+
+It is Perl rather than `sed` deliberately. BSD `sed` (macOS) matches **bytes**, not characters, unless the caller's locale is UTF-8. In the `C` locale a character class like `[“”]` becomes the byte set `E2 80 9C 9D`, which also matches the leading bytes of every other `U+20xx` character — em dash, en dash, ellipsis, narrow no-break space. Those get half-replaced, their trailing byte orphaned, and the file is no longer valid UTF-8:
+
+```
+input:            em dash — en dash – ellipsis … curly “q”
+old sed, C locale: em dash \"\"^T en dash \"\"^S ellipsis \"\"& curly \"\"\"q\"\"\"
+```
+
+That made correctness depend on the caller's environment: fine from an interactive Terminal, silently corrupting from cron, CI, or a shell with no `LANG`. `perl -CSD` decodes UTF-8 itself, so the result is the same everywhere. For the same reason the script uses `perl -i` instead of `sed -i ''`, which is BSD-only and fails on GNU sed.
+
+```bash
+bash utility/intake/test-normalize-inline.sh
+```
+
+Every case runs under both a UTF-8 locale and `C`, since that difference is exactly what the tests exist to catch.
 
 ---
 

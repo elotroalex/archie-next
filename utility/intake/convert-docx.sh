@@ -63,7 +63,7 @@ fi
 rm -rf _extract_tmp
 
 # Fix paths in the markdown: _extract_tmp/media/ → images/
-sed -i '' "s|_extract_tmp/media/|images/|g" "$TMP"
+perl -i -pe 's{_extract_tmp/media/}{images/}g' "$TMP"
 
 # Rename extracted images from imageN.ext → slug-imageN.ext so filenames
 # are unique and traceable to their source article, then update references.
@@ -72,7 +72,10 @@ for img in images/image*; do
   filename="$(basename "$img")"
   newname="${SLUG}-${filename}"
   mv "$img" "images/$newname"
-  sed -i '' "s|images/${filename}|images/${newname}|g" "$TMP"
+  # \Q..\E quotes any regex metacharacters a filename might contain, and the
+  # values go through the environment so they are never parsed as Perl code.
+  OLD_IMG="images/${filename}" NEW_IMG="images/${newname}" \
+    perl -i -pe 's/\Q$ENV{OLD_IMG}\E/$ENV{NEW_IMG}/g' "$TMP"
 done
 
 # Rewrite image paths to absolute /issueXX/images/... so they work on
@@ -88,16 +91,12 @@ done
 # unreliably through the PDF/LaTeX pipeline. Converted to the same escaped
 # straight-quote form (\" / \') Pandoc already uses for every other quote
 # in the document, so the output style stays consistent throughout.
-BODY=$(sed \
-  -e "s|](images/|](/$ISSUE_SLUG/images/|g" \
-  -e 's/\[\([^]]*\)\]{\.mark}/\1/g' \
-  -e 's/\[\([^][]*\)\]{\.underline}/\1/g' \
-  -e 's/\["\]{dir="rtl"}/"/g' \
-  -e "s/\['\]{dir=\"rtl\"}/'/g" \
-  -e 's/\["'"'"'\]{dir="rtl"}/"\x27/g' \
-  -e 's/[“”]/\\"/g' \
-  -e 's/[‘’]/\\'"'"'/g' \
-  "$TMP")
+# See normalize-inline.pl for what each substitution does, and why this is
+# Perl rather than sed (BSD sed matches bytes, not characters, unless the
+# caller's locale is UTF-8 -- which silently corrupted multibyte text when
+# intake ran from cron, CI, or any shell without LANG set).
+# Tested by test-normalize-inline.sh.
+BODY=$(ISSUE_SLUG="$ISSUE_SLUG" perl -CSD -p "$SCRIPT_DIR/normalize-inline.pl" "$TMP")
 
 # Convert img=/caption=/alt=/url= placeholder blocks (author-typed figure
 # markup, used when images aren't embedded in the docx yet) into <figure>
