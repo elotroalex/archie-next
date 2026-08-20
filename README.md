@@ -533,6 +533,25 @@ Indexing is blocked two ways, both keyed off `ELEVENTY_ALLOW_CRAWLERS`: `robots.
 
 ---
 
+## Traffic reports
+
+```bash
+bash utility/traffic-report.sh              # whole site, current month
+bash utility/traffic-report.sh issue09      # one issue, all three languages
+bash utility/traffic-report.sh issue09 --archive Aug-2026
+bash utility/traffic-report.sh --all-logs   # current month plus every archive
+```
+
+Reads the production Apache access log over SSH and reports page views, most-read pages, PDF downloads, a per-language split, and external referrers. Parsing happens on the server, so only the summary crosses the wire.
+
+It exists because the obvious alternatives don't answer the question. cPanel's **AWStats** returns an empty top-pages section for this domain and offers no way to ask about everything under `/issue09/`. **Search Console** covers Google search traffic only, which misses the citation- and syllabus-following readers who are a real share of this journal's audience — worth using alongside this, not instead of it (Performance → Pages → filter URL contains `issue09`).
+
+Two caveats. The bot filter catches self-identifying crawlers, not stealth scrapers, so page-view counts are an **upper bound** on human traffic. And referrer spam is rampant — `www.bing.org`, `www.google.org`, `www.yandex.org` are fabricated; only exact domains like `https://www.google.com` and `https://scholar.google.com` are real.
+
+**Log retention needs a setting checked.** cPanel can delete the previous month's archived logs at the end of each month, which would leave nothing to compare against. In cPanel → Metrics → **Raw Access**, ensure *"Archive logs in your home directory"* is on and *"Remove the previous month's archived logs"* is off.
+
+---
+
 ## Internationalization
 
 The site publishes in English, Spanish, and French. Each language is a full parallel version of the site, not a translation layer.
