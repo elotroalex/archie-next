@@ -14,7 +14,15 @@ module.exports = function makeIssueArticlesClass(lang) {
           data: "collections.allIssueArticles",
           size: 1,
           alias: "art",
-          addAllPagesToCollections: false,
+          // true so every generated /es/ and /fr/ page lands in
+          // collections.all, which is what src/sitemap.11ty.js builds from.
+          // With false, only the first paginated page was collected and the
+          // sitemap listed 122 of 332 pages -- omitting essentially the whole
+          // translated corpus of a trilingual journal. Safe to flip: the
+          // sitemap is the only consumer of collections.all (atom.11ty.js and
+          // search-index.11ty.js both use collections.allIssueArticles, the
+          // English originals, and are unaffected).
+          addAllPagesToCollections: true,
         },
         lang,
         eleventyComputed: {

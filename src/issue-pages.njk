@@ -6,7 +6,10 @@ pagination:
   size: 1
   alias: issueKey
   resolve: keys
-  addAllPagesToCollections: false
+  # true so every issue TOC page reaches collections.all, which
+  # src/sitemap.11ty.js builds from. With false only the first paginated
+  # page was collected, leaving issue02-09 out of the sitemap.
+  addAllPagesToCollections: true
 eleventyComputed:
   title: "{{ i18n[lang].issues[issueKey] }}"
   permalink: "{{ issueKey }}.html"
