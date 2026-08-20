@@ -25,7 +25,10 @@ src/
                    # and cfp/open, cfp/special (calls for papers) — each a
                    # native page with its own front matter + permalink)
   _includes/      # Nunjucks partials (head, sidebar, toc, footer, etc.)
-  _layouts/       # Nunjucks layouts (default, article, project, page, info)
+  _layouts/       # Nunjucks layouts (default, article, project, page)
+                   # page.njk serves BOTH issue introductions and the info
+                   # pages (about/authors/credits/reviewers/cfp), which get
+                   # layout: page from _i18n/{lang}/{lang}.11tydata.js
   public/         # CSS, fonts, favicon — served as-is
   assets/         # Pre-generated PDFs — served as-is
   issue01/–issue09/  # Issue markdown articles + directory data file
