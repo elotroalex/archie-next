@@ -1,0 +1,24 @@
+{#
+  Per-issue footer navigation: back to the top of the page, and back to the
+  issue's own table of contents.
+
+  Shared by article.njk, project.njk, and page.njk (the layout every issue's
+  editors'/guest-editors' introduction uses) so all issue content offers the
+  same way out. `issueSlug` comes from each issue's directory data file
+  (src/issueXX/issueXX.11tydata.js), so it is in scope for any page under an
+  issue directory regardless of which layout that page picks.
+
+  The guard is load-bearing, not defensive habit: page.njk is also used by
+  every page that belongs to no issue -- issues.html, search.njk, and all the
+  info pages (about, authors, credits, reviewers, valences, workflow, cfp),
+  which get layout: page from src/_i18n/{lang}/{lang}.11tydata.js. Without it
+  those would emit a "return to table of contents" link with an empty target.
+#}
+{%- if issueSlug -%}
+<div class="footer">
+  <ul id="footer-nav">
+    <li><a href="#">{{ i18n[lang].global["return-to-top"] }}</a></li>
+    <li> | <a href="{{ issueSlug | issueTocUrl(lang) | url }}">{{ i18n[lang].global.toc }}</a></li>
+  </ul>
+</div>
+{%- endif -%}

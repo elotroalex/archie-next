@@ -11,9 +11,4 @@ layout: default
   {% include "bios.njk" %}
 </div>
 
-<div class="footer">
-  <ul id="footer-nav">
-    <li><a href="#">{{ i18n[lang].global["return-to-top"] }}</a></li>
-    <li> | <a href="{{ issueSlug | issueTocUrl(lang) | url }}">{{ i18n[lang].global.toc }}</a></li>
-  </ul>
-</div>
+{% include "footer-nav.njk" %}

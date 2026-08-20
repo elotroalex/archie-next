@@ -7,3 +7,5 @@ layout: default
   <br>
   {{ content | safe }}
 </div>
+{#- Renders only under an issue; a no-op for site-level and info pages. -#}
+{%- include "footer-nav.njk" -%}
