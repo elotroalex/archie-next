@@ -251,7 +251,57 @@ jobs:
           esac
 
       # -----------------------------------------------------------------------
-      # 4. SSH with a pinned host key. No ssh-keyscan at run time: the key is
+      # 4. Reachability diagnostic, before any credential is written to disk.
+      #
+      #    A host-side firewall block is invisible in the SSH error alone --
+      #    it just times out after ~135s with "Connection timed out", which
+      #    looks identical to a dozen unrelated problems. The runner's public
+      #    IP isn't recorded anywhere either, so there's nothing to give a host
+      #    who asks "which address?". This captures both, fails in 10s instead
+      #    of 135, and writes a paste-ready block to the job summary.
+      # -----------------------------------------------------------------------
+      - name: Check port reachability
+        run: |
+          set -uo pipefail
+          RUNNER_IP=$(curl -sS --max-time 10 https://api.ipify.org 2>/dev/null \
+                      || curl -sS --max-time 10 https://ifconfig.me/ip 2>/dev/null \
+                      || echo "unknown")
+          STAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          echo "runner public IP : $RUNNER_IP"
+          echo "target           : $DEPLOY_HOST:$DEPLOY_PORT"
+          echo "time             : $STAMP"
+
+          if timeout 10 bash -c "cat < /dev/null > /dev/tcp/$DEPLOY_HOST/$DEPLOY_PORT" 2>/dev/null; then
+            echo "tcp              : reachable"
+            {
+              echo ""
+              echo "### Connectivity"
+              echo ""
+              echo "Runner \`$RUNNER_IP\` reached \`$DEPLOY_HOST:$DEPLOY_PORT\` at $STAMP."
+            } >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "tcp              : UNREACHABLE"
+            {
+              echo ""
+              echo "### Connectivity: FAILED"
+              echo ""
+              echo "TCP connect failed. Details to send to the host:"
+              echo ""
+              echo '```'
+              echo "source IP : $RUNNER_IP"
+              echo "target    : $DEPLOY_HOST:$DEPLOY_PORT"
+              echo "time      : $STAMP"
+              echo "symptom   : connect() times out -- packets dropped, not refused"
+              echo '```'
+              echo ""
+              echo "Nothing was written to the server."
+            } >> "$GITHUB_STEP_SUMMARY"
+            echo "::error::Cannot reach $DEPLOY_HOST:$DEPLOY_PORT from runner IP $RUNNER_IP at $STAMP -- host-side firewall block, not a workflow fault. See the job summary for the details to send to the host."
+            exit 1
+          fi
+
+      # -----------------------------------------------------------------------
+      # 5. SSH with a pinned host key. No ssh-keyscan at run time: the key is
       #    captured and verified out of band once, then stored in the
       #    SSH_KNOWN_HOSTS variable (see README.md).
       # -----------------------------------------------------------------------
@@ -289,7 +339,7 @@ jobs:
           "
 
       # -----------------------------------------------------------------------
-      # 5. rsync: always plan first, then apply.
+      # 6. rsync: always plan first, then apply.
       # -----------------------------------------------------------------------
       - name: Deploy via rsync
         run: |
@@ -389,7 +439,7 @@ jobs:
           echo "- rollback snapshot: \`$BACKUP_DIR\`" >> "$GITHUB_STEP_SUMMARY"
 
       # -----------------------------------------------------------------------
-      # 6. Smoke test the real server, not the build output.
+      # 7. Smoke test the real server, not the build output.
       # -----------------------------------------------------------------------
       - name: Smoke test the deployed site
         if: env.DRY_RUN != 'true'
