@@ -1,5 +1,5 @@
 #!/bin/bash
-# Traffic report for archipelagosjournal.org, from the production Apache logs.
+# Traffic report for the journal, read from the production Apache access log.
 #
 #   bash utility/traffic-report.sh              # whole site, current month
 #   bash utility/traffic-report.sh issue09      # just issue09 (all languages)
@@ -23,9 +23,35 @@
 
 set -uo pipefail
 
-HOST="${DEPLOY_HOST:-ghostsngoblins.reclaimhosting.com}"
-USER="${DEPLOY_USER:-elotroalex}"
+# Connection details are deliberately NOT hardcoded -- this repository is
+# public, and there is no reason to publish host, account and paths together
+# with working commands. Put them in utility/deploy.env (gitignored):
+#
+#   DEPLOY_HOST=server.example.com
+#   DEPLOY_USER=youraccount
+#   DEPLOY_KEY=$HOME/.ssh/your_deploy_key
+#
+# See utility/deploy.env.example. Environment variables override the file.
+CONFIG="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/deploy.env"
+if [ -f "$CONFIG" ]; then
+  # shellcheck disable=SC1090
+  . "$CONFIG"
+fi
+
+HOST="${DEPLOY_HOST:-}"
+USER="${DEPLOY_USER:-}"
+# Names the log files to read, and filters self-referrals from the referrer
+# list. The account hosts several sites, so an unscoped glob would silently
+# mix their traffic into these numbers.
+SITE_DOMAIN="${SITE_DOMAIN:-}"
 KEY="${DEPLOY_KEY:-$HOME/.ssh/archie_deploy_ed25519}"
+
+if [ -z "$HOST" ] || [ -z "$USER" ] || [ -z "$SITE_DOMAIN" ]; then
+  echo "✗ DEPLOY_HOST, DEPLOY_USER and SITE_DOMAIN must all be set." >&2
+  echo "  Copy utility/deploy.env.example to utility/deploy.env and fill it in," >&2
+  echo "  or export the variables. See the private ops notes for the values." >&2
+  exit 1
+fi
 
 FILTER=""
 ARCHIVE=""
@@ -47,13 +73,13 @@ fi
 # Which log(s) to read. The ssl_log is the real one -- the site redirects
 # http to https, so the plain log holds only the redirect hops.
 if [ -n "$ARCHIVE" ]; then
-  SRC="zcat ~/logs/archipelagosjournal.org-ssl_log-${ARCHIVE}.gz"
+  SRC="zcat ~/logs/${SITE_DOMAIN}-ssl_log-${ARCHIVE}.gz"
   LABEL="archive ${ARCHIVE}"
 elif [ "$ALL_LOGS" = "1" ]; then
-  SRC="cat ~/access-logs/archipelagosjournal.org-ssl_log; zcat ~/logs/archipelagosjournal.org-ssl_log-*.gz 2>/dev/null"
+  SRC="cat ~/access-logs/${SITE_DOMAIN}-ssl_log; zcat ~/logs/${SITE_DOMAIN}-ssl_log-*.gz 2>/dev/null"
   LABEL="current month + all archives"
 else
-  SRC="cat ~/access-logs/archipelagosjournal.org-ssl_log"
+  SRC="cat ~/access-logs/${SITE_DOMAIN}-ssl_log"
   LABEL="current month"
 fi
 
@@ -62,12 +88,13 @@ fi
 # human traffic rather than a precise count.
 BOTS='bot|crawler|spider|slurp|facebookexternalhit|headless|python-requests|curl/|wget|go-http|okhttp|scrapy|bingpreview|ahrefs|semrush|mj12|dotbot|petalbot'
 
-echo "▶ archipelagosjournal.org traffic — ${LABEL}${FILTER:+ — filter: /${FILTER}/}"
+echo "▶ traffic — ${LABEL}${FILTER:+ — filter: /${FILTER}/}"
 echo ""
 
 ssh -i "$KEY" -o BatchMode=yes "${USER}@${HOST}" \
-  "SRC_CMD='$SRC' FILTER='$FILTER' BOTS='$BOTS' bash -s" <<'REMOTE'
+  "SRC_CMD='$SRC' FILTER='$FILTER' BOTS='$BOTS' SITE_DOMAIN='$SITE_DOMAIN' bash -s" <<'REMOTE'
 set -uo pipefail
+SITE_DOMAIN="${SITE_DOMAIN:-}"
 TMP=$(mktemp); trap 'rm -f "$TMP" "$TMP.h"' EXIT
 eval "$SRC_CMD" > "$TMP" 2>/dev/null
 
@@ -111,7 +138,7 @@ echo "  ── external referrers ──"
 grep -viE "$BOTS" "$TMP" \
   | { if [ -n "$FILTER" ]; then grep -E "\"[A-Z]+ /(es/|fr/)?${FILTER}[/.]" || true; else cat; fi; } \
   | awk -F'"' '{print $4}' \
-  | grep -vE 'archipelagosjournal\.org|^-$|^$' \
+  | grep -vE "${SITE_DOMAIN:+$(printf '%s' "$SITE_DOMAIN" | sed 's/\./\\./g')|}^-$|^$" \
   | sed 's|\(https\?://[^/]*\).*|\1|' \
   | sort | uniq -c | sort -rn | head -10 | awk '{printf "  %6d  %s\n", $1, $2}'
 echo ""

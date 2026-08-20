@@ -463,6 +463,14 @@ git tag prod-$(date +%Y-%m-%d) && git push --tags
 
 ### Configuration
 
+> **Concrete values live outside this repository.** This repo is public, so it documents
+> the mechanism rather than the host, account and paths. Copy
+> [`utility/deploy.env.example`](utility/deploy.env.example) to `utility/deploy.env`
+> (gitignored) and fill it from the private ops notes. Secrets — the SSH private key,
+> the GitHub secret values, the cPanel login — belong in a password manager, never in
+> any repository, private ones included.
+
+
 The deploy target lives entirely in repository settings, never in the workflow, so moving from the pre-cutover preview to the live docroot is a settings change with no code change.
 
 Settings → Secrets and variables → Actions.
@@ -477,11 +485,11 @@ Settings → Secrets and variables → Actions.
 
 | name | preview | live |
 |------|---------|------|
-| `DEPLOY_HOST` | Reclaim server hostname | same |
-| `DEPLOY_USER` | `elotroalex` | same |
+| `DEPLOY_HOST` | the Reclaim server hostname | same |
+| `DEPLOY_USER` | the cPanel account name | same |
 | `DEPLOY_PORT` | `22` | same |
-| `DEPLOY_PATH` | `/home/elotroalex/preview.archipelagosjournal.org/` | `/home/elotroalex/public_html/` |
-| `SITE_URL` | `https://preview.archipelagosjournal.org` | `https://archipelagosjournal.org` |
+| `DEPLOY_PATH` | the preview docroot | the live docroot |
+| `SITE_URL` | the preview URL | `https://archipelagosjournal.org` |
 | `ALLOW_CRAWLERS` | *(unset)* | `true` |
 | `MAX_DELETIONS` | `50` | `50` |
 | `SSH_KNOWN_HOSTS` | `ssh-keyscan` output, verified out of band | same |
@@ -500,7 +508,7 @@ The job refuses to proceed if rsync would delete more than `MAX_DELETIONS` remot
 
 1. Take a full snapshot of the existing site and download it off-server (a 500 MB tarball left in the account eats the cPanel quota, and inside `public_html` it would be web-accessible):
    ```bash
-   ssh elotroalex@<host> 'tar czf ~/jekyll-pre-cutover-$(date -u +%Y%m%d).tar.gz -C ~ public_html'
+   ssh <user>@<host> 'tar czf ~/pre-cutover-$(date -u +%Y%m%d).tar.gz -C ~ public_html'
    ```
 2. Flip three variables: `DEPLOY_PATH`, `SITE_URL`, and set `ALLOW_CRAWLERS=true`.
 3. Run a manual **dry run** and confirm the deletion count matches the old Jekyll file count, and that `.well-known`, `cgi-bin`, and `.htaccess` are *not* in the plan.
@@ -522,7 +530,7 @@ Never add `--delete-excluded` to the rsync flags — it inverts that exclude lis
 Prune old backups periodically — the site is ~500 MB, so they add up against the cPanel quota:
 
 ```bash
-ssh elotroalex@<host> 'ls -1dt ~/.deploy-backups/*/ | tail -n +4 | xargs -r rm -rf'
+ssh <user>@<host> 'ls -1dt ~/.deploy-backups/*/ | tail -n +4 | xargs -r rm -rf'
 ```
 
 ### Site URL and indexing
