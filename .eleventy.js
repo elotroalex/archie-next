@@ -28,6 +28,18 @@ module.exports = function (eleventyConfig) {
   // --- Passthrough copies ---
   eleventyConfig.addPassthroughCopy({ "src/public": "public" });
   eleventyConfig.addPassthroughCopy({ "src/.nojekyll": ".nojekyll" });
+
+  // Google Search Console verification file. Passthrough (not a template) so
+  // the contents ship byte-for-byte -- Google matches the token exactly -- and
+  // so it lands at the site root rather than /google.../index.html, which is
+  // where Eleventy would otherwise put a bare .html file. It must be in the
+  // build rather than uploaded by hand: the production deploy runs
+  // `rsync --delete`, so anything not produced by the build is removed, and
+  // Google re-checks verification periodically.
+  eleventyConfig.addPassthroughCopy({
+    "src/google35092ce22e94fffc.html": "google35092ce22e94fffc.html",
+  });
+  eleventyConfig.ignores.add("src/google35092ce22e94fffc.html");
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
 
   // Co-located images: every issue keeps its images inside src/issueXX/images/.
