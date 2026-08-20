@@ -121,7 +121,7 @@ A concise and edited exchange between site author(s) and reviewer(s) of a public
 All author submissions should be:
 
 - within words 600–800 words (Project Statement)
-- double-spaced and follow the Chicago Manual of Style
+- double-spaced and follow the Chicago Manual of Style using Notes-Bibliography format.
 - written in Dutch, English, French, Papiamentu/o, or Spanish
 - submitted in .docx or .md format
 
