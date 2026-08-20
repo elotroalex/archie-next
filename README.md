@@ -432,6 +432,11 @@ bash utility/test-check-contrast.sh
 
 ## Deployment
 
+> Runbooks, server details and the record of past incidents live in
+> [`archie-ops`](https://github.com/elotroalex/archie-ops) — a **private** companion
+> repository. If that link 404s for you, you don't have access yet; ask. Everything
+> needed to build, author and check the site is here in the public repo.
+
 The site uses a two-branch deploy strategy:
 
 | Branch | Deploys to | Purpose |
@@ -464,7 +469,8 @@ git tag prod-$(date +%Y-%m-%d) && git push --tags
 ### Configuration
 
 > **Concrete values live outside this repository.** This repo is public, so it documents
-> the mechanism rather than the host, account and paths. Copy
+> the mechanism rather than the host, account and paths. They live in
+> [`archie-ops`](https://github.com/elotroalex/archie-ops), a private companion repo. Copy
 > [`utility/deploy.env.example`](utility/deploy.env.example) to `utility/deploy.env`
 > (gitignored) and fill it from the private ops notes. Secrets — the SSH private key,
 > the GitHub secret values, the cPanel login — belong in a password manager, never in
