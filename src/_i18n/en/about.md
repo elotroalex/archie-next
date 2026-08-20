@@ -48,7 +48,7 @@ We provide DOIs for all articles. Citation information and DOIs can be found on 
 - Open Graph (For social media distribution)
 - Highwire Press (For Google Scholar)
 
-Copies of articles will be archived on Columbia University's repository [Academic Commons](https://academiccommons.columbia.edu/). We are also archived in LOCKSS.
+Copies of articles will be archived on Columbia University's repository [Academic Commons](https://academiccommons.columbia.edu/) and Yale University's repository [Eli Scholar] (https://elischolar.library.yale.edu/archipelagosjournal/). We are also archived in LOCKSS.
 
 ---
 
