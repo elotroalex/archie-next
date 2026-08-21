@@ -50,7 +50,7 @@ Nous fournissons des DOI pour tous les articles. Vous trouverez des informations
 - Highwire Press (pour Google Scholar)
 - Le format technologique utilisé pour *archipelagos* est proposé avec une licence MIT. Toutes nos données sont ouvertes sur notre repositoire Github.
 
-Des exemplaires des articles seront conservés dans le référentiel [Academic Commons](https://academiccommons.columbia.edu/) de l\'Université de Columbia. Nous sommes aussi conservés dans le système [LOCKSS](https://www.lockss.org/).
+Des exemplaires des articles seront conservés dans le référentiel [Eli Scholar](https://elischolar.library.yale.edu/archipelagosjournal/) de l\'Université Yale. Nous sommes aussi conservés dans le système [LOCKSS](https://www.lockss.org/).
 
 ---
 

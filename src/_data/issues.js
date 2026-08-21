@@ -1,5 +1,8 @@
-// Publisher changed with issue09: Columbia University Libraries published
-// issues 1-8, Yale University Library from 9 onward. It lives per issue
+// Publisher by era, because the journal's institutional home changed twice:
+// the Small Axe Project for issues 1-3, when it was called Small Axe
+// Archipelagos; Columbia University Libraries from issue 4, when that
+// partnership became official; and Yale University Library from issue 9.
+// (Columbia collaborated informally on DOIs before issue 4.) It lives per issue
 // rather than in site.js because it is a property of when a piece was
 // published, not of the site today -- back issues must keep saying Columbia
 // in their DC.publisher, citation_publisher and JSON-LD.
@@ -16,7 +19,7 @@ module.exports = {
     slug_fr: "fr/issue01",
     slug_es: "es/issue01",
     number: 1,
-    publisher: "Columbia University Libraries",
+    publisher: "Small Axe Project",
     date: "June 2016",
     title: "Issue (1)",
     editors: ["Kaiama Glover", "Alex Gil", "Kelly Baker Josephs"],
@@ -27,7 +30,7 @@ module.exports = {
     slug_fr: "fr/issue02",
     slug_es: "es/issue02",
     number: 2,
-    publisher: "Columbia University Libraries",
+    publisher: "Small Axe Project",
     date: "September 2017",
     title: "Issue (2)",
     editors: ["Kaiama Glover", "Alex Gil"],
@@ -38,7 +41,7 @@ module.exports = {
     slug_fr: "fr/issue03",
     slug_es: "es/issue03",
     number: 3,
-    publisher: "Columbia University Libraries",
+    publisher: "Small Axe Project",
     date: "July 2019",
     title: "Issue (3)",
     editors: ["Kaiama Glover", "Alex Gil", "Jessica Marie Johnson"],
