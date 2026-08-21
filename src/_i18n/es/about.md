@@ -122,7 +122,7 @@ Un intercambio conciso y editado entre el/los autor/es del sitio y el/los evalua
 
 Todas las contribuciones de los autores deben:
 
-- tener entre 600 y 800 palabras (Declaración del Proyecto)
+- tener entre 500 y 700 palabras (Declaración del Proyecto)
 - estar escritas a doble espacio y seguir el Manual de Estilo de Chicago
 - estar escritas en neerlandés, inglés, francés, papiamentu/o o español
 - enviarse en formato .docx o .md
@@ -133,7 +133,7 @@ Por favor, familiarícese con el proceso de revisión a continuación, y consult
 
 #### Proceso de revisión
 
-1. Los autores del proyecto envían una Declaración del Proyecto de 400 a 600 palabras en la que explican sus objetivos y la lógica de sus decisiones.
+1. Los autores del proyecto envían una Declaración del Proyecto de 500 a 700 palabras en la que explican sus objetivos y la lógica de sus decisiones.
 2. Los evaluadores preparan una evaluación de la Declaración del Proyecto y del sitio del proyecto digital en línea, basándose en las preguntas que se recogen más adelante en este documento. La evaluación debe enviarse en un plazo de cinco semanas a la dirección de correo electrónico de la revista: ([archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com)).
 3. Los editores anonimizan los comentarios del evaluador y los comparten con los autores. Si procede, los autores trabajan en la revisión de su proyecto para incorporar los comentarios del evaluador y proporcionan un enlace a la versión revisada (en desarrollo o publicada públicamente).
 4. Los autores del proyecto envían una narrativa de 1000 a 2000 palabras en respuesta a los comentarios del evaluador, explicando cómo han abordado (o planean abordar) las preocupaciones planteadas. Esta respuesta se envía directamente a la revista y no se comparte con los evaluadores antes de la publicación.

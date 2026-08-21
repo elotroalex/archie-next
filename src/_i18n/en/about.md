@@ -120,7 +120,7 @@ A concise and edited exchange between site author(s) and reviewer(s) of a public
 
 All author submissions should be:
 
-- within words 600–800 words (Project Statement)
+- within 500–700 words (Project Statement)
 - double-spaced and follow the Chicago Manual of Style using Notes-Bibliography format.
 - written in Dutch, English, French, Papiamentu/o, or Spanish
 - submitted in .docx or .md format
@@ -131,7 +131,7 @@ Please familiarize yourself with the review process below, and see our [reviewer
 
 #### Review Process
 
-1. Project authors submit a Project Statement of 400 to 600 words explaining their goals and the rationale of their decision-making.
+1. Project authors submit a Project Statement of 500 to 700 words explaining their goals and the rationale of their decision-making.
 2. Reviewers prepare an evaluation of the Project Statement and the online digital project site based on the questions outlined later in this document. The assessment should be sent within five weeks to the journal\'s email address: ([archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com)).
 3. Editors anonymize and share reviewer feedback with authors. If applicable, authors work on revising their project to incorporate reviewer comments and provide a link to the revised version (under development or publicly published).
 4. Project authors submit a 1000-to-2000-word narrative responding to reviewer feedback and explaining how they addressed (or plan to address) any concerns. This response is sent directly to the journal, and not shared with reviewers prior to publication.

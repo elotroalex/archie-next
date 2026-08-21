@@ -121,7 +121,7 @@ Un échange concis et édité entre le(s) auteur(s) du site et le(s) évaluateur
 
 Toutes les contributions des auteurs doivent :
 
-- comprendre entre 600 et 800 mots (Déclaration de projet)
+- comprendre entre 500 et 700 mots (Déclaration de projet)
 - être à double interligne et suivre le Chicago Manual of Style
 - être rédigées en néerlandais, en anglais, en français, en papiamentu/o ou en espagnol
 - être soumises en format .docx ou .md
@@ -132,7 +132,7 @@ Veuillez vous familiariser avec le processus d'évaluation ci-dessous, et consul
 
 #### Processus d'évaluation
 
-1. Les auteurs du projet soumettent une Déclaration de projet de 400 à 600 mots expliquant leurs objectifs et la logique de leurs décisions.
+1. Les auteurs du projet soumettent une Déclaration de projet de 500 à 700 mots expliquant leurs objectifs et la logique de leurs décisions.
 2. Les évaluateurs préparent une évaluation de la Déclaration de projet et du site du projet numérique en ligne, en se basant sur les questions présentées plus loin dans ce document. L'évaluation doit être envoyée dans un délai de cinq semaines à l'adresse courriel de la revue : ([archipelagosjournal@gmail.com](mailto:archipelagosjournal@gmail.com)).
 3. Les éditeurs anonymisent les commentaires de l'évaluateur et les partagent avec les auteurs. Le cas échéant, les auteurs travaillent à la révision de leur projet pour intégrer les commentaires de l'évaluateur et fournissent un lien vers la version révisée (en cours de développement ou publiée publiquement).
 4. Les auteurs du projet soumettent un récit de 1 000 à 2 000 mots en réponse aux commentaires de l'évaluateur, expliquant comment ils ont abordé (ou prévoient d'aborder) les préoccupations soulevées. Cette réponse est envoyée directement à la revue et n'est pas partagée avec les évaluateurs avant la publication.
