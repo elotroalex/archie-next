@@ -48,7 +48,8 @@ Nous fournissons des DOI pour tous les articles. Vous trouverez des informations
 - Dublin Core (Pour les besoins généraux en métadonnées)
 - Open Graph (Pour la distribution sur les réseaux sociaux)
 - Highwire Press (pour Google Scholar)
-- Le format technologique utilisé pour *archipelagos* est proposé avec une licence MIT. Toutes nos données sont ouvertes sur notre repositoire Github.
+
+Le format technologique utilisé pour *archipelagos* est proposé avec une licence MIT. Toutes nos données sont ouvertes sur notre [dépôt GitHub](https://github.com/archipelagosjournal/).
 
 Des exemplaires des articles seront conservés dans le référentiel [Eli Scholar](https://elischolar.library.yale.edu/archipelagosjournal/) de l\'Université Yale. Nous sommes aussi conservés dans le système [LOCKSS](https://www.lockss.org/).
 

@@ -46,6 +46,8 @@ Proporcionamos DOIs para todos los artículos. La información de citas y los DO
 
 La base tecnológica utilizada para *archipelagos* se ofrece con una licencia MIT. Todos nuestros datos están abiertos en nuestro <a href="https://github.com/archipelagosjournal/">repositorio de Github</a>.
 
+Se archivarán copias de los artículos en [Eli Scholar](https://elischolar.library.yale.edu/archipelagosjournal/), el repositorio de la Universidad de Yale. También estamos archivados en el sistema [LOCKSS](https://www.lockss.org/).
+
 ---
 
 ## Modalidades
