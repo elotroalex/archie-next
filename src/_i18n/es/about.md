@@ -28,7 +28,7 @@ A medida que construimos y entendemos, lo hacemos iluminados por la primera luz 
 
 ## Política editorial
 
-ISSN: 2473-2206
+### Acceso abierto
 
 *archipelagos* es una revista de libre acceso, lo que significa que todo su contenido es disponible gratuitamente, sin cargo a usuarios o instituciones. Los usuarios pueden leer, descargar, copiar, distribuir, imprimir, buscar o vincular los textos completos de los artículos en esta revista sin solicitar permiso previo de los editores, o autores.
 
@@ -36,15 +36,19 @@ No cobramos cargos por procesamiento de artículos ni por envío de artículos a
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 
+La base tecnológica utilizada para *archipelagos* se ofrece con una licencia MIT. Todos nuestros datos están abiertos en nuestro [repositorio de GitHub](https://github.com/archipelagosjournal/).
+
+### Estándares académicos
+
 Todos los artículos son revisados por pares utilizando doble anonimidad. Todos los proyectos digitales son revisados por pares con la anonimidad de los revisores. Las reseñas públicas de proyectos son editadas por los editores de la revista directamente. Investigamos la posibilidad de plagio durante nuestro proceso de revisión.
+
+### Distribución y conservación
 
 Proporcionamos DOIs para todos los artículos. La información de citas y los DOIs se pueden encontrar en el menu de barra lateral disponible en cada artículo. Cada artículo también proporciona metadatos en los siguientes estándares en su código HTML:
 
 - Dublin Core (para uso general de metadatos)
 - Open Graph (para distribución en redes sociales)
 - Highwire Press (para Google Scholar)
-
-La base tecnológica utilizada para *archipelagos* se ofrece con una licencia MIT. Todos nuestros datos están abiertos en nuestro <a href="https://github.com/archipelagosjournal/">repositorio de Github</a>.
 
 Se archivarán copias de los artículos en [Eli Scholar](https://elischolar.library.yale.edu/archipelagosjournal/), el repositorio de la Universidad de Yale. También estamos archivados en el sistema [LOCKSS](https://www.lockss.org/).
 

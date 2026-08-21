@@ -33,7 +33,7 @@ Nous ne facturons pas les auteurs pour le traitement des articles ni pour la sou
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 
-La base technologique utilisée pour *archipelagos* est proposée avec une license MIT. Toutes nos données sont disponibles sur notre référentiel à <a href="https://github.com/archipelagosjournal/">Github.</a>
+La base technologique utilisée pour *archipelagos* est proposée avec une licence MIT. Toutes nos données sont ouvertes sur notre [dépôt GitHub](https://github.com/archipelagosjournal/).
 
 
 ### Standards académiques
@@ -48,8 +48,6 @@ Nous fournissons des DOI pour tous les articles. Vous trouverez des informations
 - Dublin Core (Pour les besoins généraux en métadonnées)
 - Open Graph (Pour la distribution sur les réseaux sociaux)
 - Highwire Press (pour Google Scholar)
-
-Le format technologique utilisé pour *archipelagos* est proposé avec une licence MIT. Toutes nos données sont ouvertes sur notre [dépôt GitHub](https://github.com/archipelagosjournal/).
 
 Des exemplaires des articles seront conservés dans le référentiel [Eli Scholar](https://elischolar.library.yale.edu/archipelagosjournal/) de l\'Université Yale. Nous sommes aussi conservés dans le système [LOCKSS](https://www.lockss.org/).
 
