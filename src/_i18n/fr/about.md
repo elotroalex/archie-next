@@ -179,7 +179,7 @@ La troisième condition est la connaissance de la génération de sites statique
 
 N.B. Chaque phase du cycle de vie d\'un texte, du premier brouillon à la production, est comprise comme une version différente du texte, abrégée ici par v1, v2, etc.
 
-I. Phase Word
+#### I. Phase Word
 
 À cette étape, tous les échanges peuvent avoir lieu dans Microsoft Word, à condition que toutes les parties respectent les [directives de style](https://archipelagosjournal.org/authors.html#documents) documentées sur le site du journal. Les rédacteurs conserveront des copies de toutes les versions de cette étape sur Dropbox. Aucune promesse de conservation n'est faite pour cette étape.
 
@@ -195,7 +195,7 @@ I. Phase Word
 10. Le réviseur partage tous les fichiers v5 sans suivi des modifications + documents auxiliaires avec les éditeurs dans Dropbox.
 11. Les éditeurs obtiennent des DOI
 
-II. La phase Markdown
+#### II. La phase Markdown
 
 Dans cette étape, nous passons aux flux de travail Markdown, à partir desquels le site et les PDF sont générés. Toutes les éditions par le réviseur et les éditeurs doivent avoir lieu sur Github à ce stade.
 
