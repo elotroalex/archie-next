@@ -41,18 +41,19 @@
   <meta name="DC.language" content="{{ language }}" />
 
   <!-- Social media metadata -->
-  {% if layout == "article" or layout == "project" %}
+  {# One card style everywhere: the 1200x630 landscape image carries the
+     journal name, which the square logo could not. #}
   <meta name="twitter:card" content="summary_large_image" />
+  {% if layout == "article" or layout == "project" %}
   <meta name="twitter:title" content="{{ title.long | mdInline | safe | striptags if title.long else title | mdInline | safe | striptags }}" />
   <meta name="twitter:description" content="{{ abstract | mdInline | safe | striptags | truncate(200) }}" />
   {% else %}
-  <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="archipelagos | a journal of Caribbean digital praxis" />
   <meta name="twitter:description" content="{{ site.description }}" />
   {% endif %}
   <meta name="twitter:site" content="@elotroalex" />
-  <meta name="twitter:image" content="{{ site.url }}/public/open-graph-logo.png" />
-  <meta name="twitter:image:alt" content="archipelagos journal logo" />
+  <meta name="twitter:image" content="{{ site.url }}/public/open-graph-card.png" />
+  <meta name="twitter:image:alt" content="archipelagos — a journal of Caribbean digital praxis" />
 
   {% if layout != "article" %}
   <meta property="og:title" content="archipelagos" />
@@ -61,9 +62,9 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta property="fb:app_id" content="837201816410405" />
-  <meta property="og:image" content="{{ site.url }}/public/open-graph-logo.png" />
+  <meta property="og:image" content="{{ site.url }}/public/open-graph-card.png" />
   <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="1200" />
+  <meta property="og:image:height" content="630" />
   {% else %}
   <meta property="og:title" content="{{ title.long | mdInline | safe | striptags if title.long else title | mdInline | safe | striptags }}"/>
   <meta property="og:description" content="{{ abstract | mdInline | safe | striptags if abstract }}">
@@ -71,9 +72,9 @@
   <meta property="og:type" content="article" />
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta property="fb:app_id" content="837201816410405" />
-  <meta property="og:image" content="{{ site.url }}/public/open-graph-logo.png" />
+  <meta property="og:image" content="{{ site.url }}/public/open-graph-card.png" />
   <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="1200" />
+  <meta property="og:image:height" content="630" />
   {% endif %}
 
   <!-- Highwire Press metadata (Google Scholar indexing) -->
