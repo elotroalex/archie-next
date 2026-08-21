@@ -21,6 +21,13 @@
   <link rel="alternate" hreflang="fr" href="{{ site.url }}/fr{{ basePath }}" />
   <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ basePath }}" />
 
+  {# Publisher is a property of when a piece was published, not of the site
+     today: Columbia University Libraries for issues 1-8, Yale University
+     Library from 9 on. Issue content takes it from issues.js; pages that
+     belong to no issue fall back to site.publisher, which is the current
+     issue's. #}
+  {% set pagePublisher = issues[issueSlug].publisher if issueSlug and issues[issueSlug] else site.publisher %}
+
   <!-- Dublin Core metadata -->
   <link rel="schema.DC" href="http://dublincore.org/documents/dces/" />
   <link rel="schema.DCTERMS" href="http://dublincore.org/documents/dces/" />
@@ -32,7 +39,7 @@
   <meta name="DCTERMS.issued" content="{{ pubDate }}" />
   <meta name="DC.identifier" scheme="DCTERMS.URI" content="{{ doi }}" />
   <meta name="DC.identifier" scheme="DCTERMS.ISSN" content="{{ site.issn }}" />
-  <meta name="DC.publisher" content="{{ site.publisher }}" />
+  <meta name="DC.publisher" content="{{ pagePublisher }}" />
   <meta name="DC.relation.ispartof" content="{{ site.title }}" />
   <meta name="DC.citation.issue" content="{{ issue }}" />
   <meta name="DC.format" content="text/html" />
@@ -93,13 +100,13 @@
   {% set canonicalPath = page.url | replace("/es/", "/") | replace("/fr/", "/") %}
   <meta name="citation_pdf_url" content="{{ site.url }}/assets{{ canonicalPath | replace('.html', '.pdf') }}" />
   {% endif %}
-  <meta name="citation_publisher" content="{{ site.publisher }}" />
+  <meta name="citation_publisher" content="{{ pagePublisher }}" />
   <meta name="citation_doi" content="{{ doi }}" />
   {% endif %}
 
   <!-- schema.org structured data (general-purpose search/discovery, alongside the Highwire tags above for Google Scholar) -->
   {% if layout == "article" or layout == "project" %}
-  <script type="application/ld+json">{{ layout | articleJsonLd(title, author, doi, issue, language, abstract, page, site) | safe }}</script>
+  <script type="application/ld+json">{{ layout | articleJsonLd(title, author, doi, issue, language, abstract, page, site, pagePublisher) | safe }}</script>
   {% endif %}
 
   <!-- CSS -->

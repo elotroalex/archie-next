@@ -1,3 +1,8 @@
+// Publisher changed with issue09: Columbia University Libraries published
+// issues 1-8, Yale University Library from 9 onward. It lives per issue
+// rather than in site.js because it is a property of when a piece was
+// published, not of the site today -- back issues must keep saying Columbia
+// in their DC.publisher, citation_publisher and JSON-LD.
 // Issue metadata — migrated from _config.yml collections block
 //
 // The LAST key here is always treated as the current issue (src/_data/site.js
@@ -11,6 +16,7 @@ module.exports = {
     slug_fr: "fr/issue01",
     slug_es: "es/issue01",
     number: 1,
+    publisher: "Columbia University Libraries",
     date: "June 2016",
     title: "Issue (1)",
     editors: ["Kaiama Glover", "Alex Gil", "Kelly Baker Josephs"],
@@ -21,6 +27,7 @@ module.exports = {
     slug_fr: "fr/issue02",
     slug_es: "es/issue02",
     number: 2,
+    publisher: "Columbia University Libraries",
     date: "September 2017",
     title: "Issue (2)",
     editors: ["Kaiama Glover", "Alex Gil"],
@@ -31,6 +38,7 @@ module.exports = {
     slug_fr: "fr/issue03",
     slug_es: "es/issue03",
     number: 3,
+    publisher: "Columbia University Libraries",
     date: "July 2019",
     title: "Issue (3)",
     editors: ["Kaiama Glover", "Alex Gil", "Jessica Marie Johnson"],
@@ -55,6 +63,7 @@ module.exports = {
     slug_fr: "fr/issue04",
     slug_es: "es/issue04",
     number: 4,
+    publisher: "Columbia University Libraries",
     date: "March 2020",
     title: "Issue (4)",
     editors: ["Kaiama Glover", "Alex Gil"],
@@ -65,6 +74,7 @@ module.exports = {
     slug_fr: "fr/issue05",
     slug_es: "es/issue05",
     number: 5,
+    publisher: "Columbia University Libraries",
     date: "December 2020",
     title: "Issue (5)",
     editors: ["Kaiama Glover", "Alex Gil"],
@@ -75,6 +85,7 @@ module.exports = {
     slug_fr: "fr/issue06",
     slug_es: "es/issue06",
     number: 6,
+    publisher: "Columbia University Libraries",
     date: "May 2022",
     title: "Issue (6)",
     editors: ["Kaiama Glover", "Alex Gil"],
@@ -85,6 +96,7 @@ module.exports = {
     slug_fr: "fr/issue07",
     slug_es: "es/issue07",
     number: 7,
+    publisher: "Columbia University Libraries",
     date: "May 2023",
     title: "Issue (7)",
     editors: ["Kaiama Glover", "Alex Gil"],
@@ -95,6 +107,7 @@ module.exports = {
     slug_fr: "fr/issue08",
     slug_es: "es/issue08",
     number: 8,
+    publisher: "Columbia University Libraries",
     date: "April 2025",
     title: "Issue (8)",
     editors: ["Kaiama Glover", "Alex Gil"],
@@ -105,6 +118,7 @@ module.exports = {
     slug_fr: "fr/issue09",
     slug_es: "es/issue09",
     number: 9,
+    publisher: "Yale University Library",
     date: "July 2026",
     title: "Issue (9)",
     editors: ["Kaiama Glover", "Alex Gil"],

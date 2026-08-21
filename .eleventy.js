@@ -225,10 +225,10 @@ module.exports = function (eleventyConfig) {
   // this data is threaded through `this.ctx` for either shortcodes or
   // filters here -- these are the same bare template variables head.njk
   // already uses directly (e.g. {{ title }}).
-  // Usage in head.njk: {{ layout | articleJsonLd(title, author, doi, issue, language, abstract, page, site) | safe }}
+  // Usage in head.njk: {{ layout | articleJsonLd(title, author, doi, issue, language, abstract, page, site, pagePublisher) | safe }}
   eleventyConfig.addFilter(
     "articleJsonLd",
-    function (layout, title, author, doi, issue, language, abstract, page, site) {
+    function (layout, title, author, doi, issue, language, abstract, page, site, publisher) {
       if (layout !== "article" && layout !== "project") return "";
       const titleText = (title && title.long) || title;
       const json = {
@@ -241,7 +241,7 @@ module.exports = function (eleventyConfig) {
         ...(abstract ? { abstract } : {}),
         ...(doi ? { identifier: `https://doi.org/${doi}`, sameAs: `https://doi.org/${doi}` } : {}),
         author: (author || []).map((a) => ({ "@type": "Person", name: a.name })),
-        publisher: { "@type": "Organization", name: site.publisher },
+        publisher: { "@type": "Organization", name: publisher || site.publisher },
         isPartOf: {
           "@type": "PublicationIssue",
           issueNumber: issue,

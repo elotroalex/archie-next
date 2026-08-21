@@ -50,7 +50,11 @@ if (process.env.ELEVENTY_ALLOW_CRAWLERS === "true" && url !== CANONICAL_URL) {
 
 module.exports = {
   title: "archipelagos",
-  publisher: "Columbia University Libraries",
+  // The *current* publisher, for pages that belong to no issue (about,
+  // credits, the homepage). Issue content resolves its own publisher from
+  // issues.js instead -- see the note there. Derived, so adding a new issue
+  // with a different publisher updates this automatically.
+  publisher: issues[currentKey].publisher,
   description: "a journal of Caribbean digital praxis",
   url,
   // True for any build that isn't the crawlable production one. Drives the
