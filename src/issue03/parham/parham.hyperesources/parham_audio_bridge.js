@@ -26,14 +26,12 @@
   var activeAudioScene = null;
   var silentAudioUrl = null;
   var hoverAudioFiles = ["dance cut NCM-1.mp4", "NCM rope end.mp4"];
+  var ncmCompositeFile = "dawes-stop-cong.mp4";
+  var ncmCompositeDuration = 45.397333;
   var sceneAudioCues = {
     "dawes-break": {
       source: "parham.hyperesources/Dawes-stopTime-first.m4a",
       delay: 45000,
-    },
-    "ncm-break": {
-      source: "parham.hyperesources/dawes-stop-cong.m4a",
-      delay: 1290,
     },
     assembly: {
       source: "parham.hyperesources/2dawes-stop-time-healing.m4a",
@@ -471,16 +469,56 @@
     }
   }
 
+  function findNcmCompositeVideo(sceneElement) {
+    return Array.prototype.find.call(
+      sceneElement.querySelectorAll("video"),
+      function (video) {
+        var source = videoSource(video);
+        try {
+          source = decodeURIComponent(source);
+        } catch (_error) {
+          // The encoded filename is still safe to compare below.
+        }
+        return source.toLowerCase().indexOf(ncmCompositeFile) !== -1;
+      },
+    );
+  }
+
+  function prepareNcmComposite(sceneElement) {
+    if (!sceneElement || !sceneElement.isConnected) {
+      return;
+    }
+
+    var video = findNcmCompositeVideo(sceneElement);
+    if (!video) {
+      return;
+    }
+
+    video.setAttribute("autoplay", "");
+    video.setAttribute("playsinline", "");
+    video.setAttribute("webkit-playsinline", "");
+    video.setAttribute("preload", "auto");
+    video.autoplay = true;
+    video.playsInline = true;
+    video.preload = "auto";
+
+    var playAttempt = video.play();
+    if (playAttempt && typeof playAttempt.catch === "function") {
+      playAttempt.catch(function () {
+        // Direct links may still require a browser-approved user gesture.
+      });
+    }
+  }
+
   function addNcmSecretBox(hypeDocument, sceneElement) {
     removeNcmSecretBox();
 
-    var cue = sceneAudioCues["ncm-break"];
     var secretBox = document.createElement("button");
     secretBox.id = ncmSecretBoxId;
     secretBox.type = "button";
     secretBox.setAttribute(
       "aria-label",
-      "Skip to the final three seconds of the NCM-break Dawes reading",
+      "Skip to the final three seconds of the NCM-break composite",
     );
     secretBox.style.position = "absolute";
     secretBox.style.left = "13px";
@@ -498,54 +536,23 @@
     secretBox.addEventListener("click", function (event) {
       event.preventDefault();
       event.stopPropagation();
-      clearPoetryTimer();
-
-      var moveToNearEnd = function () {
-        if (
-          activeAudioScene !== "ncm-break" ||
-          !Number.isFinite(poetryPlayer.duration) ||
-          poetryPlayer.duration <= 0
-        ) {
-          return;
-        }
-
-        var audioJumpTime = Math.max(0, poetryPlayer.duration - 3);
-        try {
-          poetryPlayer.currentTime = audioJumpTime;
-        } catch (_error) {
-          return;
-        }
-      };
-
-      // Start the full clap video while the poem plays its final three seconds.
-      // This also keeps direct/silent presentation use useful if audio is blocked.
-      hypeDocument.goToTimeInTimelineNamed(36.2, "Main Timeline");
+      var jumpTime = Math.max(0, ncmCompositeDuration - 3);
+      hypeDocument.goToTimeInTimelineNamed(jumpTime, "Main Timeline");
       window.setTimeout(function () {
         hypeDocument.continueTimelineNamed("Main Timeline");
       }, 20);
-      window.setTimeout(function () {
+      var seekCompositeNearEnd = function () {
         if (!secretBox.isConnected) {
           return;
         }
-        var clapVideo = Array.prototype.find.call(
-          sceneElement.querySelectorAll("video"),
-          function (video) {
-            var source = video.currentSrc || video.src || "";
-            try {
-              source = decodeURIComponent(source);
-            } catch (_error) {
-              // The encoded filename is still safe to compare below.
-            }
-            return source.toLowerCase().indexOf("never catch me claps.mp4") !== -1;
-          },
-        );
-        if (clapVideo) {
+        var compositeVideo = findNcmCompositeVideo(sceneElement);
+        if (compositeVideo) {
           try {
-            clapVideo.currentTime = 0;
+            compositeVideo.currentTime = jumpTime;
           } catch (_error) {
-            // The video will start from its existing position if seeking fails.
+            // The timeline remains correctly positioned if seeking fails.
           }
-          var videoPlayAttempt = clapVideo.play();
+          var videoPlayAttempt = compositeVideo.play();
           if (
             videoPlayAttempt &&
             typeof videoPlayAttempt.catch === "function"
@@ -555,21 +562,10 @@
             });
           }
         }
-      }, 150);
-      if (!soundAuthorized) {
-        return;
-      }
-
-      if (activeAudioScene !== "ncm-break") {
-        playPoetry(cue.source, "ncm-break");
-      }
-      if (Number.isFinite(poetryPlayer.duration) && poetryPlayer.duration > 0) {
-        moveToNearEnd();
-      } else {
-        poetryPlayer.addEventListener("loadedmetadata", moveToNearEnd, {
-          once: true,
-        });
-      }
+      };
+      [150, 450, 800].forEach(function (delay) {
+        window.setTimeout(seekCompositeNearEnd, delay);
+      });
     });
 
     sceneElement.appendChild(secretBox);
@@ -596,6 +592,13 @@
       );
       if (ncmSceneElement) {
         addNcmSecretBox(hypeDocument, ncmSceneElement);
+        prepareNcmComposite(ncmSceneElement);
+        window.setTimeout(function () {
+          prepareNcmComposite(ncmSceneElement);
+        }, 150);
+        window.setTimeout(function () {
+          prepareNcmComposite(ncmSceneElement);
+        }, 500);
       }
     }
     if (sceneName === "assembly") {
