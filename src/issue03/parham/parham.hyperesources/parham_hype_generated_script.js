@@ -210,7 +210,7 @@
         47: { n: "suggs-grace-480.mp4?80688", g: "2029", t: "video/mp4" },
         70: { p: 1, n: "2_2x.jpg", g: "3569", o: true, t: "@2x" },
         48: { n: "hot-thing-pulse.mp4", g: "3296", t: "video/mp4" },
-        71: { n: "glitch-bd.mp4", g: "3621", t: "video/mp4" },
+        71: { n: "glitch-bd.mp4?60000", g: "3621", t: "video/mp4" },
         49: { p: 1, n: "hold%20up%20rejoice%20gif.gif", g: "3303", t: "@1x" },
         72: { p: 1, n: "v01_glitch-04.jpg", g: "3634", t: "@1x" },
         73: { n: "dawes-stop-cong.mp4", g: "3643", t: "video/mp4" },
