@@ -20,14 +20,29 @@
   var hoverSyncTimer = null;
   var poetryTimer = null;
   var aboutPromptTimer = null;
+  var ncmCompositeStartTimer = null;
   var assemblyPreludeTimer = null;
   var assemblyPreludeFadeTimer = null;
   var assemblyPreludeDocument = null;
   var activeAudioScene = null;
   var silentAudioUrl = null;
+  // These videos use the shared player for ordinary play/autoplay sound.
+  // Interaction remains controlled by Hype: this list grants sound but does
+  // not itself start a video.
+  var audibleVideoFiles = [
+    "form-camino.mp4",
+    "lem-dive.mp4",
+    "lem-water-720.mp4",
+    "dawes-stop-cong.mp4",
+    "tresillo.mp4",
+    "jeru-come-clean-cut.mp4",
+  ];
+  // These two are intentionally excluded from the ordinary list: their sound
+  // is supplied only while hovering or through the visible touch control.
   var hoverAudioFiles = ["dance cut NCM-1.mp4", "NCM rope end.mp4"];
   var ncmCompositeFile = "dawes-stop-cong.mp4";
   var ncmCompositeDuration = 45.397333;
+  var ncmCompositeStartDelay = 2000;
   var sceneAudioCues = {
     "dawes-break": {
       source: "parham.hyperesources/Dawes-stopTime-first.m4a",
@@ -35,7 +50,9 @@
     },
     assembly: {
       source: "parham.hyperesources/2dawes-stop-time-healing.m4a",
-      delay: 0,
+      // cutlass-d uses a two-second scene transition. Let that complete before
+      // the reading begins so its first line does not overlap the prior scene.
+      delay: 2000,
     },
   };
 
@@ -129,6 +146,11 @@
     silentAudioUrl = makeSilentAudioUrl();
     [audioPlayer, poetryPlayer, hoverPlayer].forEach(function (player) {
       player.src = silentAudioUrl;
+      // Keep the browser-authorized player alive until its first real source.
+      // A short, non-looping unlock clip can end too early for Safari/iOS to
+      // permit sound later in a timed scene.
+      player.loop = true;
+      player.muted = false;
       player.volume = 0;
 
       var playAttempt = player.play();
@@ -151,6 +173,13 @@
     if (aboutPromptTimer !== null) {
       window.clearTimeout(aboutPromptTimer);
       aboutPromptTimer = null;
+    }
+  }
+
+  function clearNcmCompositeStartTimer() {
+    if (ncmCompositeStartTimer !== null) {
+      window.clearTimeout(ncmCompositeStartTimer);
+      ncmCompositeStartTimer = null;
     }
   }
 
@@ -188,6 +217,15 @@
     }
   }
 
+  function isSilentUnlockPlayer(player) {
+    return Boolean(
+      soundAuthorized &&
+        silentAudioUrl &&
+        player &&
+        player.src === silentAudioUrl,
+    );
+  }
+
   function clearAssemblyPreludeTimers() {
     if (assemblyPreludeTimer !== null) {
       window.clearTimeout(assemblyPreludeTimer);
@@ -210,6 +248,31 @@
     clearAssemblyPreludeTimers();
     removeAssemblyPrelude();
     assemblyPreludeDocument = null;
+  }
+
+  function createAssemblyPreludeCover() {
+    var existingPrelude = document.getElementById(assemblyPreludeId);
+    if (existingPrelude) {
+      return existingPrelude;
+    }
+
+    var assemblyScene = document.querySelector(
+      "#" + containerId + ' .HYPE_scene[hype_scene_index="23"]',
+    );
+    if (!assemblyScene) {
+      return null;
+    }
+
+    var prelude = document.createElement("div");
+    prelude.id = assemblyPreludeId;
+    prelude.style.position = "absolute";
+    prelude.style.inset = "0";
+    prelude.style.background = "#000000";
+    prelude.style.opacity = "1";
+    prelude.style.overflow = "hidden";
+    prelude.style.zIndex = "10000";
+    assemblyScene.appendChild(prelude);
+    return prelude;
   }
 
   function finishAssemblyPrelude() {
@@ -283,12 +346,16 @@
   }
 
   function addAssemblyPrelude(hypeDocument) {
-    cancelAssemblyPrelude();
-
     var assemblyScene = document.querySelector(
       "#" + containerId + ' .HYPE_scene[hype_scene_index="23"]',
     );
     if (!assemblyScene) {
+      return;
+    }
+
+    clearAssemblyPreludeTimers();
+    var prelude = createAssemblyPreludeCover();
+    if (!prelude) {
       return;
     }
 
@@ -299,15 +366,6 @@
     if (typeof hypeDocument.pauseTimelineNamed === "function") {
       hypeDocument.pauseTimelineNamed("Main Timeline");
     }
-
-    var prelude = document.createElement("div");
-    prelude.id = assemblyPreludeId;
-    prelude.style.position = "absolute";
-    prelude.style.inset = "0";
-    prelude.style.background = "#000000";
-    prelude.style.opacity = "1";
-    prelude.style.overflow = "hidden";
-    prelude.style.zIndex = "10000";
 
     var card = document.createElement("div");
     card.setAttribute("role", "group");
@@ -366,16 +424,16 @@
 
     prelude.appendChild(card);
     prelude.appendChild(secretBox);
-    assemblyScene.appendChild(prelude);
     window.setTimeout(function () {
       if (card.isConnected) {
         card.style.opacity = "1";
       }
-    }, 20);
+    }, 2020);
 
-    // The assembly recording is 40.427 seconds. This fallback also releases
-    // assembly if a direct link or browser policy prevents playback.
-    assemblyPreludeTimer = window.setTimeout(finishAssemblyPrelude, 40427);
+    // The assembly recording is 40.427 seconds and begins after the incoming
+    // two-second transition. This fallback also releases assembly if a direct
+    // link or browser policy prevents playback.
+    assemblyPreludeTimer = window.setTimeout(finishAssemblyPrelude, 42427);
   }
 
   function turnDawesArrowFuchsia() {
@@ -484,7 +542,7 @@
     );
   }
 
-  function prepareNcmComposite(sceneElement) {
+  function prepareNcmComposite(sceneElement, shouldPlay) {
     if (!sceneElement || !sceneElement.isConnected) {
       return;
     }
@@ -494,13 +552,29 @@
       return;
     }
 
-    video.setAttribute("autoplay", "");
     video.setAttribute("playsinline", "");
     video.setAttribute("webkit-playsinline", "");
     video.setAttribute("preload", "auto");
-    video.autoplay = true;
     video.playsInline = true;
     video.preload = "auto";
+
+    if (!shouldPlay) {
+      video.autoplay = false;
+      video.removeAttribute("autoplay");
+      video.pause();
+      if (video.networkState === 0) {
+        video.load();
+      }
+      try {
+        video.currentTime = 0;
+      } catch (_error) {
+        // Metadata may still be loading; the delayed start retries this setup.
+      }
+      return;
+    }
+
+    video.setAttribute("autoplay", "");
+    video.autoplay = true;
 
     var playAttempt = video.play();
     if (playAttempt && typeof playAttempt.catch === "function") {
@@ -536,6 +610,7 @@
     secretBox.addEventListener("click", function (event) {
       event.preventDefault();
       event.stopPropagation();
+      clearNcmCompositeStartTimer();
       var jumpTime = Math.max(0, ncmCompositeDuration - 3);
       hypeDocument.goToTimeInTimelineNamed(jumpTime, "Main Timeline");
       window.setTimeout(function () {
@@ -592,13 +667,57 @@
       );
       if (ncmSceneElement) {
         addNcmSecretBox(hypeDocument, ncmSceneElement);
-        prepareNcmComposite(ncmSceneElement);
+        clearNcmCompositeStartTimer();
+        if (typeof hypeDocument.goToTimeInTimelineNamed === "function") {
+          hypeDocument.goToTimeInTimelineNamed(0, "Main Timeline");
+        }
+        if (typeof hypeDocument.pauseTimelineNamed === "function") {
+          hypeDocument.pauseTimelineNamed("Main Timeline");
+        }
+        prepareNcmComposite(ncmSceneElement, false);
         window.setTimeout(function () {
-          prepareNcmComposite(ncmSceneElement);
+          prepareNcmComposite(ncmSceneElement, false);
         }, 150);
         window.setTimeout(function () {
-          prepareNcmComposite(ncmSceneElement);
+          prepareNcmComposite(ncmSceneElement, false);
         }, 500);
+        var readinessChecks = 0;
+        var startNcmCompositeWhenReady = function () {
+          ncmCompositeStartTimer = null;
+          if (
+            typeof hypeDocument.currentSceneName !== "function" ||
+            hypeDocument.currentSceneName().toLowerCase() !== "ncm-break"
+          ) {
+            return;
+          }
+
+          var compositeVideo = findNcmCompositeVideo(ncmSceneElement);
+          if (
+            compositeVideo &&
+            compositeVideo.readyState < 3 &&
+            readinessChecks < 150
+          ) {
+            readinessChecks += 1;
+            ncmCompositeStartTimer = window.setTimeout(
+              startNcmCompositeWhenReady,
+              100,
+            );
+            return;
+          }
+
+          hypeDocument.continueTimelineNamed("Main Timeline");
+          prepareNcmComposite(ncmSceneElement, true);
+          window.setTimeout(function () {
+            prepareNcmComposite(ncmSceneElement, true);
+          }, 150);
+          window.setTimeout(function () {
+            prepareNcmComposite(ncmSceneElement, true);
+          }, 500);
+        };
+        ncmCompositeStartTimer = window.setTimeout(
+          startNcmCompositeWhenReady,
+          ncmCompositeStartDelay,
+        );
       }
     }
     if (sceneName === "assembly") {
@@ -617,16 +736,44 @@
     window.setTimeout(scanHoverAudioVideos, 500);
   }
 
-  function handleSceneUnload() {
+  function handleSceneUnload(hypeDocument, sceneElement) {
+    var leavingSceneIndex =
+      sceneElement && sceneElement.getAttribute
+        ? sceneElement.getAttribute("hype_scene_index")
+        : "";
+    var stageAssemblyCover = Boolean(
+      leavingSceneIndex === "22",
+    );
+
     clearAboutPromptTimer();
+    clearNcmCompositeStartTimer();
     cancelAssemblyPrelude();
     removeSecretBox();
     removeNcmSecretBox();
-    stopPoetry();
-    audioPlayer.pause();
+    if (isSilentUnlockPlayer(poetryPlayer)) {
+      clearPoetryTimer();
+      activeAudioScene = null;
+    } else {
+      stopPoetry();
+    }
+    if (!isSilentUnlockPlayer(audioPlayer)) {
+      audioPlayer.pause();
+    }
     stopSync();
     activeVideo = null;
-    stopHoverAudio();
+    if (isSilentUnlockPlayer(hoverPlayer)) {
+      stopHoverSync();
+      activeHoverVideo = null;
+    } else {
+      stopHoverAudio();
+    }
+
+    // cutlass-d can only proceed to assembly. Put its black prelude over the
+    // still-hidden destination before Hype begins the transition, preventing
+    // the first assembly frame from flashing through.
+    if (stageAssemblyCover) {
+      createAssemblyPreludeCover();
+    }
   }
 
   function videoSource(video) {
@@ -664,6 +811,32 @@
     return hoverAudioFiles.some(function (fileName) {
       return source.indexOf(fileName.toLowerCase()) !== -1;
     });
+  }
+
+  function isAudibleVideo(video) {
+    var source = videoSource(video);
+    try {
+      source = window.decodeURIComponent(source);
+    } catch (_error) {
+      // A valid URL can still be matched in its encoded form below.
+    }
+    source = source.toLowerCase();
+
+    return audibleVideoFiles.some(function (fileName) {
+      return source.indexOf(fileName.toLowerCase()) !== -1;
+    });
+  }
+
+  function configureVideoAudio(video) {
+    if (isAudibleVideo(video)) {
+      video.setAttribute(audibleAttribute, "true");
+    } else {
+      video.removeAttribute(audibleAttribute);
+    }
+
+    // Visual videos are always muted so autoplay remains dependable. Sound is
+    // supplied only by the shared or hover player for the explicit filenames.
+    video.muted = true;
   }
 
   function ensureHoverButtonStyles() {
@@ -806,6 +979,15 @@
         stopHoverAudio(video);
       }
     });
+    // Safari versions differ in how reliably pointerType is populated. These
+    // mouse events are a harmless fallback; the active-player guard prevents
+    // duplicate playback in browsers that fire both event families.
+    video.addEventListener("mouseenter", function () {
+      playHoverAudio(video);
+    });
+    video.addEventListener("mouseleave", function () {
+      stopHoverAudio(video);
+    });
   }
 
   function scanHoverAudioVideos() {
@@ -854,7 +1036,10 @@
 
   function playHoverAudio(video) {
     var source = videoSource(video);
-    if (!soundAuthorized || !source || activeHoverVideo === video) {
+    if (!soundAuthorized || !source) {
+      return;
+    }
+    if (activeHoverVideo === video && !hoverPlayer.paused) {
       return;
     }
 
@@ -868,7 +1053,8 @@
     }
 
     hoverPlayer.loop = video.loop;
-    hoverPlayer.volume = video.volume;
+    hoverPlayer.muted = false;
+    hoverPlayer.volume = video.volume > 0 ? video.volume : 1;
     hoverPlayer.playbackRate = video.playbackRate;
 
     var beginPlayback = function () {
@@ -886,13 +1072,17 @@
       }
     };
 
-    if (hoverPlayer.readyState >= 1) {
-      beginPlayback();
-    } else {
-      hoverPlayer.addEventListener("loadedmetadata", beginPlayback, {
+    if (hoverPlayer.readyState < 1) {
+      hoverPlayer.addEventListener("loadedmetadata", function () {
+        alignHoverAudio(video);
+      }, {
         once: true,
       });
     }
+    // Calling play also initiates a cold media load. Waiting for metadata
+    // first can deadlock in browsers that defer an audio element's fetch until
+    // playback has been requested.
+    beginPlayback();
 
     hoverSyncTimer = window.setInterval(function () {
       if (!video.isConnected || video.paused || video.ended) {
@@ -944,7 +1134,8 @@
     }
 
     audioPlayer.loop = video.loop;
-    audioPlayer.volume = video.volume;
+    audioPlayer.muted = false;
+    audioPlayer.volume = video.volume > 0 ? video.volume : 1;
     audioPlayer.playbackRate = video.playbackRate;
 
     var beginPlayback = function () {
@@ -960,13 +1151,14 @@
       }
     };
 
-    if (audioPlayer.readyState >= 1) {
-      beginPlayback();
-    } else {
-      audioPlayer.addEventListener("loadedmetadata", beginPlayback, {
+    if (audioPlayer.readyState < 1) {
+      audioPlayer.addEventListener("loadedmetadata", function () {
+        alignSharedAudio(video);
+      }, {
         once: true,
       });
     }
+    beginPlayback();
 
     syncTimer = window.setInterval(function () {
       if (!video.isConnected || video.paused || video.ended) {
@@ -987,26 +1179,17 @@
 
     video.setAttribute(observedAttribute, "true");
 
-    // In the Hype export, an unchecked Mute setting produces an unmuted
-    // element. Preserve that editorial choice, then mute the visual element so
-    // its autoplay remains reliable while the shared player supplies sound.
-    if (!video.muted) {
-      video.setAttribute(audibleAttribute, "true");
-      video.muted = true;
-    }
+    configureVideoAudio(video);
 
     video.addEventListener("play", function () {
+      configureVideoAudio(video);
       if (video.getAttribute(audibleAttribute) === "true") {
-        video.muted = true;
         playSharedAudio(video);
       }
     });
 
     video.addEventListener("volumechange", function () {
-      if (
-        video.getAttribute(audibleAttribute) === "true" &&
-        !video.muted
-      ) {
+      if (!video.muted) {
         video.muted = true;
       }
     });
@@ -1031,9 +1214,11 @@
 
     prepareHoverAudioVideo(video);
     video.addEventListener("loadstart", function () {
+      configureVideoAudio(video);
       prepareHoverAudioVideo(video);
     });
     video.addEventListener("loadedmetadata", function () {
+      configureVideoAudio(video);
       prepareHoverAudioVideo(video);
     });
   }

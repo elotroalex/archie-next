@@ -13609,7 +13609,7 @@
                   y: 45.4,
                   z: 0,
                   i: "ActionHandler",
-                  s: { a: [{ d: 1.5, p: 1, g: 2, e: "448" }] },
+                  s: { a: [{ d: 0.5, p: 1, g: 2, e: "448" }] },
                   o: "kTimelineDefaultIdentifier",
                 },
               ],
