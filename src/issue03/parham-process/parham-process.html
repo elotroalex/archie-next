@@ -1247,6 +1247,433 @@ ol.bibliography {
   <!-- Current Archipelagos journal chrome -->
   <link rel="stylesheet" href="../../public/css/main.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- The Born Digital scene is intentionally 4600px wide. The journal's
+       global stylesheet suppresses horizontal overflow, so restore it only
+       while that scene is active. -->
+  <style>
+    html.born-digital-scroll,
+    html.born-digital-scroll body {
+      overflow-x: auto !important;
+    }
+
+    html.born-digital-scroll body {
+      min-width: 4600px;
+    }
+
+    #post-born-nav {
+      position: fixed;
+      top: 50%;
+      left: 0.75rem;
+      left: max(0.75rem, calc((100vw - 1200px) / 4));
+      z-index: 10000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      padding: 0.18rem 0.08rem;
+      border: 0.5px solid rgba(22, 22, 22, 0.34);
+      border-radius: 0.9rem;
+      background: rgba(255, 255, 255, 0.78);
+      box-shadow: none;
+      transform: translateY(-50%);
+    }
+
+    #post-born-nav[hidden] {
+      display: none;
+    }
+
+    #post-born-nav button {
+      position: relative;
+      display: grid;
+      width: 2.15rem;
+      height: 2.25rem;
+      padding: 0;
+      border: 0;
+      color: rgba(22, 22, 22, 0.78);
+      background: transparent;
+      font-family: "Apple Symbols", "Noto Sans Symbols 2", "Segoe UI Symbol", sans-serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      line-height: 1;
+      cursor: pointer;
+      place-items: center;
+      -webkit-text-stroke: 0.25px currentColor;
+    }
+
+    #post-born-nav button:not(:disabled):hover,
+    #post-born-nav button:not(:disabled):focus-visible {
+      color: #d0181f;
+      outline: 1px dashed #d0181f;
+      outline-offset: -3px;
+      border-radius: 0.3rem;
+    }
+
+    #post-born-nav button:disabled {
+      cursor: default;
+      opacity: 0.3;
+    }
+
+    #post-born-nav .post-born-tile {
+      transition: color 160ms ease, opacity 160ms ease, transform 160ms ease;
+    }
+
+    #post-born-nav .post-born-tile[aria-current='step'] {
+      color: #d0181f;
+      opacity: 1;
+      transform: translateX(0.08rem) rotate(1.5deg) scale(1.08);
+    }
+
+    #post-born-nav .post-born-tile:not(:disabled) {
+      opacity: 1;
+    }
+
+    @media (max-width: 700px) {
+      #post-born-nav {
+        left: 0.2rem;
+      }
+    }
+  </style>
+  <script>
+    (function () {
+      var postBornScenes = ['1/5', '2/5', '3/5', '4/5', '5/5', 'un|return'];
+      var postBornTiles = ['🁪', '🁫', '🁬', '🁭', '🁳', '🁴'];
+      var postBornHypeDocument = null;
+      var oneOfFiveMedia = {
+        video: null,
+        run: 0,
+        timers: [],
+        fadeFrame: null,
+        unlockHandler: null,
+        fadeEndsAt: 0
+      };
+
+      function findOneOfFiveVideo() {
+        var videos = document.querySelectorAll('video');
+
+        for (var index = 0; index < videos.length; index += 1) {
+          var source = videos[index].querySelector('source');
+          var sourceUrl = source ? decodeURIComponent(source.getAttribute('src') || '') : '';
+
+          if (sourceUrl.indexOf('fre1rere.mp4') !== -1) {
+            return videos[index];
+          }
+        }
+
+        return null;
+      }
+
+      function clearOneOfFiveTimers() {
+        oneOfFiveMedia.timers.forEach(function (timer) {
+          window.clearTimeout(timer);
+        });
+        oneOfFiveMedia.timers = [];
+
+        if (oneOfFiveMedia.fadeFrame !== null) {
+          window.cancelAnimationFrame(oneOfFiveMedia.fadeFrame);
+          oneOfFiveMedia.fadeFrame = null;
+        }
+
+        if (oneOfFiveMedia.unlockHandler) {
+          document.removeEventListener('pointerdown', oneOfFiveMedia.unlockHandler, true);
+          oneOfFiveMedia.unlockHandler = null;
+        }
+      }
+
+      function scheduleOneOfFive(callback, delay) {
+        var timer = window.setTimeout(callback, delay);
+        oneOfFiveMedia.timers.push(timer);
+        return timer;
+      }
+
+      function fadeOneOfFiveVolume(video, destination, duration, callback) {
+        if (!video) {
+          if (callback) {
+            callback();
+          }
+          return;
+        }
+
+        if (oneOfFiveMedia.fadeFrame !== null) {
+          window.cancelAnimationFrame(oneOfFiveMedia.fadeFrame);
+        }
+
+        var origin = video.volume;
+        var started = window.performance.now();
+
+        function step(now) {
+          var progress = duration > 0 ? Math.min(1, (now - started) / duration) : 1;
+          video.volume = origin + ((destination - origin) * progress);
+
+          if (progress < 1) {
+            oneOfFiveMedia.fadeFrame = window.requestAnimationFrame(step);
+          } else {
+            oneOfFiveMedia.fadeFrame = null;
+            if (callback) {
+              callback();
+            }
+          }
+        }
+
+        oneOfFiveMedia.fadeFrame = window.requestAnimationFrame(step);
+      }
+
+      function stopOneOfFiveVideo(duration, callback) {
+        var video = oneOfFiveMedia.video || findOneOfFiveVideo();
+        oneOfFiveMedia.run += 1;
+        clearOneOfFiveTimers();
+
+        if (!video || video.paused || video.volume === 0 || duration === 0) {
+          if (video) {
+            video.pause();
+            video.volume = 0;
+            video.currentTime = 0;
+          }
+          if (callback) {
+            callback();
+          }
+          return;
+        }
+
+        fadeOneOfFiveVolume(video, 0, duration, function () {
+          video.pause();
+          video.currentTime = 0;
+          if (callback) {
+            callback();
+          }
+        });
+      }
+
+      function scheduleOneOfFiveEnding(video, run) {
+        function scheduleFade() {
+          if (run !== oneOfFiveMedia.run || !Number.isFinite(video.duration)) {
+            return;
+          }
+
+          scheduleOneOfFive(function () {
+            if (run === oneOfFiveMedia.run) {
+              fadeOneOfFiveVolume(video, 0, 2000);
+            }
+          }, Math.max(0, (video.duration - 2) * 1000));
+        }
+
+        if (video.readyState >= 1) {
+          scheduleFade();
+        } else {
+          video.addEventListener('loadedmetadata', scheduleFade, { once: true });
+        }
+      }
+
+      function startOneOfFiveVideo(run) {
+        var video = oneOfFiveMedia.video;
+
+        if (!video || run !== oneOfFiveMedia.run) {
+          return;
+        }
+
+        video.currentTime = 0;
+        video.volume = 0;
+        video.muted = false;
+        oneOfFiveMedia.fadeEndsAt = window.performance.now() + 4000;
+
+        var playAttempt = video.play();
+        fadeOneOfFiveVolume(video, 1, 4000);
+        scheduleOneOfFiveEnding(video, run);
+
+        if (playAttempt && typeof playAttempt.catch === 'function') {
+          playAttempt.catch(function () {
+            if (run !== oneOfFiveMedia.run) {
+              return;
+            }
+
+            // Preserve timing on a direct #1/5 visit, even if the browser
+            // requires a gesture before allowing audible playback.
+            video.muted = true;
+            video.play().catch(function () {});
+            oneOfFiveMedia.unlockHandler = function () {
+              if (run === oneOfFiveMedia.run) {
+                var remainingFade = Math.max(
+                  500,
+                  oneOfFiveMedia.fadeEndsAt - window.performance.now()
+                );
+                video.volume = 0;
+                video.muted = false;
+                fadeOneOfFiveVolume(video, 1, remainingFade);
+              }
+              oneOfFiveMedia.unlockHandler = null;
+            };
+            document.addEventListener('pointerdown', oneOfFiveMedia.unlockHandler, {
+              once: true,
+              capture: true
+            });
+          });
+        }
+      }
+
+      function prepareOneOfFiveVideo() {
+        stopOneOfFiveVideo(0);
+
+        var video = findOneOfFiveVideo();
+        var run = oneOfFiveMedia.run;
+
+        if (!video) {
+          return;
+        }
+
+        oneOfFiveMedia.video = video;
+        video.autoplay = false;
+        video.loop = false;
+        video.controls = false;
+        video.playsInline = true;
+        video.muted = false;
+        video.volume = 0;
+        video.style.objectFit = 'cover';
+        video.removeAttribute('autoplay');
+        video.removeAttribute('loop');
+        video.pause();
+        video.currentTime = 0;
+
+        // The Silko clip ends and the quote appears at approximately 34s.
+        // The new file's matching visual begins 11.42s later, naturally
+        // inside the existing 42.13–47.13s visual crossfade.
+        scheduleOneOfFive(function () {
+          startOneOfFiveVideo(run);
+        }, 34000);
+
+        // Guard against Hype's original 46.2s video-track cue seeking the
+        // replacement back to its beginning after the audio lead-in.
+        scheduleOneOfFive(function () {
+          if (run === oneOfFiveMedia.run && !video.paused && video.currentTime < 11) {
+            video.currentTime = 12.35;
+          }
+        }, 46500);
+      }
+
+      function setBornDigitalScroll(sceneName) {
+        document.documentElement.classList.toggle(
+          'born-digital-scroll',
+          String(sceneName).toLowerCase() === 'born-digital'
+        );
+      }
+
+      function showPostBornScene(sceneName) {
+        if (!postBornHypeDocument) {
+          return;
+        }
+
+        function showScene() {
+          postBornHypeDocument.showSceneNamed(sceneName);
+          if (window.location.hash !== '#' + sceneName) {
+            window.location.hash = '#' + sceneName;
+          }
+          window.setTimeout(function () {
+            window.scrollTo(0, 0);
+          }, 0);
+        }
+
+        if (postBornHypeDocument.currentSceneName() === '1/5' && sceneName !== '1/5') {
+          stopOneOfFiveVideo(300, showScene);
+        } else {
+          showScene();
+        }
+      }
+
+      function makePostBornButton(className, label, text) {
+        var button = document.createElement('button');
+        button.type = 'button';
+        button.className = className;
+        button.setAttribute('aria-label', label);
+        button.title = label;
+        button.textContent = text || '';
+        return button;
+      }
+
+      function ensurePostBornNav() {
+        var nav = document.getElementById('post-born-nav');
+
+        if (nav || !document.body) {
+          return nav;
+        }
+
+        nav = document.createElement('nav');
+        nav.id = 'post-born-nav';
+        nav.hidden = true;
+        nav.setAttribute('aria-label', 'Continue through the closing sequence');
+
+        postBornScenes.forEach(function (sceneName, index) {
+          var tile = makePostBornButton(
+            'post-born-tile',
+            index < 5 ? 'Page ' + (index + 1) + ' of 5' : 'Unreturn',
+            postBornTiles[index]
+          );
+          tile.dataset.scene = sceneName;
+          tile.addEventListener('click', function () {
+            if (!tile.disabled) {
+              showPostBornScene(sceneName);
+            }
+          });
+          nav.appendChild(tile);
+        });
+
+        document.body.appendChild(nav);
+        return nav;
+      }
+
+      function updatePostBornNav(hypeDocument) {
+        postBornHypeDocument = hypeDocument;
+
+        var nav = ensurePostBornNav();
+        var sceneName = hypeDocument.currentSceneName();
+        var index = postBornScenes.indexOf(sceneName);
+
+        if (!nav) {
+          return;
+        }
+
+        nav.hidden = index === -1;
+        nav.querySelectorAll('.post-born-tile').forEach(function (tile, tileIndex) {
+          var isCurrent = tile.dataset.scene === sceneName;
+          var destination = tileIndex < 5
+            ? 'page ' + (tileIndex + 1) + ' of 5'
+            : 'unreturn';
+
+          tile.disabled = isCurrent;
+
+          if (isCurrent) {
+            tile.setAttribute('aria-current', 'step');
+            tile.setAttribute('aria-label', 'Current: ' + destination);
+            tile.title = 'Current: ' + destination;
+          } else {
+            tile.removeAttribute('aria-current');
+            tile.setAttribute('aria-label', 'Go to ' + destination);
+            tile.title = 'Go to ' + destination;
+          }
+        });
+      }
+
+      function updateBornDigitalScrollFromHash() {
+        setBornDigitalScroll(decodeURIComponent(window.location.hash.slice(1)));
+      }
+
+      updateBornDigitalScrollFromHash();
+      window.addEventListener('hashchange', updateBornDigitalScrollFromHash);
+
+      window.HYPE_eventListeners = window.HYPE_eventListeners || [];
+      window.HYPE_eventListeners.push({
+        type: 'HypeSceneLoad',
+        callback: function (hypeDocument) {
+          setBornDigitalScroll(hypeDocument.currentSceneName());
+          updatePostBornNav(hypeDocument);
+
+          if (hypeDocument.currentSceneName() === '1/5') {
+            prepareOneOfFiveVideo();
+          } else if (oneOfFiveMedia.video && !oneOfFiveMedia.video.paused) {
+            stopOneOfFiveVideo(0);
+          }
+        }
+      });
+    }());
+  </script>
     
   <body class="layout-reverse">
 
@@ -1298,7 +1725,7 @@ ol.bibliography {
       </header>
       <main id="main-content">
         <div id="parhamprocess_hype_container" style="margin:auto;position:relative;width:1200px;height:1600px;overflow:hidden;">
-          <script type="text/javascript" charset="utf-8" src="parham-process.hyperesources/parhamprocess_hype_generated_script.js?1205"></script>
+          <script type="text/javascript" charset="utf-8" src="parham-process.hyperesources/parhamprocess_hype_generated_script.js?1212"></script>
         </div>
       </main>
     </div>
