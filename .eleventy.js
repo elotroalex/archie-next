@@ -57,11 +57,12 @@ module.exports = function (eleventyConfig) {
     }
   }
 
-  // HTML interactives (pure-HTML pieces like the Parham essay) — pass
-  // through untouched, do not template-process. Derived from each issue's
-  // `interactives` array in issues.js (the directory is the parent of the
-  // interactive's `url`), so a future issue with its own interactive needs
-  // no changes here.
+  // The flat HTML/JS half of an interactive — passed through untouched, never
+  // template-processed. The other half is its companion markdown page, which
+  // is an ordinary article and needs nothing here; see CLAUDE.md. Derived from
+  // each issue's `interactives` array in issues.js (the directory is the parent
+  // of the interactive's `url`), so a new interactive needs no change to this
+  // file — only an entry in issues.js.
   for (const key of Object.keys(issues)) {
     for (const interactive of issues[key].interactives || []) {
       const dir = path.dirname(interactive.url).replace(/^\/+/, "");

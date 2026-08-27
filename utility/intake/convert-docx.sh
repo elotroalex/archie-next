@@ -110,7 +110,7 @@ rm -f "$TMP"
 cat > "$OUT_MD" <<FRONTMATTER
 ---
 layout: article
-section: "# TODO: articles | projects | reviews | introduction"
+section: "# TODO: articles | projects | reviews | introduction | interactives"
 title:
   long: "# TODO: Full article title"
   short: "# TODO: Short title for running header"

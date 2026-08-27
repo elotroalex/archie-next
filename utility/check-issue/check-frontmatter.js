@@ -27,9 +27,11 @@ function parseArgs(argv) {
 }
 
 // The distinctive placeholder text from convert-docx.sh's front-matter stub,
-// independent of whether the "# TODO: " prefix survived.
+// independent of whether the "# TODO: " prefix survived. These strings must
+// match that stub verbatim -- change one and change the other, or an unfilled
+// field stops being detected.
 const PLACEHOLDERS = {
-  section: "articles | projects | reviews | introduction",
+  section: "articles | projects | reviews | introduction | interactives",
   "title.long": "Full article title",
   "title.short": "Short title for running header",
   doi: "10.7916/...",

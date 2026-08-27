@@ -88,7 +88,7 @@ bash utility/intake/new-issue.sh issue09
 bash utility/intake/convert-docx.sh src/issue09/incoming/author-title.docx
 
 # 4. Edit the generated .md — fill in every # TODO field
-#    section must be exactly: introduction | articles | projects | reviews
+#    section must be exactly: introduction | articles | projects | reviews | interactives
 ```
 
 `convert-docx.sh` handles automatically:
