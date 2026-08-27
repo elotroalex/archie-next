@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 const markdownIt = require("markdown-it");
 const markdownItFootnote = require("markdown-it-footnote");
 const markdownItAttrs = require("markdown-it-attrs");
@@ -187,6 +188,55 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("mdInline", function (str) {
     if (!str) return "";
     return md.renderInline(String(str));
+  });
+
+  // Append a content hash to a static asset's URL, so the browser can cache it
+  // forever and still pick up an edit the instant it ships.
+  //
+  // The host sends no Cache-Control on HTML at all, only Last-Modified, which
+  // makes browsers fall back to *heuristic* freshness (roughly 10% of the
+  // file's age at the time it was fetched). An article untouched for a year is
+  // therefore treated as fresh for over a month after a reader's last visit --
+  // that is the "I edited the page but readers still see the old one until they
+  // hard-refresh" symptom. The .htaccess rule (see README, Caching) fixes the
+  // documents by making them revalidate every time; this filter fixes the
+  // assets, which the host caches for a week and which no revalidation would
+  // otherwise touch.
+  //
+  // Runs after `url` so it is agnostic to ELEVENTY_PATH_PREFIX: the source file
+  // is resolved from the /public/... tail of whatever path it is handed, not
+  // from the front of the string. Unknown or unreadable paths pass through
+  // unchanged rather than failing the build.
+  // Usage: {{ '/public/css/main.css' | url | bust }}
+  //
+  // Memoized on (url, mtime) rather than on url alone: the filter runs once
+  // per page, so ~340 times per build, but the cache must still miss when the
+  // file is edited under `npm run serve`, where the config closure survives
+  // every rebuild.
+  const bustCache = new Map();
+  eleventyConfig.addFilter("bust", function (assetUrl) {
+    const str = String(assetUrl);
+    const tail = str.split("?")[0].match(/\/public\/.*$/);
+    if (!tail) return str;
+
+    const src = path.join(__dirname, "src", tail[0]);
+    try {
+      const key = `${str}:${fs.statSync(src).mtimeMs}`;
+      if (bustCache.has(key)) return bustCache.get(key);
+
+      const hash = crypto
+        .createHash("sha1")
+        .update(fs.readFileSync(src))
+        .digest("hex")
+        .slice(0, 8);
+      const out = `${str}${str.includes("?") ? "&" : "?"}v=${hash}`;
+      bustCache.set(key, out);
+      return out;
+    } catch (e) {
+      // Missing or unreadable: leave the URL alone rather than failing the
+      // build. check-issue-links will flag it if it is genuinely gone.
+      return str;
+    }
   });
 
   // Derive the PDF asset path from a page URL

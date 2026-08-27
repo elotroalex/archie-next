@@ -634,6 +634,49 @@ Indexing is blocked two ways, both keyed off `ELEVENTY_ALLOW_CRAWLERS`: `robots.
 
 ---
 
+## Caching
+
+An edit to a page that already existed used to stay invisible to returning readers until they hard-refreshed. Two independent causes, one on each side of the wire.
+
+**Documents.** The host sends no `Cache-Control` and no `ETag` on HTML — only `Last-Modified`. With no explicit freshness directive, browsers fall back to *heuristic* caching: they guess a freshness lifetime of roughly 10% of the document's age at the moment it was fetched. `rsync` only transfers changed files, so an article untouched for two years is served with a two-year-old `Last-Modified`, and a reader's browser therefore treats its copy as fresh for about two and a half months — during which it never contacts the server at all. Ship an edit to that article and that reader keeps seeing the old text. Brand-new pages always looked correct, because there was no cached copy to go stale; that asymmetry is the tell.
+
+**Assets.** The host sets `Cache-Control: public, max-age=604800` on css/js/images, and `main.css` was linked at a fixed URL, so a stylesheet change was invisible for up to a week no matter what the HTML said.
+
+Both halves are fixed:
+
+1. `utility/htaccess-cache.conf` makes documents (`.html`, `.json`, `.xml`, `.txt`) revalidate on every visit. `no-cache` does **not** mean "don't store" — the browser keeps its copy and simply asks first, and the answer is a bodyless `304` unless the page really changed. The server already answers conditional requests correctly, so this costs one small round trip per document and no re-download.
+2. The `bust` filter in `.eleventy.js` appends `?v=<first 8 hex of the file's sha1>` to `main.css`, `syntax.css`, `main.js` and `fuse.min.js`. Change the file, the hash changes, the URL changes, and every browser fetches it — no waiting out a week-long `max-age`. The same `.htaccess` block gives any request carrying a `?v=` hash a year-long `immutable` lifetime, which is now safe precisely because the URL is content-addressed.
+
+The long-cache rule is keyed off the **query string**, not off a path or a file extension, so it can never freeze a file that isn't fingerprinted — the interactives' own JS under `/issueXX/`, `/public/js/special/multiverse.js`, article images, the PDFs in `/assets/`. Those keep the host's default week. If one of them ever needs to change under the same filename, either bump it by hand (`?v=2` at the reference) or route it through the `bust` filter.
+
+Reading the query string turned out to be the fiddly part, and the block carries the finding in a comment so it isn't rediscovered the hard way. `SetEnvIf Query_String` cannot work anywhere: mod_setenvif's plain form knows only a short list of special names and treats everything else as a request header, so it quietly matches a `Query-String` header no client sends — no match, no error. `SetEnvIfExpr "%{QUERY_STRING} =~ ..."` is the correct syntax and simply sets nothing on this host; a probe header confirmed a sibling `SetEnvIf Request_URI` in the same file firing while the `Expr` form did not. The block therefore sets the variable with mod_rewrite's `[E=...]`, which works and which the file already depends on for the www → non-www redirect. The same probe established the other half: mod_headers **does** override mod_expires for `Cache-Control` here, but leaves mod_expires' `Expires` header behind, so the block unsets it — a stale absolute `Expires` next to a one-year `max-age` is a contradiction, and old caches don't all resolve it the same way.
+
+The filter resolves its source file from the `/public/...` tail of whatever path it's handed rather than from the front of the string, so it is agnostic to `ELEVENTY_PATH_PREFIX` and composes with `url` on the staging deploy (`{{ '/public/css/main.css' | url | bust }}`). A path it can't read passes through unchanged instead of failing the build.
+
+### Applying the .htaccess block
+
+The server's `.htaccess` is hand-managed and on the rsync exclude list — it carries the PHP handler, the legacy Jekyll redirects and the preview tier's `X-Robots-Tag`, none of which exist in this repo. `prod.sh` must never deploy it. Append the block once, with a backup:
+
+```bash
+scp utility/htaccess-cache.conf <user>@<host>:~/htaccess-cache.conf
+ssh <user>@<host> 'cd <DEPLOY_PATH> && cp .htaccess .htaccess.bak-$(date +%F) && cat ~/htaccess-cache.conf >> .htaccess'
+```
+
+Then verify from anywhere:
+
+```bash
+curl -sI https://archipelagosjournal.org/issue09.html | grep -i cache-control
+curl -sI "https://archipelagosjournal.org/public/css/main.css?v=$(curl -s https://archipelagosjournal.org/ | grep -o 'main.css?v=[0-9a-f]*' | cut -d= -f2)" | grep -i cache-control
+```
+
+Expected: `no-cache, must-revalidate` on the document, `public, max-age=31536000, immutable` on the fingerprinted stylesheet. Also confirm the negative cases — `main.css` with no query, with `?v=zzz`, and with `?foo=1` must all still report the host's `max-age=604800`, or the rule is matching too broadly and is freezing un-fingerprinted files for a year.
+
+Both `<IfModule>` guards mean a host without `mod_headers` or `mod_rewrite` degrades to today's behavior rather than a 500. To roll back, restore the dated `.htaccess.bak-*` written by the recipe above.
+
+**Applied to production on 2026-08-27**, verified with the checks above plus the existing redirects, the www → non-www canonical, and a conditional GET still answering `304`.
+
+---
+
 ## Traffic reports
 
 ```bash

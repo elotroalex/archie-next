@@ -37,7 +37,7 @@
 
   <label for="sidebar-checkbox" class="sidebar-toggle" aria-label="{{ i18n[lang].global.toggle_sidebar_label }}"></label>
 
-  <script type="text/javascript" src="{{ '/public/js/main.js' | url }}"></script>
+  <script type="text/javascript" src="{{ '/public/js/main.js' | url | bust }}"></script>
 
   {% if script %}
   <script src="{{ ('/public/js/special/' + script) | url }}"></script>
