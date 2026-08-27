@@ -14,7 +14,7 @@ const i18n = require("./src/_data/i18n.js");
 // clean, readable slugs (accents stripped, punctuation dropped) instead of
 // each library's own default percent-encoded fallback.
 function slugify(str) {
-  return String(str)
+  const slug = String(str)
     .normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
@@ -22,6 +22,14 @@ function slugify(str) {
     .replace(/[^a-z0-9\s-]/g, "")
     .replace(/\s+/g, "-")
     .replace(/-+/g, "-");
+
+  // An id must start with a letter. HTML5 itself permits a leading digit, but
+  // `#15` is not a usable CSS selector or querySelector argument without
+  // escaping, and html-validate's valid-id rule rejects it. Headings like
+  // "1/5" or "40NightsOfTheVoice" slugify to digit-initial ids, so prefix
+  // those. Only affects slugs that would otherwise be unusable -- everything
+  // starting with a letter is untouched.
+  return /^[a-z]/.test(slug) ? slug : `s-${slug}`;
 }
 
 module.exports = function (eleventyConfig) {

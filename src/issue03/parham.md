@@ -1,6 +1,7 @@
 ---
 layout: article
 section: interactives
+interactive: "/issue03/parham/parham.html"
 title:
   long: ".break .dance"
   short: ".break .dance"
@@ -21,8 +22,6 @@ abstract: >
 ---
 
 > **Text-access companion.** This linear, searchable page presents the words of *.break .dance* by source scene. It does not reproduce the work\'s timing, audiovisual composition, hover actions, branching experience, or embodied interface.
-
-> [Enter the interactive work →](/issue03/parham/parham.html)
 
 ## Navigate this companion
 

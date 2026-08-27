@@ -29,6 +29,14 @@ layout: default
     {{ spacer | safe }}
   {% endif %}
 
+  {# Companion pages for interactives declare `interactive:` in front matter.
+     The link sits here, directly under the abstract, so a reader decides
+     whether to enter the authored work before scrolling into the linear text.
+     See CLAUDE.md on the two-part interactives convention. #}
+  {% if interactive %}
+  <p class="enter-interactive"><a class="button" href="{{ interactive | url }}">{{ i18n[lang].global.enter_interactive }}</a></p>
+  {% endif %}
+
   {{ content | safe }}
 </div>
 

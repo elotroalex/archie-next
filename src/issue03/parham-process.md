@@ -1,6 +1,7 @@
 ---
 layout: article
 section: interactives
+interactive: "/issue03/parham-process/parham-process.html"
 title:
   long: "Breaking, Dancing, Making in the Machine: Notes on '.break .dance'"
   short: "Breaking, Dancing, Making in the Machine"
@@ -21,8 +22,6 @@ abstract: >
 ---
 
 > **Text-access companion.** This linear, searchable page presents the essay text by source scene. It does not reproduce the original work\'s timing, horizontal movement, media, mouseover actions, map, or post–Born Digital navigation.
-
-> [Enter the interactive essay →](/issue03/parham-process/parham-process.html)
 
 ## Navigate this companion
 

@@ -45,6 +45,9 @@ module.exports = function makeIssueArticlesClass(lang) {
           image: (data) => data.art.data.image,
           thumb: (data) => data.art.data.thumb,
           link: (data) => data.art.data.link,
+          // Companion pages for interactives -- without this the "enter the
+          // interactive work" button renders on the English page only.
+          interactive: (data) => data.art.data.interactive,
         },
       };
     }
