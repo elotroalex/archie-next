@@ -21,7 +21,8 @@ abstract: >
   *Breaking, Dancing, Making in the Machine: Notes on ".break .dance"* adds conceptual context to the work undertaken in the *.break .dance* digital project and its explorations of time, code, Black diasporic thought, and internet experience.
 ---
 
-> **Text-access companion.** This linear, searchable page presents the essay text by source scene. It does not reproduce the original work\'s timing, horizontal movement, media, mouseover actions, map, or post–Born Digital navigation.
+**Text-access companion.** This linear, searchable page presents the essay text by source scene. It does not reproduce the original work\'s timing, horizontal movement, media, mouseover actions, map, or post–Born Digital navigation.
+{.alert}
 
 ## Navigate this companion
 

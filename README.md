@@ -447,34 +447,102 @@ bash utility/test-check-contrast.sh
 > repository. If that link 404s for you, you don't have access yet; ask. Everything
 > needed to build, author and check the site is here in the public repo.
 
-The site uses a two-branch deploy strategy:
+The site deploys to three tiers:
 
-| Branch | Deploys to | Purpose |
-|--------|-----------|---------|
-| `staging` | GitHub Pages, under `/archie-next/` | Testing — link checking, preview before publication |
-| `main` | Reclaim Hosting via rsync — target set by repository variables | Production |
+| Tier | Deploys to | How | Indexed |
+|------|-----------|-----|---------|
+| dev | GitHub Pages, under `/archie-next/` | automatic on every push to `staging` | no |
+| preview | `preview.archipelagosjournal.org` | `bash utility/prod.sh --preview --go`, any branch | no |
+| production | `archipelagosjournal.org` | `bash utility/prod.sh --go`, from `main` | yes |
+
+GitHub Pages is the free, zero-effort tier and catches most things; the preview tier
+exists for what a subpath deploy on a different host cannot show you — real root-relative
+paths with no `/archie-next/` prefix rewriting, the real Apache config, and real
+`.htaccess` redirects.
 
 **Day-to-day workflow:** all work (new issues, edits, fixes) happens on `staging` or is merged into it. GitHub Pages updates automatically on every push to `staging`.
+
+> **Production deploys are not run by CI, and cannot be.** Reclaim throttles
+> Microsoft/Azure IP ranges because of abuse, and GitHub Actions runners sit inside
+> them — confirmed across three runs on 2026-08-20, each hanging ~135s on a TCP
+> timeout to port 22, while the same key connects fine from a laptop. This is standing
+> host policy, not a fault awaiting a fix; don't re-open it with support. The
+> `deploy-production` job in `build.yml` is kept because everything except the
+> transport (build, checks, preflight, the `SITE_URL` interlock, the approval gate) is
+> verified and reusable if the transport is ever solved — see *Server-pull* below.
 
 **Publishing to production:**
 
 ```bash
-git checkout main
-git merge staging
-git push
+git checkout main && git merge staging
+git push && git tag prod-$(date +%Y-%m-%d) && git push --tags
 ```
 
-GitHub Actions builds the site, runs the checks against the exact bytes it is about to ship, then rsyncs `_site/` to the server over SSH. After a successful push to `main`, immediately return to `staging` for the next issue:
+The push and the tag are the rollback record, not the deploy. The deploy itself is
+[`utility/prod.sh`](utility/prod.sh), which **dry-runs by default and writes nothing
+without `--go`**:
+
+```bash
+bash utility/prod.sh                  # production: build, check, print the plan
+bash utility/prod.sh --go             # production: same, then actually rsync
+bash utility/prod.sh --preview        # preview tier: dry run
+bash utility/prod.sh --preview --go   # preview tier: deploy
+```
+
+**Preview mode** (`--preview`) targets `PREVIEW_PATH` instead of `DEPLOY_PATH`, builds
+with `PREVIEW_URL` as `SITE_URL`, and leaves `ELEVENTY_ALLOW_CRAWLERS` unset — the three
+ways the tiers differ. Its preflight assertions **invert**: it refuses to ship a build
+whose `robots.txt` allows crawlers or that lacks the `noindex` meta tag, exactly as the
+production path refuses one that has them, so a build made for one tier cannot reach the
+other. Backups go to a separate `.deploy-backups/preview/` subtree, and the script
+refuses to run if `PREVIEW_PATH` and `DEPLOY_PATH` are ever set to the same path.
+
+The git guards relax under `--preview`: any branch, and a dirty tree only warns. Looking
+at unfinished work is what the tier is *for*. Production stays strict, because the
+`prod-*` tag has to reproduce what is live.
+
+It reads host/account/paths/URLs from `utility/deploy.env` (gitignored — see
+*Configuration* below), refuses to run from a branch other than `main` or with a dirty
+tree, cleans `_site/` before building, builds with `ELEVENTY_ALLOW_CRAWLERS=true` and
+the canonical `SITE_URL`, runs the blocking checks, and aborts if the rsync plan would
+delete more than `MAX_DELETIONS` (default 50) remote files or would touch
+server-managed state. The full plan is written to `deploy-plan.txt` at the repo root.
+Pass `--allow-mass-delete` when a large deletion count is genuinely intended — there
+has been exactly one such case, the 2026-08-20 cutover.
+
+Three things the script encodes, because each has cost real time:
+
+- **GNU rsync, not the system one.** macOS ships Apple's `openrsync`, which accepts
+  `--delete-after` alongside `--backup-dir` and then *silently ignores the deletions*
+  — the dry run still lists every file it will not remove. That shipped six days of
+  additive-only deploys after the cutover. `prod.sh` requires `/opt/homebrew/bin/rsync`
+  (`brew install rsync`) and refuses to run against `openrsync`.
+- **Eleventy does not clean `_site/`.** A file deleted from `src/` survives in the
+  build and gets redeployed as current, so the script always builds from scratch.
+- **Read the deletion count, not the transfer count.** `--stats` prints
+  `Number of deleted files: N`; that is the number the risky flags actually control.
+  The script prints it before and after, and warns if the two disagree.
+
+One shell footgun worth knowing, since it bit the preflight itself: under
+`set -o pipefail`, `grep -rl … | head -1` reports failure whenever the recursive grep
+outruns the pipe buffer and takes SIGPIPE, *even on a match*. The noindex detection was
+written that way and failed open nondeterministically — in the direction that would let
+a noindexed build reach production. It is `grep -rq` now, with no pipeline at all.
+
+After a deploy, return to `staging` for the next issue:
 
 ```bash
 git checkout staging
 ```
 
-Tag each production deploy so there is always a named rollback target:
+### Server-pull (not yet built)
 
-```bash
-git tag prod-$(date +%Y-%m-%d) && git push --tags
-```
+The path out of hand-run deploys is to invert the direction: CI builds and publishes
+output, the server pulls it. Triggered by **webhook, not cron** — GitHub webhooks come
+from four IPv4 ranges over HTTPS, a path that demonstrably works from this host, versus
+~5,645 rotating ranges over SSH. Any receiver must verify GitHub's HMAC signature; an
+endpoint that runs `git pull` on unauthenticated POST is not acceptable. Design notes
+are in `archie-ops`.
 
 ### Configuration
 
@@ -516,9 +584,18 @@ There is also a `production` environment (Settings → Environments) with a requ
 
 ### Dry runs
 
-The production job can be run by hand at any time: Actions → Build and Deploy → Run workflow → branch `main`. **Dry run** is checked by default; it runs every check and the full rsync plan, prints the list of files that would be deleted to the job summary, and writes nothing to the server.
+`utility/prod.sh` dry-runs by default: run it with no arguments and it builds, runs
+every blocking check, produces the full rsync plan, writes that plan to
+`deploy-plan.txt`, prints the files that would be deleted, and writes nothing to the
+server. Only `--go` deploys.
 
-The job refuses to proceed if rsync would delete more than `MAX_DELETIONS` remote files, unless **allow_mass_delete** is also checked. That check exists for exactly one legitimate case — the live cutover, which removes the old Jekyll site.
+It refuses to proceed if rsync would delete more than `MAX_DELETIONS` (default 50)
+remote files, unless `--allow-mass-delete` is passed. That check exists for exactly one
+legitimate case — the live cutover, which removed the old Jekyll site.
+
+The workflow's own dry run (Actions → Build and Deploy → Run workflow → branch `main`,
+**Dry run** checked) still builds and runs every check, but its rsync step cannot reach
+the server; see the note under *Deployment* above.
 
 ### Preview → live cutover
 
@@ -539,8 +616,8 @@ Never add `--delete-excluded` to the rsync flags — it inverts that exclude lis
 
 ### Rollback
 
-1. **Per-deploy backup**, automatic. Every run leaves `~/.deploy-backups/<UTC stamp>-<run id>/` containing the previous version of every file it changed or removed; the path is printed in the job summary. Restore with `rsync -a ~/.deploy-backups/<stamp>/ ~/public_html/`. This restores changed and deleted files but does not remove files the deploy added — for a clean revert use 2.
-2. **Re-deploy a known-good commit** — the canonical rollback, since the build is fully reproducible from source. Revert on `main` and push, or run the workflow against an earlier tag.
+1. **Per-deploy backup**, automatic. Every run leaves `~/.deploy-backups/<UTC stamp>/` containing the previous version of every file it changed or removed; `prod.sh` prints the exact path and the restore command when it finishes. Restore with `rsync -a ~/.deploy-backups/<stamp>/ ~/public_html/`. This restores changed and deleted files but does not remove files the deploy added — for a clean revert use 2.
+2. **Re-deploy a known-good commit** — the canonical rollback, since the build is fully reproducible from source. Check out an earlier `prod-*` tag and run `bash utility/prod.sh --go --any-branch`, or revert on `main` and deploy that.
 3. **The pre-cutover tarball**, for the one-time worst case.
 
 Prune old backups periodically — the site is ~500 MB, so they add up against the cPanel quota:

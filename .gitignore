@@ -7,6 +7,8 @@ broken-links.txt
 missing-local.txt
 *.docx
 /log.md
+/deploy-plan.txt
+/deploy-plan.txt.live
 
 # Local deploy/server settings (see utility/deploy.env.example)
 utility/deploy.env

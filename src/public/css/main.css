@@ -453,6 +453,36 @@ a.button:hover {
   color: white;
 }
 
+/* Interactives companion pages: the "enter the interactive" link sits between
+   the abstract and the body text (article.njk), so it needs vertical breathing
+   room of its own. inline-block is scoped here rather than added to a.button
+   globally, since a.button is also used inline inside sentences elsewhere. */
+
+p.enter-interactive {
+  margin: 2rem 0 2.5rem;
+}
+
+p.enter-interactive a.button {
+  display: inline-block;
+}
+
+/* Alerts */
+
+p.alert,
+div.alert {
+  background-color: #fbf3f3;
+  border-left: 4px solid #D0181F;
+  border-radius: 5px;
+  padding: 1rem 1.25rem;
+  margin: 0 0 1.5rem;
+  color: #454545;
+}
+
+p.alert:last-child,
+div.alert > p:last-child {
+  margin-bottom: 0;
+}
+
 /* Images */
 
 p:has(img) {

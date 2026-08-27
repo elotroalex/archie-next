@@ -18,10 +18,11 @@ order: 7
 language: en
 pdf: false
 abstract: >
-  *.break .dance* is an experimental digital project that uses Beyoncé's visual album *Lemonade* as a keystone text to ground musings about time, code, and internet experience. It is a time-based work: a series of interlocking machines moving toward a state of flux, surfacing its own work, and your work, as you read. It thinks with Fred Moten's break, Zora Neale Hurston on asymmetric movement as "the embodiment of interruption in the service of larger, metaphysical continuity," M. NourbeSe Philip's Zong!, and Keguro Macharia's "asymptotic narration" — reading the gap in the archive as a site of possibility rather than only of loss.
+  *.break .dance* is an experimental digital project that uses Beyoncé's visual album *Lemonade* as a keystone text to ground musings about time, code, and internet experience. It is a time-based work: a series of interlocking machines moving toward a state of flux, surfacing its own work, and your work, as you read. It thinks with Fred Moten's "break," Zora Neale Hurston on asymmetric movement as "the embodiment of interruption in the service of larger, metaphysical continuity," M. NourbeSe Philip's *Zong!*, and Keguro Macharia's "asymptotic narration" — reading the gap in the archive as a site of possibility rather than only of loss.
 ---
 
-> **Text-access companion.** This linear, searchable page presents the words of *.break .dance* by source scene. It does not reproduce the work\'s timing, audiovisual composition, hover actions, branching experience, or embodied interface.
+**Text-access companion**: The linear, searchable page below presents the words of *.break .dance* by source scene. It does not reproduce the work\'s timing, audiovisual composition, hover actions, branching experience, or embodied interface. To access the essay as it was meant to be experienced, please click on the button above.
+{.alert}
 
 ## Navigate this companion
 

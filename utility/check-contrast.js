@@ -19,6 +19,7 @@ const PAIRS = [
   { selector: "caption", fg: "#6b6e70", bg: "#ffffff", minRatio: 4.5, file: "src/public/css/main.css:496" },
   { selector: "ul#main-nav-small a", fg: "#6b6e70", bg: "#ffffff", minRatio: 4.5, file: "src/public/css/main.css:727" },
   { selector: ".page-title", fg: "#6b6e70", bg: "#ffffff", minRatio: 3.0, file: "src/public/css/main.css:785" },
+  { selector: "p.alert, div.alert", fg: "#454545", bg: "#fbf3f3", minRatio: 4.5, file: "src/public/css/main.css:471" },
 ];
 
 function hexToRgb(hex) {

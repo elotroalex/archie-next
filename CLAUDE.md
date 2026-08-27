@@ -41,6 +41,8 @@ utility/
   latex/          # PDF pipeline: template.tex, journal.lua, convert.sh, makeIssues.sh
   intake/         # Issue intake scripts: new-issue.sh, convert-docx.sh, tables-to-html.lua
   report-links.sh # Splits linkinator output into broken-links.txt / missing-local.txt
+  prod.sh         # Manual production deploy (dry-run by default, --go to ship)
+  deploy.env      # Gitignored host/account/paths, read by prod.sh + traffic-report.sh
 ```
 
 ## Key conventions
@@ -202,7 +204,11 @@ npm run build   # production build to _site/
 
 ## Deployment
 
-Two targets, one workflow (`build.yml`). Push to `staging` → GitHub Pages preview at `elotroalex.github.io/archie-next/`, path prefix `/archie-next/`. Push to `main` → rsync over SSH to Reclaim Hosting (cPanel shared host). PDF generation is a separate manual workflow (`pdf.yml`).
+Two targets. Push to `staging` → GitHub Pages preview at `elotroalex.github.io/archie-next/`, path prefix `/archie-next/` (`build.yml`). Production is `main` → rsync over SSH to Reclaim Hosting (cPanel shared host), **run by hand via `bash utility/prod.sh`** — the host throttles Azure ranges, so GitHub Actions runners cannot reach it and `build.yml`'s `deploy-production` job always times out on connect. PDF generation is a separate manual workflow (`pdf.yml`).
+
+`utility/prod.sh` dry-runs by default and needs `--go` to write anything. `--preview` retargets it at the noindexed `preview.archipelagosjournal.org` tier: `PREVIEW_PATH` instead of `DEPLOY_PATH`, `PREVIEW_URL` as `SITE_URL`, `ELEVENTY_ALLOW_CRAWLERS` left unset, backups under `.deploy-backups/preview/`. Its preflight assertions **invert** — preview refuses a build whose `robots.txt` allows crawlers or that lacks the `noindex` meta, production refuses one that has them — so a build made for one tier cannot be shipped to the other. Git guards relax under `--preview` (any branch; a dirty tree warns instead of failing), since previewing unfinished work is the point.
+
+It guards the three failure modes that have actually bitten: it requires GNU rsync (`/opt/homebrew/bin/rsync`) and refuses to run against macOS's `openrsync`, which silently drops `--delete-after` when combined with `--backup-dir`; it `rm -rf _site` before every build, since Eleventy doesn't clean its output and a file deleted from `src/` would otherwise redeploy as current; and it aborts when the plan exceeds `MAX_DELETIONS` (default 50) or would delete server-owned paths. Host/account/paths come from the gitignored `utility/deploy.env`, never from the script.
 
 **The production target is entirely driven by GitHub repository variables** (`DEPLOY_HOST`/`DEPLOY_USER`/`DEPLOY_PORT`/`DEPLOY_PATH`/`SITE_URL`/`ALLOW_CRAWLERS`/`MAX_DELETIONS`/`SSH_KNOWN_HOSTS`), never hardcoded in the YAML — the pre-cutover preview subdomain and the live docroot differ by three variable edits and no code change. See README.md's Deployment section for the full table, the dry-run recipe, the cutover procedure, and rollback. The `deploy-production` job is self-contained: it builds *and* runs the checks itself rather than depending on the `build` job, so the bytes that get checked are the bytes that ship. `check-anchors` and `check-contrast` block the deploy; `check-links` stays advisory, since external link rot in an old article must not block publishing a new issue. A preflight step asserts the build is complete and correctly configured before rsync runs with `--delete`.
 
