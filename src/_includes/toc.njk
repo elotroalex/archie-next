@@ -3,6 +3,7 @@
 {% set essayArticles = issueArticles | filterSection("articles") %}
 {% set projectArticles = issueArticles | filterSection("projects") %}
 {% set reviewArticles = issueArticles | filterSection("reviews") %}
+{% set interactiveArticles = issueArticles | filterSection("interactives") %}
 
 <div id="toc">
 
@@ -38,16 +39,20 @@
 </ul>
 {% endif %}
 
-{% set issueInteractives = issues[issueTag].interactives %}
-{% if issueInteractives and issueInteractives.length %}
+{# Interactives are listed by their *companion* page, not the raw interactive.
+   The companion is an ordinary article -- standard metadata, the linear text,
+   the DOI -- and links onward into the authored experience. That means this
+   block behaves like every other: localized links, the shared author loop,
+   and no special case in search, sitemap or the checks. #}
+{% if interactiveArticles.length %}
 <h3>{{ i18n[lang].global.interactives }}</h3>
 <ul>
-{% for piece in issueInteractives %}
+{% for art in interactiveArticles %}
   <li>
-    <a href="{{ piece.url | url }}">
-      <span class="toc-title">{{ piece.title | mdInline | safe }}</span>
+    <a href="{{ art.url | localizeUrl(lang) | url }}">
+      <span class="toc-title">{{ art.data.title | mdInline | safe if art.data.title is string else art.data.title.long | mdInline | safe }}</span>
     </a><br>
-    <span class="byline">{% for name in piece.author %}{{ name }}{% if not loop.last %}, {% endif %}{% endfor %}</span>
+    <span class="byline">{% set author = art.data.author %}{% include "author-loop.njk" %}</span>
   </li>
 {% endfor %}
 </ul>

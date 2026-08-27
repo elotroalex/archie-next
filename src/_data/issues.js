@@ -46,18 +46,27 @@ module.exports = {
     title: "Issue (3)",
     editors: ["Kaiama Glover", "Alex Gil", "Jessica Marie Johnson"],
     production: ["Alex Gil", "Brian Ballsun-Stanton", "Kelly S. Martin"],
+    // Every interactive is two things: a `companion` markdown page in this
+    // issue's directory carrying the linear text, standard metadata and the
+    // DOI -- which is what the TOC, search and citations point at -- and the
+    // flat HTML/JS at `url`, the authored experience.
+    //
+    // `url` is the only field the build reads: it drives the passthrough +
+    // ignore loop in .eleventy.js and the raw page's sitemap entry. `title`
+    // and `author` are documentation of the pairing; the TOC takes those from
+    // the companion's own front matter.
     interactives: [
       {
         title: ".break .dance",
         author: ["Marisa Parham"],
+        companion: "/issue03/parham.html",
         url: "/issue03/parham/parham.html",
-        pdf: false,
       },
       {
         title: "Breaking, Dancing, Making in the Machine: Notes on \".break .dance\"",
         author: ["Marisa Parham"],
+        companion: "/issue03/parham-process.html",
         url: "/issue03/parham-process/parham-process.html",
-        pdf: false,
       },
     ],
   },

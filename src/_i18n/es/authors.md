@@ -128,6 +128,8 @@ Si cree que necesita una visualización aún más compleja, considere enviar una
 
 _archipelagos_ acepta proyectos digitales en etapa de desarollo intermedia para una revisión anónima de una vía, luego de que nuestro equipo editorial haya tenido una primera ronda de aprobación.
 
+**Contribuciones interactivas y multimedia.** Una pieza que genere su contenido mediante JavaScript debe acompañarse de una versión lineal en texto del mismo material, entregada como documento aparte. La pieza interactiva sigue siendo la obra de autoría; la versión en texto es la que la hace citable, localizable en búsquedas y accesible mediante lectores de pantalla. Sin ella, una pieza generada con JavaScript apenas expone texto a quien usa tecnología de asistencia o intenta encontrarla.
+
 Se ofrecerá una versión pulida de los comentarios de los revisores al equipo del proyecto, o al director, como proveniente de _archipelagos_ y escrita en el "nosotros" real. Esperamos que el equipo tome en serio las sugerencias de nuestros revisores y, que haga los cambios indicados al proyecto, siempre que estos sean factibles.
 
 A lo largo del proceso de revisión y publicación, nuestro equipo editorial trabajará con usted para brindarle comentarios constructivos sobre su proyecto. Por supuesto, usted sigue siendo responsable del desarrollo y mantenimiento de su proyecto antes y después de que lo presentemos en nuestra revista. Si su proyecto es aceptado en nuestra sección de proyectos digitales, también publicaremos el intercambio de revisiones entre nuestros revisores y su equipo. Si el proceso de revisión resulta satisfactoria para ambas partes, ofrecemos la oportunidad de lanzar o resaltar su proyecto tras la publicación en _archipelagos_.

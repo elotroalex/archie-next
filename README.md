@@ -30,7 +30,7 @@ Live site: [archipelagosjournal.org](http://archipelagosjournal.org)
    bash utility/intake/convert-docx.sh src/issue09/incoming/author-title.docx
    ```
 
-5. **Fill in front matter** — edit each generated `.md` file and replace every `# TODO` placeholder with real values. The `section` field must be one of: `introduction`, `articles`, `projects`, `reviews`.
+5. **Fill in front matter** — edit each generated `.md` file and replace every `# TODO` placeholder with real values. The `section` field must be one of: `introduction`, `articles`, `projects`, `reviews`, `interactives`.
 
 6. **Generate PDFs**
 
@@ -91,9 +91,11 @@ issue09: {
   title: "Issue (9)",
   editors: ["Editor Name"],
   production: ["Production Team Member"],
-  // Optional: list pure-HTML interactives that fall outside the normal article pipeline
+  // Optional: register any interactives. Each pairs a companion markdown
+  // page (the citable article) with the flat HTML/JS it introduces.
   // interactives: [
-  //   { title: "Piece Title", author: ["Author Name"], url: "/issue09/piece/piece.html", pdf: false },
+  //   { title: "Piece Title", author: ["Author Name"],
+  //     companion: "/issue09/piece.html", url: "/issue09/piece/piece.html" },
   // ],
 },
 ```
@@ -134,7 +136,7 @@ You can also create them manually. Every article needs this front matter:
 ```yaml
 ---
 layout: article # article | project | page
-section: articles # introduction | articles | projects | reviews
+section: articles # introduction | articles | projects | reviews | interactives
 title:
   long: "Full Article Title"
   short: "Short Title" # used in running headers of PDF
@@ -193,17 +195,25 @@ To wrap the image in a link:
 - Always include `alt` (used as the PDF caption fallback) and `loading="lazy"`.
 - Do not use the old Jekyll `{% include image.html %}` syntax — it is not processed by Eleventy.
 
-### 6. Add pure-HTML interactives (optional)
+### 6. Add an interactive (optional)
 
-If an issue includes a self-contained HTML piece (like the Parham essay in Issue 3):
+A self-contained HTML/JS piece — like Marisa Parham's `.break .dance` in Issue 3 — ships as **two** files, because a JavaScript-rendered page exposes almost no text to a search engine, to this site's own search, or to a screen reader before the animation loads.
 
-1. Place the HTML and its assets in `src/issue09/piece-name/`.
-2. In `.eleventy.js`, add passthrough copy and ignore rules:
+1. **The interactive.** Put the HTML and its assets in `src/issue09/piece-name/`. Nothing to add to `.eleventy.js` — the passthrough and ignore rules are derived automatically from the `url` you register in step 3.
+2. **A companion page.** Create `src/issue09/piece-name.md` with `section: interactives` and the same front matter any article gets — `title`, `author`, `doi`, `abstract`, `pubDate`, `issue`, `order`, `language`, and `pdf: false` unless you're producing one. Its body carries the piece's text in linear, readable form and links into the interactive. **This is the citable page and the one that carries the DOI.** It behaves like any other article: language variants, search, sitemap, and every `check-issue` gate.
+3. **Register the pairing** in the `interactives` array in `src/_data/issues.js`:
    ```js
-   eleventyConfig.addPassthroughCopy({ "src/issue09/piece-name": "issue09/piece-name" });
-   eleventyConfig.ignores.add("src/issue09/piece-name/**");
+   interactives: [
+     {
+       title: "Piece Title",
+       author: ["Author Name"],
+       companion: "/issue09/piece-name.html",
+       url: "/issue09/piece-name/piece-name.html",
+     },
+   ],
    ```
-3. Register it in the `interactives` array in `src/_data/issues.js` (see step 1 above). It will appear in the TOC under **Featured**.
+   `url` drives the build; `companion` records the pairing. The TOC's **Featured** section is rendered from the companion's own front matter, so it localizes into `/es/` and `/fr/` like every other entry.
+4. **In the interactive's `<head>`**, point `<link rel="canonical">` and `citation_fulltext_html_url` at the companion, and do **not** emit `citation_doi` — the companion asserts it. Two URLs claiming one DOI reads to Crossref and Google Scholar as duplicate records, which is the opposite of what the companion is for.
 
 ### 7. Generate PDFs
 
