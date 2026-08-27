@@ -659,8 +659,12 @@ The server's `.htaccess` is hand-managed and on the rsync exclude list — it ca
 
 ```bash
 scp utility/htaccess-cache.conf <user>@<host>:~/htaccess-cache.conf
-ssh <user>@<host> 'cd <DEPLOY_PATH> && cp .htaccess .htaccess.bak-$(date +%F) && cat ~/htaccess-cache.conf >> .htaccess'
+ssh <user>@<host> 'mkdir -p ~/.deploy-backups/htaccess && cd <DEPLOY_PATH> \
+  && cp -p .htaccess ~/.deploy-backups/htaccess/.htaccess.bak-$(date +%F-%H%M%S) \
+  && cat ~/htaccess-cache.conf >> .htaccess && rm ~/htaccess-cache.conf'
 ```
+
+**The backup goes outside the docroot, not next to the original.** A `.htaccess.bak-*` left in `public_html/` is not on `prod.sh`'s rsync exclude list, so the next deploy plans to delete it — and because the name starts with `.htaccess`, it trips the "would delete server-managed state" abort and blocks the deploy entirely. (It is not web-readable either way: Apache's default `^\.ht` deny returns 403. Verified.) Keeping backups in `~/.deploy-backups/htaccess/` sidesteps both problems and puts them alongside the deploy backups `prod.sh` already writes.
 
 Then verify from anywhere:
 
