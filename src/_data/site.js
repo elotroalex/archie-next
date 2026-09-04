@@ -63,7 +63,7 @@ module.exports = {
   // GitHub Pages staging preview at /archie-next/), since robots.txt is only
   // honored at a host root.
   noindex: process.env.ELEVENTY_ALLOW_CRAWLERS !== "true",
-  githuburl: "https://github.com/archipelagosjournal/",
+  githuburl: "https://github.com/elotroalex/archie-next/",
   old_issn: "2473-2206",
   issn: "2689-842X",
   current: currentKey,

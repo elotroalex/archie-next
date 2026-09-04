@@ -33,7 +33,7 @@ Nous ne facturons pas les auteurs pour le traitement des articles ni pour la sou
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 
-La base technologique utilisée pour *archipelagos* est proposée avec une licence MIT. Toutes nos données sont ouvertes sur notre [dépôt GitHub](https://github.com/archipelagosjournal/).
+La base technologique utilisée pour *archipelagos* est proposée avec une licence MIT. Toutes nos données sont ouvertes sur notre [dépôt GitHub](https://github.com/elotroalex/archie-next/).
 
 
 ### Standards académiques
